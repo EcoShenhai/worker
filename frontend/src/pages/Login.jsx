@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { Notice } from '../components/ui.jsx';
+import Logo from '../components/Logo.jsx';
 
 export default function Login() {
   const { login } = useAuth();
@@ -16,8 +17,12 @@ export default function Login() {
     setErr('');
     setBusy(true);
     try {
-      const user = await login(email.trim(), password);
-      navigate(user.requiresPasswordChange ? '/change-password' : '/');
+      const r = await login(email.trim(), password);
+      if (r.next === 'mfa') {
+        navigate('/mfa', { state: { userId: r.userId, email: email.trim() } });
+      } else if (r.next === 'verify_email') {
+        navigate('/verify-email', { state: { userId: r.userId, email: email.trim() } });
+      }
     } catch (e) {
       setErr(e.response?.data?.message || 'Sign in failed. Check your credentials.');
     } finally {
@@ -28,24 +33,26 @@ export default function Login() {
   return (
     <div className="auth-wrap">
       <div className="auth-card">
-        <div className="wordmark">Worker</div>
-        <div className="sub">Office of the President — Provincial Administration</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}><Logo size={40} /><div className="wordmark">Worker</div></div>
+        <div className="sub">AI administrative workspace</div>
         <Notice type="err">{err}</Notice>
         <form onSubmit={submit}>
           <div className="field">
-            <label>Official email</label>
+            <label>Email</label>
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="username" required />
           </div>
           <div className="field">
             <label>Password</label>
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" required />
           </div>
-          <button className="btn block" disabled={busy}>
-            {busy ? <span className="spinner" /> : 'Sign in'}
-          </button>
+          <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : 'Sign in'}</button>
         </form>
-        <p className="muted" style={{ fontSize: '0.78rem', marginTop: '1.2rem', marginBottom: 0 }}>
-          Authorised users only. All activity is recorded in the audit trail.
+        <div className="between" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
+          <Link to="/forgot-password">Forgot password?</Link>
+          <Link to="/register">Create account</Link>
+        </div>
+        <p className="muted" style={{ fontSize: '0.78rem', marginTop: '1rem', marginBottom: 0 }}>
+          A one-time code is emailed to confirm each sign-in.
         </p>
       </div>
     </div>

@@ -3,6 +3,7 @@
 /** Initial schema for Worker — AI Administrative Workplace Agent. */
 module.exports = {
   async up(queryInterface, Sequelize) {
+    await queryInterface.sequelize.transaction(async (t) => {
     const { UUID, UUIDV4, STRING, TEXT, INTEGER, BIGINT, FLOAT, BOOLEAN, DATE, DATEONLY, JSONB, ENUM, DECIMAL } = Sequelize;
     const ts = {
       createdAt: { type: DATE, allowNull: false, defaultValue: Sequelize.fn('now') },
@@ -20,7 +21,7 @@ module.exports = {
       requiresPasswordChange: { type: BOOLEAN, allowNull: false, defaultValue: false },
       lastLoginAt: { type: DATE },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('workspace_sessions', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -37,7 +38,7 @@ module.exports = {
       notes: { type: TEXT },
       ownerId: { type: UUID, allowNull: false, references: { model: 'users', key: 'id' }, onDelete: 'CASCADE' },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('recordings', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -53,7 +54,7 @@ module.exports = {
       status: { type: ENUM('pending', 'transcribing', 'transcribed', 'failed'), allowNull: false, defaultValue: 'pending' },
       error: { type: TEXT },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('transcripts', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -68,7 +69,7 @@ module.exports = {
       verifiedById: { type: UUID, references: { model: 'users', key: 'id' } },
       wordCount: { type: INTEGER },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('transcript_segments', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -79,7 +80,7 @@ module.exports = {
       speaker: { type: STRING },
       text: { type: TEXT, allowNull: false },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('templates', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -89,7 +90,7 @@ module.exports = {
       isDefault: { type: BOOLEAN, allowNull: false, defaultValue: false },
       createdById: { type: UUID, references: { model: 'users', key: 'id' } },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('documents', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -109,7 +110,7 @@ module.exports = {
       renderedDocxKey: { type: STRING },
       renderedPdfKey: { type: STRING },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('document_approvals', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -120,7 +121,7 @@ module.exports = {
       toStatus: { type: STRING },
       comment: { type: TEXT },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('emails', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -140,7 +141,7 @@ module.exports = {
       sessionId: { type: UUID, references: { model: 'workspace_sessions', key: 'id' }, onDelete: 'SET NULL' },
       ownerId: { type: UUID, allowNull: false, references: { model: 'users', key: 'id' } },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('knowledge_documents', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -151,7 +152,7 @@ module.exports = {
       extractedText: { type: TEXT },
       uploadedById: { type: UUID, allowNull: false, references: { model: 'users', key: 'id' } },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('payments', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -167,7 +168,7 @@ module.exports = {
       rawCallback: { type: JSONB },
       initiatedById: { type: UUID, references: { model: 'users', key: 'id' } },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('audit_logs', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -179,7 +180,7 @@ module.exports = {
       ipAddress: { type: STRING },
       userAgent: { type: STRING },
       ...ts,
-    });
+    }, { transaction: t });
 
     await queryInterface.createTable('refresh_tokens', {
       id: { type: UUID, defaultValue: UUIDV4, primaryKey: true },
@@ -188,19 +189,30 @@ module.exports = {
       expiresAt: { type: DATE, allowNull: false },
       revokedAt: { type: DATE },
       ...ts,
+    }, { transaction: t });
+
     });
 
-    // Helpful indexes
-    await queryInterface.addIndex('recordings', ['sessionId']);
-    await queryInterface.addIndex('transcripts', ['sessionId']);
-    await queryInterface.addIndex('transcripts', ['recordingId']);
-    await queryInterface.addIndex('transcript_segments', ['transcriptId']);
-    await queryInterface.addIndex('documents', ['sessionId']);
-    await queryInterface.addIndex('documents', ['type']);
-    await queryInterface.addIndex('documents', ['status']);
-    await queryInterface.addIndex('audit_logs', ['userId']);
-    await queryInterface.addIndex('audit_logs', ['action']);
-    await queryInterface.addIndex('payments', ['providerRef']);
+    // Indexes are created AFTER the table transaction commits. On PostgreSQL 18,
+    // CREATE INDEX cannot see a column created earlier in the SAME transaction via
+    // this driver path, so we run them here (autocommit) with IF NOT EXISTS.
+    const indexes = [
+      ['recordings_session_id', 'recordings', '"sessionId"'],
+      ['transcripts_session_id', 'transcripts', '"sessionId"'],
+      ['transcripts_recording_id', 'transcripts', '"recordingId"'],
+      ['transcript_segments_transcript_id', 'transcript_segments', '"transcriptId"'],
+      ['documents_session_id', 'documents', '"sessionId"'],
+      ['documents_type', 'documents', '"type"'],
+      ['documents_status', 'documents', '"status"'],
+      ['audit_logs_user_id', 'audit_logs', '"userId"'],
+      ['audit_logs_action', 'audit_logs', '"action"'],
+      ['payments_provider_ref', 'payments', '"providerRef"'],
+    ];
+    for (const [name, tbl, col] of indexes) {
+      await queryInterface.sequelize.query(
+        `CREATE INDEX IF NOT EXISTS "${name}" ON "${tbl}" (${col});`
+      );
+    }
   },
 
   async down(queryInterface, Sequelize) {

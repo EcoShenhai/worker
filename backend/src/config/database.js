@@ -8,7 +8,7 @@ if (config.db.url) {
   sequelize = new Sequelize(config.db.url, {
     dialect: 'postgres',
     logging: config.db.logging ? console.log : false,
-    dialectOptions: config.db.ssl ? { ssl: { require: true, rejectUnauthorized: false } } : {},
+    dialectOptions: config.db.ssl ? { ssl: { rejectUnauthorized: false } } : {},
     pool: { max: 10, min: 0, acquire: 30000, idle: 10000 },
   });
 } else {
@@ -17,7 +17,7 @@ if (config.db.url) {
     port: config.db.port,
     dialect: 'postgres',
     logging: config.db.logging ? console.log : false,
-    dialectOptions: config.db.ssl ? { ssl: { require: true, rejectUnauthorized: false } } : {},
+    dialectOptions: config.db.ssl ? { ssl: { rejectUnauthorized: false } } : {},
     pool: { max: 10, min: 0, acquire: 30000, idle: 10000 },
   });
 }

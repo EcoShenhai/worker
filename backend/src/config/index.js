@@ -1,5 +1,5 @@
 'use strict';
-require('dotenv').config();
+require('dotenv').config({ path: require('path').resolve(__dirname, '..', '..', '.env') });
 
 const toBool = (v, def = false) => {
   if (v === undefined || v === null || v === '') return def;
@@ -26,7 +26,7 @@ const config = {
   frontendUrl: pick('FRONTEND_URL') || 'https://worker.eshcloud.com',
 
   db: {
-    url: pick('DATABASE_URL') || null,
+    url: null, // ignore ambient DATABASE_URL (e.g. /etc/environment); use discrete DB_* from .env
     host: pick('DB_HOST') || '127.0.0.1',
     port: parseInt(pick('DB_PORT') || '5432', 10),
     name: pick('DB_NAME') || 'worker',
@@ -85,15 +85,27 @@ const config = {
     },
   },
 
-  email: {
-    smtpHost: pick('SMTP_HOST') || '',
-    smtpPort: parseInt(pick('SMTP_PORT') || '587', 10),
-    smtpSecure: toBool(pick('SMTP_SECURE'), false),
-    smtpUser: pick('SMTP_USER') || '',
-    smtpPass: pick('SMTP_PASS', 'SMTP_PASSWORD') || '',
-    fromName: pick('MAIL_FROM_NAME', 'SMTP_FROM_NAME') || 'Worker — Office of the President',
-    fromAddress: pick('MAIL_FROM_ADDRESS', 'SMTP_FROM_EMAIL') || '',
-  },
+  email: (() => {
+    // Accept both Worker-style discrete vars and the MediQlaim/house convention
+    // (SMTP_USERNAME + combined EMAIL_FROM "Name <email>").
+    let fromName = pick('MAIL_FROM_NAME', 'SMTP_FROM_NAME');
+    let fromAddress = pick('MAIL_FROM_ADDRESS', 'SMTP_FROM_EMAIL');
+    const emailFrom = pick('EMAIL_FROM');
+    if (emailFrom) {
+      const m = emailFrom.match(/^\s*(.*?)\s*<([^>]+)>\s*$/);
+      if (m) { fromName = fromName || m[1]; fromAddress = fromAddress || m[2]; }
+      else { fromAddress = fromAddress || emailFrom.trim(); }
+    }
+    return {
+      smtpHost: pick('SMTP_HOST') || '',
+      smtpPort: parseInt(pick('SMTP_PORT') || '587', 10),
+      smtpSecure: toBool(pick('SMTP_SECURE'), false),
+      smtpUser: pick('SMTP_USER', 'SMTP_USERNAME') || '',
+      smtpPass: pick('SMTP_PASS', 'SMTP_PASSWORD') || '',
+      fromName: fromName || 'Worker',
+      fromAddress: fromAddress || '',
+    };
+  })(),
 
   payments: {
     mpesa: {

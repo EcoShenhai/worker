@@ -14,8 +14,8 @@ module.exports = (sequelize) => {
     }
 
     toSafeJSON() {
-      const { id, email, name, role, status, requiresPasswordChange, lastLoginAt, createdAt } = this;
-      return { id, email, name, role, status, requiresPasswordChange, lastLoginAt, createdAt };
+      const { id, email, name, role, status, requiresPasswordChange, emailVerified, lastLoginAt, createdAt } = this;
+      return { id, email, name, role, status, requiresPasswordChange, emailVerified, lastLoginAt, createdAt };
     }
   }
 
@@ -46,6 +46,7 @@ module.exports = (sequelize) => {
         defaultValue: 'active',
       },
       requiresPasswordChange: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
+      emailVerified: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
       lastLoginAt: { type: DataTypes.DATE, allowNull: true },
     },
     {

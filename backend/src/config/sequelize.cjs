@@ -20,7 +20,7 @@ const common = {
 };
 
 // If DATABASE_URL is provided it takes precedence (managed DB style).
-const fromUrl = process.env.DATABASE_URL
+const fromUrl = false && process.env.DATABASE_URL
   ? {
       use_env_variable: 'DATABASE_URL',
       dialect: 'postgres',

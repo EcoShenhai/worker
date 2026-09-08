@@ -1,8 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
+import { useAuth } from './context/AuthContext.jsx';
 
+import Landing from './pages/Landing.jsx';
 import Login from './pages/Login.jsx';
 import ChangePassword from './pages/ChangePassword.jsx';
+import Register from './pages/Register.jsx';
+import VerifyEmail from './pages/VerifyEmail.jsx';
+import Mfa from './pages/Mfa.jsx';
+import ForgotPassword from './pages/ForgotPassword.jsx';
+import ResetPassword from './pages/ResetPassword.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import Sessions from './pages/Sessions.jsx';
 import SessionDetail from './pages/SessionDetail.jsx';
@@ -19,13 +26,24 @@ import NotFound from './pages/NotFound.jsx';
 
 const P = (el) => <ProtectedRoute>{el}</ProtectedRoute>;
 
+function Home() {
+  const { user, loading } = useAuth();
+  if (loading) return <div className="auth-wrap"><span className="spinner" /></div>;
+  return user ? P(<Dashboard />) : <Landing />;
+}
+
 export default function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/change-password" element={<ChangePassword />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/verify-email" element={<VerifyEmail />} />
+      <Route path="/mfa" element={<Mfa />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
 
-      <Route path="/" element={P(<Dashboard />)} />
+      <Route path="/" element={<Home />} />
       <Route path="/sessions" element={P(<Sessions />)} />
       <Route path="/sessions/:id" element={P(<SessionDetail />)} />
       <Route path="/documents" element={P(<Documents />)} />

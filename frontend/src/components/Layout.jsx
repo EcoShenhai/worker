@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth, atLeast } from '../context/AuthContext.jsx';
+import Logo from './Logo.jsx';
 
 export default function Layout({ children }) {
   const { user, logout } = useAuth();
@@ -14,8 +15,8 @@ export default function Layout({ children }) {
     <div className="shell">
       <aside className="sidebar">
         <div className="brand">
-          <div className="wordmark">Worker</div>
-          <div className="sub">Office of the President<br />Provincial Administration</div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.55rem' }}><Logo size={28} /><div className="wordmark">Worker</div></div>
+          <div className="sub">AI administrative workspace</div>
         </div>
         <nav className="nav">
           <NavLink to="/" end>Dashboard</NavLink>
