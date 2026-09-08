@@ -1,0 +1,11 @@
+node_modules/
+.env
+.env.local
+uploads/
+*.log
+logs/
+coverage/
+.DS_Store
+stt-service/.venv/
+stt-service/__pycache__/
+*.pyc

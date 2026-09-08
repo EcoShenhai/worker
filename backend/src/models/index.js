@@ -1,0 +1,80 @@
+'use strict';
+const sequelize = require('../config/database');
+
+const User = require('./user')(sequelize);
+const WorkspaceSession = require('./workspaceSession')(sequelize);
+const Recording = require('./recording')(sequelize);
+const Transcript = require('./transcript')(sequelize);
+const TranscriptSegment = require('./transcriptSegment')(sequelize);
+const Document = require('./document')(sequelize);
+const DocumentApproval = require('./documentApproval')(sequelize);
+const Email = require('./email')(sequelize);
+const Template = require('./template')(sequelize);
+const KnowledgeDocument = require('./knowledgeDocument')(sequelize);
+const Payment = require('./payment')(sequelize);
+const AuditLog = require('./auditLog')(sequelize);
+const RefreshToken = require('./refreshToken')(sequelize);
+
+// ---- Associations ----------------------------------------------------------
+
+// User ownership
+User.hasMany(WorkspaceSession, { foreignKey: 'ownerId', as: 'sessions' });
+WorkspaceSession.belongsTo(User, { foreignKey: 'ownerId', as: 'owner' });
+
+// Session -> Recordings -> Transcript -> Segments  (auditable chain of custody)
+WorkspaceSession.hasMany(Recording, { foreignKey: 'sessionId', as: 'recordings' });
+Recording.belongsTo(WorkspaceSession, { foreignKey: 'sessionId', as: 'session' });
+Recording.belongsTo(User, { foreignKey: 'uploadedById', as: 'uploadedBy' });
+
+Recording.hasOne(Transcript, { foreignKey: 'recordingId', as: 'transcript' });
+Transcript.belongsTo(Recording, { foreignKey: 'recordingId', as: 'recording' });
+WorkspaceSession.hasMany(Transcript, { foreignKey: 'sessionId', as: 'transcripts' });
+Transcript.belongsTo(WorkspaceSession, { foreignKey: 'sessionId', as: 'session' });
+
+Transcript.hasMany(TranscriptSegment, { foreignKey: 'transcriptId', as: 'segments', onDelete: 'CASCADE' });
+TranscriptSegment.belongsTo(Transcript, { foreignKey: 'transcriptId', as: 'transcript' });
+
+// Session -> Documents
+WorkspaceSession.hasMany(Document, { foreignKey: 'sessionId', as: 'documents' });
+Document.belongsTo(WorkspaceSession, { foreignKey: 'sessionId', as: 'session' });
+Document.belongsTo(User, { foreignKey: 'authorId', as: 'author' });
+Document.belongsTo(Template, { foreignKey: 'templateId', as: 'template' });
+
+Document.hasMany(DocumentApproval, { foreignKey: 'documentId', as: 'approvals', onDelete: 'CASCADE' });
+DocumentApproval.belongsTo(Document, { foreignKey: 'documentId', as: 'document' });
+DocumentApproval.belongsTo(User, { foreignKey: 'actorId', as: 'actor' });
+
+// Emails
+User.hasMany(Email, { foreignKey: 'ownerId', as: 'emails' });
+Email.belongsTo(User, { foreignKey: 'ownerId', as: 'owner' });
+Email.belongsTo(WorkspaceSession, { foreignKey: 'sessionId', as: 'session' });
+
+// Knowledge base
+KnowledgeDocument.belongsTo(User, { foreignKey: 'uploadedById', as: 'uploadedBy' });
+
+// Payments
+Payment.belongsTo(User, { foreignKey: 'initiatedById', as: 'initiatedBy' });
+
+// Audit + tokens
+AuditLog.belongsTo(User, { foreignKey: 'userId', as: 'user' });
+User.hasMany(RefreshToken, { foreignKey: 'userId', as: 'refreshTokens' });
+RefreshToken.belongsTo(User, { foreignKey: 'userId', as: 'user' });
+
+const db = {
+  sequelize,
+  User,
+  WorkspaceSession,
+  Recording,
+  Transcript,
+  TranscriptSegment,
+  Document,
+  DocumentApproval,
+  Email,
+  Template,
+  KnowledgeDocument,
+  Payment,
+  AuditLog,
+  RefreshToken,
+};
+
+module.exports = db;
