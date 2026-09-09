@@ -11,7 +11,7 @@ const { generateReference } = require('../utils/refNumber');
 
 const VALID_TYPES = [
   'minutes', 'memo', 'letter', 'report', 'policy_brief',
-  'briefing_note', 'concept_note', 'circular', 'action_matrix',
+  'briefing_note', 'concept_note', 'circular', 'action_matrix', 'speech',
 ];
 
 const list = asyncHandler(async (req, res) => {
@@ -161,6 +161,8 @@ function shapeForType(type) {
       return '{"title":string,"executive_summary":string,"sections":[{"title":string,"body":string}],"recommendations":[string]}';
     case 'circular':
       return '{"to":string,"from":string,"subject":string,"paragraphs":[string],"signoff":string}';
+    case 'speech':
+      return '{"heading":string,"body":string (the full speech text; separate paragraphs with a blank line),"closing":string}';
     default:
       return '{"title":string,"body":string}';
   }

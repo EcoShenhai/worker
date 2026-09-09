@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import api from '../api/client.js';
 import { PageHead, StatusBadge, Empty, Notice } from '../components/ui.jsx';
 
-const TYPES = ['minutes', 'memo', 'letter', 'report', 'policy_brief', 'briefing_note', 'concept_note', 'circular', 'action_matrix'];
+const TYPES = ['minutes', 'memo', 'letter', 'report', 'policy_brief', 'briefing_note', 'concept_note', 'circular', 'action_matrix', 'speech'];
 
 export default function Documents() {
   const [docs, setDocs] = useState([]);

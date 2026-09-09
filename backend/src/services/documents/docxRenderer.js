@@ -181,6 +181,15 @@ function bodyForLetter(content) {
   return out;
 }
 
+function bodyForSpeech(content) {
+  const out = [];
+  if (content.heading) out.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun({ text: content.heading, bold: true })] }));
+  const body = content.body || '';
+  body.split(/\n\n+/).forEach((para) => { if (para.trim()) out.push(p(para.trim())); });
+  if (content.closing) out.push(p(content.closing));
+  return out;
+}
+
 function bodyGeneric(content) {
   const out = [];
   if (content.title) out.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun({ text: content.title, bold: true })] }));
@@ -206,6 +215,7 @@ function buildBody(doc) {
     case 'minutes': return bodyForMinutes(c);
     case 'memo': case 'circular': return bodyForMemo(c);
     case 'letter': return bodyForLetter(c);
+    case 'speech': return bodyForSpeech(c);
     default: return bodyGeneric(c);
   }
 }
