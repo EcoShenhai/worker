@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../api/client.js';
 import { PageHead, StatusBadge, Empty, Notice } from '../components/ui.jsx';
+import TEMPLATES from '../builtinTemplates.js';
 
 const TYPES = ['minutes', 'memo', 'letter', 'report', 'policy_brief', 'briefing_note', 'concept_note', 'circular', 'action_matrix', 'speech'];
 
@@ -13,6 +14,20 @@ export default function Documents() {
   const [err, setErr] = useState('');
   const [busy, setBusy] = useState(false);
   const [form, setForm] = useState({ type: 'memo', title: '', brief: '', recipient: '', department: '' });
+  const [templating, setTemplating] = useState(false);
+  const [tplType, setTplType] = useState('all');
+
+  const createFromTemplate = async (t) => {
+    setBusy(true); setErr('');
+    try {
+      const { data } = await api.post('/documents', { type: t.documentType, title: t.name + ' — draft', content: t.content });
+      const doc = data.document || data;
+      window.location.href = `/documents/${doc.id}`;
+    } catch (e) {
+      setErr(e.response?.data?.message || 'Could not create from template.');
+      setBusy(false);
+    }
+  };
 
   const load = async () => {
     setLoading(true);
@@ -46,8 +61,40 @@ export default function Documents() {
       <PageHead
         title="Documents"
         subtitle="Minutes, memos, letters, reports and briefs — drafted with AI, approved by people."
-        actions={<button className="btn" onClick={() => setDrafting((v) => !v)}>{drafting ? 'Cancel' : 'Draft with AI'}</button>}
+        actions={
+          <>
+            <button className="btn secondary" onClick={() => { setTemplating((v) => !v); setDrafting(false); }}>{templating ? 'Cancel' : 'Start from template'}</button>
+            <button className="btn" onClick={() => { setDrafting((v) => !v); setTemplating(false); }}>{drafting ? 'Cancel' : 'Draft with AI'}</button>
+          </>
+        }
       />
+
+      {templating && (
+        <div className="card" style={{ marginBottom: '1.4rem' }}>
+          <div className="card-head">
+            <h3>Start from a template</h3>
+            <select value={tplType} onChange={(e) => setTplType(e.target.value)} style={{ width: 220 }}>
+              <option value="all">All types</option>
+              {TYPES.map((t) => <option key={t} value={t}>{t.replace(/_/g, ' ')}</option>)}
+            </select>
+          </div>
+          <div className="card-body">
+            <Notice type="err">{err}</Notice>
+            <div className="grid cols-3">
+              {TEMPLATES.filter((t) => tplType === 'all' || t.documentType === tplType).map((t) => (
+                <div key={t.id} className="card" style={{ boxShadow: 'none' }}>
+                  <div className="card-body">
+                    <div style={{ fontWeight: 600 }}>{t.name}</div>
+                    <div className="badge grey" style={{ margin: '0.3rem 0' }}>{t.documentType.replace(/_/g, ' ')}</div>
+                    <p className="muted" style={{ fontSize: '0.82rem', minHeight: 38 }}>{t.description}</p>
+                    <button className="btn sm block" disabled={busy} onClick={() => createFromTemplate(t)}>Use this template</button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
 
       {drafting && (
         <div className="card" style={{ marginBottom: '1.4rem' }}>

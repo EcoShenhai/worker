@@ -179,6 +179,11 @@ export default function DocumentEditor() {
 /** Human-readable rendering of the structured content JSON. */
 function DocPreview({ doc }) {
   const c = doc.content || {};
+  const wrap = { whiteSpace: 'pre-wrap' };
+  const has = (k) => c[k] !== undefined && c[k] !== null && c[k] !== '';
+  const known = ['title','heading','to','from','through','date','recipient_block','salutation','subject',
+    'executive_summary','preamble','body','paragraphs','sections','action_matrix','recommendations','closing','signoff','signature'];
+  const anyKnown = known.some((k) => Array.isArray(c[k]) ? c[k].length : has(k));
   return (
     <div className="doc-preview">
       <div className="letterhead">
@@ -187,16 +192,33 @@ function DocPreview({ doc }) {
         {doc.department && <div className="l2">{doc.department}</div>}
       </div>
 
-      {c.heading && <h2 style={{ textAlign: 'center' }}>{c.heading}</h2>}
-      {c.subject && <p><strong>RE: {c.subject}</strong></p>}
-      {c.preamble && <p>{c.preamble}</p>}
-      {c.body && <p style={{ whiteSpace: 'pre-wrap' }}>{c.body}</p>}
+      {has('title') && <h2 style={{ textAlign: 'center' }}>{c.title}</h2>}
+      {has('heading') && <h2 style={{ textAlign: 'center' }}>{c.heading}</h2>}
 
-      {Array.isArray(c.sections) && c.sections.map((s, i) => (
+      {(has('to') || has('from') || has('through')) && (
+        <table style={{ fontFamily: 'var(--sans)', fontSize: '0.88rem', marginBottom: '0.8rem' }}><tbody>
+          {has('to') && <tr><td style={{ fontWeight: 600, width: 90 }}>TO</td><td>{c.to}</td></tr>}
+          {has('from') && <tr><td style={{ fontWeight: 600 }}>FROM</td><td>{c.from}</td></tr>}
+          {has('through') && <tr><td style={{ fontWeight: 600 }}>THROUGH</td><td>{c.through}</td></tr>}
+        </tbody></table>
+      )}
+
+      {has('date') && <p style={{ textAlign: 'right' }}>{c.date}</p>}
+      {has('recipient_block') && <p style={wrap}>{c.recipient_block}</p>}
+      {has('salutation') && <p>{c.salutation}</p>}
+      {has('subject') && <p><strong>RE: {c.subject}</strong></p>}
+
+      {has('executive_summary') && <><h3>Executive Summary</h3><p style={wrap}>{c.executive_summary}</p></>}
+      {has('preamble') && <p style={wrap}>{c.preamble}</p>}
+      {has('body') && <p style={wrap}>{c.body}</p>}
+
+      {Array.isArray(c.paragraphs) && c.paragraphs.map((para, i) => <p key={i} style={wrap}>{para}</p>)}
+
+      {Array.isArray(c.sections) && c.sections.map((sec, i) => (
         <div key={i}>
-          {s.title && <h3>{s.title}</h3>}
-          {s.content && <p style={{ whiteSpace: 'pre-wrap' }}>{s.content}</p>}
-          {Array.isArray(s.points) && <ul>{s.points.map((p, j) => <li key={j}>{p}</li>)}</ul>}
+          {sec.title && <h3>{sec.title}</h3>}
+          {(sec.content || sec.body) && <p style={wrap}>{sec.content || sec.body}</p>}
+          {Array.isArray(sec.points) && <ul>{sec.points.map((pt, j) => <li key={j}>{pt}</li>)}</ul>}
         </div>
       ))}
 
@@ -206,16 +228,21 @@ function DocPreview({ doc }) {
           <table style={{ fontFamily: 'var(--sans)', fontSize: '0.85rem' }}>
             <thead><tr><th>Action</th><th>Responsible</th><th>Timeline</th></tr></thead>
             <tbody>
-              {c.action_matrix.map((a, i) => (
-                <tr key={i}><td>{a.action}</td><td>{a.responsible}</td><td>{a.timeline}</td></tr>
-              ))}
+              {c.action_matrix.map((a, i) => (<tr key={i}><td>{a.action}</td><td>{a.responsible}</td><td>{a.timeline}</td></tr>))}
             </tbody>
           </table>
         </>
       )}
 
-      {c.closing && <p style={{ marginTop: '1.5rem' }}>{c.closing}</p>}
-      {!c.heading && !c.body && !c.sections && (
+      {Array.isArray(c.recommendations) && c.recommendations.length > 0 && (
+        <><h3>Recommendations</h3><ol>{c.recommendations.map((r, i) => <li key={i}>{r}</li>)}</ol></>
+      )}
+
+      {has('closing') && <p style={{ marginTop: '1.5rem', ...wrap }}>{c.closing}</p>}
+      {has('signoff') && <p style={{ marginTop: '1rem', ...wrap }}>{c.signoff}</p>}
+      {has('signature') && <p style={{ marginTop: '1rem', ...wrap }}>{c.signature}</p>}
+
+      {!anyKnown && (
         <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'var(--sans)', fontSize: '0.85rem' }}>{JSON.stringify(c, null, 2)}</pre>
       )}
     </div>
