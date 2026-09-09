@@ -8,6 +8,9 @@ const documentAI = require('../services/documents/documentAI');
 const docxRenderer = require('../services/documents/docxRenderer');
 const storage = require('../services/storage/storageService');
 const { generateReference } = require('../utils/refNumber');
+const fs = require('fs/promises');
+const path = require('path');
+const { analyzeSpreadsheet, summaryText, buildTables } = require('../services/extract/spreadsheet');
 
 const VALID_TYPES = [
   'minutes', 'memo', 'letter', 'report', 'policy_brief',
@@ -211,9 +214,67 @@ const exportDocx = asyncHandler(async (req, res) => {
   res.send(buffer);
 });
 
+// POST /documents/from-spreadsheet  (multipart: file)  -> narrative report + embedded tables
+const generateFromSpreadsheet = asyncHandler(async (req, res) => {
+  if (!req.file) throw ApiError.badRequest('Upload a spreadsheet file (field name: file)');
+  let analysis;
+  try {
+    analysis = await analyzeSpreadsheet(req.file.path);
+  } catch (e) {
+    await fs.unlink(req.file.path).catch(() => {});
+    throw ApiError.badRequest('Could not read the spreadsheet: ' + e.message);
+  }
+
+  const brief = summaryText(analysis);
+  const title = req.body.title || (req.file.originalname ? req.file.originalname.replace(/\.[^.]+$/, '') : 'Data Report');
+
+  // AI writes ONLY the narrative from the compact summary (not the raw rows).
+  const shape = '{"title":string,"executive_summary":string,"sections":[{"title":string,"body":string}],"recommendations":[string]}';
+  let narrative = {};
+  try {
+    const { data } = await AIService.generateJson(
+      `Draft a formal Kenyan government report from the following dataset summary. ` +
+      `Interpret the figures, note notable totals/averages and any outliers, and be factual. ` +
+      `Do not invent data beyond the summary. Return JSON with this shape: ${shape}\n\nDataset summary:\n${brief}`
+    );
+    narrative = data || {};
+  } catch (e) {
+    narrative = { title, executive_summary: 'Automated summary of the uploaded dataset.', sections: [], recommendations: [] };
+  }
+
+  const content = {
+    title: narrative.title || title,
+    executive_summary: narrative.executive_summary || '',
+    sections: Array.isArray(narrative.sections) ? narrative.sections : [],
+    recommendations: Array.isArray(narrative.recommendations) ? narrative.recommendations : [],
+    tables: buildTables(analysis),
+  };
+
+  // keep the source file in storage for reference
+  let key = null;
+  try {
+    const ext = path.extname(req.file.originalname || '') || '.xlsx';
+    key = storage.datedKey('spreadsheets', ext);
+    await storage.saveFromPath(req.file.path, key);
+  } catch (e) { /* non-fatal */ }
+  await fs.unlink(req.file.path).catch(() => {});
+
+  const document = await Document.create({
+    type: 'report',
+    title: content.title,
+    content,
+    classification: req.body.classification || 'internal',
+    department: req.body.department || null,
+    referenceNumber: generateReference('report'),
+    aiAssisted: true,
+    authorId: req.user.id,
+  });
+  await audit.record(req, 'document.from_spreadsheet', { resourceType: 'document', resourceId: document.id, metadata: { rows: analysis.rowCount, sourceKey: key } });
+  res.status(201).json({ document });
+});
+
 module.exports = {
   list, get, create, update, remove,
   generateMinutes, draft,
   submit, approve, reject, finalize,
-  exportDocx,
-};
+  exportDocx, generateFromSpreadsheet };

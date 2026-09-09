@@ -17,6 +17,23 @@ export default function Documents() {
   const [templating, setTemplating] = useState(false);
   const [tplType, setTplType] = useState('all');
 
+  const onSpreadsheet = async (e) => {
+    const f = e.target.files?.[0];
+    e.target.value = '';
+    if (!f) return;
+    setBusy(true); setErr('');
+    try {
+      const fd = new FormData();
+      fd.append('file', f);
+      const { data } = await api.post('/documents/from-spreadsheet', fd, { headers: { 'Content-Type': 'multipart/form-data' } });
+      const doc = data.document || data;
+      window.location.href = `/documents/${doc.id}`;
+    } catch (e) {
+      setErr(e.response?.data?.message || 'Could not build a report from that spreadsheet.');
+      setBusy(false);
+    }
+  };
+
   const createFromTemplate = async (t) => {
     setBusy(true); setErr('');
     try {
@@ -64,6 +81,10 @@ export default function Documents() {
         actions={
           <>
             <button className="btn secondary" onClick={() => { setTemplating((v) => !v); setDrafting(false); }}>{templating ? 'Cancel' : 'Start from template'}</button>
+            <label className="btn secondary" style={{ margin: 0 }}>
+              Report from spreadsheet
+              <input type="file" accept=".xlsx,.xls,.csv" onChange={onSpreadsheet} style={{ display: 'none' }} disabled={busy} />
+            </label>
             <button className="btn" onClick={() => { setDrafting((v) => !v); setTemplating(false); }}>{drafting ? 'Cancel' : 'Draft with AI'}</button>
           </>
         }

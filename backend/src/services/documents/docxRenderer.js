@@ -190,6 +190,25 @@ function bodyForSpeech(content) {
   return out;
 }
 
+function genericTable(t) {
+  const cols = t.columns || [];
+  const widthEach = Math.floor(9000 / Math.max(cols.length, 1));
+  const header = new TableRow({
+    tableHeader: true,
+    children: cols.map((h) => new TableCell({
+      width: { size: widthEach, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text: String(h), bold: true, size: 16 })] })],
+    })),
+  });
+  const body = (t.rows || []).map((r) => new TableRow({
+    children: cols.map((_, i) => new TableCell({
+      width: { size: widthEach, type: WidthType.DXA },
+      children: [new Paragraph({ children: [new TextRun({ text: String(r[i] == null ? '' : r[i]), size: 16 })] })],
+    })),
+  }));
+  return new Table({ columnWidths: cols.map(() => widthEach), width: { size: 9000, type: WidthType.DXA }, rows: [header, ...body] });
+}
+
 function bodyGeneric(content) {
   const out = [];
   if (content.title) out.push(new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun({ text: content.title, bold: true })] }));
@@ -206,6 +225,11 @@ function bodyGeneric(content) {
     content.recommendations.forEach((r, i) => out.push(p(`${i + 1}. ${r}`)));
   }
   if (!content.title && content.body) out.push(p(content.body));
+  (content.tables || []).forEach((t) => {
+    if (t.title) out.push(new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun({ text: t.title, bold: true })] }));
+    out.push(genericTable(t));
+    out.push(new Paragraph({ children: [] }));
+  });
   return out;
 }
 

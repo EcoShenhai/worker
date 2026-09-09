@@ -3,12 +3,14 @@ const router = require('express').Router();
 const c = require('../controllers/documentController');
 const { authenticate } = require('../middleware/auth');
 const { requireRole } = require('../middleware/rbac');
+const { uploadDoc } = require('../middleware/upload');
 
 router.use(authenticate);
 
 router.get('/', c.list);
 router.post('/', requireRole('officer'), c.create);
 router.post('/draft', requireRole('officer'), c.draft);
+router.post('/from-spreadsheet', requireRole('officer'), uploadDoc.single('file'), c.generateFromSpreadsheet);
 router.get('/:id', c.get);
 router.put('/:id', requireRole('officer'), c.update);
 router.delete('/:id', requireRole('admin'), c.remove);

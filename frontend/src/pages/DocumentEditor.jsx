@@ -182,7 +182,7 @@ function DocPreview({ doc }) {
   const wrap = { whiteSpace: 'pre-wrap' };
   const has = (k) => c[k] !== undefined && c[k] !== null && c[k] !== '';
   const known = ['title','heading','to','from','through','date','recipient_block','salutation','subject',
-    'executive_summary','preamble','body','paragraphs','sections','action_matrix','recommendations','closing','signoff','signature'];
+    'executive_summary','preamble','body','paragraphs','sections','action_matrix','recommendations','closing','signoff','signature','tables'];
   const anyKnown = known.some((k) => Array.isArray(c[k]) ? c[k].length : has(k));
   return (
     <div className="doc-preview">
@@ -237,6 +237,20 @@ function DocPreview({ doc }) {
       {Array.isArray(c.recommendations) && c.recommendations.length > 0 && (
         <><h3>Recommendations</h3><ol>{c.recommendations.map((r, i) => <li key={i}>{r}</li>)}</ol></>
       )}
+
+      {Array.isArray(c.tables) && c.tables.map((t, ti) => (
+        <div key={ti} style={{ marginTop: '1rem' }}>
+          {t.title && <h3>{t.title}</h3>}
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{ fontFamily: 'var(--sans)', fontSize: '0.82rem' }}>
+              {Array.isArray(t.columns) && <thead><tr>{t.columns.map((h, i) => <th key={i}>{h}</th>)}</tr></thead>}
+              <tbody>
+                {(t.rows || []).map((r, ri) => (<tr key={ri}>{(t.columns || r).map((_, ci) => <td key={ci}>{String(r[ci] == null ? '' : r[ci])}</td>)}</tr>))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      ))}
 
       {has('closing') && <p style={{ marginTop: '1.5rem', ...wrap }}>{c.closing}</p>}
       {has('signoff') && <p style={{ marginTop: '1rem', ...wrap }}>{c.signoff}</p>}
