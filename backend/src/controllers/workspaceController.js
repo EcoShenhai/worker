@@ -5,6 +5,7 @@ const asyncHandler = require('../utils/asyncHandler');
 const ApiError = require('../utils/apiError');
 const AIService = require('../services/ai/AIService');
 const audit = require('../services/audit/auditService');
+const { scopeWhere, owns } = require('../utils/tenancy');
 
 /**
  * The "AI workspace" command surface. Natural-language instructions run against
@@ -20,7 +21,7 @@ const command = asyncHandler(async (req, res) => {
   let context = '';
   if (sessionId) {
     const session = await WorkspaceSession.findByPk(sessionId, { include: [{ model: Document, as: 'documents' }] });
-    if (session) {
+    if (owns(req, session)) {
       context = `Session: ${session.title}\nDocuments:\n` +
         (session.documents || []).map((d) => `- [${d.type}] ${d.title}: ${JSON.stringify(d.content).slice(0, 2000)}`).join('\n');
     }
@@ -37,7 +38,7 @@ const command = asyncHandler(async (req, res) => {
 // GET /workspace/outstanding-actions  -> scans minutes documents for open action items
 const outstandingActions = asyncHandler(async (req, res) => {
   const docs = await Document.findAll({
-    where: { type: { [Op.in]: ['minutes', 'action_matrix'] } },
+    where: scopeWhere(req, { type: { [Op.in]: ['minutes', 'action_matrix'] } }),
     order: [['createdAt', 'DESC']],
     limit: 100,
   });
@@ -55,12 +56,12 @@ const search = asyncHandler(async (req, res) => {
   if (!q) throw ApiError.badRequest('q is required');
   const like = { [Op.iLike]: `%${q}%` };
   const documents = await Document.findAll({
-    where: { [Op.or]: [{ title: like }, { referenceNumber: like }] },
+    where: scopeWhere(req, { [Op.or]: [{ title: like }, { referenceNumber: like }] }),
     limit: 50,
     order: [['createdAt', 'DESC']],
   });
   const knowledge = await KnowledgeDocument.findAll({
-    where: { [Op.or]: [{ title: like }, { extractedText: like }] },
+    where: scopeWhere(req, { [Op.or]: [{ title: like }, { extractedText: like }] }),
     limit: 50,
     order: [['createdAt', 'DESC']],
     attributes: { exclude: ['extractedText'] },

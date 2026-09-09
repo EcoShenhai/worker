@@ -2,7 +2,7 @@
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 const config = require('../config');
-const { User, RefreshToken } = require('../models');
+const { User, RefreshToken, Tenant } = require('../models');
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
 const audit = require('../services/audit/auditService');
@@ -41,9 +41,13 @@ const register = asyncHandler(async (req, res) => {
   const normEmail = String(email).trim().toLowerCase();
   const existing = await User.findOne({ where: { email: normEmail } });
   if (existing) throw ApiError.conflict('An account with this email already exists');
-  const user = User.build({ name: String(name).trim(), email: normEmail, role: 'officer', status: 'active' });
+  const user = User.build({ name: String(name).trim(), email: normEmail, role: 'admin', status: 'active' });
   await user.setPassword(String(password));
   user.emailVerified = false;
+  await user.save();
+  // Every self-registration starts a brand-new tenant, owned by this user.
+  const tenant = await Tenant.create({ name: `${String(name).trim()} (Workspace)`, ownerId: user.id });
+  user.tenantId = tenant.id;
   await user.save();
   await codeService.issueCode({ userId: user.id, email: user.email, name: user.name, purpose: 'verify_email' });
   await audit.record(req, 'auth.register', { resourceType: 'user', resourceId: user.id });

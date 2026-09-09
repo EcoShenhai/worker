@@ -13,6 +13,7 @@ const { generateReference } = require('../utils/refNumber');
 const fs = require('fs/promises');
 const path = require('path');
 const { analyzeSpreadsheet, summaryText, buildTables } = require('../services/extract/spreadsheet');
+const { scopeWhere, stamp, owns } = require('../utils/tenancy');
 
 const VALID_TYPES = [
   'minutes', 'memo', 'letter', 'report', 'policy_brief',
@@ -25,7 +26,7 @@ const list = asyncHandler(async (req, res) => {
   if (req.query.status) where.status = req.query.status;
   if (req.query.sessionId) where.sessionId = req.query.sessionId;
   const documents = await Document.findAll({
-    where,
+    where: scopeWhere(req, where),
     order: [['createdAt', 'DESC']],
     limit: Math.min(parseInt(req.query.limit || '100', 10), 300),
   });
@@ -36,7 +37,7 @@ const get = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id, {
     include: [{ model: DocumentApproval, as: 'approvals' }],
   });
-  if (!document) throw ApiError.notFound('Document not found');
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
   res.json({ document });
 });
 
@@ -54,6 +55,7 @@ const create = asyncHandler(async (req, res) => {
     sessionId: sessionId || null,
     referenceNumber: generateReference(type),
     authorId: req.user.id,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'document.create', { resourceType: 'document', resourceId: document.id, metadata: { type } });
   res.status(201).json({ document });
@@ -61,7 +63,7 @@ const create = asyncHandler(async (req, res) => {
 
 const update = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
-  if (!document) throw ApiError.notFound('Document not found');
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
   if (document.status === 'final') throw ApiError.conflict('Final documents cannot be edited');
   ['title', 'content', 'classification', 'department', 'recipient'].forEach((f) => {
     if (req.body[f] !== undefined) document[f] = req.body[f];
@@ -74,7 +76,7 @@ const update = asyncHandler(async (req, res) => {
 
 const remove = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
-  if (!document) throw ApiError.notFound('Document not found');
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
   await document.destroy();
   await audit.record(req, 'document.delete', { resourceType: 'document', resourceId: req.params.id });
   res.json({ ok: true });
@@ -83,7 +85,7 @@ const remove = asyncHandler(async (req, res) => {
 // POST /sessions/:sessionId/minutes  -> multi-pass AI minutes from the transcript
 const generateMinutes = asyncHandler(async (req, res) => {
   const session = await WorkspaceSession.findByPk(req.params.sessionId);
-  if (!session) throw ApiError.notFound('Session not found');
+  if (!owns(req, session)) throw ApiError.notFound('Session not found');
 
   const recs = await Recording.findAll({
     where: { sessionId: session.id, includeInMinutes: true },
@@ -114,6 +116,7 @@ const generateMinutes = asyncHandler(async (req, res) => {
     referenceNumber: generateReference('minutes'),
     aiAssisted: true,
     authorId: req.user.id,
+    ...stamp(req, {}),
   });
 
   await audit.record(req, 'document.generate_minutes', {
@@ -147,6 +150,7 @@ const draft = asyncHandler(async (req, res) => {
     referenceNumber: generateReference(type),
     aiAssisted: true,
     authorId: req.user.id,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'document.draft', { resourceType: 'document', resourceId: document.id, metadata: { type } });
   res.status(201).json({ document });
@@ -176,7 +180,7 @@ function shapeForType(type) {
 // --- Approval workflow ------------------------------------------------------
 async function transition(req, res, action, toStatus, allowedFrom) {
   const document = await Document.findByPk(req.params.id);
-  if (!document) throw ApiError.notFound('Document not found');
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
   if (allowedFrom && !allowedFrom.includes(document.status)) {
     throw ApiError.conflict(`Cannot ${action} a document in status '${document.status}'`);
   }
@@ -203,7 +207,7 @@ const finalize = asyncHandler((req, res) => transition(req, res, 'finalized', 'f
 // POST /documents/:id/export  -> render DOCX, store, return download key
 const exportDocx = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
-  if (!document) throw ApiError.notFound('Document not found');
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
   const buffer = await docxRenderer.render(document);
   const key = storage.datedKey('documents', '.docx');
   await storage.saveBuffer(buffer, key);
@@ -270,6 +274,7 @@ const generateFromSpreadsheet = asyncHandler(async (req, res) => {
     referenceNumber: generateReference('report'),
     aiAssisted: true,
     authorId: req.user.id,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'document.from_spreadsheet', { resourceType: 'document', resourceId: document.id, metadata: { rows: analysis.rowCount, sourceKey: key } });
   res.status(201).json({ document });
@@ -277,7 +282,7 @@ const generateFromSpreadsheet = asyncHandler(async (req, res) => {
 
 const exportPptx = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
-  if (!document) throw ApiError.notFound('Document not found');
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
   const buffer = await pptxRenderer.render(document);
   const key = storage.datedKey('documents', '.pptx');
   await storage.saveBuffer(buffer, key);
@@ -289,7 +294,7 @@ const exportPptx = asyncHandler(async (req, res) => {
 
 const exportXlsx = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
-  if (!document) throw ApiError.notFound('Document not found');
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
   const buffer = await xlsxRenderer.render(document);
   const key = storage.datedKey('documents', '.xlsx');
   await storage.saveBuffer(buffer, key);

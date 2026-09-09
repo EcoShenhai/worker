@@ -9,11 +9,20 @@ const storage = require('../services/storage/storageService');
 const STTService = require('../services/stt/STTService');
 const audit = require('../services/audit/auditService');
 const logger = require('../utils/logger');
+const { owns } = require('../utils/tenancy');
+
+// Load a recording and confirm the caller's tenant owns its session.
+async function recordingInTenant(req, id) {
+  const recording = await Recording.findByPk(id, { include: [{ model: WorkspaceSession, as: 'session' }] });
+  if (!recording) return null;
+  if (!owns(req, recording.session)) return null;
+  return recording;
+}
 
 // POST /sessions/:sessionId/recordings  (multipart: file)
 const upload = asyncHandler(async (req, res) => {
   const session = await WorkspaceSession.findByPk(req.params.sessionId);
-  if (!session) throw ApiError.notFound('Session not found');
+  if (!owns(req, session)) throw ApiError.notFound('Session not found');
   if (!req.file) throw ApiError.badRequest('Audio file is required (field name: file)');
 
   const ext = path.extname(req.file.originalname || '') || '.webm';
@@ -43,7 +52,7 @@ const upload = asyncHandler(async (req, res) => {
 
 // POST /recordings/:id/transcribe  (synchronous; for long files move to a job queue)
 const transcribe = asyncHandler(async (req, res) => {
-  const recording = await Recording.findByPk(req.params.id);
+  const recording = await recordingInTenant(req, req.params.id);
   if (!recording) throw ApiError.notFound('Recording not found');
   if (recording.status === 'transcribing') throw ApiError.conflict('Already transcribing');
 
@@ -107,6 +116,8 @@ const transcribe = asyncHandler(async (req, res) => {
 
 // GET /recordings/:id/transcript
 const getTranscript = asyncHandler(async (req, res) => {
+  const rec = await recordingInTenant(req, req.params.id);
+  if (!rec) throw ApiError.notFound('Transcript not found');
   const transcript = await Transcript.findOne({
     where: { recordingId: req.params.id },
     include: [{ model: TranscriptSegment, as: 'segments' }],
@@ -118,8 +129,8 @@ const getTranscript = asyncHandler(async (req, res) => {
 
 // PUT /transcripts/:id  (officer verification / correction)
 const verifyTranscript = asyncHandler(async (req, res) => {
-  const transcript = await Transcript.findByPk(req.params.id);
-  if (!transcript) throw ApiError.notFound('Transcript not found');
+  const transcript = await Transcript.findByPk(req.params.id, { include: [{ model: WorkspaceSession, as: 'session' }] });
+  if (!transcript || !owns(req, transcript.session)) throw ApiError.notFound('Transcript not found');
   if (req.body.editedText !== undefined) transcript.editedText = req.body.editedText;
   if (req.body.verified !== undefined) {
     transcript.verified = !!req.body.verified;
@@ -136,7 +147,7 @@ const verifyTranscript = asyncHandler(async (req, res) => {
 
 // GET /recordings/:id/audio  (stream, supports Range for seeking)
 const audio = asyncHandler(async (req, res) => {
-  const recording = await Recording.findByPk(req.params.id);
+  const recording = await recordingInTenant(req, req.params.id);
   if (!recording) throw ApiError.notFound('Recording not found');
   const abs = await storage.readPath(recording.storageKey);
   let stat;
@@ -166,7 +177,7 @@ const audio = asyncHandler(async (req, res) => {
 
 // PATCH /recordings/:id/include  { includeInMinutes: boolean }
 const setInclude = asyncHandler(async (req, res) => {
-  const recording = await Recording.findByPk(req.params.id);
+  const recording = await recordingInTenant(req, req.params.id);
   if (!recording) throw ApiError.notFound('Recording not found');
   recording.includeInMinutes = !!req.body.includeInMinutes;
   await recording.save();

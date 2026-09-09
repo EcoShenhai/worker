@@ -6,6 +6,7 @@ const mpesa = require('../services/payments/mpesaService');
 const paypal = require('../services/payments/paypalService');
 const config = require('../config');
 const audit = require('../services/audit/auditService');
+const { scopeWhere, stamp } = require('../utils/tenancy');
 const logger = require('../utils/logger');
 
 // --- M-Pesa ---------------------------------------------------------------
@@ -23,6 +24,7 @@ const mpesaInitiate = asyncHandler(async (req, res) => {
     payerRef: phone,
     metadata: { merchantRequestId: resp.MerchantRequestID || null },
     initiatedById: req.user ? req.user.id : null,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'payment.mpesa.initiate', { resourceType: 'payment', resourceId: payment.id });
   res.status(201).json({ payment, providerResponse: resp });
@@ -64,6 +66,7 @@ const paypalCreate = asyncHandler(async (req, res) => {
     status: 'pending',
     providerRef: order.id,
     initiatedById: req.user ? req.user.id : null,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'payment.paypal.create', { resourceType: 'payment', resourceId: payment.id });
   res.status(201).json({ payment, approveUrl: order.approveUrl });
@@ -86,7 +89,7 @@ const paypalCapture = asyncHandler(async (req, res) => {
 });
 
 const list = asyncHandler(async (req, res) => {
-  const payments = await Payment.findAll({ order: [['createdAt', 'DESC']], limit: 200 });
+  const payments = await Payment.findAll({ where: scopeWhere(req), order: [['createdAt', 'DESC']], limit: 200 });
   res.json({ payments });
 });
 

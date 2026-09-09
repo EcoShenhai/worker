@@ -3,11 +3,11 @@ const { WorkspaceSession, Recording, Transcript, Document } = require('../models
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
 const audit = require('../services/audit/auditService');
+const { scopeWhere, stamp, owns } = require('../utils/tenancy');
 
 const list = asyncHandler(async (req, res) => {
-  const where = req.user.role === 'viewer' ? {} : {};
   const sessions = await WorkspaceSession.findAll({
-    where,
+    where: scopeWhere(req),
     order: [['createdAt', 'DESC']],
     limit: Math.min(parseInt(req.query.limit || '50', 10), 200),
   });
@@ -28,6 +28,7 @@ const create = asyncHandler(async (req, res) => {
     agenda: Array.isArray(agenda) ? agenda : [],
     notes,
     ownerId: req.user.id,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'session.create', { resourceType: 'session', resourceId: session.id });
   res.status(201).json({ session });
@@ -40,13 +41,13 @@ const get = asyncHandler(async (req, res) => {
       { model: Document, as: 'documents' },
     ],
   });
-  if (!session) throw ApiError.notFound('Session not found');
+  if (!owns(req, session)) throw ApiError.notFound('Session not found');
   res.json({ session });
 });
 
 const update = asyncHandler(async (req, res) => {
   const session = await WorkspaceSession.findByPk(req.params.id);
-  if (!session) throw ApiError.notFound('Session not found');
+  if (!owns(req, session)) throw ApiError.notFound('Session not found');
   const fields = ['title', 'kind', 'department', 'classification', 'occurredOn', 'location', 'attendees', 'agenda', 'notes', 'status'];
   fields.forEach((f) => {
     if (req.body[f] !== undefined) session[f] = req.body[f];
@@ -58,7 +59,7 @@ const update = asyncHandler(async (req, res) => {
 
 const remove = asyncHandler(async (req, res) => {
   const session = await WorkspaceSession.findByPk(req.params.id);
-  if (!session) throw ApiError.notFound('Session not found');
+  if (!owns(req, session)) throw ApiError.notFound('Session not found');
   await session.destroy();
   await audit.record(req, 'session.delete', { resourceType: 'session', resourceId: req.params.id });
   res.json({ ok: true });

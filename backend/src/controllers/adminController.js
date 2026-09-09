@@ -4,9 +4,10 @@ const asyncHandler = require('../utils/asyncHandler');
 const ApiError = require('../utils/apiError');
 const audit = require('../services/audit/auditService');
 const crypto = require('crypto');
+const { scopeWhere, stamp, owns, isSuper } = require('../utils/tenancy');
 
 const listUsers = asyncHandler(async (req, res) => {
-  const users = await User.findAll({ order: [['createdAt', 'DESC']] });
+  const users = await User.findAll({ where: scopeWhere(req), order: [['createdAt', 'DESC']] });
   res.json({ users });
 });
 
@@ -17,7 +18,8 @@ const createUser = asyncHandler(async (req, res) => {
   const exists = await User.findOne({ where: { email: String(email).toLowerCase() } });
   if (exists) throw ApiError.conflict('A user with that email already exists');
 
-  const user = User.build({ email, name, role: role || 'officer', department: department || null, requiresPasswordChange: true });
+  if (role === 'admin' && !isSuper(req)) throw ApiError.forbidden('Only the platform administrator can create tenant admins');
+  const user = User.build({ email, name, role: role || 'officer', department: department || null, requiresPasswordChange: true, ...stamp(req, {}) });
   // If no password supplied, generate a random one; admin must communicate it, user changes on first login.
   const initial = password || crypto.randomBytes(9).toString('base64url');
   await user.setPassword(initial);
@@ -28,7 +30,7 @@ const createUser = asyncHandler(async (req, res) => {
 
 const updateUser = asyncHandler(async (req, res) => {
   const user = await User.findByPk(req.params.id);
-  if (!user) throw ApiError.notFound('User not found');
+  if (!owns(req, user)) throw ApiError.notFound('User not found');
   if (user.role === 'superadmin' && req.user.role !== 'superadmin') throw ApiError.forbidden();
   ['name', 'role', 'department', 'status'].forEach((f) => {
     if (req.body[f] !== undefined) user[f] = req.body[f];
@@ -41,7 +43,7 @@ const updateUser = asyncHandler(async (req, res) => {
 
 const deleteUser = asyncHandler(async (req, res) => {
   const user = await User.findByPk(req.params.id);
-  if (!user) throw ApiError.notFound('User not found');
+  if (!owns(req, user)) throw ApiError.notFound('User not found');
   if (user.role === 'superadmin') throw ApiError.forbidden('Cannot delete the superadmin');
   await user.destroy();
   await audit.record(req, 'admin.user_delete', { resourceType: 'user', resourceId: req.params.id });
@@ -49,7 +51,13 @@ const deleteUser = asyncHandler(async (req, res) => {
 });
 
 const listAudit = asyncHandler(async (req, res) => {
+  const where = {};
+  if (!isSuper(req)) {
+    const members = await User.findAll({ where: { tenantId: req.user.tenantId }, attributes: ['id'] });
+    where.userId = members.map((m) => m.id);
+  }
   const logs = await AuditLog.findAll({
+    where,
     order: [['createdAt', 'DESC']],
     limit: Math.min(parseInt(req.query.limit || '200', 10), 1000),
   });

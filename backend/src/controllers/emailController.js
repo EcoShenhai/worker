@@ -6,18 +6,19 @@ const audit = require('../services/audit/auditService');
 const AIService = require('../services/ai/AIService');
 const emailService = require('../services/email/emailService');
 const { generateReference } = require('../utils/refNumber');
+const { scopeWhere, stamp, owns } = require('../utils/tenancy');
 
 const list = asyncHandler(async (req, res) => {
   const where = {};
   if (req.query.direction) where.direction = req.query.direction;
   if (req.query.status) where.status = req.query.status;
-  const emails = await Email.findAll({ where, order: [['createdAt', 'DESC']], limit: 200 });
+  const emails = await Email.findAll({ where: scopeWhere(req, where), order: [['createdAt', 'DESC']], limit: 200 });
   res.json({ emails });
 });
 
 const get = asyncHandler(async (req, res) => {
   const email = await Email.findByPk(req.params.id);
-  if (!email) throw ApiError.notFound('Email not found');
+  if (!owns(req, email)) throw ApiError.notFound('Email not found');
   res.json({ email });
 });
 
@@ -35,6 +36,7 @@ const createDraft = asyncHandler(async (req, res) => {
     status: 'draft',
     sessionId: sessionId || null,
     ownerId: req.user.id,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'email.draft', { resourceType: 'email', resourceId: email.id });
   res.status(201).json({ email });
@@ -57,6 +59,7 @@ const aiDraft = asyncHandler(async (req, res) => {
     status: 'draft',
     aiAssisted: true,
     ownerId: req.user.id,
+    ...stamp(req, {}),
   });
   await audit.record(req, 'email.ai_draft', { resourceType: 'email', resourceId: email.id });
   res.status(201).json({ email });
@@ -64,7 +67,7 @@ const aiDraft = asyncHandler(async (req, res) => {
 
 const updateDraft = asyncHandler(async (req, res) => {
   const email = await Email.findByPk(req.params.id);
-  if (!email) throw ApiError.notFound('Email not found');
+  if (!owns(req, email)) throw ApiError.notFound('Email not found');
   if (email.status === 'sent') throw ApiError.conflict('Sent emails cannot be edited');
   ['toAddress', 'cc', 'subject', 'body'].forEach((f) => {
     const k = f === 'toAddress' ? 'to' : f;
@@ -77,7 +80,7 @@ const updateDraft = asyncHandler(async (req, res) => {
 // Explicit human send. Records full audit trail.
 const send = asyncHandler(async (req, res) => {
   const email = await Email.findByPk(req.params.id);
-  if (!email) throw ApiError.notFound('Email not found');
+  if (!owns(req, email)) throw ApiError.notFound('Email not found');
   if (email.status === 'sent') throw ApiError.conflict('Already sent');
 
   const finalBody = req.body.finalBody || email.body;
