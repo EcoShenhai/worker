@@ -23,6 +23,7 @@ module.exports = (sequelize) => {
         defaultValue: 'pending',
       },
       error: { type: DataTypes.TEXT, allowNull: true },
+      includeInMinutes: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: true },
     },
     { sequelize, modelName: 'Recording', tableName: 'recordings' }
   );

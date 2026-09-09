@@ -164,4 +164,18 @@ const audio = asyncHandler(async (req, res) => {
   }
 });
 
-module.exports = { upload, transcribe, getTranscript, verifyTranscript, audio };
+// PATCH /recordings/:id/include  { includeInMinutes: boolean }
+const setInclude = asyncHandler(async (req, res) => {
+  const recording = await Recording.findByPk(req.params.id);
+  if (!recording) throw ApiError.notFound('Recording not found');
+  recording.includeInMinutes = !!req.body.includeInMinutes;
+  await recording.save();
+  await audit.record(req, 'recording.include_toggle', {
+    resourceType: 'recording',
+    resourceId: recording.id,
+    metadata: { includeInMinutes: recording.includeInMinutes },
+  });
+  res.json({ recording });
+});
+
+module.exports = { upload, transcribe, getTranscript, verifyTranscript, audio, setInclude };

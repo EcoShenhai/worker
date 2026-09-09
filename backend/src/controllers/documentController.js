@@ -1,5 +1,5 @@
 'use strict';
-const { Document, DocumentApproval, WorkspaceSession, Transcript, TranscriptSegment } = require('../models');
+const { Document, DocumentApproval, WorkspaceSession, Recording, Transcript, TranscriptSegment } = require('../models');
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
 const audit = require('../services/audit/auditService');
@@ -80,17 +80,16 @@ const generateMinutes = asyncHandler(async (req, res) => {
   const session = await WorkspaceSession.findByPk(req.params.sessionId);
   if (!session) throw ApiError.notFound('Session not found');
 
-  const transcripts = await Transcript.findAll({
-    where: { sessionId: session.id },
+  const recs = await Recording.findAll({
+    where: { sessionId: session.id, includeInMinutes: true },
+    include: [{ model: Transcript, as: 'transcript' }],
     order: [['createdAt', 'ASC']],
   });
-  if (!transcripts.length) throw ApiError.badRequest('No transcript found for this session. Transcribe a recording first.');
-
-  const sourceText = transcripts
-    .map((t) => (t.editedText || t.rawText || '').trim())
+  const sourceText = recs
+    .map((r) => r.transcript && (r.transcript.editedText || r.transcript.rawText || '').trim())
     .filter(Boolean)
     .join('\n\n');
-  if (!sourceText) throw ApiError.badRequest('Transcript is empty');
+  if (!sourceText) throw ApiError.badRequest('No included transcript found. Transcribe a clip and make sure at least one is set to be included in the minutes.');
 
   const meta = {
     title: session.title,

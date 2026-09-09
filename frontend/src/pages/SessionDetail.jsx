@@ -93,6 +93,15 @@ export default function SessionDetail() {
     }
   };
 
+  const toggleInclude = async (recId, val) => {
+    try {
+      await api.patch(`/recordings/${recId}/include`, { includeInMinutes: val });
+      load();
+    } catch (e) {
+      setMsg({ type: 'err', text: e.response?.data?.message || 'Could not update.' });
+    }
+  };
+
   const generateMinutes = async () => {
     setBusy('minutes');
     setMsg({ type: 'warn', text: 'Drafting minutes from the transcript…' });
@@ -183,13 +192,17 @@ export default function SessionDetail() {
           ) : (
             <div className="stack">
               {recordings.map((r) => (
-                <div key={r.id} style={{ border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '1rem' }}>
+                <div key={r.id} style={{ border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '1rem', opacity: r.includeInMinutes === false ? 0.6 : 1 }}>
                   <div className="between" style={{ marginBottom: '0.6rem' }}>
                     <div>
                       <div style={{ fontWeight: 600 }}>{r.originalFilename || r.source}</div>
                       <div className="muted" style={{ fontSize: '0.76rem' }}>{r.durationSeconds ? `${r.durationSeconds}s · ` : ''}{r.mimeType}</div>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                      <label style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', fontSize: '0.8rem', margin: 0, fontWeight: 500, color: 'var(--ink-soft)', cursor: 'pointer' }} title="Include this clip when generating minutes">
+                        <input type="checkbox" style={{ width: 'auto' }} checked={r.includeInMinutes !== false} onChange={(e) => toggleInclude(r.id, e.target.checked)} />
+                        In minutes
+                      </label>
                       <StatusBadge value={r.status} />
                       {r.status !== 'transcribed' && (
                         <button className="btn secondary sm" onClick={() => transcribe(r.id)} disabled={busy === 'tx-' + r.id}>
