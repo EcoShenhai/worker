@@ -48,7 +48,7 @@ function addBrandedFooter(slide, department) {
   );
 }
 
-async function render(document) {
+async function render(document, branding = {}) {
   const c = document.content || {};
   const pptx = new PptxGenJS();
   pptx.defineLayout({ name: 'W', width: 10, height: 5.63 });
@@ -58,9 +58,15 @@ async function render(document) {
   // Title slide
   const t1 = pptx.addSlide();
   t1.background = { color: '0C1F19' };
-  t1.addText('REPUBLIC OF KENYA', { x: 0.5, y: 1.4, w: 9, h: 0.4, color: 'BFE9D5', fontSize: 14, align: 'center' });
-  t1.addText(c.title || document.title || 'Document', { x: 0.5, y: 1.9, w: 9, h: 1.2, color: 'FFFFFF', fontSize: 30, bold: true, align: 'center' });
-  if (dept) t1.addText(dept, { x: 0.5, y: 3.1, w: 9, h: 0.4, color: 'BFE9D5', fontSize: 14, align: 'center' });
+  if (branding && branding.logoBuffer) {
+    try {
+      const mime = (branding.logoType === 'jpg') ? 'image/jpeg' : 'image/' + (branding.logoType || 'png');
+      t1.addImage({ data: `data:${mime};base64,${branding.logoBuffer.toString('base64')}`, x: 4.3, y: 0.5, w: 1.4, h: 1.4 });
+    } catch (e) { /* ignore */ }
+  }
+  t1.addText((branding && branding.line1) || 'REPUBLIC OF KENYA', { x: 0.5, y: 2.0, w: 9, h: 0.4, color: 'BFE9D5', fontSize: 14, align: 'center' });
+  t1.addText(c.title || document.title || 'Document', { x: 0.5, y: 2.45, w: 9, h: 1.2, color: 'FFFFFF', fontSize: 30, bold: true, align: 'center' });
+  if (dept) t1.addText(dept, { x: 0.5, y: 3.7, w: 9, h: 0.4, color: 'BFE9D5', fontSize: 14, align: 'center' });
   if (document.referenceNumber) t1.addText(document.referenceNumber, { x: 0.5, y: 4.6, w: 9, h: 0.3, color: '8FB3A4', fontSize: 11, align: 'center' });
 
   const heading = (slide, text) => slide.addText(text, { x: 0.4, y: 0.3, w: 9.2, h: 0.6, color: GREEN, fontSize: 22, bold: true });

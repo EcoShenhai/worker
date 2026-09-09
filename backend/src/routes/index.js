@@ -11,5 +11,6 @@ router.use('/workspace', require('./workspaceRoutes'));
 router.use('/knowledge', require('./knowledgeRoutes'));
 router.use('/payments', require('./paymentRoutes'));
 router.use('/admin', require('./adminRoutes'));
+router.use('/tenant', require('./tenantRoutes'));
 
 module.exports = router;

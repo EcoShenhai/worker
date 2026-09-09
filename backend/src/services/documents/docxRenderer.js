@@ -21,39 +21,39 @@ const CLASS_LABEL = {
   restricted: 'RESTRICTED',
 };
 
-function logoRun() {
+function imgType(key) {
+  const e = String(key || '').toLowerCase();
+  if (e.endsWith('.jpg') || e.endsWith('.jpeg')) return 'jpg';
+  if (e.endsWith('.gif')) return 'gif';
+  if (e.endsWith('.bmp')) return 'bmp';
+  return 'png';
+}
+
+function logoRun(branding) {
+  if (branding && branding.logoBuffer) {
+    try {
+      return new ImageRun({ type: branding.logoType || 'png', data: branding.logoBuffer, transformation: { width: 70, height: 70 } });
+    } catch (e) { /* fall through */ }
+  }
   if (!fs.existsSync(LOGO_PATH)) return null;
   try {
-    return new ImageRun({
-      type: 'png',
-      data: fs.readFileSync(LOGO_PATH),
-      transformation: { width: 70, height: 70 },
-    });
+    return new ImageRun({ type: 'png', data: fs.readFileSync(LOGO_PATH), transformation: { width: 70, height: 70 } });
   } catch (e) {
     return null;
   }
 }
 
-function buildHeader(doc) {
+function buildHeader(doc, branding = {}) {
   const children = [];
-  const logo = logoRun();
+  const logo = logoRun(branding);
   if (logo) children.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [logo] }));
+  const l1 = branding.line1 || 'REPUBLIC OF KENYA';
+  const l2 = branding.line2 || 'OFFICE OF THE PRESIDENT — PROVINCIAL ADMINISTRATION';
+  const l3 = branding.line3 !== undefined ? branding.line3 : (doc.department || '');
   children.push(
-    new Paragraph({
-      alignment: AlignmentType.CENTER,
-      children: [new TextRun({ text: 'REPUBLIC OF KENYA', bold: true, size: 24 })],
-    }),
-    new Paragraph({
-      alignment: AlignmentType.CENTER,
-      children: [
-        new TextRun({ text: 'OFFICE OF THE PRESIDENT — PROVINCIAL ADMINISTRATION', bold: true, size: 20 }),
-      ],
-    }),
-    new Paragraph({
-      alignment: AlignmentType.CENTER,
-      border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: '000000' } },
-      children: [new TextRun({ text: doc.department || '', size: 18 })],
-    })
+    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: l1, bold: true, size: 24 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: l2, bold: true, size: 20 })] }),
+    new Paragraph({ alignment: AlignmentType.CENTER, border: { bottom: { style: BorderStyle.SINGLE, size: 6, color: '000000' } }, children: [new TextRun({ text: l3, size: 18 })] })
   );
   return new Header({ children });
 }
@@ -244,16 +244,25 @@ function buildBody(doc) {
   }
 }
 
-async function render(doc) {
+function signatureBlock(branding) {
+  if (!branding || !branding.signatureBuffer) return [];
+  try {
+    return [
+      new Paragraph({ spacing: { before: 300 }, children: [new ImageRun({ type: branding.signatureType || 'png', data: branding.signatureBuffer, transformation: { width: 140, height: 60 } })] }),
+    ];
+  } catch (e) { return []; }
+}
+
+async function render(doc, branding = {}) {
   const document = new Document({
     creator: 'Worker — AI Administrative Workplace Agent',
     title: doc.title,
     sections: [
       {
         properties: { page: { margin: { top: 1440, bottom: 1440, left: 1440, right: 1440 } } },
-        headers: { default: buildHeader(doc) },
+        headers: { default: buildHeader(doc, branding) },
         footers: { default: buildFooter(doc) },
-        children: [...metaBlock(doc), ...buildBody(doc)],
+        children: [...metaBlock(doc), ...buildBody(doc), ...signatureBlock(branding)],
       },
     ],
   });

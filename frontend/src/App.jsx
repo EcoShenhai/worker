@@ -19,6 +19,7 @@ import Emails from './pages/Emails.jsx';
 import Knowledge from './pages/Knowledge.jsx';
 import Assistant from './pages/Assistant.jsx';
 import Actions from './pages/Actions.jsx';
+import TenantSettings from './pages/admin/TenantSettings.jsx';
 import Users from './pages/admin/Users.jsx';
 import Audit from './pages/admin/Audit.jsx';
 import Payments from './pages/admin/Payments.jsx';
@@ -53,6 +54,7 @@ export default function App() {
       <Route path="/assistant" element={P(<Assistant />)} />
       <Route path="/actions" element={P(<Actions />)} />
 
+      <Route path="/admin/tenant" element={P(<TenantSettings />)} />
       <Route path="/admin/users" element={P(<Users />)} />
       <Route path="/admin/audit" element={P(<Audit />)} />
       <Route path="/admin/payments" element={P(<Payments />)} />

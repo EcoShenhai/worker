@@ -1,5 +1,5 @@
 'use strict';
-const { Document, DocumentApproval, WorkspaceSession, Recording, Transcript, TranscriptSegment } = require('../models');
+const { Document, DocumentApproval, WorkspaceSession, Recording, Transcript, TranscriptSegment, Tenant } = require('../models');
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
 const audit = require('../services/audit/auditService');
@@ -205,10 +205,26 @@ const reject = asyncHandler((req, res) => transition(req, res, 'rejected', 'draf
 const finalize = asyncHandler((req, res) => transition(req, res, 'finalized', 'final', ['approved']));
 
 // POST /documents/:id/export  -> render DOCX, store, return download key
+async function brandingFor(document) {
+  const b = { line1: '', line2: '', line3: document.department || '' };
+  if (!document.tenantId) return b;
+  const tenant = await Tenant.findByPk(document.tenantId);
+  if (!tenant) return b;
+  b.line1 = tenant.letterheadLine1 || tenant.name || '';
+  b.line2 = tenant.letterheadLine2 || '';
+  b.line3 = tenant.letterheadLine3 || document.department || '';
+  const readImg = async (key) => { try { return await fs.readFile(await storage.readPath(key)); } catch (e) { return null; } };
+  const typeOf = (key) => { const e = String(key).toLowerCase(); return (e.endsWith('.jpg') || e.endsWith('.jpeg')) ? 'jpg' : 'png'; };
+  if (tenant.logoKey) { b.logoBuffer = await readImg(tenant.logoKey); b.logoType = typeOf(tenant.logoKey); }
+  if (tenant.signatureKey) { b.signatureBuffer = await readImg(tenant.signatureKey); b.signatureType = typeOf(tenant.signatureKey); }
+  return b;
+}
+
 const exportDocx = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
   if (!owns(req, document)) throw ApiError.notFound('Document not found');
-  const buffer = await docxRenderer.render(document);
+  const branding = await brandingFor(document);
+  const buffer = await docxRenderer.render(document, branding);
   const key = storage.datedKey('documents', '.docx');
   await storage.saveBuffer(buffer, key);
   document.renderedDocxKey = key;
@@ -283,7 +299,8 @@ const generateFromSpreadsheet = asyncHandler(async (req, res) => {
 const exportPptx = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
   if (!owns(req, document)) throw ApiError.notFound('Document not found');
-  const buffer = await pptxRenderer.render(document);
+  const branding = await brandingFor(document);
+  const buffer = await pptxRenderer.render(document, branding);
   const key = storage.datedKey('documents', '.pptx');
   await storage.saveBuffer(buffer, key);
   await audit.record(req, 'document.export_pptx', { resourceType: 'document', resourceId: document.id });
