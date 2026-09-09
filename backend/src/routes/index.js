@@ -12,5 +12,6 @@ router.use('/knowledge', require('./knowledgeRoutes'));
 router.use('/payments', require('./paymentRoutes'));
 router.use('/admin', require('./adminRoutes'));
 router.use('/tenant', require('./tenantRoutes'));
+router.use('/templates', require('./templateRoutes'));
 
 module.exports = router;

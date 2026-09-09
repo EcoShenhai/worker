@@ -16,6 +16,7 @@ export default function Documents() {
   const [form, setForm] = useState({ type: 'memo', title: '', brief: '', recipient: '', department: '' });
   const [templating, setTemplating] = useState(false);
   const [tplType, setTplType] = useState('all');
+  const [customTemplates, setCustomTemplates] = useState([]);
 
   const onSpreadsheet = async (e) => {
     const f = e.target.files?.[0];
@@ -55,7 +56,7 @@ export default function Documents() {
       setLoading(false);
     }
   };
-  useEffect(() => { load(); }, []);
+  useEffect(() => { load(); api.get('/templates').then(({ data }) => setCustomTemplates(data.templates || [])).catch(() => {}); }, []);
 
   const draft = async (e) => {
     e.preventDefault();
@@ -101,6 +102,24 @@ export default function Documents() {
           </div>
           <div className="card-body">
             <Notice type="err">{err}</Notice>
+            {customTemplates.filter((t) => tplType === 'all' || t.documentType === tplType).length > 0 && (
+              <>
+                <div className="muted" style={{ fontSize: '0.8rem', margin: '0 0 0.5rem' }}>Your organisation's templates</div>
+                <div className="grid cols-3" style={{ marginBottom: '1.2rem' }}>
+                  {customTemplates.filter((t) => tplType === 'all' || t.documentType === tplType).map((t) => (
+                    <div key={t.id} className="card" style={{ boxShadow: 'none' }}>
+                      <div className="card-body">
+                        <div style={{ fontWeight: 600 }}>{t.name}</div>
+                        <div className="badge green" style={{ margin: '0.3rem 0' }}>{t.documentType.replace(/_/g, ' ')}</div>
+                        <p className="muted" style={{ fontSize: '0.82rem', minHeight: 20 }}>Saved by your organisation</p>
+                        <button className="btn sm block" disabled={busy} onClick={() => createFromTemplate(t)}>Use this template</button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                <div className="muted" style={{ fontSize: '0.8rem', margin: '0 0 0.5rem' }}>General templates</div>
+              </>
+            )}
             <div className="grid cols-3">
               {TEMPLATES.filter((t) => tplType === 'all' || t.documentType === tplType).map((t) => (
                 <div key={t.id} className="card" style={{ boxShadow: 'none' }}>

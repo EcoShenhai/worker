@@ -63,6 +63,18 @@ export default function DocumentEditor() {
     }
   };
 
+  const saveAsTemplate = async () => {
+    const name = window.prompt('Template name', (doc.title || '') + ' template');
+    if (!name) return;
+    setBusy('tpl');
+    try {
+      await api.post('/templates', { name, documentType: doc.type, content: doc.content });
+      setMsg({ type: 'ok', text: 'Saved as a reusable template for your organisation.' });
+    } catch (e) {
+      setMsg({ type: 'err', text: e.response?.data?.message || 'Could not save template.' });
+    } finally { setBusy(''); }
+  };
+
   const exportAs = async (fmt) => {
     const paths = { docx: '/export', pptx: '/export-pptx', xlsx: '/export-xlsx' };
     setBusy('export-' + fmt);
@@ -102,6 +114,9 @@ export default function DocumentEditor() {
                 {busy === 'export-xlsx' ? <span className="spinner" /> : 'Export XLSX'}
               </button>
             ) : null}
+            <button className="btn ghost" onClick={saveAsTemplate} disabled={busy.startsWith('export') || busy === 'tpl'}>
+              {busy === 'tpl' ? <span className="spinner" /> : 'Save as template'}
+            </button>
             <Link className="btn ghost" to="/documents">Back</Link>
           </>
         }

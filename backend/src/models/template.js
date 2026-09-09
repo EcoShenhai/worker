@@ -12,6 +12,7 @@ module.exports = (sequelize) => {
       config: { type: DataTypes.JSONB, allowNull: false, defaultValue: {} },
       isDefault: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
       createdById: { type: DataTypes.UUID, allowNull: true },
+      tenantId: { type: DataTypes.UUID, allowNull: true },
     },
     { sequelize, modelName: 'Template', tableName: 'templates' }
   );

@@ -14,8 +14,19 @@ const KnowledgeDocument = require('./knowledgeDocument')(sequelize);
 const Payment = require('./payment')(sequelize);
 const AuditLog = require('./auditLog')(sequelize);
 const RefreshToken = require('./refreshToken')(sequelize);
+const Tenant = require('./tenant')(sequelize);
 
 // ---- Associations ----------------------------------------------------------
+
+// Tenancy
+Tenant.hasMany(User, { foreignKey: 'tenantId', as: 'members' });
+User.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+WorkspaceSession.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+Document.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+Email.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+KnowledgeDocument.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+Payment.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+Template.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
 
 // User ownership
 User.hasMany(WorkspaceSession, { foreignKey: 'ownerId', as: 'sessions' });
@@ -75,6 +86,7 @@ const db = {
   Payment,
   AuditLog,
   RefreshToken,
+  Tenant,
 };
 
 module.exports = db;
