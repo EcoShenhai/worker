@@ -6,6 +6,8 @@ const audit = require('../services/audit/auditService');
 const AIService = require('../services/ai/AIService');
 const documentAI = require('../services/documents/documentAI');
 const docxRenderer = require('../services/documents/docxRenderer');
+const pptxRenderer = require('../services/documents/pptxRenderer');
+const xlsxRenderer = require('../services/documents/xlsxRenderer');
 const storage = require('../services/storage/storageService');
 const { generateReference } = require('../utils/refNumber');
 const fs = require('fs/promises');
@@ -273,8 +275,32 @@ const generateFromSpreadsheet = asyncHandler(async (req, res) => {
   res.status(201).json({ document });
 });
 
+const exportPptx = asyncHandler(async (req, res) => {
+  const document = await Document.findByPk(req.params.id);
+  if (!document) throw ApiError.notFound('Document not found');
+  const buffer = await pptxRenderer.render(document);
+  const key = storage.datedKey('documents', '.pptx');
+  await storage.saveBuffer(buffer, key);
+  await audit.record(req, 'document.export_pptx', { resourceType: 'document', resourceId: document.id });
+  res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.presentationml.presentation');
+  res.setHeader('Content-Disposition', `attachment; filename="${(document.title || 'document').replace(/[^\w.-]+/g, '_')}.pptx"`);
+  res.send(buffer);
+});
+
+const exportXlsx = asyncHandler(async (req, res) => {
+  const document = await Document.findByPk(req.params.id);
+  if (!document) throw ApiError.notFound('Document not found');
+  const buffer = await xlsxRenderer.render(document);
+  const key = storage.datedKey('documents', '.xlsx');
+  await storage.saveBuffer(buffer, key);
+  await audit.record(req, 'document.export_xlsx', { resourceType: 'document', resourceId: document.id });
+  res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+  res.setHeader('Content-Disposition', `attachment; filename="${(document.title || 'document').replace(/[^\w.-]+/g, '_')}.xlsx"`);
+  res.send(buffer);
+});
+
 module.exports = {
   list, get, create, update, remove,
   generateMinutes, draft,
   submit, approve, reject, finalize,
-  exportDocx, generateFromSpreadsheet };
+  exportDocx, generateFromSpreadsheet, exportPptx, exportXlsx };

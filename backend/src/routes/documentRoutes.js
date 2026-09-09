@@ -20,5 +20,7 @@ router.post('/:id/approve', requireRole('admin'), c.approve);
 router.post('/:id/reject', requireRole('admin'), c.reject);
 router.post('/:id/finalize', requireRole('admin'), c.finalize);
 router.post('/:id/export', c.exportDocx);
+router.post('/:id/export-pptx', c.exportPptx);
+router.post('/:id/export-xlsx', c.exportXlsx);
 
 module.exports = router;

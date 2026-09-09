@@ -63,14 +63,15 @@ export default function DocumentEditor() {
     }
   };
 
-  const exportDocx = async () => {
-    setBusy('export');
+  const exportAs = async (fmt) => {
+    const paths = { docx: '/export', pptx: '/export-pptx', xlsx: '/export-xlsx' };
+    setBusy('export-' + fmt);
     try {
-      const res = await api.post(`/documents/${id}/export`, {}, { responseType: 'blob' });
+      const res = await api.post(`/documents/${id}${paths[fmt]}`, {}, { responseType: 'blob' });
       const url = URL.createObjectURL(res.data);
       const a = document.createElement('a');
       a.href = url;
-      a.download = `${(doc.title || 'document').replace(/[^a-z0-9]+/gi, '_')}.docx`;
+      a.download = `${(doc.title || 'document').replace(/[^a-z0-9]+/gi, '_')}.${fmt}`;
       a.click();
       URL.revokeObjectURL(url);
     } catch {
@@ -90,9 +91,17 @@ export default function DocumentEditor() {
         subtitle={`${doc.type.replace(/_/g, ' ')} · v${doc.version}${doc.referenceNumber ? ' · ' + doc.referenceNumber : ''}`}
         actions={
           <>
-            <button className="btn secondary" onClick={exportDocx} disabled={busy === 'export'}>
-              {busy === 'export' ? <span className="spinner" /> : 'Export DOCX'}
+            <button className="btn secondary" onClick={() => exportAs('docx')} disabled={busy.startsWith('export')}>
+              {busy === 'export-docx' ? <span className="spinner" /> : 'Export DOCX'}
             </button>
+            <button className="btn secondary" onClick={() => exportAs('pptx')} disabled={busy.startsWith('export')}>
+              {busy === 'export-pptx' ? <span className="spinner" /> : 'Export PPTX'}
+            </button>
+            {(Array.isArray(doc.content?.tables) && doc.content.tables.length) || (Array.isArray(doc.content?.action_matrix) && doc.content.action_matrix.length) ? (
+              <button className="btn secondary" onClick={() => exportAs('xlsx')} disabled={busy.startsWith('export')}>
+                {busy === 'export-xlsx' ? <span className="spinner" /> : 'Export XLSX'}
+              </button>
+            ) : null}
             <Link className="btn ghost" to="/documents">Back</Link>
           </>
         }
