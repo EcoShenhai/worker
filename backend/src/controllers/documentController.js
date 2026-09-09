@@ -80,13 +80,16 @@ const generateMinutes = asyncHandler(async (req, res) => {
   const session = await WorkspaceSession.findByPk(req.params.sessionId);
   if (!session) throw ApiError.notFound('Session not found');
 
-  const transcript = await Transcript.findOne({
+  const transcripts = await Transcript.findAll({
     where: { sessionId: session.id },
-    order: [['createdAt', 'DESC']],
+    order: [['createdAt', 'ASC']],
   });
-  if (!transcript) throw ApiError.badRequest('No transcript found for this session. Transcribe a recording first.');
+  if (!transcripts.length) throw ApiError.badRequest('No transcript found for this session. Transcribe a recording first.');
 
-  const sourceText = transcript.editedText || transcript.rawText;
+  const sourceText = transcripts
+    .map((t) => (t.editedText || t.rawText || '').trim())
+    .filter(Boolean)
+    .join('\n\n');
   if (!sourceText) throw ApiError.badRequest('Transcript is empty');
 
   const meta = {
@@ -112,7 +115,7 @@ const generateMinutes = asyncHandler(async (req, res) => {
   await audit.record(req, 'document.generate_minutes', {
     resourceType: 'document',
     resourceId: document.id,
-    metadata: { sessionId: session.id, transcriptId: transcript.id },
+    metadata: { sessionId: session.id, transcriptCount: transcripts.length },
   });
   res.status(201).json({ document });
 });

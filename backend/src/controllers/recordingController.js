@@ -1,5 +1,6 @@
 'use strict';
 const fs = require('fs/promises');
+const fss = require('fs');
 const path = require('path');
 const { WorkspaceSession, Recording, Transcript, TranscriptSegment, sequelize } = require('../models');
 const ApiError = require('../utils/apiError');
@@ -133,4 +134,34 @@ const verifyTranscript = asyncHandler(async (req, res) => {
   res.json({ transcript });
 });
 
-module.exports = { upload, transcribe, getTranscript, verifyTranscript };
+// GET /recordings/:id/audio  (stream, supports Range for seeking)
+const audio = asyncHandler(async (req, res) => {
+  const recording = await Recording.findByPk(req.params.id);
+  if (!recording) throw ApiError.notFound('Recording not found');
+  const abs = await storage.readPath(recording.storageKey);
+  let stat;
+  try { stat = fss.statSync(abs); } catch (e) { throw ApiError.notFound('Audio file not found'); }
+  const type = recording.mimeType || 'audio/webm';
+  const range = req.headers.range;
+  if (range) {
+    const m = /bytes=(\d*)-(\d*)/.exec(range) || [];
+    const start = m[1] ? parseInt(m[1], 10) : 0;
+    const end = m[2] ? parseInt(m[2], 10) : stat.size - 1;
+    if (start >= stat.size || end >= stat.size) {
+      res.writeHead(416, { 'Content-Range': `bytes */${stat.size}` });
+      return res.end();
+    }
+    res.writeHead(206, {
+      'Content-Range': `bytes ${start}-${end}/${stat.size}`,
+      'Accept-Ranges': 'bytes',
+      'Content-Length': end - start + 1,
+      'Content-Type': type,
+    });
+    fss.createReadStream(abs, { start, end }).pipe(res);
+  } else {
+    res.writeHead(200, { 'Content-Length': stat.size, 'Content-Type': type, 'Accept-Ranges': 'bytes' });
+    fss.createReadStream(abs).pipe(res);
+  }
+});
+
+module.exports = { upload, transcribe, getTranscript, verifyTranscript, audio };

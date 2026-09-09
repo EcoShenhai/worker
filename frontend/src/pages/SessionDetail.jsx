@@ -111,112 +111,145 @@ export default function SessionDetail() {
   if (!session) return <Empty>Session not found.</Empty>;
 
   const recordings = session.recordings || [];
-  const transcript = session.transcript || (session.transcripts && session.transcripts[0]) || null;
-  const hasTranscript = recordings.some((r) => r.status === 'transcribed') || !!transcript;
+  const hasTranscript = recordings.some((r) => r.status === 'transcribed' || r.transcript);
 
   return (
     <>
       <PageHead
         title={session.title}
         subtitle={`${session.kind.replace(/_/g, ' ')} · ${session.occurredOn || 'no date'} · ${session.location || 'no location'}`}
-        actions={<Link className="btn secondary" to="/sessions">Back</Link>}
+        actions={
+          <>
+            {hasTranscript && <button className="btn" onClick={generateMinutes} disabled={busy === 'minutes'}>{busy === 'minutes' ? <span className="spinner" /> : 'Generate minutes'}</button>}
+            <Link className="btn secondary" to="/sessions">Back</Link>
+          </>
+        }
       />
       {msg && <Notice type={msg.type}>{msg.text}</Notice>}
 
-      <div className="grid cols-2">
-        <div className="stack">
-          <div className="card">
-            <div className="card-head"><h3>Capture audio</h3><StatusBadge value={session.status} /></div>
-            <div className="card-body">
-              <div className="recorder">
-                {recording ? (
-                  <>
-                    <span className="rec-dot" />
-                    <span className="mono">{String(Math.floor(seconds / 60)).padStart(2, '0')}:{String(seconds % 60).padStart(2, '0')}</span>
-                    <button className="btn danger sm" onClick={stopRec}>Stop &amp; save</button>
-                  </>
-                ) : (
-                  <>
-                    <button className="btn" onClick={startRec} disabled={busy === 'upload'}>Start recording</button>
-                    <span className="muted">or</span>
-                    <label className="btn secondary sm" style={{ margin: 0 }}>
-                      Upload audio
-                      <input type="file" accept="audio/*" onChange={onFile} style={{ display: 'none' }} />
-                    </label>
-                  </>
-                )}
-                {busy === 'upload' && <span className="spinner" />}
-              </div>
-              <p className="muted" style={{ fontSize: '0.8rem', marginTop: '0.8rem', marginBottom: 0 }}>
-                Audio stays on the government host. Transcription runs locally in English.
-              </p>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-head"><h3>Recordings</h3></div>
-            <div className="card-body" style={{ padding: 0 }}>
-              {recordings.length === 0 ? <Empty>No recordings yet.</Empty> : (
-                <table>
-                  <tbody>
-                    {recordings.map((r) => (
-                      <tr key={r.id}>
-                        <td>
-                          <div>{r.originalFilename || r.source}</div>
-                          <div className="muted" style={{ fontSize: '0.76rem' }}>{r.durationSeconds ? `${r.durationSeconds}s` : ''} {r.mimeType}</div>
-                        </td>
-                        <td style={{ textAlign: 'right' }}><StatusBadge value={r.status} /></td>
-                        <td style={{ textAlign: 'right', width: 120 }}>
-                          {r.status !== 'transcribed' && (
-                            <button className="btn secondary sm" onClick={() => transcribe(r.id)} disabled={busy === 'tx-' + r.id}>
-                              {busy === 'tx-' + r.id ? <span className="spinner" /> : 'Transcribe'}
-                            </button>
-                          )}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+      <div className="grid cols-2" style={{ marginBottom: '1rem' }}>
+        <div className="card">
+          <div className="card-head"><h3>Capture audio</h3><StatusBadge value={session.status} /></div>
+          <div className="card-body">
+            <div className="recorder">
+              {recording ? (
+                <>
+                  <span className="rec-dot" />
+                  <span className="mono">{String(Math.floor(seconds / 60)).padStart(2, '0')}:{String(seconds % 60).padStart(2, '0')}</span>
+                  <button className="btn danger sm" onClick={stopRec}>Stop &amp; save</button>
+                </>
+              ) : (
+                <>
+                  <button className="btn" onClick={startRec} disabled={busy === 'upload'}>Start recording</button>
+                  <span className="muted">or</span>
+                  <label className="btn secondary sm" style={{ margin: 0 }}>
+                    Upload audio
+                    <input type="file" accept="audio/*" onChange={onFile} style={{ display: 'none' }} />
+                  </label>
+                </>
               )}
+              {busy === 'upload' && <span className="spinner" />}
             </div>
+            <p className="muted" style={{ fontSize: '0.8rem', marginTop: '0.8rem', marginBottom: 0 }}>
+              Audio stays on the host. Transcription runs locally in English. Minutes combine every clip in this session, in order.
+            </p>
           </div>
         </div>
 
-        <div className="stack">
-          <div className="card">
-            <div className="card-head">
-              <h3>Transcript</h3>
-              {hasTranscript && <button className="btn sm" onClick={generateMinutes} disabled={busy === 'minutes'}>{busy === 'minutes' ? <span className="spinner" /> : 'Generate minutes'}</button>}
-            </div>
-            <div className="card-body">
-              {transcript ? (
-                <TranscriptView transcript={transcript} onSaved={load} />
-              ) : (
-                <Empty>Transcribe a recording to see the transcript here, then generate minutes.</Empty>
-              )}
-            </div>
+        <div className="card">
+          <div className="card-head"><h3>Documents from this session</h3></div>
+          <div className="card-body" style={{ padding: 0 }}>
+            {session.documents?.length ? (
+              <table>
+                <tbody>
+                  {session.documents.map((d) => (
+                    <tr key={d.id}>
+                      <td><Link to={`/documents/${d.id}`}>{d.title}</Link><div className="muted" style={{ fontSize: '0.76rem' }}>{d.type.replace(/_/g, ' ')}</div></td>
+                      <td style={{ textAlign: 'right' }}><StatusBadge value={d.status} /></td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            ) : <Empty>No documents yet. Transcribe a clip, then generate minutes.</Empty>}
           </div>
+        </div>
+      </div>
 
-          {session.documents?.length > 0 && (
-            <div className="card">
-              <div className="card-head"><h3>Documents from this session</h3></div>
-              <div className="card-body" style={{ padding: 0 }}>
-                <table>
-                  <tbody>
-                    {session.documents.map((d) => (
-                      <tr key={d.id}>
-                        <td><Link to={`/documents/${d.id}`}>{d.title}</Link><div className="muted" style={{ fontSize: '0.76rem' }}>{d.type.replace(/_/g, ' ')}</div></td>
-                        <td style={{ textAlign: 'right' }}><StatusBadge value={d.status} /></td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+      <div className="card">
+        <div className="card-head"><h3>Recordings &amp; transcripts</h3><span className="muted" style={{ fontSize: '0.82rem' }}>{recordings.length} clip{recordings.length === 1 ? '' : 's'}</span></div>
+        <div className="card-body">
+          {recordings.length === 0 ? (
+            <Empty>No recordings yet. Record or upload audio above.</Empty>
+          ) : (
+            <div className="stack">
+              {recordings.map((r) => (
+                <div key={r.id} style={{ border: '1px solid var(--line)', borderRadius: 'var(--radius)', padding: '1rem' }}>
+                  <div className="between" style={{ marginBottom: '0.6rem' }}>
+                    <div>
+                      <div style={{ fontWeight: 600 }}>{r.originalFilename || r.source}</div>
+                      <div className="muted" style={{ fontSize: '0.76rem' }}>{r.durationSeconds ? `${r.durationSeconds}s · ` : ''}{r.mimeType}</div>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <StatusBadge value={r.status} />
+                      {r.status !== 'transcribed' && (
+                        <button className="btn secondary sm" onClick={() => transcribe(r.id)} disabled={busy === 'tx-' + r.id}>
+                          {busy === 'tx-' + r.id ? <span className="spinner" /> : 'Transcribe'}
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  <AudioPlayer recordingId={r.id} filename={(r.originalFilename || r.source || 'recording') + '.webm'} />
+
+                  <div style={{ marginTop: '0.8rem' }}>
+                    {r.transcript ? (
+                      <TranscriptView transcript={r.transcript} onSaved={load} />
+                    ) : (
+                      <p className="muted" style={{ fontSize: '0.85rem', margin: 0 }}>Transcribe this clip to see and edit its transcript here.</p>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>
       </div>
     </>
+  );
+}
+
+function AudioPlayer({ recordingId, filename }) {
+  const [url, setUrl] = useState(null);
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState('');
+
+  useEffect(() => () => { if (url) URL.revokeObjectURL(url); }, [url]);
+
+  const loadAudio = async () => {
+    setBusy(true); setErr('');
+    try {
+      const res = await api.get(`/recordings/${recordingId}/audio`, { responseType: 'blob' });
+      setUrl(URL.createObjectURL(res.data));
+    } catch {
+      setErr('Could not load audio.');
+    } finally {
+      setBusy(false);
+    }
+  };
+
+  if (url) {
+    return (
+      <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
+        <audio controls src={url} style={{ height: 36, maxWidth: '100%' }} />
+        <a className="btn ghost sm" href={url} download={filename}>Download</a>
+      </div>
+    );
+  }
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+      <button className="btn secondary sm" onClick={loadAudio} disabled={busy}>{busy ? <span className="spinner" /> : 'Load audio'}</button>
+      {err && <span className="muted" style={{ fontSize: '0.8rem', color: 'var(--danger)' }}>{err}</span>}
+    </div>
   );
 }
 
@@ -238,7 +271,7 @@ function TranscriptView({ transcript, onSaved }) {
 
   return (
     <div>
-      <div className="between" style={{ marginBottom: '0.6rem' }}>
+      <div className="between" style={{ marginBottom: '0.5rem' }}>
         <span className="muted" style={{ fontSize: '0.8rem' }}>
           {transcript.provider} · {transcript.wordCount || 0} words {transcript.verified && '· verified'}
         </span>
@@ -246,7 +279,7 @@ function TranscriptView({ transcript, onSaved }) {
       </div>
       {editing ? (
         <>
-          <textarea value={text} onChange={(e) => setText(e.target.value)} style={{ minHeight: 220 }} />
+          <textarea value={text} onChange={(e) => setText(e.target.value)} style={{ minHeight: 160 }} />
           <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.6rem' }}>
             <button className="btn sm" onClick={() => save(true)} disabled={busy}>Save &amp; mark verified</button>
             <button className="btn secondary sm" onClick={() => save(false)} disabled={busy}>Save draft</button>
@@ -254,7 +287,7 @@ function TranscriptView({ transcript, onSaved }) {
           </div>
         </>
       ) : (
-        <div style={{ maxHeight: 260, overflowY: 'auto', whiteSpace: 'pre-wrap', fontSize: '0.9rem', lineHeight: 1.6 }}>
+        <div style={{ maxHeight: 220, overflowY: 'auto', whiteSpace: 'pre-wrap', fontSize: '0.9rem', lineHeight: 1.6, background: 'var(--surface-2)', border: '1px solid var(--line)', borderRadius: 'var(--radius-sm)', padding: '0.7rem' }}>
           {text || <span className="muted">Empty transcript.</span>}
         </div>
       )}
