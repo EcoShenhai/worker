@@ -187,4 +187,4 @@ const list = asyncHandler(async (req, res) => {
   res.json({ payments });
 });
 
-module.exports = { mpesaInitiate, subscriptionMpesaInitiate, mpesaCallback, paypalCreate, paypalCapture, list };
+module.exports = { mpesaInitiate, subscriptionMpesaInitiate, mpesaCallback, paypalCreate, subscriptionPaypalCreate, paypalCapture, list };
