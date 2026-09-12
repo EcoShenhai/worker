@@ -13,6 +13,17 @@ module.exports = (sequelize) => {
       letterheadLine3: { type: DataTypes.STRING, allowNull: true },
       logoKey: { type: DataTypes.STRING, allowNull: true },
       signatureKey: { type: DataTypes.STRING, allowNull: true },
+      subscriptionPlan: { type: DataTypes.ENUM('starter', 'professional', 'business'), allowNull: true },
+      subscriptionStatus: {
+        type: DataTypes.ENUM('trialing', 'active', 'past_due', 'cancelled', 'expired'),
+        allowNull: false,
+        defaultValue: 'trialing',
+      },
+      trialStartedAt: { type: DataTypes.DATE, allowNull: true },
+      trialEndsAt: { type: DataTypes.DATE, allowNull: true },
+      subscriptionStartedAt: { type: DataTypes.DATE, allowNull: true },
+      subscriptionEndsAt: { type: DataTypes.DATE, allowNull: true },
+      paymentProvider: { type: DataTypes.ENUM('mpesa', 'paypal'), allowNull: true },
     },
     { sequelize, modelName: 'Tenant', tableName: 'tenants' }
   );

@@ -20,6 +20,13 @@ const get = asyncHandler(async (req, res) => {
       id: t.id, name: t.name,
       letterheadLine1: t.letterheadLine1, letterheadLine2: t.letterheadLine2, letterheadLine3: t.letterheadLine3,
       hasLogo: !!t.logoKey, hasSignature: !!t.signatureKey,
+      subscriptionPlan: t.subscriptionPlan,
+      subscriptionStatus: t.subscriptionStatus,
+      trialStartedAt: t.trialStartedAt,
+      trialEndsAt: t.trialEndsAt,
+      subscriptionStartedAt: t.subscriptionStartedAt,
+      subscriptionEndsAt: t.subscriptionEndsAt,
+      paymentProvider: t.paymentProvider,
     },
   });
 });
@@ -34,6 +41,33 @@ const update = asyncHandler(async (req, res) => {
   await t.save();
   await audit.record(req, 'tenant.update', { resourceType: 'tenant', resourceId: t.id });
   res.json({ ok: true });
+});
+
+const selectSubscription = asyncHandler(async (req, res) => {
+  const t = await myTenant(req);
+  if (!t) throw ApiError.badRequest('No tenant associated with this account');
+
+  const allowed = ['starter', 'professional', 'business'];
+  const plan = String(req.body.plan || '').toLowerCase();
+
+  if (!allowed.includes(plan)) {
+    throw ApiError.badRequest('Invalid subscription plan');
+  }
+
+  t.subscriptionPlan = plan;
+  await t.save();
+
+  await audit.record(req, 'tenant.subscription.select', {
+    resourceType: 'tenant',
+    resourceId: t.id,
+    metadata: { plan },
+  });
+
+  res.json({
+    ok: true,
+    subscriptionPlan: t.subscriptionPlan,
+    subscriptionStatus: t.subscriptionStatus,
+  });
 });
 
 const uploadImage = (field, prefix) =>
@@ -58,6 +92,7 @@ const uploadImage = (field, prefix) =>
 module.exports = {
   get,
   update,
+  selectSubscription,
   uploadLogo: uploadImage('logoKey', 'tenant-logo'),
   uploadSignature: uploadImage('signatureKey', 'tenant-signature'),
 };

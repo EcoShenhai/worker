@@ -8,6 +8,7 @@ const { uploadDoc } = require('../middleware/upload');
 router.use(authenticate);
 router.get('/', c.get);
 router.put('/', requireRole('admin'), c.update);
+router.post('/subscription', requireRole('admin'), c.selectSubscription);
 router.post('/logo', requireRole('admin'), uploadDoc.single('file'), c.uploadLogo);
 router.post('/signature', requireRole('admin'), uploadDoc.single('file'), c.uploadSignature);
 
