@@ -7,6 +7,7 @@ module.exports = (sequelize) => {
   WorkspaceSession.init(
     {
       id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },
+      tenantId: { type: DataTypes.UUID, allowNull: true },
       title: { type: DataTypes.STRING, allowNull: false },
       kind: {
         // What was captured: meeting, interview, briefing, dictation, field_report, consultation, other

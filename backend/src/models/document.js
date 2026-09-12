@@ -7,6 +7,7 @@ module.exports = (sequelize) => {
   Document.init(
     {
       id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },
+      tenantId: { type: DataTypes.UUID, allowNull: true },
       // minutes | memo | letter | report | policy_brief | briefing_note | concept_note | circular | action_matrix
       type: {
         type: DataTypes.ENUM(

@@ -6,6 +6,7 @@ module.exports = (sequelize) => {
   Payment.init(
     {
       id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },
+      tenantId: { type: DataTypes.UUID, allowNull: true },
       provider: { type: DataTypes.ENUM('mpesa', 'paypal'), allowNull: false },
       purpose: { type: DataTypes.STRING, allowNull: true },
       amount: { type: DataTypes.DECIMAL(12, 2), allowNull: false },

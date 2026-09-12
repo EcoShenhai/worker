@@ -14,14 +14,15 @@ module.exports = (sequelize) => {
     }
 
     toSafeJSON() {
-      const { id, email, name, role, status, requiresPasswordChange, emailVerified, lastLoginAt, createdAt } = this;
-      return { id, email, name, role, status, requiresPasswordChange, emailVerified, lastLoginAt, createdAt };
+      const { id, email, name, role, status, requiresPasswordChange, emailVerified, tenantId, lastLoginAt, createdAt } = this;
+      return { id, email, name, role, status, requiresPasswordChange, emailVerified, tenantId, lastLoginAt, createdAt };
     }
   }
 
   User.init(
     {
       id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },
+      tenantId: { type: DataTypes.UUID, allowNull: true },
       email: {
         type: DataTypes.STRING,
         allowNull: false,

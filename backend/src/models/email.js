@@ -6,6 +6,7 @@ module.exports = (sequelize) => {
   Email.init(
     {
       id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },
+      tenantId: { type: DataTypes.UUID, allowNull: true },
       direction: { type: DataTypes.ENUM('incoming', 'outgoing'), allowNull: false, defaultValue: 'outgoing' },
       fromAddress: { type: DataTypes.STRING, allowNull: true },
       toAddress: { type: DataTypes.STRING, allowNull: false },

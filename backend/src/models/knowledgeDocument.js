@@ -6,6 +6,7 @@ module.exports = (sequelize) => {
   KnowledgeDocument.init(
     {
       id: { type: DataTypes.UUID, defaultValue: DataTypes.UUIDV4, primaryKey: true },
+      tenantId: { type: DataTypes.UUID, allowNull: true },
       title: { type: DataTypes.STRING, allowNull: false },
       category: { type: DataTypes.STRING, allowNull: true },
       storageKey: { type: DataTypes.STRING, allowNull: true },
