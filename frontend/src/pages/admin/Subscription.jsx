@@ -44,12 +44,15 @@ export default function Subscription() {
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState(null);
   const [selected, setSelected] = useState(null);
+  const [phone, setPhone] = useState('');
+  const [busy, setBusy] = useState('');
 
   const load = async () => {
     setLoading(true);
     try {
       const { data } = await api.get('/tenant');
       setTenant(data.tenant);
+      setSelected(data.tenant?.subscriptionPlan || null);
     } catch (e) {
       setMsg({ type: 'err', text: e.response?.data?.message || 'Could not load subscription.' });
     } finally {
@@ -60,6 +63,43 @@ export default function Subscription() {
   useEffect(() => {
     load();
   }, []);
+
+  const payWithMpesa = async (e) => {
+    e.preventDefault();
+    if (selected === null) {
+      setMsg({ type: 'err', text: 'Select a subscription plan first.' });
+      return;
+    }
+    setBusy('mpesa');
+    setMsg(null);
+    try {
+      await api.post('/payments/subscription/mpesa/initiate', { phone });
+      setMsg({ type: 'ok', text: 'M-Pesa STK push sent. Approve the payment on your phone. Your subscription will activate after payment confirmation.' });
+      setPhone('');
+      await load();
+    } catch (e) {
+      setMsg({ type: 'err', text: e.response?.data?.message || 'Could not initiate M-Pesa payment.' });
+    } finally {
+      setBusy('');
+    }
+  };
+
+  const payWithPaypal = async () => {
+    if (selected === null) {
+      setMsg({ type: 'err', text: 'Select a subscription plan first.' });
+      return;
+    }
+    setBusy('paypal');
+    setMsg(null);
+    try {
+      const { data } = await api.post('/payments/subscription/paypal/create');
+      if (!data.approveUrl) throw new Error('PayPal approval URL was not returned.');
+      window.location.href = data.approveUrl;
+    } catch (e) {
+      setMsg({ type: 'err', text: e.response?.data?.message || e.message || 'Could not start PayPal payment.' });
+      setBusy('');
+    }
+  };
 
   if (loading) return <div className="empty"><span className="spinner" /></div>;
 
@@ -182,6 +222,56 @@ export default function Subscription() {
             </div>
           </div>
         ))}
+      </div>
+
+      <div className="card" style={{ marginTop: '1rem' }}>
+        <div className="card-head">
+          <h3>Activate your subscription</h3>
+        </div>
+        <div className="card-body">
+          {!selected ? (
+            <p className="muted" style={{ margin: 0 }}>
+              Select a plan above to continue to payment.
+            </p>
+          ) : (
+            <div className="grid cols-2">
+              <div>
+                <h4>M-Pesa</h4>
+                <p className="muted">
+                  An STK push will be sent to the phone number below.
+                </p>
+                <form onSubmit={payWithMpesa}>
+                  <div className="field">
+                    <label>Phone number</label>
+                    <input
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      placeholder="07.. or 2547.."
+                      required
+                    />
+                  </div>
+                  <button className="btn" disabled={busy === 'mpesa'}>
+                    {busy === 'mpesa' ? <span className="spinner" /> : 'Pay with M-Pesa'}
+                  </button>
+                </form>
+              </div>
+
+              <div>
+                <h4>PayPal</h4>
+                <p className="muted">
+                  Continue to PayPal to pay for the selected plan in USD.
+                </p>
+                <button
+                  className="btn secondary"
+                  onClick={payWithPaypal}
+                  disabled={busy === 'paypal'}
+                >
+                  {busy === 'paypal' ? <span className="spinner" /> : 'Pay with PayPal'}
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
 
       <div className="card" style={{ marginTop: '1rem' }}>

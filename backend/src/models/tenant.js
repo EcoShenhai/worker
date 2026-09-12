@@ -24,6 +24,7 @@ module.exports = (sequelize) => {
       subscriptionStartedAt: { type: DataTypes.DATE, allowNull: true },
       subscriptionEndsAt: { type: DataTypes.DATE, allowNull: true },
       paymentProvider: { type: DataTypes.ENUM('mpesa', 'paypal'), allowNull: true },
+      subscriptionPaymentId: { type: DataTypes.UUID, allowNull: true },
     },
     { sequelize, modelName: 'Tenant', tableName: 'tenants' }
   );

@@ -1,5 +1,5 @@
 'use strict';
-const { Payment } = require('../models');
+const { Payment, Tenant } = require('../models');
 const asyncHandler = require('../utils/asyncHandler');
 const ApiError = require('../utils/apiError');
 const mpesa = require('../services/payments/mpesaService');
@@ -8,6 +8,7 @@ const config = require('../config');
 const audit = require('../services/audit/auditService');
 const { scopeWhere, stamp } = require('../utils/tenancy');
 const logger = require('../utils/logger');
+const { PLANS, activateFromPayment } = require('../services/payments/subscriptionService');
 
 // --- M-Pesa ---------------------------------------------------------------
 const mpesaInitiate = asyncHandler(async (req, res) => {
@@ -31,6 +32,50 @@ const mpesaInitiate = asyncHandler(async (req, res) => {
 });
 
 // Public callback (no auth) — configure MPESA_CALLBACK_URL to this route.
+const subscriptionMpesaInitiate = asyncHandler(async (req, res) => {
+  const { phone } = req.body;
+  if (!phone) throw ApiError.badRequest('phone is required');
+
+  const tenant = req.user?.tenantId ? await Tenant.findByPk(req.user.tenantId) : null;
+  if (!tenant) throw ApiError.badRequest('No organisation associated with this account');
+
+  const plan = tenant.subscriptionPlan;
+  if (!PLANS[plan]) throw ApiError.badRequest('Select a subscription plan first');
+
+  const amount = PLANS[plan].kes;
+  const resp = await mpesa.stkPush({
+    phone,
+    amount,
+    accountRef: 'Worker',
+    description: `Worker ${plan} subscription`,
+  });
+
+  const payment = await Payment.create({
+    provider: 'mpesa',
+    purpose: `Worker ${plan} subscription`,
+    amount,
+    currency: 'KES',
+    status: 'pending',
+    providerRef: resp.CheckoutRequestID || null,
+    payerRef: phone,
+    metadata: {
+      type: 'subscription',
+      plan,
+      merchantRequestId: resp.MerchantRequestID || null,
+    },
+    initiatedById: req.user.id,
+    ...stamp(req, {}),
+  });
+
+  await audit.record(req, 'payment.subscription.mpesa.initiate', {
+    resourceType: 'payment',
+    resourceId: payment.id,
+    metadata: { plan, amount },
+  });
+
+  res.status(201).json({ payment, providerResponse: resp });
+});
+
 const mpesaCallback = asyncHandler(async (req, res) => {
   const parsed = mpesa.parseCallback(req.body);
   if (parsed.checkoutRequestId) {
@@ -40,6 +85,10 @@ const mpesaCallback = asyncHandler(async (req, res) => {
       payment.providerReceipt = parsed.receipt || null;
       payment.rawCallback = req.body;
       await payment.save();
+
+      if (parsed.ok) {
+        await activateFromPayment(payment);
+      }
     }
   }
   // Always acknowledge to Safaricom.
@@ -72,6 +121,47 @@ const paypalCreate = asyncHandler(async (req, res) => {
   res.status(201).json({ payment, approveUrl: order.approveUrl });
 });
 
+const subscriptionPaypalCreate = asyncHandler(async (req, res) => {
+  const tenant = req.user?.tenantId ? await Tenant.findByPk(req.user.tenantId) : null;
+  if (!tenant) throw ApiError.badRequest('No organisation associated with this account');
+
+  const plan = tenant.subscriptionPlan;
+  if (!PLANS[plan]) throw ApiError.badRequest('Select a subscription plan first');
+
+  const amount = PLANS[plan].usd;
+  const base = config.frontendUrl.replace(/\/$/, '');
+  const order = await paypal.createOrder({
+    amount,
+    currency: 'USD',
+    description: `Worker ${plan} subscription`,
+    returnUrl: `${base}/payments/paypal/return`,
+    cancelUrl: `${base}/payments/paypal/cancel`,
+  });
+
+  const payment = await Payment.create({
+    provider: 'paypal',
+    purpose: `Worker ${plan} subscription`,
+    amount,
+    currency: 'USD',
+    status: 'pending',
+    providerRef: order.id,
+    metadata: {
+      type: 'subscription',
+      plan,
+    },
+    initiatedById: req.user.id,
+    ...stamp(req, {}),
+  });
+
+  await audit.record(req, 'payment.subscription.paypal.create', {
+    resourceType: 'payment',
+    resourceId: payment.id,
+    metadata: { plan, amount },
+  });
+
+  res.status(201).json({ payment, approveUrl: order.approveUrl });
+});
+
 const paypalCapture = asyncHandler(async (req, res) => {
   const { orderId } = req.body;
   if (!orderId) throw ApiError.badRequest('orderId is required');
@@ -83,6 +173,10 @@ const paypalCapture = asyncHandler(async (req, res) => {
     payment.payerRef = result.payerEmail || null;
     payment.rawCallback = result.raw;
     await payment.save();
+
+    if (result.ok) {
+      await activateFromPayment(payment);
+    }
   }
   await audit.record(req, 'payment.paypal.capture', { resourceType: 'payment', resourceId: payment ? payment.id : null });
   res.json({ ok: result.ok, payment });
@@ -93,4 +187,4 @@ const list = asyncHandler(async (req, res) => {
   res.json({ payments });
 });
 
-module.exports = { mpesaInitiate, mpesaCallback, paypalCreate, paypalCapture, list };
+module.exports = { mpesaInitiate, subscriptionMpesaInitiate, mpesaCallback, paypalCreate, paypalCapture, list };
