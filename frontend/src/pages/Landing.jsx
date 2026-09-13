@@ -100,7 +100,7 @@ export default function Landing() {
             </div>
           </div>
           <div className="lp-card">
-            <h3>Business</h3>
+            <h3>Premium</h3>
             <div style={{ fontSize: '2rem', fontWeight: 700, margin: '.35rem 0' }}>$50<span style={{ fontSize: '.85rem', fontWeight: 400, color: 'var(--muted)' }}>/month</span></div>
             <p>For larger organizations with substantial administrative workloads.</p>
             <div style={{ marginTop: '1rem' }}>

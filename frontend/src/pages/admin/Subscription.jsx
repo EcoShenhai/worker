@@ -18,7 +18,7 @@ const PLANS = [
   },
   {
     id: 'business',
-    name: 'Business',
+    name: 'Premium',
     price: 50,
     description: 'For larger organizations with substantial administrative workloads.',
   },
