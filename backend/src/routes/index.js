@@ -10,6 +10,7 @@ router.use('/emails', require('./emailRoutes'));
 router.use('/workspace', require('./workspaceRoutes'));
 router.use('/knowledge', require('./knowledgeRoutes'));
 router.use('/payments', require('./paymentRoutes'));
+router.use('/billing', require('./billingRoutes'));
 router.use('/admin', require('./adminRoutes'));
 router.use('/tenant', require('./tenantRoutes'));
 router.use('/templates', require('./templateRoutes'));

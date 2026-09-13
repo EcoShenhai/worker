@@ -12,6 +12,8 @@ const Email = require('./email')(sequelize);
 const Template = require('./template')(sequelize);
 const KnowledgeDocument = require('./knowledgeDocument')(sequelize);
 const Payment = require('./payment')(sequelize);
+const Invoice = require('./invoice')(sequelize);
+const Receipt = require('./receipt')(sequelize);
 const AuditLog = require('./auditLog')(sequelize);
 const RefreshToken = require('./refreshToken')(sequelize);
 const Tenant = require('./tenant')(sequelize);
@@ -26,6 +28,14 @@ Document.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
 Email.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
 KnowledgeDocument.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
 Payment.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+Invoice.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+Receipt.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
+Invoice.belongsTo(Payment, { foreignKey: 'paymentId', as: 'payment' });
+Receipt.belongsTo(Payment, { foreignKey: 'paymentId', as: 'payment' });
+Receipt.belongsTo(Invoice, { foreignKey: 'invoiceId', as: 'invoice' });
+Payment.hasOne(Invoice, { foreignKey: 'paymentId', as: 'invoice' });
+Payment.hasOne(Receipt, { foreignKey: 'paymentId', as: 'receipt' });
+Invoice.hasOne(Receipt, { foreignKey: 'invoiceId', as: 'receipt' });
 Template.belongsTo(Tenant, { foreignKey: 'tenantId', as: 'tenant' });
 
 // User ownership
@@ -84,6 +94,8 @@ const db = {
   Template,
   KnowledgeDocument,
   Payment,
+  Invoice,
+  Receipt,
   AuditLog,
   RefreshToken,
   Tenant,

@@ -39,6 +39,7 @@ export default function Layout({ children }) {
               <NavLink to="/admin/audit">Audit Trail</NavLink>
               <NavLink to="/admin/subscription">Subscription</NavLink>
               <NavLink to="/admin/payments">Payments</NavLink>
+              <NavLink to="/admin/billing">Billing</NavLink>
             </>
           )}
         </nav>

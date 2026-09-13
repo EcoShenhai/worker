@@ -23,6 +23,7 @@ import TenantSettings from './pages/admin/TenantSettings.jsx';
 import Users from './pages/admin/Users.jsx';
 import Audit from './pages/admin/Audit.jsx';
 import Payments from './pages/admin/Payments.jsx';
+import Billing from './pages/admin/Billing.jsx';
 import Subscription from './pages/admin/Subscription.jsx';
 import PaypalReturn from './pages/PaypalReturn.jsx';
 import NotFound from './pages/NotFound.jsx';
@@ -60,6 +61,7 @@ export default function App() {
       <Route path="/admin/users" element={P(<Users />)} />
       <Route path="/admin/audit" element={P(<Audit />)} />
       <Route path="/admin/payments" element={P(<Payments />)} />
+      <Route path="/admin/billing" element={P(<Billing />)} />
       <Route path="/admin/subscription" element={P(<Subscription />)} />
       <Route path="/payments/paypal/return" element={P(<PaypalReturn />)} />
 

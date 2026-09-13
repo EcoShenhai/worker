@@ -9,6 +9,7 @@ const audit = require('../services/audit/auditService');
 const { scopeWhere, stamp } = require('../utils/tenancy');
 const logger = require('../utils/logger');
 const { PLANS, activateFromPayment } = require('../services/payments/subscriptionService');
+const { createForSubscriptionPayment } = require('../services/payments/billingDocumentService');
 
 // --- M-Pesa ---------------------------------------------------------------
 const mpesaInitiate = asyncHandler(async (req, res) => {
@@ -88,6 +89,11 @@ const mpesaCallback = asyncHandler(async (req, res) => {
 
       if (parsed.ok) {
         await activateFromPayment(payment);
+        try {
+          await createForSubscriptionPayment(payment);
+        } catch (billingError) {
+          logger.error('M-Pesa billing document creation failed', { paymentId: payment.id, message: billingError.message });
+        }
       }
     }
   }
@@ -176,6 +182,11 @@ const paypalCapture = asyncHandler(async (req, res) => {
 
     if (result.ok) {
       await activateFromPayment(payment);
+      try {
+        await createForSubscriptionPayment(payment);
+      } catch (billingError) {
+        logger.error('PayPal billing document creation failed', { paymentId: payment.id, message: billingError.message });
+      }
     }
   }
   await audit.record(req, 'payment.paypal.capture', { resourceType: 'payment', resourceId: payment ? payment.id : null });
