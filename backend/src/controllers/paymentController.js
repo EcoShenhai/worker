@@ -10,6 +10,7 @@ const { scopeWhere, stamp } = require('../utils/tenancy');
 const logger = require('../utils/logger');
 const { PLANS, activateFromPayment } = require('../services/payments/subscriptionService');
 const { createForSubscriptionPayment } = require('../services/payments/billingDocumentService');
+const { sendSubscriptionPaymentNotification } = require('../services/payments/subscriptionNotificationService');
 
 // --- M-Pesa ---------------------------------------------------------------
 const mpesaInitiate = asyncHandler(async (req, res) => {
@@ -89,10 +90,30 @@ const mpesaCallback = asyncHandler(async (req, res) => {
 
       if (parsed.ok) {
         await activateFromPayment(payment);
+
         try {
-          await createForSubscriptionPayment(payment);
+          const documents = await createForSubscriptionPayment(payment);
+
+          if (documents) {
+            try {
+              await sendSubscriptionPaymentNotification(
+                payment,
+                documents.invoice,
+                documents.receipt,
+                documents.tenant
+              );
+            } catch (notificationError) {
+              logger.error('M-Pesa subscription notification failed', {
+                paymentId: payment.id,
+                message: notificationError.message,
+              });
+            }
+          }
         } catch (billingError) {
-          logger.error('M-Pesa billing document creation failed', { paymentId: payment.id, message: billingError.message });
+          logger.error('M-Pesa billing document creation failed', {
+            paymentId: payment.id,
+            message: billingError.message,
+          });
         }
       }
     }
@@ -182,10 +203,30 @@ const paypalCapture = asyncHandler(async (req, res) => {
 
     if (result.ok) {
       await activateFromPayment(payment);
+
       try {
-        await createForSubscriptionPayment(payment);
+        const documents = await createForSubscriptionPayment(payment);
+
+        if (documents) {
+          try {
+            await sendSubscriptionPaymentNotification(
+              payment,
+              documents.invoice,
+              documents.receipt,
+              documents.tenant
+            );
+          } catch (notificationError) {
+            logger.error('PayPal subscription notification failed', {
+              paymentId: payment.id,
+              message: notificationError.message,
+            });
+          }
+        }
       } catch (billingError) {
-        logger.error('PayPal billing document creation failed', { paymentId: payment.id, message: billingError.message });
+        logger.error('PayPal billing document creation failed', {
+          paymentId: payment.id,
+          message: billingError.message,
+        });
       }
     }
   }

@@ -20,6 +20,7 @@ module.exports = (sequelize) => {
       metadata: { type: DataTypes.JSONB, allowNull: false, defaultValue: {} },
       rawCallback: { type: DataTypes.JSONB, allowNull: true },
       initiatedById: { type: DataTypes.UUID, allowNull: true },
+      notificationSentAt: { type: DataTypes.DATE, allowNull: true },
     },
     { sequelize, modelName: 'Payment', tableName: 'payments' }
   );

@@ -5,8 +5,11 @@ const logger = require('../../utils/logger');
 const ApiError = require('../../utils/apiError');
 
 /**
- * SMTP sender. The AI NEVER calls this — only an explicit user action
- * (controller) after a human has reviewed and clicked "Send".
+ * SMTP transport shared by:
+ * - human-reviewed correspondence
+ * - system-generated transactional notifications
+ *
+ * AI-generated correspondence is never sent automatically.
  */
 let transporter = null;
 
@@ -34,8 +37,29 @@ async function send({ to, cc, subject, body }) {
   return { messageId: info.messageId };
 }
 
+async function sendTransactional({ to, subject, body }) {
+  const t = getTransporter();
+  const from = config.email.fromAddress
+    ? `\"${config.email.fromName}\" <${config.email.fromAddress}>`
+    : config.email.smtpUser;
+
+  const info = await t.sendMail({
+    from,
+    to,
+    subject,
+    text: body,
+  });
+
+  logger.info('Transactional email sent', {
+    messageId: info.messageId,
+    type: 'transactional',
+  });
+
+  return { messageId: info.messageId };
+}
+
 async function verify() {
   return getTransporter().verify();
 }
 
-module.exports = { send, verify };
+module.exports = { send, sendTransactional, verify };

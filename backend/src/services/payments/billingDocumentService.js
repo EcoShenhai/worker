@@ -104,7 +104,7 @@ async function createForSubscriptionPayment(payment) {
     },
   });
 
-  return { invoice, receipt };
+  return { invoice, receipt, tenant };
 }
 
 module.exports = { createForSubscriptionPayment };
