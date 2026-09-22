@@ -273,3 +273,7 @@ tbody tr:hover { background: var(--surface-2); }
   .content { padding: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* Language switcher (i18n) */
+.lang-select { font: inherit; font-size: .82rem; padding: .3rem .5rem; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); max-width: 11rem; cursor: pointer; }
+.lang-select:focus { outline: 2px solid var(--primary); outline-offset: 1px; }

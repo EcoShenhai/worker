@@ -1,6 +1,10 @@
 import { useEffect, useState } from 'react';
 import api from '../../api/client.js';
 import { PageHead, StatusBadge, Notice } from '../../components/ui.jsx';
+import { useI18n } from '../../i18n/index.jsx';
+
+// Plan id -> landing.pricing.* translation key (ids are backend values; never change them).
+const PLAN_KEY = { starter: 'starter', professional: 'professional', business: 'premium' };
 
 const PLANS = [
   {
@@ -40,6 +44,8 @@ function daysRemaining(value) {
 }
 
 export default function Subscription() {
+  const { t } = useI18n();
+  const planName = (id) => (PLAN_KEY[id] ? t(`landing.pricing.${PLAN_KEY[id]}.name`) : id);
   const [tenant, setTenant] = useState(null);
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState(null);
@@ -54,7 +60,7 @@ export default function Subscription() {
       setTenant(data.tenant);
       setSelected(data.tenant?.subscriptionPlan || null);
     } catch (e) {
-      setMsg({ type: 'err', text: e.response?.data?.message || 'Could not load subscription.' });
+      setMsg({ type: 'err', text: e.response?.data?.message || t('subscription.loadFailed') });
     } finally {
       setLoading(false);
     }
@@ -67,18 +73,18 @@ export default function Subscription() {
   const payWithMpesa = async (e) => {
     e.preventDefault();
     if (selected === null) {
-      setMsg({ type: 'err', text: 'Select a subscription plan first.' });
+      setMsg({ type: 'err', text: t('subscription.selectFirst') });
       return;
     }
     setBusy('mpesa');
     setMsg(null);
     try {
       await api.post('/payments/subscription/mpesa/initiate', { phone });
-      setMsg({ type: 'ok', text: 'M-Pesa STK push sent. Approve the payment on your phone. Your subscription will activate after payment confirmation.' });
+      setMsg({ type: 'ok', text: t('subscription.mpesaSent') });
       setPhone('');
       await load();
     } catch (e) {
-      setMsg({ type: 'err', text: e.response?.data?.message || 'Could not initiate M-Pesa payment.' });
+      setMsg({ type: 'err', text: e.response?.data?.message || t('subscription.mpesaFailed') });
     } finally {
       setBusy('');
     }
@@ -86,17 +92,17 @@ export default function Subscription() {
 
   const payWithPaypal = async () => {
     if (selected === null) {
-      setMsg({ type: 'err', text: 'Select a subscription plan first.' });
+      setMsg({ type: 'err', text: t('subscription.selectFirst') });
       return;
     }
     setBusy('paypal');
     setMsg(null);
     try {
       const { data } = await api.post('/payments/subscription/paypal/create');
-      if (!data.approveUrl) throw new Error('PayPal approval URL was not returned.');
+      if (!data.approveUrl) throw new Error(t('subscription.noApproveUrl'));
       window.location.href = data.approveUrl;
     } catch (e) {
-      setMsg({ type: 'err', text: e.response?.data?.message || e.message || 'Could not start PayPal payment.' });
+      setMsg({ type: 'err', text: e.response?.data?.message || e.message || t('subscription.paypalFailed') });
       setBusy('');
     }
   };
@@ -106,10 +112,10 @@ export default function Subscription() {
   if (!tenant) {
     return (
       <>
-        <PageHead title="Subscription" subtitle="Manage your Worker subscription." />
+        <PageHead title={t('nav.subscription')} subtitle={t('subscription.subtitleShort')} />
         <div className="card">
           <div className="card-body">
-            <p className="muted">This account is not associated with an organisation.</p>
+            <p className="muted">{t('tenant.noOrg')}</p>
           </div>
         </div>
       </>
@@ -121,46 +127,46 @@ export default function Subscription() {
   return (
     <>
       <PageHead
-        title="Subscription"
-        subtitle="Manage your Worker plan, trial and billing."
+        title={t('nav.subscription')}
+        subtitle={t('subscription.subtitle')}
       />
 
       {msg && <Notice type={msg.type}>{msg.text}</Notice>}
 
       <div className="card" style={{ marginBottom: '1rem' }}>
         <div className="card-head">
-          <h3>Current subscription</h3>
+          <h3>{t('subscription.current')}</h3>
         </div>
         <div className="card-body">
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1.5rem', alignItems: 'center' }}>
             <div>
-              <div className="muted" style={{ fontSize: '0.78rem' }}>Organisation</div>
+              <div className="muted" style={{ fontSize: '0.78rem' }}>{t('subscription.organisation')}</div>
               <strong>{tenant.name}</strong>
             </div>
 
             <div>
-              <div className="muted" style={{ fontSize: '0.78rem' }}>Status</div>
+              <div className="muted" style={{ fontSize: '0.78rem' }}>{t('subscription.status')}</div>
               <StatusBadge value={tenant.subscriptionStatus} />
             </div>
 
             <div>
-              <div className="muted" style={{ fontSize: '0.78rem' }}>Plan</div>
-              <strong>{tenant.subscriptionPlan ? tenant.subscriptionPlan : '7-day free trial'}</strong>
+              <div className="muted" style={{ fontSize: '0.78rem' }}>{t('subscription.plan')}</div>
+              <strong>{tenant.subscriptionPlan ? planName(tenant.subscriptionPlan) : t('subscription.freeTrial')}</strong>
             </div>
 
             {tenant.subscriptionStatus === 'trialing' && tenant.trialEndsAt && (
               <div>
-                <div className="muted" style={{ fontSize: '0.78rem' }}>Trial ends</div>
+                <div className="muted" style={{ fontSize: '0.78rem' }}>{t('subscription.trialEnds')}</div>
                 <strong>{formatDate(tenant.trialEndsAt)}</strong>
                 <div className="muted" style={{ fontSize: '0.78rem' }}>
-                  {trialDays === 1 ? '1 day remaining' : `${trialDays} days remaining`}
+                  {t(trialDays === 1 ? 'subscription.dayRemaining' : 'subscription.daysRemaining', { n: trialDays })}
                 </div>
               </div>
             )}
 
             {tenant.subscriptionStatus === 'active' && tenant.subscriptionEndsAt && (
               <div>
-                <div className="muted" style={{ fontSize: '0.78rem' }}>Renews / ends</div>
+                <div className="muted" style={{ fontSize: '0.78rem' }}>{t('subscription.renewsEnds')}</div>
                 <strong>{formatDate(tenant.subscriptionEndsAt)}</strong>
               </div>
             )}
@@ -169,8 +175,8 @@ export default function Subscription() {
       </div>
 
       <PageHead
-        title="Choose a plan"
-        subtitle="All plans include the Worker administrative workflow. Your 7-day trial is free."
+        title={t('subscription.chooseTitle')}
+        subtitle={t('subscription.chooseSubtitle')}
       />
 
       <div className="grid cols-3">
@@ -185,22 +191,22 @@ export default function Subscription() {
           >
             {plan.popular && (
               <div style={{ position: 'absolute', top: '-0.7rem', right: '1rem' }}>
-                <span className="badge green">MOST POPULAR</span>
+                <span className="badge green">{t('landing.pricing.mostPopular')}</span>
               </div>
             )}
 
             <div className="card-head">
-              <h3>{plan.name}</h3>
+              <h3>{planName(plan.id)}</h3>
             </div>
 
             <div className="card-body">
               <div style={{ marginBottom: '0.7rem' }}>
                 <span style={{ fontSize: '2rem', fontWeight: 700 }}>${plan.price}</span>
-                <span className="muted"> / month</span>
+                <span className="muted"> {t('subscription.perMonth')}</span>
               </div>
 
               <p className="muted" style={{ minHeight: '3.5rem' }}>
-                {plan.description}
+                {PLAN_KEY[plan.id] ? t(`landing.pricing.${PLAN_KEY[plan.id]}.desc`) : plan.description}
               </p>
 
               <button
@@ -211,13 +217,13 @@ export default function Subscription() {
                     await api.post("/tenant/subscription", { plan: plan.id });
                     setSelected(plan.id);
                     await load();
-                    setMsg({ type: "ok", text: `${plan.name} selected. Your plan is saved and ready for payment.` });
+                    setMsg({ type: "ok", text: t('subscription.planSelected', { plan: planName(plan.id) }) });
                   } catch (e) {
-                    setMsg({ type: "err", text: e.response?.data?.message || "Could not select plan." });
+                    setMsg({ type: "err", text: e.response?.data?.message || t('subscription.selectFailed') });
                   }
                 }}
               >
-                {selected === plan.id ? 'Selected' : 'Select plan'}
+                {selected === plan.id ? t('subscription.selected') : t('subscription.selectPlan')}
               </button>
             </div>
           </div>
@@ -226,32 +232,32 @@ export default function Subscription() {
 
       <div className="card" style={{ marginTop: '1rem' }}>
         <div className="card-head">
-          <h3>Activate your subscription</h3>
+          <h3>{t('subscription.activateTitle')}</h3>
         </div>
         <div className="card-body">
           {!selected ? (
             <p className="muted" style={{ margin: 0 }}>
-              Select a plan above to continue to payment.
+              {t('subscription.selectAbove')}
             </p>
           ) : (
             <div className="grid cols-2">
               <div>
                 <h4>M-Pesa</h4>
                 <p className="muted">
-                  An STK push will be sent to the phone number below.
+                  {t('subscription.stkNote')}
                 </p>
                 <form onSubmit={payWithMpesa}>
                   <div className="field">
-                    <label>Phone number</label>
+                    <label>{t('subscription.phone')}</label>
                     <input
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
-                      placeholder="07.. or 2547.."
+                      placeholder={t('subscription.phonePlaceholder')}
                       required
                     />
                   </div>
                   <button className="btn" disabled={busy === 'mpesa'}>
-                    {busy === 'mpesa' ? <span className="spinner" /> : 'Pay with M-Pesa'}
+                    {busy === 'mpesa' ? <span className="spinner" /> : t('subscription.payMpesa')}
                   </button>
                 </form>
               </div>
@@ -259,14 +265,14 @@ export default function Subscription() {
               <div>
                 <h4>PayPal</h4>
                 <p className="muted">
-                  Continue to PayPal to pay for the selected plan in USD.
+                  {t('subscription.paypalNote')}
                 </p>
                 <button
                   className="btn secondary"
                   onClick={payWithPaypal}
                   disabled={busy === 'paypal'}
                 >
-                  {busy === 'paypal' ? <span className="spinner" /> : 'Pay with PayPal'}
+                  {busy === 'paypal' ? <span className="spinner" /> : t('subscription.payPaypal')}
                 </button>
               </div>
             </div>
@@ -276,15 +282,15 @@ export default function Subscription() {
 
       <div className="card" style={{ marginTop: '1rem' }}>
         <div className="card-head">
-          <h3>Billing</h3>
+          <h3>{t('nav.billing')}</h3>
         </div>
         <div className="card-body">
           <p style={{ marginTop: 0 }}>
-            Paid subscriptions can be settled through <strong>M-Pesa</strong> or <strong>PayPal</strong>.
+            {t('subscription.settleNote')}
           </p>
           <p className="muted" style={{ marginBottom: 0 }}>
-            Your selected plan will be activated after successful payment confirmation.
-            Payment history is available under Administration → Payments.
+            {t('subscription.activationNote')}
+            {t('subscription.historyNote')}
           </p>
         </div>
       </div>

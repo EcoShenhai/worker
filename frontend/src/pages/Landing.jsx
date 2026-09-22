@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import Logo from '../components/Logo.jsx';
+import LanguageSwitcher from '../components/LanguageSwitcher.jsx';
+import { useI18n } from '../i18n/index.jsx';
 
 export default function Landing() {
+  const { t } = useI18n();
+  const features = ['f1', 'f2', 'f3', 'f4'];
+  const steps = ['s1', 's2', 's3', 's4'];
   return (
     <div className="lp">
       <style>{`
@@ -41,82 +46,81 @@ export default function Landing() {
       <nav className="lp-nav">
         <div className="lp-brand"><Logo size={32} /><span className="wm">Worker</span></div>
         <div className="cta">
-          <Link className="btn secondary sm" to="/login">Sign in</Link>
-          <Link className="btn sm" to="/register">Create account</Link>
+          <LanguageSwitcher />
+          <Link className="btn secondary sm" to="/login">{t('common.signIn')}</Link>
+          <Link className="btn sm" to="/register">{t('common.createAccount')}</Link>
         </div>
       </nav>
 
       <header className="lp-hero">
-        <h1>Turn what you say into finished, filed paperwork.</h1>
-        <p>Worker is an AI administrative workplace for organizations that produce large quantities of formal documents from meetings, briefings and correspondence. Record a meeting or dictate, and Worker transcribes it, drafts minutes, memos, letters, reports and policy briefs, and takes them through review and approval — with a complete audit trail.</p>
+        <h1>{t('landing.hero.title')}</h1>
+        <p>{t('landing.hero.body')}</p>
         <div className="cta">
-          <Link className="btn" to="/register">Get started</Link>
-          <Link className="btn secondary" to="/login">Sign in</Link>
+          <Link className="btn" to="/register">{t('common.getStarted')}</Link>
+          <Link className="btn secondary" to="/login">{t('common.signIn')}</Link>
         </div>
-        <div className="badge-row">Audio · English · Secure workplace</div>
+        <div className="badge-row">{t('landing.hero.badgeRow')}</div>
       </header>
 
       <section className="lp-section">
-        <h2>What Worker does</h2>
-        <p className="lead">The routine office work that surrounds meetings and correspondence — handled in minutes, not hours.</p>
+        <h2>{t('landing.what.title')}</h2>
+        <p className="lead">{t('landing.what.lead')}</p>
         <div className="lp-grid">
-          <div className="lp-card"><div className="ic">1</div><h3>Record &amp; transcribe</h3><p>Capture meetings, interviews, briefings or dictation. Audio is transcribed locally in English.</p></div>
-          <div className="lp-card"><div className="ic">2</div><h3>Draft with AI</h3><p>Generate minutes, memos, letters, reports, policy briefs and circulars in correct official form.</p></div>
-          <div className="lp-card"><div className="ic">3</div><h3>Review &amp; approve</h3><p>Every document moves through draft, review, approval and finalisation — people stay in control.</p></div>
-          <div className="lp-card"><div className="ic">4</div><h3>Secure &amp; audited</h3><p>Role-based access and a complete audit trail. Correspondence is only ever sent by a person.</p></div>
+          {features.map((f, i) => (
+            <div className="lp-card" key={f}><div className="ic">{i + 1}</div><h3>{t(`landing.what.${f}.title`)}</h3><p>{t(`landing.what.${f}.body`)}</p></div>
+          ))}
         </div>
       </section>
 
       <section className="lp-section" style={{ paddingTop: 0 }}>
-        <h2>Getting started takes a minute</h2>
-        <p className="lead">Create an account and start your 7-day free trial.</p>
+        <h2>{t('landing.start.title')}</h2>
+        <p className="lead">{t('landing.start.lead')}</p>
         <div className="lp-steps">
-          <div className="lp-step"><div className="n">1</div><h3>Create your account</h3><p>Enter your name, email and a password.</p></div>
-          <div className="lp-step"><div className="n">2</div><h3>Verify your email</h3><p>Enter the 6-digit code we email you.</p></div>
-          <div className="lp-step"><div className="n">3</div><h3>Sign in securely</h3><p>Each sign-in confirms with a one-time emailed code.</p></div>
-          <div className="lp-step"><div className="n">4</div><h3>Start working</h3><p>Create a session, record, and generate your first document.</p></div>
+          {steps.map((s, i) => (
+            <div className="lp-step" key={s}><div className="n">{i + 1}</div><h3>{t(`landing.start.${s}.title`)}</h3><p>{t(`landing.start.${s}.body`)}</p></div>
+          ))}
         </div>
       </section>
 
       <section className="lp-section lp-pricing" style={{ paddingTop: 3.5 }}>
-        <h2>Simple subscription pricing</h2>
-        <p className="lead">Start with a 7-day free trial. Choose the plan that fits the volume of administrative work your organization produces.</p>
+        <h2>{t('landing.pricing.title')}</h2>
+        <p className="lead">{t('landing.pricing.lead')}</p>
         <div className="lp-grid">
           <div className="lp-card">
-            <h3>Starter</h3>
-            <div style={{ fontSize: '2rem', fontWeight: 700, margin: '.35rem 0' }}>$10<span style={{ fontSize: '.85rem', fontWeight: 400, color: 'var(--muted)' }}>/month</span></div>
-            <p>For small teams getting started with AI-assisted administrative work.</p>
+            <h3>{t('landing.pricing.starter.name')}</h3>
+            <div style={{ fontSize: '2rem', fontWeight: 700, margin: '.35rem 0' }}>$10<span style={{ fontSize: '.85rem', fontWeight: 400, color: 'var(--muted)' }}>{t('landing.pricing.perMonth')}</span></div>
+            <p>{t('landing.pricing.starter.desc')}</p>
             <div style={{ marginTop: '1rem' }}>
-              <Link className="btn sm" to="/register">Start free trial</Link>
+              <Link className="btn sm" to="/register">{t('common.startFreeTrial')}</Link>
             </div>
           </div>
           <div className="lp-card" style={{ borderColor: 'var(--primary)' }}>
-            <div style={{ fontSize: '.75rem', fontWeight: 700, color: 'var(--primary-dark)', marginBottom: '.35rem' }}>MOST POPULAR</div>
-            <h3>Professional</h3>
-            <div style={{ fontSize: '2rem', fontWeight: 700, margin: '.35rem 0' }}>$20<span style={{ fontSize: '.85rem', fontWeight: 400, color: 'var(--muted)' }}>/month</span></div>
-            <p>For organizations with regular, high-volume document production.</p>
+            <div style={{ fontSize: '.75rem', fontWeight: 700, color: 'var(--primary-dark)', marginBottom: '.35rem' }}>{t('landing.pricing.mostPopular')}</div>
+            <h3>{t('landing.pricing.professional.name')}</h3>
+            <div style={{ fontSize: '2rem', fontWeight: 700, margin: '.35rem 0' }}>$20<span style={{ fontSize: '.85rem', fontWeight: 400, color: 'var(--muted)' }}>{t('landing.pricing.perMonth')}</span></div>
+            <p>{t('landing.pricing.professional.desc')}</p>
             <div style={{ marginTop: '1rem' }}>
-              <Link className="btn sm" to="/register">Start free trial</Link>
+              <Link className="btn sm" to="/register">{t('common.startFreeTrial')}</Link>
             </div>
           </div>
           <div className="lp-card">
-            <h3>Premium</h3>
-            <div style={{ fontSize: '2rem', fontWeight: 700, margin: '.35rem 0' }}>$50<span style={{ fontSize: '.85rem', fontWeight: 400, color: 'var(--muted)' }}>/month</span></div>
-            <p>For larger organizations with substantial administrative workloads.</p>
+            <h3>{t('landing.pricing.premium.name')}</h3>
+            <div style={{ fontSize: '2rem', fontWeight: 700, margin: '.35rem 0' }}>$50<span style={{ fontSize: '.85rem', fontWeight: 400, color: 'var(--muted)' }}>{t('landing.pricing.perMonth')}</span></div>
+            <p>{t('landing.pricing.premium.desc')}</p>
             <div style={{ marginTop: '1rem' }}>
-              <Link className="btn sm" to="/register">Start free trial</Link>
+              <Link className="btn sm" to="/register">{t('common.startFreeTrial')}</Link>
             </div>
           </div>
         </div>
-        <p className="lead" style={{ marginTop: '1.4rem', marginBottom: 0, fontSize: '.85rem' }}>M-Pesa and PayPal supported for paid subscriptions.</p>
+        <p className="lead" style={{ marginTop: '1.4rem', marginBottom: 0, fontSize: '.85rem' }}>{t('landing.pricing.paymentsNote')}</p>
       </section>
 
       <section className="lp-final">
-        <h2>Ready to try Worker?</h2>
-        <Link className="btn" to="/register">Create your account</Link>
+        <h2>{t('landing.final.title')}</h2>
+        <Link className="btn" to="/register">{t('landing.final.cta')}</Link>
       </section>
 
-      <footer className="lp-foot">Worker — AI administrative workplace agent · worker.eshcloud.com</footer>
+      <footer className="lp-foot">{t('landing.footer')}</footer>
     </div>
   );
 }

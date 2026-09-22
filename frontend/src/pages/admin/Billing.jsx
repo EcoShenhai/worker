@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import api from '../../api/client.js';
 import { PageHead, StatusBadge, Empty, Notice } from '../../components/ui.jsx';
+import { useI18n } from '../../i18n/index.jsx';
 
 function formatDate(value) {
   if (!value) return '—';
@@ -32,6 +33,7 @@ async function downloadPdf(url, filename) {
 }
 
 export default function Billing() {
+  const { t } = useI18n();
   const [invoices, setInvoices] = useState([]);
   const [receipts, setReceipts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -51,7 +53,7 @@ export default function Billing() {
     } catch (e) {
       setMsg({
         type: 'err',
-        text: e.response?.data?.message || 'Could not load billing documents.',
+        text: e.response?.data?.message || t('billing.loadFailed'),
       });
     } finally {
       setLoading(false);
@@ -75,7 +77,7 @@ export default function Billing() {
     } catch (e) {
       setMsg({
         type: 'err',
-        text: e.response?.data?.message || `Could not download ${type}.`,
+        text: e.response?.data?.message || t(`billing.downloadFailed.${type}`),
       });
     } finally {
       setBusy('');
@@ -85,48 +87,44 @@ export default function Billing() {
   return (
     <>
       <PageHead
-        title="Billing"
-        subtitle="Invoices and receipts for completed Worker subscription payments."
+        title={t('nav.billing')}
+        subtitle={t('billing.subtitle')}
       />
 
       {msg && <Notice type={msg.type}>{msg.text}</Notice>}
 
       <div className="card" style={{ marginBottom: '1rem' }}>
         <div className="card-head">
-          <h3>Billing documents</h3>
+          <h3>{t('billing.documentsTitle')}</h3>
         </div>
         <div className="card-body">
           <p style={{ marginTop: 0 }}>
-            Download invoices and receipts for your organisation's completed
-            subscription payments.
+            {t('billing.intro')}
           </p>
           <p className="muted" style={{ marginBottom: 0 }}>
-            These documents record Worker subscription payments and are provided
-            for payment and reimbursement purposes. They are not represented as
-            KRA/eTIMS tax invoices unless separately issued through a compliant
-            eTIMS integration.
+            {t('billing.disclaimer')}
           </p>
         </div>
       </div>
 
       <div className="card" style={{ marginBottom: '1rem' }}>
         <div className="card-head">
-          <h3>Invoices</h3>
+          <h3>{t('billing.invoices')}</h3>
         </div>
         <div className="card-body" style={{ padding: 0 }}>
           {loading ? (
             <div className="empty"><span className="spinner" /></div>
           ) : invoices.length === 0 ? (
-            <Empty>No invoices yet.</Empty>
+            <Empty>{t('billing.noInvoices')}</Empty>
           ) : (
             <table>
               <thead>
                 <tr>
-                  <th>Invoice</th>
-                  <th>Date</th>
-                  <th>Description</th>
-                  <th>Amount</th>
-                  <th>Status</th>
+                  <th>{t('billing.table.invoice')}</th>
+                  <th>{t('billing.table.date')}</th>
+                  <th>{t('billing.table.description')}</th>
+                  <th>{t('billing.table.amount')}</th>
+                  <th>{t('billing.table.status')}</th>
                   <th />
                 </tr>
               </thead>
@@ -152,7 +150,7 @@ export default function Billing() {
                       >
                         {busy === `invoice-${invoice.id}`
                           ? <span className="spinner" />
-                          : 'Download PDF'}
+                          : t('billing.downloadPdf')}
                       </button>
                     </td>
                   </tr>
@@ -165,23 +163,23 @@ export default function Billing() {
 
       <div className="card">
         <div className="card-head">
-          <h3>Receipts</h3>
+          <h3>{t('billing.receipts')}</h3>
         </div>
         <div className="card-body" style={{ padding: 0 }}>
           {loading ? (
             <div className="empty"><span className="spinner" /></div>
           ) : receipts.length === 0 ? (
-            <Empty>No receipts yet.</Empty>
+            <Empty>{t('billing.noReceipts')}</Empty>
           ) : (
             <table>
               <thead>
                 <tr>
-                  <th>Receipt</th>
-                  <th>Date</th>
-                  <th>Provider</th>
-                  <th>Reference</th>
-                  <th>Amount</th>
-                  <th>Status</th>
+                  <th>{t('billing.table.receipt')}</th>
+                  <th>{t('billing.table.date')}</th>
+                  <th>{t('billing.table.provider')}</th>
+                  <th>{t('billing.table.reference')}</th>
+                  <th>{t('billing.table.amount')}</th>
+                  <th>{t('billing.table.status')}</th>
                   <th />
                 </tr>
               </thead>
@@ -214,7 +212,7 @@ export default function Billing() {
                       >
                         {busy === `receipt-${receipt.id}`
                           ? <span className="spinner" />
-                          : 'Download PDF'}
+                          : t('billing.downloadPdf')}
                       </button>
                     </td>
                   </tr>

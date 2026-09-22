@@ -3,9 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import api from '../api/client.js';
 import { useAuth } from '../context/AuthContext.jsx';
 import { Notice } from '../components/ui.jsx';
+import LanguageSwitcher from '../components/LanguageSwitcher.jsx';
+import { useI18n } from '../i18n/index.jsx';
 
 export default function ChangePassword() {
   const { user, refreshUser, logout } = useAuth();
+  const { t } = useI18n();
   const navigate = useNavigate();
   const forced = user?.requiresPasswordChange;
 
@@ -18,8 +21,8 @@ export default function ChangePassword() {
   const submit = async (e) => {
     e.preventDefault();
     setErr('');
-    if (next.length < 10) return setErr('New password must be at least 10 characters.');
-    if (next !== confirm) return setErr('Passwords do not match.');
+    if (next.length < 10) return setErr(t('auth.newPwMin', { n: 10 }));
+    if (next !== confirm) return setErr(t('auth.pwMismatch'));
     setBusy(true);
     try {
       await api.post('/auth/change-password', {
@@ -29,7 +32,7 @@ export default function ChangePassword() {
       await refreshUser();
       navigate('/');
     } catch (e) {
-      setErr(e.response?.data?.message || 'Could not change password.');
+      setErr(e.response?.data?.message || t('auth.changeFailed'));
     } finally {
       setBusy(false);
     }
@@ -38,30 +41,31 @@ export default function ChangePassword() {
   return (
     <div className="auth-wrap">
       <div className="auth-card">
-        <div className="wordmark">Set a new password</div>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '0.4rem' }}><LanguageSwitcher /></div>
+        <div className="wordmark">{t('auth.setNewPassword')}</div>
         <div className="sub">
-          {forced ? 'For security, set your own password before continuing.' : 'Update your account password.'}
+          {forced ? t('auth.forcedChange') : t('auth.updateAccountPassword')}
         </div>
         <Notice type="err">{err}</Notice>
         <form onSubmit={submit}>
           {!forced && (
             <div className="field">
-              <label>Current password</label>
+              <label>{t('auth.currentPassword')}</label>
               <input type="password" value={current} onChange={(e) => setCurrent(e.target.value)} required />
             </div>
           )}
           <div className="field">
-            <label>New password</label>
+            <label>{t('auth.newPassword')}</label>
             <input type="password" value={next} onChange={(e) => setNext(e.target.value)} autoComplete="new-password" required />
           </div>
           <div className="field">
-            <label>Confirm new password</label>
+            <label>{t('auth.confirmNewPassword')}</label>
             <input type="password" value={confirm} onChange={(e) => setConfirm(e.target.value)} autoComplete="new-password" required />
           </div>
-          <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : 'Update password'}</button>
+          <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : t('auth.updatePassword')}</button>
         </form>
         <button className="btn ghost sm block" style={{ marginTop: '0.8rem' }} onClick={async () => { await logout(); navigate('/login'); }}>
-          Sign out instead
+          {t('auth.signOutInstead')}
         </button>
       </div>
     </div>

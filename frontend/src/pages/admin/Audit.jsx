@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
 import api from '../../api/client.js';
 import { PageHead, Empty } from '../../components/ui.jsx';
+import { useI18n } from '../../i18n/index.jsx';
 
 export default function Audit() {
+  const { t } = useI18n();
   const [logs, setLogs] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -17,16 +19,16 @@ export default function Audit() {
 
   return (
     <>
-      <PageHead title="Audit Trail" subtitle="Every significant action is recorded. Logs hold metadata and identifiers only — never document bodies or audio." />
+      <PageHead title={t('nav.audit')} subtitle={t('audit.subtitle')} />
       <div className="card"><div className="card-body" style={{ padding: 0 }}>
-        {loading ? <div className="empty"><span className="spinner" /></div> : logs.length === 0 ? <Empty>No audit entries.</Empty> : (
+        {loading ? <div className="empty"><span className="spinner" /></div> : logs.length === 0 ? <Empty>{t('audit.empty')}</Empty> : (
           <table>
-            <thead><tr><th>When</th><th>Actor</th><th>Action</th><th>Resource</th></tr></thead>
+            <thead><tr><th>{t('audit.table.when')}</th><th>{t('audit.table.actor')}</th><th>{t('audit.table.action')}</th><th>{t('audit.table.resource')}</th></tr></thead>
             <tbody>
               {logs.map((l) => (
                 <tr key={l.id}>
                   <td className="muted mono" style={{ fontSize: '0.78rem' }}>{new Date(l.createdAt).toLocaleString()}</td>
-                  <td>{l.user?.name || l.userId || 'system'}</td>
+                  <td>{l.user?.name || l.userId || t('audit.system')}</td>
                   <td><span className="badge grey">{l.action}</span></td>
                   <td className="muted" style={{ fontSize: '0.82rem' }}>{l.resourceType}{l.resourceId ? ` · ${String(l.resourceId).slice(0, 8)}` : ''}</td>
                 </tr>

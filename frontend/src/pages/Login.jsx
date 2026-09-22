@@ -2,10 +2,12 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
 import { Notice } from '../components/ui.jsx';
-import Logo from '../components/Logo.jsx';
+import AuthBrand from '../components/AuthBrand.jsx';
+import { useI18n } from '../i18n/index.jsx';
 
 export default function Login() {
   const { login } = useAuth();
+  const { t } = useI18n();
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -24,7 +26,7 @@ export default function Login() {
         navigate('/verify-email', { state: { userId: r.userId, email: email.trim() } });
       }
     } catch (e) {
-      setErr(e.response?.data?.message || 'Sign in failed. Check your credentials.');
+      setErr(e.response?.data?.message || t('auth.signInFailed'));
     } finally {
       setBusy(false);
     }
@@ -33,26 +35,26 @@ export default function Login() {
   return (
     <div className="auth-wrap">
       <div className="auth-card">
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}><Logo size={40} /><div className="wordmark">Worker</div></div>
-        <div className="sub">AI administrative workspace</div>
+        <AuthBrand />
+        <div className="sub">{t('brand.tagline')}</div>
         <Notice type="err">{err}</Notice>
         <form onSubmit={submit}>
           <div className="field">
-            <label>Email</label>
+            <label>{t('auth.email')}</label>
             <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="username" required />
           </div>
           <div className="field">
-            <label>Password</label>
+            <label>{t('auth.password')}</label>
             <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" required />
           </div>
-          <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : 'Sign in'}</button>
+          <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : t('common.signIn')}</button>
         </form>
         <div className="between" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
-          <Link to="/forgot-password">Forgot password?</Link>
-          <Link to="/register">Create account</Link>
+          <Link to="/forgot-password">{t('auth.forgotPassword')}</Link>
+          <Link to="/register">{t('common.createAccount')}</Link>
         </div>
         <p className="muted" style={{ fontSize: '0.78rem', marginTop: '1rem', marginBottom: 0 }}>
-          A one-time code is emailed to confirm each sign-in.
+          {t('auth.mfaNotice')}
         </p>
       </div>
     </div>

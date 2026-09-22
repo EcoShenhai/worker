@@ -1,12 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import api, { getToken } from '../api/client.js';
-import { PageHead, StatusBadge, Empty, Notice } from '../components/ui.jsx';
+import { PageHead, StatusBadge, Empty, Notice, useLabel } from '../components/ui.jsx';
+import { useI18n } from '../i18n/index.jsx';
 import { useAuth, atLeast } from '../context/AuthContext.jsx';
 
 export default function DocumentEditor() {
   const { id } = useParams();
   const { user } = useAuth();
+  const { t } = useI18n();
+  const label = useLabel();
   const [doc, setDoc] = useState(null);
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState(null);
@@ -21,7 +24,7 @@ export default function DocumentEditor() {
       setDoc(d);
       setContentText(JSON.stringify(d.content, null, 2));
     } catch {
-      setMsg({ type: 'err', text: 'Could not load document.' });
+      setMsg({ type: 'err', text: t('doc.loadFailed') });
     } finally {
       setLoading(false);
     }
@@ -35,15 +38,15 @@ export default function DocumentEditor() {
     try {
       parsed = JSON.parse(contentText);
     } catch {
-      return setMsg({ type: 'err', text: 'Content is not valid JSON.' });
+      return setMsg({ type: 'err', text: t('doc.invalidJson') });
     }
     setBusy('save');
     try {
       await api.put(`/documents/${id}`, { content: parsed });
-      setMsg({ type: 'ok', text: 'Saved. Version incremented.' });
+      setMsg({ type: 'ok', text: t('doc.saved') });
       load();
     } catch (e) {
-      setMsg({ type: 'err', text: e.response?.data?.message || 'Save failed.' });
+      setMsg({ type: 'err', text: e.response?.data?.message || t('doc.saveFailed') });
     } finally {
       setBusy('');
     }
@@ -54,24 +57,24 @@ export default function DocumentEditor() {
     try {
       await api.post(`/documents/${id}/${verb}`, { comment });
       setComment('');
-      setMsg({ type: 'ok', text: `Document ${verb === 'submit' ? 'submitted for review' : verb + 'd'}.` });
+      setMsg({ type: 'ok', text: t(`doc.done.${verb}`) });
       load();
     } catch (e) {
-      setMsg({ type: 'err', text: e.response?.data?.message || `Could not ${verb}.` });
+      setMsg({ type: 'err', text: e.response?.data?.message || t(`doc.failed.${verb}`) });
     } finally {
       setBusy('');
     }
   };
 
   const saveAsTemplate = async () => {
-    const name = window.prompt('Template name', (doc.title || '') + ' template');
+    const name = window.prompt(t('doc.templateName'), t('doc.templateDefault', { title: doc.title || '' }));
     if (!name) return;
     setBusy('tpl');
     try {
       await api.post('/templates', { name, documentType: doc.type, content: doc.content });
-      setMsg({ type: 'ok', text: 'Saved as a reusable template for your organisation.' });
+      setMsg({ type: 'ok', text: t('doc.templateSaved') });
     } catch (e) {
-      setMsg({ type: 'err', text: e.response?.data?.message || 'Could not save template.' });
+      setMsg({ type: 'err', text: e.response?.data?.message || t('doc.templateSaveFailed') });
     } finally { setBusy(''); }
   };
 
@@ -87,37 +90,37 @@ export default function DocumentEditor() {
       a.click();
       URL.revokeObjectURL(url);
     } catch {
-      setMsg({ type: 'err', text: 'Export failed.' });
+      setMsg({ type: 'err', text: t('doc.exportFailed') });
     } finally {
       setBusy('');
     }
   };
 
   if (loading) return <div className="empty"><span className="spinner" /></div>;
-  if (!doc) return <Empty>Document not found.</Empty>;
+  if (!doc) return <Empty>{t('doc.notFound')}</Empty>;
 
   return (
     <>
       <PageHead
         title={doc.title}
-        subtitle={`${doc.type.replace(/_/g, ' ')} · v${doc.version}${doc.referenceNumber ? ' · ' + doc.referenceNumber : ''}`}
+        subtitle={`${label('docType', doc.type)} · v${doc.version}${doc.referenceNumber ? ' · ' + doc.referenceNumber : ''}`}
         actions={
           <>
             <button className="btn secondary" onClick={() => exportAs('docx')} disabled={busy.startsWith('export')}>
-              {busy === 'export-docx' ? <span className="spinner" /> : 'Export DOCX'}
+              {busy === 'export-docx' ? <span className="spinner" /> : t('doc.exportDocx')}
             </button>
             <button className="btn secondary" onClick={() => exportAs('pptx')} disabled={busy.startsWith('export')}>
-              {busy === 'export-pptx' ? <span className="spinner" /> : 'Export PPTX'}
+              {busy === 'export-pptx' ? <span className="spinner" /> : t('doc.exportPptx')}
             </button>
             {(Array.isArray(doc.content?.tables) && doc.content.tables.length) || (Array.isArray(doc.content?.action_matrix) && doc.content.action_matrix.length) ? (
               <button className="btn secondary" onClick={() => exportAs('xlsx')} disabled={busy.startsWith('export')}>
-                {busy === 'export-xlsx' ? <span className="spinner" /> : 'Export XLSX'}
+                {busy === 'export-xlsx' ? <span className="spinner" /> : t('doc.exportXlsx')}
               </button>
             ) : null}
             <button className="btn ghost" onClick={saveAsTemplate} disabled={busy.startsWith('export') || busy === 'tpl'}>
-              {busy === 'tpl' ? <span className="spinner" /> : 'Save as template'}
+              {busy === 'tpl' ? <span className="spinner" /> : t('doc.saveAsTemplate')}
             </button>
-            <Link className="btn ghost" to="/documents">Back</Link>
+            <Link className="btn ghost" to="/documents">{t('common.back')}</Link>
           </>
         }
       />
@@ -126,7 +129,7 @@ export default function DocumentEditor() {
       <div className="grid cols-2">
         <div className="card">
           <div className="card-head">
-            <h3>Content</h3>
+            <h3>{t('doc.content')}</h3>
             <StatusBadge value={doc.status} />
           </div>
           <div className="card-body">
@@ -136,41 +139,41 @@ export default function DocumentEditor() {
 
         <div className="stack">
           <div className="card">
-            <div className="card-head"><h3>Workflow</h3>{doc.aiAssisted && <span className="badge blue">AI-assisted draft</span>}</div>
+            <div className="card-head"><h3>{t('doc.workflow')}</h3>{doc.aiAssisted && <span className="badge blue">{t('doc.aiAssisted')}</span>}</div>
             <div className="card-body">
               <p className="muted" style={{ fontSize: '0.85rem' }}>
-                Audit chain: audio → transcript → AI draft → human edit → approval → final. Every step is recorded.
+                {t('doc.auditChain')}
               </p>
               <div className="field">
-                <label>Comment (optional)</label>
-                <input value={comment} onChange={(e) => setComment(e.target.value)} placeholder="Add a note for the record" />
+                <label>{t('doc.comment')}</label>
+                <input value={comment} onChange={(e) => setComment(e.target.value)} placeholder={t('doc.commentPlaceholder')} />
               </div>
               <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
-                {doc.status === 'draft' && <button className="btn" onClick={() => action('submit')} disabled={busy === 'submit'}>Submit for review</button>}
+                {doc.status === 'draft' && <button className="btn" onClick={() => action('submit')} disabled={busy === 'submit'}>{t('doc.submit')}</button>}
                 {doc.status === 'in_review' && atLeast(user?.role, 'admin') && (
                   <>
-                    <button className="btn" onClick={() => action('approve')} disabled={busy === 'approve'}>Approve</button>
-                    <button className="btn danger" onClick={() => action('reject')} disabled={busy === 'reject'}>Reject</button>
+                    <button className="btn" onClick={() => action('approve')} disabled={busy === 'approve'}>{t('doc.approve')}</button>
+                    <button className="btn danger" onClick={() => action('reject')} disabled={busy === 'reject'}>{t('doc.reject')}</button>
                   </>
                 )}
                 {doc.status === 'approved' && atLeast(user?.role, 'admin') && (
-                  <button className="btn" onClick={() => action('finalize')} disabled={busy === 'finalize'}>Finalize</button>
+                  <button className="btn" onClick={() => action('finalize')} disabled={busy === 'finalize'}>{t('doc.finalize')}</button>
                 )}
-                {doc.status === 'final' && <span className="badge blue">Final — locked for editing</span>}
+                {doc.status === 'final' && <span className="badge blue">{t('doc.finalLocked')}</span>}
               </div>
             </div>
           </div>
 
           {editable && (
             <div className="card">
-              <div className="card-head"><h3>Edit content (JSON)</h3></div>
+              <div className="card-head"><h3>{t('doc.editJson')}</h3></div>
               <div className="card-body">
                 <p className="muted" style={{ fontSize: '0.8rem' }}>
-                  Structured content drives the branded DOCX. Edit the fields below and save; branding and layout are applied automatically on export.
+                  {t('doc.jsonNote')}
                 </p>
                 <textarea value={contentText} onChange={(e) => setContentText(e.target.value)} style={{ minHeight: 260, fontFamily: 'monospace', fontSize: '0.82rem' }} />
                 <button className="btn" style={{ marginTop: '0.6rem' }} onClick={saveContent} disabled={busy === 'save'}>
-                  {busy === 'save' ? <span className="spinner" /> : 'Save content'}
+                  {busy === 'save' ? <span className="spinner" /> : t('doc.saveContent')}
                 </button>
               </div>
             </div>
@@ -178,13 +181,13 @@ export default function DocumentEditor() {
 
           {doc.approvals?.length > 0 && (
             <div className="card">
-              <div className="card-head"><h3>Approval history</h3></div>
+              <div className="card-head"><h3>{t('doc.approvalHistory')}</h3></div>
               <div className="card-body" style={{ padding: 0 }}>
                 <table>
                   <tbody>
                     {doc.approvals.map((a) => (
                       <tr key={a.id}>
-                        <td>{a.action}</td>
+                        <td>{label('approval', a.action)}</td>
                         <td className="muted" style={{ fontSize: '0.8rem' }}>{a.comment || '—'}</td>
                         <td className="muted mono" style={{ fontSize: '0.76rem', textAlign: 'right' }}>{new Date(a.createdAt).toLocaleString()}</td>
                       </tr>

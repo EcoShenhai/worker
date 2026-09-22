@@ -1,3 +1,5 @@
+import { useI18n } from '../i18n/index.jsx';
+
 // Small shared UI helpers.
 export function PageHead({ title, subtitle, actions }) {
   return (
@@ -19,8 +21,21 @@ const STATUS_STYLE = {
   active: 'green', suspended: 'red',
 };
 export function StatusBadge({ value }) {
+  const label = useLabel();
   const cls = STATUS_STYLE[value] || 'grey';
-  return <span className={`badge ${cls}`}>{String(value || '').replace(/_/g, ' ')}</span>;
+  return <span className={`badge ${cls}`}>{label('status', value)}</span>;
+}
+
+// Translate an enum value (status, kind, classification, docType…).
+// Falls back to the humanised raw value when no translation exists.
+export function useLabel() {
+  const { t } = useI18n();
+  return (group, value) => {
+    if (value === undefined || value === null || value === '') return '';
+    const k = `${group}.${value}`;
+    const v = t(k);
+    return v === k ? String(value).replace(/_/g, ' ') : v;
+  };
 }
 
 export function Empty({ children }) {

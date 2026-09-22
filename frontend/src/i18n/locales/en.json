@@ -1,0 +1,628 @@
+{
+  "common": {
+    "language": "Language",
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "createAccount": "Create account",
+    "getStarted": "Get started",
+    "startFreeTrial": "Start free trial",
+    "cancel": "Cancel",
+    "back": "Back",
+    "download": "Download",
+    "viewAll": "View all"
+  },
+  "brand": {
+    "tagline": "AI administrative workspace",
+    "secureWorkspace": "Secure administrative workspace",
+    "badge": "English · Audio"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "workspace": "Workspace",
+    "sessions": "Sessions & Recordings",
+    "documents": "Documents",
+    "correspondence": "Correspondence",
+    "knowledge": "Knowledge Base",
+    "assistant": "Assistant",
+    "askWorker": "Ask Worker",
+    "actions": "Outstanding Actions",
+    "administration": "Administration",
+    "organisation": "Organisation",
+    "users": "Users",
+    "audit": "Audit Trail",
+    "subscription": "Subscription",
+    "payments": "Payments",
+    "billing": "Billing"
+  },
+  "roles": {
+    "viewer": "Viewer",
+    "officer": "Officer",
+    "admin": "Admin",
+    "superadmin": "Super admin"
+  },
+  "landing": {
+    "hero": {
+      "title": "Turn what you say into finished, filed paperwork.",
+      "body": "Worker is an AI administrative workplace for organizations that produce large quantities of formal documents from meetings, briefings and correspondence. Record a meeting or dictate, and Worker transcribes it, drafts minutes, memos, letters, reports and policy briefs, and takes them through review and approval — with a complete audit trail.",
+      "badgeRow": "Audio · English · Secure workplace"
+    },
+    "what": {
+      "title": "What Worker does",
+      "lead": "The routine office work that surrounds meetings and correspondence — handled in minutes, not hours.",
+      "f1": {
+        "title": "Record & transcribe",
+        "body": "Capture meetings, interviews, briefings or dictation. Audio is transcribed locally in English."
+      },
+      "f2": {
+        "title": "Draft with AI",
+        "body": "Generate minutes, memos, letters, reports, policy briefs and circulars in correct official form."
+      },
+      "f3": {
+        "title": "Review & approve",
+        "body": "Every document moves through draft, review, approval and finalisation — people stay in control."
+      },
+      "f4": {
+        "title": "Secure & audited",
+        "body": "Role-based access and a complete audit trail. Correspondence is only ever sent by a person."
+      }
+    },
+    "start": {
+      "title": "Getting started takes a minute",
+      "lead": "Create an account and start your 7-day free trial.",
+      "s1": {
+        "title": "Create your account",
+        "body": "Enter your name, email and a password."
+      },
+      "s2": {
+        "title": "Verify your email",
+        "body": "Enter the 6-digit code we email you."
+      },
+      "s3": {
+        "title": "Sign in securely",
+        "body": "Each sign-in confirms with a one-time emailed code."
+      },
+      "s4": {
+        "title": "Start working",
+        "body": "Create a session, record, and generate your first document."
+      }
+    },
+    "pricing": {
+      "title": "Simple subscription pricing",
+      "lead": "Start with a 7-day free trial. Choose the plan that fits the volume of administrative work your organization produces.",
+      "perMonth": "/month",
+      "mostPopular": "MOST POPULAR",
+      "starter": {
+        "name": "Starter",
+        "desc": "For small teams getting started with AI-assisted administrative work."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "For organizations with regular, high-volume document production."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "For larger organizations with substantial administrative workloads."
+      },
+      "paymentsNote": "M-Pesa and PayPal supported for paid subscriptions."
+    },
+    "final": {
+      "title": "Ready to try Worker?",
+      "cta": "Create your account"
+    },
+    "footer": "Worker — AI administrative workplace agent · worker.eshcloud.com"
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Full name",
+    "confirmPassword": "Confirm password",
+    "currentPassword": "Current password",
+    "newPassword": "New password",
+    "confirmNewPassword": "Confirm new password",
+    "code6": "6-digit code",
+    "signInFailed": "Sign in failed. Check your credentials.",
+    "forgotPassword": "Forgot password?",
+    "mfaNotice": "A one-time code is emailed to confirm each sign-in.",
+    "createYourAccount": "Create your account",
+    "pwMin": "Password must be at least {n} characters.",
+    "newPwMin": "New password must be at least {n} characters.",
+    "pwMismatch": "Passwords do not match.",
+    "createFailed": "Could not create account.",
+    "haveAccount": "Already have an account?",
+    "startAtSignIn": "Start at sign in or registration.",
+    "goToSignIn": "Go to sign in",
+    "invalidCode": "Invalid or expired code.",
+    "codeSent": "A new code has been sent.",
+    "resendFailed": "Could not resend.",
+    "verifyEmailTitle": "Verify your email",
+    "verifyEmailTo": "Verify your email — {email}",
+    "verify": "Verify",
+    "resendCode": "Resend code",
+    "signInAgain": "Please sign in again.",
+    "mfaPrompt": "Enter the sign-in code we emailed",
+    "mfaPromptTo": "Enter the sign-in code we emailed to {email}",
+    "verifySignIn": "Verify & sign in",
+    "requestFailed": "Could not process request.",
+    "resetTitle": "Reset your password",
+    "sendResetCode": "Send reset code",
+    "backToSignIn": "Back to sign in",
+    "resetPrompt": "Enter the code we emailed and choose a new password",
+    "resetPassword": "Reset password",
+    "setNewPassword": "Set a new password",
+    "forcedChange": "For security, set your own password before continuing.",
+    "updateAccountPassword": "Update your account password.",
+    "changeFailed": "Could not change password.",
+    "updatePassword": "Update password",
+    "signOutInstead": "Sign out instead"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "That page does not exist in this workspace.",
+    "back": "Return to dashboard"
+  },
+  "status": {
+    "draft": "draft",
+    "in_review": "in review",
+    "approved": "approved",
+    "final": "final",
+    "archived": "archived",
+    "open": "open",
+    "processing": "processing",
+    "ready": "ready",
+    "pending": "pending",
+    "transcribing": "transcribing",
+    "transcribed": "transcribed",
+    "failed": "failed",
+    "sent": "sent",
+    "received": "received",
+    "completed": "completed",
+    "cancelled": "cancelled",
+    "active": "active",
+    "suspended": "suspended"
+  },
+  "kind": {
+    "meeting": "meeting",
+    "interview": "interview",
+    "briefing": "briefing",
+    "dictation": "dictation",
+    "field_report": "field report",
+    "consultation": "consultation",
+    "other": "other"
+  },
+  "classification": {
+    "unclassified": "unclassified",
+    "internal": "internal",
+    "confidential": "confidential",
+    "restricted": "restricted"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {name}",
+    "defaultName": "Officer",
+    "subtitle": "Your administrative workspace — capture, draft, review and file.",
+    "stats": {
+      "sessions": "Sessions",
+      "documents": "Documents",
+      "awaitingReview": "Awaiting review",
+      "outstandingActions": "Outstanding actions"
+    },
+    "recentSessions": "Recent sessions",
+    "documentsToAction": "Documents to action",
+    "noSessions": "No sessions yet.",
+    "nothingToAction": "Nothing needs your attention."
+  },
+  "sessions": {
+    "subtitle": "Each session is a case file — audio, transcript, and the documents produced from it.",
+    "new": "New session",
+    "createFailed": "Could not create session.",
+    "titlePlaceholder": "e.g. County Security Committee — Weekly Briefing",
+    "create": "Create session",
+    "empty": "No sessions yet. Create one to begin recording.",
+    "fields": {
+      "title": "Title",
+      "kind": "Kind",
+      "date": "Date",
+      "classification": "Classification",
+      "status": "Status",
+      "department": "Department",
+      "location": "Location"
+    }
+  },
+  "session": {
+    "loadFailed": "Could not load session.",
+    "micDenied": "Microphone access denied or unavailable.",
+    "audioSaved": "Audio saved to the session.",
+    "uploadFailed": "Upload failed.",
+    "transcribing": "Transcribing locally — this can take a moment for longer audio.",
+    "transcribed": "Transcription complete.",
+    "transcribeFailed": "Transcription failed. Check the STT service is running.",
+    "updateFailed": "Could not update.",
+    "draftingMinutes": "Drafting minutes from the transcript…",
+    "minutesCreated": "Draft minutes created.",
+    "minutesFailed": "Could not generate minutes.",
+    "notFound": "Session not found.",
+    "noDate": "no date",
+    "noLocation": "no location",
+    "generateMinutes": "Generate minutes",
+    "captureAudio": "Capture audio",
+    "stopSave": "Stop & save",
+    "startRecording": "Start recording",
+    "or": "or",
+    "uploadAudio": "Upload audio",
+    "audioNote": "Audio stays on the host. Transcription runs locally in English. Minutes combine every clip in this session, in order.",
+    "documentsFrom": "Documents from this session",
+    "noDocuments": "No documents yet. Transcribe a clip, then generate minutes.",
+    "recordingsTitle": "Recordings & transcripts",
+    "clipOne": "{n} clip",
+    "clipMany": "{n} clips",
+    "noRecordings": "No recordings yet. Record or upload audio above.",
+    "includeTitle": "Include this clip when generating minutes",
+    "inMinutes": "In minutes",
+    "transcribe": "Transcribe",
+    "transcribeHint": "Transcribe this clip to see and edit its transcript here.",
+    "audioLoadFailed": "Could not load audio.",
+    "loadAudio": "Load audio",
+    "words": "{n} words",
+    "verified": "verified",
+    "editVerify": "Edit & verify",
+    "saveVerified": "Save & mark verified",
+    "saveDraft": "Save draft",
+    "emptyTranscript": "Empty transcript."
+  },
+  "docType": {
+    "minutes": "minutes",
+    "memo": "memo",
+    "letter": "letter",
+    "report": "report",
+    "policy_brief": "policy brief",
+    "briefing_note": "briefing note",
+    "concept_note": "concept note",
+    "circular": "circular",
+    "action_matrix": "action matrix",
+    "speech": "speech"
+  },
+  "approval": {
+    "submit": "submitted",
+    "submitted": "submitted",
+    "approve": "approved",
+    "approved": "approved",
+    "reject": "rejected",
+    "rejected": "rejected",
+    "finalize": "finalized",
+    "finalized": "finalized"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Internal Memo",
+      "desc": "Standard internal memorandum with To / From / Subject."
+    },
+    "letter-official": {
+      "name": "Official Letter",
+      "desc": "Formal outgoing letter on the office letterhead."
+    },
+    "circular-general": {
+      "name": "Circular",
+      "desc": "Notice circulated to many recipients."
+    },
+    "report-standard": {
+      "name": "Report",
+      "desc": "General report with summary, sections and recommendations."
+    },
+    "policy-brief": {
+      "name": "Policy Brief",
+      "desc": "Concise brief for decision-makers."
+    },
+    "briefing-note": {
+      "name": "Briefing Note",
+      "desc": "Short note to brief a principal ahead of an engagement."
+    },
+    "concept-note": {
+      "name": "Concept Note",
+      "desc": "Outline of a proposed programme or activity."
+    },
+    "minutes-blank": {
+      "name": "Meeting Minutes (blank)",
+      "desc": "Blank minutes structure to fill by hand."
+    },
+    "speech-remarks": {
+      "name": "Speech / Remarks",
+      "desc": "Formal remarks for an event."
+    }
+  },
+  "documents": {
+    "subtitle": "Minutes, memos, letters, reports and briefs — drafted with AI, approved by people.",
+    "startFromTemplate": "Start from template",
+    "fromSpreadsheet": "Report from spreadsheet",
+    "draftWithAI": "Draft with AI",
+    "templateTitle": "Start from a template",
+    "allTypes": "All types",
+    "orgTemplates": "Your organisation's templates",
+    "savedByOrg": "Saved by your organisation",
+    "useTemplate": "Use this template",
+    "generalTemplates": "General templates",
+    "spreadsheetFailed": "Could not build a report from that spreadsheet.",
+    "templateFailed": "Could not create from template.",
+    "draftFailed": "Could not draft document.",
+    "fields": {
+      "type": "Document type",
+      "title": "Title",
+      "recipient": "Recipient (optional)",
+      "department": "Department (optional)",
+      "brief": "Instructions / brief"
+    },
+    "briefPlaceholder": "Describe the purpose, key points, and any facts to include. The assistant will draft a formal document you can edit and approve.",
+    "generateDraft": "Generate draft",
+    "empty": "No documents yet.",
+    "table": {
+      "title": "Title",
+      "type": "Type",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Could not load document.",
+    "invalidJson": "Content is not valid JSON.",
+    "saved": "Saved. Version incremented.",
+    "saveFailed": "Save failed.",
+    "done": {
+      "submit": "Document submitted for review.",
+      "approve": "Document approved.",
+      "reject": "Document rejected.",
+      "finalize": "Document finalized."
+    },
+    "failed": {
+      "submit": "Could not submit.",
+      "approve": "Could not approve.",
+      "reject": "Could not reject.",
+      "finalize": "Could not finalize."
+    },
+    "templateName": "Template name",
+    "templateDefault": "{title} template",
+    "templateSaved": "Saved as a reusable template for your organisation.",
+    "templateSaveFailed": "Could not save template.",
+    "exportFailed": "Export failed.",
+    "notFound": "Document not found.",
+    "exportDocx": "Export DOCX",
+    "exportPptx": "Export PPTX",
+    "exportXlsx": "Export XLSX",
+    "saveAsTemplate": "Save as template",
+    "content": "Content",
+    "workflow": "Workflow",
+    "aiAssisted": "AI-assisted draft",
+    "auditChain": "Audit chain: audio → transcript → AI draft → human edit → approval → final. Every step is recorded.",
+    "comment": "Comment (optional)",
+    "commentPlaceholder": "Add a note for the record",
+    "submit": "Submit for review",
+    "approve": "Approve",
+    "reject": "Reject",
+    "finalize": "Finalize",
+    "finalLocked": "Final — locked for editing",
+    "editJson": "Edit content (JSON)",
+    "jsonNote": "Structured content drives the branded DOCX. Edit the fields below and save; branding and layout are applied automatically on export.",
+    "saveContent": "Save content",
+    "approvalHistory": "Approval history"
+  },
+  "emails": {
+    "subtitle": "Draft letters and emails with AI. Nothing is sent until a person clicks send.",
+    "needIntent": "Give the assistant a subject or intent to draft from.",
+    "draftReady": "Draft ready. Review and edit before sending.",
+    "draftFailed": "Draft failed.",
+    "draftSaved": "Draft saved.",
+    "saveFailed": "Could not save.",
+    "confirmSend": "Send this email now? This action is recorded in the audit trail.",
+    "sent": "Email sent.",
+    "sendFailed": "Send failed.",
+    "compose": "Compose",
+    "messages": "Messages",
+    "empty": "No correspondence yet.",
+    "message": "Message",
+    "details": "Details",
+    "to": "To",
+    "cc": "Cc",
+    "subject": "Subject",
+    "intent": "What should this say? (for AI)",
+    "intentPlaceholder": "e.g. Invite chiefs to the security baraza on Friday 10am",
+    "body": "Body",
+    "saveDraft": "Save draft",
+    "toLabel": "To:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Subject:",
+    "aiAssisted": "AI-assisted",
+    "sendNow": "Send now",
+    "selectHint": "Select a message or compose a new one."
+  },
+  "knowledge": {
+    "subtitle": "Reference material the assistant can draw on — policies, templates, precedents.",
+    "added": "Added to the knowledge base.",
+    "addFailed": "Could not add.",
+    "chooseFile": "Choose a file to upload.",
+    "ocrFailed": "File saved. OCR could not read text from this file (it may be low quality). You can paste the text manually.",
+    "extracted": "File saved and {n} characters of text extracted.",
+    "noText": "File saved. No text could be extracted from this format.",
+    "uploadFailed": "Upload failed.",
+    "confirmRemove": "Remove this reference?",
+    "uploadTitle": "Upload a document",
+    "file": "File",
+    "titleOptional": "Title (optional)",
+    "titleDefault": "Defaults to file name",
+    "categoryOptional": "Category (optional)",
+    "uploadExtract": "Upload & extract",
+    "uploadNote": "Word, PDF, CSV and text files have their text extracted automatically. Scanned PDFs and photos are read automatically with OCR.",
+    "pasteTitle": "Add reference (paste text)",
+    "title": "Title",
+    "category": "Category",
+    "categoryPlaceholder": "e.g. Circulars, Policies",
+    "textContent": "Text content",
+    "add": "Add",
+    "references": "References",
+    "empty": "Nothing yet.",
+    "uncategorised": "Uncategorised",
+    "remove": "Remove"
+  },
+  "assistant": {
+    "subtitle": "Give an instruction in plain English — summarise, find, draft or explain across your workspace.",
+    "failed": "The assistant could not process that.",
+    "instruction": "Instruction",
+    "placeholder": "e.g. Summarise the decisions from this week's security committee, or list memos still awaiting approval.",
+    "ask": "Ask"
+  },
+  "actions": {
+    "subtitle": "Action items extracted from minutes and action matrices across sessions.",
+    "empty": "No outstanding actions found.",
+    "table": {
+      "action": "Action",
+      "responsible": "Responsible",
+      "timeline": "Timeline",
+      "source": "Source"
+    }
+  },
+  "paypal": {
+    "title": "PayPal payment",
+    "subtitle": "Subscription payment confirmation.",
+    "confirming": "Confirming your PayPal payment...",
+    "noOrder": "No PayPal order was returned.",
+    "confirmed": "Payment confirmed. Your Worker subscription is now active.",
+    "failed": "The PayPal payment could not be confirmed.",
+    "success": "Payment successful",
+    "viewSubscription": "View subscription",
+    "errorTitle": "Payment could not be confirmed",
+    "returnToSubscription": "Return to subscription"
+  },
+  "tenant": {
+    "saved": "Organisation details saved. They appear on every document you export.",
+    "saveFailed": "Could not save.",
+    "logoUploaded": "Logo uploaded.",
+    "signatureUploaded": "Signature uploaded.",
+    "uploadFailed": "Upload failed.",
+    "subtitleShort": "Branding for your workspace.",
+    "noOrg": "This account is not associated with an organisation.",
+    "subtitle": "Your name, letterhead, logo and signature appear on every document you generate.",
+    "letterhead": "Letterhead",
+    "orgName": "Organisation name",
+    "line": "Letterhead line {n}",
+    "line1Placeholder": "e.g. COUNTY GOVERNMENT OF ...",
+    "line2Placeholder": "e.g. Department of ...",
+    "line3Placeholder": "e.g. Unit / Office",
+    "saveLetterhead": "Save letterhead",
+    "blankHint": "Leave lines blank to fall back to your organisation name.",
+    "logoSignature": "Logo & signature",
+    "logo": "Crest / logo (PNG or JPG)",
+    "signature": "E-signature (PNG or JPG)",
+    "uploaded": "uploaded",
+    "brandingNote": "The logo appears in the document header and on slide title pages. The signature is placed at the end of exported documents. Use a transparent-background PNG for best results."
+  },
+  "users": {
+    "createdTemp": "User created. Temporary password: {temp} — share securely; they must change it on first login.",
+    "created": "User created.",
+    "createFailed": "Could not create user.",
+    "confirmRemove": "Remove {name}?",
+    "removeFailed": "Could not remove.",
+    "subtitle": "Manage access. The superadmin account cannot be modified here.",
+    "add": "Add user",
+    "create": "Create user",
+    "empty": "No users.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "role": "Role",
+      "department": "Department",
+      "status": "Status"
+    },
+    "suspend": "Suspend",
+    "reinstate": "Reinstate",
+    "remove": "Remove"
+  },
+  "audit": {
+    "subtitle": "Every significant action is recorded. Logs hold metadata and identifiers only — never document bodies or audio.",
+    "empty": "No audit entries.",
+    "table": {
+      "when": "When",
+      "actor": "Actor",
+      "action": "Action",
+      "resource": "Resource"
+    },
+    "system": "system"
+  },
+  "payments": {
+    "stkSent": "STK push sent. Ask the payer to approve on their phone.",
+    "initiateFailed": "Could not initiate payment.",
+    "subtitle": "M-Pesa (Daraja STK push) and PayPal transactions.",
+    "requestTitle": "Request M-Pesa payment",
+    "phone": "Phone (07.. or 2547..)",
+    "amountKes": "Amount (KES)",
+    "purpose": "Purpose",
+    "sendStk": "Send STK push",
+    "transactions": "Transactions",
+    "empty": "No transactions.",
+    "table": {
+      "provider": "Provider",
+      "amount": "Amount",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Invoices and receipts for completed Worker subscription payments.",
+    "loadFailed": "Could not load billing documents.",
+    "downloadFailed": {
+      "invoice": "Could not download invoice.",
+      "receipt": "Could not download receipt."
+    },
+    "documentsTitle": "Billing documents",
+    "intro": "Download invoices and receipts for your organisation's completed subscription payments.",
+    "disclaimer": "These documents record Worker subscription payments and are provided for payment and reimbursement purposes. They are not represented as KRA/eTIMS tax invoices unless separately issued through a compliant eTIMS integration.",
+    "invoices": "Invoices",
+    "noInvoices": "No invoices yet.",
+    "receipts": "Receipts",
+    "noReceipts": "No receipts yet.",
+    "downloadPdf": "Download PDF",
+    "table": {
+      "invoice": "Invoice",
+      "receipt": "Receipt",
+      "date": "Date",
+      "description": "Description",
+      "amount": "Amount",
+      "status": "Status",
+      "provider": "Provider",
+      "reference": "Reference"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Could not load subscription.",
+    "selectFirst": "Select a subscription plan first.",
+    "mpesaSent": "M-Pesa STK push sent. Approve the payment on your phone. Your subscription will activate after payment confirmation.",
+    "mpesaFailed": "Could not initiate M-Pesa payment.",
+    "noApproveUrl": "PayPal approval URL was not returned.",
+    "paypalFailed": "Could not start PayPal payment.",
+    "subtitleShort": "Manage your Worker subscription.",
+    "subtitle": "Manage your Worker plan, trial and billing.",
+    "current": "Current subscription",
+    "organisation": "Organisation",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "7-day free trial",
+    "trialEnds": "Trial ends",
+    "dayRemaining": "{n} day remaining",
+    "daysRemaining": "{n} days remaining",
+    "renewsEnds": "Renews / ends",
+    "chooseTitle": "Choose a plan",
+    "chooseSubtitle": "All plans include the Worker administrative workflow. Your 7-day trial is free.",
+    "perMonth": "/ month",
+    "planSelected": "{plan} selected. Your plan is saved and ready for payment.",
+    "selectFailed": "Could not select plan.",
+    "selected": "Selected",
+    "selectPlan": "Select plan",
+    "activateTitle": "Activate your subscription",
+    "selectAbove": "Select a plan above to continue to payment.",
+    "stkNote": "An STK push will be sent to the phone number below.",
+    "phone": "Phone number",
+    "phonePlaceholder": "07.. or 2547..",
+    "payMpesa": "Pay with M-Pesa",
+    "paypalNote": "Continue to PayPal to pay for the selected plan in USD.",
+    "payPaypal": "Pay with PayPal",
+    "settleNote": "Paid subscriptions can be settled through M-Pesa or PayPal.",
+    "activationNote": "Your selected plan will be activated after successful payment confirmation.",
+    "historyNote": "Payment history is available under Administration → Payments."
+  }
+}
