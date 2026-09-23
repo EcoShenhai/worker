@@ -1,5 +1,5 @@
 // EcoID access token -> Worker session (same tokens as the emailed-code login), or link to the signed-in account.
-import api, { setToken } from '../api/client.js';
+import api, { setToken, setSession } from '../api/client.js';
 
 export const ECOID_PENDING_KEY = 'ecoid_pending_token';
 export const errMsg = (e, fallback = 'Sign-in failed.') =>
@@ -13,7 +13,7 @@ export async function completeEcoId(ecoidToken, { intent, setUser, navigate }) {
   }
   const { data } = await api.post('/auth/ecoid/exchange', { ecoidToken });
   if (data.accessToken) {
-    setToken(data.accessToken);
+    setSession(data);
     setUser(data.user);
     navigate(data.user?.requiresPasswordChange ? '/change-password' : '/', { replace: true });
     return;

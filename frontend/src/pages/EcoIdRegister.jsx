@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
-import api, { setToken } from '../api/client.js';
+import api, { setToken, setSession } from '../api/client.js';
 import { useAuth } from '../context/AuthContext.jsx';
 import AuthBrand from '../components/AuthBrand.jsx';
 import { ECOID_PENDING_KEY, errMsg } from '../ecoid/completeSignIn.js';
@@ -21,7 +21,7 @@ export default function EcoIdRegister() {
     try {
       const { data } = await api.post('/auth/ecoid/register', { ecoidToken: token, name: name.trim(), workspaceName: workspaceName.trim() });
       sessionStorage.removeItem(ECOID_PENDING_KEY);
-      setToken(data.accessToken); setUser(data.user);
+      setSession(data); setUser(data.user);
       navigate('/', { replace: true });
     } catch (e2) {
       const code = e2?.response?.data?.code; const status = e2?.response?.status;

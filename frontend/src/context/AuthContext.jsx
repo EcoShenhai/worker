@@ -1,5 +1,5 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
-import api, { setToken, getToken } from '../api/client.js';
+import api, { setToken, getToken, setSession, clearSession, getRefreshToken } from '../api/client.js';
 
 const AuthContext = createContext(null);
 
@@ -8,12 +8,12 @@ export function AuthProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   const loadMe = useCallback(async () => {
-    if (!getToken()) { setLoading(false); return; }
+    if (!getToken() && !getRefreshToken()) { setLoading(false); return; } // expired access token + refresh token -> /auth/me refreshes silently
     try {
       const { data } = await api.get('/auth/me');
       setUser(data.user);
     } catch {
-      setToken(null);
+      clearSession();
     } finally {
       setLoading(false);
     }
@@ -29,7 +29,7 @@ export function AuthProvider({ children }) {
   // Step 2: emailed code -> tokens + user.
   const verifyMfa = async (userId, code) => {
     const { data } = await api.post('/auth/verify-mfa', { userId, code });
-    setToken(data.accessToken);
+    setSession(data);
     setUser(data.user);
     return data.user;
   };
@@ -55,8 +55,8 @@ export function AuthProvider({ children }) {
   };
 
   const logout = async () => {
-    try { await api.post('/auth/logout'); } catch { /* ignore */ }
-    setToken(null);
+    try { await api.post('/auth/logout', { refreshToken: getRefreshToken() }); } catch { /* ignore */ }
+    clearSession();
     setUser(null);
   };
 
