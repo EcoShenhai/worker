@@ -36,6 +36,7 @@ export default function Layout({ children }) {
           <div className="group-label">{t('nav.assistant')}</div>
           <NavLink to="/assistant">{t('nav.askWorker')}</NavLink>
           <NavLink to="/actions">{t('nav.actions')}</NavLink>
+          <NavLink to="/account/ecoid">EcoID</NavLink>
 
           {atLeast(user?.role, 'admin') && (
             <>
