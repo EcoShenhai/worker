@@ -175,5 +175,5 @@ const changePassword = asyncHandler(async (req, res) => {
 
 module.exports = {
   register, verifyEmail, login, verifyMfa, resendCode, forgotPassword, resetPassword,
-  refresh, logout, me, changePassword,
+  refresh, logout, me, changePassword, issueTokens,
 };

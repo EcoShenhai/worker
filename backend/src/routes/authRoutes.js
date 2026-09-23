@@ -19,4 +19,12 @@ router.post('/logout', c.logout);
 router.get('/me', authenticate, c.me);
 router.post('/change-password', authenticate, c.changePassword);
 
+// EcoID dual authentication (additive; routes above unchanged)
+const ecoid = require("../controllers/ecoidController");
+router.post("/ecoid/exchange", authLimiter, ecoid.exchange);
+router.post("/ecoid/register", authLimiter, ecoid.register);
+router.get("/ecoid/status", authenticate, ecoid.status);
+router.post("/ecoid/link", authLimiter, authenticate, ecoid.link);
+router.post("/ecoid/unlink", authenticate, ecoid.unlink);
+
 module.exports = router;

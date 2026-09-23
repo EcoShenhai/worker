@@ -49,6 +49,8 @@ module.exports = (sequelize) => {
       requiresPasswordChange: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
       emailVerified: { type: DataTypes.BOOLEAN, allowNull: false, defaultValue: false },
       lastLoginAt: { type: DataTypes.DATE, allowNull: true },
+      // EcoID federation key (sub of EcoID tokens). Nullable; never replaces id.
+      globalEcoId: { type: DataTypes.STRING, allowNull: true, unique: true, field: "global_eco_id" },
     },
     {
       sequelize,
