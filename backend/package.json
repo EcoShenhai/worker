@@ -17,6 +17,8 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
+    "@theshenhai/ecobus-client": "file:../../ecoagents/packages/ecobus-client",
+    "@theshenhai/ecoid-sdk": "file:../../ecoagents/packages/ecoid-sdk",
     "axios": "^1.7.7",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",

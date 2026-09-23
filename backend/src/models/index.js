@@ -17,6 +17,8 @@ const Receipt = require('./receipt')(sequelize);
 const AuditLog = require('./auditLog')(sequelize);
 const RefreshToken = require('./refreshToken')(sequelize);
 const Tenant = require('./tenant')(sequelize);
+const SupportTicket = require('./supportTicket')(sequelize);
+const SupportMessage = require('./supportMessage')(sequelize);
 
 // ---- Associations ----------------------------------------------------------
 
@@ -99,6 +101,8 @@ const db = {
   AuditLog,
   RefreshToken,
   Tenant,
+  SupportTicket,
+  SupportMessage,
 };
 
 module.exports = db;

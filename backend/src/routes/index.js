@@ -15,4 +15,6 @@ router.use('/admin', require('./adminRoutes'));
 router.use('/tenant', require('./tenantRoutes'));
 router.use('/templates', require('./templateRoutes'));
 
+router.use('/support', require('./supportRoutes')); // dual support (EcoBus + email -> ShenPort)
+
 module.exports = router;

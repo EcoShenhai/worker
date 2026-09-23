@@ -1,0 +1,11 @@
+'use strict';
+const express = require('express');
+const { authenticate } = require('../middleware/auth');
+const { requireRole } = require('../middleware/rbac');
+const { authLimiter } = require('../middleware/rateLimit');
+const c = require('../controllers/supportController');
+const router = express.Router();
+router.post('/ticket', authLimiter, authenticate, c.createTicket);
+router.get('/inbox', authenticate, c.listInbox);
+router.get('/ecobus-status', authenticate, requireRole('superadmin'), c.ecobusStatus);
+module.exports = router;
