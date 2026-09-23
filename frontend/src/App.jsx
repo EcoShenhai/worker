@@ -30,6 +30,7 @@ import NotFound from './pages/NotFound.jsx';
 import EcoIdCallback from './pages/EcoIdCallback.jsx';
 import EcoIdRegister from './pages/EcoIdRegister.jsx';
 import AccountEcoId from './pages/AccountEcoId.jsx';
+import Support from './pages/Support.jsx';
 
 const P = (el) => <ProtectedRoute>{el}</ProtectedRoute>;
 
@@ -69,6 +70,7 @@ export default function App() {
       <Route path="/admin/billing" element={P(<Billing />)} />
       <Route path="/admin/subscription" element={P(<Subscription />)} />
       <Route path="/account/ecoid" element={P(<AccountEcoId />)} />
+      <Route path="/support" element={P(<Support />)} />
       <Route path="/payments/paypal/return" element={P(<PaypalReturn />)} />
 
       <Route path="*" element={P(<NotFound />)} />

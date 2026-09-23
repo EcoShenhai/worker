@@ -37,6 +37,7 @@ export default function Layout({ children }) {
           <NavLink to="/assistant">{t('nav.askWorker')}</NavLink>
           <NavLink to="/actions">{t('nav.actions')}</NavLink>
           <NavLink to="/account/ecoid">EcoID</NavLink>
+          <NavLink to="/support">Help &amp; Support</NavLink>
 
           {atLeast(user?.role, 'admin') && (
             <>
