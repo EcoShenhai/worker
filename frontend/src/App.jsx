@@ -27,6 +27,9 @@ import Billing from './pages/admin/Billing.jsx';
 import Subscription from './pages/admin/Subscription.jsx';
 import PaypalReturn from './pages/PaypalReturn.jsx';
 import NotFound from './pages/NotFound.jsx';
+import EcoIdCallback from './pages/EcoIdCallback.jsx';
+import EcoIdRegister from './pages/EcoIdRegister.jsx';
+import AccountEcoId from './pages/AccountEcoId.jsx';
 
 const P = (el) => <ProtectedRoute>{el}</ProtectedRoute>;
 
@@ -46,6 +49,8 @@ export default function App() {
       <Route path="/mfa" element={<Mfa />} />
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/reset-password" element={<ResetPassword />} />
+      <Route path="/auth/ecoid/callback" element={<EcoIdCallback />} />
+      <Route path="/auth/ecoid/register" element={<EcoIdRegister />} />
 
       <Route path="/" element={<Home />} />
       <Route path="/sessions" element={P(<Sessions />)} />
@@ -63,6 +68,7 @@ export default function App() {
       <Route path="/admin/payments" element={P(<Payments />)} />
       <Route path="/admin/billing" element={P(<Billing />)} />
       <Route path="/admin/subscription" element={P(<Subscription />)} />
+      <Route path="/account/ecoid" element={P(<AccountEcoId />)} />
       <Route path="/payments/paypal/return" element={P(<PaypalReturn />)} />
 
       <Route path="*" element={P(<NotFound />)} />

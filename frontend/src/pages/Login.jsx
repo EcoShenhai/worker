@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 import { Notice } from '../components/ui.jsx';
 import AuthBrand from '../components/AuthBrand.jsx';
 import { useI18n } from '../i18n/index.jsx';
+import EcoIdButtons from '../components/EcoIdButtons.jsx';
 
 export default function Login() {
   const { login } = useAuth();
@@ -49,6 +50,7 @@ export default function Login() {
           </div>
           <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : t('common.signIn')}</button>
         </form>
+        <EcoIdButtons />
         <div className="between" style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
           <Link to="/forgot-password">{t('auth.forgotPassword')}</Link>
           <Link to="/register">{t('common.createAccount')}</Link>

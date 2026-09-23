@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext.jsx';
 import { Notice } from '../components/ui.jsx';
 import AuthBrand from '../components/AuthBrand.jsx';
 import { useI18n } from '../i18n/index.jsx';
+import EcoIdButtons from '../components/EcoIdButtons.jsx';
 
 export default function Register() {
   const { register } = useAuth();
@@ -42,6 +43,7 @@ export default function Register() {
           <div className="field"><label>{t('auth.confirmPassword')}</label><input type="password" value={form.confirm} onChange={(e) => setForm({ ...form, confirm: e.target.value })} autoComplete="new-password" required /></div>
           <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : t('common.createAccount')}</button>
         </form>
+        <EcoIdButtons />
         <div style={{ marginTop: '1rem', fontSize: '0.85rem' }}>
           {t('auth.haveAccount')} <Link to="/login">{t('common.signIn')}</Link>
         </div>
