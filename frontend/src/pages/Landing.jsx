@@ -121,7 +121,6 @@ export default function Landing() {
       </section>
 
       <footer className="lp-foot">
-        <div>{t('landing.footer')}</div>
         <div style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid var(--line)', lineHeight: 1.5 }}>
           <div><strong>Worker AI Administrative Workplace</strong></div>
           <div>© 2026 Shenhai Enterprises Limited · theshenhai.com · worker@theshenhai.com</div>

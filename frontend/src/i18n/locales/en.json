@@ -108,8 +108,7 @@
     "final": {
       "title": "Ready to try Worker?",
       "cta": "Create your account"
-    },
-    "footer": "Worker — AI administrative workplace agent · worker.eshcloud.com"
+    }
   },
   "auth": {
     "email": "Email",
