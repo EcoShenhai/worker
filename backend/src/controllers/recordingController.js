@@ -10,6 +10,7 @@ const storage = require('../services/storage/storageService');
 const STTService = require('../services/stt/STTService');
 const audit = require('../services/audit/auditService');
 const logger = require('../utils/logger');
+const transcriptionQueue = require('../services/stt/transcriptionQueue');
 const { owns } = require('../utils/tenancy');
 
 // Load a recording and confirm the caller's tenant owns its session.
@@ -48,73 +49,23 @@ const upload = asyncHandler(async (req, res) => {
     resourceId: recording.id,
     metadata: { sessionId: session.id, sizeBytes: req.file.size },
   });
+  transcriptionQueue.kick(); // auto-transcribe in the background
   res.status(201).json({ recording });
 });
 
 // POST /recordings/:id/transcribe  (synchronous; for long files move to a job queue)
+// POST /recordings/:id/transcribe  -> queue (or retry) background transcription; returns immediately
 const transcribe = asyncHandler(async (req, res) => {
   const recording = await recordingInTenant(req, req.params.id);
   if (!recording) throw ApiError.notFound('Recording not found');
   if (recording.status === 'transcribing') throw ApiError.conflict('Already transcribing');
-
-  const sttLanguage = await resolveSttLanguage(recording);
-
-  recording.status = 'transcribing';
+  await resolveSttLanguage(recording); // fail fast on an unsupported recording language
+  recording.status = 'pending';
   recording.error = null;
   await recording.save();
-
-  const filePath = await storage.readPath(recording.storageKey);
-
-  try {
-    const result = await STTService.transcribe(filePath, { language: sttLanguage });
-    const t = await sequelize.transaction(async (tx) => {
-      // Replace any prior transcript for this recording.
-      await Transcript.destroy({ where: { recordingId: recording.id }, transaction: tx });
-      const transcript = await Transcript.create(
-        {
-          recordingId: recording.id,
-          sessionId: recording.sessionId,
-          provider: result.provider,
-          model: result.model,
-          language: result.language,
-          rawText: result.text,
-          wordCount: result.text ? result.text.split(/\s+/).length : 0,
-        },
-        { transaction: tx }
-      );
-      if (Array.isArray(result.segments) && result.segments.length) {
-        await TranscriptSegment.bulkCreate(
-          result.segments.map((s, i) => ({
-            transcriptId: transcript.id,
-            idx: i,
-            startSeconds: s.start,
-            endSeconds: s.end,
-            speaker: s.speaker || null,
-            text: s.text,
-          })),
-          { transaction: tx }
-        );
-      }
-      return transcript;
-    });
-
-    recording.status = 'transcribed';
-    if (result.duration) recording.durationSeconds = Math.round(result.duration);
-    await recording.save();
-
-    await audit.record(req, 'recording.transcribed', {
-      resourceType: 'recording',
-      resourceId: recording.id,
-      metadata: { provider: result.provider, wordCount: t.wordCount },
-    });
-    res.json({ transcript: t });
-  } catch (e) {
-    recording.status = 'failed';
-    recording.error = e.message;
-    await recording.save();
-    logger.error('Transcription failed', { recordingId: recording.id, message: e.message });
-    throw e;
-  }
+  await audit.record(req, 'recording.queued', { resourceType: 'recording', resourceId: recording.id });
+  transcriptionQueue.kick();
+  res.status(202).json({ recording, queued: true });
 });
 
 // GET /recordings/:id/transcript

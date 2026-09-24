@@ -25,6 +25,13 @@ export default function SessionDetail() {
     }
   };
   useEffect(() => { load(); /* eslint-disable-next-line */ }, [id]);
+  // Auto-refresh while any recording is queued or transcribing (background jobs).
+  useEffect(() => {
+    const active = (session?.recordings || []).some((r) => r.status === 'pending' || r.status === 'transcribing');
+    if (!active) return undefined;
+    const h = setInterval(load, 5000);
+    return () => clearInterval(h);
+  }, [session]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---- Recorder ----
   const [recording, setRecording] = useState(false);
@@ -87,7 +94,7 @@ export default function SessionDetail() {
     setMsg({ type: 'warn', text: t('session.transcribing') });
     try {
       await api.post(`/recordings/${recId}/transcribe`);
-      setMsg({ type: 'ok', text: t('session.transcribed') });
+      setMsg({ type: 'ok', text: t('queue.queued') });
       load();
     } catch (e) {
       setMsg({ type: 'err', text: e.response?.data?.message || t('session.transcribeFailed') });
@@ -249,7 +256,7 @@ export default function SessionDetail() {
                         {t('session.inMinutes')}
                       </label>
                       <StatusBadge value={r.status} />
-                      {r.status !== 'transcribed' && (
+                      {(r.status === 'pending' || r.status === 'failed') && (
                         <button className="btn secondary sm" onClick={() => transcribe(r.id)} disabled={busy === 'tx-' + r.id}>
                           {busy === 'tx-' + r.id ? <span className="spinner" /> : t('session.transcribe')}
                         </button>

@@ -645,5 +645,8 @@
     "done": "Document created.",
     "failed": "Could not generate the document.",
     "hint": "Uses the transcripts ticked for inclusion, in order. You review and approve before anything is shared."
+  },
+  "queue": {
+    "queued": "Queued for transcription. This page updates automatically."
   }
 }

@@ -646,5 +646,8 @@
     "done": "Document créé.",
     "failed": "Impossible de générer le document.",
     "hint": "Utilise les transcriptions cochées, dans l’ordre. Vous relisez et approuvez avant tout partage."
+  },
+  "queue": {
+    "queued": "En file d’attente pour transcription. Cette page se met à jour automatiquement."
   }
 }

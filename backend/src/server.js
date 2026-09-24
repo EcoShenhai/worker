@@ -32,3 +32,4 @@ start();
 
 // EcoBus dual support: started after the API is up; failure never affects the API.
 setImmediate(() => { require('./ecobus/start')(); });
+setImmediate(() => { require('./services/stt/transcriptionQueue').start().catch((e) => logger.error('Transcription queue failed to start', { message: e.message })); });
