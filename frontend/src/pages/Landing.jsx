@@ -120,7 +120,14 @@ export default function Landing() {
         <Link className="btn" to="/register">{t('landing.final.cta')}</Link>
       </section>
 
-      <footer className="lp-foot">{t('landing.footer')}</footer>
+      <footer className="lp-foot">
+        <div>{t('landing.footer')}</div>
+        <div style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid var(--line)', lineHeight: 1.5 }}>
+          <div><strong>Worker AI Administrative Workplace</strong></div>
+          <div>© 2026 Shenhai Enterprises Limited · theshenhai.com · worker@theshenhai.com</div>
+          <div>Worker generates administrative documents; authorized users remain responsible for review and approval.</div>
+        </div>
+      </footer>
     </div>
   );
 }
