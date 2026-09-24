@@ -624,5 +624,16 @@
     "settleNote": "Les abonnements payants peuvent être réglés via M-Pesa ou PayPal.",
     "activationNote": "L'offre sélectionnée sera activée après confirmation du paiement.",
     "historyNote": "L'historique des paiements est disponible sous Administration → Paiements."
+  },
+  "intl": {
+    "territory": "Territoire",
+    "searchTerritory": "Rechercher un territoire…",
+    "selectTerritory": "Sélectionnez votre territoire",
+    "territoryRequired": "Veuillez sélectionner votre territoire.",
+    "workingLanguage": "Langue de travail",
+    "meetingLanguage": "Langue de la réunion",
+    "useDefault": "Langue par défaut de l’organisation",
+    "beta": "transcription bêta",
+    "unavailable": "pas de transcription"
   }
 }

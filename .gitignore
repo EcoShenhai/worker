@@ -45,3 +45,5 @@ backend/uploads/*
 !backend/uploads/.gitkeep
 backend/stt-service/.venv/
 backend/stt-service/__pycache__/
+frontend/dist-new/
+frontend/dist-prev/

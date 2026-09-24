@@ -623,5 +623,16 @@
     "settleNote": "Paid subscriptions can be settled through M-Pesa or PayPal.",
     "activationNote": "Your selected plan will be activated after successful payment confirmation.",
     "historyNote": "Payment history is available under Administration → Payments."
+  },
+  "intl": {
+    "territory": "Territory",
+    "searchTerritory": "Search territory…",
+    "selectTerritory": "Select your territory",
+    "territoryRequired": "Please select your territory.",
+    "workingLanguage": "Working language",
+    "meetingLanguage": "Meeting language",
+    "useDefault": "Organisation default",
+    "beta": "transcription beta",
+    "unavailable": "no transcription"
   }
 }

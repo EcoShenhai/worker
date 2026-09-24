@@ -43,7 +43,7 @@ const register = asyncHandler(async (req, res) => {
   const normEmail = String(email).trim().toLowerCase();
   const existing = await User.findOne({ where: { email: normEmail } });
   if (existing) throw ApiError.conflict('An account with this email already exists');
-  const territory = normTerritory(rawTerritory);
+  const territory = normTerritory(rawTerritory, { required: true });
   const defaultLanguage = normLanguage(rawLanguage) || (territory ? defaultLanguageFor(territory) : null);
   const user = User.build({ name: String(name).trim(), email: normEmail, role: 'admin', status: 'active' });
   await user.setPassword(String(password));

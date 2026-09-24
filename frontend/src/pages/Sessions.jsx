@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react';
+import { useInternational } from '../hooks/useInternational.js';
+import { LanguageSelect } from '../components/InternationalSelects.jsx';
 import { Link } from 'react-router-dom';
 import api from '../api/client.js';
 import { PageHead, StatusBadge, Empty, Notice, useLabel } from '../components/ui.jsx';
@@ -14,7 +16,8 @@ export default function Sessions() {
   const [loading, setLoading] = useState(true);
   const [creating, setCreating] = useState(false);
   const [err, setErr] = useState('');
-  const [form, setForm] = useState({ title: '', kind: 'meeting', classification: 'internal', department: '', occurredOn: '', location: '' });
+  const { data: intl } = useInternational();
+  const [form, setForm] = useState({ title: '', kind: 'meeting', classification: 'internal', department: '', occurredOn: '', location: '', language: '' });
 
   const load = async () => {
     setLoading(true);
@@ -32,7 +35,7 @@ export default function Sessions() {
     setErr('');
     try {
       await api.post('/sessions', { ...form, occurredOn: form.occurredOn || null });
-      setForm({ title: '', kind: 'meeting', classification: 'internal', department: '', occurredOn: '', location: '' });
+      setForm({ title: '', kind: 'meeting', classification: 'internal', department: '', occurredOn: '', location: '', language: '' });
       setCreating(false);
       load();
     } catch (e) {
@@ -84,6 +87,12 @@ export default function Sessions() {
                   <label>{t('sessions.fields.location')}</label>
                   <input value={form.location} onChange={(e) => setForm({ ...form, location: e.target.value })} />
                 </div>
+                {intl && (
+                  <div className="field">
+                    <label>{t('intl.meetingLanguage')}</label>
+                    <LanguageSelect languages={intl.languages} value={form.language} onChange={(v) => setForm({ ...form, language: v })} showStt labels={{ beta: t('intl.beta'), unavailable: t('intl.unavailable') }} defaultOption={t('intl.useDefault')} />
+                  </div>
+                )}
               </div>
               <button className="btn">{t('sessions.create')}</button>
             </form>

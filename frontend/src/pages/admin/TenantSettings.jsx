@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import api from '../../api/client.js';
 import { PageHead, Notice } from '../../components/ui.jsx';
 import { useI18n } from '../../i18n/index.jsx';
+import { useInternational } from '../../hooks/useInternational.js';
+import { TerritorySelect, LanguageSelect } from '../../components/InternationalSelects.jsx';
 
 export default function TenantSettings() {
   const { t: tr } = useI18n();
@@ -9,6 +11,7 @@ export default function TenantSettings() {
   const [loading, setLoading] = useState(true);
   const [msg, setMsg] = useState(null);
   const [busy, setBusy] = useState('');
+  const { data: intl } = useInternational();
 
   const load = async () => {
     setLoading(true);
@@ -24,7 +27,7 @@ export default function TenantSettings() {
     setBusy('save'); setMsg(null);
     try {
       await api.put('/tenant', {
-        name: t.name, letterheadLine1: t.letterheadLine1 || '', letterheadLine2: t.letterheadLine2 || '', letterheadLine3: t.letterheadLine3 || '',
+        territory: t.territory || '', defaultLanguage: t.defaultLanguage || '', name: t.name, letterheadLine1: t.letterheadLine1 || '', letterheadLine2: t.letterheadLine2 || '', letterheadLine3: t.letterheadLine3 || '',
       });
       setMsg({ type: 'ok', text: tr('tenant.saved') });
     } catch (e) {
@@ -63,6 +66,12 @@ export default function TenantSettings() {
           <div className="card-body">
             <form onSubmit={save}>
               <div className="field"><label>{tr('tenant.orgName')}</label><input value={t.name || ''} onChange={(e) => setT({ ...t, name: e.target.value })} required /></div>
+              {intl && (
+                <>
+                  <div className="field"><label>{tr('intl.territory')}</label><TerritorySelect territories={intl.territories} value={t.territory || ''} onChange={(v) => setT({ ...t, territory: v })} searchPlaceholder={tr('intl.searchTerritory')} placeholder={tr('intl.selectTerritory')} /></div>
+                  <div className="field"><label>{tr('intl.workingLanguage')}</label><LanguageSelect languages={intl.languages} preferred={intl.territories.find((x) => x.code === t.territory)?.languages} value={t.defaultLanguage || 'en'} onChange={(v) => setT({ ...t, defaultLanguage: v })} showStt labels={{ beta: tr('intl.beta'), unavailable: tr('intl.unavailable') }} /></div>
+                </>
+              )}
               <div className="field"><label>{tr('tenant.line', { n: 1 })}</label><input value={t.letterheadLine1 || ''} onChange={(e) => setT({ ...t, letterheadLine1: e.target.value })} placeholder={tr('tenant.line1Placeholder')} /></div>
               <div className="field"><label>{tr('tenant.line', { n: 2 })}</label><input value={t.letterheadLine2 || ''} onChange={(e) => setT({ ...t, letterheadLine2: e.target.value })} placeholder={tr('tenant.line2Placeholder')} /></div>
               <div className="field"><label>{tr('tenant.line', { n: 3 })}</label><input value={t.letterheadLine3 || ''} onChange={(e) => setT({ ...t, letterheadLine3: e.target.value })} placeholder={tr('tenant.line3Placeholder')} /></div>
