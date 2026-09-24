@@ -20,26 +20,38 @@ from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import JSONResponse
 from faster_whisper import WhisperModel
 
-MODEL_NAME = os.getenv("STT_MODEL", "base.en")
+MODEL_NAME = os.getenv("STT_MODEL", "base.en")  # English (English-only model = best quality)
+MULTI_MODEL_NAME = os.getenv("STT_MULTILINGUAL_MODEL", "base")  # every other language
 DEVICE = os.getenv("STT_DEVICE", "cpu")
 COMPUTE_TYPE = os.getenv("STT_COMPUTE_TYPE", "int8")
 
 app = FastAPI(title="Worker STT Sidecar")
 
 # Model is loaded once and reused. Downloads on first run, then cached locally.
-_model = None
+_models = {}
 
 
-def get_model():
-    global _model
-    if _model is None:
-        _model = WhisperModel(MODEL_NAME, device=DEVICE, compute_type=COMPUTE_TYPE)
-    return _model
+def get_model(name):
+    if name not in _models:
+        _models[name] = WhisperModel(name, device=DEVICE, compute_type=COMPUTE_TYPE)
+    return _models[name]
+
+
+def pick_model(language):
+    """Return (model_name, whisper_language).
+    English -> English model. Other languages -> multilingual model with the language set explicitly
+    (auto-detect mislabels accented English on small models). "auto" detects; not offered in the UI."""
+    lang = (language or "en").strip().lower()
+    if lang == "auto":
+        return MULTI_MODEL_NAME, None
+    if lang == "en" or not MODEL_NAME.endswith(".en"):
+        return MODEL_NAME, lang
+    return MULTI_MODEL_NAME, lang
 
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "model": MODEL_NAME, "device": DEVICE}
+    return {"status": "ok", "model": MODEL_NAME, "multilingual_model": MULTI_MODEL_NAME, "loaded": sorted(_models), "device": DEVICE}
 
 
 @app.post("/transcribe")
@@ -54,10 +66,11 @@ async def transcribe(
         tmp_path = tmp.name
 
     try:
-        whisper = get_model()
+        model_name, whisper_lang = pick_model(language)
+        whisper = get_model(model_name)
         segments, info = whisper.transcribe(
             tmp_path,
-            language=language or "en",
+            language=whisper_lang,
             vad_filter=True,
             beam_size=5,
         )
@@ -69,7 +82,7 @@ async def transcribe(
 
         return JSONResponse(
             {
-                "model": MODEL_NAME,
+                "model": model_name,
                 "language": info.language,
                 "duration": round(info.duration, 2),
                 "text": " ".join(full_text).strip(),

@@ -46,7 +46,7 @@ async function resolveSttLanguage(recording) {
     throw ApiError.badRequest(`Transcription is not yet available for ${label}. Choose another recording language for this session; documents can still be drafted in ${label}.`);
   }
   const model = process.env.STT_MODEL || '';
-  if (model.endsWith('.en') && opt.stt !== 'en') {
+  if (model.endsWith('.en') && opt.stt !== 'en' && (process.env.STT_MULTILINGUAL_MODEL || '') === '') {
     throw ApiError.badRequest('Multilingual transcription is not enabled yet. Please record in English for now.');
   }
   return opt.stt;

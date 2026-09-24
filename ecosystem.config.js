@@ -19,7 +19,7 @@ module.exports = {
       script: '.venv/bin/uvicorn',
       args: 'app:app --host 127.0.0.1 --port 4020',
       interpreter: 'none',
-      env: { STT_MODEL: 'base.en', STT_DEVICE: 'cpu', STT_COMPUTE_TYPE: 'int8' },
+      env: { STT_MODEL: 'base.en', STT_MULTILINGUAL_MODEL: 'base', STT_DEVICE: 'cpu', STT_COMPUTE_TYPE: 'int8' },
       max_memory_restart: '1500M',
       time: true,
     },
