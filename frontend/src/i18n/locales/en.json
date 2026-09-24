@@ -648,5 +648,8 @@
   },
   "queue": {
     "queued": "Queued for transcription. This page updates automatically."
+  },
+  "pdfExport": {
+    "button": "Export PDF"
   }
 }

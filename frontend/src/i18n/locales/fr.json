@@ -649,5 +649,8 @@
   },
   "queue": {
     "queued": "En file d’attente pour transcription. Cette page se met à jour automatiquement."
+  },
+  "pdfExport": {
+    "button": "Exporter en PDF"
   }
 }

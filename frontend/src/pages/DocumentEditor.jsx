@@ -79,7 +79,7 @@ export default function DocumentEditor() {
   };
 
   const exportAs = async (fmt) => {
-    const paths = { docx: '/export', pptx: '/export-pptx', xlsx: '/export-xlsx' };
+    const paths = { docx: '/export', pdf: '/export-pdf', pptx: '/export-pptx', xlsx: '/export-xlsx' };
     setBusy('export-' + fmt);
     try {
       const res = await api.post(`/documents/${id}${paths[fmt]}`, {}, { responseType: 'blob' });
@@ -111,6 +111,9 @@ export default function DocumentEditor() {
             </button>
             <button className="btn secondary" onClick={() => exportAs('pptx')} disabled={busy.startsWith('export')}>
               {busy === 'export-pptx' ? <span className="spinner" /> : t('doc.exportPptx')}
+            </button>
+            <button className="btn secondary" onClick={() => exportAs('pdf')} disabled={busy.startsWith('export')}>
+              {busy === 'export-pdf' ? <span className="spinner" /> : t('pdfExport.button')}
             </button>
             {(Array.isArray(doc.content?.tables) && doc.content.tables.length) || (Array.isArray(doc.content?.action_matrix) && doc.content.action_matrix.length) ? (
               <button className="btn secondary" onClick={() => exportAs('xlsx')} disabled={busy.startsWith('export')}>
