@@ -1,4 +1,5 @@
 'use strict';
+const pdfConverter = require('../services/documents/pdfConverter');
 const { Document, DocumentApproval, WorkspaceSession, Recording, Transcript, TranscriptSegment, Tenant } = require('../models');
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
@@ -283,6 +284,19 @@ async function brandingFor(document) {
   return b;
 }
 
+// POST /documents/:id/export-pdf  -> same layout as the Word export, converted on the server
+const exportPdf = asyncHandler(async (req, res) => {
+  const document = await Document.findByPk(req.params.id);
+  if (!owns(req, document)) throw ApiError.notFound('Document not found');
+  const branding = await brandingFor(document);
+  const docx = await docxRenderer.render(document, branding);
+  const pdf = await pdfConverter.docxToPdf(docx);
+  await audit.record(req, 'document.export_pdf', { resourceType: 'document', resourceId: document.id });
+  res.setHeader('Content-Type', 'application/pdf');
+  res.setHeader('Content-Disposition', `attachment; filename="${(document.title || 'document').replace(/[^\w.-]+/g, '_')}.pdf"`);
+  res.send(pdf);
+});
+
 const exportDocx = asyncHandler(async (req, res) => {
   const document = await Document.findByPk(req.params.id);
   if (!owns(req, document)) throw ApiError.notFound('Document not found');
@@ -391,3 +405,5 @@ module.exports = {
   exportDocx, generateFromSpreadsheet, exportPptx, exportXlsx };
 
 module.exports.generateFromSession = generateFromSession;
+
+module.exports.exportPdf = exportPdf;
