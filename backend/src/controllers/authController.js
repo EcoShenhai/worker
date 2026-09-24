@@ -1,4 +1,5 @@
 'use strict';
+const { trialDates } = require('../services/payments/trial');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
 const config = require('../config');
@@ -46,7 +47,7 @@ const register = asyncHandler(async (req, res) => {
   user.emailVerified = false;
   await user.save();
   // Every self-registration starts a brand-new tenant, owned by this user.
-  const tenant = await Tenant.create({ name: `${String(name).trim()} (Workspace)`, ownerId: user.id });
+  const tenant = await Tenant.create({ name: `${String(name).trim()} (Workspace)`, ownerId: user.id, ...trialDates() });
   user.tenantId = tenant.id;
   await user.save();
   await codeService.issueCode({ userId: user.id, email: user.email, name: user.name, purpose: 'verify_email' });

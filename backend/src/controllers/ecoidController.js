@@ -1,4 +1,5 @@
 'use strict';
+const { trialDates } = require('../services/payments/trial');
 /**
  * "Continue with EcoID" for Worker — additive; email + password + emailed code is unchanged.
  * exchange: EcoID token -> the SAME access/refresh tokens as verifyMfa (reuses issueTokens).
@@ -62,7 +63,7 @@ const register = asyncHandler(async (req, res) => {
   await user.setPassword(crypto.randomBytes(32).toString('base64url')); // unusable; owner may set one via "Forgot password"
   user.emailVerified = true; // verified by EcoID
   await user.save();
-  const tenant = await Tenant.create({ name: workspace, ownerId: user.id });
+  const tenant = await Tenant.create({ name: workspace, ownerId: user.id, ...trialDates() });
   user.tenantId = tenant.id;
   await user.save();
   await record(req, 'auth.register.ecoid', user.id);

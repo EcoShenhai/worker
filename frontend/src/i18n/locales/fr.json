@@ -68,7 +68,7 @@
     },
     "start": {
       "title": "Démarrer ne prend qu'une minute",
-      "lead": "Créez un compte et commencez votre essai gratuit de 7 jours.",
+      "lead": "Créez un compte et commencez votre essai gratuit de 14 jours.",
       "s1": {
         "title": "Créez votre compte",
         "body": "Saisissez votre nom, votre e-mail et un mot de passe."
@@ -88,7 +88,7 @@
     },
     "pricing": {
       "title": "Une tarification par abonnement simple",
-      "lead": "Commencez par un essai gratuit de 7 jours. Choisissez l'offre adaptée au volume de travail administratif de votre organisation.",
+      "lead": "Commencez par un essai gratuit de 14 jours. Choisissez l'offre adaptée au volume de travail administratif de votre organisation.",
       "perMonth": "/mois",
       "mostPopular": "LE PLUS POPULAIRE",
       "starter": {
@@ -601,13 +601,13 @@
     "organisation": "Organisation",
     "status": "Statut",
     "plan": "Offre",
-    "freeTrial": "Essai gratuit de 7 jours",
+    "freeTrial": "Essai gratuit de 14 jours",
     "trialEnds": "Fin de l'essai",
     "dayRemaining": "{n} jour restant",
     "daysRemaining": "{n} jours restants",
     "renewsEnds": "Renouvellement / fin",
     "chooseTitle": "Choisissez une offre",
-    "chooseSubtitle": "Toutes les offres incluent le circuit administratif Worker. Votre essai de 7 jours est gratuit.",
+    "chooseSubtitle": "Toutes les offres incluent le circuit administratif Worker. Votre essai de 14 jours est gratuit.",
     "perMonth": "/ mois",
     "planSelected": "Offre {plan} sélectionnée. Votre offre est enregistrée et prête pour le paiement.",
     "selectFailed": "Impossible de sélectionner l'offre.",

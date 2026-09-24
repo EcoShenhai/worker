@@ -68,7 +68,7 @@
     },
     "start": {
       "title": "Getting started takes a minute",
-      "lead": "Create an account and start your 7-day free trial.",
+      "lead": "Create an account and start your 14-day free trial.",
       "s1": {
         "title": "Create your account",
         "body": "Enter your name, email and a password."
@@ -88,7 +88,7 @@
     },
     "pricing": {
       "title": "Simple subscription pricing",
-      "lead": "Start with a 7-day free trial. Choose the plan that fits the volume of administrative work your organization produces.",
+      "lead": "Start with a 14-day free trial. Choose the plan that fits the volume of administrative work your organization produces.",
       "perMonth": "/month",
       "mostPopular": "MOST POPULAR",
       "starter": {
@@ -600,13 +600,13 @@
     "organisation": "Organisation",
     "status": "Status",
     "plan": "Plan",
-    "freeTrial": "7-day free trial",
+    "freeTrial": "14-day free trial",
     "trialEnds": "Trial ends",
     "dayRemaining": "{n} day remaining",
     "daysRemaining": "{n} days remaining",
     "renewsEnds": "Renews / ends",
     "chooseTitle": "Choose a plan",
-    "chooseSubtitle": "All plans include the Worker administrative workflow. Your 7-day trial is free.",
+    "chooseSubtitle": "All plans include the Worker administrative workflow. Your 14-day trial is free.",
     "perMonth": "/ month",
     "planSelected": "{plan} selected. Your plan is saved and ready for payment.",
     "selectFailed": "Could not select plan.",
