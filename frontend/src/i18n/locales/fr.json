@@ -652,5 +652,11 @@
   },
   "pdfExport": {
     "button": "Exporter en PDF"
+  },
+  "access": {
+    "readOnly": "Votre espace est en lecture seule car votre essai ou abonnement a pris fin. Vous pouvez toujours consulter et exporter vos documents.",
+    "grace": "Votre essai ou abonnement a pris fin le {date}. Il vous reste {n} jours d’accès complet.",
+    "trialEnding": "Votre essai gratuit se termine dans {n} jours.",
+    "choosePlan": "Choisir une offre"
   }
 }

@@ -651,5 +651,11 @@
   },
   "pdfExport": {
     "button": "Export PDF"
+  },
+  "access": {
+    "readOnly": "Your workspace is read-only because your trial or subscription has ended. You can still view and export your documents.",
+    "grace": "Your trial or subscription ended on {date}. You have {n} days of full access left.",
+    "trialEnding": "Your free trial ends in {n} days.",
+    "choosePlan": "Choose a plan"
   }
 }

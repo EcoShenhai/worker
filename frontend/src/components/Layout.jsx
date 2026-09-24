@@ -3,6 +3,7 @@ import { useAuth, atLeast } from '../context/AuthContext.jsx';
 import { useI18n } from '../i18n/index.jsx';
 import Logo from './Logo.jsx';
 import LanguageSwitcher from './LanguageSwitcher.jsx';
+import AccessBanner from './AccessBanner.jsx';
 
 export default function Layout({ children }) {
   const { user, logout } = useAuth();
@@ -65,7 +66,7 @@ export default function Layout({ children }) {
             <span className="badge green">{t('brand.badge')}</span>
           </span>
         </div>
-        <div className="content">{children}</div>
+        <div className="content"><AccessBanner />{children}</div>
       </div>
     </div>
   );
