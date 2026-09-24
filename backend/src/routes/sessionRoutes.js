@@ -18,5 +18,6 @@ router.delete('/:id', requireRole('admin'), c.remove);
 // Nested: recordings + minutes generation
 router.post('/:sessionId/recordings', requireRole('officer'), uploadAudio.single('file'), rec.upload);
 router.post('/:sessionId/minutes', requireRole('officer'), doc.generateMinutes);
+router.post('/:sessionId/generate', requireRole('officer'), doc.generateFromSession); // any document type
 
 module.exports = router;

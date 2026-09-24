@@ -122,7 +122,70 @@ const generateMinutes = asyncHandler(async (req, res) => {
   await audit.record(req, 'document.generate_minutes', {
     resourceType: 'document',
     resourceId: document.id,
-    metadata: { sessionId: session.id, transcriptCount: transcripts.length },
+    metadata: { sessionId: session.id, transcriptCount: recs.length },
+  });
+  res.status(201).json({ document });
+});
+
+// POST /sessions/:sessionId/generate  { type, instructions? }
+// One pipeline: any session -> any document type. Minutes keep the 4-stage path (normalise, extract, generate);
+// other types are generated from the cleaned transcript so dictated content is not lost to meeting extraction.
+const generateFromSession = asyncHandler(async (req, res) => {
+  const type = String(req.body.type || '').trim();
+  if (!VALID_TYPES.includes(type)) throw ApiError.badRequest('Invalid document type');
+  const instructions = String(req.body.instructions || '').trim().slice(0, 2000);
+
+  const session = await WorkspaceSession.findByPk(req.params.sessionId);
+  if (!owns(req, session)) throw ApiError.notFound('Session not found');
+  const recs = await Recording.findAll({
+    where: { sessionId: session.id, includeInMinutes: true },
+    include: [{ model: Transcript, as: 'transcript' }],
+    order: [['createdAt', 'ASC']],
+  });
+  const sourceText = recs
+    .map((r) => r.transcript && (r.transcript.editedText || r.transcript.rawText || '').trim())
+    .filter(Boolean)
+    .join('\n\n');
+  if (!sourceText) throw ApiError.badRequest('No included transcript found. Transcribe a clip and make sure at least one is included.');
+
+  const meta = {
+    title: session.title,
+    kind: session.kind,
+    occurredOn: session.occurredOn,
+    attendees: (session.attendees || []).map((a) => (typeof a === 'string' ? a : a.name)).filter(Boolean),
+  };
+  const label = type.replace(/_/g, ' ');
+
+  let content;
+  if (type === 'minutes') {
+    ({ content } = await documentAI.transcriptToMinutes(sourceText, meta));
+  } else {
+    const clean = await documentAI.normalizeTranscript(sourceText);
+    ({ data: content } = await AIService.generateJson(
+      `Write a formal official ${label} based on the session material below.\n` +
+        (instructions ? `Instruction from the officer: ${instructions}\n` : '') +
+        'Use only facts stated in the material; mark anything missing as "[TO BE CONFIRMED]".\n' +
+        `Return JSON with this shape: ${shapeForType(type)}\n\n` +
+        `Session: ${JSON.stringify(meta)}\n\nMaterial (transcript):\n${clean}`
+    ));
+  }
+
+  const document = await Document.create({
+    type,
+    title: content.title || content.heading || content.subject || `${label} — ${session.title}`,
+    content,
+    classification: session.classification,
+    department: session.department,
+    sessionId: session.id,
+    referenceNumber: generateReference(type),
+    aiAssisted: true,
+    authorId: req.user.id,
+    ...stamp(req, {}),
+  });
+  await audit.record(req, 'document.generate_from_session', {
+    resourceType: 'document',
+    resourceId: document.id,
+    metadata: { sessionId: session.id, type, transcriptCount: recs.length, withInstructions: Boolean(instructions) },
   });
   res.status(201).json({ document });
 });
@@ -326,3 +389,5 @@ module.exports = {
   generateMinutes, draft,
   submit, approve, reject, finalize,
   exportDocx, generateFromSpreadsheet, exportPptx, exportXlsx };
+
+module.exports.generateFromSession = generateFromSession;
