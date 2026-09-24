@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Lingwa",
+    "signIn": "Idħol",
+    "signOut": "Oħroġ",
+    "createAccount": "Oħloq kont",
+    "getStarted": "Ibda",
+    "startFreeTrial": "Ibda prova b'xejn",
+    "cancel": "Ikkanċella",
+    "back": "Lura",
+    "download": "Niżżel",
+    "viewAll": "Ara kollha"
+  },
+  "brand": {
+    "tagline": "Spazju ta' xogħol amministrattiv bl-AI",
+    "secureWorkspace": "Spazju ta' xogħol amministrattiv sigur",
+    "badge": "Ingliż · Awdjo"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "workspace": "Spazju ta' xogħol",
+    "sessions": "Sessjonijiet u Reġistrazzjonijiet",
+    "documents": "Dokumenti",
+    "correspondence": "Korrispondenza",
+    "knowledge": "Bażi ta' Għarfien",
+    "assistant": "Assistent",
+    "askWorker": "Staqsi lil Worker",
+    "actions": "Azzjonijiet Pendenti",
+    "administration": "Amministrazzjoni",
+    "organisation": "Organizzazzjoni",
+    "users": "Utenti",
+    "audit": "Traċċa tal-Awditjar",
+    "subscription": "Abbonament",
+    "payments": "Pagamenti",
+    "billing": "Fatturazzjoni"
+  },
+  "roles": {
+    "viewer": "Osservatur",
+    "officer": "Uffiċjal",
+    "admin": "Amministratur",
+    "superadmin": "Super amministratur"
+  },
+  "landing": {
+    "hero": {
+      "title": "Biddel dak li tgħid f'karti mfassla u arkivjati.",
+      "body": "Worker huwa spazju tax-xogħol amministrattiv bl-AI għal organizzazzjonijiet li jipproduċu kwantitajiet kbar ta' dokumenti formali minn laqgħat, briefings u korrispondenza. Irrekordja laqgħa jew iddetta, u Worker jittraskrivietha, jabbozza minuti, memoranda, ittri, rapporti u briefs ta' politika, u jgħaddihom minn reviżjoni u approvazzjoni — b'traċċa tal-awditjar kompleta.",
+      "badgeRow": "Awdjo · Ingliż · Spazju ta' xogħol sigur"
+    },
+    "what": {
+      "title": "X'jagħmel Worker",
+      "lead": "Ix-xogħol rutina tal-uffiċċju li jdawwar il-laqgħat u l-korrispondenza — immaniġġjat f'minuti, mhux sigħat.",
+      "f1": {
+        "title": "Irrekordja u ttraskrivi",
+        "body": "Aqbad laqgħat, intervisti, briefings jew dettatura. L-awdjo jiġi ttraskritt lokalment bl-Ingliż."
+      },
+      "f2": {
+        "title": "Abbozz bl-IA",
+        "body": "Iġġenera minuti, memoranda, ittri, rapporti, dokumenti ta' politika u ċirkolari fil-forma uffiċjali korretta."
+      },
+      "f3": {
+        "title": "Reviżjoni u approvazzjoni",
+        "body": "Kull dokument jgħaddi minn abbozz, reviżjoni, approvazzjoni u finalizzazzjoni — in-nies jibqgħu fil-kontroll."
+      },
+      "f4": {
+        "title": "Sigur u verifikat",
+        "body": "Aċċess ibbażat fuq ir-rwol u traċċa tal-verifika kompleta. Il-korrispondenza tintbagħat biss minn persuna."
+      }
+    },
+    "start": {
+      "title": "Biex tibda tieħu minuta",
+      "lead": "Oħloq kont u ibda l-prova b'xejn ta' 14-il jum.",
+      "s1": {
+        "title": "Oħloq il-kont tiegħek",
+        "body": "Daħħal ismek, l-email u password."
+      },
+      "s2": {
+        "title": "Ivverifika l-email tiegħek",
+        "body": "Daħħal il-kodiċi ta' 6 ċifri li nibagħtulek bl-email."
+      },
+      "s3": {
+        "title": "Idħol b'mod sigur",
+        "body": "Kull dħul jiġi kkonfermat b'kodiċi ta' darba mibgħut bl-email."
+      },
+      "s4": {
+        "title": "Ibda taħdem",
+        "body": "Oħloq sessjoni, irrekordja, u ġġenera l-ewwel dokument tiegħek."
+      }
+    },
+    "pricing": {
+      "title": "Prezzijiet sempliċi għall-abbonament",
+      "lead": "Ibda b'prova b'xejn ta' 14-il jum. Agħżel il-pjan li jaqbel mal-volum ta' xogħol amministrattiv li tipproduċi l-organizzazzjoni tiegħek.",
+      "perMonth": "/xahar",
+      "mostPopular": "L-AKTAR POPULARI",
+      "starter": {
+        "name": "Starter",
+        "desc": "Għal timijiet żgħar li qed jibdew xogħol amministrattiv assistit mill-IA."
+      },
+      "professional": {
+        "name": "Professjonali",
+        "desc": "Għal organizzazzjonijiet b'produzzjoni regolari u ta' volum għoli ta' dokumenti."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Għal organizzazzjonijiet akbar b'xogħol amministrattiv sostanzjali."
+      },
+      "paymentsNote": "M-Pesa u PayPal huma appoġġjati għall-abbonamenti mħallsa."
+    },
+    "final": {
+      "title": "Lest biex tipprova Worker?",
+      "cta": "Oħloq il-kont tiegħek"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Isem sħiħ",
+    "confirmPassword": "Ikkonferma l-password",
+    "currentPassword": "Password attwali",
+    "newPassword": "Password ġdida",
+    "confirmNewPassword": "Ikkonferma l-password ġdida",
+    "code6": "Kodiċi ta' 6 ċifri",
+    "signInFailed": "Id-dħul falla. Iċċekkja l-kredenzjali tiegħek.",
+    "forgotPassword": "Insejt il-password?",
+    "mfaNotice": "Kodiċi ta' darba jintbagħat bl-email biex jikkonferma kull dħul.",
+    "createYourAccount": "Oħloq il-kont tiegħek",
+    "pwMin": "Il-password trid tkun ta' mill-inqas {n} karattri.",
+    "newPwMin": "Il-password ġdida trid tkun ta' mill-inqas {n} karattri.",
+    "pwMismatch": "Il-passwords ma jaqblux.",
+    "createFailed": "Ma setax jinħoloq il-kont.",
+    "haveAccount": "Diġà għandek kont?",
+    "startAtSignIn": "Ibda mill-identifikazzjoni jew mir-reġistrazzjoni.",
+    "goToSignIn": "Mur għall-identifikazzjoni",
+    "invalidCode": "Kodiċi invalidu jew skadut.",
+    "codeSent": "Intbagħat kodiċi ġdid.",
+    "resendFailed": "Ma setax jerġa' jintbagħat.",
+    "verifyEmailTitle": "Ivverifika l-email tiegħek",
+    "verifyEmailTo": "Ivverifika l-email tiegħek — {email}",
+    "verify": "Ivverifika",
+    "resendCode": "Erġa' ibgħat il-kodiċi",
+    "signInAgain": "Jekk jogħġbok erġa' identifika ruħek.",
+    "mfaPrompt": "Daħħal il-kodiċi tal-identifikazzjoni li bgħatnielek bl-email",
+    "mfaPromptTo": "Daħħal il-kodiċi tal-identifikazzjoni li bgħatnielek bl-email lil {email}",
+    "verifySignIn": "Ivverifika u identifika ruħek",
+    "requestFailed": "Ma setax jiġi pproċessat it-talba.",
+    "resetTitle": "Irrisettja l-password tiegħek",
+    "sendResetCode": "Ibgħat il-kodiċi tar-risettjar",
+    "backToSignIn": "Lura għall-identifikazzjoni",
+    "resetPrompt": "Daħħal il-kodiċi li bgħatnielek bl-email u agħżel password ġdida",
+    "resetPassword": "Irrisettja l-password",
+    "setNewPassword": "Issettja password ġdida",
+    "forcedChange": "Għas-sigurtà, issettja l-password tiegħek qabel ma tkompli.",
+    "updateAccountPassword": "Aġġorna l-password tal-kont tiegħek.",
+    "changeFailed": "Ma setgħetx tinbidel il-password.",
+    "updatePassword": "Aġġorna l-password",
+    "signOutInstead": "Oħroġ minflok"
+  },
+  "notFound": {
+    "title": "Il-paġna ma nstabitx",
+    "subtitle": "Dik il-paġna ma teżistix f'dan l-ispazju tax-xogħol.",
+    "back": "Mur lura għad-dashboard"
+  },
+  "status": {
+    "draft": "abbozz",
+    "in_review": "fil-proċess ta' reviżjoni",
+    "approved": "approvat",
+    "final": "finali",
+    "archived": "arkivjat",
+    "open": "miftuħ",
+    "processing": "qed jiġi pproċessat",
+    "ready": "lest",
+    "pending": "pendenti",
+    "transcribing": "qed jiġi traskritt",
+    "transcribed": "traskritt",
+    "failed": "falla",
+    "sent": "mibgħut",
+    "received": "riċevut",
+    "completed": "komplut",
+    "cancelled": "ikkanċellat",
+    "active": "attiv",
+    "suspended": "sospiż"
+  },
+  "kind": {
+    "meeting": "laqgħa",
+    "interview": "intervista",
+    "briefing": "briefing",
+    "dictation": "dettatura",
+    "field_report": "rapport fuq il-post",
+    "consultation": "konsultazzjoni",
+    "other": "ieħor"
+  },
+  "classification": {
+    "unclassified": "mhux klassifikat",
+    "internal": "intern",
+    "confidential": "kunfidenzjali",
+    "restricted": "ristrett"
+  },
+  "dashboard": {
+    "welcome": "Merħba, {name}",
+    "defaultName": "Uffiċjal",
+    "subtitle": "L-ispazju amministrattiv tiegħek — aqbad, abbozza, irrevedi u arkivja.",
+    "stats": {
+      "sessions": "Sessjonijiet",
+      "documents": "Dokumenti",
+      "awaitingReview": "Jistennew reviżjoni",
+      "outstandingActions": "Azzjonijiet pendenti"
+    },
+    "recentSessions": "Sessjonijiet reċenti",
+    "documentsToAction": "Dokumenti li jeħtieġu azzjoni",
+    "noSessions": "Għadha m'hemmx sessjonijiet.",
+    "nothingToAction": "Xejn m'għandu bżonn l-attenzjoni tiegħek."
+  },
+  "sessions": {
+    "subtitle": "Kull sessjoni hija fajl tal-każ — awdjo, traskrizzjoni, u d-dokumenti prodotti minnha.",
+    "new": "Sessjoni ġdida",
+    "createFailed": "Ma setgħetx tinħoloq is-sessjoni.",
+    "titlePlaceholder": "eż. Kumitat tas-Sigurtà tal-Kontea — Briefing ta' Kull Ġimgħa",
+    "create": "Oħloq sessjoni",
+    "empty": "Għadha m'hemmx sessjonijiet. Oħloq waħda biex tibda tirrekordja.",
+    "fields": {
+      "title": "Titlu",
+      "kind": "Tip",
+      "date": "Data",
+      "classification": "Klassifikazzjoni",
+      "status": "Status",
+      "department": "Dipartiment",
+      "location": "Post"
+    }
+  },
+  "session": {
+    "loadFailed": "Ma setgħetx tiġi mgħobbija s-sessjoni.",
+    "micDenied": "Aċċess għall-mikrofonu miċħud jew mhux disponibbli.",
+    "audioSaved": "Awdjo salvat mas-sessjoni.",
+    "uploadFailed": "It-tlugħ falla.",
+    "transcribing": "Qed jiġi traskritt lokalment — dan jista' jieħu ftit għal awdjo itwal.",
+    "transcribed": "Traskrizzjoni kompluta.",
+    "transcribeFailed": "It-traskrizzjoni falliet. Iċċekkja li s-servizz STT qed jaħdem.",
+    "updateFailed": "Ma setgħetx tiġi aġġornata.",
+    "draftingMinutes": "Qed jiġu abbozzati l-minuti mit-traskrizzjoni…",
+    "minutesCreated": "Abbozz tal-minuti maħluq.",
+    "minutesFailed": "Ma setgħux jiġu ġġenerati l-minuti.",
+    "notFound": "Sessjoni ma nstabitx.",
+    "noDate": "l-ebda data",
+    "noLocation": "l-ebda post",
+    "generateMinutes": "Iġġenera l-minuti",
+    "captureAudio": "Aqbad l-awdjo",
+    "stopSave": "Waqqaf u salva",
+    "startRecording": "Ibda r-reġistrazzjoni",
+    "or": "jew",
+    "uploadAudio": "Tella' l-awdjo",
+    "audioNote": "L-awdjo jibqa' fuq il-host. It-traskrizzjoni ssir lokalment bl-Ingliż. Il-minuti jgħaqqdu kull klip f'din is-sessjoni, bil-ordni.",
+    "documentsFrom": "Dokumenti minn din is-sessjoni",
+    "noDocuments": "L-ebda dokument s'issa. Ittraskrivi klip, imbagħad iġġenera l-minuti.",
+    "recordingsTitle": "Reġistrazzjonijiet u traskrizzjonijiet",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klips",
+    "noRecordings": "L-ebda reġistrazzjoni s'issa. Irreġistra jew tella' awdjo hawn fuq.",
+    "includeTitle": "Inkludi dan il-klip meta tiġġenera l-minuti",
+    "inMinutes": "Fil-minuti",
+    "transcribe": "Ittraskrivi",
+    "transcribeHint": "Ittraskrivi dan il-klip biex tara u teditja t-traskrizzjoni tiegħu hawn.",
+    "audioLoadFailed": "Ma setgħetx tiġi mgħobbija l-awdjo.",
+    "loadAudio": "Għabbi l-awdjo",
+    "words": "{n} kliem",
+    "verified": "verifikat",
+    "editVerify": "Editja u ivverifika",
+    "saveVerified": "Salva u mmarka bħala verifikat",
+    "saveDraft": "Salva abbozz",
+    "emptyTranscript": "Traskrizzjoni vojta."
+  },
+  "docType": {
+    "minutes": "minuti",
+    "memo": "memo",
+    "letter": "ittra",
+    "report": "rapport",
+    "policy_brief": "brief tal-politika",
+    "briefing_note": "nota ta' informazzjoni",
+    "concept_note": "nota kunċettwali",
+    "circular": "ċirkolari",
+    "action_matrix": "matriċi ta' azzjoni",
+    "speech": "diskors"
+  },
+  "approval": {
+    "submit": "sottomess",
+    "submitted": "sottomess",
+    "approve": "approvat",
+    "approved": "approvat",
+    "reject": "miċħud",
+    "rejected": "miċħud",
+    "finalize": "finalizzat",
+    "finalized": "finalizzat"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memo Intern",
+      "desc": "Memorandum intern standard b'Lil / Minn / Suġġett."
+    },
+    "letter-official": {
+      "name": "Ittra Uffiċjali",
+      "desc": "Ittra formali tal-ħruġ fuq il-karta tal-ittri tal-uffiċċju."
+    },
+    "circular-general": {
+      "name": "Ċirkolari",
+      "desc": "Avviż imqassam lil ħafna destinatarji."
+    },
+    "report-standard": {
+      "name": "Rapport",
+      "desc": "Rapport ġenerali b'sommarju, taqsimiet u rakkomandazzjonijiet."
+    },
+    "policy-brief": {
+      "name": "Brief tal-Politika",
+      "desc": "Brief konċiż għal dawk li jieħdu d-deċiżjonijiet."
+    },
+    "briefing-note": {
+      "name": "Nota ta' Informazzjoni",
+      "desc": "Nota qasira biex tinforma lill-prinċipal qabel impenn."
+    },
+    "concept-note": {
+      "name": "Nota Kunċettwali",
+      "desc": "Abbozz ta' programm jew attività proposta."
+    },
+    "minutes-blank": {
+      "name": "Minuti tal-Laqgħa (vojta)",
+      "desc": "Struttura vojta tal-minuti biex timtela bl-idejn."
+    },
+    "speech-remarks": {
+      "name": "Diskors / Rimarki",
+      "desc": "Rimarki formali għal avveniment."
+    }
+  },
+  "documents": {
+    "subtitle": "Minuti, memoranda, ittri, rapporti u sunti — abbozzati bl-IA, approvati mill-bnedmin.",
+    "startFromTemplate": "Ibda minn mudell",
+    "fromSpreadsheet": "Rapport minn spreadsheet",
+    "draftWithAI": "Abbozza bl-IA",
+    "templateTitle": "Ibda minn mudell",
+    "allTypes": "It-tipi kollha",
+    "orgTemplates": "Il-mudelli tal-organizzazzjoni tiegħek",
+    "savedByOrg": "Salvati mill-organizzazzjoni tiegħek",
+    "useTemplate": "Uża dan il-mudell",
+    "generalTemplates": "Mudelli ġenerali",
+    "spreadsheetFailed": "Ma setax jinbena rapport minn dak is-spreadsheet.",
+    "templateFailed": "Ma setax jinħoloq mill-mudell.",
+    "draftFailed": "Ma setax jiġi abbozzat id-dokument.",
+    "fields": {
+      "type": "Tip ta' dokument",
+      "title": "Titlu",
+      "recipient": "Destinatarju (mhux obbligatorju)",
+      "department": "Dipartiment (mhux obbligatorju)",
+      "brief": "Istruzzjonijiet / sunt"
+    },
+    "briefPlaceholder": "Iddeskrivi l-iskop, il-punti ewlenin, u kwalunkwe fatt li għandu jiġi inkluż. L-assistent se jabbozza dokument formali li tista' teditja u tapprova.",
+    "generateDraft": "Iġġenera abbozz",
+    "empty": "Għad m'hemmx dokumenti.",
+    "table": {
+      "title": "Titlu",
+      "type": "Tip",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Ma setax jitgħabba d-dokument.",
+    "invalidJson": "Il-kontenut mhuwiex JSON validu.",
+    "saved": "Salvat. Il-verżjoni żdiedet.",
+    "saveFailed": "Is-salvataġġ falla.",
+    "done": {
+      "submit": "Dokument sottomess għal reviżjoni.",
+      "approve": "Dokument approvat.",
+      "reject": "Dokument miċħud.",
+      "finalize": "Dokument finalizzat."
+    },
+    "failed": {
+      "submit": "Ma setax jiġi sottomess.",
+      "approve": "Ma setax jiġi approvat.",
+      "reject": "Ma setax jiġi miċħud.",
+      "finalize": "Ma setax jiġi finalizzat."
+    },
+    "templateName": "Isem tal-mudell",
+    "templateDefault": "Mudell {title}",
+    "templateSaved": "Ippreservat bħala mudell riutilizzabbli għall-organizzazzjoni tiegħek.",
+    "templateSaveFailed": "Ma setax jiġi ppreservat il-mudell.",
+    "exportFailed": "L-esportazzjoni falliet.",
+    "notFound": "Id-dokument ma nstabx.",
+    "exportDocx": "Esporta DOCX",
+    "exportPptx": "Esporta PPTX",
+    "exportXlsx": "Esporta XLSX",
+    "saveAsTemplate": "Ippreserva bħala mudell",
+    "content": "Kontenut",
+    "workflow": "Fluss tax-xogħol",
+    "aiAssisted": "Abbozz assistit mill-IA",
+    "auditChain": "Katina tal-verifika: awdjo → traskrizzjoni → abbozz tal-IA → editjar mill-bniedem → approvazzjoni → finali. Kull pass huwa rreġistrat.",
+    "comment": "Kumment (mhux obbligatorju)",
+    "commentPlaceholder": "Żid nota għar-rekord",
+    "submit": "Issottometti għal reviżjoni",
+    "approve": "Approva",
+    "reject": "Irrifjuta",
+    "finalize": "Iffinalizza",
+    "finalLocked": "Finali — imsakkar għall-editjar",
+    "editJson": "Editja l-kontenut (JSON)",
+    "jsonNote": "Il-kontenut strutturat iħaddem id-DOCX bil-marka. Editja l-oqsma hawn taħt u ppreserva; il-marka u t-tqassim jiġu applikati awtomatikament mal-esportazzjoni.",
+    "saveContent": "Ippreserva l-kontenut",
+    "approvalHistory": "Storja tal-approvazzjonijiet"
+  },
+  "emails": {
+    "subtitle": "Abbozza ittri u emails bl-IA. Xejn ma jintbagħat sakemm persuna tikklikkja ibgħat.",
+    "needIntent": "Agħti lill-assistent suġġett jew intenzjoni biex jabbozza minnhom.",
+    "draftReady": "L-abbozz lest. Irrevedi u editja qabel tibgħat.",
+    "draftFailed": "L-abbozzar falla.",
+    "draftSaved": "L-abbozz ġie ppreservat.",
+    "saveFailed": "Ma setax jiġi ppreservat.",
+    "confirmSend": "Tibgħat dan l-email issa? Din l-azzjoni tiġi rreġistrata fil-katina tal-verifika.",
+    "sent": "L-email intbagħat.",
+    "sendFailed": "L-ibgħat falla.",
+    "compose": "Ikkomponi",
+    "messages": "Messaġġi",
+    "empty": "Għadha m'hemmx korrispondenza.",
+    "message": "Messaġġ",
+    "details": "Dettalji",
+    "to": "Lil",
+    "cc": "Cc",
+    "subject": "Suġġett",
+    "intent": "X'għandu jgħid dan? (għall-AI)",
+    "intentPlaceholder": "eż. Stieden lill-kapijiet għall-baraza tas-sigurtà nhar il-Ġimgħa fl-10am",
+    "body": "Korp",
+    "saveDraft": "Issejvja l-abbozz",
+    "toLabel": "Lil:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Suġġett:",
+    "aiAssisted": "Assistit mill-AI",
+    "sendNow": "Ibgħat issa",
+    "selectHint": "Agħżel messaġġ jew ikkomponi wieħed ġdid."
+  },
+  "knowledge": {
+    "subtitle": "Materjal ta' referenza li l-assistent jista' juża — politiki, mudelli, preċedenti.",
+    "added": "Miżjud mal-bażi tal-għarfien.",
+    "addFailed": "Ma setax jiġi miżjud.",
+    "chooseFile": "Agħżel fajl biex ittella'.",
+    "ocrFailed": "Fajl issejvjat. L-OCR ma setax jaqra test minn dan il-fajl (jista' jkun ta' kwalità baxxa). Tista' tippejstja t-test manwalment.",
+    "extracted": "Fajl issejvjat u {n} karattri ta' test estratti.",
+    "noText": "Fajl issejvjat. Ma setax jiġi estratt test minn dan il-format.",
+    "uploadFailed": "It-tlugħ falla.",
+    "confirmRemove": "Neħħi din ir-referenza?",
+    "uploadTitle": "Tella' dokument",
+    "file": "Fajl",
+    "titleOptional": "Titlu (mhux obbligatorju)",
+    "titleDefault": "Jintuża l-isem tal-fajl bħala default",
+    "categoryOptional": "Kategorija (mhux obbligatorja)",
+    "uploadExtract": "Tella' u estratta",
+    "uploadNote": "Fajls Word, PDF, CSV u test jiġu estratti awtomatikament. PDFs skennjati u ritratti jinqraw awtomatikament bl-OCR.",
+    "pasteTitle": "Żid referenza (pejstja t-test)",
+    "title": "Titlu",
+    "category": "Kategorija",
+    "categoryPlaceholder": "eż. Ċirkulari, Politiki",
+    "textContent": "Kontenut tat-test",
+    "add": "Żid",
+    "references": "Referenzi",
+    "empty": "Xejn s'issa.",
+    "uncategorised": "Mhux kategorizzat",
+    "remove": "Neħħi"
+  },
+  "assistant": {
+    "subtitle": "Agħti struzzjoni bl-Ingliż sempliċi — iġbor fil-qosor, sib, abbozza jew spjega madwar il-workspace tiegħek.",
+    "failed": "L-assistent ma setax jipproċessa dan.",
+    "instruction": "Istruzzjoni",
+    "placeholder": "eż. Aqsam id-deċiżjonijiet mill-kumitat tas-sigurtà ta' din il-ġimgħa, jew elenka l-memo li għadhom jistennew l-approvazzjoni.",
+    "ask": "Staqsi"
+  },
+  "actions": {
+    "subtitle": "Punti ta' azzjoni estratti mill-minuti u mill-matriċi tal-azzjonijiet fis-sessjonijiet kollha.",
+    "empty": "Ma nstabu l-ebda azzjoni pendenti.",
+    "table": {
+      "action": "Azzjoni",
+      "responsible": "Responsabbli",
+      "timeline": "Skeda",
+      "source": "Sors"
+    }
+  },
+  "paypal": {
+    "title": "Ħlas PayPal",
+    "subtitle": "Konferma tal-ħlas tal-abbonament.",
+    "confirming": "Qed jiġi kkonfermat il-ħlas tiegħek PayPal...",
+    "noOrder": "Ma ġie rritornat l-ebda ordni PayPal.",
+    "confirmed": "Ħlas ikkonfermat. L-abbonament tiegħek ma' Worker issa huwa attiv.",
+    "failed": "Il-ħlas PayPal ma setax jiġi kkonfermat.",
+    "success": "Ħlas b'suċċess",
+    "viewSubscription": "Ara l-abbonament",
+    "errorTitle": "Il-ħlas ma setax jiġi kkonfermat",
+    "returnToSubscription": "Erġa' lura għall-abbonament"
+  },
+  "tenant": {
+    "saved": "Id-dettalji tal-organizzazzjoni ġew salvati. Jidhru fuq kull dokument li tesporta.",
+    "saveFailed": "Ma setax jiġi salvat.",
+    "logoUploaded": "Logo mtella'.",
+    "signatureUploaded": "Firma mtellgħa.",
+    "uploadFailed": "It-tlugħ falla.",
+    "subtitleShort": "Branding għall-ispazju tax-xogħol tiegħek.",
+    "noOrg": "Dan il-kont mhuwiex assoċjat ma' organizzazzjoni.",
+    "subtitle": "Ismek, il-karta tal-ittri, il-logo u l-firma jidhru fuq kull dokument li tiġġenera.",
+    "letterhead": "Karta tal-ittri",
+    "orgName": "Isem l-organizzazzjoni",
+    "line": "Linja tal-karta tal-ittri {n}",
+    "line1Placeholder": "eż. GVERN TAL-KONTEA TA' ...",
+    "line2Placeholder": "eż. Dipartiment ta' ...",
+    "line3Placeholder": "eż. Unità / Uffiċċju",
+    "saveLetterhead": "Salva l-karta tal-ittri",
+    "blankHint": "Ħalli l-linji vojta biex terġa' lura għall-isem tal-organizzazzjoni tiegħek.",
+    "logoSignature": "Logo u firma",
+    "logo": "Emblema / logo (PNG jew JPG)",
+    "signature": "Firma elettronika (PNG jew JPG)",
+    "uploaded": "imtella'",
+    "brandingNote": "Il-logo jidher fl-intestatura tad-dokument u fuq il-paġni tat-titlu tal-preżentazzjonijiet. Il-firma titpoġġa fl-aħħar tad-dokumenti esportati. Uża PNG b'isfond trasparenti għall-aħjar riżultati."
+  },
+  "users": {
+    "createdTemp": "Utent maħluq. Password temporanju: {temp} — aqsam b'mod sigur; irid jibdlu mal-ewwel login.",
+    "created": "Utent maħluq.",
+    "createFailed": "Ma setax jinħoloq l-utent.",
+    "confirmRemove": "Neħħi lil {name}?",
+    "removeFailed": "Ma setax jitneħħa.",
+    "subtitle": "Immaniġġja l-aċċess. Il-kont superadmin ma jistax jiġi modifikat hawn.",
+    "add": "Żid utent",
+    "create": "Oħloq utent",
+    "empty": "L-ebda utent.",
+    "fields": {
+      "name": "Isem",
+      "email": "Email",
+      "role": "Rwol",
+      "department": "Dipartiment",
+      "status": "Status"
+    },
+    "suspend": "Sospendi",
+    "reinstate": "Erġa' stabbilixxi",
+    "remove": "Neħħi"
+  },
+  "audit": {
+    "subtitle": "Kull azzjoni sinifikanti tiġi rreġistrata. Ir-reġistri jżommu biss metadata u identifikaturi — qatt mhux il-kontenut tad-dokumenti jew l-awdjo.",
+    "empty": "L-ebda entrata ta' verifika.",
+    "table": {
+      "when": "Meta",
+      "actor": "Attur",
+      "action": "Azzjoni",
+      "resource": "Riżorsa"
+    },
+    "system": "sistema"
+  },
+  "payments": {
+    "stkSent": "STK push mibgħut. Itlob lill-persuna li tħallas biex tapprova fuq il-mowbajl tagħha.",
+    "initiateFailed": "Ma setax jinbeda l-pagament.",
+    "subtitle": "Transazzjonijiet M-Pesa (Daraja STK push) u PayPal.",
+    "requestTitle": "Itlob pagament M-Pesa",
+    "phone": "Telefon (07.. jew 2547..)",
+    "amountKes": "Ammont (KES)",
+    "purpose": "Skop",
+    "sendStk": "Ibgħat STK push",
+    "transactions": "Transazzjonijiet",
+    "empty": "L-ebda transazzjoni.",
+    "table": {
+      "provider": "Fornitur",
+      "amount": "Ammont",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Fatturi u rċevuti għal pagamenti ta' abbonament Worker kompluti.",
+    "loadFailed": "Ma setgħux jitgħabbew id-dokumenti tal-fatturazzjoni.",
+    "downloadFailed": {
+      "invoice": "Ma setax jiġi mniżżel il-kont.",
+      "receipt": "Ma setax jiġi mniżżel ir-riċevuta."
+    },
+    "documentsTitle": "Dokumenti tal-ħlas",
+    "intro": "Niżżel il-kontijiet u r-riċevuti għall-ħlasijiet tal-abbonament kompluti tal-organizzazzjoni tiegħek.",
+    "disclaimer": "Dawn id-dokumenti jirreġistraw il-ħlasijiet tal-abbonament ta' Worker u huma pprovduti għal skopijiet ta' ħlas u rimborż. Mhumiex rappreżentati bħala fatturi tat-taxxa KRA/eTIMS sakemm ma jinħarġux separatament permezz ta' integrazzjoni eTIMS konformi.",
+    "invoices": "Kontijiet",
+    "noInvoices": "Għad m'hemmx kontijiet.",
+    "receipts": "Riċevuti",
+    "noReceipts": "Għad m'hemmx riċevuti.",
+    "downloadPdf": "Niżżel PDF",
+    "table": {
+      "invoice": "Kont",
+      "receipt": "Riċevuta",
+      "date": "Data",
+      "description": "Deskrizzjoni",
+      "amount": "Ammont",
+      "status": "Status",
+      "provider": "Fornitur",
+      "reference": "Referenza"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Ma setax jiġi mgħobbi l-abbonament.",
+    "selectFirst": "Agħżel pjan ta' abbonament l-ewwel.",
+    "mpesaSent": "M-Pesa STK push mibgħut. Approva l-ħlas fuq il-mowbajl tiegħek. L-abbonament tiegħek se jiġi attivat wara l-konferma tal-ħlas.",
+    "mpesaFailed": "Ma setax jinbeda l-ħlas M-Pesa.",
+    "noApproveUrl": "L-URL tal-approvazzjoni ta' PayPal ma ġiex irritornat.",
+    "paypalFailed": "Ma setax jinbeda l-ħlas PayPal.",
+    "subtitleShort": "Immaniġġja l-abbonament tiegħek ta' Worker.",
+    "subtitle": "Immaniġġja l-pjan, il-prova u l-ħlas ta' Worker tiegħek.",
+    "current": "Abbonament attwali",
+    "organisation": "Organizzazzjoni",
+    "status": "Status",
+    "plan": "Pjan",
+    "freeTrial": "Prova b'xejn ta' 14-il jum",
+    "trialEnds": "Il-prova tintemm",
+    "dayRemaining": "{n} jum li fadal",
+    "daysRemaining": "{n} jiem li fadal",
+    "renewsEnds": "Jiġġedded / jintemm",
+    "chooseTitle": "Agħżel pjan",
+    "chooseSubtitle": "Il-pjanijiet kollha jinkludu l-fluss tax-xogħol amministrattiv ta' Worker. Il-prova tiegħek ta' 14-il jum hija b'xejn.",
+    "perMonth": "/ xahar",
+    "planSelected": "{plan} magħżul. Il-pjan tiegħek ġie salvat u lest għall-ħlas.",
+    "selectFailed": "Ma setax jintgħażel il-pjan.",
+    "selected": "Magħżul",
+    "selectPlan": "Agħżel pjan",
+    "activateTitle": "Attiva l-abbonament tiegħek",
+    "selectAbove": "Agħżel pjan hawn fuq biex tkompli għall-ħlas.",
+    "stkNote": "STK push se jintbagħat lin-numru tat-telefon hawn taħt.",
+    "phone": "Numru tat-telefon",
+    "phonePlaceholder": "07.. jew 2547..",
+    "payMpesa": "Ħallas b'M-Pesa",
+    "paypalNote": "Kompli għal PayPal biex tħallas għall-pjan magħżul f'USD.",
+    "payPaypal": "Ħallas b'PayPal",
+    "settleNote": "Abbonamenti mħallsa jistgħu jiġu saldati permezz ta' M-Pesa jew PayPal.",
+    "activationNote": "Il-pjan magħżul tiegħek se jiġi attivat wara konferma tal-ħlas b'suċċess.",
+    "historyNote": "L-istorja tal-ħlasijiet hija disponibbli taħt Amministrazzjoni → Ħlasijiet."
+  },
+  "intl": {
+    "territory": "Territorju",
+    "searchTerritory": "Fittex territorju…",
+    "selectTerritory": "Agħżel it-territorju tiegħek",
+    "territoryRequired": "Jekk jogħġbok agħżel it-territorju tiegħek.",
+    "workingLanguage": "Lingwa tax-xogħol",
+    "meetingLanguage": "Lingwa tal-laqgħa",
+    "useDefault": "Default tal-organizzazzjoni",
+    "beta": "traskrizzjoni beta",
+    "unavailable": "l-ebda traskrizzjoni"
+  },
+  "generate": {
+    "title": "Iġġenera dokument minn din is-sessjoni",
+    "as": "Iġġenera bħala",
+    "instructions": "Istruzzjoni (mhux obbligatorja)",
+    "placeholder": "eż. Ittra lis-Segretarju Permanenti li tiġbor id-deċiżjonijiet 2 u 3",
+    "button": "Iġġenera",
+    "working": "Qed tabbozza d-dokument tiegħek… dan jista' jieħu minuta.",
+    "done": "Dokument maħluq.",
+    "failed": "Ma setax jiġi ġġenerat id-dokument.",
+    "hint": "Juża t-traskrizzjonijiet immarkati għall-inklużjoni, fl-ordni. Int tirrevedi u tapprova qabel ma jiġi kondiviż xi ħaġa."
+  },
+  "queue": {
+    "queued": "Fil-kju għat-traskrizzjoni. Din il-paġna taġġorna awtomatikament."
+  },
+  "pdfExport": {
+    "button": "Esporta PDF"
+  },
+  "access": {
+    "readOnly": "L-ispazju tax-xogħol tiegħek huwa biss qari għax il-prova jew l-abbonament tiegħek intemm. Xorta tista' tara u tesporta d-dokumenti tiegħek.",
+    "grace": "Il-prova jew l-abbonament tiegħek intemm fi {date}. Għandek {n} ġranet ta' aċċess sħiħ f'daqqa.",
+    "trialEnding": "Il-prova b'xejn tiegħek tintemm fi {n} ġranet.",
+    "choosePlan": "Agħżel pjan"
+  },
+  "sessionLang": {
+    "saved": "Lingwa tal-laqgħa salvata. Tapplika għar-reġistrazzjonijiet traskritti minn issa 'l quddiem.",
+    "failed": "Ma setgħetx tiġi salvata l-lingwa tal-laqgħa."
+  },
+  "i18nNote": {
+    "machine": "Tradott mill-magna"
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Til",
+    "signIn": "Kirish",
+    "signOut": "Chiqish",
+    "createAccount": "Hisob yaratish",
+    "getStarted": "Boshlash",
+    "startFreeTrial": "Bepul sinovni boshlash",
+    "cancel": "Bekor qilish",
+    "back": "Orqaga",
+    "download": "Yuklab olish",
+    "viewAll": "Barchasini ko‘rish"
+  },
+  "brand": {
+    "tagline": "AI ma’muriy ish maydoni",
+    "secureWorkspace": "Xavfsiz ma’muriy ish maydoni",
+    "badge": "Ingliz tili · Audio"
+  },
+  "nav": {
+    "dashboard": "Boshqaruv paneli",
+    "workspace": "Ish maydoni",
+    "sessions": "Sessiyalar va yozuvlar",
+    "documents": "Hujjatlar",
+    "correspondence": "Yozishmalar",
+    "knowledge": "Bilimlar bazasi",
+    "assistant": "Yordamchi",
+    "askWorker": "Worker’dan so‘rash",
+    "actions": "Bajarilishi lozim bo‘lgan ishlar",
+    "administration": "Administratsiya",
+    "organisation": "Tashkilot",
+    "users": "Foydalanuvchilar",
+    "audit": "Audit izi",
+    "subscription": "Obuna",
+    "payments": "To‘lovlar",
+    "billing": "Hisob-kitob"
+  },
+  "roles": {
+    "viewer": "Kuzatuvchi",
+    "officer": "Xodim",
+    "admin": "Administrator",
+    "superadmin": "Bosh administrator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Aytganlaringizni tayyor, rasmiylashtirilgan hujjatlarga aylantiring.",
+      "body": "Worker — yig‘ilishlar, brifinglar va yozishmalar asosida ko‘plab rasmiy hujjatlar tayyorlaydigan tashkilotlar uchun AI ma’muriy ish maydoni. Yig‘ilishni yozib oling yoki diktant qiling, Worker uni transkripsiya qiladi, bayonnomalar, memorandumlar, xatlar, hisobotlar va siyosat brifinglarini tayyorlaydi hamda ularni ko‘rib chiqish va tasdiqlashdan o‘tkazadi — to‘liq audit izi bilan.",
+      "badgeRow": "Audio · Ingliz tili · Xavfsiz ish maydoni"
+    },
+    "what": {
+      "title": "Worker nima qiladi",
+      "lead": "Yig‘ilishlar va yozishmalar atrofidagi kundalik ofis ishlari — soatlab emas, daqiqalarda bajariladi.",
+      "f1": {
+        "title": "Yozib olish va transkripsiya qilish",
+        "body": "Yig‘ilishlar, suhbatlar, brifinglar yoki diktantni yozib oling. Audio ingliz tilida mahalliy ravishda transkripsiya qilinadi."
+      },
+      "f2": {
+        "title": "AI bilan qoralama tayyorlang",
+        "body": "Bayonnomalar, xizmat xatlari, xatlar, hisobotlar, siyosat qisqartmalari va sirkulyarlarni to'g'ri rasmiy shaklda yarating."
+      },
+      "f3": {
+        "title": "Ko'rib chiqing va tasdiqlang",
+        "body": "Har bir hujjat qoralama, ko'rib chiqish, tasdiqlash va yakunlash bosqichlaridan o'tadi — nazorat odamlarda qoladi."
+      },
+      "f4": {
+        "title": "Xavfsiz va audit qilinadigan",
+        "body": "Rolga asoslangan kirish va to'liq audit izi. Xatlar faqat shaxs tomonidan yuboriladi."
+      }
+    },
+    "start": {
+      "title": "Boshlash bir daqiqa vaqt oladi",
+      "lead": "Hisob yarating va 14 kunlik bepul sinovni boshlang.",
+      "s1": {
+        "title": "Hisobingizni yarating",
+        "body": "Ismingiz, elektron pochta manzilingiz va parolingizni kiriting."
+      },
+      "s2": {
+        "title": "Elektron pochtangizni tasdiqlang",
+        "body": "Elektron pochta orqali yuborilgan 6 xonali kodni kiriting."
+      },
+      "s3": {
+        "title": "Xavfsiz kiring",
+        "body": "Har bir kirish elektron pochta orqali yuborilgan bir martalik kod bilan tasdiqlanadi."
+      },
+      "s4": {
+        "title": "Ishni boshlang",
+        "body": "Sessiya yarating, yozib oling va birinchi hujjatingizni yarating."
+      }
+    },
+    "pricing": {
+      "title": "Oddiy obuna narxlari",
+      "lead": "14 kunlik bepul sinovdan boshlang. Tashkilotingiz ishlab chiqaradigan ma'muriy ish hajmiga mos rejani tanlang.",
+      "perMonth": "/oy",
+      "mostPopular": "ENG MASHHUR",
+      "starter": {
+        "name": "Boshlang'ich",
+        "desc": "AI yordamida ma'muriy ishni boshlayotgan kichik jamoalar uchun."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Muntazam va katta hajmda hujjat ishlab chiqaradigan tashkilotlar uchun."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Katta ma'muriy ish yuklamasiga ega yirik tashkilotlar uchun."
+      },
+      "paymentsNote": "Pullik obunalar uchun M-Pesa va PayPal qo'llab-quvvatlanadi."
+    },
+    "final": {
+      "title": "Worker'ni sinab ko'rishga tayyormisiz?",
+      "cta": "Hisobingizni yarating"
+    }
+  },
+  "auth": {
+    "email": "Elektron pochta",
+    "password": "Parol",
+    "fullName": "To'liq ism",
+    "confirmPassword": "Parolni tasdiqlang",
+    "currentPassword": "Joriy parol",
+    "newPassword": "Yangi parol",
+    "confirmNewPassword": "Yangi parolni tasdiqlang",
+    "code6": "6 xonali kod",
+    "signInFailed": "Kirish amalga oshmadi. Hisob ma'lumotlarini tekshiring.",
+    "forgotPassword": "Parolni unutdingizmi?",
+    "mfaNotice": "Har bir kirishni tasdiqlash uchun bir martalik kod elektron pochta orqali yuboriladi.",
+    "createYourAccount": "Hisobingizni yarating",
+    "pwMin": "Parol kamida {n} ta belgidan iborat bo'lishi kerak.",
+    "newPwMin": "Yangi parol kamida {n} ta belgidan iborat bo'lishi kerak.",
+    "pwMismatch": "Parollar mos kelmaydi.",
+    "createFailed": "Hisob yaratib bo'lmadi.",
+    "haveAccount": "Hisobingiz bormi?",
+    "startAtSignIn": "Kirish yoki ro'yxatdan o'tishdan boshlang.",
+    "goToSignIn": "Kirishga o'tish",
+    "invalidCode": "Kod noto'g'ri yoki muddati o'tgan.",
+    "codeSent": "Yangi kod yuborildi.",
+    "resendFailed": "Qayta yuborib bo'lmadi.",
+    "verifyEmailTitle": "Elektron pochtangizni tasdiqlang",
+    "verifyEmailTo": "Elektron pochtangizni tasdiqlang — {email}",
+    "verify": "Tasdiqlash",
+    "resendCode": "Kodni qayta yuborish",
+    "signInAgain": "Iltimos, qaytadan kiring.",
+    "mfaPrompt": "Elektron pochtangizga yuborilgan kirish kodini kiriting",
+    "mfaPromptTo": "{email} manziliga yuborilgan kirish kodini kiriting",
+    "verifySignIn": "Tasdiqlash va kirish",
+    "requestFailed": "So'rovni bajarib bo'lmadi.",
+    "resetTitle": "Parolingizni tiklang",
+    "sendResetCode": "Tiklash kodini yuborish",
+    "backToSignIn": "Kirishga qaytish",
+    "resetPrompt": "Yuborilgan kodni kiriting va yangi parol tanlang",
+    "resetPassword": "Parolni tiklash",
+    "setNewPassword": "Yangi parol o'rnating",
+    "forcedChange": "Xavfsizlik uchun davom etishdan oldin o'z parolingizni o'rnating.",
+    "updateAccountPassword": "Hisobingiz parolini yangilang.",
+    "changeFailed": "Parolni o'zgartirib bo'lmadi.",
+    "updatePassword": "Parolni yangilash",
+    "signOutInstead": "Buning o'rniga chiqish"
+  },
+  "notFound": {
+    "title": "Sahifa topilmadi",
+    "subtitle": "Bu ish maydonida bunday sahifa mavjud emas.",
+    "back": "Boshqaruv paneliga qaytish"
+  },
+  "status": {
+    "draft": "qoralama",
+    "in_review": "ko'rib chiqilmoqda",
+    "approved": "tasdiqlangan",
+    "final": "yakuniy",
+    "archived": "arxivlangan",
+    "open": "ochiq",
+    "processing": "qayta ishlanmoqda",
+    "ready": "tayyor",
+    "pending": "kutilmoqda",
+    "transcribing": "transkripsiya qilinmoqda",
+    "transcribed": "transkripsiya qilindi",
+    "failed": "muvaffaqiyatsiz",
+    "sent": "yuborildi",
+    "received": "qabul qilindi",
+    "completed": "yakunlandi",
+    "cancelled": "bekor qilindi",
+    "active": "faol",
+    "suspended": "to'xtatilgan"
+  },
+  "kind": {
+    "meeting": "yig'ilish",
+    "interview": "suhbat",
+    "briefing": "brifing",
+    "dictation": "diktant",
+    "field_report": "joydagi hisobot",
+    "consultation": "maslahatlashuv",
+    "other": "boshqa"
+  },
+  "classification": {
+    "unclassified": "tasniflanmagan",
+    "internal": "ichki",
+    "confidential": "maxfiy",
+    "restricted": "cheklangan"
+  },
+  "dashboard": {
+    "welcome": "Xush kelibsiz, {name}",
+    "defaultName": "Xodim",
+    "subtitle": "Sizning ma'muriy ish maydoningiz — yozib olish, loyihalash, ko'rib chiqish va arxivlash.",
+    "stats": {
+      "sessions": "Sessiyalar",
+      "documents": "Hujjatlar",
+      "awaitingReview": "Ko'rib chiqishni kutmoqda",
+      "outstandingActions": "Bajarilishi lozim bo'lgan vazifalar"
+    },
+    "recentSessions": "So'nggi sessiyalar",
+    "documentsToAction": "Ko'rib chiqilishi kerak bo'lgan hujjatlar",
+    "noSessions": "Hozircha sessiyalar yo'q.",
+    "nothingToAction": "Sizning e'tiboringizni talab qiladigan hech narsa yo'q."
+  },
+  "sessions": {
+    "subtitle": "Har bir sessiya — bu ish hujjati: audio, transkripsiya va undan tayyorlangan hujjatlar.",
+    "new": "Yangi sessiya",
+    "createFailed": "Sessiya yaratib bo'lmadi.",
+    "titlePlaceholder": "masalan, Viloyat xavfsizlik qo'mitasi — Haftalik brifing",
+    "create": "Sessiya yaratish",
+    "empty": "Hozircha sessiyalar yo'q. Yozib olishni boshlash uchun bittasini yarating.",
+    "fields": {
+      "title": "Sarlavha",
+      "kind": "Turi",
+      "date": "Sana",
+      "classification": "Tasniflash",
+      "status": "Holat",
+      "department": "Bo'lim",
+      "location": "Joylashuv"
+    }
+  },
+  "session": {
+    "loadFailed": "Sessiyani yuklab bo'lmadi.",
+    "micDenied": "Mikrofonga ruxsat berilmadi yoki mavjud emas.",
+    "audioSaved": "Audio sessiyaga saqlandi.",
+    "uploadFailed": "Yuklash amalga oshmadi.",
+    "transcribing": "Mahalliy ravishda transkripsiya qilinmoqda — uzoq audio uchun bu biroz vaqt olishi mumkin.",
+    "transcribed": "Transkripsiya tugallandi.",
+    "transcribeFailed": "Transkripsiya amalga oshmadi. STT xizmati ishlayotganligini tekshiring.",
+    "updateFailed": "Yangilab bo'lmadi.",
+    "draftingMinutes": "Transkriptdan bayonnoma loyihasi tayyorlanmoqda…",
+    "minutesCreated": "Bayonnoma loyihasi yaratildi.",
+    "minutesFailed": "Bayonnoma yaratib bo'lmadi.",
+    "notFound": "Sessiya topilmadi.",
+    "noDate": "sana yo'q",
+    "noLocation": "joylashuv yo'q",
+    "generateMinutes": "Bayonnoma yaratish",
+    "captureAudio": "Audioni yozib olish",
+    "stopSave": "To'xtatish va saqlash",
+    "startRecording": "Yozishni boshlash",
+    "or": "yoki",
+    "uploadAudio": "Audio yuklash",
+    "audioNote": "Audio hostda qoladi. Transkripsiya mahalliy ravishda ingliz tilida amalga oshiriladi. Bayonnoma ushbu sessiyadagi har bir klipni tartibda birlashtiradi.",
+    "documentsFrom": "Ushbu sessiyadan olingan hujjatlar",
+    "noDocuments": "Hozircha hujjatlar yo'q. Klipni transkripsiya qiling, so'ngra bayonnoma yarating.",
+    "recordingsTitle": "Yozuvlar va transkriptlar",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Hozircha yozuvlar yo'q. Yuqorida audio yozib oling yoki yuklang.",
+    "includeTitle": "Bayonnoma yaratishda ushbu klipni qo'shish",
+    "inMinutes": "Bayonnoma ichida",
+    "transcribe": "Transkripsiya qilish",
+    "transcribeHint": "Ushbu klipni transkripsiya qilib, transkriptni bu yerda ko'ring va tahrirlang.",
+    "audioLoadFailed": "Audioni yuklab bo'lmadi.",
+    "loadAudio": "Audioni yuklash",
+    "words": "{n} soʻz",
+    "verified": "tasdiqlangan",
+    "editVerify": "Tahrirlash va tasdiqlash",
+    "saveVerified": "Saqlash va tasdiqlangan deb belgilash",
+    "saveDraft": "Qoralama saqlash",
+    "emptyTranscript": "Boʻsh transkript."
+  },
+  "docType": {
+    "minutes": "bayonnoma",
+    "memo": "memo",
+    "letter": "xat",
+    "report": "hisobot",
+    "policy_brief": "siyosat bayonnomasi",
+    "briefing_note": "brifing eslatmasi",
+    "concept_note": "konsept eslatmasi",
+    "circular": "sirkulyar",
+    "action_matrix": "harakatlar matritsasi",
+    "speech": "nutq"
+  },
+  "approval": {
+    "submit": "topshirilgan",
+    "submitted": "topshirilgan",
+    "approve": "tasdiqlangan",
+    "approved": "tasdiqlangan",
+    "reject": "rad etilgan",
+    "rejected": "rad etilgan",
+    "finalize": "yakunlangan",
+    "finalized": "yakunlangan"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Ichki memo",
+      "desc": "Kimga / Kimdan / Mavzu bilan standart ichki memorandum."
+    },
+    "letter-official": {
+      "name": "Rasmiy xat",
+      "desc": "Idora blankida rasmiy chiquvchi xat."
+    },
+    "circular-general": {
+      "name": "Sirkulyar",
+      "desc": "Koʻplab qabul qiluvchilarga yuboriladigan xabarnoma."
+    },
+    "report-standard": {
+      "name": "Hisobot",
+      "desc": "Xulosa, boʻlimlar va tavsiyalar bilan umumiy hisobot."
+    },
+    "policy-brief": {
+      "name": "Siyosat bayonnomasi",
+      "desc": "Qaror qabul qiluvchilar uchun qisqa bayonnoma."
+    },
+    "briefing-note": {
+      "name": "Brifing eslatmasi",
+      "desc": "Uchrashuv oldidan rahbarga qisqa maʼlumot berish uchun eslatma."
+    },
+    "concept-note": {
+      "name": "Konsept eslatmasi",
+      "desc": "Taklif etilayotgan dastur yoki tadbirning qisqacha tavsifi."
+    },
+    "minutes-blank": {
+      "name": "Yigʻilish bayonnomasi (boʻsh)",
+      "desc": "Qoʻlda toʻldirish uchun boʻsh bayonnoma tuzilmasi."
+    },
+    "speech-remarks": {
+      "name": "Nutq / Mulohazalar",
+      "desc": "Tadbir uchun rasmiy mulohazalar."
+    }
+  },
+  "documents": {
+    "subtitle": "Bayonnomalar, xizmat xatlari, xatlar, hisobotlar va qisqacha ma'lumotlar — AI tomonidan tuzilgan, odamlar tomonidan tasdiqlangan.",
+    "startFromTemplate": "Shablondan boshlash",
+    "fromSpreadsheet": "Elektron jadvaldan hisobot",
+    "draftWithAI": "AI bilan qoralama tuzish",
+    "templateTitle": "Shablondan boshlash",
+    "allTypes": "Barcha turlar",
+    "orgTemplates": "Tashkilotingiz shablonlari",
+    "savedByOrg": "Tashkilotingiz tomonidan saqlangan",
+    "useTemplate": "Ushbu shablondan foydalanish",
+    "generalTemplates": "Umumiy shablonlar",
+    "spreadsheetFailed": "Ushbu elektron jadvaldan hisobot tuzib bo'lmadi.",
+    "templateFailed": "Shablondan yaratib bo'lmadi.",
+    "draftFailed": "Hujjat qoralamasini tuzib bo'lmadi.",
+    "fields": {
+      "type": "Hujjat turi",
+      "title": "Sarlavha",
+      "recipient": "Qabul qiluvchi (ixtiyoriy)",
+      "department": "Bo'lim (ixtiyoriy)",
+      "brief": "Ko'rsatmalar / qisqacha mazmun"
+    },
+    "briefPlaceholder": "Maqsad, asosiy fikrlar va kiritilishi kerak bo'lgan faktlarni tavsiflang. Yordamchi siz tahrirlashingiz va tasdiqlashingiz mumkin bo'lgan rasmiy hujjat qoralamasini tuzadi.",
+    "generateDraft": "Qoralama yaratish",
+    "empty": "Hozircha hujjatlar yo'q.",
+    "table": {
+      "title": "Sarlavha",
+      "type": "Turi",
+      "ref": "Raq.",
+      "status": "Holati",
+      "ver": "Vers."
+    }
+  },
+  "doc": {
+    "loadFailed": "Hujjatni yuklab bo'lmadi.",
+    "invalidJson": "Kontent yaroqli JSON emas.",
+    "saved": "Saqlandi. Versiya oshirildi.",
+    "saveFailed": "Saqlash amalga oshmadi.",
+    "done": {
+      "submit": "Hujjat ko'rib chiqish uchun topshirildi.",
+      "approve": "Hujjat tasdiqlandi.",
+      "reject": "Hujjat rad etildi.",
+      "finalize": "Hujjat yakunlandi."
+    },
+    "failed": {
+      "submit": "Topshirib bo'lmadi.",
+      "approve": "Tasdiqlab bo'lmadi.",
+      "reject": "Rad etib bo'lmadi.",
+      "finalize": "Yakunlab bo'lmadi."
+    },
+    "templateName": "Shablon nomi",
+    "templateDefault": "{title} shabloni",
+    "templateSaved": "Tashkilotingiz uchun qayta ishlatiladigan shablon sifatida saqlandi.",
+    "templateSaveFailed": "Shablonni saqlab bo'lmadi.",
+    "exportFailed": "Eksport amalga oshmadi.",
+    "notFound": "Hujjat topilmadi.",
+    "exportDocx": "DOCX eksport qilish",
+    "exportPptx": "PPTX eksport qilish",
+    "exportXlsx": "XLSX eksport qilish",
+    "saveAsTemplate": "Shablon sifatida saqlash",
+    "content": "Kontent",
+    "workflow": "Ish jarayoni",
+    "aiAssisted": "AI yordamida tayyorlangan qoralama",
+    "auditChain": "Audit zanjiri: audio → transkript → AI qoralamasi → inson tahriri → tasdiqlash → yakuniy. Har bir qadam qayd etiladi.",
+    "comment": "Izoh (ixtiyoriy)",
+    "commentPlaceholder": "Yozuv uchun eslatma qo'shing",
+    "submit": "Ko'rib chiqish uchun yuborish",
+    "approve": "Tasdiqlash",
+    "reject": "Rad etish",
+    "finalize": "Yakunlash",
+    "finalLocked": "Yakuniy — tahrirlash uchun qulflangan",
+    "editJson": "Kontentni tahrirlash (JSON)",
+    "jsonNote": "Tuzilgan kontent brendlangan DOCX ni shakllantiradi. Quyidagi maydonlarni tahrirlab saqlang; brending va tartib eksportda avtomatik qo'llaniladi.",
+    "saveContent": "Kontentni saqlash",
+    "approvalHistory": "Tasdiqlash tarixi"
+  },
+  "emails": {
+    "subtitle": "AI yordamida xat va elektron pochta xabarlarini tayyorlang. Inson yuborish tugmasini bosmaguncha hech narsa yuborilmaydi.",
+    "needIntent": "Yordamchiga qoralama tayyorlash uchun mavzu yoki maqsad bering.",
+    "draftReady": "Qoralama tayyor. Yuborishdan oldin ko'rib chiqing va tahrirlang.",
+    "draftFailed": "Qoralama tayyorlanmadi.",
+    "draftSaved": "Qoralama saqlandi.",
+    "saveFailed": "Saqlab bo'lmadi.",
+    "confirmSend": "Ushbu xatni hozir yuborasizmi? Bu amal audit jurnalida qayd etiladi.",
+    "sent": "Xat yuborildi.",
+    "sendFailed": "Yuborish amalga oshmadi.",
+    "compose": "Yozish",
+    "messages": "Xabarlar",
+    "empty": "Hozircha yozishmalar yo'q.",
+    "message": "Xabar",
+    "details": "Tafsilotlar",
+    "to": "Kimga",
+    "cc": "Nusxa",
+    "subject": "Mavzu",
+    "intent": "Bu nima haqida bo'lishi kerak? (AI uchun)",
+    "intentPlaceholder": "masalan, Payshanba kuni soat 10:00 da xavfsizlik barazasiga boshliqlarni taklif qiling",
+    "body": "Matn",
+    "saveDraft": "Qoralamani saqlash",
+    "toLabel": "Kimga:",
+    "ccLabel": "Nusxa:",
+    "subjectLabel": "Mavzu:",
+    "aiAssisted": "AI yordamida",
+    "sendNow": "Hozir yuborish",
+    "selectHint": "Xabarni tanlang yoki yangisini yozing."
+  },
+  "knowledge": {
+    "subtitle": "Yordamchi foydalanishi mumkin bo'lgan ma'lumotnoma materiallari — siyosatlar, shablonlar, pretsedentlar.",
+    "added": "Bilimlar bazasiga qo'shildi.",
+    "addFailed": "Qo'shib bo'lmadi.",
+    "chooseFile": "Yuklash uchun fayl tanlang.",
+    "ocrFailed": "Fayl saqlandi. OCR bu fayldan matnni o'qiy olmadi (sifati past bo'lishi mumkin). Matnni qo'lda joylashingiz mumkin.",
+    "extracted": "Fayl saqlandi va {n} belgi matn ajratib olindi.",
+    "noText": "Fayl saqlandi. Bu formatdan matn ajratib bo'lmadi.",
+    "uploadFailed": "Yuklash amalga oshmadi.",
+    "confirmRemove": "Bu ma'lumotnoma o'chirilsinmi?",
+    "uploadTitle": "Hujjat yuklash",
+    "file": "Fayl",
+    "titleOptional": "Sarlavha (ixtiyoriy)",
+    "titleDefault": "Standart sifatida fayl nomi olinadi",
+    "categoryOptional": "Kategoriya (ixtiyoriy)",
+    "uploadExtract": "Yuklash va ajratish",
+    "uploadNote": "Word, PDF, CSV va matn fayllarining matni avtomatik ajratib olinadi. Skanerlangan PDF va rasmlar OCR yordamida avtomatik o'qiladi.",
+    "pasteTitle": "Ma'lumotnoma qo'shish (matnni joylash)",
+    "title": "Sarlavha",
+    "category": "Kategoriya",
+    "categoryPlaceholder": "masalan, Sirkulyarlar, Siyosatlar",
+    "textContent": "Matn mazmuni",
+    "add": "Qo'shish",
+    "references": "Ma'lumotnomalar",
+    "empty": "Hozircha hech narsa yo'q.",
+    "uncategorised": "Kategoriyasiz",
+    "remove": "O'chirish"
+  },
+  "assistant": {
+    "subtitle": "Oddiy tilda ko'rsatma bering — ish maydoningiz bo'ylab umumlashtiring, toping, qoralama tuzing yoki tushuntiring.",
+    "failed": "Yordamchi buni qayta ishlay olmadi.",
+    "instruction": "Ko'rsatma",
+    "placeholder": "Masalan, ushbu haftadagi xavfsizlik qo'mitasining qarorlarini umumlashtiring yoki hali tasdiqlanmagan xizmat xatlarini sanab bering.",
+    "ask": "So'rash"
+  },
+  "actions": {
+    "subtitle": "Majlislar bayonnomalari va harakatlar matritsalaridan olingan vazifalar.",
+    "empty": "Bajarilmagan vazifalar topilmadi.",
+    "table": {
+      "action": "Vazifa",
+      "responsible": "Mas'ul",
+      "timeline": "Muddat",
+      "source": "Manba"
+    }
+  },
+  "paypal": {
+    "title": "PayPal to'lovi",
+    "subtitle": "Obuna to'lovini tasdiqlash.",
+    "confirming": "PayPal to'lovingiz tasdiqlanmoqda...",
+    "noOrder": "PayPal buyurtmasi qaytarilmadi.",
+    "confirmed": "To'lov tasdiqlandi. Worker obunangiz endi faol.",
+    "failed": "PayPal to'lovini tasdiqlab bo'lmadi.",
+    "success": "To'lov muvaffaqiyatli",
+    "viewSubscription": "Obunani ko'rish",
+    "errorTitle": "To'lovni tasdiqlab bo'lmadi",
+    "returnToSubscription": "Obunaga qaytish"
+  },
+  "tenant": {
+    "saved": "Tashkilot ma'lumotlari saqlandi. Ular har bir eksport qilingan hujjatda ko'rinadi.",
+    "saveFailed": "Saqlab bo'lmadi.",
+    "logoUploaded": "Logotip yuklandi.",
+    "signatureUploaded": "Imzo yuklandi.",
+    "uploadFailed": "Yuklash amalga oshmadi.",
+    "subtitleShort": "Ish maydoningiz uchun brending.",
+    "noOrg": "Bu hisob tashkilotga bog'lanmagan.",
+    "subtitle": "Sizning ismingiz, blankingiz, logotipingiz va imzongiz har bir yaratgan hujjatingizda ko'rinadi.",
+    "letterhead": "Blank",
+    "orgName": "Tashkilot nomi",
+    "line": "Blank satri {n}",
+    "line1Placeholder": "Masalan, ... VILOYAT HOKIMLIGI",
+    "line2Placeholder": "Masalan, ... bo'limi",
+    "line3Placeholder": "Masalan, Bo'lim / Ofis",
+    "saveLetterhead": "Blankni saqlash",
+    "blankHint": "Tashkilot nomingizga qaytish uchun satrlarni bo'sh qoldiring.",
+    "logoSignature": "Logotip va imzo",
+    "logo": "Gerb / logotip (PNG yoki JPG)",
+    "signature": "Elektron imzo (PNG yoki JPG)",
+    "uploaded": "yuklandi",
+    "brandingNote": "Logotip hujjat sarlavhasida va slaydlar muqova sahifalarida ko'rinadi. Imzo eksport qilingan hujjatlar oxiriga qo'yiladi. Eng yaxshi natija uchun shaffof fonli PNG dan foydalaning."
+  },
+  "users": {
+    "createdTemp": "Foydalanuvchi yaratildi. Vaqtinchalik parol: {temp} — xavfsiz tarzda ulashing; ular birinchi kirishda uni o'zgartirishlari shart.",
+    "created": "Foydalanuvchi yaratildi.",
+    "createFailed": "Foydalanuvchini yaratib bo'lmadi.",
+    "confirmRemove": "{name} o'chirilsinmi?",
+    "removeFailed": "O'chirib bo'lmadi.",
+    "subtitle": "Kirishni boshqaring. Superadmin hisobini bu yerda o'zgartirib bo'lmaydi.",
+    "add": "Foydalanuvchi qo'shish",
+    "create": "Foydalanuvchi yaratish",
+    "empty": "Foydalanuvchilar yo'q.",
+    "fields": {
+      "name": "Ism",
+      "email": "Elektron pochta",
+      "role": "Rol",
+      "department": "Bo'lim",
+      "status": "Holat"
+    },
+    "suspend": "To'xtatish",
+    "reinstate": "Tiklash",
+    "remove": "O'chirish"
+  },
+  "audit": {
+    "subtitle": "Har bir muhim harakat qayd etiladi. Jurnallar faqat metama'lumotlar va identifikatorlarni saqlaydi — hech qachon hujjat matnlari yoki audio emas.",
+    "empty": "Audit yozuvlari yo'q.",
+    "table": {
+      "when": "Qachon",
+      "actor": "Bajaruvchi",
+      "action": "Harakat",
+      "resource": "Resurs"
+    },
+    "system": "tizim"
+  },
+  "payments": {
+    "stkSent": "STK push yuborildi. To'lovchidan telefonida tasdiqlashni so'rang.",
+    "initiateFailed": "To'lovni boshlab bo'lmadi.",
+    "subtitle": "M-Pesa (Daraja STK push) va PayPal tranzaksiyalari.",
+    "requestTitle": "M-Pesa to'lovini so'rash",
+    "phone": "Telefon (07.. yoki 2547..)",
+    "amountKes": "Miqdor (KES)",
+    "purpose": "Maqsad",
+    "sendStk": "STK push yuborish",
+    "transactions": "Tranzaksiyalar",
+    "empty": "Tranzaksiyalar yo'q.",
+    "table": {
+      "provider": "Provayder",
+      "amount": "Miqdor",
+      "status": "Holat",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Tugallangan Worker obuna to'lovlari uchun hisob-fakturalar va kvitansiyalar.",
+    "loadFailed": "Hisob-kitob hujjatlarini yuklab bo'lmadi.",
+    "downloadFailed": {
+      "invoice": "Hisob-fakturani yuklab bo'lmadi.",
+      "receipt": "Kvitansiyani yuklab bo'lmadi."
+    },
+    "documentsTitle": "To'lov hujjatlari",
+    "intro": "Tashkilotingizning yakunlangan obuna to'lovlari uchun hisob-fakturalar va kvitansiyalarni yuklab oling.",
+    "disclaimer": "Ushbu hujjatlar Worker obuna to'lovlarini qayd etadi va to'lov hamda qoplash maqsadlarida taqdim etiladi. Ular alohida mos eTIMS integratsiyasi orqali berilmagan bo'lsa, KRA/eTIMS soliq hisob-fakturalari sifatida ko'rsatilmaydi.",
+    "invoices": "Hisob-fakturalar",
+    "noInvoices": "Hozircha hisob-fakturalar yo'q.",
+    "receipts": "Kvitansiyalar",
+    "noReceipts": "Hozircha kvitansiyalar yo'q.",
+    "downloadPdf": "PDF yuklab olish",
+    "table": {
+      "invoice": "Hisob-faktura",
+      "receipt": "Kvitansiya",
+      "date": "Sana",
+      "description": "Tavsif",
+      "amount": "Summa",
+      "status": "Holat",
+      "provider": "Provayder",
+      "reference": "Ma'lumotnoma"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Obunani yuklab bo'lmadi.",
+    "selectFirst": "Avval obuna rejasini tanlang.",
+    "mpesaSent": "M-Pesa STK so'rovi yuborildi. To'lovni telefoningizda tasdiqlang. To'lov tasdiqlangach obunangiz faollashadi.",
+    "mpesaFailed": "M-Pesa to'lovini boshlab bo'lmadi.",
+    "noApproveUrl": "PayPal tasdiqlash havolasi qaytarilmadi.",
+    "paypalFailed": "PayPal to'lovini boshlab bo'lmadi.",
+    "subtitleShort": "Worker obunangizni boshqaring.",
+    "subtitle": "Worker rejangiz, sinov muddati va to'lovlarni boshqaring.",
+    "current": "Joriy obuna",
+    "organisation": "Tashkilot",
+    "status": "Holat",
+    "plan": "Reja",
+    "freeTrial": "14 kunlik bepul sinov",
+    "trialEnds": "Sinov muddati tugaydi",
+    "dayRemaining": "{n} kun qoldi",
+    "daysRemaining": "{n} kun qoldi",
+    "renewsEnds": "Yangilanadi / tugaydi",
+    "chooseTitle": "Rejani tanlang",
+    "chooseSubtitle": "Barcha rejalar Worker ma'muriy ish jarayonini o'z ichiga oladi. 14 kunlik sinov muddati bepul.",
+    "perMonth": "/ oy",
+    "planSelected": "{plan} tanlandi. Rejangiz saqlandi va to'lovga tayyor.",
+    "selectFailed": "Rejani tanlab bo'lmadi.",
+    "selected": "Tanlandi",
+    "selectPlan": "Tarifni tanlang",
+    "activateTitle": "Obunangizni faollashtiring",
+    "selectAbove": "To'lovga o'tish uchun yuqoridan tarifni tanlang.",
+    "stkNote": "Quyidagi telefon raqamiga STK push yuboriladi.",
+    "phone": "Telefon raqami",
+    "phonePlaceholder": "07.. yoki 2547..",
+    "payMpesa": "M-Pesa orqali to'lash",
+    "paypalNote": "Tanlangan tarif uchun USD da to'lash uchun PayPal ga o'ting.",
+    "payPaypal": "PayPal orqali to'lash",
+    "settleNote": "To'langan obunalar M-Pesa yoki PayPal orqali hisob-kitob qilinishi mumkin.",
+    "activationNote": "Tanlangan tarifingiz to'lov muvaffaqiyatli tasdiqlangandan so'ng faollashtiriladi.",
+    "historyNote": "To'lovlar tarixi Administratsiya → To'lovlar bo'limida mavjud."
+  },
+  "intl": {
+    "territory": "Hudud",
+    "searchTerritory": "Hududni qidirish…",
+    "selectTerritory": "Hududingizni tanlang",
+    "territoryRequired": "Iltimos, hududingizni tanlang.",
+    "workingLanguage": "Ish tili",
+    "meetingLanguage": "Uchrashuv tili",
+    "useDefault": "Tashkilot standarti",
+    "beta": "transkripsiya beta",
+    "unavailable": "transkripsiya mavjud emas"
+  },
+  "generate": {
+    "title": "Ushbu sessiyadan hujjat yarating",
+    "as": "Sifatida yaratish",
+    "instructions": "Ko'rsatma (ixtiyoriy)",
+    "placeholder": "masalan, Doimiy kotibga 2 va 3-qarorlarni umumlashtiruvchi xat",
+    "button": "Yaratish",
+    "working": "Hujjatingiz tayyorlanmoqda… bu bir daqiqa vaqt olishi mumkin.",
+    "done": "Hujjat yaratildi.",
+    "failed": "Hujjatni yaratib bo'lmadi.",
+    "hint": "Kiritish uchun belgilangan transkriptlardan tartib bo'yicha foydalanadi. Biror narsa ulashilishidan oldin siz ko'rib chiqasiz va tasdiqlaysiz."
+  },
+  "queue": {
+    "queued": "Transkripsiya uchun navbatga qo'yildi. Bu sahifa avtomatik yangilanadi."
+  },
+  "pdfExport": {
+    "button": "PDF eksport qilish"
+  },
+  "access": {
+    "readOnly": "Sinov muddati yoki obunangiz tugaganligi sababli ish maydoningiz faqat o'qish uchun. Hujjatlaringizni ko'rishingiz va eksport qilishingiz mumkin.",
+    "grace": "Sinov muddati yoki obunangiz {date} da tugadi. To'liq kirish uchun {n} kuningiz qoldi.",
+    "trialEnding": "Bepul sinov muddati {n} kundan keyin tugaydi.",
+    "choosePlan": "Tarifni tanlang"
+  },
+  "sessionLang": {
+    "saved": "Uchrashuv tili saqlandi. U bundan buyon transkripsiya qilinadigan yozuvlarga qo'llaniladi.",
+    "failed": "Uchrashuv tilini saqlab bo'lmadi."
+  },
+  "i18nNote": {
+    "machine": "Mashina tarjimasi"
+  }
+}

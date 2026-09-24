@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Tungumál",
+    "signIn": "Skrá inn",
+    "signOut": "Skrá út",
+    "createAccount": "Stofna reikning",
+    "getStarted": "Byrja",
+    "startFreeTrial": "Byrja ókeypis prufu",
+    "cancel": "Hætta við",
+    "back": "Til baka",
+    "download": "Hlaða niður",
+    "viewAll": "Sjá allt"
+  },
+  "brand": {
+    "tagline": "AI vinnusvæði fyrir stjórnsýslu",
+    "secureWorkspace": "Öruggt vinnusvæði fyrir stjórnsýslu",
+    "badge": "Enska · Hljóð"
+  },
+  "nav": {
+    "dashboard": "Mælaborð",
+    "workspace": "Vinnusvæði",
+    "sessions": "Fundir og upptökur",
+    "documents": "Skjöl",
+    "correspondence": "Bréfaskipti",
+    "knowledge": "Þekkingargrunnur",
+    "assistant": "Aðstoðarmaður",
+    "askWorker": "Spyrja Worker",
+    "actions": "Ókláruð verkefni",
+    "administration": "Stjórnsýsla",
+    "organisation": "Stofnun",
+    "users": "Notendur",
+    "audit": "Endurskoðunarslóð",
+    "subscription": "Áskrift",
+    "payments": "Greiðslur",
+    "billing": "Reikningsfærsla"
+  },
+  "roles": {
+    "viewer": "Áhorfandi",
+    "officer": "Fulltrúi",
+    "admin": "Stjórnandi",
+    "superadmin": "Yfir-stjórnandi"
+  },
+  "landing": {
+    "hero": {
+      "title": "Breyttu því sem þú segir í fullbúin, skráð skjöl.",
+      "body": "Worker er AI vinnusvæði fyrir stjórnsýslu fyrir stofnanir sem framleiða mikið magn formlegra skjala úr fundum, kynningum og bréfaskiptum. Taktu upp fund eða lesa upp, og Worker umritar það, semur fundargerðir, minnisblöð, bréf, skýrslur og stefnumótandi greinargerðir, og leiðir þau í gegnum yfirferð og samþykki — með heildstæðri endurskoðunarslóð.",
+      "badgeRow": "Hljóð · Enska · Öruggt vinnusvæði"
+    },
+    "what": {
+      "title": "Hvað Worker gerir",
+      "lead": "Venjuleg skrifstofuverk sem fylgja fundum og bréfaskiptum — afgreidd á mínútum, ekki klukkustundum.",
+      "f1": {
+        "title": "Taka upp og umrita",
+        "body": "Taktu upp fundi, viðtöl, kynningar eða upplestur. Hljóð er umritað á staðnum á ensku."
+      },
+      "f2": {
+        "title": "Drög með gervigreind",
+        "body": "Búðu til fundargerðir, minnisblöð, bréf, skýrslur, stefnuskjöl og tilkynningar í réttu formlegu formi."
+      },
+      "f3": {
+        "title": "Yfirferð og samþykki",
+        "body": "Hvert skjal fer í gegnum drög, yfirferð, samþykki og frágang — fólk heldur stjórninni."
+      },
+      "f4": {
+        "title": "Öruggt og endurskoðað",
+        "body": "Hlutverkamiðaður aðgangur og heildstæð endurskoðunarslóð. Bréf eru aðeins send af einstaklingi."
+      }
+    },
+    "start": {
+      "title": "Að byrja tekur eina mínútu",
+      "lead": "Búðu til reikning og byrjaðu 14 daga ókeypis prufu.",
+      "s1": {
+        "title": "Búðu til reikninginn þinn",
+        "body": "Sláðu inn nafn, netfang og lykilorð."
+      },
+      "s2": {
+        "title": "Staðfestu netfangið þitt",
+        "body": "Sláðu inn 6 stafa kóðann sem við sendum þér í tölvupósti."
+      },
+      "s3": {
+        "title": "Skráðu þig örugglega inn",
+        "body": "Hver innskráning er staðfest með einnota kóða sem sendur er í tölvupósti."
+      },
+      "s4": {
+        "title": "Byrjaðu að vinna",
+        "body": "Búðu til lotu, taktu upp og búðu til fyrsta skjalið þitt."
+      }
+    },
+    "pricing": {
+      "title": "Einfalt áskriftarverð",
+      "lead": "Byrjaðu með 14 daga ókeypis prufu. Veldu áætlun sem hentar umfangi stjórnsýsluvinnu sem stofnunin þín framleiðir.",
+      "perMonth": "/mánuði",
+      "mostPopular": "VINSÆLAST",
+      "starter": {
+        "name": "Byrjandi",
+        "desc": "Fyrir lítil teymi sem eru að byrja með gervigreindarstudda stjórnsýsluvinnu."
+      },
+      "professional": {
+        "name": "Faglegur",
+        "desc": "Fyrir stofnanir með reglulega, mikla skjalaframleiðslu."
+      },
+      "premium": {
+        "name": "Úrvals",
+        "desc": "Fyrir stærri stofnanir með umtalsvert stjórnsýsluálag."
+      },
+      "paymentsNote": "M-Pesa og PayPal eru studd fyrir greiddar áskriftir."
+    },
+    "final": {
+      "title": "Tilbúinn að prófa Worker?",
+      "cta": "Búðu til reikninginn þinn"
+    }
+  },
+  "auth": {
+    "email": "Netfang",
+    "password": "Lykilorð",
+    "fullName": "Fullt nafn",
+    "confirmPassword": "Staðfestu lykilorð",
+    "currentPassword": "Núverandi lykilorð",
+    "newPassword": "Nýtt lykilorð",
+    "confirmNewPassword": "Staðfestu nýtt lykilorð",
+    "code6": "6 stafa kóði",
+    "signInFailed": "Innskráning mistókst. Athugaðu skilríkin þín.",
+    "forgotPassword": "Gleymt lykilorð?",
+    "mfaNotice": "Einnota kóði er sendur í tölvupósti til að staðfesta hverja innskráningu.",
+    "createYourAccount": "Búa til aðgang",
+    "pwMin": "Lykilorð verður að vera að minnsta kosti {n} stafir.",
+    "newPwMin": "Nýtt lykilorð verður að vera að minnsta kosti {n} stafir.",
+    "pwMismatch": "Lykilorðin stemma ekki.",
+    "createFailed": "Ekki tókst að búa til aðgang.",
+    "haveAccount": "Ertu þegar með aðgang?",
+    "startAtSignIn": "Byrjaðu á innskráningu eða skráningu.",
+    "goToSignIn": "Fara í innskráningu",
+    "invalidCode": "Ógildur eða útrunninn kóði.",
+    "codeSent": "Nýr kóði hefur verið sendur.",
+    "resendFailed": "Ekki tókst að endursenda.",
+    "verifyEmailTitle": "Staðfesta netfangið þitt",
+    "verifyEmailTo": "Staðfesta netfangið þitt — {email}",
+    "verify": "Staðfesta",
+    "resendCode": "Endursenda kóða",
+    "signInAgain": "Vinsamlegast skráðu þig inn aftur.",
+    "mfaPrompt": "Sláðu inn innskráningarkóðann sem við sendum í tölvupósti",
+    "mfaPromptTo": "Sláðu inn innskráningarkóðann sem við sendum í tölvupósti á {email}",
+    "verifySignIn": "Staðfesta og skrá inn",
+    "requestFailed": "Ekki tókst að vinna beiðnina.",
+    "resetTitle": "Endurstilla lykilorðið þitt",
+    "sendResetCode": "Senda endurstillingarkóða",
+    "backToSignIn": "Til baka í innskráningu",
+    "resetPrompt": "Sláðu inn kóðann sem við sendum í tölvupósti og veldu nýtt lykilorð",
+    "resetPassword": "Endurstilla lykilorð",
+    "setNewPassword": "Setja nýtt lykilorð",
+    "forcedChange": "Til öryggis skaltu setja þitt eigið lykilorð áður en þú heldur áfram.",
+    "updateAccountPassword": "Uppfærðu lykilorð aðgangsins þíns.",
+    "changeFailed": "Ekki tókst að breyta lykilorði.",
+    "updatePassword": "Uppfæra lykilorð",
+    "signOutInstead": "Skrá út í staðinn"
+  },
+  "notFound": {
+    "title": "Síða fannst ekki",
+    "subtitle": "Þessi síða er ekki til í þessu vinnusvæði.",
+    "back": "Fara aftur á mælaborð"
+  },
+  "status": {
+    "draft": "drög",
+    "in_review": "í yfirferð",
+    "approved": "samþykkt",
+    "final": "endanlegt",
+    "archived": "geymsla",
+    "open": "opið",
+    "processing": "vinnslu",
+    "ready": "tilbúið",
+    "pending": "í bið",
+    "transcribing": "umritun",
+    "transcribed": "umritað",
+    "failed": "mistókst",
+    "sent": "sent",
+    "received": "móttekið",
+    "completed": "lokið",
+    "cancelled": "afboðað",
+    "active": "virkt",
+    "suspended": "í bið"
+  },
+  "kind": {
+    "meeting": "fundur",
+    "interview": "viðtal",
+    "briefing": "kynning",
+    "dictation": "upplestur",
+    "field_report": "vettvangsskýrsla",
+    "consultation": "ráðgjöf",
+    "other": "annað"
+  },
+  "classification": {
+    "unclassified": "óflokkað",
+    "internal": "innra",
+    "confidential": "trúnaðarmál",
+    "restricted": "takmarkað"
+  },
+  "dashboard": {
+    "welcome": "Velkomin, {name}",
+    "defaultName": "embættismaður",
+    "subtitle": "Vinnusvæðið þitt — skrá, semja, yfirfara og vista.",
+    "stats": {
+      "sessions": "Fundir",
+      "documents": "Skjöl",
+      "awaitingReview": "Bíður yfirferðar",
+      "outstandingActions": "Ókláruð verk"
+    },
+    "recentSessions": "Nýlegir fundir",
+    "documentsToAction": "Skjöl sem þarf að vinna",
+    "noSessions": "Engir fundir enn.",
+    "nothingToAction": "Ekkert krefst athygli þinnar."
+  },
+  "sessions": {
+    "subtitle": "Hver fundur er málsskjal — hljóð, umritun og skjölin sem úr honum verða.",
+    "new": "Nýr fundur",
+    "createFailed": "Tókst ekki að stofna fund.",
+    "titlePlaceholder": "t.d. Öryggisnefnd sýslu — vikuleg kynning",
+    "create": "Stofna fund",
+    "empty": "Engir fundir enn. Stofnaðu einn til að hefja upptöku.",
+    "fields": {
+      "title": "Titill",
+      "kind": "Tegund",
+      "date": "Dagsetning",
+      "classification": "Flokkun",
+      "status": "Staða",
+      "department": "Deild",
+      "location": "Staðsetning"
+    }
+  },
+  "session": {
+    "loadFailed": "Ekki tókst að hlaða lotu.",
+    "micDenied": "Aðgangur að hljóðnema var hafnað eða hann er ekki tiltækur.",
+    "audioSaved": "Hljóð var vistað í lotunni.",
+    "uploadFailed": "Upphleðsla mistókst.",
+    "transcribing": "Umritun fer fram á staðnum — það getur tekið smá stund fyrir lengra hljóð.",
+    "transcribed": "Umritun lokið.",
+    "transcribeFailed": "Umritun mistókst. Athugaðu hvort STT-þjónustan sé í gangi.",
+    "updateFailed": "Ekki tókst að uppfæra.",
+    "draftingMinutes": "Drög að fundargerð eru unnin úr umrituninni…",
+    "minutesCreated": "Drög að fundargerð voru búin til.",
+    "minutesFailed": "Ekki tókst að búa til fundargerð.",
+    "notFound": "Lota fannst ekki.",
+    "noDate": "engin dagsetning",
+    "noLocation": "engin staðsetning",
+    "generateMinutes": "Búa til fundargerð",
+    "captureAudio": "Taka upp hljóð",
+    "stopSave": "Stöðva og vista",
+    "startRecording": "Byrja upptöku",
+    "or": "eða",
+    "uploadAudio": "Hlaða upp hljóði",
+    "audioNote": "Hljóð verður áfram á hýslinum. Umritun fer fram á staðnum á ensku. Fundargerð sameinar hvert hljóðbrot í þessari lotu, í réttri röð.",
+    "documentsFrom": "Skjöl úr þessari lotu",
+    "noDocuments": "Engin skjöl enn. Umritaðu hljóðbrot og búðu síðan til fundargerð.",
+    "recordingsTitle": "Upptökur og umritanir",
+    "clipOne": "{n} hljóðbrot",
+    "clipMany": "{n} hljóðbrot",
+    "noRecordings": "Engar upptökur enn. Taktu upp eða hlaðdu upp hljóði hér að ofan.",
+    "includeTitle": "Hafa þetta hljóðbrot með við gerð fundargerðar",
+    "inMinutes": "Í fundargerð",
+    "transcribe": "Umrita",
+    "transcribeHint": "Umritaðu þetta hljóðbrot til að sjá og breyta umrituninni hér.",
+    "audioLoadFailed": "Ekki tókst að hlaða hljóði.",
+    "loadAudio": "Hlaða hljóði",
+    "words": "{n} orð",
+    "verified": "staðfest",
+    "editVerify": "Breyta og staðfesta",
+    "saveVerified": "Vista og merkja sem staðfest",
+    "saveDraft": "Vista drög",
+    "emptyTranscript": "Tómt uppskrift."
+  },
+  "docType": {
+    "minutes": "fundargerð",
+    "memo": "minnisblað",
+    "letter": "bréf",
+    "report": "skýrsla",
+    "policy_brief": "stefnumótunaryfirlit",
+    "briefing_note": "kynningargrein",
+    "concept_note": "hugmyndalýsing",
+    "circular": "dreifibréf",
+    "action_matrix": "aðgerðaáætlun",
+    "speech": "ræða"
+  },
+  "approval": {
+    "submit": "sent til samþykktar",
+    "submitted": "sent til samþykktar",
+    "approve": "samþykkt",
+    "approved": "samþykkt",
+    "reject": "hafnað",
+    "rejected": "hafnað",
+    "finalize": "lokið",
+    "finalized": "lokið"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Innra minnisblað",
+      "desc": "Staðlað innra minnisblað með Til / Frá / Efni."
+    },
+    "letter-official": {
+      "name": "Opinbert bréf",
+      "desc": "Formlegt útbréf á bréfhaus stofnunarinnar."
+    },
+    "circular-general": {
+      "name": "Dreifibréf",
+      "desc": "Tilkynning sem dreift er til margra viðtakenda."
+    },
+    "report-standard": {
+      "name": "Skýrsla",
+      "desc": "Almenn skýrsla með samantekt, köflum og tillögum."
+    },
+    "policy-brief": {
+      "name": "Stefnumótunaryfirlit",
+      "desc": "Hnitmiðað yfirlit fyrir ákvarðanatökuaðila."
+    },
+    "briefing-note": {
+      "name": "Kynningargrein",
+      "desc": "Stutt grein til að kynna fyrir stjórnanda fyrir fund."
+    },
+    "concept-note": {
+      "name": "Hugmyndalýsing",
+      "desc": "Útlínur fyrirhugaðrar áætlunar eða starfsemi."
+    },
+    "minutes-blank": {
+      "name": "Fundargerð (tóm)",
+      "desc": "Tóm fundargerðaruppbygging til að fylla út handvirkt."
+    },
+    "speech-remarks": {
+      "name": "Ræða / ávarp",
+      "desc": "Formlegt ávarp fyrir viðburð."
+    }
+  },
+  "documents": {
+    "subtitle": "Fundargerðir, minnisblöð, bréf, skýrslur og samantektir — drög gerð með gervigreind, samþykkt af fólki.",
+    "startFromTemplate": "Byrja út frá sniðmáti",
+    "fromSpreadsheet": "Skýrsla úr töflureikni",
+    "draftWithAI": "Gera drög með gervigreind",
+    "templateTitle": "Byrja út frá sniðmáti",
+    "allTypes": "Allar tegundir",
+    "orgTemplates": "Sniðmát stofnunarinnar þinnar",
+    "savedByOrg": "Vistað af stofnuninni þinni",
+    "useTemplate": "Nota þetta sniðmát",
+    "generalTemplates": "Almenn sniðmát",
+    "spreadsheetFailed": "Ekki tókst að búa til skýrslu úr þessum töflureikni.",
+    "templateFailed": "Ekki tókst að búa til úr sniðmáti.",
+    "draftFailed": "Ekki tókst að gera drög að skjali.",
+    "fields": {
+      "type": "Tegund skjals",
+      "title": "Titill",
+      "recipient": "Viðtakandi (valfrjálst)",
+      "department": "Deild (valfrjálst)",
+      "brief": "Leiðbeiningar / samantekt"
+    },
+    "briefPlaceholder": "Lýstu tilgangi, lykilatriðum og öllum staðreyndum sem eiga að koma fram. Aðstoðarmaðurinn gerir drög að formlegu skjali sem þú getur breytt og samþykkt.",
+    "generateDraft": "Búa til drög",
+    "empty": "Engin skjöl ennþá.",
+    "table": {
+      "title": "Titill",
+      "type": "Tegund",
+      "ref": "Tilv.",
+      "status": "Staða",
+      "ver": "Útg."
+    }
+  },
+  "doc": {
+    "loadFailed": "Ekki tókst að hlaða skjali.",
+    "invalidJson": "Efni er ekki gilt JSON.",
+    "saved": "Vistað. Útgáfa hækkuð.",
+    "saveFailed": "Vistun mistókst.",
+    "done": {
+      "submit": "Skjal sent til yfirferðar.",
+      "approve": "Skjal samþykkt.",
+      "reject": "Skjali hafnað.",
+      "finalize": "Skjal fullgert."
+    },
+    "failed": {
+      "submit": "Ekki tókst að senda.",
+      "approve": "Ekki tókst að samþykkja.",
+      "reject": "Ekki tókst að hafna.",
+      "finalize": "Ekki tókst að fullgera."
+    },
+    "templateName": "Heiti sniðmáts",
+    "templateDefault": "Sniðmát fyrir {title}",
+    "templateSaved": "Vistað sem endurnýtanlegt sniðmát fyrir stofnunina þína.",
+    "templateSaveFailed": "Ekki tókst að vista sniðmát.",
+    "exportFailed": "Útflutningur mistókst.",
+    "notFound": "Skjal fannst ekki.",
+    "exportDocx": "Flytja út DOCX",
+    "exportPptx": "Flytja út PPTX",
+    "exportXlsx": "Flytja út XLSX",
+    "saveAsTemplate": "Vista sem sniðmát",
+    "content": "Efni",
+    "workflow": "Vinnuferli",
+    "aiAssisted": "AI-stutt drög",
+    "auditChain": "Endurskoðunarkeðja: hljóð → umritun → AI-drög → mannleg ritstjórn → samþykki → endanlegt. Hvert skref er skráð.",
+    "comment": "Athugasemd (valfrjálst)",
+    "commentPlaceholder": "Bættu við athugasemd til skráningar",
+    "submit": "Senda til yfirferðar",
+    "approve": "Samþykkja",
+    "reject": "Hafna",
+    "finalize": "Ljúka",
+    "finalLocked": "Endanlegt — læst fyrir breytingum",
+    "editJson": "Breyta efni (JSON)",
+    "jsonNote": "Skipulagt efni stýrir merktu DOCX-skjali. Breyttu reitunum hér að neðan og vistaðu; merking og útlit eru sett á sjálfkrafa við útflutning.",
+    "saveContent": "Vista efni",
+    "approvalHistory": "Samþykkissaga"
+  },
+  "emails": {
+    "subtitle": "Semdu bréf og tölvupósta með AI. Ekkert er sent fyrr en einstaklingur smellir á senda.",
+    "needIntent": "Gefðu aðstoðarmanninum efni eða tilgang til að semja út frá.",
+    "draftReady": "Drög tilbúin. Farðu yfir og breyttu áður en sent er.",
+    "draftFailed": "Gerð drög mistókst.",
+    "draftSaved": "Drög vistuð.",
+    "saveFailed": "Ekki tókst að vista.",
+    "confirmSend": "Senda þennan tölvupóst núna? Þessi aðgerð er skráð í endurskoðunarslóð.",
+    "sent": "Tölvupóstur sendur.",
+    "sendFailed": "Sending mistókst.",
+    "compose": "Semja",
+    "messages": "Skilaboð",
+    "empty": "Engin bréfaskipti ennþá.",
+    "message": "Skilaboð",
+    "details": "Nánar",
+    "to": "Til",
+    "cc": "Afrit",
+    "subject": "Efni",
+    "intent": "Hvað á þetta að segja? (fyrir gervigreind)",
+    "intentPlaceholder": "t.d. Bjóða höfðingjum á öryggisfund á föstudag kl. 10",
+    "body": "Meginmál",
+    "saveDraft": "Vista drög",
+    "toLabel": "Til:",
+    "ccLabel": "Afrit:",
+    "subjectLabel": "Efni:",
+    "aiAssisted": "Gervigreindaraðstoð",
+    "sendNow": "Senda núna",
+    "selectHint": "Veldu skilaboð eða skrifaðu ný."
+  },
+  "knowledge": {
+    "subtitle": "Tilvísunarefni sem aðstoðarmaðurinn getur notað — stefnur, sniðmát, fordæmi.",
+    "added": "Bætt við þekkingargrunninn.",
+    "addFailed": "Gat ekki bætt við.",
+    "chooseFile": "Veldu skrá til að hlaða upp.",
+    "ocrFailed": "Skrá vistað. OCR gat ekki lesið texta úr þessari skrá (hún gæti verið léleg). Þú getur límd textann handvirkt.",
+    "extracted": "Skrá vistað og {n} stafir af texta dregnir út.",
+    "noText": "Skrá vistað. Ekki tókst að draga út texta úr þessu sniði.",
+    "uploadFailed": "Upphleðsla mistókst.",
+    "confirmRemove": "Fjarlægja þessa tilvísun?",
+    "uploadTitle": "Hlaða upp skjali",
+    "file": "Skrá",
+    "titleOptional": "Titill (valfrjálst)",
+    "titleDefault": "Sjálfgefið er skráarnafn",
+    "categoryOptional": "Flokkur (valfrjálst)",
+    "uploadExtract": "Hlaða upp og draga út",
+    "uploadNote": "Texti úr Word, PDF, CSV og textaskrám er dreginn út sjálfkrafa. Skannaðar PDF-skjöl og ljósmyndir eru lesnar sjálfkrafa með OCR.",
+    "pasteTitle": "Bæta við tilvísun (líma texta)",
+    "title": "Titill",
+    "category": "Flokkur",
+    "categoryPlaceholder": "t.d. Tilskipanir, Stefnur",
+    "textContent": "Textainnihald",
+    "add": "Bæta við",
+    "references": "Tilvísanir",
+    "empty": "Ekkert ennþá.",
+    "uncategorised": "Óflokkað",
+    "remove": "Fjarlægja"
+  },
+  "assistant": {
+    "subtitle": "Gefðu fyrirmæli á einföldu máli — taka saman, finna, skrifa drög eða útskýra í vinnusvæðinu þínu.",
+    "failed": "Aðstoðarmaðurinn gat ekki unnið úr þessu.",
+    "instruction": "Leiðbeining",
+    "placeholder": "t.d. Taktu saman ákvarðanir öryggisnefndar þessarar viku, eða listaðu upp minnisblöð sem bíða enn samþykkis.",
+    "ask": "Spyrja"
+  },
+  "actions": {
+    "subtitle": "Aðgerðaliðir dregnir út úr fundargerðum og aðgerðafylkjum milli funda.",
+    "empty": "Engar ófrágengnar aðgerðir fundust.",
+    "table": {
+      "action": "Aðgerð",
+      "responsible": "Ábyrgur",
+      "timeline": "Tímalína",
+      "source": "Heimild"
+    }
+  },
+  "paypal": {
+    "title": "PayPal greiðsla",
+    "subtitle": "Staðfesting á áskriftargreiðslu.",
+    "confirming": "Staðfesti PayPal greiðsluna þína...",
+    "noOrder": "Engin PayPal pöntun var skilað.",
+    "confirmed": "Greiðsla staðfest. Worker áskriftin þín er nú virk.",
+    "failed": "Ekki tókst að staðfesta PayPal greiðsluna.",
+    "success": "Greiðsla tókst",
+    "viewSubscription": "Skoða áskrift",
+    "errorTitle": "Ekki tókst að staðfesta greiðslu",
+    "returnToSubscription": "Fara aftur í áskrift"
+  },
+  "tenant": {
+    "saved": "Upplýsingar um stofnun vistaðar. Þær birtast á hverju skjali sem þú flytur út.",
+    "saveFailed": "Ekki tókst að vista.",
+    "logoUploaded": "Merki hlaðið upp.",
+    "signatureUploaded": "Undirskrift hlaðið upp.",
+    "uploadFailed": "Upphleðsla mistókst.",
+    "subtitleShort": "Vörumerking fyrir vinnusvæðið þitt.",
+    "noOrg": "Þessi reikningur er ekki tengdur stofnun.",
+    "subtitle": "Nafn þitt, bréfhaus, merki og undirskrift birtast á hverju skjali sem þú býrð til.",
+    "letterhead": "Bréfhaus",
+    "orgName": "Heiti stofnunar",
+    "line": "Bréfhauss lína {n}",
+    "line1Placeholder": "t.d. SÝSLUSTJÓRN ...",
+    "line2Placeholder": "t.d. Deild ...",
+    "line3Placeholder": "t.d. Eining / skrifstofa",
+    "saveLetterhead": "Vista bréfhaus",
+    "blankHint": "Skildu línur eftir auðar til að nota heiti stofnunar þinnar.",
+    "logoSignature": "Merki og undirskrift",
+    "logo": "Skjaldarmerki / merki (PNG eða JPG)",
+    "signature": "Rafræn undirskrift (PNG eða JPG)",
+    "uploaded": "hlaðið upp",
+    "brandingNote": "Merkið birtist í haus skjalsins og á titilsíðum glæra. Undirskriftin er sett í lok útfluttra skjala. Notaðu PNG með gagnsæjum bakgrunni fyrir bestu niðurstöðu."
+  },
+  "users": {
+    "createdTemp": "Notandi stofnaður. Tímabundið lykilorð: {temp} — deilið á öruggan hátt; viðkomandi verður að breyta því við fyrstu innskráningu.",
+    "created": "Notandi stofnaður.",
+    "createFailed": "Ekki tókst að stofna notanda.",
+    "confirmRemove": "Fjarlægja {name}?",
+    "removeFailed": "Ekki tókst að fjarlægja.",
+    "subtitle": "Stjórnaðu aðgangi. Ekki er hægt að breyta ofurnotandareikningnum hér.",
+    "add": "Bæta við notanda",
+    "create": "Stofna notanda",
+    "empty": "Engir notendur.",
+    "fields": {
+      "name": "Nafn",
+      "email": "Netfang",
+      "role": "Hlutverk",
+      "department": "Deild",
+      "status": "Staða"
+    },
+    "suspend": "Setja í bið",
+    "reinstate": "Endurvekja",
+    "remove": "Fjarlægja"
+  },
+  "audit": {
+    "subtitle": "Sérhver mikilvæg aðgerð er skráð. Skrár geyma aðeins lýsigögn og auðkenni — aldrei skjöl eða hljóð.",
+    "empty": "Engar endurskoðunarfærslur.",
+    "table": {
+      "when": "Hvenær",
+      "actor": "Aðili",
+      "action": "Aðgerð",
+      "resource": "Auðlind"
+    },
+    "system": "kerfi"
+  },
+  "payments": {
+    "stkSent": "STK-tilkynning send. Biddu greiðandann að samþykkja í símanum.",
+    "initiateFailed": "Ekki tókst að hefja greiðslu.",
+    "subtitle": "M-Pesa (Daraja STK push) og PayPal færslur.",
+    "requestTitle": "Biðja um M-Pesa greiðslu",
+    "phone": "Sími (07.. eða 2547..)",
+    "amountKes": "Upphæð (KES)",
+    "purpose": "Tilgangur",
+    "sendStk": "Senda STK-tilkynningu",
+    "transactions": "Færslur",
+    "empty": "Engar færslur.",
+    "table": {
+      "provider": "Veitandi",
+      "amount": "Upphæð",
+      "status": "Staða",
+      "ref": "Tilv."
+    }
+  },
+  "billing": {
+    "subtitle": "Reikningar og kvittanir fyrir greiddar Worker áskriftargreiðslur.",
+    "loadFailed": "Ekki tókst að hlaða greiðsluskjölum.",
+    "downloadFailed": {
+      "invoice": "Gat ekki hlaðið niður reikningi.",
+      "receipt": "Gat ekki hlaðið niður kvittun."
+    },
+    "documentsTitle": "Reikningsskjöl",
+    "intro": "Hlaðið niður reikningum og kvittunum fyrir lokagreiðslur áskriftar stofnunarinnar þinnar.",
+    "disclaimer": "Þessi skjöl skrá Worker áskriftargreiðslur og eru veitt í greiðslu- og endurgreiðsluskyni. Þau eru ekki talin vera KRA/eTIMS skattreikningar nema þau séu sérstaklega gefin út í gegnum samhæfða eTIMS samþættingu.",
+    "invoices": "Reikningar",
+    "noInvoices": "Engir reikningar ennþá.",
+    "receipts": "Kvittanir",
+    "noReceipts": "Engar kvittanir ennþá.",
+    "downloadPdf": "Hlaða niður PDF",
+    "table": {
+      "invoice": "Reikningur",
+      "receipt": "Kvittun",
+      "date": "Dagsetning",
+      "description": "Lýsing",
+      "amount": "Upphæð",
+      "status": "Staða",
+      "provider": "Veitandi",
+      "reference": "Tilvísun"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Gat ekki hlaðið áskrift.",
+    "selectFirst": "Veldu áskriftaráætlun fyrst.",
+    "mpesaSent": "M-Pesa STK tilkynning send. Samþykktu greiðsluna í símanum þínum. Áskriftin þín verður virkjuð eftir staðfestingu greiðslu.",
+    "mpesaFailed": "Gat ekki hafið M-Pesa greiðslu.",
+    "noApproveUrl": "PayPal samþykkishlekkur var ekki skilað.",
+    "paypalFailed": "Gat ekki hafið PayPal greiðslu.",
+    "subtitleShort": "Stjórnaðu Worker áskriftinni þinni.",
+    "subtitle": "Stjórnaðu Worker áætluninni þinni, prufu og reikningsskilum.",
+    "current": "Núverandi áskrift",
+    "organisation": "Stofnun",
+    "status": "Staða",
+    "plan": "Áætlun",
+    "freeTrial": "14 daga ókeypis prufa",
+    "trialEnds": "Prufu lýkur",
+    "dayRemaining": "{n} dagur eftir",
+    "daysRemaining": "{n} dagar eftir",
+    "renewsEnds": "Endurnýjast / lýkur",
+    "chooseTitle": "Veldu áætlun",
+    "chooseSubtitle": "Allar áætlanir innihalda Worker stjórnunarverkflæðið. 14 daga prufan þín er ókeypis.",
+    "perMonth": "/ mánuði",
+    "planSelected": "{plan} valin. Áætlunin þín er vistuð og tilbúin fyrir greiðslu.",
+    "selectFailed": "Gat ekki valið áætlun.",
+    "selected": "Valið",
+    "selectPlan": "Veldu áskrift",
+    "activateTitle": "Virkjaðu áskriftina þína",
+    "selectAbove": "Veldu áskrift hér að ofan til að halda áfram í greiðslu.",
+    "stkNote": "STK-tilkynning verður send á símanúmerið hér að neðan.",
+    "phone": "Símanúmer",
+    "phonePlaceholder": "07.. eða 2547..",
+    "payMpesa": "Greiða með M-Pesa",
+    "paypalNote": "Haltu áfram á PayPal til að greiða fyrir valda áskrift í USD.",
+    "payPaypal": "Greiða með PayPal",
+    "settleNote": "Greiða má fyrir áskriftir í gegnum M-Pesa eða PayPal.",
+    "activationNote": "Valin áskrift verður virkjuð eftir að greiðsla hefur verið staðfest.",
+    "historyNote": "Greiðslusaga er aðgengileg undir Stjórnun → Greiðslur."
+  },
+  "intl": {
+    "territory": "Svæði",
+    "searchTerritory": "Leita að svæði…",
+    "selectTerritory": "Veldu svæðið þitt",
+    "territoryRequired": "Vinsamlegast veldu svæðið þitt.",
+    "workingLanguage": "Vinnutungumál",
+    "meetingLanguage": "Fundartungumál",
+    "useDefault": "Sjálfgefið fyrir stofnunina",
+    "beta": "umritun beta",
+    "unavailable": "engin umritun"
+  },
+  "generate": {
+    "title": "Búa til skjal úr þessari lotu",
+    "as": "Búa til sem",
+    "instructions": "Leiðbeining (valfrjáls)",
+    "placeholder": "t.d. Bréf til aðalritara þar sem dregið er saman ákvarðanir 2 og 3",
+    "button": "Búa til",
+    "working": "Hannar skjalið þitt… þetta getur tekið eina mínútu.",
+    "done": "Skjal búið til.",
+    "failed": "Gat ekki búið til skjalið.",
+    "hint": "Notar umritanir sem merktar eru til að taka með, í réttri röð. Þú fer yfir og samþykkir áður en nokkuð er deilt."
+  },
+  "queue": {
+    "queued": "Í biðröð fyrir umritun. Þessi síða uppfærist sjálfkrafa."
+  },
+  "pdfExport": {
+    "button": "Flytja út PDF"
+  },
+  "access": {
+    "readOnly": "Vinnusvæðið þitt er aðeins lesanlegt vegna þess að prufu- eða áskriftartími er liðinn. Þú getur samt skoðað og flutt út skjölin þín.",
+    "grace": "Prufu- eða áskriftartími þinn rann út {date}. Þú hefur {n} daga af fullum aðgangi eftir.",
+    "trialEnding": "Ókeypis prufutími þinn rennur út eftir {n} daga.",
+    "choosePlan": "Veldu áskrift"
+  },
+  "sessionLang": {
+    "saved": "Fundartungumál vistað. Það gildir fyrir upptökur sem umritaðar eru héðan í frá.",
+    "failed": "Gat ekki vistað fundartungumálið."
+  },
+  "i18nNote": {
+    "machine": "Vélþýtt"
+  }
+}

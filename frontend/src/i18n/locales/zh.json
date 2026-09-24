@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "语言",
+    "signIn": "登录",
+    "signOut": "退出登录",
+    "createAccount": "创建账户",
+    "getStarted": "开始使用",
+    "startFreeTrial": "开始免费试用",
+    "cancel": "取消",
+    "back": "返回",
+    "download": "下载",
+    "viewAll": "查看全部"
+  },
+  "brand": {
+    "tagline": "AI行政工作空间",
+    "secureWorkspace": "安全行政工作空间",
+    "badge": "英语 · 音频"
+  },
+  "nav": {
+    "dashboard": "仪表板",
+    "workspace": "工作空间",
+    "sessions": "会议与录音",
+    "documents": "文档",
+    "correspondence": "信函",
+    "knowledge": "知识库",
+    "assistant": "助手",
+    "askWorker": "询问Worker",
+    "actions": "待办事项",
+    "administration": "管理",
+    "organisation": "组织",
+    "users": "用户",
+    "audit": "审计追踪",
+    "subscription": "订阅",
+    "payments": "支付",
+    "billing": "账单"
+  },
+  "roles": {
+    "viewer": "查看者",
+    "officer": "专员",
+    "admin": "管理员",
+    "superadmin": "超级管理员"
+  },
+  "landing": {
+    "hero": {
+      "title": "将您所说的话转化为完成并归档的文书。",
+      "body": "Worker是面向需要从会议、简报和信函中产出大量正式文件的组织的AI行政工作场所。录制会议或口述，Worker会将其转录，起草会议纪要、备忘录、信函、报告和政策简报，并完成审查和批准——全程留有完整审计追踪。",
+      "badgeRow": "音频 · 英语 · 安全工作空间"
+    },
+    "what": {
+      "title": "Worker的功能",
+      "lead": "围绕会议和信函的日常办公工作——几分钟内完成，而非数小时。",
+      "f1": {
+        "title": "录制与转录",
+        "body": "捕捉会议、访谈、简报或口述。音频在本地以英语转录。"
+      },
+      "f2": {
+        "title": "AI 起草",
+        "body": "生成格式规范的会议纪要、备忘录、信函、报告、政策简报和通知。"
+      },
+      "f3": {
+        "title": "审核与批准",
+        "body": "每份文件都经过起草、审核、批准和定稿流程——始终由人员掌控。"
+      },
+      "f4": {
+        "title": "安全且可审计",
+        "body": "基于角色的访问权限和完整的审计追踪。信函仅由人员发送。"
+      }
+    },
+    "start": {
+      "title": "一分钟即可开始",
+      "lead": "创建账户，开始 14 天免费试用。",
+      "s1": {
+        "title": "创建账户",
+        "body": "输入您的姓名、邮箱和密码。"
+      },
+      "s2": {
+        "title": "验证邮箱",
+        "body": "输入我们发送到您邮箱的 6 位验证码。"
+      },
+      "s3": {
+        "title": "安全登录",
+        "body": "每次登录均通过邮件发送的一次性验证码确认。"
+      },
+      "s4": {
+        "title": "开始工作",
+        "body": "创建会话、录音，并生成您的第一份文件。"
+      }
+    },
+    "pricing": {
+      "title": "简单的订阅定价",
+      "lead": "从 14 天免费试用开始。选择适合您组织行政工作量的方案。",
+      "perMonth": "/月",
+      "mostPopular": "最受欢迎",
+      "starter": {
+        "name": "入门版",
+        "desc": "适合刚开始使用 AI 辅助行政工作的小型团队。"
+      },
+      "professional": {
+        "name": "专业版",
+        "desc": "适合有定期、大批量文件制作需求的组织。"
+      },
+      "premium": {
+        "name": "高级版",
+        "desc": "适合行政工作量较大的大型组织。"
+      },
+      "paymentsNote": "付费订阅支持 M-Pesa 和 PayPal。"
+    },
+    "final": {
+      "title": "准备好试用 Worker 了吗？",
+      "cta": "创建账户"
+    }
+  },
+  "auth": {
+    "email": "邮箱",
+    "password": "密码",
+    "fullName": "全名",
+    "confirmPassword": "确认密码",
+    "currentPassword": "当前密码",
+    "newPassword": "新密码",
+    "confirmNewPassword": "确认新密码",
+    "code6": "6 位验证码",
+    "signInFailed": "登录失败。请检查您的凭据。",
+    "forgotPassword": "忘记密码？",
+    "mfaNotice": "每次登录都会通过邮件发送一次性验证码进行确认。",
+    "createYourAccount": "创建您的账户",
+    "pwMin": "密码至少需要 {n} 个字符。",
+    "newPwMin": "新密码至少需要 {n} 个字符。",
+    "pwMismatch": "密码不匹配。",
+    "createFailed": "无法创建账户。",
+    "haveAccount": "已有账户？",
+    "startAtSignIn": "从登录或注册开始。",
+    "goToSignIn": "前往登录",
+    "invalidCode": "验证码无效或已过期。",
+    "codeSent": "新验证码已发送。",
+    "resendFailed": "无法重新发送。",
+    "verifyEmailTitle": "验证您的邮箱",
+    "verifyEmailTo": "验证您的邮箱 — {email}",
+    "verify": "验证",
+    "resendCode": "重新发送验证码",
+    "signInAgain": "请重新登录。",
+    "mfaPrompt": "输入我们通过邮件发送的登录验证码",
+    "mfaPromptTo": "输入我们发送至 {email} 的登录验证码",
+    "verifySignIn": "验证并登录",
+    "requestFailed": "无法处理请求。",
+    "resetTitle": "重置您的密码",
+    "sendResetCode": "发送重置验证码",
+    "backToSignIn": "返回登录",
+    "resetPrompt": "输入我们通过邮件发送的验证码并设置新密码",
+    "resetPassword": "重置密码",
+    "setNewPassword": "设置新密码",
+    "forcedChange": "为了安全，请先设置您自己的密码再继续。",
+    "updateAccountPassword": "更新您的账户密码。",
+    "changeFailed": "无法更改密码。",
+    "updatePassword": "更新密码",
+    "signOutInstead": "改为退出登录"
+  },
+  "notFound": {
+    "title": "页面未找到",
+    "subtitle": "该页面在此工作区中不存在。",
+    "back": "返回仪表板"
+  },
+  "status": {
+    "draft": "草稿",
+    "in_review": "审核中",
+    "approved": "已批准",
+    "final": "最终",
+    "archived": "已归档",
+    "open": "开放",
+    "processing": "处理中",
+    "ready": "就绪",
+    "pending": "待处理",
+    "transcribing": "转录中",
+    "transcribed": "已转录",
+    "failed": "失败",
+    "sent": "已发送",
+    "received": "已接收",
+    "completed": "已完成",
+    "cancelled": "已取消",
+    "active": "活跃",
+    "suspended": "已暂停"
+  },
+  "kind": {
+    "meeting": "会议",
+    "interview": "访谈",
+    "briefing": "简报",
+    "dictation": "口述",
+    "field_report": "实地报告",
+    "consultation": "咨询",
+    "other": "其他"
+  },
+  "classification": {
+    "unclassified": "未分类",
+    "internal": "内部",
+    "confidential": "机密",
+    "restricted": "受限"
+  },
+  "dashboard": {
+    "welcome": "欢迎，{name}",
+    "defaultName": "官员",
+    "subtitle": "您的行政工作区 — 采集、起草、审核与归档。",
+    "stats": {
+      "sessions": "会话",
+      "documents": "文档",
+      "awaitingReview": "待审核",
+      "outstandingActions": "待办事项"
+    },
+    "recentSessions": "近期会话",
+    "documentsToAction": "待处理文档",
+    "noSessions": "暂无会话。",
+    "nothingToAction": "无需您处理的事项。"
+  },
+  "sessions": {
+    "subtitle": "每个会话都是一个案卷 — 音频、转录文本及由此生成的文档。",
+    "new": "新建会话",
+    "createFailed": "无法创建会话。",
+    "titlePlaceholder": "例如：郡安全委员会 — 每周简报",
+    "create": "创建会话",
+    "empty": "暂无会话。创建一个以开始录制。",
+    "fields": {
+      "title": "标题",
+      "kind": "类型",
+      "date": "日期",
+      "classification": "密级",
+      "status": "状态",
+      "department": "部门",
+      "location": "地点"
+    }
+  },
+  "session": {
+    "loadFailed": "无法加载会话。",
+    "micDenied": "麦克风访问被拒绝或不可用。",
+    "audioSaved": "音频已保存至会话。",
+    "uploadFailed": "上传失败。",
+    "transcribing": "正在本地转录——较长音频可能需要一些时间。",
+    "transcribed": "转录完成。",
+    "transcribeFailed": "转录失败。请检查 STT 服务是否正在运行。",
+    "updateFailed": "无法更新。",
+    "draftingMinutes": "正在根据转录内容起草纪要…",
+    "minutesCreated": "纪要草稿已创建。",
+    "minutesFailed": "无法生成纪要。",
+    "notFound": "未找到会话。",
+    "noDate": "无日期",
+    "noLocation": "无地点",
+    "generateMinutes": "生成纪要",
+    "captureAudio": "采集音频",
+    "stopSave": "停止并保存",
+    "startRecording": "开始录音",
+    "or": "或",
+    "uploadAudio": "上传音频",
+    "audioNote": "音频保留在主机上。转录在本地以英语运行。纪要将按顺序合并本会话中的每个片段。",
+    "documentsFrom": "来自本会话的文档",
+    "noDocuments": "暂无文档。请先转录片段，然后生成纪要。",
+    "recordingsTitle": "录音与转录",
+    "clipOne": "{n} 个片段",
+    "clipMany": "{n} 个片段",
+    "noRecordings": "暂无录音。请在上方录制或上传音频。",
+    "includeTitle": "生成纪要时包含此片段",
+    "inMinutes": "已纳入纪要",
+    "transcribe": "转录",
+    "transcribeHint": "转录此片段以在此处查看和编辑其转录内容。",
+    "audioLoadFailed": "无法加载音频。",
+    "loadAudio": "加载音频",
+    "words": "{n} 字",
+    "verified": "已验证",
+    "editVerify": "编辑并验证",
+    "saveVerified": "保存并标记为已验证",
+    "saveDraft": "保存草稿",
+    "emptyTranscript": "记录为空。"
+  },
+  "docType": {
+    "minutes": "会议纪要",
+    "memo": "备忘录",
+    "letter": "信函",
+    "report": "报告",
+    "policy_brief": "政策简报",
+    "briefing_note": "简报说明",
+    "concept_note": "概念说明",
+    "circular": "通函",
+    "action_matrix": "行动矩阵",
+    "speech": "演讲稿"
+  },
+  "approval": {
+    "submit": "已提交",
+    "submitted": "已提交",
+    "approve": "已批准",
+    "approved": "已批准",
+    "reject": "已驳回",
+    "rejected": "已驳回",
+    "finalize": "已定稿",
+    "finalized": "已定稿"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "内部备忘录",
+      "desc": "标准内部备忘录，含收件人／发件人／主题。"
+    },
+    "letter-official": {
+      "name": "正式信函",
+      "desc": "使用单位信头的正式对外信函。"
+    },
+    "circular-general": {
+      "name": "通函",
+      "desc": "向多名收件人传阅的通知。"
+    },
+    "report-standard": {
+      "name": "报告",
+      "desc": "含摘要、章节和建议的通用报告。"
+    },
+    "policy-brief": {
+      "name": "政策简报",
+      "desc": "面向决策者的简明简报。"
+    },
+    "briefing-note": {
+      "name": "简报说明",
+      "desc": "在会晤前向负责人作简要汇报的短说明。"
+    },
+    "concept-note": {
+      "name": "概念说明",
+      "desc": "拟议方案或活动的概要。"
+    },
+    "minutes-blank": {
+      "name": "会议纪要（空白）",
+      "desc": "供手工填写的空白纪要结构。"
+    },
+    "speech-remarks": {
+      "name": "演讲 / 致辞",
+      "desc": "活动正式致辞。"
+    }
+  },
+  "documents": {
+    "subtitle": "会议纪要、备忘录、信函、报告与简报——由 AI 起草，经人工审批。",
+    "startFromTemplate": "从模板开始",
+    "fromSpreadsheet": "从电子表格生成报告",
+    "draftWithAI": "使用 AI 起草",
+    "templateTitle": "从模板开始",
+    "allTypes": "所有类型",
+    "orgTemplates": "贵组织的模板",
+    "savedByOrg": "由贵组织保存",
+    "useTemplate": "使用此模板",
+    "generalTemplates": "通用模板",
+    "spreadsheetFailed": "无法根据该电子表格生成报告。",
+    "templateFailed": "无法从模板创建。",
+    "draftFailed": "无法起草文档。",
+    "fields": {
+      "type": "文档类型",
+      "title": "标题",
+      "recipient": "收件人（可选）",
+      "department": "部门（可选）",
+      "brief": "说明 / 简报"
+    },
+    "briefPlaceholder": "请描述目的、要点及需包含的任何事实。助手将起草一份正式文档，供您编辑和审批。",
+    "generateDraft": "生成草稿",
+    "empty": "暂无文档。",
+    "table": {
+      "title": "标题",
+      "type": "类型",
+      "ref": "编号",
+      "status": "状态",
+      "ver": "版本"
+    }
+  },
+  "doc": {
+    "loadFailed": "无法加载文档。",
+    "invalidJson": "内容不是有效的 JSON。",
+    "saved": "已保存。版本已递增。",
+    "saveFailed": "保存失败。",
+    "done": {
+      "submit": "文档已提交审核。",
+      "approve": "文档已批准。",
+      "reject": "文档已拒绝。",
+      "finalize": "文档已定稿。"
+    },
+    "failed": {
+      "submit": "无法提交。",
+      "approve": "无法批准。",
+      "reject": "无法拒绝。",
+      "finalize": "无法定稿。"
+    },
+    "templateName": "模板名称",
+    "templateDefault": "{title} 模板",
+    "templateSaved": "已保存为贵组织的可复用模板。",
+    "templateSaveFailed": "无法保存模板。",
+    "exportFailed": "导出失败。",
+    "notFound": "未找到文档。",
+    "exportDocx": "导出 DOCX",
+    "exportPptx": "导出 PPTX",
+    "exportXlsx": "导出 XLSX",
+    "saveAsTemplate": "另存为模板",
+    "content": "内容",
+    "workflow": "工作流",
+    "aiAssisted": "AI 辅助草稿",
+    "auditChain": "审计链：音频 → 转录 → AI 草稿 → 人工编辑 → 审批 → 定稿。每一步均有记录。",
+    "comment": "备注（可选）",
+    "commentPlaceholder": "添加备案备注",
+    "submit": "提交审核",
+    "approve": "批准",
+    "reject": "驳回",
+    "finalize": "定稿",
+    "finalLocked": "已定稿 — 锁定编辑",
+    "editJson": "编辑内容（JSON）",
+    "jsonNote": "结构化内容用于生成品牌化 DOCX。编辑下方字段并保存；导出时将自动应用品牌和版式。",
+    "saveContent": "保存内容",
+    "approvalHistory": "审批历史"
+  },
+  "emails": {
+    "subtitle": "使用 AI 起草信函和电子邮件。在人工点击发送之前，不会发送任何内容。",
+    "needIntent": "请为助手提供主题或意图以便起草。",
+    "draftReady": "草稿已就绪。发送前请审阅并编辑。",
+    "draftFailed": "起草失败。",
+    "draftSaved": "草稿已保存。",
+    "saveFailed": "无法保存。",
+    "confirmSend": "立即发送此电子邮件？此操作将记录在审计跟踪中。",
+    "sent": "电子邮件已发送。",
+    "sendFailed": "发送失败。",
+    "compose": "撰写",
+    "messages": "消息",
+    "empty": "暂无通信记录。",
+    "message": "消息",
+    "details": "详情",
+    "to": "收件人",
+    "cc": "抄送",
+    "subject": "主题",
+    "intent": "这应该说什么？（供 AI 参考）",
+    "intentPlaceholder": "例如：邀请各位主管参加周五上午10点的安全会议",
+    "body": "正文",
+    "saveDraft": "保存草稿",
+    "toLabel": "收件人：",
+    "ccLabel": "抄送：",
+    "subjectLabel": "主题：",
+    "aiAssisted": "AI 辅助",
+    "sendNow": "立即发送",
+    "selectHint": "选择一条消息或撰写新消息。"
+  },
+  "knowledge": {
+    "subtitle": "助手可参考的资料——政策、模板、先例。",
+    "added": "已添加到知识库。",
+    "addFailed": "无法添加。",
+    "chooseFile": "选择要上传的文件。",
+    "ocrFailed": "文件已保存。OCR 无法从此文件读取文本（可能质量较低）。您可以手动粘贴文本。",
+    "extracted": "文件已保存，并提取了 {n} 个字符的文本。",
+    "noText": "文件已保存。无法从此格式提取文本。",
+    "uploadFailed": "上传失败。",
+    "confirmRemove": "移除此参考？",
+    "uploadTitle": "上传文档",
+    "file": "文件",
+    "titleOptional": "标题（可选）",
+    "titleDefault": "默认为文件名",
+    "categoryOptional": "类别（可选）",
+    "uploadExtract": "上传并提取",
+    "uploadNote": "Word、PDF、CSV 和文本文件会自动提取文本。扫描的 PDF 和照片会通过 OCR 自动读取。",
+    "pasteTitle": "添加参考（粘贴文本）",
+    "title": "标题",
+    "category": "类别",
+    "categoryPlaceholder": "例如：通知、政策",
+    "textContent": "文本内容",
+    "add": "添加",
+    "references": "参考资料",
+    "empty": "暂无内容。",
+    "uncategorised": "未分类",
+    "remove": "移除"
+  },
+  "assistant": {
+    "subtitle": "用简单的英语给出指令——在工作区内进行总结、查找、起草或解释。",
+    "failed": "助手无法处理该请求。",
+    "instruction": "指令",
+    "placeholder": "例如：总结本周安全委员会的决议，或列出仍待批准的备忘录。",
+    "ask": "提问"
+  },
+  "actions": {
+    "subtitle": "从各会议纪要和行动矩阵中提取的行动事项。",
+    "empty": "未发现待办行动。",
+    "table": {
+      "action": "行动",
+      "responsible": "负责人",
+      "timeline": "时间线",
+      "source": "来源"
+    }
+  },
+  "paypal": {
+    "title": "PayPal 付款",
+    "subtitle": "订阅付款确认。",
+    "confirming": "正在确认您的 PayPal 付款...",
+    "noOrder": "未返回 PayPal 订单。",
+    "confirmed": "付款已确认。您的 Worker 订阅现已生效。",
+    "failed": "无法确认 PayPal 付款。",
+    "success": "付款成功",
+    "viewSubscription": "查看订阅",
+    "errorTitle": "无法确认付款",
+    "returnToSubscription": "返回订阅"
+  },
+  "tenant": {
+    "saved": "组织详情已保存。它们将显示在您导出的每份文档上。",
+    "saveFailed": "无法保存。",
+    "logoUploaded": "徽标已上传。",
+    "signatureUploaded": "签名已上传。",
+    "uploadFailed": "上传失败。",
+    "subtitleShort": "您工作区的品牌标识。",
+    "noOrg": "此账户未关联任何组织。",
+    "subtitle": "您的姓名、信头、徽标和签名将显示在您生成的每份文档上。",
+    "letterhead": "信头",
+    "orgName": "组织名称",
+    "line": "信头行 {n}",
+    "line1Placeholder": "例如：... 县政府",
+    "line2Placeholder": "例如：... 部门",
+    "line3Placeholder": "例如：单位 / 办公室",
+    "saveLetterhead": "保存信头",
+    "blankHint": "将各行留空以回退到您的组织名称。",
+    "logoSignature": "徽标与签名",
+    "logo": "徽章 / 徽标（PNG 或 JPG）",
+    "signature": "电子签名（PNG 或 JPG）",
+    "uploaded": "已上传",
+    "brandingNote": "徽标显示在文档页眉和幻灯片标题页上。签名放置在导出文档的末尾。为获得最佳效果，请使用透明背景的 PNG。"
+  },
+  "users": {
+    "createdTemp": "用户已创建。临时密码：{temp} — 请安全分享；用户首次登录时必须更改。",
+    "created": "用户已创建。",
+    "createFailed": "无法创建用户。",
+    "confirmRemove": "移除 {name}？",
+    "removeFailed": "无法移除。",
+    "subtitle": "管理访问权限。超级管理员账户无法在此修改。",
+    "add": "添加用户",
+    "create": "创建用户",
+    "empty": "无用户。",
+    "fields": {
+      "name": "姓名",
+      "email": "邮箱",
+      "role": "角色",
+      "department": "部门",
+      "status": "状态"
+    },
+    "suspend": "暂停",
+    "reinstate": "恢复",
+    "remove": "移除"
+  },
+  "audit": {
+    "subtitle": "所有重要操作均被记录。日志仅包含元数据和标识符 — 绝不包含文档正文或音频。",
+    "empty": "无审计条目。",
+    "table": {
+      "when": "时间",
+      "actor": "操作者",
+      "action": "操作",
+      "resource": "资源"
+    },
+    "system": "系统"
+  },
+  "payments": {
+    "stkSent": "STK 推送已发送。请让付款人在手机上批准。",
+    "initiateFailed": "无法发起支付。",
+    "subtitle": "M-Pesa（Daraja STK 推送）和 PayPal 交易。",
+    "requestTitle": "请求 M-Pesa 支付",
+    "phone": "电话（07.. 或 2547..）",
+    "amountKes": "金额（KES）",
+    "purpose": "用途",
+    "sendStk": "发送 STK 推送",
+    "transactions": "交易",
+    "empty": "无交易。",
+    "table": {
+      "provider": "提供商",
+      "amount": "金额",
+      "status": "状态",
+      "ref": "参考号"
+    }
+  },
+  "billing": {
+    "subtitle": "已完成 Worker 订阅付款的发票和收据。",
+    "loadFailed": "无法加载账单文档。",
+    "downloadFailed": {
+      "invoice": "无法下载发票。",
+      "receipt": "无法下载收据。"
+    },
+    "documentsTitle": "账单文档",
+    "intro": "下载贵机构已完成订阅付款的发票和收据。",
+    "disclaimer": "这些文档记录 Worker 订阅付款，供付款和报销之用。除非通过合规的 eTIMS 集成单独开具，否则它们不视为 KRA/eTIMS 税务发票。",
+    "invoices": "发票",
+    "noInvoices": "暂无发票。",
+    "receipts": "收据",
+    "noReceipts": "暂无收据。",
+    "downloadPdf": "下载 PDF",
+    "table": {
+      "invoice": "发票",
+      "receipt": "收据",
+      "date": "日期",
+      "description": "描述",
+      "amount": "金额",
+      "status": "状态",
+      "provider": "提供商",
+      "reference": "参考号"
+    }
+  },
+  "subscription": {
+    "loadFailed": "无法加载订阅。",
+    "selectFirst": "请先选择订阅计划。",
+    "mpesaSent": "M-Pesa STK 推送已发送。请在手机上批准付款。付款确认后您的订阅将激活。",
+    "mpesaFailed": "无法发起 M-Pesa 付款。",
+    "noApproveUrl": "未返回 PayPal 批准 URL。",
+    "paypalFailed": "无法启动 PayPal 付款。",
+    "subtitleShort": "管理您的 Worker 订阅。",
+    "subtitle": "管理您的 Worker 计划、试用和账单。",
+    "current": "当前订阅",
+    "organisation": "组织",
+    "status": "状态",
+    "plan": "计划",
+    "freeTrial": "14 天免费试用",
+    "trialEnds": "试用结束于",
+    "dayRemaining": "剩余 {n} 天",
+    "daysRemaining": "剩余 {n} 天",
+    "renewsEnds": "续订 / 结束",
+    "chooseTitle": "选择计划",
+    "chooseSubtitle": "所有计划均包含 Worker 行政工作流程。您的 14 天试用免费。",
+    "perMonth": "/ 月",
+    "planSelected": "已选择 {plan}。您的计划已保存，可供付款。",
+    "selectFailed": "无法选择计划。",
+    "selected": "已选择",
+    "selectPlan": "选择套餐",
+    "activateTitle": "激活您的订阅",
+    "selectAbove": "请在上方选择套餐以继续付款。",
+    "stkNote": "STK 推送将发送至下方手机号码。",
+    "phone": "手机号码",
+    "phonePlaceholder": "07.. 或 2547..",
+    "payMpesa": "使用 M-Pesa 支付",
+    "paypalNote": "继续前往 PayPal，以美元支付所选套餐。",
+    "payPaypal": "使用 PayPal 支付",
+    "settleNote": "付费订阅可通过 M-Pesa 或 PayPal 结算。",
+    "activationNote": "您的所选套餐将在付款成功确认后激活。",
+    "historyNote": "付款历史可在 管理 → 付款 下查看。"
+  },
+  "intl": {
+    "territory": "地区",
+    "searchTerritory": "搜索地区…",
+    "selectTerritory": "选择您的地区",
+    "territoryRequired": "请选择您的地区。",
+    "workingLanguage": "工作语言",
+    "meetingLanguage": "会议语言",
+    "useDefault": "组织默认",
+    "beta": "转录测试版",
+    "unavailable": "无转录"
+  },
+  "generate": {
+    "title": "从此会话生成文档",
+    "as": "生成格式",
+    "instructions": "指令（可选）",
+    "placeholder": "例如：致常务秘书的信，总结决定 2 和 3",
+    "button": "生成",
+    "working": "正在起草您的文档… 这可能需要一分钟。",
+    "done": "文档已创建。",
+    "failed": "无法生成文档。",
+    "hint": "按顺序使用勾选纳入的转录内容。您审核并批准后才会分享任何内容。"
+  },
+  "queue": {
+    "queued": "已排队等待转录。此页面会自动更新。"
+  },
+  "pdfExport": {
+    "button": "导出 PDF"
+  },
+  "access": {
+    "readOnly": "您的工作区为只读，因为您的试用或订阅已结束。您仍可查看和导出文档。",
+    "grace": "您的试用或订阅已于 {date} 结束。您还剩 {n} 天的完整访问权限。",
+    "trialEnding": "您的免费试用将在 {n} 天后结束。",
+    "choosePlan": "选择套餐"
+  },
+  "sessionLang": {
+    "saved": "会议语言已保存。它将适用于从现在起转录的录音。",
+    "failed": "无法保存会议语言。"
+  },
+  "i18nNote": {
+    "machine": "机器翻译"
+  }
+}

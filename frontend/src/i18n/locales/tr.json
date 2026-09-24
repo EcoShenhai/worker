@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Dil",
+    "signIn": "Oturum aç",
+    "signOut": "Oturumu kapat",
+    "createAccount": "Hesap oluştur",
+    "getStarted": "Başlayın",
+    "startFreeTrial": "Ücretsiz denemeyi başlat",
+    "cancel": "İptal",
+    "back": "Geri",
+    "download": "İndir",
+    "viewAll": "Tümünü görüntüle"
+  },
+  "brand": {
+    "tagline": "Yapay zekâ destekli idari çalışma alanı",
+    "secureWorkspace": "Güvenli idari çalışma alanı",
+    "badge": "İngilizce · Ses"
+  },
+  "nav": {
+    "dashboard": "Kontrol paneli",
+    "workspace": "Çalışma alanı",
+    "sessions": "Oturumlar ve Kayıtlar",
+    "documents": "Belgeler",
+    "correspondence": "Yazışmalar",
+    "knowledge": "Bilgi Bankası",
+    "assistant": "Asistan",
+    "askWorker": "Worker'a Sor",
+    "actions": "Bekleyen İşlemler",
+    "administration": "Yönetim",
+    "organisation": "Kuruluş",
+    "users": "Kullanıcılar",
+    "audit": "Denetim Kaydı",
+    "subscription": "Abonelik",
+    "payments": "Ödemeler",
+    "billing": "Faturalama"
+  },
+  "roles": {
+    "viewer": "Görüntüleyici",
+    "officer": "Yetkili",
+    "admin": "Yönetici",
+    "superadmin": "Süper yönetici"
+  },
+  "landing": {
+    "hero": {
+      "title": "Söylediklerinizi tamamlanmış ve dosyalanmış evraklara dönüştürün.",
+      "body": "Worker, toplantı, brifing ve yazışmalardan yoğun miktarda resmî belge üreten kuruluşlar için yapay zekâ destekli bir idari çalışma alanıdır. Bir toplantıyı kaydedin veya dikte edin; Worker bunu yazıya döker, tutanak, not, mektup, rapor ve politika özetleri hazırlar ve eksiksiz bir denetim kaydıyla inceleme ve onay sürecinden geçirir.",
+      "badgeRow": "Ses · İngilizce · Güvenli çalışma alanı"
+    },
+    "what": {
+      "title": "Worker neler yapar",
+      "lead": "Toplantı ve yazışmaları çevreleyen rutin ofis işleri — saatler değil, dakikalar içinde tamamlanır.",
+      "f1": {
+        "title": "Kaydedin ve yazıya dökün",
+        "body": "Toplantıları, görüşmeleri, brifingleri veya dikteyi kaydedin. Ses, İngilizce olarak yerel ortamda yazıya dökülür."
+      },
+      "f2": {
+        "title": "Yapay zeka ile taslak oluşturun",
+        "body": "Tutanakları, notları, mektupları, raporları, politika özetlerini ve genelgeleri doğru resmi formatta oluşturun."
+      },
+      "f3": {
+        "title": "İnceleyin ve onaylayın",
+        "body": "Her belge taslak, inceleme, onay ve sonlandırma aşamalarından geçer — kontrol her zaman insanlarda kalır."
+      },
+      "f4": {
+        "title": "Güvenli ve denetlenebilir",
+        "body": "Role dayalı erişim ve eksiksiz denetim kaydı. Yazışmalar yalnızca bir kişi tarafından gönderilir."
+      }
+    },
+    "start": {
+      "title": "Başlamak bir dakika sürer",
+      "lead": "Bir hesap oluşturun ve 14 günlük ücretsiz denemenizi başlatın.",
+      "s1": {
+        "title": "Hesabınızı oluşturun",
+        "body": "Adınızı, e-postanızı ve bir parola girin."
+      },
+      "s2": {
+        "title": "E-postanızı doğrulayın",
+        "body": "Size e-posta ile gönderdiğimiz 6 haneli kodu girin."
+      },
+      "s3": {
+        "title": "Güvenli bir şekilde oturum açın",
+        "body": "Her oturum açma, e-posta ile gönderilen tek kullanımlık bir kodla doğrulanır."
+      },
+      "s4": {
+        "title": "Çalışmaya başlayın",
+        "body": "Bir oturum oluşturun, kaydedin ve ilk belgenizi oluşturun."
+      }
+    },
+    "pricing": {
+      "title": "Basit abonelik fiyatlandırması",
+      "lead": "14 günlük ücretsiz denemeyle başlayın. Kuruluşunuzun ürettiği idari iş hacmine uygun planı seçin.",
+      "perMonth": "/ay",
+      "mostPopular": "EN POPÜLER",
+      "starter": {
+        "name": "Başlangıç",
+        "desc": "Yapay zeka destekli idari işlere yeni başlayan küçük ekipler için."
+      },
+      "professional": {
+        "name": "Profesyonel",
+        "desc": "Düzenli ve yüksek hacimli belge üretimi olan kuruluşlar için."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Önemli idari iş yükü olan daha büyük kuruluşlar için."
+      },
+      "paymentsNote": "Ücretli abonelikler için M-Pesa ve PayPal desteklenir."
+    },
+    "final": {
+      "title": "Worker'ı denemeye hazır mısınız?",
+      "cta": "Hesabınızı oluşturun"
+    }
+  },
+  "auth": {
+    "email": "E-posta",
+    "password": "Parola",
+    "fullName": "Tam ad",
+    "confirmPassword": "Parolayı onayla",
+    "currentPassword": "Mevcut parola",
+    "newPassword": "Yeni parola",
+    "confirmNewPassword": "Yeni parolayı onayla",
+    "code6": "6 haneli kod",
+    "signInFailed": "Oturum açma başarısız. Kimlik bilgilerinizi kontrol edin.",
+    "forgotPassword": "Parolanızı mı unuttunuz?",
+    "mfaNotice": "Her oturum açmayı onaylamak için tek kullanımlık bir kod e-posta ile gönderilir.",
+    "createYourAccount": "Hesabınızı oluşturun",
+    "pwMin": "Parola en az {n} karakter olmalıdır.",
+    "newPwMin": "Yeni parola en az {n} karakter olmalıdır.",
+    "pwMismatch": "Parolalar eşleşmiyor.",
+    "createFailed": "Hesap oluşturulamadı.",
+    "haveAccount": "Zaten bir hesabınız var mı?",
+    "startAtSignIn": "Oturum açma veya kayıt ile başlayın.",
+    "goToSignIn": "Oturum açmaya gidin",
+    "invalidCode": "Geçersiz veya süresi dolmuş kod.",
+    "codeSent": "Yeni bir kod gönderildi.",
+    "resendFailed": "Yeniden gönderilemedi.",
+    "verifyEmailTitle": "E-postanızı doğrulayın",
+    "verifyEmailTo": "E-postanızı doğrulayın — {email}",
+    "verify": "Doğrula",
+    "resendCode": "Kodu yeniden gönder",
+    "signInAgain": "Lütfen tekrar oturum açın.",
+    "mfaPrompt": "E-posta ile gönderdiğimiz oturum açma kodunu girin",
+    "mfaPromptTo": "{email} adresine e-posta ile gönderdiğimiz oturum açma kodunu girin",
+    "verifySignIn": "Doğrula ve oturum aç",
+    "requestFailed": "İstek işlenemedi.",
+    "resetTitle": "Parolanızı sıfırlayın",
+    "sendResetCode": "Sıfırlama kodu gönder",
+    "backToSignIn": "Oturum açmaya dön",
+    "resetPrompt": "E-posta ile gönderdiğimiz kodu girin ve yeni bir parola seçin",
+    "resetPassword": "Parolayı sıfırla",
+    "setNewPassword": "Yeni bir parola belirleyin",
+    "forcedChange": "Güvenlik için devam etmeden önce kendi parolanızı belirleyin.",
+    "updateAccountPassword": "Hesap parolanızı güncelleyin.",
+    "changeFailed": "Parola değiştirilemedi.",
+    "updatePassword": "Parolayı güncelle",
+    "signOutInstead": "Bunun yerine oturumu kapat"
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "subtitle": "Bu sayfa bu çalışma alanında mevcut değil.",
+    "back": "Panoya dön"
+  },
+  "status": {
+    "draft": "taslak",
+    "in_review": "incelemede",
+    "approved": "onaylandı",
+    "final": "nihai",
+    "archived": "arşivlendi",
+    "open": "açık",
+    "processing": "işleniyor",
+    "ready": "hazır",
+    "pending": "beklemede",
+    "transcribing": "yazıya dökülüyor",
+    "transcribed": "yazıya döküldü",
+    "failed": "başarısız",
+    "sent": "gönderildi",
+    "received": "alındı",
+    "completed": "tamamlandı",
+    "cancelled": "iptal edildi",
+    "active": "etkin",
+    "suspended": "askıya alındı"
+  },
+  "kind": {
+    "meeting": "toplantı",
+    "interview": "mülakat",
+    "briefing": "brifing",
+    "dictation": "dikte",
+    "field_report": "saha raporu",
+    "consultation": "istişare",
+    "other": "diğer"
+  },
+  "classification": {
+    "unclassified": "tasnif edilmemiş",
+    "internal": "dahili",
+    "confidential": "gizli",
+    "restricted": "kısıtlı"
+  },
+  "dashboard": {
+    "welcome": "Hoş geldiniz, {name}",
+    "defaultName": "Yetkili",
+    "subtitle": "Yönetim çalışma alanınız — kaydedin, taslak oluşturun, inceleyin ve dosyalayın.",
+    "stats": {
+      "sessions": "Oturumlar",
+      "documents": "Belgeler",
+      "awaitingReview": "İnceleme bekleyen",
+      "outstandingActions": "Bekleyen işlemler"
+    },
+    "recentSessions": "Son oturumlar",
+    "documentsToAction": "İşlem gerektiren belgeler",
+    "noSessions": "Henüz oturum yok.",
+    "nothingToAction": "İlginizi gerektiren bir şey yok."
+  },
+  "sessions": {
+    "subtitle": "Her oturum bir dosyadır — ses, deşifre metni ve bunlardan üretilen belgeler.",
+    "new": "Yeni oturum",
+    "createFailed": "Oturum oluşturulamadı.",
+    "titlePlaceholder": "örn. İl Güvenlik Komitesi — Haftalık Brifing",
+    "create": "Oturum oluştur",
+    "empty": "Henüz oturum yok. Kayda başlamak için bir oturum oluşturun.",
+    "fields": {
+      "title": "Başlık",
+      "kind": "Tür",
+      "date": "Tarih",
+      "classification": "Sınıflandırma",
+      "status": "Durum",
+      "department": "Departman",
+      "location": "Konum"
+    }
+  },
+  "session": {
+    "loadFailed": "Oturum yüklenemedi.",
+    "micDenied": "Mikrofon erişimi reddedildi veya kullanılamıyor.",
+    "audioSaved": "Ses oturuma kaydedildi.",
+    "uploadFailed": "Yükleme başarısız oldu.",
+    "transcribing": "Yerel olarak deşifre ediliyor — uzun ses kayıtları için bu işlem biraz sürebilir.",
+    "transcribed": "Deşifre tamamlandı.",
+    "transcribeFailed": "Deşifre başarısız oldu. STT hizmetinin çalıştığını kontrol edin.",
+    "updateFailed": "Güncellenemedi.",
+    "draftingMinutes": "Deşifreden tutanak taslağı hazırlanıyor…",
+    "minutesCreated": "Tutanak taslağı oluşturuldu.",
+    "minutesFailed": "Tutanak oluşturulamadı.",
+    "notFound": "Oturum bulunamadı.",
+    "noDate": "tarih yok",
+    "noLocation": "konum yok",
+    "generateMinutes": "Tutanak oluştur",
+    "captureAudio": "Ses kaydet",
+    "stopSave": "Durdur ve kaydet",
+    "startRecording": "Kaydı başlat",
+    "or": "veya",
+    "uploadAudio": "Ses yükle",
+    "audioNote": "Ses ana makinede kalır. Deşifre yerel olarak İngilizce yapılır. Tutanaklar bu oturumdaki her klibi sırayla birleştirir.",
+    "documentsFrom": "Bu oturumdan belgeler",
+    "noDocuments": "Henüz belge yok. Bir klip deşifre edin, ardından tutanak oluşturun.",
+    "recordingsTitle": "Kayıtlar ve deşifreler",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Henüz kayıt yok. Yukarıdan ses kaydedin veya yükleyin.",
+    "includeTitle": "Tutanak oluştururken bu klibi dahil et",
+    "inMinutes": "Tutanakta",
+    "transcribe": "Deşifre et",
+    "transcribeHint": "Deşifresini burada görmek ve düzenlemek için bu klibi deşifre edin.",
+    "audioLoadFailed": "Ses yüklenemedi.",
+    "loadAudio": "Ses yükle",
+    "words": "{n} kelime",
+    "verified": "doğrulandı",
+    "editVerify": "Düzenle ve doğrula",
+    "saveVerified": "Kaydet ve doğrulandı olarak işaretle",
+    "saveDraft": "Taslağı kaydet",
+    "emptyTranscript": "Boş transkript."
+  },
+  "docType": {
+    "minutes": "tutanak",
+    "memo": "not",
+    "letter": "yazı",
+    "report": "rapor",
+    "policy_brief": "politika özeti",
+    "briefing_note": "bilgilendirme notu",
+    "concept_note": "konsept notu",
+    "circular": "genelge",
+    "action_matrix": "eylem matrisi",
+    "speech": "konuşma"
+  },
+  "approval": {
+    "submit": "gönderildi",
+    "submitted": "gönderildi",
+    "approve": "onaylandı",
+    "approved": "onaylandı",
+    "reject": "reddedildi",
+    "rejected": "reddedildi",
+    "finalize": "kesinleştirildi",
+    "finalized": "kesinleştirildi"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Dahili Not",
+      "desc": "Kime / Kimden / Konu içeren standart dahili not."
+    },
+    "letter-official": {
+      "name": "Resmi Yazı",
+      "desc": "Kurum antetli kağıdında resmi giden yazı."
+    },
+    "circular-general": {
+      "name": "Genelge",
+      "desc": "Çok sayıda alıcıya dağıtılan duyuru."
+    },
+    "report-standard": {
+      "name": "Rapor",
+      "desc": "Özet, bölümler ve öneriler içeren genel rapor."
+    },
+    "policy-brief": {
+      "name": "Politika Özeti",
+      "desc": "Karar vericiler için kısa özet."
+    },
+    "briefing-note": {
+      "name": "Bilgilendirme Notu",
+      "desc": "Bir görüşme öncesinde yöneticiyi bilgilendirmek için kısa not."
+    },
+    "concept-note": {
+      "name": "Konsept Notu",
+      "desc": "Önerilen bir program veya faaliyetin ana hatları."
+    },
+    "minutes-blank": {
+      "name": "Toplantı Tutanağı (boş)",
+      "desc": "Elle doldurulacak boş tutanak yapısı."
+    },
+    "speech-remarks": {
+      "name": "Konuşma / Açıklamalar",
+      "desc": "Bir etkinlik için resmi açıklamalar."
+    }
+  },
+  "documents": {
+    "subtitle": "Tutanaklar, notlar, mektuplar, raporlar ve özetler — yapay zekâ ile hazırlanır, kişiler tarafından onaylanır.",
+    "startFromTemplate": "Şablondan başla",
+    "fromSpreadsheet": "Elektronik tablodan rapor",
+    "draftWithAI": "Yapay zekâ ile taslak oluştur",
+    "templateTitle": "Bir şablondan başlayın",
+    "allTypes": "Tüm türler",
+    "orgTemplates": "Kuruluşunuzun şablonları",
+    "savedByOrg": "Kuruluşunuz tarafından kaydedildi",
+    "useTemplate": "Bu şablonu kullan",
+    "generalTemplates": "Genel şablonlar",
+    "spreadsheetFailed": "Bu elektronik tablodan rapor oluşturulamadı.",
+    "templateFailed": "Şablondan oluşturulamadı.",
+    "draftFailed": "Belge taslağı oluşturulamadı.",
+    "fields": {
+      "type": "Belge türü",
+      "title": "Başlık",
+      "recipient": "Alıcı (isteğe bağlı)",
+      "department": "Departman (isteğe bağlı)",
+      "brief": "Talimatlar / özet"
+    },
+    "briefPlaceholder": "Amacı, kilit noktaları ve eklenmesi gereken tüm bilgileri açıklayın. Asistan, düzenleyip onaylayabileceğiniz resmi bir belge taslağı hazırlayacaktır.",
+    "generateDraft": "Taslak oluştur",
+    "empty": "Henüz belge yok.",
+    "table": {
+      "title": "Başlık",
+      "type": "Tür",
+      "ref": "Ref.",
+      "status": "Durum",
+      "ver": "Sür."
+    }
+  },
+  "doc": {
+    "loadFailed": "Belge yüklenemedi.",
+    "invalidJson": "İçerik geçerli JSON değil.",
+    "saved": "Kaydedildi. Sürüm artırıldı.",
+    "saveFailed": "Kaydetme başarısız.",
+    "done": {
+      "submit": "Belge incelemeye sunuldu.",
+      "approve": "Belge onaylandı.",
+      "reject": "Belge reddedildi.",
+      "finalize": "Belge tamamlandı."
+    },
+    "failed": {
+      "submit": "Sunulamadı.",
+      "approve": "Onaylanamadı.",
+      "reject": "Reddedilemedi.",
+      "finalize": "Tamamlanamadı."
+    },
+    "templateName": "Şablon adı",
+    "templateDefault": "{title} şablonu",
+    "templateSaved": "Kuruluşunuz için yeniden kullanılabilir şablon olarak kaydedildi.",
+    "templateSaveFailed": "Şablon kaydedilemedi.",
+    "exportFailed": "Dışa aktarma başarısız oldu.",
+    "notFound": "Belge bulunamadı.",
+    "exportDocx": "DOCX olarak dışa aktar",
+    "exportPptx": "PPTX olarak dışa aktar",
+    "exportXlsx": "XLSX olarak dışa aktar",
+    "saveAsTemplate": "Şablon olarak kaydet",
+    "content": "İçerik",
+    "workflow": "İş akışı",
+    "aiAssisted": "Yapay zekâ destekli taslak",
+    "auditChain": "Denetim zinciri: ses → deşifre metni → yapay zekâ taslağı → insan düzenlemesi → onay → nihai. Her adım kaydedilir.",
+    "comment": "Yorum (isteğe bağlı)",
+    "commentPlaceholder": "Kayıt için not ekleyin",
+    "submit": "İncelemeye gönder",
+    "approve": "Onayla",
+    "reject": "Reddet",
+    "finalize": "Nihai hâle getir",
+    "finalLocked": "Nihai — düzenlemeye kapatıldı",
+    "editJson": "İçeriği düzenle (JSON)",
+    "jsonNote": "Yapılandırılmış içerik, markalı DOCX dosyasını oluşturur. Aşağıdaki alanları düzenleyip kaydedin; markalama ve düzen, dışa aktarma sırasında otomatik olarak uygulanır.",
+    "saveContent": "İçeriği kaydet",
+    "approvalHistory": "Onay geçmişi"
+  },
+  "emails": {
+    "subtitle": "Yapay zekâ ile mektup ve e-posta taslakları hazırlayın. Bir kişi gönder düğmesine tıklamadıkça hiçbir şey gönderilmez.",
+    "needIntent": "Asistana taslak hazırlaması için bir konu veya amaç verin.",
+    "draftReady": "Taslak hazır. Göndermeden önce inceleyip düzenleyin.",
+    "draftFailed": "Taslak oluşturulamadı.",
+    "draftSaved": "Taslak kaydedildi.",
+    "saveFailed": "Kaydedilemedi.",
+    "confirmSend": "Bu e-posta şimdi gönderilsin mi? Bu işlem denetim kaydına eklenir.",
+    "sent": "E-posta gönderildi.",
+    "sendFailed": "Gönderme başarısız oldu.",
+    "compose": "Oluştur",
+    "messages": "Mesajlar",
+    "empty": "Henüz yazışma yok.",
+    "message": "Mesaj",
+    "details": "Ayrıntılar",
+    "to": "Alıcı",
+    "cc": "Bilgi",
+    "subject": "Konu",
+    "intent": "Bu ne söylemeli? (yapay zeka için)",
+    "intentPlaceholder": "örn. Cuma 10.00'daki güvenlik barazasına şefleri davet et",
+    "body": "Gövde",
+    "saveDraft": "Taslağı kaydet",
+    "toLabel": "Kime:",
+    "ccLabel": "Bilgi:",
+    "subjectLabel": "Konu:",
+    "aiAssisted": "Yapay zeka destekli",
+    "sendNow": "Şimdi gönder",
+    "selectHint": "Bir mesaj seçin veya yeni bir mesaj oluşturun."
+  },
+  "knowledge": {
+    "subtitle": "Asistanın yararlanabileceği referans materyaller — politikalar, şablonlar, emsaller.",
+    "added": "Bilgi tabanına eklendi.",
+    "addFailed": "Eklenemedi.",
+    "chooseFile": "Yüklemek için bir dosya seçin.",
+    "ocrFailed": "Dosya kaydedildi. OCR bu dosyadan metin okuyamadı (kalitesi düşük olabilir). Metni elle yapıştırabilirsiniz.",
+    "extracted": "Dosya kaydedildi ve {n} karakter metin çıkarıldı.",
+    "noText": "Dosya kaydedildi. Bu biçimden metin çıkarılamadı.",
+    "uploadFailed": "Yükleme başarısız oldu.",
+    "confirmRemove": "Bu referans kaldırılsın mı?",
+    "uploadTitle": "Bir belge yükleyin",
+    "file": "Dosya",
+    "titleOptional": "Başlık (isteğe bağlı)",
+    "titleDefault": "Varsayılan olarak dosya adı",
+    "categoryOptional": "Kategori (isteğe bağlı)",
+    "uploadExtract": "Yükle ve çıkar",
+    "uploadNote": "Word, PDF, CSV ve metin dosyalarının metni otomatik olarak çıkarılır. Taranmış PDF'ler ve fotoğraflar OCR ile otomatik olarak okunur.",
+    "pasteTitle": "Referans ekle (metin yapıştır)",
+    "title": "Başlık",
+    "category": "Kategori",
+    "categoryPlaceholder": "örn. Genelgeler, Politikalar",
+    "textContent": "Metin içeriği",
+    "add": "Ekle",
+    "references": "Referanslar",
+    "empty": "Henüz bir şey yok.",
+    "uncategorised": "Kategorisiz",
+    "remove": "Kaldır"
+  },
+  "assistant": {
+    "subtitle": "Sade bir dille bir talimat verin — çalışma alanınızda özetleyin, bulun, taslak oluşturun veya açıklayın.",
+    "failed": "Asistan bunu işleyemedi.",
+    "instruction": "Talimat",
+    "placeholder": "örn. Bu haftaki güvenlik komitesinin kararlarını özetle veya onay bekleyen notları listele.",
+    "ask": "Sor"
+  },
+  "actions": {
+    "subtitle": "Oturumlar boyunca tutanaklardan ve eylem matrislerinden çıkarılan eylem maddeleri.",
+    "empty": "Bekleyen eylem bulunamadı.",
+    "table": {
+      "action": "Eylem",
+      "responsible": "Sorumlu",
+      "timeline": "Zaman Çizelgesi",
+      "source": "Kaynak"
+    }
+  },
+  "paypal": {
+    "title": "PayPal ödemesi",
+    "subtitle": "Abonelik ödemesi onayı.",
+    "confirming": "PayPal ödemeniz onaylanıyor...",
+    "noOrder": "PayPal siparişi döndürülmedi.",
+    "confirmed": "Ödeme onaylandı. Worker aboneliğiniz artık aktif.",
+    "failed": "PayPal ödemesi onaylanamadı.",
+    "success": "Ödeme başarılı",
+    "viewSubscription": "Aboneliği görüntüle",
+    "errorTitle": "Ödeme onaylanamadı",
+    "returnToSubscription": "Aboneliğe dön"
+  },
+  "tenant": {
+    "saved": "Kuruluş bilgileri kaydedildi. Dışa aktardığınız her belgede görünür.",
+    "saveFailed": "Kaydedilemedi.",
+    "logoUploaded": "Logo yüklendi.",
+    "signatureUploaded": "İmza yüklendi.",
+    "uploadFailed": "Yükleme başarısız.",
+    "subtitleShort": "Çalışma alanınız için marka kimliği.",
+    "noOrg": "Bu hesap bir kuruluşla ilişkili değil.",
+    "subtitle": "Adınız, antetli kağıdınız, logonuz ve imzanız oluşturduğunuz her belgede görünür.",
+    "letterhead": "Antetli kağıt",
+    "orgName": "Kuruluş adı",
+    "line": "Antet satırı {n}",
+    "line1Placeholder": "örn. ... VALİLİĞİ",
+    "line2Placeholder": "örn. ... Müdürlüğü",
+    "line3Placeholder": "örn. Birim / Ofis",
+    "saveLetterhead": "Antedi kaydet",
+    "blankHint": "Kuruluş adınıza geri dönmek için satırları boş bırakın.",
+    "logoSignature": "Logo ve imza",
+    "logo": "Arma / logo (PNG veya JPG)",
+    "signature": "E-imza (PNG veya JPG)",
+    "uploaded": "yüklendi",
+    "brandingNote": "Logo, belge başlığında ve slayt başlık sayfalarında görünür. İmza, dışa aktarılan belgelerin sonuna yerleştirilir. En iyi sonuçlar için şeffaf arka planlı bir PNG kullanın."
+  },
+  "users": {
+    "createdTemp": "Kullanıcı oluşturuldu. Geçici parola: {temp} — güvenli bir şekilde paylaşın; ilk girişte değiştirmeleri gerekir.",
+    "created": "Kullanıcı oluşturuldu.",
+    "createFailed": "Kullanıcı oluşturulamadı.",
+    "confirmRemove": "{name} kaldırılsın mı?",
+    "removeFailed": "Kaldırılamadı.",
+    "subtitle": "Erişimi yönetin. Süper yönetici hesabı burada değiştirilemez.",
+    "add": "Kullanıcı ekle",
+    "create": "Kullanıcı oluştur",
+    "empty": "Kullanıcı yok.",
+    "fields": {
+      "name": "Ad",
+      "email": "E-posta",
+      "role": "Rol",
+      "department": "Departman",
+      "status": "Durum"
+    },
+    "suspend": "Askıya al",
+    "reinstate": "Yeniden etkinleştir",
+    "remove": "Kaldır"
+  },
+  "audit": {
+    "subtitle": "Her önemli işlem kaydedilir. Günlükler yalnızca meta veri ve tanımlayıcı içerir — asla belge içerikleri veya ses kayıtları.",
+    "empty": "Denetim kaydı yok.",
+    "table": {
+      "when": "Zaman",
+      "actor": "İşlemi yapan",
+      "action": "İşlem",
+      "resource": "Kaynak"
+    },
+    "system": "sistem"
+  },
+  "payments": {
+    "stkSent": "STK push gönderildi. Ödeme yapandan telefonunda onaylamasını isteyin.",
+    "initiateFailed": "Ödeme başlatılamadı.",
+    "subtitle": "M-Pesa (Daraja STK push) ve PayPal işlemleri.",
+    "requestTitle": "M-Pesa ödemesi iste",
+    "phone": "Telefon (07.. veya 2547..)",
+    "amountKes": "Tutar (KES)",
+    "purpose": "Amaç",
+    "sendStk": "STK push gönder",
+    "transactions": "İşlemler",
+    "empty": "İşlem yok.",
+    "table": {
+      "provider": "Sağlayıcı",
+      "amount": "Tutar",
+      "status": "Durum",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Tamamlanan Worker abonelik ödemeleri için faturalar ve makbuzlar.",
+    "loadFailed": "Faturalama belgeleri yüklenemedi.",
+    "downloadFailed": {
+      "invoice": "Fatura indirilemedi.",
+      "receipt": "Makbuz indirilemedi."
+    },
+    "documentsTitle": "Fatura belgeleri",
+    "intro": "Kuruluşunuzun tamamlanan abonelik ödemelerine ait faturaları ve makbuzları indirin.",
+    "disclaimer": "Bu belgeler Worker abonelik ödemelerini kaydeder ve ödeme ile geri ödeme amacıyla sağlanır. Uyumlu bir eTIMS entegrasyonu aracılığıyla ayrıca düzenlenmediği sürece KRA/eTIMS vergi faturası olarak sunulmaz.",
+    "invoices": "Faturalar",
+    "noInvoices": "Henüz fatura yok.",
+    "receipts": "Makbuzlar",
+    "noReceipts": "Henüz makbuz yok.",
+    "downloadPdf": "PDF indir",
+    "table": {
+      "invoice": "Fatura",
+      "receipt": "Makbuz",
+      "date": "Tarih",
+      "description": "Açıklama",
+      "amount": "Tutar",
+      "status": "Durum",
+      "provider": "Sağlayıcı",
+      "reference": "Referans"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abonelik yüklenemedi.",
+    "selectFirst": "Önce bir abonelik planı seçin.",
+    "mpesaSent": "M-Pesa STK bildirimi gönderildi. Ödemeyi telefonunuzdan onaylayın. Aboneliğiniz ödeme onayından sonra etkinleşecektir.",
+    "mpesaFailed": "M-Pesa ödemesi başlatılamadı.",
+    "noApproveUrl": "PayPal onay URL'si döndürülmedi.",
+    "paypalFailed": "PayPal ödemesi başlatılamadı.",
+    "subtitleShort": "Worker aboneliğinizi yönetin.",
+    "subtitle": "Worker planınızı, deneme sürenizi ve faturalandırmayı yönetin.",
+    "current": "Mevcut abonelik",
+    "organisation": "Kuruluş",
+    "status": "Durum",
+    "plan": "Plan",
+    "freeTrial": "14 günlük ücretsiz deneme",
+    "trialEnds": "Deneme bitişi",
+    "dayRemaining": "{n} gün kaldı",
+    "daysRemaining": "{n} gün kaldı",
+    "renewsEnds": "Yenilenme / bitiş",
+    "chooseTitle": "Bir plan seçin",
+    "chooseSubtitle": "Tüm planlar Worker yönetim iş akışını içerir. 14 günlük deneme süreniz ücretsizdir.",
+    "perMonth": "/ ay",
+    "planSelected": "{plan} seçildi. Planınız kaydedildi ve ödemeye hazır.",
+    "selectFailed": "Plan seçilemedi.",
+    "selected": "Seçildi",
+    "selectPlan": "Plan seçin",
+    "activateTitle": "Aboneliğinizi etkinleştirin",
+    "selectAbove": "Ödemeye devam etmek için yukarıdan bir plan seçin.",
+    "stkNote": "Aşağıdaki telefon numarasına bir STK bildirimi gönderilecektir.",
+    "phone": "Telefon numarası",
+    "phonePlaceholder": "07.. veya 2547..",
+    "payMpesa": "M-Pesa ile öde",
+    "paypalNote": "Seçilen planın ödemesini USD olarak yapmak için PayPal'a devam edin.",
+    "payPaypal": "PayPal ile öde",
+    "settleNote": "Ücretli abonelikler M-Pesa veya PayPal üzerinden ödenebilir.",
+    "activationNote": "Seçtiğiniz plan, ödeme onayı başarıyla tamamlandıktan sonra etkinleştirilecektir.",
+    "historyNote": "Ödeme geçmişine Yönetim → Ödemeler bölümünden ulaşabilirsiniz."
+  },
+  "intl": {
+    "territory": "Bölge",
+    "searchTerritory": "Bölge ara…",
+    "selectTerritory": "Bölgenizi seçin",
+    "territoryRequired": "Lütfen bölgenizi seçin.",
+    "workingLanguage": "Çalışma dili",
+    "meetingLanguage": "Toplantı dili",
+    "useDefault": "Kuruluş varsayılanı",
+    "beta": "transkripsiyon beta",
+    "unavailable": "transkripsiyon yok"
+  },
+  "generate": {
+    "title": "Bu oturumdan bir belge oluştur",
+    "as": "Olarak oluştur",
+    "instructions": "Talimat (isteğe bağlı)",
+    "placeholder": "örn. Daimi Sekreter'e kararlar 2 ve 3'ü özetleyen mektup",
+    "button": "Oluştur",
+    "working": "Belgeniz hazırlanıyor… bu bir dakika sürebilir.",
+    "done": "Belge oluşturuldu.",
+    "failed": "Belge oluşturulamadı.",
+    "hint": "Dahil edilmek üzere işaretlenen transkriptleri sırasıyla kullanır. Herhangi bir şey paylaşılmadan önce siz inceler ve onaylarsınız."
+  },
+  "queue": {
+    "queued": "Transkripsiyon için sıraya alındı. Bu sayfa otomatik olarak güncellenir."
+  },
+  "pdfExport": {
+    "button": "PDF olarak dışa aktar"
+  },
+  "access": {
+    "readOnly": "Deneme süreniz veya aboneliğiniz sona erdiği için çalışma alanınız salt okunur durumdadır. Belgelerinizi görüntülemeye ve dışa aktarmaya devam edebilirsiniz.",
+    "grace": "Deneme süreniz veya aboneliğiniz {date} tarihinde sona erdi. Tam erişim için {n} gününüz kaldı.",
+    "trialEnding": "Ücretsiz deneme süreniz {n} gün içinde sona eriyor.",
+    "choosePlan": "Bir plan seçin"
+  },
+  "sessionLang": {
+    "saved": "Toplantı dili kaydedildi. Bundan sonra transkribe edilecek kayıtlar için geçerlidir.",
+    "failed": "Toplantı dili kaydedilemedi."
+  },
+  "i18nNote": {
+    "machine": "Makine tarafından çevrildi"
+  }
+}

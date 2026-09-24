@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Jezik",
+    "signIn": "Prijava",
+    "signOut": "Odjava",
+    "createAccount": "Ustvari račun",
+    "getStarted": "Začnite",
+    "startFreeTrial": "Začnite brezplačno preizkusno obdobje",
+    "cancel": "Prekliči",
+    "back": "Nazaj",
+    "download": "Prenesi",
+    "viewAll": "Prikaži vse"
+  },
+  "brand": {
+    "tagline": "AI administrativno delovno okolje",
+    "secureWorkspace": "Varno administrativno delovno okolje",
+    "badge": "Angleščina · Zvok"
+  },
+  "nav": {
+    "dashboard": "Nadzorna plošča",
+    "workspace": "Delovno okolje",
+    "sessions": "Seje in posnetki",
+    "documents": "Dokumenti",
+    "correspondence": "Korespondenca",
+    "knowledge": "Zbirka znanja",
+    "assistant": "Pomočnik",
+    "askWorker": "Vprašajte Worker",
+    "actions": "Odprte naloge",
+    "administration": "Administracija",
+    "organisation": "Organizacija",
+    "users": "Uporabniki",
+    "audit": "Revizijska sled",
+    "subscription": "Naročnina",
+    "payments": "Plačila",
+    "billing": "Obračun"
+  },
+  "roles": {
+    "viewer": "Pregledovalec",
+    "officer": "Uradnik",
+    "admin": "Skrbnik",
+    "superadmin": "Glavni skrbnik"
+  },
+  "landing": {
+    "hero": {
+      "title": "Spremenite svoje besede v dokončano, arhivirano dokumentacijo.",
+      "body": "Worker je AI administrativno delovno okolje za organizacije, ki ustvarjajo velike količine formalnih dokumentov iz sestankov, posvetov in korespondence. Posnemite sestanek ali narekujte, Worker pa ga prepiše, pripravi zapisnike, memorandume, pisma, poročila in politične povzetke ter jih popelje skozi pregled in odobritev – s popolno revizijsko sledjo.",
+      "badgeRow": "Zvok · Angleščina · Varno delovno okolje"
+    },
+    "what": {
+      "title": "Kaj Worker počne",
+      "lead": "Rutinsko pisarniško delo, povezano s sestanki in korespondenco – opravljeno v minutah, ne urah.",
+      "f1": {
+        "title": "Snemanje in prepisovanje",
+        "body": "Zajemite sestanke, intervjuje, posvete ali nareke. Zvok se prepiše lokalno v angleščini."
+      },
+      "f2": {
+        "title": "Osnutek z AI",
+        "body": "Ustvarite zapisnike, memorandume, pisma, poročila, politične povzetke in okrožnice v pravilni uradni obliki."
+      },
+      "f3": {
+        "title": "Pregled in odobritev",
+        "body": "Vsak dokument gre skozi osnutek, pregled, odobritev in zaključek — ljudje ostajajo pod nadzorom."
+      },
+      "f4": {
+        "title": "Varno in revidirano",
+        "body": "Dostop na podlagi vlog in popolna revizijska sled. Korespondenco vedno pošlje oseba."
+      }
+    },
+    "start": {
+      "title": "Za začetek potrebujete le minuto",
+      "lead": "Ustvarite račun in začnite 14-dnevno brezplačno preizkusno obdobje.",
+      "s1": {
+        "title": "Ustvarite svoj račun",
+        "body": "Vnesite svoje ime, e-poštni naslov in geslo."
+      },
+      "s2": {
+        "title": "Potrdite svoj e-poštni naslov",
+        "body": "Vnesite 6-mestno kodo, ki vam jo pošljemo po e-pošti."
+      },
+      "s3": {
+        "title": "Varna prijava",
+        "body": "Vsaka prijava se potrdi z enkratno kodo, poslano po e-pošti."
+      },
+      "s4": {
+        "title": "Začnite z delom",
+        "body": "Ustvarite sejo, posnemajte in ustvarite svoj prvi dokument."
+      }
+    },
+    "pricing": {
+      "title": "Preproste naročnine",
+      "lead": "Začnite s 14-dnevnim brezplačnim preizkusnim obdobjem. Izberite paket, ki ustreza obsegu administrativnega dela, ki ga vaša organizacija opravi.",
+      "perMonth": "/mesec",
+      "mostPopular": "NAJBOLJ PRILJUBLJENO",
+      "starter": {
+        "name": "Začetni",
+        "desc": "Za majhne ekipe, ki začenjajo z administrativnim delom s pomočjo AI."
+      },
+      "professional": {
+        "name": "Profesionalni",
+        "desc": "Za organizacije z redno, obsežno proizvodnjo dokumentov."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Za večje organizacije z obsežnimi administrativnimi obremenitvami."
+      },
+      "paymentsNote": "M-Pesa in PayPal sta podprta za plačljive naročnine."
+    },
+    "final": {
+      "title": "Ste pripravljeni preizkusiti Worker?",
+      "cta": "Ustvarite svoj račun"
+    }
+  },
+  "auth": {
+    "email": "E-pošta",
+    "password": "Geslo",
+    "fullName": "Polno ime",
+    "confirmPassword": "Potrdite geslo",
+    "currentPassword": "Trenutno geslo",
+    "newPassword": "Novo geslo",
+    "confirmNewPassword": "Potrdite novo geslo",
+    "code6": "6-mestna koda",
+    "signInFailed": "Prijava ni uspela. Preverite svoje poverilnice.",
+    "forgotPassword": "Pozabljeno geslo?",
+    "mfaNotice": "Enkratna koda je poslana po e-pošti za potrditev vsake prijave.",
+    "createYourAccount": "Ustvarite svoj račun",
+    "pwMin": "Geslo mora imeti vsaj {n} znakov.",
+    "newPwMin": "Novo geslo mora imeti vsaj {n} znakov.",
+    "pwMismatch": "Gesli se ne ujemata.",
+    "createFailed": "Računa ni bilo mogoče ustvariti.",
+    "haveAccount": "Že imate račun?",
+    "startAtSignIn": "Začnite pri prijavi ali registraciji.",
+    "goToSignIn": "Pojdite na prijavo",
+    "invalidCode": "Neveljavna ali potekla koda.",
+    "codeSent": "Nova koda je bila poslana.",
+    "resendFailed": "Ni bilo mogoče znova poslati.",
+    "verifyEmailTitle": "Potrdite svoj e-poštni naslov",
+    "verifyEmailTo": "Potrdite svoj e-poštni naslov — {email}",
+    "verify": "Potrdi",
+    "resendCode": "Znova pošlji kodo",
+    "signInAgain": "Prosimo, prijavite se znova.",
+    "mfaPrompt": "Vnesite prijavno kodo, ki smo vam jo poslali po e-pošti",
+    "mfaPromptTo": "Vnesite prijavno kodo, ki smo vam jo poslali po e-pošti na {email}",
+    "verifySignIn": "Potrdi in se prijavi",
+    "requestFailed": "Zahteve ni bilo mogoče obdelati.",
+    "resetTitle": "Ponastavite svoje geslo",
+    "sendResetCode": "Pošlji kodo za ponastavitev",
+    "backToSignIn": "Nazaj na prijavo",
+    "resetPrompt": "Vnesite kodo, ki smo vam jo poslali po e-pošti, in izberite novo geslo",
+    "resetPassword": "Ponastavi geslo",
+    "setNewPassword": "Nastavite novo geslo",
+    "forcedChange": "Za varnost nastavite svoje geslo, preden nadaljujete.",
+    "updateAccountPassword": "Posodobite geslo svojega računa.",
+    "changeFailed": "Gesla ni bilo mogoče spremeniti.",
+    "updatePassword": "Posodobi geslo",
+    "signOutInstead": "Namesto tega se odjavite"
+  },
+  "notFound": {
+    "title": "Stran ni najdena",
+    "subtitle": "Ta stran v tem delovnem prostoru ne obstaja.",
+    "back": "Vrnite se na nadzorno ploščo"
+  },
+  "status": {
+    "draft": "osnutek",
+    "in_review": "v pregledu",
+    "approved": "odobreno",
+    "final": "končno",
+    "archived": "arhivirano",
+    "open": "odprto",
+    "processing": "v obdelavi",
+    "ready": "pripravljeno",
+    "pending": "v čakanju",
+    "transcribing": "prepisovanje",
+    "transcribed": "prepisano",
+    "failed": "neuspešno",
+    "sent": "poslano",
+    "received": "prejeto",
+    "completed": "zaključeno",
+    "cancelled": "preklicano",
+    "active": "aktivno",
+    "suspended": "zaustavljeno"
+  },
+  "kind": {
+    "meeting": "sestanek",
+    "interview": "intervju",
+    "briefing": "posvet",
+    "dictation": "narek",
+    "field_report": "poročilo s terena",
+    "consultation": "posvetovanje",
+    "other": "drugo"
+  },
+  "classification": {
+    "unclassified": "nerazvrščeno",
+    "internal": "interno",
+    "confidential": "zaupno",
+    "restricted": "omejeno"
+  },
+  "dashboard": {
+    "welcome": "Dobrodošli, {name}",
+    "defaultName": "Uradnik",
+    "subtitle": "Vaš administrativni delovni prostor — zajem, osnutek, pregled in arhiviranje.",
+    "stats": {
+      "sessions": "Seje",
+      "documents": "Dokumenti",
+      "awaitingReview": "Čaka na pregled",
+      "outstandingActions": "Nerešeni ukrepi"
+    },
+    "recentSessions": "Nedavne seje",
+    "documentsToAction": "Dokumenti za ukrepanje",
+    "noSessions": "Ni še nobene seje.",
+    "nothingToAction": "Nič ne potrebuje vaše pozornosti."
+  },
+  "sessions": {
+    "subtitle": "Vsaka seja je spis — zvok, prepis in dokumenti, ustvarjeni iz nje.",
+    "new": "Nova seja",
+    "createFailed": "Seje ni bilo mogoče ustvariti.",
+    "titlePlaceholder": "npr. Okrožni varnostni odbor — tedenski posvet",
+    "create": "Ustvari sejo",
+    "empty": "Ni še nobene seje. Ustvarite jo za začetek snemanja.",
+    "fields": {
+      "title": "Naslov",
+      "kind": "Vrsta",
+      "date": "Datum",
+      "classification": "Klasifikacija",
+      "status": "Status",
+      "department": "Oddelek",
+      "location": "Lokacija"
+    }
+  },
+  "session": {
+    "loadFailed": "Seje ni bilo mogoče naložiti.",
+    "micDenied": "Dostop do mikrofona je zavrnjen ali ni na voljo.",
+    "audioSaved": "Zvok je shranjen v sejo.",
+    "uploadFailed": "Nalaganje ni uspelo.",
+    "transcribing": "Prepisovanje poteka lokalno — pri daljšem zvoku lahko traja nekaj časa.",
+    "transcribed": "Prepisovanje je končano.",
+    "transcribeFailed": "Prepisovanje ni uspelo. Preverite, ali storitev STT deluje.",
+    "updateFailed": "Posodobitve ni bilo mogoče izvesti.",
+    "draftingMinutes": "Priprava osnutka zapisnika iz prepisa …",
+    "minutesCreated": "Osnutek zapisnika je ustvarjen.",
+    "minutesFailed": "Zapisnika ni bilo mogoče ustvariti.",
+    "notFound": "Seja ni najdena.",
+    "noDate": "brez datuma",
+    "noLocation": "brez lokacije",
+    "generateMinutes": "Ustvari zapisnik",
+    "captureAudio": "Zajemi zvok",
+    "stopSave": "Ustavi in shrani",
+    "startRecording": "Začni snemanje",
+    "or": "ali",
+    "uploadAudio": "Naloži zvok",
+    "audioNote": "Zvok ostane na gostitelju. Prepisovanje poteka lokalno v angleščini. Zapisnik združi vse posnetke v tej seji po vrstnem redu.",
+    "documentsFrom": "Dokumenti iz te seje",
+    "noDocuments": "Ni še dokumentov. Prepisujte posnetek, nato ustvarite zapisnik.",
+    "recordingsTitle": "Posnetki in prepisi",
+    "clipOne": "{n} posnetek",
+    "clipMany": "{n} posnetkov",
+    "noRecordings": "Ni še posnetkov. Posnemite ali naložite zvok zgoraj.",
+    "includeTitle": "Vključi ta posnetek pri ustvarjanju zapisnika",
+    "inMinutes": "V zapisniku",
+    "transcribe": "Prepiši",
+    "transcribeHint": "Prepišite ta posnetek, da si ogledate in uredite njegov prepis tukaj.",
+    "audioLoadFailed": "Zvoka ni bilo mogoče naložiti.",
+    "loadAudio": "Naloži zvok",
+    "words": "{n} besed",
+    "verified": "preverjeno",
+    "editVerify": "Uredi in preveri",
+    "saveVerified": "Shrani in označi kot preverjeno",
+    "saveDraft": "Shrani osnutek",
+    "emptyTranscript": "Prazen prepis."
+  },
+  "docType": {
+    "minutes": "zapisnik",
+    "memo": "dopis",
+    "letter": "pismo",
+    "report": "poročilo",
+    "policy_brief": "politični povzetek",
+    "briefing_note": "opomba za sestanek",
+    "concept_note": "konceptna opomba",
+    "circular": "okrožnica",
+    "action_matrix": "matrika ukrepov",
+    "speech": "govor"
+  },
+  "approval": {
+    "submit": "predloženo",
+    "submitted": "predloženo",
+    "approve": "odobreno",
+    "approved": "odobreno",
+    "reject": "zavrnjeno",
+    "rejected": "zavrnjeno",
+    "finalize": "dokončano",
+    "finalized": "dokončano"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Interni dopis",
+      "desc": "Standardni interni memorandum z Za / Od / Zadeva."
+    },
+    "letter-official": {
+      "name": "Uradno pismo",
+      "desc": "Uradno odhodno pismo na glavi pisarne."
+    },
+    "circular-general": {
+      "name": "Okrožnica",
+      "desc": "Obvestilo, poslano številnim prejemnikom."
+    },
+    "report-standard": {
+      "name": "Poročilo",
+      "desc": "Splošno poročilo s povzetkom, razdelki in priporočili."
+    },
+    "policy-brief": {
+      "name": "Politični povzetek",
+      "desc": "Jedrnat povzetek za odločevalce."
+    },
+    "briefing-note": {
+      "name": "Opomba za sestanek",
+      "desc": "Kratka opomba za seznanitev vodje pred sestankom."
+    },
+    "concept-note": {
+      "name": "Konceptna opomba",
+      "desc": "Oris predlaganega programa ali dejavnosti."
+    },
+    "minutes-blank": {
+      "name": "Zapisnik sestanka (prazen)",
+      "desc": "Prazna struktura zapisnika za ročno izpolnjevanje."
+    },
+    "speech-remarks": {
+      "name": "Govor / Nagovor",
+      "desc": "Uradni nagovor za dogodek."
+    }
+  },
+  "documents": {
+    "subtitle": "Zapisniki, dopisi, pisma, poročila in povzetki — pripravljeni z AI, potrjeni s strani ljudi.",
+    "startFromTemplate": "Začni s predlogo",
+    "fromSpreadsheet": "Poročilo iz preglednice",
+    "draftWithAI": "Osnutek z AI",
+    "templateTitle": "Začni s predlogo",
+    "allTypes": "Vse vrste",
+    "orgTemplates": "Predloge vaše organizacije",
+    "savedByOrg": "Shranjeno s strani vaše organizacije",
+    "useTemplate": "Uporabi to predlogo",
+    "generalTemplates": "Splošne predloge",
+    "spreadsheetFailed": "Iz te preglednice ni bilo mogoče ustvariti poročila.",
+    "templateFailed": "Ni bilo mogoče ustvariti iz predloge.",
+    "draftFailed": "Ni bilo mogoče pripraviti osnutka dokumenta.",
+    "fields": {
+      "type": "Vrsta dokumenta",
+      "title": "Naslov",
+      "recipient": "Prejemnik (neobvezno)",
+      "department": "Oddelek (neobvezno)",
+      "brief": "Navodila / povzetek"
+    },
+    "briefPlaceholder": "Opišite namen, ključne točke in morebitna dejstva, ki jih je treba vključiti. Pomočnik bo pripravil osnutek uradnega dokumenta, ki ga lahko uredite in potrdite.",
+    "generateDraft": "Ustvari osnutek",
+    "empty": "Ni še nobenega dokumenta.",
+    "table": {
+      "title": "Naslov",
+      "type": "Vrsta",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Razl."
+    }
+  },
+  "doc": {
+    "loadFailed": "Ni bilo mogoče naložiti dokumenta.",
+    "invalidJson": "Vsebina ni veljaven JSON.",
+    "saved": "Shranjeno. Različica povečana.",
+    "saveFailed": "Shranjevanje ni uspelo.",
+    "done": {
+      "submit": "Dokument poslan v pregled.",
+      "approve": "Dokument odobren.",
+      "reject": "Dokument zavrnjen.",
+      "finalize": "Dokument dokončan."
+    },
+    "failed": {
+      "submit": "Ni bilo mogoče poslati.",
+      "approve": "Ni bilo mogoče odobriti.",
+      "reject": "Ni bilo mogoče zavrniti.",
+      "finalize": "Ni bilo mogoče dokončati."
+    },
+    "templateName": "Ime predloge",
+    "templateDefault": "Predloga {title}",
+    "templateSaved": "Shranjeno kot predloga za večkratno uporabo za vašo organizacijo.",
+    "templateSaveFailed": "Predloge ni bilo mogoče shraniti.",
+    "exportFailed": "Izvoz ni uspel.",
+    "notFound": "Dokumenta ni bilo mogoče najti.",
+    "exportDocx": "Izvozi DOCX",
+    "exportPptx": "Izvozi PPTX",
+    "exportXlsx": "Izvozi XLSX",
+    "saveAsTemplate": "Shrani kot predlogo",
+    "content": "Vsebina",
+    "workflow": "Potek dela",
+    "aiAssisted": "Osnutek s pomočjo AI",
+    "auditChain": "Revizijska veriga: zvok → prepis → osnutek AI → človeški pregled → odobritev → končna različica. Vsak korak je zabeležen.",
+    "comment": "Komentar (neobvezno)",
+    "commentPlaceholder": "Dodajte opombo za evidenco",
+    "submit": "Pošlji v pregled",
+    "approve": "Odobri",
+    "reject": "Zavrni",
+    "finalize": "Zaključi",
+    "finalLocked": "Končna različica — zaklenjeno za urejanje",
+    "editJson": "Uredi vsebino (JSON)",
+    "jsonNote": "Strukturirana vsebina poganja blagovno znamko DOCX. Uredite spodnja polja in shranite; blagovna znamka in postavitev se ob izvozu uporabita samodejno.",
+    "saveContent": "Shrani vsebino",
+    "approvalHistory": "Zgodovina odobritev"
+  },
+  "emails": {
+    "subtitle": "Pripravite pisma in e-poštna sporočila s pomočjo AI. Nič ni poslano, dokler oseba ne klikne pošlji.",
+    "needIntent": "Asistentu navedite zadevo ali namen za pripravo osnutka.",
+    "draftReady": "Osnutek je pripravljen. Preglejte in uredite pred pošiljanjem.",
+    "draftFailed": "Priprava osnutka ni uspela.",
+    "draftSaved": "Osnutek shranjen.",
+    "saveFailed": "Shranjevanje ni uspelo.",
+    "confirmSend": "Ali želite to e-poštno sporočilo poslati zdaj? To dejanje se zabeleži v revizijski sledi.",
+    "sent": "E-poštno sporočilo poslano.",
+    "sendFailed": "Pošiljanje ni uspelo.",
+    "compose": "Sestavi",
+    "messages": "Sporočila",
+    "empty": "Ni še nobene korespondence.",
+    "message": "Sporočilo",
+    "details": "Podrobnosti",
+    "to": "Za",
+    "cc": "Kp",
+    "subject": "Zadeva",
+    "intent": "Kaj naj to sporoča? (za AI)",
+    "intentPlaceholder": "npr. Povabi načelnike na varnostni baraza v petek ob 10. uri",
+    "body": "Vsebina",
+    "saveDraft": "Shrani osnutek",
+    "toLabel": "Za:",
+    "ccLabel": "Kp:",
+    "subjectLabel": "Zadeva:",
+    "aiAssisted": "S pomočjo AI",
+    "sendNow": "Pošlji zdaj",
+    "selectHint": "Izberite sporočilo ali sestavite novo."
+  },
+  "knowledge": {
+    "subtitle": "Referenčno gradivo, na katero se lahko opre pomočnik — politike, predloge, precedenti.",
+    "added": "Dodano v bazo znanja.",
+    "addFailed": "Ni bilo mogoče dodati.",
+    "chooseFile": "Izberite datoteko za nalaganje.",
+    "ocrFailed": "Datoteka je shranjena. OCR ni mogel prebrati besedila iz te datoteke (morda je slabe kakovosti). Besedilo lahko prilepite ročno.",
+    "extracted": "Datoteka je shranjena in {n} znakov besedila je bilo izluščenih.",
+    "noText": "Datoteka je shranjena. Iz te oblike ni bilo mogoče izluščiti besedila.",
+    "uploadFailed": "Nalaganje ni uspelo.",
+    "confirmRemove": "Odstranim to referenco?",
+    "uploadTitle": "Naloži dokument",
+    "file": "Datoteka",
+    "titleOptional": "Naslov (neobvezno)",
+    "titleDefault": "Privzeto ime datoteke",
+    "categoryOptional": "Kategorija (neobvezno)",
+    "uploadExtract": "Naloži in izlušči",
+    "uploadNote": "Besedilo iz datotek Word, PDF, CSV in besedilnih datotek se izlušči samodejno. Skenirani PDF-ji in fotografije se preberejo samodejno z OCR.",
+    "pasteTitle": "Dodaj referenco (prilepi besedilo)",
+    "title": "Naslov",
+    "category": "Kategorija",
+    "categoryPlaceholder": "npr. Okrožnice, Politike",
+    "textContent": "Besedilna vsebina",
+    "add": "Dodaj",
+    "references": "Reference",
+    "empty": "Nič še ni.",
+    "uncategorised": "Nekategorizirano",
+    "remove": "Odstrani"
+  },
+  "assistant": {
+    "subtitle": "Dajte navodilo v preprostem jeziku — povzemite, poiščite, sestavite ali razložite v svojem delovnem prostoru.",
+    "failed": "Pomočnik tega ni mogel obdelati.",
+    "instruction": "Navodilo",
+    "placeholder": "npr. Povzemite sklepe letošnjega odbora za varnost ali navedite memorandume, ki še čakajo na odobritev.",
+    "ask": "Vprašaj"
+  },
+  "actions": {
+    "subtitle": "Ukrepne postavke, izluščene iz zapisnikov in matrik ukrepov po sejah.",
+    "empty": "Ni odprtih ukrepov.",
+    "table": {
+      "action": "Ukrep",
+      "responsible": "Odgovorna oseba",
+      "timeline": "Časovnica",
+      "source": "Vir"
+    }
+  },
+  "paypal": {
+    "title": "Plačilo PayPal",
+    "subtitle": "Potrditev plačila naročnine.",
+    "confirming": "Potrjevanje vašega plačila PayPal ...",
+    "noOrder": "Nobeno naročilo PayPal ni bilo vrnjeno.",
+    "confirmed": "Plačilo potrjeno. Vaša naročnina Worker je zdaj aktivna.",
+    "failed": "Plačila PayPal ni bilo mogoče potrditi.",
+    "success": "Plačilo uspešno",
+    "viewSubscription": "Poglej naročnino",
+    "errorTitle": "Plačila ni bilo mogoče potrditi",
+    "returnToSubscription": "Nazaj na naročnino"
+  },
+  "tenant": {
+    "saved": "Podatki organizacije so shranjeni. Prikažejo se na vsakem dokumentu, ki ga izvozite.",
+    "saveFailed": "Shranjevanje ni uspelo.",
+    "logoUploaded": "Logotip naložen.",
+    "signatureUploaded": "Podpis naložen.",
+    "uploadFailed": "Nalaganje ni uspelo.",
+    "subtitleShort": "Blagovna znamka za vaš delovni prostor.",
+    "noOrg": "Ta račun ni povezan z organizacijo.",
+    "subtitle": "Vaše ime, glava pisma, logotip in podpis se prikažejo na vsakem dokumentu, ki ga ustvarite.",
+    "letterhead": "Glava pisma",
+    "orgName": "Ime organizacije",
+    "line": "Vrstica glave pisma {n}",
+    "line1Placeholder": "npr. OKROŽNA UPRAVA ...",
+    "line2Placeholder": "npr. Oddelek za ...",
+    "line3Placeholder": "npr. Enota / Urad",
+    "saveLetterhead": "Shrani glavo pisma",
+    "blankHint": "Pustite vrstice prazne, da se uporabi ime vaše organizacije.",
+    "logoSignature": "Logotip in podpis",
+    "logo": "Grb / logotip (PNG ali JPG)",
+    "signature": "E-podpis (PNG ali JPG)",
+    "uploaded": "naloženo",
+    "brandingNote": "Logotip se prikaže v glavi dokumenta in na naslovnih straneh diapozitivov. Podpis se doda na konec izvoženih dokumentov. Za najboljše rezultate uporabite PNG s prozornim ozadjem."
+  },
+  "users": {
+    "createdTemp": "Uporabnik ustvarjen. Začasno geslo: {temp} — delite varno; ob prvi prijavi ga mora spremeniti.",
+    "created": "Uporabnik ustvarjen.",
+    "createFailed": "Uporabnika ni bilo mogoče ustvariti.",
+    "confirmRemove": "Odstranim {name}?",
+    "removeFailed": "Ni bilo mogoče odstraniti.",
+    "subtitle": "Upravljajte dostop. Računa superskrbnika tukaj ni mogoče spreminjati.",
+    "add": "Dodaj uporabnika",
+    "create": "Ustvari uporabnika",
+    "empty": "Ni uporabnikov.",
+    "fields": {
+      "name": "Ime",
+      "email": "E-pošta",
+      "role": "Vloga",
+      "department": "Oddelek",
+      "status": "Status"
+    },
+    "suspend": "Zaustavi",
+    "reinstate": "Ponovno aktiviraj",
+    "remove": "Odstrani"
+  },
+  "audit": {
+    "subtitle": "Vsako pomembno dejanje se zabeleži. Dnevniki vsebujejo le metapodatke in identifikatorje — nikoli vsebine dokumentov ali zvoka.",
+    "empty": "Ni revizijskih vnosov.",
+    "table": {
+      "when": "Kdaj",
+      "actor": "Izvajalec",
+      "action": "Dejanje",
+      "resource": "Vir"
+    },
+    "system": "sistem"
+  },
+  "payments": {
+    "stkSent": "Potisni zahtevek STK poslan. Prosilec naj odobri na svojem telefonu.",
+    "initiateFailed": "Platila ni bilo mogoče začeti.",
+    "subtitle": "Transakcije M-Pesa (Daraja STK push) in PayPal.",
+    "requestTitle": "Zahtevaj plačilo M-Pesa",
+    "phone": "Telefon (07.. ali 2547..)",
+    "amountKes": "Znesek (KES)",
+    "purpose": "Namen",
+    "sendStk": "Pošlji STK push",
+    "transactions": "Transakcije",
+    "empty": "Ni transakcij.",
+    "table": {
+      "provider": "Ponudnik",
+      "amount": "Znesek",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Računi in potrdila za opravljena plačila naročnine Worker.",
+    "loadFailed": "Računovodskih dokumentov ni bilo mogoče naložiti.",
+    "downloadFailed": {
+      "invoice": "Računa ni bilo mogoče prenesti.",
+      "receipt": "Potrdila ni bilo mogoče prenesti."
+    },
+    "documentsTitle": "Obračunski dokumenti",
+    "intro": "Prenesite račune in potrdila za zaključena plačila naročnine vaše organizacije.",
+    "disclaimer": "Ti dokumenti evidentirajo plačila naročnine Worker in so namenjeni za namene plačila in povračila stroškov. Ne predstavljajo davčnih računov KRA/eTIMS, razen če so izdani ločeno prek skladne integracije eTIMS.",
+    "invoices": "Računi",
+    "noInvoices": "Ni še računov.",
+    "receipts": "Potrdila",
+    "noReceipts": "Ni še potrdil.",
+    "downloadPdf": "Prenesi PDF",
+    "table": {
+      "invoice": "Račun",
+      "receipt": "Potrdilo",
+      "date": "Datum",
+      "description": "Opis",
+      "amount": "Znesek",
+      "status": "Status",
+      "provider": "Ponudnik",
+      "reference": "Referenca"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Naročnine ni bilo mogoče naložiti.",
+    "selectFirst": "Najprej izberite načrt naročnine.",
+    "mpesaSent": "M-Pesa STK push je bil poslan. Odobrite plačilo na telefonu. Vaša naročnina bo aktivirana po potrditvi plačila.",
+    "mpesaFailed": "M-Pesa plačila ni bilo mogoče začeti.",
+    "noApproveUrl": "URL za odobritev PayPal ni bil vrnjen.",
+    "paypalFailed": "PayPal plačila ni bilo mogoče začeti.",
+    "subtitleShort": "Upravljajte svojo naročnino Worker.",
+    "subtitle": "Upravljajte svoj načrt Worker, preizkusno obdobje in obračun.",
+    "current": "Trenutna naročnina",
+    "organisation": "Organizacija",
+    "status": "Status",
+    "plan": "Načrt",
+    "freeTrial": "14-dnevno brezplačno preizkusno obdobje",
+    "trialEnds": "Preizkusno obdobje se konča",
+    "dayRemaining": "Še {n} dan",
+    "daysRemaining": "Še {n} dni",
+    "renewsEnds": "Obnovitev / konec",
+    "chooseTitle": "Izberite načrt",
+    "chooseSubtitle": "Vsi načrti vključujejo administrativni potek dela Worker. Vaše 14-dnevno preizkusno obdobje je brezplačno.",
+    "perMonth": "/ mesec",
+    "planSelected": "{plan} izbran. Vaš načrt je shranjen in pripravljen za plačilo.",
+    "selectFailed": "Načrta ni bilo mogoče izbrati.",
+    "selected": "Izbrano",
+    "selectPlan": "Izberite paket",
+    "activateTitle": "Aktivirajte svojo naročnino",
+    "selectAbove": "Za nadaljevanje na plačilo izberite paket zgoraj.",
+    "stkNote": "Na spodnjo telefonsko številko bo poslano obvestilo STK.",
+    "phone": "Telefonska številka",
+    "phonePlaceholder": "07.. ali 2547..",
+    "payMpesa": "Plačaj z M-Pesa",
+    "paypalNote": "Nadaljujte na PayPal za plačilo izbranega paketa v USD.",
+    "payPaypal": "Plačaj s PayPal",
+    "settleNote": "Plačljive naročnine je mogoče poravnati prek M-Pesa ali PayPal.",
+    "activationNote": "Vaš izbrani paket bo aktiviran po uspešni potrditvi plačila.",
+    "historyNote": "Zgodovina plačil je na voljo pod Uprava → Plačila."
+  },
+  "intl": {
+    "territory": "Območje",
+    "searchTerritory": "Iskanje območja…",
+    "selectTerritory": "Izberite svoje območje",
+    "territoryRequired": "Prosimo, izberite svoje območje.",
+    "workingLanguage": "Delovni jezik",
+    "meetingLanguage": "Jezik sestanka",
+    "useDefault": "Privzeto za organizacijo",
+    "beta": "prepisovanje beta",
+    "unavailable": "brez prepisovanja"
+  },
+  "generate": {
+    "title": "Ustvari dokument iz te seje",
+    "as": "Ustvari kot",
+    "instructions": "Navodilo (neobvezno)",
+    "placeholder": "npr. Pismo generalnemu sekretarju s povzetkom sklepov 2 in 3",
+    "button": "Ustvari",
+    "working": "Pripravljam vaš dokument … to lahko traja minuto.",
+    "done": "Dokument je ustvarjen.",
+    "failed": "Dokumenta ni bilo mogoče ustvariti.",
+    "hint": "Uporabi označene prepise za vključitev, po vrstnem redu. Preden se karkoli deli, pregledate in odobrite."
+  },
+  "queue": {
+    "queued": "V čakalni vrsti za prepisovanje. Ta stran se samodejno posodablja."
+  },
+  "pdfExport": {
+    "button": "Izvozi PDF"
+  },
+  "access": {
+    "readOnly": "Vaš delovni prostor je samo za branje, ker se je vaše preskusno obdobje ali naročnina končala. Dokumente si lahko še vedno ogledate in jih izvozite.",
+    "grace": "Vaše preskusno obdobje ali naročnina se je končala {date}. Na voljo imate še {n} dni polnega dostopa.",
+    "trialEnding": "Vaše brezplačno preskusno obdobje se konča čez {n} dni.",
+    "choosePlan": "Izberite paket"
+  },
+  "sessionLang": {
+    "saved": "Jezik sestanka je shranjen. Velja za posnetke, prepisane od zdaj naprej.",
+    "failed": "Jezika sestanka ni bilo mogoče shraniti."
+  },
+  "i18nNote": {
+    "machine": "Strojno prevedeno"
+  }
+}

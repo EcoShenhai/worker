@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Kalba",
+    "signIn": "Prisijungti",
+    "signOut": "Atsijungti",
+    "createAccount": "Sukurti paskyrą",
+    "getStarted": "Pradėti",
+    "startFreeTrial": "Pradėti nemokamą bandomąjį laikotarpį",
+    "cancel": "Atšaukti",
+    "back": "Atgal",
+    "download": "Atsisiųsti",
+    "viewAll": "Peržiūrėti viską"
+  },
+  "brand": {
+    "tagline": "AI administracinė darbo erdvė",
+    "secureWorkspace": "Saugi administracinė darbo erdvė",
+    "badge": "Anglų · Garso įrašas"
+  },
+  "nav": {
+    "dashboard": "Valdymo skydelis",
+    "workspace": "Darbo erdvė",
+    "sessions": "Sesijos ir įrašai",
+    "documents": "Dokumentai",
+    "correspondence": "Korespondencija",
+    "knowledge": "Žinių bazė",
+    "assistant": "Asistentas",
+    "askWorker": "Klausti Worker",
+    "actions": "Neatlikti veiksmai",
+    "administration": "Administravimas",
+    "organisation": "Organizacija",
+    "users": "Naudotojai",
+    "audit": "Audito žurnalas",
+    "subscription": "Prenumerata",
+    "payments": "Mokėjimai",
+    "billing": "Atsiskaitymai"
+  },
+  "roles": {
+    "viewer": "Stebėtojas",
+    "officer": "Pareigūnas",
+    "admin": "Administratorius",
+    "superadmin": "Vyriausiasis administratorius"
+  },
+  "landing": {
+    "hero": {
+      "title": "Paverskite tai, ką sakote, užbaigtais, užregistruotais dokumentais.",
+      "body": "Worker – tai AI administracinė darbo vieta organizacijoms, kurios rengia daug formalių dokumentų iš susitikimų, instruktažų ir korespondencijos. Įrašykite susitikimą arba diktuokite, o Worker jį transkribuos, parengs protokolus, memorandumus, laiškus, ataskaitas ir politikos apžvalgas bei praves juos per peržiūros ir tvirtinimo etapus – su išsamiu audito žurnalu.",
+      "badgeRow": "Garsas · Anglų · Saugi darbo vieta"
+    },
+    "what": {
+      "title": "Ką daro Worker",
+      "lead": "Įprastas biuro darbas, susijęs su susitikimais ir korespondencija – atliekamas per minutes, o ne valandas.",
+      "f1": {
+        "title": "Įrašyti ir transkribuoti",
+        "body": "Fiksuokite susitikimus, pokalbius, instruktažus ar diktavimą. Garso įrašas transkribuojamas vietoje anglų kalba."
+      },
+      "f2": {
+        "title": "Rengimas su AI",
+        "body": "Generuokite protokolus, raštus, laiškus, ataskaitas, politikos apžvalgas ir aplinkraščius tinkama oficialia forma."
+      },
+      "f3": {
+        "title": "Peržiūra ir tvirtinimas",
+        "body": "Kiekvienas dokumentas pereina juodraščio, peržiūros, tvirtinimo ir užbaigimo etapus – žmonės išlaiko kontrolę."
+      },
+      "f4": {
+        "title": "Saugu ir audituojama",
+        "body": "Prieiga pagal vaidmenis ir išsamus audito pėdsakas. Susirašinėjimą visada siunčia žmogus."
+      }
+    },
+    "start": {
+      "title": "Pradėti užtrunka minutę",
+      "lead": "Susikurkite paskyrą ir pradėkite 14 dienų nemokamą bandomąjį laikotarpį.",
+      "s1": {
+        "title": "Susikurkite paskyrą",
+        "body": "Įveskite savo vardą, el. paštą ir slaptažodį."
+      },
+      "s2": {
+        "title": "Patvirtinkite el. paštą",
+        "body": "Įveskite 6 skaitmenų kodą, kurį atsiuntėme el. paštu."
+      },
+      "s3": {
+        "title": "Prisijunkite saugiai",
+        "body": "Kiekvienas prisijungimas patvirtinamas vienkartiniu kodu, atsiųstu el. paštu."
+      },
+      "s4": {
+        "title": "Pradėkite dirbti",
+        "body": "Sukurkite sesiją, įrašykite ir sugeneruokite pirmąjį dokumentą."
+      }
+    },
+    "pricing": {
+      "title": "Paprasta prenumeratos kainodara",
+      "lead": "Pradėkite nuo 14 dienų nemokamo bandomojo laikotarpio. Pasirinkite planą, atitinkantį jūsų organizacijos administracinio darbo apimtį.",
+      "perMonth": "/mėn.",
+      "mostPopular": "POPULIARIAUSIAS",
+      "starter": {
+        "name": "Pradinis",
+        "desc": "Mažoms komandoms, pradedančioms AI paremtą administracinį darbą."
+      },
+      "professional": {
+        "name": "Profesionalus",
+        "desc": "Organizacijoms, reguliariai rengiančioms daug dokumentų."
+      },
+      "premium": {
+        "name": "Aukščiausios kokybės",
+        "desc": "Didesnėms organizacijoms su didelėmis administracinėmis apimtimis."
+      },
+      "paymentsNote": "Mokamoms prenumeratoms palaikoma M-Pesa ir PayPal."
+    },
+    "final": {
+      "title": "Pasiruošę išbandyti Worker?",
+      "cta": "Susikurkite paskyrą"
+    }
+  },
+  "auth": {
+    "email": "El. paštas",
+    "password": "Slaptažodis",
+    "fullName": "Vardas ir pavardė",
+    "confirmPassword": "Patvirtinkite slaptažodį",
+    "currentPassword": "Dabartinis slaptažodis",
+    "newPassword": "Naujas slaptažodis",
+    "confirmNewPassword": "Patvirtinkite naują slaptažodį",
+    "code6": "6 skaitmenų kodas",
+    "signInFailed": "Prisijungti nepavyko. Patikrinkite savo duomenis.",
+    "forgotPassword": "Pamiršote slaptažodį?",
+    "mfaNotice": "Kiekvienam prisijungimui patvirtinti el. paštu siunčiamas vienkartinis kodas.",
+    "createYourAccount": "Sukurkite paskyrą",
+    "pwMin": "Slaptažodis turi būti bent {n} simbolių.",
+    "newPwMin": "Naujas slaptažodis turi būti bent {n} simbolių.",
+    "pwMismatch": "Slaptažodžiai nesutampa.",
+    "createFailed": "Nepavyko sukurti paskyros.",
+    "haveAccount": "Jau turite paskyrą?",
+    "startAtSignIn": "Pradėkite nuo prisijungimo arba registracijos.",
+    "goToSignIn": "Eiti į prisijungimą",
+    "invalidCode": "Neteisingas arba pasibaigęs kodas.",
+    "codeSent": "Naujas kodas išsiųstas.",
+    "resendFailed": "Nepavyko išsiųsti iš naujo.",
+    "verifyEmailTitle": "Patvirtinkite savo el. paštą",
+    "verifyEmailTo": "Patvirtinkite savo el. paštą — {email}",
+    "verify": "Patvirtinti",
+    "resendCode": "Siųsti kodą iš naujo",
+    "signInAgain": "Prisijunkite iš naujo.",
+    "mfaPrompt": "Įveskite prisijungimo kodą, kurį išsiuntėme el. paštu",
+    "mfaPromptTo": "Įveskite prisijungimo kodą, kurį išsiuntėme el. paštu {email}",
+    "verifySignIn": "Patvirtinti ir prisijungti",
+    "requestFailed": "Nepavyko apdoroti užklausos.",
+    "resetTitle": "Iš naujo nustatykite slaptažodį",
+    "sendResetCode": "Siųsti nustatymo iš naujo kodą",
+    "backToSignIn": "Grįžti į prisijungimą",
+    "resetPrompt": "Įveskite el. paštu gautą kodą ir pasirinkite naują slaptažodį",
+    "resetPassword": "Nustatyti slaptažodį iš naujo",
+    "setNewPassword": "Nustatykite naują slaptažodį",
+    "forcedChange": "Saugumo sumetimais nustatykite savo slaptažodį prieš tęsdami.",
+    "updateAccountPassword": "Atnaujinkite savo paskyros slaptažodį.",
+    "changeFailed": "Nepavyko pakeisti slaptažodžio.",
+    "updatePassword": "Atnaujinti slaptažodį",
+    "signOutInstead": "Vietoj to atsijungti"
+  },
+  "notFound": {
+    "title": "Puslapis nerastas",
+    "subtitle": "Šio puslapio šioje darbo erdvėje nėra.",
+    "back": "Grįžti į prietaisų skydelį"
+  },
+  "status": {
+    "draft": "juodraštis",
+    "in_review": "peržiūrima",
+    "approved": "patvirtinta",
+    "final": "galutinis",
+    "archived": "archyvuota",
+    "open": "atviras",
+    "processing": "apdorojama",
+    "ready": "paruošta",
+    "pending": "laukiama",
+    "transcribing": "transkribuojama",
+    "transcribed": "transkribuota",
+    "failed": "nepavyko",
+    "sent": "išsiųsta",
+    "received": "gauta",
+    "completed": "užbaigta",
+    "cancelled": "atšaukta",
+    "active": "aktyvi",
+    "suspended": "sustabdyta"
+  },
+  "kind": {
+    "meeting": "susitikimas",
+    "interview": "pokalbis",
+    "briefing": "instruktažas",
+    "dictation": "diktavimas",
+    "field_report": "vietos ataskaita",
+    "consultation": "konsultacija",
+    "other": "kita"
+  },
+  "classification": {
+    "unclassified": "neklasifikuota",
+    "internal": "vidinė",
+    "confidential": "konfidenciali",
+    "restricted": "riboto naudojimo"
+  },
+  "dashboard": {
+    "welcome": "Sveiki, {name}",
+    "defaultName": "Pareigūne",
+    "subtitle": "Jūsų administracinė darbo erdvė — fiksuokite, rengkite, peržiūrėkite ir registruokite.",
+    "stats": {
+      "sessions": "Sesijos",
+      "documents": "Dokumentai",
+      "awaitingReview": "Laukia peržiūros",
+      "outstandingActions": "Neįvykdyti veiksmai"
+    },
+    "recentSessions": "Naujausios sesijos",
+    "documentsToAction": "Dokumentai, kuriems reikia veiksmų",
+    "noSessions": "Sesijų dar nėra.",
+    "nothingToAction": "Nieko, kam reikėtų jūsų dėmesio."
+  },
+  "sessions": {
+    "subtitle": "Kiekviena sesija yra bylos failas — garso įrašas, transkripcija ir iš jos parengti dokumentai.",
+    "new": "Nauja sesija",
+    "createFailed": "Nepavyko sukurti sesijos.",
+    "titlePlaceholder": "pvz., Apskrities saugumo komitetas — savaitinis instruktažas",
+    "create": "Sukurti sesiją",
+    "empty": "Sesijų dar nėra. Sukurkite ją, kad pradėtumėte įrašymą.",
+    "fields": {
+      "title": "Pavadinimas",
+      "kind": "Tipas",
+      "date": "Data",
+      "classification": "Klasifikacija",
+      "status": "Būsena",
+      "department": "Departamentas",
+      "location": "Vieta"
+    }
+  },
+  "session": {
+    "loadFailed": "Nepavyko įkelti sesijos.",
+    "micDenied": "Prieiga prie mikrofono atmesta arba nepasiekiama.",
+    "audioSaved": "Garso įrašas išsaugotas sesijoje.",
+    "uploadFailed": "Įkėlimas nepavyko.",
+    "transcribing": "Transkribuojama vietiniu būdu — ilgesniam garso įrašui tai gali užtrukti.",
+    "transcribed": "Transkribavimas baigtas.",
+    "transcribeFailed": "Transkribavimas nepavyko. Patikrinkite, ar veikia STT paslauga.",
+    "updateFailed": "Nepavyko atnaujinti.",
+    "draftingMinutes": "Rengiamas protokolo juodraštis iš transkripcijos…",
+    "minutesCreated": "Sukurtas protokolo juodraštis.",
+    "minutesFailed": "Nepavyko sugeneruoti protokolo.",
+    "notFound": "Sesija nerasta.",
+    "noDate": "nėra datos",
+    "noLocation": "nėra vietos",
+    "generateMinutes": "Generuoti protokolą",
+    "captureAudio": "Įrašyti garsą",
+    "stopSave": "Stabdyti ir išsaugoti",
+    "startRecording": "Pradėti įrašymą",
+    "or": "arba",
+    "uploadAudio": "Įkelti garso įrašą",
+    "audioNote": "Garso įrašas lieka pagrindiniame kompiuteryje. Transkribavimas vykdomas vietiniu būdu anglų kalba. Protokolas apjungia visus šios sesijos garso įrašus iš eilės.",
+    "documentsFrom": "Dokumentai iš šios sesijos",
+    "noDocuments": "Dokumentų kol kas nėra. Transkribuokite garso įrašą, tada sugeneruokite protokolą.",
+    "recordingsTitle": "Įrašai ir transkripcijos",
+    "clipOne": "{n} garso įrašas",
+    "clipMany": "{n} garso įrašai",
+    "noRecordings": "Įrašų kol kas nėra. Įrašykite arba įkelkite garso įrašą aukščiau.",
+    "includeTitle": "Įtraukti šį garso įrašą generuojant protokolą",
+    "inMinutes": "Protokole",
+    "transcribe": "Transkribuoti",
+    "transcribeHint": "Transkribuokite šį garso įrašą, kad galėtumėte peržiūrėti ir redaguoti jo transkripciją čia.",
+    "audioLoadFailed": "Nepavyko įkelti garso įrašo.",
+    "loadAudio": "Įkelti garso įrašą",
+    "words": "{n} žodžiai",
+    "verified": "patvirtinta",
+    "editVerify": "Redaguoti ir patvirtinti",
+    "saveVerified": "Išsaugoti ir pažymėti kaip patvirtintą",
+    "saveDraft": "Išsaugoti juodraštį",
+    "emptyTranscript": "Tuščias įrašas."
+  },
+  "docType": {
+    "minutes": "protokolas",
+    "memo": "memorandumas",
+    "letter": "laiškas",
+    "report": "ataskaita",
+    "policy_brief": "politikos apžvalga",
+    "briefing_note": "informacinis pranešimas",
+    "concept_note": "koncepcijos raštas",
+    "circular": "aplinkraštis",
+    "action_matrix": "veiksmų matrica",
+    "speech": "kalba"
+  },
+  "approval": {
+    "submit": "pateikta",
+    "submitted": "pateikta",
+    "approve": "patvirtinta",
+    "approved": "patvirtinta",
+    "reject": "atmesta",
+    "rejected": "atmesta",
+    "finalize": "užbaigta",
+    "finalized": "užbaigta"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Vidinis memorandumas",
+      "desc": "Standartinis vidinis memorandumas su Kam / Nuo / Tema."
+    },
+    "letter-official": {
+      "name": "Oficialus laiškas",
+      "desc": "Formalus siunčiamas laiškas ant įstaigos blanko."
+    },
+    "circular-general": {
+      "name": "Aplinkraštis",
+      "desc": "Pranešimas, išsiuntinėtas daugeliui gavėjų."
+    },
+    "report-standard": {
+      "name": "Ataskaita",
+      "desc": "Bendroji ataskaita su santrauka, skyriais ir rekomendacijomis."
+    },
+    "policy-brief": {
+      "name": "Politikos apžvalga",
+      "desc": "Glausta apžvalga sprendimų priėmėjams."
+    },
+    "briefing-note": {
+      "name": "Informacinis pranešimas",
+      "desc": "Trumpas pranešimas vadovui prieš susitikimą."
+    },
+    "concept-note": {
+      "name": "Koncepcijos raštas",
+      "desc": "Siūlomos programos ar veiklos apžvalga."
+    },
+    "minutes-blank": {
+      "name": "Posėdžio protokolas (tuščias)",
+      "desc": "Tuščia protokolo struktūra, pildoma ranka."
+    },
+    "speech-remarks": {
+      "name": "Kalba / pastabos",
+      "desc": "Oficiali kalba renginiui."
+    }
+  },
+  "documents": {
+    "subtitle": "Protokolai, memorandai, laiškai, ataskaitos ir santraukos – parengta naudojant AI, patvirtinta žmonių.",
+    "startFromTemplate": "Pradėti nuo šablono",
+    "fromSpreadsheet": "Ataskaita iš skaičiuoklės",
+    "draftWithAI": "Rengti naudojant AI",
+    "templateTitle": "Pradėti nuo šablono",
+    "allTypes": "Visi tipai",
+    "orgTemplates": "Jūsų organizacijos šablonai",
+    "savedByOrg": "Išsaugota jūsų organizacijos",
+    "useTemplate": "Naudoti šį šabloną",
+    "generalTemplates": "Bendrieji šablonai",
+    "spreadsheetFailed": "Nepavyko sukurti ataskaitos iš šios skaičiuoklės.",
+    "templateFailed": "Nepavyko sukurti iš šablono.",
+    "draftFailed": "Nepavyko parengti dokumento.",
+    "fields": {
+      "type": "Dokumento tipas",
+      "title": "Pavadinimas",
+      "recipient": "Gavėjas (neprivaloma)",
+      "department": "Padalinys (neprivaloma)",
+      "brief": "Instrukcijos / santrauka"
+    },
+    "briefPlaceholder": "Aprašykite tikslą, pagrindinius punktus ir faktus, kuriuos reikia įtraukti. Asistentas parengs oficialų dokumentą, kurį galėsite redaguoti ir patvirtinti.",
+    "generateDraft": "Generuoti juodraštį",
+    "empty": "Dokumentų kol kas nėra.",
+    "table": {
+      "title": "Pavadinimas",
+      "type": "Tipas",
+      "ref": "Nr.",
+      "status": "Būsena",
+      "ver": "Vers."
+    }
+  },
+  "doc": {
+    "loadFailed": "Nepavyko įkelti dokumento.",
+    "invalidJson": "Turinys nėra tinkamas JSON.",
+    "saved": "Išsaugota. Versija padidinta.",
+    "saveFailed": "Išsaugoti nepavyko.",
+    "done": {
+      "submit": "Dokumentas pateiktas peržiūrai.",
+      "approve": "Dokumentas patvirtintas.",
+      "reject": "Dokumentas atmestas.",
+      "finalize": "Dokumentas užbaigtas."
+    },
+    "failed": {
+      "submit": "Nepavyko pateikti.",
+      "approve": "Nepavyko patvirtinti.",
+      "reject": "Nepavyko atmesti.",
+      "finalize": "Nepavyko užbaigti."
+    },
+    "templateName": "Šablono pavadinimas",
+    "templateDefault": "{title} šablonas",
+    "templateSaved": "Išsaugota kaip daugkartinio naudojimo šablonas jūsų organizacijai.",
+    "templateSaveFailed": "Nepavyko išsaugoti šablono.",
+    "exportFailed": "Eksportuoti nepavyko.",
+    "notFound": "Dokumentas nerastas.",
+    "exportDocx": "Eksportuoti DOCX",
+    "exportPptx": "Eksportuoti PPTX",
+    "exportXlsx": "Eksportuoti XLSX",
+    "saveAsTemplate": "Išsaugoti kaip šabloną",
+    "content": "Turinys",
+    "workflow": "Darbo eiga",
+    "aiAssisted": "AI parengtas juodraštis",
+    "auditChain": "Audito grandinė: garsas → nuorašas → AI juodraštis → žmogaus redagavimas → patvirtinimas → galutinė versija. Kiekvienas žingsnis įrašomas.",
+    "comment": "Komentaras (neprivaloma)",
+    "commentPlaceholder": "Pridėkite pastabą įrašui",
+    "submit": "Pateikti peržiūrai",
+    "approve": "Patvirtinti",
+    "reject": "Atmesti",
+    "finalize": "Užbaigti",
+    "finalLocked": "Galutinė — redagavimas užrakintas",
+    "editJson": "Redaguoti turinį (JSON)",
+    "jsonNote": "Struktūrizuotas turinys sudaro firminį DOCX. Redaguokite toliau pateiktus laukus ir išsaugokite; firminis stilius ir išdėstymas pritaikomi automatiškai eksportuojant.",
+    "saveContent": "Išsaugoti turinį",
+    "approvalHistory": "Patvirtinimų istorija"
+  },
+  "emails": {
+    "subtitle": "Rengti laiškus ir el. laiškus su AI. Niekas neišsiunčiama, kol žmogus nepaspaudžia siųsti.",
+    "needIntent": "Pateikite asistentui temą arba tikslą, pagal kurį rengti juodraštį.",
+    "draftReady": "Juodraštis paruoštas. Peržiūrėkite ir redaguokite prieš siųsdami.",
+    "draftFailed": "Nepavyko parengti juodraščio.",
+    "draftSaved": "Juodraštis išsaugotas.",
+    "saveFailed": "Nepavyko išsaugoti.",
+    "confirmSend": "Siųsti šį el. laišką dabar? Šis veiksmas įrašomas audito žurnale.",
+    "sent": "El. laiškas išsiųstas.",
+    "sendFailed": "Siųsti nepavyko.",
+    "compose": "Kurti",
+    "messages": "Žinutės",
+    "empty": "Kol kas nėra susirašinėjimo.",
+    "message": "Žinutė",
+    "details": "Išsami informacija",
+    "to": "Kam",
+    "cc": "Cc",
+    "subject": "Tema",
+    "intent": "Ką tai turėtų pasakyti? (AI)",
+    "intentPlaceholder": "pvz., Pakviesti vadovus į saugumo baraza penktadienį 10 val.",
+    "body": "Turinys",
+    "saveDraft": "Išsaugoti juodraštį",
+    "toLabel": "Kam:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Tema:",
+    "aiAssisted": "AI pagalba",
+    "sendNow": "Siųsti dabar",
+    "selectHint": "Pasirinkite pranešimą arba sukurkite naują."
+  },
+  "knowledge": {
+    "subtitle": "Informacinė medžiaga, kuria asistentas gali remtis — politika, šablonai, precedentai.",
+    "added": "Pridėta į žinių bazę.",
+    "addFailed": "Nepavyko pridėti.",
+    "chooseFile": "Pasirinkite failą įkėlimui.",
+    "ocrFailed": "Failas išsaugotas. OCR negalėjo nuskaityti teksto iš šio failo (jis gali būti nekokybiškas). Galite įklijuoti tekstą rankiniu būdu.",
+    "extracted": "Failas išsaugotas ir išgauta {n} simbolių teksto.",
+    "noText": "Failas išsaugotas. Iš šio formato teksto išgauti nepavyko.",
+    "uploadFailed": "Įkėlimas nepavyko.",
+    "confirmRemove": "Pašalinti šią nuorodą?",
+    "uploadTitle": "Įkelti dokumentą",
+    "file": "Failas",
+    "titleOptional": "Pavadinimas (neprivaloma)",
+    "titleDefault": "Pagal numatytuosius nustatymus failo pavadinimas",
+    "categoryOptional": "Kategorija (neprivaloma)",
+    "uploadExtract": "Įkelti ir išgauti",
+    "uploadNote": "Word, PDF, CSV ir tekstinių failų tekstas išgaunamas automatiškai. Nuskaityti PDF failai ir nuotraukos nuskaitomi automatiškai naudojant OCR.",
+    "pasteTitle": "Pridėti nuorodą (įklijuoti tekstą)",
+    "title": "Pavadinimas",
+    "category": "Kategorija",
+    "categoryPlaceholder": "pvz., Aplinkraščiai, Politika",
+    "textContent": "Teksto turinys",
+    "add": "Pridėti",
+    "references": "Nuorodos",
+    "empty": "Kol kas nieko.",
+    "uncategorised": "Nekategorizuota",
+    "remove": "Pašalinti"
+  },
+  "assistant": {
+    "subtitle": "Pateikite nurodymą paprasta anglų kalba — apibendrinkite, raskite, parengkite ar paaiškinkite visoje savo darbo erdvėje.",
+    "failed": "Asistentas negalėjo to apdoroti.",
+    "instruction": "Instrukcija",
+    "placeholder": "pvz., Apibendrinkite šios savaitės saugumo komiteto sprendimus arba išvardykite memorandumus, dar laukiančius patvirtinimo.",
+    "ask": "Klausti"
+  },
+  "actions": {
+    "subtitle": "Veiksmų punktai, išgauti iš protokolų ir veiksmų matricų visose sesijose.",
+    "empty": "Neaptikta neįvykdytų veiksmų.",
+    "table": {
+      "action": "Veiksmas",
+      "responsible": "Atsakingas",
+      "timeline": "Terminas",
+      "source": "Šaltinis"
+    }
+  },
+  "paypal": {
+    "title": "PayPal mokėjimas",
+    "subtitle": "Prenumeratos mokėjimo patvirtinimas.",
+    "confirming": "Tvirtinamas jūsų PayPal mokėjimas...",
+    "noOrder": "PayPal užsakymas nebuvo grąžintas.",
+    "confirmed": "Mokėjimas patvirtintas. Jūsų „Worker“ prenumerata dabar aktyvi.",
+    "failed": "PayPal mokėjimo patvirtinti nepavyko.",
+    "success": "Mokėjimas sėkmingas",
+    "viewSubscription": "Peržiūrėti prenumeratą",
+    "errorTitle": "Mokėjimo patvirtinti nepavyko",
+    "returnToSubscription": "Grįžti į prenumeratą"
+  },
+  "tenant": {
+    "saved": "Organizacijos duomenys išsaugoti. Jie rodomi kiekviename eksportuojamame dokumente.",
+    "saveFailed": "Nepavyko išsaugoti.",
+    "logoUploaded": "Logotipas įkeltas.",
+    "signatureUploaded": "Parašas įkeltas.",
+    "uploadFailed": "Įkėlimas nepavyko.",
+    "subtitleShort": "Jūsų darbo srities prekės ženklas.",
+    "noOrg": "Ši paskyra nesusieta su organizacija.",
+    "subtitle": "Jūsų vardas, blanko antraštė, logotipas ir parašas rodomi kiekviename generuojamame dokumente.",
+    "letterhead": "Blanko antraštė",
+    "orgName": "Organizacijos pavadinimas",
+    "line": "Blanko antraštės eilutė {n}",
+    "line1Placeholder": "pvz., ... APSKRITIES SAVIVALDYBĖ",
+    "line2Placeholder": "pvz., ... departamentas",
+    "line3Placeholder": "pvz., Padalinys / biuras",
+    "saveLetterhead": "Išsaugoti blanko antraštę",
+    "blankHint": "Palikite eilutes tuščias, kad būtų naudojamas organizacijos pavadinimas.",
+    "logoSignature": "Logotipas ir parašas",
+    "logo": "Herbas / logotipas (PNG arba JPG)",
+    "signature": "El. parašas (PNG arba JPG)",
+    "uploaded": "įkelta",
+    "brandingNote": "Logotipas rodomas dokumento antraštėje ir skaidrių tituliniuose puslapiuose. Parašas dedamas eksportuojamų dokumentų pabaigoje. Geriausiam rezultatui naudokite PNG su permatomu fonu."
+  },
+  "users": {
+    "createdTemp": "Vartotojas sukurtas. Laikinas slaptažodis: {temp} — perduokite saugiai; pirmojo prisijungimo metu jis turės jį pakeisti.",
+    "created": "Vartotojas sukurtas.",
+    "createFailed": "Nepavyko sukurti vartotojo.",
+    "confirmRemove": "Pašalinti {name}?",
+    "removeFailed": "Nepavyko pašalinti.",
+    "subtitle": "Tvarkykite prieigą. Superadministratoriaus paskyros čia keisti negalima.",
+    "add": "Pridėti vartotoją",
+    "create": "Sukurti vartotoją",
+    "empty": "Nėra vartotojų.",
+    "fields": {
+      "name": "Vardas",
+      "email": "El. paštas",
+      "role": "Vaidmuo",
+      "department": "Padalinys",
+      "status": "Būsena"
+    },
+    "suspend": "Sustabdyti",
+    "reinstate": "Atkurti",
+    "remove": "Pašalinti"
+  },
+  "audit": {
+    "subtitle": "Kiekvienas reikšmingas veiksmas įrašomas. Žurnaluose saugomi tik metaduomenys ir identifikatoriai — niekada dokumentų turinys ar garso įrašai.",
+    "empty": "Nėra audito įrašų.",
+    "table": {
+      "when": "Kada",
+      "actor": "Veikėjas",
+      "action": "Veiksmas",
+      "resource": "Išteklius"
+    },
+    "system": "sistema"
+  },
+  "payments": {
+    "stkSent": "STK push išsiųstas. Paprašykite mokėtojo patvirtinti telefone.",
+    "initiateFailed": "Nepavyko inicijuoti mokėjimo.",
+    "subtitle": "M-Pesa (Daraja STK push) ir PayPal operacijos.",
+    "requestTitle": "Prašyti M-Pesa mokėjimo",
+    "phone": "Telefonas (07.. arba 2547..)",
+    "amountKes": "Suma (KES)",
+    "purpose": "Paskirtis",
+    "sendStk": "Siųsti STK push",
+    "transactions": "Operacijos",
+    "empty": "Nėra operacijų.",
+    "table": {
+      "provider": "Teikėjas",
+      "amount": "Suma",
+      "status": "Būsena",
+      "ref": "Nuoroda"
+    }
+  },
+  "billing": {
+    "subtitle": "Sąskaitos faktūros ir kvitai už atliktus Worker prenumeratos mokėjimus.",
+    "loadFailed": "Nepavyko įkelti atsiskaitymo dokumentų.",
+    "downloadFailed": {
+      "invoice": "Nepavyko atsisiųsti sąskaitos faktūros.",
+      "receipt": "Nepavyko atsisiųsti kvito."
+    },
+    "documentsTitle": "Mokėjimų dokumentai",
+    "intro": "Atsisiųskite savo organizacijos užbaigtų prenumeratos mokėjimų sąskaitas faktūras ir kvitus.",
+    "disclaimer": "Šie dokumentai fiksuoja Worker prenumeratos mokėjimus ir yra teikiami mokėjimo bei kompensavimo tikslais. Jie nėra laikomi KRA/eTIMS mokesčių sąskaitomis faktūromis, nebent būtų atskirai išduoti per suderinamą eTIMS integraciją.",
+    "invoices": "Sąskaitos faktūros",
+    "noInvoices": "Sąskaitų faktūrų dar nėra.",
+    "receipts": "Kvitai",
+    "noReceipts": "Kvitų dar nėra.",
+    "downloadPdf": "Atsisiųsti PDF",
+    "table": {
+      "invoice": "Sąskaita faktūra",
+      "receipt": "Kvitas",
+      "date": "Data",
+      "description": "Aprašymas",
+      "amount": "Suma",
+      "status": "Būsena",
+      "provider": "Teikėjas",
+      "reference": "Nuoroda"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Nepavyko įkelti prenumeratos.",
+    "selectFirst": "Pirmiausia pasirinkite prenumeratos planą.",
+    "mpesaSent": "M-Pesa STK pranešimas išsiųstas. Patvirtinkite mokėjimą telefone. Prenumerata bus aktyvuota patvirtinus mokėjimą.",
+    "mpesaFailed": "Nepavyko inicijuoti M-Pesa mokėjimo.",
+    "noApproveUrl": "PayPal patvirtinimo URL nebuvo grąžintas.",
+    "paypalFailed": "Nepavyko pradėti PayPal mokėjimo.",
+    "subtitleShort": "Tvarkykite savo Worker prenumeratą.",
+    "subtitle": "Tvarkykite savo Worker planą, bandomąjį laikotarpį ir mokėjimus.",
+    "current": "Dabartinė prenumerata",
+    "organisation": "Organizacija",
+    "status": "Būsena",
+    "plan": "Planas",
+    "freeTrial": "14 dienų nemokamas bandomasis laikotarpis",
+    "trialEnds": "Bandomasis laikotarpis baigiasi",
+    "dayRemaining": "Liko {n} diena",
+    "daysRemaining": "Liko {n} dienų",
+    "renewsEnds": "Atsinaujina / baigiasi",
+    "chooseTitle": "Pasirinkite planą",
+    "chooseSubtitle": "Visi planai apima Worker administracinę darbo eigą. Jūsų 14 dienų bandomasis laikotarpis yra nemokamas.",
+    "perMonth": "/ mėn.",
+    "planSelected": "{plan} pasirinktas. Jūsų planas išsaugotas ir paruoštas mokėjimui.",
+    "selectFailed": "Nepavyko pasirinkti plano.",
+    "selected": "Pasirinkta",
+    "selectPlan": "Pasirinkti planą",
+    "activateTitle": "Aktyvuokite prenumeratą",
+    "selectAbove": "Pasirinkite planą aukščiau, kad galėtumėte tęsti mokėjimą.",
+    "stkNote": "STK pranešimas bus išsiųstas žemiau nurodytu telefono numeriu.",
+    "phone": "Telefono numeris",
+    "phonePlaceholder": "07.. arba 2547..",
+    "payMpesa": "Mokėti su M-Pesa",
+    "paypalNote": "Tęskite į PayPal, kad sumokėtumėte už pasirinktą planą JAV doleriais.",
+    "payPaypal": "Mokėti su PayPal",
+    "settleNote": "Mokamas prenumeratas galima apmokėti per M-Pesa arba PayPal.",
+    "activationNote": "Pasirinktas planas bus aktyvuotas po sėkmingo mokėjimo patvirtinimo.",
+    "historyNote": "Mokėjimų istorija prieinama skiltyje Administravimas → Mokėjimai."
+  },
+  "intl": {
+    "territory": "Teritorija",
+    "searchTerritory": "Ieškoti teritorijos…",
+    "selectTerritory": "Pasirinkite savo teritoriją",
+    "territoryRequired": "Prašome pasirinkti savo teritoriją.",
+    "workingLanguage": "Darbo kalba",
+    "meetingLanguage": "Susitikimo kalba",
+    "useDefault": "Organizacijos numatytoji",
+    "beta": "transkripcijos beta",
+    "unavailable": "transkripcija neprieinama"
+  },
+  "generate": {
+    "title": "Sukurti dokumentą iš šios sesijos",
+    "as": "Sukurti kaip",
+    "instructions": "Instrukcija (neprivaloma)",
+    "placeholder": "pvz., Laiškas nuolatiniam sekretoriui, apibendrinantis sprendimus 2 ir 3",
+    "button": "Sukurti",
+    "working": "Rengiamas jūsų dokumentas… tai gali užtrukti minutę.",
+    "done": "Dokumentas sukurtas.",
+    "failed": "Nepavyko sukurti dokumento.",
+    "hint": "Naudojami pažymėti transkriptai įtraukimui, nurodyta tvarka. Jūs peržiūrite ir patvirtinate prieš ką nors bendrinant."
+  },
+  "queue": {
+    "queued": "Eilėje transkripcijai. Šis puslapis atnaujinamas automatiškai."
+  },
+  "pdfExport": {
+    "button": "Eksportuoti PDF"
+  },
+  "access": {
+    "readOnly": "Jūsų darbo sritis yra tik skaitymo režimu, nes jūsų bandomasis laikotarpis ar prenumerata baigėsi. Vis tiek galite peržiūrėti ir eksportuoti savo dokumentus.",
+    "grace": "Jūsų bandomasis laikotarpis ar prenumerata baigėsi {date}. Jums liko {n} dienos (-ų) visos prieigos.",
+    "trialEnding": "Jūsų nemokamas bandomasis laikotarpis baigiasi po {n} dienos (-ų).",
+    "choosePlan": "Pasirinkti planą"
+  },
+  "sessionLang": {
+    "saved": "Susitikimo kalba išsaugota. Ji taikoma įrašams, transkribuojamiems nuo šiol.",
+    "failed": "Nepavyko išsaugoti susitikimo kalbos."
+  },
+  "i18nNote": {
+    "machine": "Mašininis vertimas"
+  }
+}

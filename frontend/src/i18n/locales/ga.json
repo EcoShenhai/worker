@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Teanga",
+    "signIn": "Sínigh isteach",
+    "signOut": "Sínigh amach",
+    "createAccount": "Cruthaigh cuntas",
+    "getStarted": "Tosaigh",
+    "startFreeTrial": "Tosaigh triail saor in aisce",
+    "cancel": "Cealaigh",
+    "back": "Ar ais",
+    "download": "Íoslódáil",
+    "viewAll": "Féach ar fad"
+  },
+  "brand": {
+    "tagline": "Spás oibre riaracháin AI",
+    "secureWorkspace": "Spás oibre riaracháin slán",
+    "badge": "Béarla · Fuaim"
+  },
+  "nav": {
+    "dashboard": "Deais",
+    "workspace": "Spás oibre",
+    "sessions": "Seisiúin & Taifeadtaí",
+    "documents": "Doiciméid",
+    "correspondence": "Comhfhreagras",
+    "knowledge": "Bunachar Eolais",
+    "assistant": "Cúntóir",
+    "askWorker": "Fiafraigh de Worker",
+    "actions": "Gníomhartha Gan Réiteach",
+    "administration": "Riarachán",
+    "organisation": "Eagraíocht",
+    "users": "Úsáideoirí",
+    "audit": "Rian Iniúchta",
+    "subscription": "Síntiús",
+    "payments": "Íocaíochtaí",
+    "billing": "Billeáil"
+  },
+  "roles": {
+    "viewer": "Amharcóir",
+    "officer": "Oifigeach",
+    "admin": "Riarthóir",
+    "superadmin": "Ard-riarthóir"
+  },
+  "landing": {
+    "hero": {
+      "title": "Cas an méid a deir tú ina pháipéarachas críochnaithe, comhdaithe.",
+      "body": "Is spás oibre riaracháin AI é Worker d'eagraíochtaí a tháirgeann líon mór doiciméad foirmiúil ó chruinnithe, ó chruinnithe faisnéise agus ó chomhfhreagras. Taifead cruinniú nó deachtaigh, agus déanann Worker é a thrascríobh, a dhréachtú mar mhiontuairiscí, meamraim, litreacha, tuarascálacha agus gearrthuairiscí beartais, agus tugann sé tríd an athbhreithniú agus an ceadú iad — le rian iniúchta iomlán.",
+      "badgeRow": "Fuaim · Béarla · Spás oibre slán"
+    },
+    "what": {
+      "title": "Cad a dhéanann Worker",
+      "lead": "An ghnáthobair oifige a bhaineann le cruinnithe agus comhfhreagras — déanta i gceann nóiméad, ní uaireanta.",
+      "f1": {
+        "title": "Taifead & trascríobh",
+        "body": "Gabh cruinnithe, agallaimh, cruinnithe faisnéise nó deachtú. Déantar an fhuaim a thrascríobh go háitiúil i mBéarla."
+      },
+      "f2": {
+        "title": "Dréacht le AI",
+        "body": "Gin miontuairiscí, meamraim, litreacha, tuarascálacha, gearrthuairiscí beartais agus ciorcláin i bhfoirm oifigiúil cheart."
+      },
+      "f3": {
+        "title": "Athbhreithnigh & ceadaigh",
+        "body": "Téann gach doiciméad trí dhréacht, athbhreithniú, ceadú agus críochnú — fanann daoine i gceannas."
+      },
+      "f4": {
+        "title": "Slán & iniúchta",
+        "body": "Rochtain bunaithe ar ról agus rian iniúchta iomlán. Ní sheoltar comhfhreagras ach amháin ag duine."
+      }
+    },
+    "start": {
+      "title": "Ní thógann sé ach nóiméad chun tosú",
+      "lead": "Cruthaigh cuntas agus cuir tús le do thriail saor in aisce 14 lá.",
+      "s1": {
+        "title": "Cruthaigh do chuntas",
+        "body": "Iontráil d'ainm, do ríomhphost agus pasfhocal."
+      },
+      "s2": {
+        "title": "Fíoraigh do ríomhphost",
+        "body": "Iontráil an cód 6 dhigit a sheolaimid chugat trí ríomhphost."
+      },
+      "s3": {
+        "title": "Sínigh isteach go slán",
+        "body": "Deimhnítear gach síniú isteach le cód aonuaire a sheoltar trí ríomhphost."
+      },
+      "s4": {
+        "title": "Tosaigh ag obair",
+        "body": "Cruthaigh seisiún, taifead, agus gin do chéad doiciméad."
+      }
+    },
+    "pricing": {
+      "title": "Praghsáil shíntiúis shimplí",
+      "lead": "Tosaigh le triail saor in aisce 14 lá. Roghnaigh an plean a oireann do mhéid na hoibre riaracháin a tháirgeann d'eagraíocht.",
+      "perMonth": "/mí",
+      "mostPopular": "IS COITIANTA",
+      "starter": {
+        "name": "Tosaí",
+        "desc": "Do fhoirne beaga atá ag tosú le hobair riaracháin le cúnamh AI."
+      },
+      "professional": {
+        "name": "Gairmiúil",
+        "desc": "D'eagraíochtaí a bhfuil táirgeadh doiciméad rialta, ard-mhéide acu."
+      },
+      "premium": {
+        "name": "Préimh",
+        "desc": "D'eagraíochtaí níos mó a bhfuil ualaí oibre riaracháin suntasacha acu."
+      },
+      "paymentsNote": "Tacaítear le M-Pesa agus PayPal do shíntiúis íoctha."
+    },
+    "final": {
+      "title": "Réidh chun Worker a thriail?",
+      "cta": "Cruthaigh do chuntas"
+    }
+  },
+  "auth": {
+    "email": "Ríomhphost",
+    "password": "Pasfhocal",
+    "fullName": "Ainm iomlán",
+    "confirmPassword": "Deimhnigh pasfhocal",
+    "currentPassword": "Pasfhocal reatha",
+    "newPassword": "Pasfhocal nua",
+    "confirmNewPassword": "Deimhnigh pasfhocal nua",
+    "code6": "Cód 6 dhigit",
+    "signInFailed": "Theip ar shíniú isteach. Seiceáil do dhintiúir.",
+    "forgotPassword": "An ndearna tú dearmad ar do phasfhocal?",
+    "mfaNotice": "Seoltar cód aonuaire trí ríomhphost chun gach síniú isteach a dheimhniú.",
+    "createYourAccount": "Cruthaigh do chuntas",
+    "pwMin": "Caithfidh an focal faire a bheith {n} carachtar ar a laghad.",
+    "newPwMin": "Caithfidh an focal faire nua a bheith {n} carachtar ar a laghad.",
+    "pwMismatch": "Ní thagann na focail faire le chéile.",
+    "createFailed": "Níorbh fhéidir an cuntas a chruthú.",
+    "haveAccount": "An bhfuil cuntas agat cheana féin?",
+    "startAtSignIn": "Tosaigh ag síniú isteach nó ag clárú.",
+    "goToSignIn": "Téigh go dtí an síniú isteach",
+    "invalidCode": "Cód neamhbhailí nó as feidhm.",
+    "codeSent": "Seoladh cód nua.",
+    "resendFailed": "Níorbh fhéidir athsheoladh.",
+    "verifyEmailTitle": "Fíoraigh do ríomhphost",
+    "verifyEmailTo": "Fíoraigh do ríomhphost — {email}",
+    "verify": "Fíoraigh",
+    "resendCode": "Athsheol an cód",
+    "signInAgain": "Sínigh isteach arís le do thoil.",
+    "mfaPrompt": "Cuir isteach an cód sínithe isteach a sheolamar trí ríomhphost",
+    "mfaPromptTo": "Cuir isteach an cód sínithe isteach a sheolamar chuig {email}",
+    "verifySignIn": "Fíoraigh agus sínigh isteach",
+    "requestFailed": "Níorbh fhéidir an t-iarratas a phróiseáil.",
+    "resetTitle": "Athshocraigh do focal faire",
+    "sendResetCode": "Seol cód athshocraithe",
+    "backToSignIn": "Ar ais go dtí an síniú isteach",
+    "resetPrompt": "Cuir isteach an cód a sheolamar trí ríomhphost agus roghnaigh focal faire nua",
+    "resetPassword": "Athshocraigh an focal faire",
+    "setNewPassword": "Socraigh focal faire nua",
+    "forcedChange": "Ar mhaithe le slándáil, socraigh do focal faire féin sula leanann tú ar aghaidh.",
+    "updateAccountPassword": "Nuashonraigh focal faire do chuntais.",
+    "changeFailed": "Níorbh fhéidir an focal faire a athrú.",
+    "updatePassword": "Nuashonraigh an focal faire",
+    "signOutInstead": "Sínigh amach ina ionad"
+  },
+  "notFound": {
+    "title": "Níor aimsíodh an leathanach",
+    "subtitle": "Níl an leathanach sin sa spás oibre seo.",
+    "back": "Fill ar an deais"
+  },
+  "status": {
+    "draft": "dréacht",
+    "in_review": "á athbhreithniú",
+    "approved": "ceadaithe",
+    "final": "críochnaithe",
+    "archived": "cartlannaithe",
+    "open": "oscailte",
+    "processing": "á phróiseáil",
+    "ready": "réidh",
+    "pending": "ar feitheamh",
+    "transcribing": "á thrascríobh",
+    "transcribed": "trascríofa",
+    "failed": "teipthe",
+    "sent": "seolta",
+    "received": "faighte",
+    "completed": "críochnaithe",
+    "cancelled": "cealaithe",
+    "active": "gníomhach",
+    "suspended": "ar fionraí"
+  },
+  "kind": {
+    "meeting": "cruinniú",
+    "interview": "agallamh",
+    "briefing": "cruinniú faisnéise",
+    "dictation": "deachtú",
+    "field_report": "tuarascáil allamuigh",
+    "consultation": "comhairliúchán",
+    "other": "eile"
+  },
+  "classification": {
+    "unclassified": "neamh-aicmithe",
+    "internal": "inmheánach",
+    "confidential": "rúnda",
+    "restricted": "srianta"
+  },
+  "dashboard": {
+    "welcome": "Fáilte, {name}",
+    "defaultName": "Oifigeach",
+    "subtitle": "Do spás oibre riaracháin — taifead, dréacht, athbhreithnigh agus comhdaigh.",
+    "stats": {
+      "sessions": "Seisiúin",
+      "documents": "Doiciméid",
+      "awaitingReview": "Ag feitheamh le hathbhreithniú",
+      "outstandingActions": "Gníomhartha gan chríochnú"
+    },
+    "recentSessions": "Seisiúin le déanaí",
+    "documentsToAction": "Doiciméid le gníomhú orthu",
+    "noSessions": "Níl aon seisiún ann fós.",
+    "nothingToAction": "Níl aon rud ag teastáil uait."
+  },
+  "sessions": {
+    "subtitle": "Is comhad cáis é gach seisiún — fuaim, tras-scríbhinn, agus na doiciméid a tháirgtear uaidh.",
+    "new": "Seisiún nua",
+    "createFailed": "Níorbh fhéidir an seisiún a chruthú.",
+    "titlePlaceholder": "m.sh. Coiste Slándála an Chontae — Cruinniú Faisnéise Seachtainiúil",
+    "create": "Cruthaigh seisiún",
+    "empty": "Níl aon seisiún ann fós. Cruthaigh ceann chun tosú ag taifeadadh.",
+    "fields": {
+      "title": "Teideal",
+      "kind": "Cineál",
+      "date": "Dáta",
+      "classification": "Aicmiú",
+      "status": "Stádas",
+      "department": "Roinn",
+      "location": "Suíomh"
+    }
+  },
+  "session": {
+    "loadFailed": "Níorbh fhéidir an seisiún a lódáil.",
+    "micDenied": "Rochtain ar an micreafón diúltaithe nó gan a bheith ar fáil.",
+    "audioSaved": "Fuaim sábháilte leis an seisiún.",
+    "uploadFailed": "Theip ar an uaslódáil.",
+    "transcribing": "Á thrascríobh go háitiúil — féadfaidh sé seo tamall a thógáil le haghaidh fuaime níos faide.",
+    "transcribed": "Trascríobh críochnaithe.",
+    "transcribeFailed": "Theip ar an trascríobh. Seiceáil go bhfuil an tseirbhís STT ag rith.",
+    "updateFailed": "Níorbh fhéidir a nuashonrú.",
+    "draftingMinutes": "Miontuairiscí á ndréachtú ón trascríobh…",
+    "minutesCreated": "Dréachtmhiontuairiscí cruthaithe.",
+    "minutesFailed": "Níorbh fhéidir miontuairiscí a ghiniúint.",
+    "notFound": "Seisiún gan aimsiú.",
+    "noDate": "gan dáta",
+    "noLocation": "gan suíomh",
+    "generateMinutes": "Gin miontuairiscí",
+    "captureAudio": "Gabháil fuaim",
+    "stopSave": "Stop & sábháil",
+    "startRecording": "Tosaigh ag taifeadadh",
+    "or": "nó",
+    "uploadAudio": "Uaslódáil fuaim",
+    "audioNote": "Fanann an fhuaim ar an óstach. Ritheann an trascríobh go háitiúil i mBéarla. Comhcheanglaíonn miontuairiscí gach gearrthóg sa seisiún seo, in ord.",
+    "documentsFrom": "Doiciméid ón seisiún seo",
+    "noDocuments": "Níl aon doiciméid ann fós. Trascríobh gearrthóg, ansin gin miontuairiscí.",
+    "recordingsTitle": "Taifeadtaí & trascríbhinní",
+    "clipOne": "{n} gearrthóg",
+    "clipMany": "{n} gearrthóg",
+    "noRecordings": "Níl aon taifeadtaí ann fós. Taifead nó uaslódáil fuaim thuas.",
+    "includeTitle": "Cuir an ghearrthóg seo san áireamh agus miontuairiscí á nginiúint",
+    "inMinutes": "I miontuairiscí",
+    "transcribe": "Trascríobh",
+    "transcribeHint": "Trascríobh an ghearrthóg seo chun a trascríobh a fheiceáil agus a chur in eagar anseo.",
+    "audioLoadFailed": "Níorbh fhéidir fuaim a lódáil.",
+    "loadAudio": "Lódáil fuaim",
+    "words": "{n} focal",
+    "verified": "fíoraithe",
+    "editVerify": "Cuir in eagar & fíoraigh",
+    "saveVerified": "Sábháil & marcáil mar fhíoraithe",
+    "saveDraft": "Sábháil dréacht",
+    "emptyTranscript": "Tras-scríbhinn folamh."
+  },
+  "docType": {
+    "minutes": "miontuairiscí",
+    "memo": "meamram",
+    "letter": "litir",
+    "report": "tuarascáil",
+    "policy_brief": "achoimre beartais",
+    "briefing_note": "nóta faisnéise",
+    "concept_note": "nóta coincheapa",
+    "circular": "ciorclán",
+    "action_matrix": "maitrís gníomhaíochta",
+    "speech": "óráid"
+  },
+  "approval": {
+    "submit": "curtha isteach",
+    "submitted": "curtha isteach",
+    "approve": "ceadaithe",
+    "approved": "ceadaithe",
+    "reject": "diúltaithe",
+    "rejected": "diúltaithe",
+    "finalize": "críochnaithe",
+    "finalized": "críochnaithe"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Meamram Inmheánach",
+      "desc": "Meamram inmheánach caighdeánach le Chuig / Ó / Ábhar."
+    },
+    "letter-official": {
+      "name": "Litir Oifigiúil",
+      "desc": "Litir amach foirmiúil ar cheanntásc na hoifige."
+    },
+    "circular-general": {
+      "name": "Ciorclán",
+      "desc": "Fógra a scaiptear chuig go leor faighteoirí."
+    },
+    "report-standard": {
+      "name": "Tuarascáil",
+      "desc": "Tuarascáil ghinearálta le hachoimre, codanna agus moltaí."
+    },
+    "policy-brief": {
+      "name": "Achoimre Beartais",
+      "desc": "Achoimre ghonta do dhéantóirí cinntí."
+    },
+    "briefing-note": {
+      "name": "Nóta Faisnéise",
+      "desc": "Nóta gearr chun príomhoifigeach a chur ar an eolas roimh theagmháil."
+    },
+    "concept-note": {
+      "name": "Nóta Coincheapa",
+      "desc": "Imlíne de chlár nó de ghníomhaíocht atá beartaithe."
+    },
+    "minutes-blank": {
+      "name": "Miontuairiscí Cruinnithe (bán)",
+      "desc": "Struchtúr bán miontuairiscí le líonadh de láimh."
+    },
+    "speech-remarks": {
+      "name": "Óráid / Ráitis",
+      "desc": "Ráitis fhoirmiúla d'imeacht."
+    }
+  },
+  "documents": {
+    "subtitle": "Miontuairiscí, meamraim, litreacha, tuarascálacha agus achoimrí — dréachtaithe le AI, ceadaithe ag daoine.",
+    "startFromTemplate": "Tosaigh ó theimpléad",
+    "fromSpreadsheet": "Tuarascáil ó scarbhileog",
+    "draftWithAI": "Dréachtaigh le AI",
+    "templateTitle": "Tosaigh ó theimpléad",
+    "allTypes": "Gach cineál",
+    "orgTemplates": "Teimpléid d'eagraíocht",
+    "savedByOrg": "Sábháilte ag d'eagraíocht",
+    "useTemplate": "Úsáid an teimpléad seo",
+    "generalTemplates": "Teimpléid ghinearálta",
+    "spreadsheetFailed": "Níorbh fhéidir tuarascáil a thógáil ón scarbhileog sin.",
+    "templateFailed": "Níorbh fhéidir a chruthú ón teimpléad.",
+    "draftFailed": "Níorbh fhéidir an doiciméad a dhréachtú.",
+    "fields": {
+      "type": "Cineál doiciméid",
+      "title": "Teideal",
+      "recipient": "Faighteoir (roghnach)",
+      "department": "Roinn (roghnach)",
+      "brief": "Treoracha / achoimre"
+    },
+    "briefPlaceholder": "Déan cur síos ar an gcuspóir, na príomhphointí, agus aon fhíricí le cur san áireamh. Dréachtóidh an cúntóir doiciméad foirmiúil ar féidir leat é a chur in eagar agus a cheadú.",
+    "generateDraft": "Gin dréacht",
+    "empty": "Níl aon doiciméad ann fós.",
+    "table": {
+      "title": "Teideal",
+      "type": "Cineál",
+      "ref": "Tag.",
+      "status": "Stádas",
+      "ver": "Leag."
+    }
+  },
+  "doc": {
+    "loadFailed": "Níorbh fhéidir an doiciméad a lódáil.",
+    "invalidJson": "Níl an t-ábhar ina JSON bailí.",
+    "saved": "Sábháilte. Leagan méadaithe.",
+    "saveFailed": "Theip ar an sábháil.",
+    "done": {
+      "submit": "Doiciméad curtha isteach lena athbhreithniú.",
+      "approve": "Doiciméad ceadaithe.",
+      "reject": "Doiciméad diúltaithe.",
+      "finalize": "Doiciméad críochnaithe."
+    },
+    "failed": {
+      "submit": "Níorbh fhéidir é a chur isteach.",
+      "approve": "Níorbh fhéidir é a cheadú.",
+      "reject": "Níorbh fhéidir é a dhiúltú.",
+      "finalize": "Níorbh fhéidir é a chríochnú."
+    },
+    "templateName": "Ainm an teimpléid",
+    "templateDefault": "Teimpléad {title}",
+    "templateSaved": "Sábháilte mar theimpléad in-athúsáidte do d'eagraíocht.",
+    "templateSaveFailed": "Níorbh fhéidir an teimpléad a shábháil.",
+    "exportFailed": "Theip ar an onnmhairiú.",
+    "notFound": "Cáipéis gan aimsiú.",
+    "exportDocx": "Onnmhairigh DOCX",
+    "exportPptx": "Onnmhairigh PPTX",
+    "exportXlsx": "Onnmhairigh XLSX",
+    "saveAsTemplate": "Sábháil mar theimpléad",
+    "content": "Ábhar",
+    "workflow": "Sreabhadh oibre",
+    "aiAssisted": "Dréacht le cúnamh AI",
+    "auditChain": "Slabhra iniúchta: fuaim → tras-scríbhinn → dréacht AI → eagarthóireacht dhaonna → ceadú → deireanach. Taifeadtar gach céim.",
+    "comment": "Trácht (roghnach)",
+    "commentPlaceholder": "Cuir nóta leis an taifead",
+    "submit": "Cuir isteach le haghaidh athbhreithnithe",
+    "approve": "Ceadaigh",
+    "reject": "Diúltaigh",
+    "finalize": "Críochnaigh",
+    "finalLocked": "Deireanach — faoi ghlas le haghaidh eagarthóireachta",
+    "editJson": "Cuir ábhar in eagar (JSON)",
+    "jsonNote": "Tiomáineann ábhar struchtúrtha an DOCX brandáilte. Cuir na réimsí thíos in eagar agus sábháil; cuirtear brandáil agus leagan amach i bhfeidhm go huathoibríoch ar onnmhairiú.",
+    "saveContent": "Sábháil ábhar",
+    "approvalHistory": "Stair cheadaithe"
+  },
+  "emails": {
+    "subtitle": "Dréachtaigh litreacha agus ríomhphoist le AI. Ní sheoltar aon rud go dtí go gcliceálann duine seol.",
+    "needIntent": "Tabhair ábhar nó rún don chúntóir le dréachtú as.",
+    "draftReady": "Dréacht réidh. Déan athbhreithniú agus cuir in eagar sula seolann tú.",
+    "draftFailed": "Theip ar an dréacht.",
+    "draftSaved": "Dréacht sábháilte.",
+    "saveFailed": "Níorbh fhéidir a shábháil.",
+    "confirmSend": "Seol an ríomhphost seo anois? Taifeadtar an gníomh seo sa lorg iniúchta.",
+    "sent": "Ríomhphost seolta.",
+    "sendFailed": "Theip ar an seoladh.",
+    "compose": "Cum",
+    "messages": "Teachtaireachtaí",
+    "empty": "Níl aon chomhfhreagras ann fós.",
+    "message": "Teachtaireacht",
+    "details": "Sonraí",
+    "to": "Chuig",
+    "cc": "Cc",
+    "subject": "Ábhar",
+    "intent": "Cad ba cheart a rá anseo? (le haghaidh AI)",
+    "intentPlaceholder": "m.sh. Tabhair cuireadh do na taoisigh chuig an mbaraza slándála Dé hAoine 10am",
+    "body": "Corp",
+    "saveDraft": "Sábháil dréacht",
+    "toLabel": "Chuig:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Ábhar:",
+    "aiAssisted": "Cuidithe ag AI",
+    "sendNow": "Seol anois",
+    "selectHint": "Roghnaigh teachtaireacht nó cum ceann nua."
+  },
+  "knowledge": {
+    "subtitle": "Ábhar tagartha ar féidir leis an gcúntóir tarraingt air — beartais, teimpléid, fasaigh.",
+    "added": "Curtha leis an mbunachar eolais.",
+    "addFailed": "Níorbh fhéidir a chur leis.",
+    "chooseFile": "Roghnaigh comhad le huaslódáil.",
+    "ocrFailed": "Sábháladh an comhad. Níorbh fhéidir le OCR téacs a léamh ón gcomhad seo (b'fhéidir go bhfuil sé ar chaighdeán íseal). Is féidir leat an téacs a ghreamú de láimh.",
+    "extracted": "Sábháladh an comhad agus baineadh {n} carachtar téacs amach.",
+    "noText": "Sábháladh an comhad. Níorbh fhéidir téacs ar bith a bhaint as an bhformáid seo.",
+    "uploadFailed": "Theip ar an uaslódáil.",
+    "confirmRemove": "Bain an tagairt seo?",
+    "uploadTitle": "Uaslódáil doiciméad",
+    "file": "Comhad",
+    "titleOptional": "Teideal (roghnach)",
+    "titleDefault": "Réamhshocrú d'ainm an chomhaid",
+    "categoryOptional": "Catagóir (roghnach)",
+    "uploadExtract": "Uaslódáil & bain amach",
+    "uploadNote": "Baintear téacs as comhaid Word, PDF, CSV agus téacs go huathoibríoch. Léitear PDFanna scanáilte agus grianghraif go huathoibríoch le OCR.",
+    "pasteTitle": "Cuir tagairt leis (greamaigh téacs)",
+    "title": "Teideal",
+    "category": "Catagóir",
+    "categoryPlaceholder": "m.sh. Ciorcláin, Beartais",
+    "textContent": "Ábhar téacs",
+    "add": "Cuir leis",
+    "references": "Tagairtí",
+    "empty": "Faic go fóill.",
+    "uncategorised": "Gan chatagóir",
+    "remove": "Bain"
+  },
+  "assistant": {
+    "subtitle": "Tabhair treoir i mBéarla simplí — achoimrigh, aimsigh, dréachtaigh nó mínigh ar fud do spáis oibre.",
+    "failed": "Níorbh fhéidir leis an gcúntóir é sin a phróiseáil.",
+    "instruction": "Treoir",
+    "placeholder": "m.sh. Achoimrigh cinntí choiste slándála na seachtaine seo, nó liostaigh meamranda atá fós ag fanacht le ceadú.",
+    "ask": "Fiafraigh"
+  },
+  "actions": {
+    "subtitle": "Míreanna gnímh a eastóscadh as miontuairiscí agus as maitrísí gnímh thar sheisiúin.",
+    "empty": "Níor aimsíodh aon ghníomh gan réiteach.",
+    "table": {
+      "action": "Gníomh",
+      "responsible": "Freagrach",
+      "timeline": "Amlíne",
+      "source": "Foinse"
+    }
+  },
+  "paypal": {
+    "title": "Íocaíocht PayPal",
+    "subtitle": "Deimhniú íocaíochta síntiúis.",
+    "confirming": "Do íocaíocht PayPal á deimhniú...",
+    "noOrder": "Níor cuireadh aon ordú PayPal ar ais.",
+    "confirmed": "Íocaíocht deimhnithe. Tá do shíntiús Worker gníomhach anois.",
+    "failed": "Níorbh fhéidir an íocaíocht PayPal a dheimhniú.",
+    "success": "D'éirigh leis an íocaíocht",
+    "viewSubscription": "Féach ar an síntiús",
+    "errorTitle": "Níorbh fhéidir an íocaíocht a dheimhniú",
+    "returnToSubscription": "Fill ar an síntiús"
+  },
+  "tenant": {
+    "saved": "Sábháladh sonraí na heagraíochta. Taispeántar iad ar gach doiciméad a easpórtálann tú.",
+    "saveFailed": "Níorbh fhéidir sábháil.",
+    "logoUploaded": "Lógó uaslódáilte.",
+    "signatureUploaded": "Síniú uaslódáilte.",
+    "uploadFailed": "Theip ar an uaslódáil.",
+    "subtitleShort": "Brandáil do spás oibre.",
+    "noOrg": "Níl an cuntas seo bainteach le heagraíocht.",
+    "subtitle": "Taispeántar do ainm, do cheanntásc litreach, do lógó agus do shíniú ar gach doiciméad a ghineann tú.",
+    "letterhead": "Ceanntásc litreach",
+    "orgName": "Ainm na heagraíochta",
+    "line": "Líne cheanntásc litreach {n}",
+    "line1Placeholder": "m.sh. RIALTAS CONTAE ...",
+    "line2Placeholder": "m.sh. Roinn ...",
+    "line3Placeholder": "m.sh. Aonad / Oifig",
+    "saveLetterhead": "Sábháil an ceanntásc litreach",
+    "blankHint": "Fág línte bán chun filleadh ar ainm do eagraíochta.",
+    "logoSignature": "Lógó & síniú",
+    "logo": "Suaitheantas / lógó (PNG nó JPG)",
+    "signature": "Ríomhshíniú (PNG nó JPG)",
+    "uploaded": "uaslódáilte",
+    "brandingNote": "Taispeántar an lógó i gceanntásc an doiciméid agus ar leathanaigh teidil na sleamhnán. Cuirtear an síniú ag deireadh na ndoiciméad easpórtáilte. Úsáid PNG le cúlra trédhearcach chun na torthaí is fearr a fháil."
+  },
+  "users": {
+    "createdTemp": "Cruthaíodh an t-úsáideoir. Pasfhocal sealadach: {temp} — roinn go slán é; caithfidh siad é a athrú ar an gcéad logáil isteach.",
+    "created": "Cruthaíodh an t-úsáideoir.",
+    "createFailed": "Níorbh fhéidir an t-úsáideoir a chruthú.",
+    "confirmRemove": "Bain {name}?",
+    "removeFailed": "Níorbh fhéidir é a bhaint.",
+    "subtitle": "Bainistigh rochtain. Ní féidir an cuntas sár-riarthóra a mhodhnú anseo.",
+    "add": "Cuir úsáideoir leis",
+    "create": "Cruthaigh úsáideoir",
+    "empty": "Níl aon úsáideoir ann.",
+    "fields": {
+      "name": "Ainm",
+      "email": "Ríomhphost",
+      "role": "Ról",
+      "department": "Roinn",
+      "status": "Stádas"
+    },
+    "suspend": "Cuir ar fionraí",
+    "reinstate": "Athshlánaigh",
+    "remove": "Bain"
+  },
+  "audit": {
+    "subtitle": "Taifeadtar gach gníomh suntasach. Ní choinníonn na logaí ach meiteashonraí agus aitheantóirí — ní choinnítear comhlachtaí doiciméad ná fuaim riamh.",
+    "empty": "Níl aon iontráil iniúchta ann.",
+    "table": {
+      "when": "Cathain",
+      "actor": "Gníomhaí",
+      "action": "Gníomh",
+      "resource": "Acmhainn"
+    },
+    "system": "córas"
+  },
+  "payments": {
+    "stkSent": "Seoladh brú STK. Iarr ar an íocóir é a cheadú ar a ghuthán.",
+    "initiateFailed": "Níorbh fhéidir an íocaíocht a thionscnamh.",
+    "subtitle": "Idirbhearta M-Pesa (brú STK Daraja) agus PayPal.",
+    "requestTitle": "Iarr íocaíocht M-Pesa",
+    "phone": "Guthán (07.. nó 2547..)",
+    "amountKes": "Méid (KES)",
+    "purpose": "Cuspóir",
+    "sendStk": "Seol brú STK",
+    "transactions": "Idirbhearta",
+    "empty": "Níl aon idirbheart ann.",
+    "table": {
+      "provider": "Soláthraí",
+      "amount": "Méid",
+      "status": "Stádas",
+      "ref": "Tag."
+    }
+  },
+  "billing": {
+    "subtitle": "Sonraisc agus admhálacha d'íocaíochtaí síntiúis Worker atá críochnaithe.",
+    "loadFailed": "Níorbh fhéidir doiciméid bhilleála a lódáil.",
+    "downloadFailed": {
+      "invoice": "Níorbh fhéidir an sonrasc a íoslódáil.",
+      "receipt": "Níorbh fhéidir an t-admháil a íoslódáil."
+    },
+    "documentsTitle": "Doiciméid bhilleála",
+    "intro": "Íoslódáil sonraisc agus admhálacha d'íocaíochtaí síntiúis críochnaithe d'eagraíocht.",
+    "disclaimer": "Taifeadann na doiciméid seo íocaíochtaí síntiúis Worker agus cuirtear ar fáil iad chun críocha íocaíochta agus aisíocaíochta. Ní léirítear iad mar shonraisc chánach KRA/eTIMS mura n-eisítear iad ar leithligh trí chomhtháthú eTIMS comhlíontach.",
+    "invoices": "Sonraisc",
+    "noInvoices": "Níl aon sonrasc ann fós.",
+    "receipts": "Admhálacha",
+    "noReceipts": "Níl aon admháil ann fós.",
+    "downloadPdf": "Íoslódáil PDF",
+    "table": {
+      "invoice": "Sonrasc",
+      "receipt": "Admháil",
+      "date": "Dáta",
+      "description": "Cur síos",
+      "amount": "Méid",
+      "status": "Stádas",
+      "provider": "Soláthraí",
+      "reference": "Tagairt"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Níorbh fhéidir an síntiús a lódáil.",
+    "selectFirst": "Roghnaigh plean síntiúis ar dtús.",
+    "mpesaSent": "Seoladh brú STK M-Pesa. Ceadaigh an íocaíocht ar do ghuthán. Gníomhófar do shíntiús tar éis an íocaíocht a dhearbhú.",
+    "mpesaFailed": "Níorbh fhéidir íocaíocht M-Pesa a thosú.",
+    "noApproveUrl": "Níor cuireadh URL ceadaithe PayPal ar ais.",
+    "paypalFailed": "Níorbh fhéidir íocaíocht PayPal a thosú.",
+    "subtitleShort": "Bainistigh do shíntiús Worker.",
+    "subtitle": "Bainistigh do phlean Worker, do thriail agus do bhilleáil.",
+    "current": "Síntiús reatha",
+    "organisation": "Eagraíocht",
+    "status": "Stádas",
+    "plan": "Plean",
+    "freeTrial": "Triail saor in aisce 14 lá",
+    "trialEnds": "Críochnaíonn an triail",
+    "dayRemaining": "{n} lá fágtha",
+    "daysRemaining": "{n} lá fágtha",
+    "renewsEnds": "Athnuaitear / críochnaíonn",
+    "chooseTitle": "Roghnaigh plean",
+    "chooseSubtitle": "Áirítear le gach plean sreabhadh oibre riaracháin Worker. Tá do thriail 14 lá saor in aisce.",
+    "perMonth": "/ mí",
+    "planSelected": "Roghnaíodh {plan}. Sábháladh do phlean agus tá sé réidh le híoc.",
+    "selectFailed": "Níorbh fhéidir plean a roghnú.",
+    "selected": "Roghnaithe",
+    "selectPlan": "Roghnaigh plean",
+    "activateTitle": "Gníomhachtaigh do shíntiús",
+    "selectAbove": "Roghnaigh plean thuas chun leanúint ar aghaidh chuig an íocaíocht.",
+    "stkNote": "Seolfar brú STK chuig an uimhir teileafóin thíos.",
+    "phone": "Uimhir teileafóin",
+    "phonePlaceholder": "07.. nó 2547..",
+    "payMpesa": "Íoc le M-Pesa",
+    "paypalNote": "Lean ar aghaidh chuig PayPal chun íoc as an bplean roghnaithe in USD.",
+    "payPaypal": "Íoc le PayPal",
+    "settleNote": "Is féidir síntiúis íoctha a shocrú trí M-Pesa nó PayPal.",
+    "activationNote": "Gníomhachtófar an plean roghnaithe tar éis deimhniú íocaíochta rathúil.",
+    "historyNote": "Tá stair íocaíochtaí ar fáil faoi Riarachán → Íocaíochtaí."
+  },
+  "intl": {
+    "territory": "Críoch",
+    "searchTerritory": "Cuardaigh críoch…",
+    "selectTerritory": "Roghnaigh do chríoch",
+    "territoryRequired": "Roghnaigh do chríoch le do thoil.",
+    "workingLanguage": "Teanga oibre",
+    "meetingLanguage": "Teanga cruinnithe",
+    "useDefault": "Réamhshocrú na heagraíochta",
+    "beta": "trascríobh béite",
+    "unavailable": "gan trascríobh"
+  },
+  "generate": {
+    "title": "Gin doiciméad ón seisiún seo",
+    "as": "Gin mar",
+    "instructions": "Treoir (roghnach)",
+    "placeholder": "m.sh. Litir chuig an Rúnaí Buan ag achoimriú cinntí 2 agus 3",
+    "button": "Gin",
+    "working": "Ag dréachtú do dhoiciméid… féadfaidh sé seo nóiméad a thógáil.",
+    "done": "Doiciméad cruthaithe.",
+    "failed": "Níorbh fhéidir an doiciméad a ghiniúint.",
+    "hint": "Úsáideann sé na trascríbhinní atá ticeáilte le cur san áireamh, in ord. Déanann tú athbhreithniú agus ceadú sula roinntear aon rud."
+  },
+  "queue": {
+    "queued": "Curtha sa scuaine le haghaidh trascríobh. Nuashonraíonn an leathanach seo go huathoibríoch."
+  },
+  "pdfExport": {
+    "button": "Easpórtáil PDF"
+  },
+  "access": {
+    "readOnly": "Tá do spás oibre inléite amháin mar gheall go bhfuil do thriail nó do shíntiús críochnaithe. Is féidir leat do dhoiciméid a fheiceáil agus a easpórtáil fós.",
+    "grace": "Chríochnaigh do thriail nó do shíntiús ar {date}. Tá {n} lá rochtana iomláine fágtha agat.",
+    "trialEnding": "Críochnóidh do thriail saor in aisce i gceann {n} lá.",
+    "choosePlan": "Roghnaigh plean"
+  },
+  "sessionLang": {
+    "saved": "Teanga cruinnithe sábháilte. Baineann sé le taifeadtaí a thrascreobhtar as seo amach.",
+    "failed": "Níorbh fhéidir teanga an chruinnithe a shábháil."
+  },
+  "i18nNote": {
+    "machine": "Aistrithe go meaisín"
+  }
+}

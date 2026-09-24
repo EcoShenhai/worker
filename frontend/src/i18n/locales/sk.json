@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Jazyk",
+    "signIn": "Prihlásiť sa",
+    "signOut": "Odhlásiť sa",
+    "createAccount": "Vytvoriť účet",
+    "getStarted": "Začať",
+    "startFreeTrial": "Spustiť bezplatnú skúšobnú verziu",
+    "cancel": "Zrušiť",
+    "back": "Späť",
+    "download": "Stiahnuť",
+    "viewAll": "Zobraziť všetko"
+  },
+  "brand": {
+    "tagline": "AI administratívny pracovný priestor",
+    "secureWorkspace": "Zabezpečený administratívny pracovný priestor",
+    "badge": "Angličtina · Zvuk"
+  },
+  "nav": {
+    "dashboard": "Prehľad",
+    "workspace": "Pracovný priestor",
+    "sessions": "Relácie a nahrávky",
+    "documents": "Dokumenty",
+    "correspondence": "Korešpondencia",
+    "knowledge": "Databáza znalostí",
+    "assistant": "Asistent",
+    "askWorker": "Opýtať sa Worker",
+    "actions": "Nevybavené úlohy",
+    "administration": "Administrácia",
+    "organisation": "Organizácia",
+    "users": "Používatelia",
+    "audit": "Auditná stopa",
+    "subscription": "Predplatné",
+    "payments": "Platby",
+    "billing": "Fakturácia"
+  },
+  "roles": {
+    "viewer": "Čitateľ",
+    "officer": "Referent",
+    "admin": "Administrátor",
+    "superadmin": "Super administrátor"
+  },
+  "landing": {
+    "hero": {
+      "title": "Premeňte to, čo poviete, na hotové a zaradené dokumenty.",
+      "body": "Worker je AI administratívne pracovisko pre organizácie, ktoré vytvárajú veľké množstvo formálnych dokumentov zo stretnutí, brífingov a korešpondencie. Nahrajte stretnutie alebo diktujte a Worker ho prepíše, vypracuje zápisnice, memorandá, listy, správy a politické podklady a prevedie ich kontrolou a schválením — s kompletnou auditnou stopou.",
+      "badgeRow": "Zvuk · Angličtina · Zabezpečené pracovisko"
+    },
+    "what": {
+      "title": "Čo Worker robí",
+      "lead": "Bežná kancelárska práca spojená so stretnutiami a korešpondenciou — vybavená v priebehu minút, nie hodín.",
+      "f1": {
+        "title": "Nahrávanie a prepis",
+        "body": "Zachytávajte stretnutia, rozhovory, brífingy alebo diktovanie. Zvuk sa prepisuje lokálne v angličtine."
+      },
+      "f2": {
+        "title": "Návrh s AI",
+        "body": "Generujte zápisnice, memorandá, listy, správy, politické prehľady a obežníky v správnej úradnej forme."
+      },
+      "f3": {
+        "title": "Kontrola a schválenie",
+        "body": "Každý dokument prechádza fázou návrhu, kontroly, schválenia a finalizácie — ľudia zostávajú pod kontrolou."
+      },
+      "f4": {
+        "title": "Bezpečné a auditované",
+        "body": "Prístup na základe rolí a kompletná auditná stopa. Korešpondencia sa odosiela vždy len prostredníctvom osoby."
+      }
+    },
+    "start": {
+      "title": "Začíname za minútu",
+      "lead": "Vytvorte si účet a začnite 14-dňovú bezplatnú skúšobnú verziu.",
+      "s1": {
+        "title": "Vytvorte si účet",
+        "body": "Zadajte svoje meno, e-mail a heslo."
+      },
+      "s2": {
+        "title": "Overte svoj e-mail",
+        "body": "Zadajte 6-miestny kód, ktorý vám pošleme e-mailom."
+      },
+      "s3": {
+        "title": "Prihláste sa bezpečne",
+        "body": "Každé prihlásenie sa potvrdzuje jednorazovým kódom zaslaným e-mailom."
+      },
+      "s4": {
+        "title": "Začnite pracovať",
+        "body": "Vytvorte reláciu, nahrajte a vygenerujte svoj prvý dokument."
+      }
+    },
+    "pricing": {
+      "title": "Jednoduché predplatné",
+      "lead": "Začnite s 14-dňovou bezplatnou skúšobnou verziou. Vyberte si plán, ktorý zodpovedá objemu administratívnej práce vo vašej organizácii.",
+      "perMonth": "/mesiac",
+      "mostPopular": "NAJPOPULÁRNEJŠIE",
+      "starter": {
+        "name": "Starter",
+        "desc": "Pre malé tímy, ktoré začínajú s administratívnou prácou podporovanou AI."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Pre organizácie s pravidelnou a vysokou produkciou dokumentov."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Pre väčšie organizácie s rozsiahlym administratívnym zaťažením."
+      },
+      "paymentsNote": "Platby M-Pesa a PayPal sú podporované pre platené predplatné."
+    },
+    "final": {
+      "title": "Ste pripravení vyskúšať Worker?",
+      "cta": "Vytvorte si účet"
+    }
+  },
+  "auth": {
+    "email": "E-mail",
+    "password": "Heslo",
+    "fullName": "Celé meno",
+    "confirmPassword": "Potvrdiť heslo",
+    "currentPassword": "Aktuálne heslo",
+    "newPassword": "Nové heslo",
+    "confirmNewPassword": "Potvrdiť nové heslo",
+    "code6": "6-miestny kód",
+    "signInFailed": "Prihlásenie zlyhalo. Skontrolujte svoje prihlasovacie údaje.",
+    "forgotPassword": "Zabudli ste heslo?",
+    "mfaNotice": "Na potvrdenie každého prihlásenia sa e-mailom zasiela jednorazový kód.",
+    "createYourAccount": "Vytvorte si účet",
+    "pwMin": "Heslo musí mať aspoň {n} znakov.",
+    "newPwMin": "Nové heslo musí mať aspoň {n} znakov.",
+    "pwMismatch": "Heslá sa nezhodujú.",
+    "createFailed": "Účet sa nepodarilo vytvoriť.",
+    "haveAccount": "Už máte účet?",
+    "startAtSignIn": "Začnite prihlásením alebo registráciou.",
+    "goToSignIn": "Prejsť na prihlásenie",
+    "invalidCode": "Neplatný alebo expirovaný kód.",
+    "codeSent": "Bol odoslaný nový kód.",
+    "resendFailed": "Opätovné odoslanie zlyhalo.",
+    "verifyEmailTitle": "Overte svoj e-mail",
+    "verifyEmailTo": "Overte svoj e-mail — {email}",
+    "verify": "Overiť",
+    "resendCode": "Znova odoslať kód",
+    "signInAgain": "Prihláste sa znova.",
+    "mfaPrompt": "Zadajte prihlasovací kód, ktorý sme vám poslali e-mailom",
+    "mfaPromptTo": "Zadajte prihlasovací kód, ktorý sme poslali na {email}",
+    "verifySignIn": "Overiť a prihlásiť sa",
+    "requestFailed": "Požiadavku sa nepodarilo spracovať.",
+    "resetTitle": "Obnovte svoje heslo",
+    "sendResetCode": "Odoslať kód na obnovenie",
+    "backToSignIn": "Späť na prihlásenie",
+    "resetPrompt": "Zadajte kód, ktorý sme poslali e-mailom, a zvoľte nové heslo",
+    "resetPassword": "Obnoviť heslo",
+    "setNewPassword": "Nastavte nové heslo",
+    "forcedChange": "Pre bezpečnosť si pred pokračovaním nastavte vlastné heslo.",
+    "updateAccountPassword": "Aktualizujte heslo k svojmu účtu.",
+    "changeFailed": "Heslo sa nepodarilo zmeniť.",
+    "updatePassword": "Aktualizovať heslo",
+    "signOutInstead": "Namiesto toho sa odhlásiť"
+  },
+  "notFound": {
+    "title": "Stránka sa nenašla",
+    "subtitle": "Táto stránka v tomto pracovnom priestore neexistuje.",
+    "back": "Návrat na panel"
+  },
+  "status": {
+    "draft": "koncept",
+    "in_review": "v kontrole",
+    "approved": "schválené",
+    "final": "finálne",
+    "archived": "archivované",
+    "open": "otvorené",
+    "processing": "spracúva sa",
+    "ready": "pripravené",
+    "pending": "čaká",
+    "transcribing": "prepisuje sa",
+    "transcribed": "prepísané",
+    "failed": "zlyhalo",
+    "sent": "odoslané",
+    "received": "prijaté",
+    "completed": "dokončené",
+    "cancelled": "zrušené",
+    "active": "aktívne",
+    "suspended": "pozastavené"
+  },
+  "kind": {
+    "meeting": "porada",
+    "interview": "pohovor",
+    "briefing": "inštruktáž",
+    "dictation": "diktovanie",
+    "field_report": "správa z terénu",
+    "consultation": "konzultácia",
+    "other": "iné"
+  },
+  "classification": {
+    "unclassified": "neklasifikované",
+    "internal": "interné",
+    "confidential": "dôverné",
+    "restricted": "vyhradené"
+  },
+  "dashboard": {
+    "welcome": "Vitajte, {name}",
+    "defaultName": "úradník",
+    "subtitle": "Váš administratívny pracovný priestor — zaznamenávajte, tvorte koncepty, kontrolujte a ukladajte.",
+    "stats": {
+      "sessions": "Relácie",
+      "documents": "Dokumenty",
+      "awaitingReview": "Čaká na kontrolu",
+      "outstandingActions": "Nevybavené úlohy"
+    },
+    "recentSessions": "Nedávne relácie",
+    "documentsToAction": "Dokumenty na vybavenie",
+    "noSessions": "Zatiaľ žiadne relácie.",
+    "nothingToAction": "Nič nevyžaduje vašu pozornosť."
+  },
+  "sessions": {
+    "subtitle": "Každá relácia je spis — zvuk, prepis a dokumenty z nej vytvorené.",
+    "new": "Nová relácia",
+    "createFailed": "Reláciu nebolo možné vytvoriť.",
+    "titlePlaceholder": "napr. Okresný bezpečnostný výbor — týždenná inštruktáž",
+    "create": "Vytvoriť reláciu",
+    "empty": "Zatiaľ žiadne relácie. Vytvorte jednu a začnite nahrávať.",
+    "fields": {
+      "title": "Názov",
+      "kind": "Typ",
+      "date": "Dátum",
+      "classification": "Klasifikácia",
+      "status": "Stav",
+      "department": "Odbor",
+      "location": "Miesto"
+    }
+  },
+  "session": {
+    "loadFailed": "Nepodarilo sa načítať reláciu.",
+    "micDenied": "Prístup k mikrofónu bol zamietnutý alebo nie je k dispozícii.",
+    "audioSaved": "Zvuk bol uložený do relácie.",
+    "uploadFailed": "Nahrávanie zlyhalo.",
+    "transcribing": "Prepis prebieha lokálne – pri dlhšom zvuku to môže chvíľu trvať.",
+    "transcribed": "Prepis dokončený.",
+    "transcribeFailed": "Prepis zlyhal. Skontrolujte, či je služba STT spustená.",
+    "updateFailed": "Nepodarilo sa aktualizovať.",
+    "draftingMinutes": "Vytvára sa návrh zápisnice z prepisu…",
+    "minutesCreated": "Návrh zápisnice bol vytvorený.",
+    "minutesFailed": "Nepodarilo sa vygenerovať zápisnicu.",
+    "notFound": "Relácia sa nenašla.",
+    "noDate": "bez dátumu",
+    "noLocation": "bez miesta",
+    "generateMinutes": "Vygenerovať zápisnicu",
+    "captureAudio": "Zachytiť zvuk",
+    "stopSave": "Zastaviť a uložiť",
+    "startRecording": "Spustiť nahrávanie",
+    "or": "alebo",
+    "uploadAudio": "Nahrať zvuk",
+    "audioNote": "Zvuk zostáva na hostiteľovi. Prepis prebieha lokálne v angličtine. Zápisnica spája všetky klipy v tejto relácii v poradí.",
+    "documentsFrom": "Dokumenty z tejto relácie",
+    "noDocuments": "Zatiaľ žiadne dokumenty. Prepíšte klip a potom vygenerujte zápisnicu.",
+    "recordingsTitle": "Nahrávky a prepisy",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klipov",
+    "noRecordings": "Zatiaľ žiadne nahrávky. Nahrajte alebo nahrávajte zvuk vyššie.",
+    "includeTitle": "Zahrnúť tento klip pri generovaní zápisnice",
+    "inMinutes": "V zápisnici",
+    "transcribe": "Prepísať",
+    "transcribeHint": "Prepíšte tento klip, aby ste tu videli a mohli upraviť jeho prepis.",
+    "audioLoadFailed": "Nepodarilo sa načítať zvuk.",
+    "loadAudio": "Načítať zvuk",
+    "words": "{n} slov",
+    "verified": "overené",
+    "editVerify": "Upraviť a overiť",
+    "saveVerified": "Uložiť a označiť ako overené",
+    "saveDraft": "Uložiť koncept",
+    "emptyTranscript": "Prázdny prepis."
+  },
+  "docType": {
+    "minutes": "zápisnica",
+    "memo": "memorandum",
+    "letter": "list",
+    "report": "správa",
+    "policy_brief": "politický brief",
+    "briefing_note": "informačná poznámka",
+    "concept_note": "koncept",
+    "circular": "oběžník",
+    "action_matrix": "matica opatrení",
+    "speech": "prejav"
+  },
+  "approval": {
+    "submit": "predložené",
+    "submitted": "predložené",
+    "approve": "schválené",
+    "approved": "schválené",
+    "reject": "zamietnuté",
+    "rejected": "zamietnuté",
+    "finalize": "finalizované",
+    "finalized": "finalizované"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Interné memorandum",
+      "desc": "Štandardné interné memorandum s položkami Komu / Od / Predmet."
+    },
+    "letter-official": {
+      "name": "Úradný list",
+      "desc": "Formálny odchádzajúci list na hlavičkovom papieri úradu."
+    },
+    "circular-general": {
+      "name": "Oběžník",
+      "desc": "Oznámenie rozposlané mnohým príjemcom."
+    },
+    "report-standard": {
+      "name": "Správa",
+      "desc": "Všeobecná správa so zhrnutím, časťami a odporúčaniami."
+    },
+    "policy-brief": {
+      "name": "Politický brief",
+      "desc": "Stručný brief pre osoby s rozhodovacou právomocou."
+    },
+    "briefing-note": {
+      "name": "Informačná poznámka",
+      "desc": "Krátka poznámka na informovanie vedúceho pred rokovaním."
+    },
+    "concept-note": {
+      "name": "Koncept",
+      "desc": "Náčrt navrhovaného programu alebo činnosti."
+    },
+    "minutes-blank": {
+      "name": "Zápisnica zo stretnutia (prázdna)",
+      "desc": "Prázdna štruktúra zápisnice na ručné vyplnenie."
+    },
+    "speech-remarks": {
+      "name": "Prejav / Pripomienky",
+      "desc": "Formálne pripomienky k podujatiu."
+    }
+  },
+  "documents": {
+    "subtitle": "Zápisnice, memorandá, listy, správy a podklady — navrhnuté s AI, schválené ľuďmi.",
+    "startFromTemplate": "Začať zo šablóny",
+    "fromSpreadsheet": "Správa z tabuľky",
+    "draftWithAI": "Navrhnúť s AI",
+    "templateTitle": "Začať zo šablóny",
+    "allTypes": "Všetky typy",
+    "orgTemplates": "Šablóny vašej organizácie",
+    "savedByOrg": "Uložené vašou organizáciou",
+    "useTemplate": "Použiť túto šablónu",
+    "generalTemplates": "Všeobecné šablóny",
+    "spreadsheetFailed": "Z tejto tabuľky sa nepodarilo vytvoriť správu.",
+    "templateFailed": "Zo šablóny sa nepodarilo vytvoriť dokument.",
+    "draftFailed": "Dokument sa nepodarilo navrhnúť.",
+    "fields": {
+      "type": "Typ dokumentu",
+      "title": "Názov",
+      "recipient": "Príjemca (voliteľné)",
+      "department": "Oddelenie (voliteľné)",
+      "brief": "Pokyny / podklad"
+    },
+    "briefPlaceholder": "Opíšte účel, kľúčové body a všetky fakty, ktoré majú byť uvedené. Asistent navrhne formálny dokument, ktorý môžete upraviť a schváliť.",
+    "generateDraft": "Vygenerovať návrh",
+    "empty": "Zatiaľ žiadne dokumenty.",
+    "table": {
+      "title": "Názov",
+      "type": "Typ",
+      "ref": "Ref.",
+      "status": "Stav",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Dokument sa nepodarilo načítať.",
+    "invalidJson": "Obsah nie je platný JSON.",
+    "saved": "Uložené. Verzia bola zvýšená.",
+    "saveFailed": "Uloženie zlyhalo.",
+    "done": {
+      "submit": "Dokument bol predložený na kontrolu.",
+      "approve": "Dokument bol schválený.",
+      "reject": "Dokument bol zamietnutý.",
+      "finalize": "Dokument bol dokončený."
+    },
+    "failed": {
+      "submit": "Nepodarilo sa predložiť.",
+      "approve": "Nepodarilo sa schváliť.",
+      "reject": "Nepodarilo sa zamietnuť.",
+      "finalize": "Nepodarilo sa dokončiť."
+    },
+    "templateName": "Názov šablóny",
+    "templateDefault": "Šablóna {title}",
+    "templateSaved": "Uložené ako opakovane použiteľná šablóna pre vašu organizáciu.",
+    "templateSaveFailed": "Šablónu nebolo možné uložiť.",
+    "exportFailed": "Export zlyhal.",
+    "notFound": "Dokument sa nenašiel.",
+    "exportDocx": "Exportovať DOCX",
+    "exportPptx": "Exportovať PPTX",
+    "exportXlsx": "Exportovať XLSX",
+    "saveAsTemplate": "Uložiť ako šablónu",
+    "content": "Obsah",
+    "workflow": "Pracovný postup",
+    "aiAssisted": "Koncept vytvorený s pomocou AI",
+    "auditChain": "Reťazec auditu: zvuk → prepis → koncept AI → úprava človekom → schválenie → finálna verzia. Každý krok je zaznamenaný.",
+    "comment": "Komentár (voliteľný)",
+    "commentPlaceholder": "Pridajte poznámku do záznamu",
+    "submit": "Odoslať na kontrolu",
+    "approve": "Schváliť",
+    "reject": "Zamietnuť",
+    "finalize": "Dokončiť",
+    "finalLocked": "Finálna verzia — uzamknutá na úpravy",
+    "editJson": "Upraviť obsah (JSON)",
+    "jsonNote": "Štruktúrovaný obsah vytvára značkový DOCX. Upravte polia nižšie a uložte; značkovanie a rozloženie sa pri exporte použijú automaticky.",
+    "saveContent": "Uložiť obsah",
+    "approvalHistory": "História schválení"
+  },
+  "emails": {
+    "subtitle": "Vytvárajte koncepty listov a e-mailov s AI. Nič sa neodošle, kým človek neklikne na odoslať.",
+    "needIntent": "Zadajte asistentovi predmet alebo zámer, z ktorého má vytvoriť koncept.",
+    "draftReady": "Koncept je pripravený. Pred odoslaním ho skontrolujte a upravte.",
+    "draftFailed": "Vytvorenie konceptu zlyhalo.",
+    "draftSaved": "Koncept uložený.",
+    "saveFailed": "Nepodarilo sa uložiť.",
+    "confirmSend": "Odoslať tento e-mail teraz? Táto akcia sa zaznamená do auditu.",
+    "sent": "E-mail odoslaný.",
+    "sendFailed": "Odoslanie zlyhalo.",
+    "compose": "Napísať",
+    "messages": "Správy",
+    "empty": "Zatiaľ žiadna korešpondencia.",
+    "message": "Správa",
+    "details": "Podrobnosti",
+    "to": "Komu",
+    "cc": "Kópia",
+    "subject": "Predmet",
+    "intent": "Čo má tento e-mail obsahovať? (pre AI)",
+    "intentPlaceholder": "napr. Pozvať náčelníkov na bezpečnostné zhromaždenie v piatok o 10:00",
+    "body": "Text správy",
+    "saveDraft": "Uložiť koncept",
+    "toLabel": "Komu:",
+    "ccLabel": "Kópia:",
+    "subjectLabel": "Predmet:",
+    "aiAssisted": "S podporou AI",
+    "sendNow": "Odoslať teraz",
+    "selectHint": "Vyberte správu alebo napíšte novú."
+  },
+  "knowledge": {
+    "subtitle": "Referenčné materiály, z ktorých môže asistent čerpať — predpisy, šablóny, precedensy.",
+    "added": "Pridané do databázy znalostí.",
+    "addFailed": "Nepodarilo sa pridať.",
+    "chooseFile": "Vyberte súbor na nahranie.",
+    "ocrFailed": "Súbor uložený. OCR nedokázalo prečítať text z tohto súboru (môže byť nízka kvalita). Text môžete vložiť manuálne.",
+    "extracted": "Súbor uložený a extrahovaných {n} znakov textu.",
+    "noText": "Súbor uložený. Z tohto formátu nebolo možné extrahovať žiadny text.",
+    "uploadFailed": "Nahranie zlyhalo.",
+    "confirmRemove": "Odstrániť tento odkaz?",
+    "uploadTitle": "Nahrať dokument",
+    "file": "Súbor",
+    "titleOptional": "Názov (voliteľné)",
+    "titleDefault": "Predvolene názov súboru",
+    "categoryOptional": "Kategória (voliteľné)",
+    "uploadExtract": "Nahrať a extrahovať",
+    "uploadNote": "Text zo súborov Word, PDF, CSV a textových súborov sa extrahuje automaticky. Naskenované PDF a fotografie sa čítajú automaticky pomocou OCR.",
+    "pasteTitle": "Pridať odkaz (vložiť text)",
+    "title": "Názov",
+    "category": "Kategória",
+    "categoryPlaceholder": "napr. Obežníky, Predpisy",
+    "textContent": "Textový obsah",
+    "add": "Pridať",
+    "references": "Odkazy",
+    "empty": "Zatiaľ nič.",
+    "uncategorised": "Nezaradené",
+    "remove": "Odstrániť"
+  },
+  "assistant": {
+    "subtitle": "Zadajte pokyn v prirodzenom jazyku — zhrňte, nájdite, navrhnite alebo vysvetlite v rámci svojho pracovného priestoru.",
+    "failed": "Asistent to nedokázal spracovať.",
+    "instruction": "Pokyn",
+    "placeholder": "napr. Zhrňte rozhodnutia z tohtotýždňového výboru pre bezpečnosť alebo uveďte zoznam memoránd, ktoré stále čakajú na schválenie.",
+    "ask": "Opýtať sa"
+  },
+  "actions": {
+    "subtitle": "Úlohy extrahované zo zápisníc a matíc úloh naprieč reláciami.",
+    "empty": "Nenašli sa žiadne nevyriešené úlohy.",
+    "table": {
+      "action": "Úloha",
+      "responsible": "Zodpovedný",
+      "timeline": "Časový rámec",
+      "source": "Zdroj"
+    }
+  },
+  "paypal": {
+    "title": "Platba PayPal",
+    "subtitle": "Potvrdenie platby predplatného.",
+    "confirming": "Potvrdzuje sa vaša platba PayPal...",
+    "noOrder": "Nebola vrátená žiadna objednávka PayPal.",
+    "confirmed": "Platba potvrdená. Vaše predplatné Worker je teraz aktívne.",
+    "failed": "Platbu PayPal nebolo možné potvrdiť.",
+    "success": "Platba úspešná",
+    "viewSubscription": "Zobraziť predplatné",
+    "errorTitle": "Platbu nebolo možné potvrdiť",
+    "returnToSubscription": "Návrat k predplatnému"
+  },
+  "tenant": {
+    "saved": "Údaje organizácie boli uložené. Zobrazujú sa na každom dokumente, ktorý exportujete.",
+    "saveFailed": "Nepodarilo sa uložiť.",
+    "logoUploaded": "Logo bolo nahrané.",
+    "signatureUploaded": "Podpis bol nahraný.",
+    "uploadFailed": "Nahranie zlyhalo.",
+    "subtitleShort": "Branding pre váš pracovný priestor.",
+    "noOrg": "Tento účet nie je spojený s organizáciou.",
+    "subtitle": "Vaše meno, hlavička, logo a podpis sa zobrazujú na každom dokumente, ktorý vytvoríte.",
+    "letterhead": "Hlavička",
+    "orgName": "Názov organizácie",
+    "line": "Riadok hlavičky {n}",
+    "line1Placeholder": "napr. KRAJSKÝ ÚRAD ...",
+    "line2Placeholder": "napr. Odbor ...",
+    "line3Placeholder": "napr. Oddelenie / kancelária",
+    "saveLetterhead": "Uložiť hlavičku",
+    "blankHint": "Ak chcete použiť názov svojej organizácie, nechajte riadky prázdne.",
+    "logoSignature": "Logo a podpis",
+    "logo": "Erb / logo (PNG alebo JPG)",
+    "signature": "Elektronický podpis (PNG alebo JPG)",
+    "uploaded": "nahrané",
+    "brandingNote": "Logo sa zobrazuje v hlavičke dokumentu a na titulných stranách snímok. Podpis sa umiestňuje na koniec exportovaných dokumentov. Pre najlepšie výsledky použite PNG s priehľadným pozadím."
+  },
+  "users": {
+    "createdTemp": "Používateľ bol vytvorený. Dočasné heslo: {temp} — odovzdajte ho bezpečne; pri prvom prihlásení si ho musí zmeniť.",
+    "created": "Používateľ bol vytvorený.",
+    "createFailed": "Používateľa nebolo možné vytvoriť.",
+    "confirmRemove": "Odstrániť používateľa {name}?",
+    "removeFailed": "Nebolo možné odstrániť.",
+    "subtitle": "Spravujte prístup. Účet superadministrátora tu nie je možné upravovať.",
+    "add": "Pridať používateľa",
+    "create": "Vytvoriť používateľa",
+    "empty": "Žiadni používatelia.",
+    "fields": {
+      "name": "Meno",
+      "email": "E-mail",
+      "role": "Rola",
+      "department": "Oddelenie",
+      "status": "Stav"
+    },
+    "suspend": "Pozastaviť",
+    "reinstate": "Obnoviť",
+    "remove": "Odstrániť"
+  },
+  "audit": {
+    "subtitle": "Každá významná akcia sa zaznamenáva. Záznamy obsahujú iba metadáta a identifikátory — nikdy nie obsah dokumentov ani zvuk.",
+    "empty": "Žiadne záznamy auditu.",
+    "table": {
+      "when": "Kedy",
+      "actor": "Aktér",
+      "action": "Akcia",
+      "resource": "Zdroj"
+    },
+    "system": "systém"
+  },
+  "payments": {
+    "stkSent": "STK push bol odoslaný. Požiadajte platiteľa, aby platbu schválil na svojom telefóne.",
+    "initiateFailed": "Platbu nebolo možné spustiť.",
+    "subtitle": "Transakcie M-Pesa (Daraja STK push) a PayPal.",
+    "requestTitle": "Vyžiadať platbu M-Pesa",
+    "phone": "Telefón (07.. alebo 2547..)",
+    "amountKes": "Suma (KES)",
+    "purpose": "Účel",
+    "sendStk": "Odoslať STK push",
+    "transactions": "Transakcie",
+    "empty": "Žiadne transakcie.",
+    "table": {
+      "provider": "Poskytovateľ",
+      "amount": "Suma",
+      "status": "Stav",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Faktúry a potvrdenia za dokončené platby predplatného Worker.",
+    "loadFailed": "Fakturačné dokumenty nebolo možné načítať.",
+    "downloadFailed": {
+      "invoice": "Faktúru nebolo možné stiahnuť.",
+      "receipt": "Potvrdenie nebolo možné stiahnuť."
+    },
+    "documentsTitle": "Fakturačné dokumenty",
+    "intro": "Stiahnite si faktúry a potvrdenia za dokončené platby predplatného vašej organizácie.",
+    "disclaimer": "Tieto dokumenty zaznamenávajú platby predplatného Worker a sú poskytované na účely platby a preplatenia. Nepredstavujú daňové faktúry KRA/eTIMS, pokiaľ nie sú samostatne vystavené prostredníctvom kompatibilnej integrácie eTIMS.",
+    "invoices": "Faktúry",
+    "noInvoices": "Zatiaľ žiadne faktúry.",
+    "receipts": "Potvrdenia",
+    "noReceipts": "Zatiaľ žiadne potvrdenia.",
+    "downloadPdf": "Stiahnuť PDF",
+    "table": {
+      "invoice": "Faktúra",
+      "receipt": "Potvrdenie",
+      "date": "Dátum",
+      "description": "Popis",
+      "amount": "Suma",
+      "status": "Stav",
+      "provider": "Poskytovateľ",
+      "reference": "Referencia"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Predplatné nebolo možné načítať.",
+    "selectFirst": "Najprv vyberte plán predplatného.",
+    "mpesaSent": "M-Pesa STK push bol odoslaný. Schváľte platbu na svojom telefóne. Vaše predplatné sa aktivuje po potvrdení platby.",
+    "mpesaFailed": "Platbu M-Pesa nebolo možné spustiť.",
+    "noApproveUrl": "URL na schválenie PayPal nebola vrátená.",
+    "paypalFailed": "Platbu PayPal nebolo možné spustiť.",
+    "subtitleShort": "Spravujte svoje predplatné Worker.",
+    "subtitle": "Spravujte svoj plán Worker, skúšobnú verziu a fakturáciu.",
+    "current": "Aktuálne predplatné",
+    "organisation": "Organizácia",
+    "status": "Stav",
+    "plan": "Plán",
+    "freeTrial": "14-dňová bezplatná skúšobná verzia",
+    "trialEnds": "Skúšobná verzia končí",
+    "dayRemaining": "Zostáva {n} deň",
+    "daysRemaining": "Zostáva {n} dní",
+    "renewsEnds": "Obnovuje sa / končí",
+    "chooseTitle": "Vyberte si plán",
+    "chooseSubtitle": "Všetky plány zahŕňajú administratívny pracovný postup Worker. Vaša 14-dňová skúšobná verzia je bezplatná.",
+    "perMonth": "/ mesiac",
+    "planSelected": "{plan} vybraný. Váš plán je uložený a pripravený na platbu.",
+    "selectFailed": "Plán nebolo možné vybrať.",
+    "selected": "Vybrané",
+    "selectPlan": "Vybrať plán",
+    "activateTitle": "Aktivujte svoje predplatné",
+    "selectAbove": "Ak chcete pokračovať k platbe, vyberte plán vyššie.",
+    "stkNote": "Na nižšie uvedené telefónne číslo bude odoslaná požiadavka STK.",
+    "phone": "Telefónne číslo",
+    "phonePlaceholder": "07.. alebo 2547..",
+    "payMpesa": "Zaplatiť cez M-Pesa",
+    "paypalNote": "Pokračujte na PayPal a zaplaťte za vybraný plán v USD.",
+    "payPaypal": "Zaplatiť cez PayPal",
+    "settleNote": "Platené predplatné je možné uhradiť cez M-Pesa alebo PayPal.",
+    "activationNote": "Váš vybraný plán bude aktivovaný po úspešnom potvrdení platby.",
+    "historyNote": "História platieb je dostupná v časti Administrácia → Platby."
+  },
+  "intl": {
+    "territory": "Teritórium",
+    "searchTerritory": "Hľadať teritórium…",
+    "selectTerritory": "Vyberte svoje teritórium",
+    "territoryRequired": "Vyberte prosím svoje teritórium.",
+    "workingLanguage": "Pracovný jazyk",
+    "meetingLanguage": "Jazyk stretnutia",
+    "useDefault": "Predvolené pre organizáciu",
+    "beta": "prepis beta",
+    "unavailable": "bez prepisu"
+  },
+  "generate": {
+    "title": "Vygenerovať dokument z tohto stretnutia",
+    "as": "Vygenerovať ako",
+    "instructions": "Pokyn (voliteľné)",
+    "placeholder": "napr. List generálnemu tajomníkovi so zhrnutím rozhodnutí 2 a 3",
+    "button": "Vygenerovať",
+    "working": "Pripravujeme váš dokument… môže to trvať minútu.",
+    "done": "Dokument bol vytvorený.",
+    "failed": "Dokument sa nepodarilo vygenerovať.",
+    "hint": "Použijú sa označené prepisy v uvedenom poradí. Pred zdieľaním všetko skontrolujete a schválite."
+  },
+  "queue": {
+    "queued": "Zaradené do frontu na prepis. Táto stránka sa aktualizuje automaticky."
+  },
+  "pdfExport": {
+    "button": "Exportovať PDF"
+  },
+  "access": {
+    "readOnly": "Vaša pracovná plocha je iba na čítanie, pretože vaša skúšobná verzia alebo predplatné skončilo. Svoje dokumenty si stále môžete prezerať a exportovať.",
+    "grace": "Vaša skúšobná verzia alebo predplatné skončilo dňa {date}. Zostáva vám {n} dní plného prístupu.",
+    "trialEnding": "Vaša bezplatná skúšobná verzia končí o {n} dní.",
+    "choosePlan": "Vybrať plán"
+  },
+  "sessionLang": {
+    "saved": "Jazyk stretnutia bol uložený. Vzťahuje sa na nahrávky prepisované odteraz.",
+    "failed": "Jazyk stretnutia sa nepodarilo uložiť."
+  },
+  "i18nNote": {
+    "machine": "Strojový preklad"
+  }
+}

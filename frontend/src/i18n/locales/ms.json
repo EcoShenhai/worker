@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Bahasa",
+    "signIn": "Log masuk",
+    "signOut": "Log keluar",
+    "createAccount": "Cipta akaun",
+    "getStarted": "Mulakan",
+    "startFreeTrial": "Mulakan percubaan percuma",
+    "cancel": "Batal",
+    "back": "Kembali",
+    "download": "Muat turun",
+    "viewAll": "Lihat semua"
+  },
+  "brand": {
+    "tagline": "Ruang kerja pentadbiran AI",
+    "secureWorkspace": "Ruang kerja pentadbiran yang selamat",
+    "badge": "Bahasa Inggeris · Audio"
+  },
+  "nav": {
+    "dashboard": "Papan pemuka",
+    "workspace": "Ruang kerja",
+    "sessions": "Sesi & Rakaman",
+    "documents": "Dokumen",
+    "correspondence": "Surat-menyurat",
+    "knowledge": "Pangkalan Pengetahuan",
+    "assistant": "Pembantu",
+    "askWorker": "Tanya Worker",
+    "actions": "Tindakan Tertunggak",
+    "administration": "Pentadbiran",
+    "organisation": "Organisasi",
+    "users": "Pengguna",
+    "audit": "Jejak Audit",
+    "subscription": "Langganan",
+    "payments": "Pembayaran",
+    "billing": "Pengebilan"
+  },
+  "roles": {
+    "viewer": "Pemerhati",
+    "officer": "Pegawai",
+    "admin": "Pentadbir",
+    "superadmin": "Pentadbir super"
+  },
+  "landing": {
+    "hero": {
+      "title": "Tukar apa yang anda sebut menjadi dokumen siap dan difailkan.",
+      "body": "Worker ialah tempat kerja pentadbiran AI untuk organisasi yang menghasilkan dokumen rasmi dalam kuantiti yang banyak daripada mesyuarat, taklimat dan surat-menyurat. Rakam mesyuarat atau imlak, dan Worker akan mentranskripsikannya, merangka minit mesyuarat, memo, surat, laporan dan ringkasan dasar, serta membawanya melalui semakan dan kelulusan — dengan jejak audit yang lengkap.",
+      "badgeRow": "Audio · Bahasa Inggeris · Ruang kerja selamat"
+    },
+    "what": {
+      "title": "Apa yang Worker lakukan",
+      "lead": "Kerja pejabat rutin yang berkaitan dengan mesyuarat dan surat-menyurat — diselesaikan dalam beberapa minit, bukan jam.",
+      "f1": {
+        "title": "Rakam & transkripsi",
+        "body": "Rakam mesyuarat, temu bual, taklimat atau imlak. Audio ditranskripsikan secara setempat dalam bahasa Inggeris."
+      },
+      "f2": {
+        "title": "Draf dengan AI",
+        "body": "Jana minit mesyuarat, memo, surat, laporan, ringkasan dasar dan pekeliling dalam bentuk rasmi yang betul."
+      },
+      "f3": {
+        "title": "Semak & lulus",
+        "body": "Setiap dokumen melalui draf, semakan, kelulusan dan pemuktamadan — manusia kekal mengawal."
+      },
+      "f4": {
+        "title": "Selamat & diaudit",
+        "body": "Akses berasaskan peranan dan jejak audit yang lengkap. Surat-menyurat hanya dihantar oleh individu."
+      }
+    },
+    "start": {
+      "title": "Mula dalam masa seminit",
+      "lead": "Cipta akaun dan mulakan percubaan percuma 14 hari anda.",
+      "s1": {
+        "title": "Cipta akaun anda",
+        "body": "Masukkan nama, e-mel dan kata laluan anda."
+      },
+      "s2": {
+        "title": "Sahkan e-mel anda",
+        "body": "Masukkan kod 6 digit yang kami e-mel kepada anda."
+      },
+      "s3": {
+        "title": "Log masuk dengan selamat",
+        "body": "Setiap log masuk disahkan dengan kod sekali guna yang dihantar melalui e-mel."
+      },
+      "s4": {
+        "title": "Mula bekerja",
+        "body": "Cipta sesi, rakam, dan jana dokumen pertama anda."
+      }
+    },
+    "pricing": {
+      "title": "Harga langganan yang mudah",
+      "lead": "Mulakan dengan percubaan percuma 14 hari. Pilih pelan yang sesuai dengan jumlah kerja pentadbiran yang dihasilkan oleh organisasi anda.",
+      "perMonth": "/bulan",
+      "mostPopular": "PALING POPULAR",
+      "starter": {
+        "name": "Permulaan",
+        "desc": "Untuk pasukan kecil yang baru bermula dengan kerja pentadbiran berbantukan AI."
+      },
+      "professional": {
+        "name": "Profesional",
+        "desc": "Untuk organisasi dengan penghasilan dokumen yang kerap dan banyak."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Untuk organisasi lebih besar dengan beban kerja pentadbiran yang besar."
+      },
+      "paymentsNote": "M-Pesa dan PayPal disokong untuk langganan berbayar."
+    },
+    "final": {
+      "title": "Bersedia mencuba Worker?",
+      "cta": "Cipta akaun anda"
+    }
+  },
+  "auth": {
+    "email": "E-mel",
+    "password": "Kata laluan",
+    "fullName": "Nama penuh",
+    "confirmPassword": "Sahkan kata laluan",
+    "currentPassword": "Kata laluan semasa",
+    "newPassword": "Kata laluan baharu",
+    "confirmNewPassword": "Sahkan kata laluan baharu",
+    "code6": "Kod 6 digit",
+    "signInFailed": "Log masuk gagal. Sila semak kelayakan anda.",
+    "forgotPassword": "Lupa kata laluan?",
+    "mfaNotice": "Kod sekali guna dihantar melalui e-mel untuk mengesahkan setiap log masuk.",
+    "createYourAccount": "Cipta akaun anda",
+    "pwMin": "Kata laluan mesti sekurang-kurangnya {n} aksara.",
+    "newPwMin": "Kata laluan baharu mesti sekurang-kurangnya {n} aksara.",
+    "pwMismatch": "Kata laluan tidak sepadan.",
+    "createFailed": "Tidak dapat mencipta akaun.",
+    "haveAccount": "Sudah mempunyai akaun?",
+    "startAtSignIn": "Mulakan di log masuk atau pendaftaran.",
+    "goToSignIn": "Pergi ke log masuk",
+    "invalidCode": "Kod tidak sah atau telah tamat tempoh.",
+    "codeSent": "Kod baharu telah dihantar.",
+    "resendFailed": "Tidak dapat menghantar semula.",
+    "verifyEmailTitle": "Sahkan e-mel anda",
+    "verifyEmailTo": "Sahkan e-mel anda — {email}",
+    "verify": "Sahkan",
+    "resendCode": "Hantar semula kod",
+    "signInAgain": "Sila log masuk semula.",
+    "mfaPrompt": "Masukkan kod log masuk yang kami e-melkan",
+    "mfaPromptTo": "Masukkan kod log masuk yang kami e-melkan ke {email}",
+    "verifySignIn": "Sahkan & log masuk",
+    "requestFailed": "Tidak dapat memproses permintaan.",
+    "resetTitle": "Tetapkan semula kata laluan anda",
+    "sendResetCode": "Hantar kod tetapan semula",
+    "backToSignIn": "Kembali ke log masuk",
+    "resetPrompt": "Masukkan kod yang kami e-melkan dan pilih kata laluan baharu",
+    "resetPassword": "Tetapkan semula kata laluan",
+    "setNewPassword": "Tetapkan kata laluan baharu",
+    "forcedChange": "Untuk keselamatan, tetapkan kata laluan anda sendiri sebelum meneruskan.",
+    "updateAccountPassword": "Kemas kini kata laluan akaun anda.",
+    "changeFailed": "Tidak dapat menukar kata laluan.",
+    "updatePassword": "Kemas kini kata laluan",
+    "signOutInstead": "Log keluar sebaliknya"
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemui",
+    "subtitle": "Halaman itu tidak wujud dalam ruang kerja ini.",
+    "back": "Kembali ke papan pemuka"
+  },
+  "status": {
+    "draft": "draf",
+    "in_review": "dalam semakan",
+    "approved": "diluluskan",
+    "final": "muktamad",
+    "archived": "diarkibkan",
+    "open": "terbuka",
+    "processing": "memproses",
+    "ready": "sedia",
+    "pending": "menunggu",
+    "transcribing": "mentranskripsi",
+    "transcribed": "ditranskripsi",
+    "failed": "gagal",
+    "sent": "dihantar",
+    "received": "diterima",
+    "completed": "selesai",
+    "cancelled": "dibatalkan",
+    "active": "aktif",
+    "suspended": "digantung"
+  },
+  "kind": {
+    "meeting": "mesyuarat",
+    "interview": "temu bual",
+    "briefing": "taklimat",
+    "dictation": "dikte",
+    "field_report": "laporan lapangan",
+    "consultation": "perundingan",
+    "other": "lain-lain"
+  },
+  "classification": {
+    "unclassified": "tidak terkelas",
+    "internal": "dalaman",
+    "confidential": "sulit",
+    "restricted": "terhad"
+  },
+  "dashboard": {
+    "welcome": "Selamat datang, {name}",
+    "defaultName": "Pegawai",
+    "subtitle": "Ruang kerja pentadbiran anda — rakam, rangka, semak dan failkan.",
+    "stats": {
+      "sessions": "Sesi",
+      "documents": "Dokumen",
+      "awaitingReview": "Menunggu semakan",
+      "outstandingActions": "Tindakan belum selesai"
+    },
+    "recentSessions": "Sesi terkini",
+    "documentsToAction": "Dokumen untuk tindakan",
+    "noSessions": "Belum ada sesi.",
+    "nothingToAction": "Tiada apa-apa yang memerlukan perhatian anda."
+  },
+  "sessions": {
+    "subtitle": "Setiap sesi ialah fail kes — audio, transkrip dan dokumen yang dihasilkan daripadanya.",
+    "new": "Sesi baharu",
+    "createFailed": "Tidak dapat mencipta sesi.",
+    "titlePlaceholder": "cth. Jawatankuasa Keselamatan Daerah — Taklimat Mingguan",
+    "create": "Cipta sesi",
+    "empty": "Belum ada sesi. Cipta satu untuk mula merakam.",
+    "fields": {
+      "title": "Tajuk",
+      "kind": "Jenis",
+      "date": "Tarikh",
+      "classification": "Klasifikasi",
+      "status": "Status",
+      "department": "Jabatan",
+      "location": "Lokasi"
+    }
+  },
+  "session": {
+    "loadFailed": "Tidak dapat memuatkan sesi.",
+    "micDenied": "Akses mikrofon ditolak atau tidak tersedia.",
+    "audioSaved": "Audio disimpan ke sesi.",
+    "uploadFailed": "Muat naik gagal.",
+    "transcribing": "Mentranskripsi secara setempat — ini mungkin mengambil masa untuk audio yang panjang.",
+    "transcribed": "Transkripsi selesai.",
+    "transcribeFailed": "Transkripsi gagal. Sila pastikan perkhidmatan STT sedang berjalan.",
+    "updateFailed": "Tidak dapat mengemas kini.",
+    "draftingMinutes": "Menyediakan draf minit daripada transkrip…",
+    "minutesCreated": "Draf minit telah disediakan.",
+    "minutesFailed": "Tidak dapat menjana minit.",
+    "notFound": "Sesi tidak ditemui.",
+    "noDate": "tiada tarikh",
+    "noLocation": "tiada lokasi",
+    "generateMinutes": "Jana minit",
+    "captureAudio": "Rakam audio",
+    "stopSave": "Henti & simpan",
+    "startRecording": "Mula merakam",
+    "or": "atau",
+    "uploadAudio": "Muat naik audio",
+    "audioNote": "Audio kekal pada hos. Transkripsi dijalankan secara setempat dalam bahasa Inggeris. Minit menggabungkan setiap klip dalam sesi ini, mengikut urutan.",
+    "documentsFrom": "Dokumen daripada sesi ini",
+    "noDocuments": "Belum ada dokumen. Transkripsikan klip, kemudian jana minit.",
+    "recordingsTitle": "Rakaman & transkrip",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Belum ada rakaman. Rakam atau muat naik audio di atas.",
+    "includeTitle": "Sertakan klip ini semasa menjana minit",
+    "inMinutes": "Dalam minit",
+    "transcribe": "Transkripsikan",
+    "transcribeHint": "Transkripsikan klip ini untuk melihat dan menyunting transkripnya di sini.",
+    "audioLoadFailed": "Tidak dapat memuatkan audio.",
+    "loadAudio": "Muatkan audio",
+    "words": "{n} patah perkataan",
+    "verified": "disahkan",
+    "editVerify": "Sunting & sahkan",
+    "saveVerified": "Simpan & tandakan disahkan",
+    "saveDraft": "Simpan draf",
+    "emptyTranscript": "Transkrip kosong."
+  },
+  "docType": {
+    "minutes": "minit mesyuarat",
+    "memo": "memo",
+    "letter": "surat",
+    "report": "laporan",
+    "policy_brief": "ringkasan dasar",
+    "briefing_note": "nota taklimat",
+    "concept_note": "nota konsep",
+    "circular": "pekeliling",
+    "action_matrix": "matriks tindakan",
+    "speech": "ucapan"
+  },
+  "approval": {
+    "submit": "dihantar",
+    "submitted": "dihantar",
+    "approve": "diluluskan",
+    "approved": "diluluskan",
+    "reject": "ditolak",
+    "rejected": "ditolak",
+    "finalize": "dimuktamadkan",
+    "finalized": "dimuktamadkan"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memo Dalaman",
+      "desc": "Memorandum dalaman standard dengan Kepada / Daripada / Perkara."
+    },
+    "letter-official": {
+      "name": "Surat Rasmi",
+      "desc": "Surat keluar rasmi pada kepala surat pejabat."
+    },
+    "circular-general": {
+      "name": "Pekeliling",
+      "desc": "Notis yang diedarkan kepada banyak penerima."
+    },
+    "report-standard": {
+      "name": "Laporan",
+      "desc": "Laporan umum dengan ringkasan, bahagian dan cadangan."
+    },
+    "policy-brief": {
+      "name": "Ringkasan Dasar",
+      "desc": "Ringkasan padat untuk pembuat keputusan."
+    },
+    "briefing-note": {
+      "name": "Nota Taklimat",
+      "desc": "Nota ringkas untuk taklimat kepada prinsipal sebelum sesuatu urusan."
+    },
+    "concept-note": {
+      "name": "Nota Konsep",
+      "desc": "Garis kasar program atau aktiviti yang dicadangkan."
+    },
+    "minutes-blank": {
+      "name": "Minit Mesyuarat (kosong)",
+      "desc": "Struktur minit kosong untuk diisi secara manual."
+    },
+    "speech-remarks": {
+      "name": "Ucapan / Komen",
+      "desc": "Komen rasmi untuk sesuatu acara."
+    }
+  },
+  "documents": {
+    "subtitle": "Minit, memo, surat, laporan dan ringkasan — dirangka dengan AI, diluluskan oleh manusia.",
+    "startFromTemplate": "Mulakan daripada templat",
+    "fromSpreadsheet": "Laporan daripada hamparan",
+    "draftWithAI": "Rangka dengan AI",
+    "templateTitle": "Mulakan daripada templat",
+    "allTypes": "Semua jenis",
+    "orgTemplates": "Templat organisasi anda",
+    "savedByOrg": "Disimpan oleh organisasi anda",
+    "useTemplate": "Guna templat ini",
+    "generalTemplates": "Templat umum",
+    "spreadsheetFailed": "Tidak dapat membina laporan daripada hamparan tersebut.",
+    "templateFailed": "Tidak dapat mencipta daripada templat.",
+    "draftFailed": "Tidak dapat merangka dokumen.",
+    "fields": {
+      "type": "Jenis dokumen",
+      "title": "Tajuk",
+      "recipient": "Penerima (pilihan)",
+      "department": "Jabatan (pilihan)",
+      "brief": "Arahan / ringkasan"
+    },
+    "briefPlaceholder": "Huraikan tujuan, perkara utama, dan sebarang fakta untuk disertakan. Pembantu akan merangka dokumen rasmi yang boleh anda sunting dan luluskan.",
+    "generateDraft": "Jana draf",
+    "empty": "Tiada dokumen lagi.",
+    "table": {
+      "title": "Tajuk",
+      "type": "Jenis",
+      "ref": "Ruj.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Tidak dapat memuatkan dokumen.",
+    "invalidJson": "Kandungan bukan JSON yang sah.",
+    "saved": "Disimpan. Versi ditambah.",
+    "saveFailed": "Gagal menyimpan.",
+    "done": {
+      "submit": "Dokumen dihantar untuk semakan.",
+      "approve": "Dokumen diluluskan.",
+      "reject": "Dokumen ditolak.",
+      "finalize": "Dokumen dimuktamadkan."
+    },
+    "failed": {
+      "submit": "Tidak dapat menghantar.",
+      "approve": "Tidak dapat meluluskan.",
+      "reject": "Tidak dapat menolak.",
+      "finalize": "Tidak dapat memuktamadkan."
+    },
+    "templateName": "Nama templat",
+    "templateDefault": "Templat {title}",
+    "templateSaved": "Disimpan sebagai templat boleh guna semula untuk organisasi anda.",
+    "templateSaveFailed": "Tidak dapat menyimpan templat.",
+    "exportFailed": "Eksport gagal.",
+    "notFound": "Dokumen tidak ditemui.",
+    "exportDocx": "Eksport DOCX",
+    "exportPptx": "Eksport PPTX",
+    "exportXlsx": "Eksport XLSX",
+    "saveAsTemplate": "Simpan sebagai templat",
+    "content": "Kandungan",
+    "workflow": "Aliran kerja",
+    "aiAssisted": "Draf bantuan AI",
+    "auditChain": "Rantaian audit: audio → transkrip → draf AI → suntingan manusia → kelulusan → muktamad. Setiap langkah direkodkan.",
+    "comment": "Komen (pilihan)",
+    "commentPlaceholder": "Tambah nota untuk rekod",
+    "submit": "Hantar untuk semakan",
+    "approve": "Lulus",
+    "reject": "Tolak",
+    "finalize": "Muktamadkan",
+    "finalLocked": "Muktamad — dikunci untuk penyuntingan",
+    "editJson": "Sunting kandungan (JSON)",
+    "jsonNote": "Kandungan berstruktur memacu DOCX berjenama. Sunting medan di bawah dan simpan; penjenamaan dan susun atur digunakan secara automatik semasa eksport.",
+    "saveContent": "Simpan kandungan",
+    "approvalHistory": "Sejarah kelulusan"
+  },
+  "emails": {
+    "subtitle": "Draf surat dan e-mel dengan AI. Tiada apa-apa dihantar sehingga seseorang mengklik hantar.",
+    "needIntent": "Berikan pembantu subjek atau niat untuk draf.",
+    "draftReady": "Draf sedia. Semak dan sunting sebelum menghantar.",
+    "draftFailed": "Draf gagal.",
+    "draftSaved": "Draf disimpan.",
+    "saveFailed": "Tidak dapat menyimpan.",
+    "confirmSend": "Hantar e-mel ini sekarang? Tindakan ini direkodkan dalam jejak audit.",
+    "sent": "E-mel dihantar.",
+    "sendFailed": "Penghantaran gagal.",
+    "compose": "Gubah",
+    "messages": "Mesej",
+    "empty": "Tiada surat-menyurat lagi.",
+    "message": "Mesej",
+    "details": "Butiran",
+    "to": "Kepada",
+    "cc": "Cc",
+    "subject": "Subjek",
+    "intent": "Apa yang patut dinyatakan? (untuk AI)",
+    "intentPlaceholder": "cth. Jemput ketua kampung ke baraza keselamatan pada Jumaat 10 pagi",
+    "body": "Isi kandungan",
+    "saveDraft": "Simpan draf",
+    "toLabel": "Kepada:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Subjek:",
+    "aiAssisted": "Dibantu AI",
+    "sendNow": "Hantar sekarang",
+    "selectHint": "Pilih mesej atau karang mesej baharu."
+  },
+  "knowledge": {
+    "subtitle": "Bahan rujukan yang boleh digunakan oleh pembantu — dasar, templat, preseden.",
+    "added": "Ditambah ke pangkalan pengetahuan.",
+    "addFailed": "Tidak dapat menambah.",
+    "chooseFile": "Pilih fail untuk dimuat naik.",
+    "ocrFailed": "Fail disimpan. OCR tidak dapat membaca teks daripada fail ini (mungkin kualitinya rendah). Anda boleh tampal teks secara manual.",
+    "extracted": "Fail disimpan dan {n} aksara teks diekstrak.",
+    "noText": "Fail disimpan. Tiada teks dapat diekstrak daripada format ini.",
+    "uploadFailed": "Muat naik gagal.",
+    "confirmRemove": "Buang rujukan ini?",
+    "uploadTitle": "Muat naik dokumen",
+    "file": "Fail",
+    "titleOptional": "Tajuk (pilihan)",
+    "titleDefault": "Lalai kepada nama fail",
+    "categoryOptional": "Kategori (pilihan)",
+    "uploadExtract": "Muat naik & ekstrak",
+    "uploadNote": "Fail Word, PDF, CSV dan teks akan diekstrak teksnya secara automatik. PDF yang diimbas dan foto dibaca secara automatik dengan OCR.",
+    "pasteTitle": "Tambah rujukan (tampal teks)",
+    "title": "Tajuk",
+    "category": "Kategori",
+    "categoryPlaceholder": "cth. Pekeliling, Dasar",
+    "textContent": "Kandungan teks",
+    "add": "Tambah",
+    "references": "Rujukan",
+    "empty": "Tiada apa-apa lagi.",
+    "uncategorised": "Tidak dikategorikan",
+    "remove": "Buang"
+  },
+  "assistant": {
+    "subtitle": "Berikan arahan dalam bahasa Melayu mudah — ringkaskan, cari, karang atau jelaskan merentas ruang kerja anda.",
+    "failed": "Pembantu tidak dapat memproses perkara itu.",
+    "instruction": "Arahan",
+    "placeholder": "cth. Ringkaskan keputusan daripada mesyuarat jawatankuasa keselamatan minggu ini, atau senaraikan memo yang masih menunggu kelulusan.",
+    "ask": "Tanya"
+  },
+  "actions": {
+    "subtitle": "Item tindakan yang diekstrak daripada minit dan matriks tindakan merentas sesi.",
+    "empty": "Tiada tindakan tertunggak ditemui.",
+    "table": {
+      "action": "Tindakan",
+      "responsible": "Bertanggungjawab",
+      "timeline": "Garis masa",
+      "source": "Sumber"
+    }
+  },
+  "paypal": {
+    "title": "Pembayaran PayPal",
+    "subtitle": "Pengesahan pembayaran langganan.",
+    "confirming": "Mengesahkan pembayaran PayPal anda...",
+    "noOrder": "Tiada pesanan PayPal dikembalikan.",
+    "confirmed": "Pembayaran disahkan. Langganan Worker anda kini aktif.",
+    "failed": "Pembayaran PayPal tidak dapat disahkan.",
+    "success": "Pembayaran berjaya",
+    "viewSubscription": "Lihat langganan",
+    "errorTitle": "Pembayaran tidak dapat disahkan",
+    "returnToSubscription": "Kembali ke langganan"
+  },
+  "tenant": {
+    "saved": "Butiran organisasi disimpan. Ia dipaparkan pada setiap dokumen yang anda eksport.",
+    "saveFailed": "Tidak dapat menyimpan.",
+    "logoUploaded": "Logo dimuat naik.",
+    "signatureUploaded": "Tandatangan dimuat naik.",
+    "uploadFailed": "Muat naik gagal.",
+    "subtitleShort": "Penjenamaan untuk ruang kerja anda.",
+    "noOrg": "Akaun ini tidak dikaitkan dengan mana-mana organisasi.",
+    "subtitle": "Nama, kepala surat, logo dan tandatangan anda dipaparkan pada setiap dokumen yang anda jana.",
+    "letterhead": "Kepala surat",
+    "orgName": "Nama organisasi",
+    "line": "Baris kepala surat {n}",
+    "line1Placeholder": "cth. KERAJAAN NEGERI ...",
+    "line2Placeholder": "cth. Jabatan ...",
+    "line3Placeholder": "cth. Unit / Pejabat",
+    "saveLetterhead": "Simpan kepala surat",
+    "blankHint": "Biarkan baris kosong untuk menggunakan nama organisasi anda.",
+    "logoSignature": "Logo & tandatangan",
+    "logo": "Jata / logo (PNG atau JPG)",
+    "signature": "Tandatangan elektronik (PNG atau JPG)",
+    "uploaded": "dimuat naik",
+    "brandingNote": "Logo dipaparkan dalam pengepala dokumen dan pada halaman tajuk slaid. Tandatangan diletakkan di penghujung dokumen yang dieksport. Gunakan PNG latar belakang lutsinar untuk hasil terbaik."
+  },
+  "users": {
+    "createdTemp": "Pengguna dicipta. Kata laluan sementara: {temp} — kongsi secara selamat; mereka mesti menukarnya semasa log masuk pertama.",
+    "created": "Pengguna dicipta.",
+    "createFailed": "Tidak dapat mencipta pengguna.",
+    "confirmRemove": "Buang {name}?",
+    "removeFailed": "Tidak dapat membuang.",
+    "subtitle": "Urus akses. Akaun superadmin tidak boleh diubah di sini.",
+    "add": "Tambah pengguna",
+    "create": "Cipta pengguna",
+    "empty": "Tiada pengguna.",
+    "fields": {
+      "name": "Nama",
+      "email": "E-mel",
+      "role": "Peranan",
+      "department": "Jabatan",
+      "status": "Status"
+    },
+    "suspend": "Gantung",
+    "reinstate": "Pulihkan",
+    "remove": "Buang"
+  },
+  "audit": {
+    "subtitle": "Setiap tindakan penting direkodkan. Log hanya menyimpan metadata dan pengecam — tidak pernah kandungan dokumen atau audio.",
+    "empty": "Tiada entri audit.",
+    "table": {
+      "when": "Bila",
+      "actor": "Pelaku",
+      "action": "Tindakan",
+      "resource": "Sumber"
+    },
+    "system": "sistem"
+  },
+  "payments": {
+    "stkSent": "STK push dihantar. Minta pembayar meluluskannya pada telefon mereka.",
+    "initiateFailed": "Tidak dapat memulakan pembayaran.",
+    "subtitle": "Transaksi M-Pesa (Daraja STK push) dan PayPal.",
+    "requestTitle": "Minta pembayaran M-Pesa",
+    "phone": "Telefon (07.. atau 2547..)",
+    "amountKes": "Jumlah (KES)",
+    "purpose": "Tujuan",
+    "sendStk": "Hantar STK push",
+    "transactions": "Transaksi",
+    "empty": "Tiada transaksi.",
+    "table": {
+      "provider": "Penyedia",
+      "amount": "Jumlah",
+      "status": "Status",
+      "ref": "Ruj."
+    }
+  },
+  "billing": {
+    "subtitle": "Invois dan resit untuk pembayaran langganan Worker yang telah selesai.",
+    "loadFailed": "Tidak dapat memuatkan dokumen pengebilan.",
+    "downloadFailed": {
+      "invoice": "Gagal memuat turun invois.",
+      "receipt": "Gagal memuat turun resit."
+    },
+    "documentsTitle": "Dokumen pengebilan",
+    "intro": "Muat turun invois dan resit untuk pembayaran langganan organisasi anda yang telah selesai.",
+    "disclaimer": "Dokumen ini merekodkan pembayaran langganan Worker dan disediakan untuk tujuan pembayaran dan penuntutan semula. Ia tidak diwakilkan sebagai invois cukai KRA/eTIMS melainkan dikeluarkan secara berasingan melalui integrasi eTIMS yang mematuhi piawaian.",
+    "invoices": "Invois",
+    "noInvoices": "Tiada invois lagi.",
+    "receipts": "Resit",
+    "noReceipts": "Tiada resit lagi.",
+    "downloadPdf": "Muat turun PDF",
+    "table": {
+      "invoice": "Invois",
+      "receipt": "Resit",
+      "date": "Tarikh",
+      "description": "Keterangan",
+      "amount": "Jumlah",
+      "status": "Status",
+      "provider": "Penyedia",
+      "reference": "Rujukan"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Gagal memuatkan langganan.",
+    "selectFirst": "Pilih pelan langganan terlebih dahulu.",
+    "mpesaSent": "M-Pesa STK push dihantar. Luluskan pembayaran pada telefon anda. Langganan anda akan diaktifkan selepas pengesahan pembayaran.",
+    "mpesaFailed": "Gagal memulakan pembayaran M-Pesa.",
+    "noApproveUrl": "URL kelulusan PayPal tidak dikembalikan.",
+    "paypalFailed": "Gagal memulakan pembayaran PayPal.",
+    "subtitleShort": "Urus langganan Worker anda.",
+    "subtitle": "Urus pelan, percubaan dan pengebilan Worker anda.",
+    "current": "Langganan semasa",
+    "organisation": "Organisasi",
+    "status": "Status",
+    "plan": "Pelan",
+    "freeTrial": "Percubaan percuma 14 hari",
+    "trialEnds": "Percubaan tamat",
+    "dayRemaining": "{n} hari lagi",
+    "daysRemaining": "{n} hari lagi",
+    "renewsEnds": "Diperbaharui / tamat",
+    "chooseTitle": "Pilih pelan",
+    "chooseSubtitle": "Semua pelan termasuk aliran kerja pentadbiran Worker. Percubaan 14 hari anda adalah percuma.",
+    "perMonth": "/ bulan",
+    "planSelected": "{plan} dipilih. Pelan anda disimpan dan sedia untuk pembayaran.",
+    "selectFailed": "Gagal memilih pelan.",
+    "selected": "Dipilih",
+    "selectPlan": "Pilih pelan",
+    "activateTitle": "Aktifkan langganan anda",
+    "selectAbove": "Pilih pelan di atas untuk terus ke pembayaran.",
+    "stkNote": "STK push akan dihantar ke nombor telefon di bawah.",
+    "phone": "Nombor telefon",
+    "phonePlaceholder": "07.. atau 2547..",
+    "payMpesa": "Bayar dengan M-Pesa",
+    "paypalNote": "Teruskan ke PayPal untuk membayar pelan yang dipilih dalam USD.",
+    "payPaypal": "Bayar dengan PayPal",
+    "settleNote": "Langganan berbayar boleh diselesaikan melalui M-Pesa atau PayPal.",
+    "activationNote": "Pelan yang dipilih akan diaktifkan selepas pengesahan pembayaran berjaya.",
+    "historyNote": "Sejarah pembayaran tersedia di bawah Pentadbiran → Pembayaran."
+  },
+  "intl": {
+    "territory": "Wilayah",
+    "searchTerritory": "Cari wilayah…",
+    "selectTerritory": "Pilih wilayah anda",
+    "territoryRequired": "Sila pilih wilayah anda.",
+    "workingLanguage": "Bahasa kerja",
+    "meetingLanguage": "Bahasa mesyuarat",
+    "useDefault": "Lalai organisasi",
+    "beta": "transkripsi beta",
+    "unavailable": "tiada transkripsi"
+  },
+  "generate": {
+    "title": "Jana dokumen daripada sesi ini",
+    "as": "Jana sebagai",
+    "instructions": "Arahan (pilihan)",
+    "placeholder": "cth. Surat kepada Setiausaha Tetap yang merumuskan keputusan 2 dan 3",
+    "button": "Jana",
+    "working": "Menyediakan dokumen anda… ini boleh mengambil masa seminit.",
+    "done": "Dokumen dicipta.",
+    "failed": "Tidak dapat menjana dokumen.",
+    "hint": "Menggunakan transkrip yang ditanda untuk disertakan, mengikut urutan. Anda semak dan luluskan sebelum apa-apa dikongsi."
+  },
+  "queue": {
+    "queued": "Dalam baris gilir untuk transkripsi. Halaman ini dikemas kini secara automatik."
+  },
+  "pdfExport": {
+    "button": "Eksport PDF"
+  },
+  "access": {
+    "readOnly": "Ruang kerja anda adalah baca sahaja kerana percubaan atau langganan anda telah tamat. Anda masih boleh melihat dan mengeksport dokumen anda.",
+    "grace": "Percubaan atau langganan anda tamat pada {date}. Anda mempunyai {n} hari akses penuh lagi.",
+    "trialEnding": "Percubaan percuma anda tamat dalam {n} hari.",
+    "choosePlan": "Pilih pelan"
+  },
+  "sessionLang": {
+    "saved": "Bahasa mesyuarat disimpan. Ia terpakai untuk rakaman yang ditranskripsikan mulai sekarang.",
+    "failed": "Tidak dapat menyimpan bahasa mesyuarat."
+  },
+  "i18nNote": {
+    "machine": "Terjemahan mesin"
+  }
+}

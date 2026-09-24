@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Limbă",
+    "signIn": "Autentificare",
+    "signOut": "Deconectare",
+    "createAccount": "Creați un cont",
+    "getStarted": "Începeți",
+    "startFreeTrial": "Începeți perioada de probă gratuită",
+    "cancel": "Anulare",
+    "back": "Înapoi",
+    "download": "Descărcare",
+    "viewAll": "Vedeți tot"
+  },
+  "brand": {
+    "tagline": "Spațiu de lucru administrativ cu IA",
+    "secureWorkspace": "Spațiu de lucru administrativ securizat",
+    "badge": "Engleză · Audio"
+  },
+  "nav": {
+    "dashboard": "Panou de control",
+    "workspace": "Spațiu de lucru",
+    "sessions": "Sesiuni și înregistrări",
+    "documents": "Documente",
+    "correspondence": "Corespondență",
+    "knowledge": "Bază de cunoștințe",
+    "assistant": "Asistent",
+    "askWorker": "Întrebați Worker",
+    "actions": "Acțiuni în așteptare",
+    "administration": "Administrare",
+    "organisation": "Organizație",
+    "users": "Utilizatori",
+    "audit": "Jurnal de audit",
+    "subscription": "Abonament",
+    "payments": "Plăți",
+    "billing": "Facturare"
+  },
+  "roles": {
+    "viewer": "Vizualizator",
+    "officer": "Ofițer",
+    "admin": "Administrator",
+    "superadmin": "Super administrator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Transformați ceea ce spuneți în documente finalizate și arhivate.",
+      "body": "Worker este un spațiu de lucru administrativ cu IA pentru organizațiile care produc cantități mari de documente formale din ședințe, informări și corespondență. Înregistrați o ședință sau dictați, iar Worker o transcrie, redactează procese-verbale, note, scrisori, rapoarte și sinteze de politici și le supune revizuirii și aprobării — cu un jurnal de audit complet.",
+      "badgeRow": "Audio · Engleză · Spațiu de lucru securizat"
+    },
+    "what": {
+      "title": "Ce face Worker",
+      "lead": "Munca de birou de rutină care însoțește ședințele și corespondența — rezolvată în câteva minute, nu în ore.",
+      "f1": {
+        "title": "Înregistrare și transcriere",
+        "body": "Capturați ședințe, interviuri, informări sau dictare. Audio-ul este transcris local în limba engleză."
+      },
+      "f2": {
+        "title": "Redactați cu AI",
+        "body": "Generați procese-verbale, note, scrisori, rapoarte, sinteze de politici și circulare în forma oficială corectă."
+      },
+      "f3": {
+        "title": "Revizuire și aprobare",
+        "body": "Fiecare document trece prin ciornă, revizuire, aprobare și finalizare — oamenii rămân în control."
+      },
+      "f4": {
+        "title": "Securizat și auditat",
+        "body": "Acces bazat pe roluri și o pistă de audit completă. Corespondența este trimisă întotdeauna doar de o persoană."
+      }
+    },
+    "start": {
+      "title": "Începerea durează un minut",
+      "lead": "Creați un cont și începeți perioada de probă gratuită de 14 zile.",
+      "s1": {
+        "title": "Creați-vă contul",
+        "body": "Introduceți numele, adresa de email și o parolă."
+      },
+      "s2": {
+        "title": "Verificați-vă adresa de email",
+        "body": "Introduceți codul din 6 cifre pe care vi-l trimitem prin email."
+      },
+      "s3": {
+        "title": "Conectați-vă în siguranță",
+        "body": "Fiecare conectare este confirmată printr-un cod unic trimis prin email."
+      },
+      "s4": {
+        "title": "Începeți lucrul",
+        "body": "Creați o sesiune, înregistrați și generați primul document."
+      }
+    },
+    "pricing": {
+      "title": "Prețuri simple prin abonament",
+      "lead": "Începeți cu o perioadă de probă gratuită de 14 zile. Alegeți planul potrivit volumului de muncă administrativă pe care îl produce organizația dumneavoastră.",
+      "perMonth": "/lună",
+      "mostPopular": "CEL MAI POPULAR",
+      "starter": {
+        "name": "Starter",
+        "desc": "Pentru echipele mici care încep lucrul administrativ asistat de AI."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Pentru organizațiile cu producție regulată și volum mare de documente."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Pentru organizațiile mai mari cu volume substanțiale de muncă administrativă."
+      },
+      "paymentsNote": "M-Pesa și PayPal sunt acceptate pentru abonamentele plătite."
+    },
+    "final": {
+      "title": "Sunteți gata să încercați Worker?",
+      "cta": "Creați-vă contul"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Parolă",
+    "fullName": "Nume complet",
+    "confirmPassword": "Confirmați parola",
+    "currentPassword": "Parola actuală",
+    "newPassword": "Parolă nouă",
+    "confirmNewPassword": "Confirmați parola nouă",
+    "code6": "Cod din 6 cifre",
+    "signInFailed": "Conectarea a eșuat. Verificați datele de autentificare.",
+    "forgotPassword": "Ați uitat parola?",
+    "mfaNotice": "Un cod unic este trimis prin email pentru a confirma fiecare conectare.",
+    "createYourAccount": "Creați-vă contul",
+    "pwMin": "Parola trebuie să aibă cel puțin {n} caractere.",
+    "newPwMin": "Parola nouă trebuie să aibă cel puțin {n} caractere.",
+    "pwMismatch": "Parolele nu se potrivesc.",
+    "createFailed": "Contul nu a putut fi creat.",
+    "haveAccount": "Aveți deja un cont?",
+    "startAtSignIn": "Începeți cu autentificarea sau înregistrarea.",
+    "goToSignIn": "Mergeți la autentificare",
+    "invalidCode": "Cod invalid sau expirat.",
+    "codeSent": "Un cod nou a fost trimis.",
+    "resendFailed": "Retrimiterea nu a reușit.",
+    "verifyEmailTitle": "Verificați-vă adresa de e-mail",
+    "verifyEmailTo": "Verificați-vă adresa de e-mail — {email}",
+    "verify": "Verificați",
+    "resendCode": "Retrimiteți codul",
+    "signInAgain": "Vă rugăm să vă autentificați din nou.",
+    "mfaPrompt": "Introduceți codul de autentificare trimis prin e-mail",
+    "mfaPromptTo": "Introduceți codul de autentificare trimis prin e-mail la {email}",
+    "verifySignIn": "Verificați și autentificați-vă",
+    "requestFailed": "Cererea nu a putut fi procesată.",
+    "resetTitle": "Resetați-vă parola",
+    "sendResetCode": "Trimiteți codul de resetare",
+    "backToSignIn": "Înapoi la autentificare",
+    "resetPrompt": "Introduceți codul trimis prin e-mail și alegeți o parolă nouă",
+    "resetPassword": "Resetați parola",
+    "setNewPassword": "Setați o parolă nouă",
+    "forcedChange": "Pentru securitate, setați-vă propria parolă înainte de a continua.",
+    "updateAccountPassword": "Actualizați parola contului dvs.",
+    "changeFailed": "Parola nu a putut fi schimbată.",
+    "updatePassword": "Actualizați parola",
+    "signOutInstead": "Deconectați-vă în schimb"
+  },
+  "notFound": {
+    "title": "Pagina nu a fost găsită",
+    "subtitle": "Această pagină nu există în acest spațiu de lucru.",
+    "back": "Înapoi la panoul de control"
+  },
+  "status": {
+    "draft": "ciornă",
+    "in_review": "în verificare",
+    "approved": "aprobat",
+    "final": "final",
+    "archived": "arhivat",
+    "open": "deschis",
+    "processing": "se procesează",
+    "ready": "pregătit",
+    "pending": "în așteptare",
+    "transcribing": "se transcrie",
+    "transcribed": "transcris",
+    "failed": "eșuat",
+    "sent": "trimis",
+    "received": "primit",
+    "completed": "finalizat",
+    "cancelled": "anulat",
+    "active": "activ",
+    "suspended": "suspendat"
+  },
+  "kind": {
+    "meeting": "ședință",
+    "interview": "interviu",
+    "briefing": "informare",
+    "dictation": "dictare",
+    "field_report": "raport de teren",
+    "consultation": "consultare",
+    "other": "altele"
+  },
+  "classification": {
+    "unclassified": "neclasificat",
+    "internal": "intern",
+    "confidential": "confidențial",
+    "restricted": "restricționat"
+  },
+  "dashboard": {
+    "welcome": "Bine ați venit, {name}",
+    "defaultName": "Ofițer",
+    "subtitle": "Spațiul dumneavoastră administrativ — capturați, redactați, verificați și arhivați.",
+    "stats": {
+      "sessions": "Sesiuni",
+      "documents": "Documente",
+      "awaitingReview": "În așteptarea verificării",
+      "outstandingActions": "Acțiuni restante"
+    },
+    "recentSessions": "Sesiuni recente",
+    "documentsToAction": "Documente de soluționat",
+    "noSessions": "Nu există încă sesiuni.",
+    "nothingToAction": "Nimic nu necesită atenția dumneavoastră."
+  },
+  "sessions": {
+    "subtitle": "Fiecare sesiune este un dosar — audio, transcriere și documentele generate din acesta.",
+    "new": "Sesiune nouă",
+    "createFailed": "Sesiunea nu a putut fi creată.",
+    "titlePlaceholder": "de ex. Comitetul de Securitate al Județului — Informare săptămânală",
+    "create": "Creați sesiunea",
+    "empty": "Nu există încă sesiuni. Creați una pentru a începe înregistrarea.",
+    "fields": {
+      "title": "Titlu",
+      "kind": "Tip",
+      "date": "Dată",
+      "classification": "Clasificare",
+      "status": "Stare",
+      "department": "Departament",
+      "location": "Locație"
+    }
+  },
+  "session": {
+    "loadFailed": "Sesiunea nu a putut fi încărcată.",
+    "micDenied": "Accesul la microfon a fost refuzat sau nu este disponibil.",
+    "audioSaved": "Audio salvat în sesiune.",
+    "uploadFailed": "Încărcarea a eșuat.",
+    "transcribing": "Se transcrie local — pentru audio mai lung poate dura puțin.",
+    "transcribed": "Transcriere finalizată.",
+    "transcribeFailed": "Transcrierea a eșuat. Verificați dacă serviciul STT rulează.",
+    "updateFailed": "Nu s-a putut actualiza.",
+    "draftingMinutes": "Se redactează procesul-verbal din transcriere…",
+    "minutesCreated": "Proiect de proces-verbal creat.",
+    "minutesFailed": "Procesul-verbal nu a putut fi generat.",
+    "notFound": "Sesiunea nu a fost găsită.",
+    "noDate": "fără dată",
+    "noLocation": "fără locație",
+    "generateMinutes": "Generați procesul-verbal",
+    "captureAudio": "Capturați audio",
+    "stopSave": "Opriți și salvați",
+    "startRecording": "Începeți înregistrarea",
+    "or": "sau",
+    "uploadAudio": "Încărcați audio",
+    "audioNote": "Audio rămâne pe gazdă. Transcrierea rulează local în engleză. Procesul-verbal combină toate clipurile din această sesiune, în ordine.",
+    "documentsFrom": "Documente din această sesiune",
+    "noDocuments": "Încă nu există documente. Transcrieți un clip, apoi generați procesul-verbal.",
+    "recordingsTitle": "Înregistrări și transcrieri",
+    "clipOne": "{n} clip",
+    "clipMany": "{n} clipuri",
+    "noRecordings": "Încă nu există înregistrări. Înregistrați sau încărcați audio mai sus.",
+    "includeTitle": "Includeți acest clip la generarea procesului-verbal",
+    "inMinutes": "În procesul-verbal",
+    "transcribe": "Transcrieți",
+    "transcribeHint": "Transcrieți acest clip pentru a vedea și edita transcrierea aici.",
+    "audioLoadFailed": "Audio nu a putut fi încărcat.",
+    "loadAudio": "Încărcați audio",
+    "words": "{n} cuvinte",
+    "verified": "verificat",
+    "editVerify": "Editați și verificați",
+    "saveVerified": "Salvați și marcați ca verificat",
+    "saveDraft": "Salvați schița",
+    "emptyTranscript": "Transcriere goală."
+  },
+  "docType": {
+    "minutes": "proces-verbal",
+    "memo": "notă internă",
+    "letter": "scrisoare",
+    "report": "raport",
+    "policy_brief": "notă de politică",
+    "briefing_note": "notă de informare",
+    "concept_note": "notă conceptuală",
+    "circular": "circulară",
+    "action_matrix": "matrice de acțiuni",
+    "speech": "discurs"
+  },
+  "approval": {
+    "submit": "trimis",
+    "submitted": "trimis",
+    "approve": "aprobat",
+    "approved": "aprobat",
+    "reject": "respins",
+    "rejected": "respins",
+    "finalize": "finalizat",
+    "finalized": "finalizat"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Notă internă",
+      "desc": "Notă internă standard cu Către / De la / Subiect."
+    },
+    "letter-official": {
+      "name": "Scrisoare oficială",
+      "desc": "Scrisoare formală de ieșire pe antetul instituției."
+    },
+    "circular-general": {
+      "name": "Circulară",
+      "desc": "Anunț transmis mai multor destinatari."
+    },
+    "report-standard": {
+      "name": "Raport",
+      "desc": "Raport general cu rezumat, secțiuni și recomandări."
+    },
+    "policy-brief": {
+      "name": "Notă de politică",
+      "desc": "Notă concisă pentru factorii de decizie."
+    },
+    "briefing-note": {
+      "name": "Notă de informare",
+      "desc": "Notă scurtă pentru informarea unui superior înaintea unei întâlniri."
+    },
+    "concept-note": {
+      "name": "Notă conceptuală",
+      "desc": "Schița unui program sau a unei activități propuse."
+    },
+    "minutes-blank": {
+      "name": "Proces-verbal al ședinței (blank)",
+      "desc": "Structură goală de proces-verbal pentru completare manuală."
+    },
+    "speech-remarks": {
+      "name": "Discurs / Alocuțiune",
+      "desc": "Alocuțiune formală pentru un eveniment."
+    }
+  },
+  "documents": {
+    "subtitle": "Procese-verbale, note, scrisori, rapoarte și sinteze — redactate cu AI, aprobate de oameni.",
+    "startFromTemplate": "Începeți de la un șablon",
+    "fromSpreadsheet": "Raport din foaie de calcul",
+    "draftWithAI": "Redactați cu AI",
+    "templateTitle": "Începeți de la un șablon",
+    "allTypes": "Toate tipurile",
+    "orgTemplates": "Șabloanele organizației dumneavoastră",
+    "savedByOrg": "Salvate de organizația dumneavoastră",
+    "useTemplate": "Utilizați acest șablon",
+    "generalTemplates": "Șabloane generale",
+    "spreadsheetFailed": "Nu s-a putut genera un raport din acea foaie de calcul.",
+    "templateFailed": "Nu s-a putut crea din șablon.",
+    "draftFailed": "Nu s-a putut redacta documentul.",
+    "fields": {
+      "type": "Tip document",
+      "title": "Titlu",
+      "recipient": "Destinatar (opțional)",
+      "department": "Departament (opțional)",
+      "brief": "Instrucțiuni / Sinteză"
+    },
+    "briefPlaceholder": "Descrieți scopul, punctele cheie și orice fapte de inclus. Asistentul va redacta un document formal pe care îl puteți edita și aproba.",
+    "generateDraft": "Generați proiectul",
+    "empty": "Nu există documente încă.",
+    "table": {
+      "title": "Titlu",
+      "type": "Tip",
+      "ref": "Ref.",
+      "status": "Stare",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Nu s-a putut încărca documentul.",
+    "invalidJson": "Conținutul nu este JSON valid.",
+    "saved": "Salvat. Versiunea a fost incrementată.",
+    "saveFailed": "Salvarea a eșuat.",
+    "done": {
+      "submit": "Document trimis spre examinare.",
+      "approve": "Document aprobat.",
+      "reject": "Document respins.",
+      "finalize": "Document finalizat."
+    },
+    "failed": {
+      "submit": "Nu s-a putut trimite.",
+      "approve": "Nu s-a putut aproba.",
+      "reject": "Nu s-a putut respinge.",
+      "finalize": "Nu s-a putut finaliza."
+    },
+    "templateName": "Nume șablon",
+    "templateDefault": "Șablon {title}",
+    "templateSaved": "Salvat ca șablon reutilizabil pentru organizația dumneavoastră.",
+    "templateSaveFailed": "Șablonul nu a putut fi salvat.",
+    "exportFailed": "Exportul a eșuat.",
+    "notFound": "Documentul nu a fost găsit.",
+    "exportDocx": "Export DOCX",
+    "exportPptx": "Export PPTX",
+    "exportXlsx": "Export XLSX",
+    "saveAsTemplate": "Salvează ca șablon",
+    "content": "Conținut",
+    "workflow": "Flux de lucru",
+    "aiAssisted": "Ciornă asistată de IA",
+    "auditChain": "Lanț de audit: audio → transcriere → ciornă IA → editare umană → aprobare → final. Fiecare pas este înregistrat.",
+    "comment": "Comentariu (opțional)",
+    "commentPlaceholder": "Adăugați o notă pentru evidență",
+    "submit": "Trimite spre revizuire",
+    "approve": "Aprobă",
+    "reject": "Respinge",
+    "finalize": "Finalizează",
+    "finalLocked": "Final — blocat pentru editare",
+    "editJson": "Editează conținutul (JSON)",
+    "jsonNote": "Conținutul structurat generează DOCX-ul cu identitate vizuală. Editați câmpurile de mai jos și salvați; identitatea vizuală și aspectul sunt aplicate automat la export.",
+    "saveContent": "Salvează conținutul",
+    "approvalHistory": "Istoricul aprobărilor"
+  },
+  "emails": {
+    "subtitle": "Redactați scrisori și e-mailuri cu IA. Nimic nu este trimis până când o persoană nu apasă trimite.",
+    "needIntent": "Furnizați asistentului un subiect sau o intenție pentru redactare.",
+    "draftReady": "Ciorna este gata. Revizuiți și editați înainte de trimitere.",
+    "draftFailed": "Redactarea a eșuat.",
+    "draftSaved": "Ciorna a fost salvată.",
+    "saveFailed": "Nu s-a putut salva.",
+    "confirmSend": "Trimiteți acest e-mail acum? Această acțiune este înregistrată în jurnalul de audit.",
+    "sent": "E-mail trimis.",
+    "sendFailed": "Trimiterea a eșuat.",
+    "compose": "Redactează",
+    "messages": "Mesaje",
+    "empty": "Nu există încă corespondență.",
+    "message": "Mesaj",
+    "details": "Detalii",
+    "to": "Către",
+    "cc": "Cc",
+    "subject": "Subiect",
+    "intent": "Ce ar trebui să conțină acest mesaj? (pentru AI)",
+    "intentPlaceholder": "de ex. Invitați șefii la baraza de securitate vineri la 10:00",
+    "body": "Conținut",
+    "saveDraft": "Salvează ciorna",
+    "toLabel": "Către:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Subiect:",
+    "aiAssisted": "Asistat de AI",
+    "sendNow": "Trimite acum",
+    "selectHint": "Selectați un mesaj sau compuneți unul nou."
+  },
+  "knowledge": {
+    "subtitle": "Material de referință pe care asistentul îl poate folosi — politici, șabloane, precedente.",
+    "added": "Adăugat în baza de cunoștințe.",
+    "addFailed": "Nu s-a putut adăuga.",
+    "chooseFile": "Alegeți un fișier pentru încărcare.",
+    "ocrFailed": "Fișier salvat. OCR nu a putut citi textul din acest fișier (posibil de calitate scăzută). Puteți lipi textul manual.",
+    "extracted": "Fișier salvat și {n} caractere de text extrase.",
+    "noText": "Fișier salvat. Nu s-a putut extrage text din acest format.",
+    "uploadFailed": "Încărcarea a eșuat.",
+    "confirmRemove": "Eliminați această referință?",
+    "uploadTitle": "Încărcați un document",
+    "file": "Fișier",
+    "titleOptional": "Titlu (opțional)",
+    "titleDefault": "Implicit la numele fișierului",
+    "categoryOptional": "Categorie (opțional)",
+    "uploadExtract": "Încarcă și extrage",
+    "uploadNote": "Fișierele Word, PDF, CSV și text au textul extras automat. PDF-urile scanate și fotografiile sunt citite automat cu OCR.",
+    "pasteTitle": "Adăugați referință (lipiți text)",
+    "title": "Titlu",
+    "category": "Categorie",
+    "categoryPlaceholder": "de ex. Circulare, Politici",
+    "textContent": "Conținut text",
+    "add": "Adaugă",
+    "references": "Referințe",
+    "empty": "Nimic încă.",
+    "uncategorised": "Fără categorie",
+    "remove": "Elimină"
+  },
+  "assistant": {
+    "subtitle": "Dați o instrucțiune în limbaj simplu — rezumați, găsiți, redactați sau explicați în tot spațiul de lucru.",
+    "failed": "Asistentul nu a putut procesa aceasta.",
+    "instruction": "Instrucțiune",
+    "placeholder": "de ex. Rezumați deciziile din comitetul de securitate al acestei săptămâni sau listați notele interne care așteaptă încă aprobarea.",
+    "ask": "Întrebați"
+  },
+  "actions": {
+    "subtitle": "Puncte de acțiune extrase din procesele-verbale și matricele de acțiuni din cadrul sesiunilor.",
+    "empty": "Nu s-au găsit acțiuni în așteptare.",
+    "table": {
+      "action": "Acțiune",
+      "responsible": "Responsabil",
+      "timeline": "Termen",
+      "source": "Sursă"
+    }
+  },
+  "paypal": {
+    "title": "Plată PayPal",
+    "subtitle": "Confirmarea plății abonamentului.",
+    "confirming": "Se confirmă plata dvs. PayPal...",
+    "noOrder": "Nu a fost returnată nicio comandă PayPal.",
+    "confirmed": "Plată confirmată. Abonamentul dvs. Worker este acum activ.",
+    "failed": "Plata PayPal nu a putut fi confirmată.",
+    "success": "Plată reușită",
+    "viewSubscription": "Vizualizați abonamentul",
+    "errorTitle": "Plata nu a putut fi confirmată",
+    "returnToSubscription": "Reveniți la abonament"
+  },
+  "tenant": {
+    "saved": "Detaliile organizației au fost salvate. Acestea apar pe fiecare document pe care îl exportați.",
+    "saveFailed": "Nu s-a putut salva.",
+    "logoUploaded": "Logo încărcat.",
+    "signatureUploaded": "Semnătură încărcată.",
+    "uploadFailed": "Încărcarea a eșuat.",
+    "subtitleShort": "Identitate vizuală pentru spațiul dvs. de lucru.",
+    "noOrg": "Acest cont nu este asociat cu o organizație.",
+    "subtitle": "Numele, antetul, logo-ul și semnătura dvs. apar pe fiecare document pe care îl generați.",
+    "letterhead": "Antet",
+    "orgName": "Numele organizației",
+    "line": "Linia de antet {n}",
+    "line1Placeholder": "de ex. GUVERNUL JUDEȚEAN AL ...",
+    "line2Placeholder": "de ex. Departamentul de ...",
+    "line3Placeholder": "de ex. Unitate / Birou",
+    "saveLetterhead": "Salvați antetul",
+    "blankHint": "Lăsați liniile goale pentru a reveni la numele organizației dvs.",
+    "logoSignature": "Logo și semnătură",
+    "logo": "Stemă / logo (PNG sau JPG)",
+    "signature": "Semnătură electronică (PNG sau JPG)",
+    "uploaded": "încărcat",
+    "brandingNote": "Logo-ul apare în antetul documentului și pe paginile de titlu ale diapozitivelor. Semnătura este plasată la sfârșitul documentelor exportate. Folosiți un PNG cu fundal transparent pentru cele mai bune rezultate."
+  },
+  "users": {
+    "createdTemp": "Utilizator creat. Parolă temporară: {temp} — partajați-o în siguranță; utilizatorul trebuie să o schimbe la prima autentificare.",
+    "created": "Utilizator creat.",
+    "createFailed": "Nu s-a putut crea utilizatorul.",
+    "confirmRemove": "Eliminați {name}?",
+    "removeFailed": "Nu s-a putut elimina.",
+    "subtitle": "Gestionați accesul. Contul de superadmin nu poate fi modificat aici.",
+    "add": "Adăugați utilizator",
+    "create": "Creați utilizator",
+    "empty": "Nu există utilizatori.",
+    "fields": {
+      "name": "Nume",
+      "email": "E-mail",
+      "role": "Rol",
+      "department": "Departament",
+      "status": "Stare"
+    },
+    "suspend": "Suspendați",
+    "reinstate": "Reactivați",
+    "remove": "Eliminați"
+  },
+  "audit": {
+    "subtitle": "Fiecare acțiune semnificativă este înregistrată. Jurnalele conțin doar metadate și identificatori — niciodată conținutul documentelor sau audio.",
+    "empty": "Nu există înregistrări de audit.",
+    "table": {
+      "when": "Când",
+      "actor": "Autor",
+      "action": "Acțiune",
+      "resource": "Resursă"
+    },
+    "system": "sistem"
+  },
+  "payments": {
+    "stkSent": "Notificarea STK a fost trimisă. Solicitați plătitorului să aprobe pe telefon.",
+    "initiateFailed": "Nu s-a putut iniția plata.",
+    "subtitle": "Tranzacții M-Pesa (Daraja STK push) și PayPal.",
+    "requestTitle": "Solicitați o plată M-Pesa",
+    "phone": "Telefon (07.. sau 2547..)",
+    "amountKes": "Sumă (KES)",
+    "purpose": "Scop",
+    "sendStk": "Trimiteți notificarea STK",
+    "transactions": "Tranzacții",
+    "empty": "Nu există tranzacții.",
+    "table": {
+      "provider": "Furnizor",
+      "amount": "Sumă",
+      "status": "Stare",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Facturi și chitanțe pentru plățile de abonament Worker finalizate.",
+    "loadFailed": "Nu s-au putut încărca documentele de facturare.",
+    "downloadFailed": {
+      "invoice": "Factura nu a putut fi descărcată.",
+      "receipt": "Chitanța nu a putut fi descărcată."
+    },
+    "documentsTitle": "Documente de facturare",
+    "intro": "Descărcați facturi și chitanțe pentru plățile de abonament finalizate ale organizației dumneavoastră.",
+    "disclaimer": "Aceste documente înregistrează plățile de abonament Worker și sunt furnizate în scopuri de plată și rambursare. Nu sunt prezentate ca facturi fiscale KRA/eTIMS decât dacă sunt emise separat printr-o integrare eTIMS conformă.",
+    "invoices": "Facturi",
+    "noInvoices": "Încă nu există facturi.",
+    "receipts": "Chitanțe",
+    "noReceipts": "Încă nu există chitanțe.",
+    "downloadPdf": "Descărcați PDF",
+    "table": {
+      "invoice": "Factură",
+      "receipt": "Chitanță",
+      "date": "Dată",
+      "description": "Descriere",
+      "amount": "Sumă",
+      "status": "Stare",
+      "provider": "Furnizor",
+      "reference": "Referință"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abonamentul nu a putut fi încărcat.",
+    "selectFirst": "Selectați mai întâi un plan de abonament.",
+    "mpesaSent": "Notificarea STK M-Pesa a fost trimisă. Aprobați plata pe telefonul dumneavoastră. Abonamentul se va activa după confirmarea plății.",
+    "mpesaFailed": "Plata M-Pesa nu a putut fi inițiată.",
+    "noApproveUrl": "URL-ul de aprobare PayPal nu a fost returnat.",
+    "paypalFailed": "Plata PayPal nu a putut fi pornită.",
+    "subtitleShort": "Gestionați abonamentul dumneavoastră Worker.",
+    "subtitle": "Gestionați planul, perioada de probă și facturarea Worker.",
+    "current": "Abonament actual",
+    "organisation": "Organizație",
+    "status": "Stare",
+    "plan": "Plan",
+    "freeTrial": "Perioadă de probă gratuită de 14 zile",
+    "trialEnds": "Perioada de probă se încheie",
+    "dayRemaining": "{n} zi rămasă",
+    "daysRemaining": "{n} zile rămase",
+    "renewsEnds": "Se reînnoiește / se încheie",
+    "chooseTitle": "Alegeți un plan",
+    "chooseSubtitle": "Toate planurile includ fluxul de lucru administrativ Worker. Perioada de probă de 14 zile este gratuită.",
+    "perMonth": "/ lună",
+    "planSelected": "{plan} selectat. Planul dumneavoastră este salvat și pregătit pentru plată.",
+    "selectFailed": "Planul nu a putut fi selectat.",
+    "selected": "Selectat",
+    "selectPlan": "Selectați un plan",
+    "activateTitle": "Activați abonamentul",
+    "selectAbove": "Selectați un plan de mai sus pentru a continua la plată.",
+    "stkNote": "O notificare STK va fi trimisă la numărul de telefon de mai jos.",
+    "phone": "Număr de telefon",
+    "phonePlaceholder": "07.. sau 2547..",
+    "payMpesa": "Plătiți cu M-Pesa",
+    "paypalNote": "Continuați către PayPal pentru a plăti planul selectat în USD.",
+    "payPaypal": "Plătiți cu PayPal",
+    "settleNote": "Abonamentele plătite pot fi decontate prin M-Pesa sau PayPal.",
+    "activationNote": "Planul selectat va fi activat după confirmarea cu succes a plății.",
+    "historyNote": "Istoricul plăților este disponibil la Administrare → Plăți."
+  },
+  "intl": {
+    "territory": "Teritoriu",
+    "searchTerritory": "Căutați teritoriu…",
+    "selectTerritory": "Selectați teritoriul dumneavoastră",
+    "territoryRequired": "Vă rugăm să selectați teritoriul dumneavoastră.",
+    "workingLanguage": "Limba de lucru",
+    "meetingLanguage": "Limba ședinței",
+    "useDefault": "Implicit al organizației",
+    "beta": "transcriere beta",
+    "unavailable": "fără transcriere"
+  },
+  "generate": {
+    "title": "Generați un document din această sesiune",
+    "as": "Generați ca",
+    "instructions": "Instrucțiune (opțional)",
+    "placeholder": "de ex. Scrisoare către Secretarul Permanent care rezumă deciziile 2 și 3",
+    "button": "Generați",
+    "working": "Se redactează documentul… poate dura un minut.",
+    "done": "Document creat.",
+    "failed": "Documentul nu a putut fi generat.",
+    "hint": "Utilizează transcrierile bifate pentru includere, în ordine. Dumneavoastră verificați și aprobați înainte ca ceva să fie partajat."
+  },
+  "queue": {
+    "queued": "În așteptare pentru transcriere. Această pagină se actualizează automat."
+  },
+  "pdfExport": {
+    "button": "Exportați PDF"
+  },
+  "access": {
+    "readOnly": "Spațiul dumneavoastră de lucru este doar pentru citire deoarece perioada de probă sau abonamentul a expirat. Puteți încă vizualiza și exporta documentele.",
+    "grace": "Perioada de probă sau abonamentul dumneavoastră a expirat la {date}. Mai aveți {n} zile de acces complet.",
+    "trialEnding": "Perioada de probă gratuită se încheie în {n} zile.",
+    "choosePlan": "Alegeți un plan"
+  },
+  "sessionLang": {
+    "saved": "Limba ședinței a fost salvată. Se aplică înregistrărilor transcrise de acum înainte.",
+    "failed": "Limba ședinței nu a putut fi salvată."
+  },
+  "i18nNote": {
+    "machine": "Tradus automat"
+  }
+}

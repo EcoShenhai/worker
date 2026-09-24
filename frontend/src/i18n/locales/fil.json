@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Wika",
+    "signIn": "Mag-sign in",
+    "signOut": "Mag-sign out",
+    "createAccount": "Gumawa ng account",
+    "getStarted": "Magsimula",
+    "startFreeTrial": "Simulan ang libreng pagsubok",
+    "cancel": "Kanselahin",
+    "back": "Bumalik",
+    "download": "I-download",
+    "viewAll": "Tingnan lahat"
+  },
+  "brand": {
+    "tagline": "AI administrative workspace",
+    "secureWorkspace": "Secure administrative workspace",
+    "badge": "Ingles · Audio"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "workspace": "Workspace",
+    "sessions": "Mga Session at Recording",
+    "documents": "Mga Dokumento",
+    "correspondence": "Mga Sulat",
+    "knowledge": "Knowledge Base",
+    "assistant": "Assistant",
+    "askWorker": "Tanungin ang Worker",
+    "actions": "Mga Natitirang Aksyon",
+    "administration": "Administrasyon",
+    "organisation": "Organisasyon",
+    "users": "Mga User",
+    "audit": "Audit Trail",
+    "subscription": "Subscription",
+    "payments": "Mga Pagbabayad",
+    "billing": "Billing"
+  },
+  "roles": {
+    "viewer": "Viewer",
+    "officer": "Officer",
+    "admin": "Admin",
+    "superadmin": "Super admin"
+  },
+  "landing": {
+    "hero": {
+      "title": "Gawing tapos at nakatalang dokumento ang iyong sinasabi.",
+      "body": "Ang Worker ay isang AI administrative workplace para sa mga organisasyong gumagawa ng maraming pormal na dokumento mula sa mga pulong, briefing at sulat. Mag-record ng pulong o mag-dictate, at ito ay i-transcribe ng Worker, gagawa ng mga minuto, memo, liham, ulat at policy brief, at dadalhin ang mga ito sa pagsusuri at pag-apruba — na may kumpletong audit trail.",
+      "badgeRow": "Audio · Ingles · Secure workplace"
+    },
+    "what": {
+      "title": "Ano ang ginagawa ng Worker",
+      "lead": "Ang karaniwang gawain sa opisina na nakapalibot sa mga pulong at sulat — natatapos sa ilang minuto, hindi oras.",
+      "f1": {
+        "title": "Mag-record at mag-transcribe",
+        "body": "Kunin ang mga pulong, panayam, briefing o dictation. Ang audio ay tina-transcribe nang lokal sa Ingles."
+      },
+      "f2": {
+        "title": "Mag-draft gamit ang AI",
+        "body": "Bumuo ng mga minuto, memo, liham, ulat, policy brief at sirkular sa tamang opisyal na anyo."
+      },
+      "f3": {
+        "title": "Suriin at aprubahan",
+        "body": "Bawat dokumento ay dumadaan sa draft, pagsusuri, pag-apruba at pagtatapos — nananatili ang kontrol sa mga tao."
+      },
+      "f4": {
+        "title": "Ligtas at na-audit",
+        "body": "Access na nakabase sa tungkulin at kumpletong audit trail. Ang sulat ay ipinapadala lamang ng isang tao."
+      }
+    },
+    "start": {
+      "title": "Isang minuto lang ang pagsisimula",
+      "lead": "Gumawa ng account at simulan ang iyong 14-araw na libreng pagsubok.",
+      "s1": {
+        "title": "Gumawa ng iyong account",
+        "body": "Ilagay ang iyong pangalan, email at password."
+      },
+      "s2": {
+        "title": "I-verify ang iyong email",
+        "body": "Ilagay ang 6-digit na code na ipinadala namin sa email."
+      },
+      "s3": {
+        "title": "Mag-sign in nang ligtas",
+        "body": "Bawat pag-sign in ay kinukumpirma ng one-time na code na ipinadala sa email."
+      },
+      "s4": {
+        "title": "Simulan ang pagtatrabaho",
+        "body": "Gumawa ng session, mag-record, at bumuo ng iyong unang dokumento."
+      }
+    },
+    "pricing": {
+      "title": "Simpleng presyo ng subscription",
+      "lead": "Magsimula sa 14-araw na libreng pagsubok. Piliin ang planong akma sa dami ng administratibong gawain ng iyong organisasyon.",
+      "perMonth": "/buwan",
+      "mostPopular": "PINAKASIKAT",
+      "starter": {
+        "name": "Starter",
+        "desc": "Para sa maliliit na koponan na nagsisimula sa AI-assisted na administratibong gawain."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Para sa mga organisasyong may regular at mataas na dami ng produksyon ng dokumento."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Para sa mas malalaking organisasyong may malaking administratibong workload."
+      },
+      "paymentsNote": "Sinusuportahan ang M-Pesa at PayPal para sa mga bayad na subscription."
+    },
+    "final": {
+      "title": "Handa nang subukan ang Worker?",
+      "cta": "Gumawa ng iyong account"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Buong pangalan",
+    "confirmPassword": "Kumpirmahin ang password",
+    "currentPassword": "Kasalukuyang password",
+    "newPassword": "Bagong password",
+    "confirmNewPassword": "Kumpirmahin ang bagong password",
+    "code6": "6-digit na code",
+    "signInFailed": "Nabigo ang pag-sign in. Suriin ang iyong mga kredensyal.",
+    "forgotPassword": "Nakalimutan ang password?",
+    "mfaNotice": "Ang one-time na code ay ipinapadala sa email upang kumpirmahin ang bawat pag-sign in.",
+    "createYourAccount": "Gumawa ng iyong account",
+    "pwMin": "Ang password ay dapat may hindi bababa sa {n} na character.",
+    "newPwMin": "Ang bagong password ay dapat may hindi bababa sa {n} na character.",
+    "pwMismatch": "Hindi tugma ang mga password.",
+    "createFailed": "Hindi magawa ang account.",
+    "haveAccount": "May account ka na ba?",
+    "startAtSignIn": "Magsimula sa pag-sign in o pagpaparehistro.",
+    "goToSignIn": "Pumunta sa pag-sign in",
+    "invalidCode": "Di-wasto o nag-expire na code.",
+    "codeSent": "May bagong code na ipinadala.",
+    "resendFailed": "Hindi maipadala muli.",
+    "verifyEmailTitle": "I-verify ang iyong email",
+    "verifyEmailTo": "I-verify ang iyong email — {email}",
+    "verify": "I-verify",
+    "resendCode": "Ipadala muli ang code",
+    "signInAgain": "Mangyaring mag-sign in muli.",
+    "mfaPrompt": "Ilagay ang sign-in code na ipinadala namin sa email",
+    "mfaPromptTo": "Ilagay ang sign-in code na ipinadala namin sa email sa {email}",
+    "verifySignIn": "I-verify at mag-sign in",
+    "requestFailed": "Hindi maproseso ang kahilingan.",
+    "resetTitle": "I-reset ang iyong password",
+    "sendResetCode": "Ipadala ang reset code",
+    "backToSignIn": "Bumalik sa pag-sign in",
+    "resetPrompt": "Ilagay ang code na ipinadala namin sa email at pumili ng bagong password",
+    "resetPassword": "I-reset ang password",
+    "setNewPassword": "Magtakda ng bagong password",
+    "forcedChange": "Para sa seguridad, magtakda ng sarili mong password bago magpatuloy.",
+    "updateAccountPassword": "I-update ang password ng iyong account.",
+    "changeFailed": "Hindi mabago ang password.",
+    "updatePassword": "I-update ang password",
+    "signOutInstead": "Mag-sign out na lang"
+  },
+  "notFound": {
+    "title": "Hindi natagpuan ang pahina",
+    "subtitle": "Wala ang pahinang iyon sa workspace na ito.",
+    "back": "Bumalik sa dashboard"
+  },
+  "status": {
+    "draft": "draft",
+    "in_review": "nasa pagsusuri",
+    "approved": "aprubado",
+    "final": "pinal",
+    "archived": "naka-archive",
+    "open": "bukas",
+    "processing": "pinoproseso",
+    "ready": "handa",
+    "pending": "nakabinbin",
+    "transcribing": "isinasalin",
+    "transcribed": "naisalin",
+    "failed": "nabigo",
+    "sent": "naipadala",
+    "received": "natanggap",
+    "completed": "natapos",
+    "cancelled": "kinansela",
+    "active": "aktibo",
+    "suspended": "nasuspinde"
+  },
+  "kind": {
+    "meeting": "pulong",
+    "interview": "panayam",
+    "briefing": "briefing",
+    "dictation": "diktasyon",
+    "field_report": "ulat sa larangan",
+    "consultation": "konsultasyon",
+    "other": "iba pa"
+  },
+  "classification": {
+    "unclassified": "hindi klasipikado",
+    "internal": "panloob",
+    "confidential": "kompidensyal",
+    "restricted": "limitado"
+  },
+  "dashboard": {
+    "welcome": "Maligayang pagdating, {name}",
+    "defaultName": "Opisyal",
+    "subtitle": "Ang iyong administratibong workspace — kumuha, magbalangkas, magrepaso at mag-file.",
+    "stats": {
+      "sessions": "Mga Sesyon",
+      "documents": "Mga Dokumento",
+      "awaitingReview": "Naghihintay ng repaso",
+      "outstandingActions": "Mga natitirang aksyon"
+    },
+    "recentSessions": "Mga kamakailang sesyon",
+    "documentsToAction": "Mga dokumentong aaksyunan",
+    "noSessions": "Wala pang sesyon.",
+    "nothingToAction": "Walang nangangailangan ng iyong atensyon."
+  },
+  "sessions": {
+    "subtitle": "Ang bawat sesyon ay isang case file — audio, transcript, at ang mga dokumentong nagawa mula rito.",
+    "new": "Bagong sesyon",
+    "createFailed": "Hindi magawa ang sesyon.",
+    "titlePlaceholder": "hal. County Security Committee — Weekly Briefing",
+    "create": "Gumawa ng sesyon",
+    "empty": "Wala pang sesyon. Gumawa ng isa upang magsimulang mag-record.",
+    "fields": {
+      "title": "Pamagat",
+      "kind": "Uri",
+      "date": "Petsa",
+      "classification": "Klasipikasyon",
+      "status": "Katayuan",
+      "department": "Kagawaran",
+      "location": "Lokasyon"
+    }
+  },
+  "session": {
+    "loadFailed": "Hindi ma-load ang sesyon.",
+    "micDenied": "Tinanggihan o hindi available ang access sa mikropono.",
+    "audioSaved": "Na-save ang audio sa sesyon.",
+    "uploadFailed": "Nabigo ang pag-upload.",
+    "transcribing": "Nagsasalin nang lokal — maaaring tumagal ito sandali para sa mas mahabang audio.",
+    "transcribed": "Kumpleto na ang transkripsyon.",
+    "transcribeFailed": "Nabigo ang transkripsyon. Suriin kung tumatakbo ang serbisyo ng STT.",
+    "updateFailed": "Hindi ma-update.",
+    "draftingMinutes": "Binabalangkas ang mga minuto mula sa transkripsyon…",
+    "minutesCreated": "Nagawa na ang draft na mga minuto.",
+    "minutesFailed": "Hindi makabuo ng mga minuto.",
+    "notFound": "Hindi natagpuan ang sesyon.",
+    "noDate": "walang petsa",
+    "noLocation": "walang lokasyon",
+    "generateMinutes": "Bumuo ng mga minuto",
+    "captureAudio": "Kumuha ng audio",
+    "stopSave": "Itigil at i-save",
+    "startRecording": "Simulan ang pag-record",
+    "or": "o",
+    "uploadAudio": "Mag-upload ng audio",
+    "audioNote": "Nananatili ang audio sa host. Tumatakbo nang lokal ang transkripsyon sa Ingles. Pinagsasama-sama ng mga minuto ang bawat clip sa sesyong ito, nang sunod-sunod.",
+    "documentsFrom": "Mga dokumento mula sa sesyong ito",
+    "noDocuments": "Wala pang dokumento. I-transcribe ang isang clip, pagkatapos ay bumuo ng mga minuto.",
+    "recordingsTitle": "Mga recording at transkripsyon",
+    "clipOne": "{n} clip",
+    "clipMany": "{n} na clip",
+    "noRecordings": "Wala pang recording. Mag-record o mag-upload ng audio sa itaas.",
+    "includeTitle": "Isama ang clip na ito kapag bumubuo ng mga minuto",
+    "inMinutes": "Nasa mga minuto",
+    "transcribe": "I-transcribe",
+    "transcribeHint": "I-transcribe ang clip na ito upang makita at mai-edit ang transkripsyon nito dito.",
+    "audioLoadFailed": "Hindi ma-load ang audio.",
+    "loadAudio": "I-load ang audio",
+    "words": "{n} salita",
+    "verified": "beripikado",
+    "editVerify": "I-edit at beripikahin",
+    "saveVerified": "I-save at markahan bilang beripikado",
+    "saveDraft": "I-save ang draft",
+    "emptyTranscript": "Walang laman na transcript."
+  },
+  "docType": {
+    "minutes": "katitikan",
+    "memo": "memo",
+    "letter": "liham",
+    "report": "ulat",
+    "policy_brief": "maikling patakaran",
+    "briefing_note": "tala ng pagpupulong",
+    "concept_note": "tala ng konsepto",
+    "circular": "sirkular",
+    "action_matrix": "matris ng aksyon",
+    "speech": "talumpati"
+  },
+  "approval": {
+    "submit": "isinumite",
+    "submitted": "isinumite",
+    "approve": "inaprubahan",
+    "approved": "inaprubahan",
+    "reject": "tinanggihan",
+    "rejected": "tinanggihan",
+    "finalize": "tinapos",
+    "finalized": "tinapos"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Panloob na Memo",
+      "desc": "Pamantayang panloob na memorandum na may Para kay / Mula kay / Paksa."
+    },
+    "letter-official": {
+      "name": "Opisyal na Liham",
+      "desc": "Pormal na papalabas na liham sa letterhead ng opisina."
+    },
+    "circular-general": {
+      "name": "Sirkular",
+      "desc": "Abiso na ipinapadala sa maraming tatanggap."
+    },
+    "report-standard": {
+      "name": "Ulat",
+      "desc": "Pangkalahatang ulat na may buod, mga seksyon at mga rekomendasyon."
+    },
+    "policy-brief": {
+      "name": "Maikling Patakaran",
+      "desc": "Maikling buod para sa mga tagagawa ng desisyon."
+    },
+    "briefing-note": {
+      "name": "Tala ng Pagpupulong",
+      "desc": "Maikling tala upang ipaalam sa isang pinuno bago ang isang gawain."
+    },
+    "concept-note": {
+      "name": "Tala ng Konsepto",
+      "desc": "Balangkas ng isang iminumungkahing programa o aktibidad."
+    },
+    "minutes-blank": {
+      "name": "Katitikan ng Pulong (blangko)",
+      "desc": "Blangkong estruktura ng katitikan na pupunan sa pamamagitan ng kamay."
+    },
+    "speech-remarks": {
+      "name": "Talumpati / Mga Pahayag",
+      "desc": "Pormal na mga pahayag para sa isang okasyon."
+    }
+  },
+  "documents": {
+    "subtitle": "Mga minuto, memo, liham, ulat at buod — ginawa gamit ang AI, inaprubahan ng mga tao.",
+    "startFromTemplate": "Magsimula sa template",
+    "fromSpreadsheet": "Ulat mula sa spreadsheet",
+    "draftWithAI": "I-draft gamit ang AI",
+    "templateTitle": "Magsimula sa isang template",
+    "allTypes": "Lahat ng uri",
+    "orgTemplates": "Mga template ng iyong organisasyon",
+    "savedByOrg": "Nai-save ng iyong organisasyon",
+    "useTemplate": "Gamitin ang template na ito",
+    "generalTemplates": "Pangkalahatang mga template",
+    "spreadsheetFailed": "Hindi makagawa ng ulat mula sa spreadsheet na iyon.",
+    "templateFailed": "Hindi makagawa mula sa template.",
+    "draftFailed": "Hindi makagawa ng draft ng dokumento.",
+    "fields": {
+      "type": "Uri ng dokumento",
+      "title": "Pamagat",
+      "recipient": "Tatanggap (opsyonal)",
+      "department": "Departamento (opsyonal)",
+      "brief": "Mga tagubilin / buod"
+    },
+    "briefPlaceholder": "Ilarawan ang layunin, mahahalagang punto, at anumang katotohanang isasama. Ang assistant ay gagawa ng pormal na dokumento na maaari mong i-edit at aprubahan.",
+    "generateDraft": "Gumawa ng draft",
+    "empty": "Wala pang dokumento.",
+    "table": {
+      "title": "Pamagat",
+      "type": "Uri",
+      "ref": "Ref.",
+      "status": "Katayuan",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Hindi ma-load ang dokumento.",
+    "invalidJson": "Ang nilalaman ay hindi wastong JSON.",
+    "saved": "Nai-save. Nadagdagan ang bersyon.",
+    "saveFailed": "Nabigo ang pag-save.",
+    "done": {
+      "submit": "Isinumite ang dokumento para sa pagsusuri.",
+      "approve": "Inaprubahan ang dokumento.",
+      "reject": "Tinanggihan ang dokumento.",
+      "finalize": "Natapos ang dokumento."
+    },
+    "failed": {
+      "submit": "Hindi maisumite.",
+      "approve": "Hindi maaprubahan.",
+      "reject": "Hindi matanggihan.",
+      "finalize": "Hindi matapos."
+    },
+    "templateName": "Pangalan ng template",
+    "templateDefault": "Template ng {title}",
+    "templateSaved": "Na-save bilang magagamit muli na template para sa iyong organisasyon.",
+    "templateSaveFailed": "Hindi ma-save ang template.",
+    "exportFailed": "Nabigo ang pag-export.",
+    "notFound": "Hindi natagpuan ang dokumento.",
+    "exportDocx": "I-export ang DOCX",
+    "exportPptx": "I-export ang PPTX",
+    "exportXlsx": "I-export ang XLSX",
+    "saveAsTemplate": "I-save bilang template",
+    "content": "Nilalaman",
+    "workflow": "Daloy ng trabaho",
+    "aiAssisted": "Draft na tinulungan ng AI",
+    "auditChain": "Audit chain: audio → transcript → AI draft → human edit → approval → final. Naitatala ang bawat hakbang.",
+    "comment": "Komento (opsyonal)",
+    "commentPlaceholder": "Magdagdag ng tala para sa rekord",
+    "submit": "Isumite para sa pagsusuri",
+    "approve": "Aprubahan",
+    "reject": "Tanggihan",
+    "finalize": "Tapusin",
+    "finalLocked": "Final — naka-lock para sa pag-edit",
+    "editJson": "I-edit ang nilalaman (JSON)",
+    "jsonNote": "Ang structured na nilalaman ang nagpapatakbo sa branded na DOCX. I-edit ang mga field sa ibaba at i-save; awtomatikong inilalapat ang branding at layout sa pag-export.",
+    "saveContent": "I-save ang nilalaman",
+    "approvalHistory": "Kasaysayan ng pag-apruba"
+  },
+  "emails": {
+    "subtitle": "Mag-draft ng mga liham at email gamit ang AI. Walang ipapadala hangga't hindi pinindot ng tao ang send.",
+    "needIntent": "Bigyan ang assistant ng paksa o layunin para pagbatayan ng draft.",
+    "draftReady": "Handa na ang draft. Suriin at i-edit bago ipadala.",
+    "draftFailed": "Nabigo ang pag-draft.",
+    "draftSaved": "Na-save ang draft.",
+    "saveFailed": "Hindi ma-save.",
+    "confirmSend": "Ipadala na ba ang email na ito ngayon? Naitatala ang aksyong ito sa audit trail.",
+    "sent": "Naipadala na ang email.",
+    "sendFailed": "Nabigo ang pagpapadala.",
+    "compose": "Isulat",
+    "messages": "Mga mensahe",
+    "empty": "Wala pang sulat.",
+    "message": "Mensahe",
+    "details": "Mga detalye",
+    "to": "Para kay",
+    "cc": "Kopya",
+    "subject": "Paksa",
+    "intent": "Ano ang dapat sabihin nito? (para sa AI)",
+    "intentPlaceholder": "hal. Anyayahan ang mga pinuno sa baraza ng seguridad sa Biyernes 10am",
+    "body": "Nilalaman",
+    "saveDraft": "I-save ang draft",
+    "toLabel": "Para kay:",
+    "ccLabel": "Kopya:",
+    "subjectLabel": "Paksa:",
+    "aiAssisted": "Tinulungan ng AI",
+    "sendNow": "Ipadala ngayon",
+    "selectHint": "Pumili ng mensahe o gumawa ng bago."
+  },
+  "knowledge": {
+    "subtitle": "Sanggunian na maaaring gamitin ng assistant — mga patakaran, template, mga naunang halimbawa.",
+    "added": "Naidagdag sa knowledge base.",
+    "addFailed": "Hindi maidagdag.",
+    "chooseFile": "Pumili ng file na ia-upload.",
+    "ocrFailed": "Nai-save ang file. Hindi mabasa ng OCR ang teksto mula sa file na ito (maaaring mababa ang kalidad). Maaari mong i-paste nang manu-mano ang teksto.",
+    "extracted": "Nai-save ang file at {n} karakter ng teksto ang nakuha.",
+    "noText": "Nai-save ang file. Walang tekstong nakuha mula sa format na ito.",
+    "uploadFailed": "Nabigo ang pag-upload.",
+    "confirmRemove": "Alisin ang sanggunian na ito?",
+    "uploadTitle": "Mag-upload ng dokumento",
+    "file": "File",
+    "titleOptional": "Pamagat (opsyonal)",
+    "titleDefault": "Magiging default sa pangalan ng file",
+    "categoryOptional": "Kategorya (opsyonal)",
+    "uploadExtract": "I-upload at kunin ang teksto",
+    "uploadNote": "Ang mga Word, PDF, CSV at text file ay awtomatikong nakukuha ang teksto. Ang mga na-scan na PDF at larawan ay awtomatikong binabasa gamit ang OCR.",
+    "pasteTitle": "Magdagdag ng sanggunian (i-paste ang teksto)",
+    "title": "Pamagat",
+    "category": "Kategorya",
+    "categoryPlaceholder": "hal. Mga Sirkular, Mga Patakaran",
+    "textContent": "Nilalaman ng teksto",
+    "add": "Idagdag",
+    "references": "Mga Sanggunian",
+    "empty": "Wala pa.",
+    "uncategorised": "Walang kategorya",
+    "remove": "Alisin"
+  },
+  "assistant": {
+    "subtitle": "Magbigay ng tagubilin sa simpleng Filipino — magbuod, maghanap, mag-draft o magpaliwanag sa buong workspace mo.",
+    "failed": "Hindi naproseso ng assistant iyon.",
+    "instruction": "Tagubilin",
+    "placeholder": "hal. Ibuod ang mga desisyon mula sa komite ng seguridad ngayong linggo, o ilista ang mga memo na naghihintay pa ng pag-apruba.",
+    "ask": "Itanong"
+  },
+  "actions": {
+    "subtitle": "Mga aksyong item na hinango mula sa mga minuto at action matrix sa lahat ng sesyon.",
+    "empty": "Walang natagpuang natitirang aksyon.",
+    "table": {
+      "action": "Aksyon",
+      "responsible": "May Pananagutan",
+      "timeline": "Takdang Panahon",
+      "source": "Pinagmulan"
+    }
+  },
+  "paypal": {
+    "title": "Pagbabayad sa PayPal",
+    "subtitle": "Kumpirmasyon ng pagbabayad sa subscription.",
+    "confirming": "Kinukumpirma ang iyong pagbabayad sa PayPal...",
+    "noOrder": "Walang ibinalik na order ng PayPal.",
+    "confirmed": "Kumpirmado ang pagbabayad. Aktibo na ang iyong subscription sa Worker.",
+    "failed": "Hindi makumpirma ang pagbabayad sa PayPal.",
+    "success": "Matagumpay ang pagbabayad",
+    "viewSubscription": "Tingnan ang subscription",
+    "errorTitle": "Hindi makumpirma ang pagbabayad",
+    "returnToSubscription": "Bumalik sa subscription"
+  },
+  "tenant": {
+    "saved": "Na-save ang mga detalye ng organisasyon. Lumalabas ang mga ito sa bawat dokumentong ini-export mo.",
+    "saveFailed": "Hindi ma-save.",
+    "logoUploaded": "Na-upload ang logo.",
+    "signatureUploaded": "Na-upload ang lagda.",
+    "uploadFailed": "Nabigo ang pag-upload.",
+    "subtitleShort": "Branding para sa iyong workspace.",
+    "noOrg": "Ang account na ito ay hindi konektado sa isang organisasyon.",
+    "subtitle": "Lumalabas ang iyong pangalan, letterhead, logo at lagda sa bawat dokumentong ginagawa mo.",
+    "letterhead": "Letterhead",
+    "orgName": "Pangalan ng organisasyon",
+    "line": "Linya ng letterhead {n}",
+    "line1Placeholder": "hal. PAMAHALAAN NG LALAWIGAN NG ...",
+    "line2Placeholder": "hal. Kagawaran ng ...",
+    "line3Placeholder": "hal. Yunit / Opisina",
+    "saveLetterhead": "I-save ang letterhead",
+    "blankHint": "Iwanang blangko ang mga linya upang gamitin ang pangalan ng iyong organisasyon.",
+    "logoSignature": "Logo at lagda",
+    "logo": "Eskudo / logo (PNG o JPG)",
+    "signature": "E-lagda (PNG o JPG)",
+    "uploaded": "na-upload",
+    "brandingNote": "Lumalabas ang logo sa header ng dokumento at sa mga slide title page. Ang lagda ay inilalagay sa dulo ng mga ini-export na dokumento. Gumamit ng PNG na may transparent na background para sa pinakamagandang resulta."
+  },
+  "users": {
+    "createdTemp": "Nagawa ang user. Pansamantalang password: {temp} — ibahagi nang ligtas; kailangan nilang palitan ito sa unang pag-login.",
+    "created": "Nagawa ang user.",
+    "createFailed": "Hindi magawa ang user.",
+    "confirmRemove": "Alisin si {name}?",
+    "removeFailed": "Hindi maalis.",
+    "subtitle": "Pamahalaan ang access. Ang superadmin account ay hindi mababago dito.",
+    "add": "Magdagdag ng user",
+    "create": "Gumawa ng user",
+    "empty": "Walang user.",
+    "fields": {
+      "name": "Pangalan",
+      "email": "Email",
+      "role": "Tungkulin",
+      "department": "Kagawaran",
+      "status": "Katayuan"
+    },
+    "suspend": "I-suspend",
+    "reinstate": "Ibalik",
+    "remove": "Alisin"
+  },
+  "audit": {
+    "subtitle": "Ang bawat mahalagang aksyon ay naitala. Ang mga log ay naglalaman lamang ng metadata at mga identifier — hindi kailanman ang nilalaman ng dokumento o audio.",
+    "empty": "Walang audit entry.",
+    "table": {
+      "when": "Kailan",
+      "actor": "Gumawa",
+      "action": "Aksyon",
+      "resource": "Resource"
+    },
+    "system": "system"
+  },
+  "payments": {
+    "stkSent": "Naipadala ang STK push. Hilingin sa nagbabayad na aprubahan ito sa kanilang telepono.",
+    "initiateFailed": "Hindi masimulan ang pagbabayad.",
+    "subtitle": "Mga transaksyon ng M-Pesa (Daraja STK push) at PayPal.",
+    "requestTitle": "Humiling ng M-Pesa payment",
+    "phone": "Telepono (07.. o 2547..)",
+    "amountKes": "Halaga (KES)",
+    "purpose": "Layunin",
+    "sendStk": "Ipadala ang STK push",
+    "transactions": "Mga transaksyon",
+    "empty": "Walang transaksyon.",
+    "table": {
+      "provider": "Provider",
+      "amount": "Halaga",
+      "status": "Katayuan",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Mga invoice at resibo para sa mga natapos na pagbabayad ng subscription sa Worker.",
+    "loadFailed": "Hindi ma-load ang mga dokumento ng billing.",
+    "downloadFailed": {
+      "invoice": "Hindi ma-download ang invoice.",
+      "receipt": "Hindi ma-download ang resibo."
+    },
+    "documentsTitle": "Mga dokumento sa pagsingil",
+    "intro": "I-download ang mga invoice at resibo para sa mga natapos na bayad sa subscription ng inyong organisasyon.",
+    "disclaimer": "Ang mga dokumentong ito ay nagtatala ng mga bayad sa subscription ng Worker at ibinibigay para sa mga layunin ng pagbabayad at reimbursement. Hindi ang mga ito ay kinakatawan bilang KRA/eTIMS tax invoice maliban kung hiwalay na ibinigay sa pamamagitan ng compliant na eTIMS integration.",
+    "invoices": "Mga invoice",
+    "noInvoices": "Wala pang invoice.",
+    "receipts": "Mga resibo",
+    "noReceipts": "Wala pang resibo.",
+    "downloadPdf": "I-download ang PDF",
+    "table": {
+      "invoice": "Invoice",
+      "receipt": "Resibo",
+      "date": "Petsa",
+      "description": "Paglalarawan",
+      "amount": "Halaga",
+      "status": "Katayuan",
+      "provider": "Provider",
+      "reference": "Reference"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Hindi ma-load ang subscription.",
+    "selectFirst": "Pumili muna ng subscription plan.",
+    "mpesaSent": "Naipadala na ang M-Pesa STK push. Aprubahan ang bayad sa inyong telepono. Mag-a-activate ang inyong subscription pagkatapos ng kumpirmasyon ng bayad.",
+    "mpesaFailed": "Hindi masimulan ang M-Pesa payment.",
+    "noApproveUrl": "Hindi naibalik ang PayPal approval URL.",
+    "paypalFailed": "Hindi masimulan ang PayPal payment.",
+    "subtitleShort": "Pamahalaan ang inyong Worker subscription.",
+    "subtitle": "Pamahalaan ang inyong Worker plan, trial at pagsingil.",
+    "current": "Kasalukuyang subscription",
+    "organisation": "Organisasyon",
+    "status": "Katayuan",
+    "plan": "Plan",
+    "freeTrial": "14-araw na libreng trial",
+    "trialEnds": "Magtatapos ang trial",
+    "dayRemaining": "{n} araw ang natitira",
+    "daysRemaining": "{n} araw ang natitira",
+    "renewsEnds": "Magre-renew / magtatapos",
+    "chooseTitle": "Pumili ng plan",
+    "chooseSubtitle": "Kasama sa lahat ng plan ang Worker administrative workflow. Libre ang inyong 14-araw na trial.",
+    "perMonth": "/ buwan",
+    "planSelected": "Napili ang {plan}. Nai-save na ang inyong plan at handa na para sa pagbabayad.",
+    "selectFailed": "Hindi mapili ang plan.",
+    "selected": "Napili",
+    "selectPlan": "Pumili ng plano",
+    "activateTitle": "I-activate ang iyong subscription",
+    "selectAbove": "Pumili ng plano sa itaas upang magpatuloy sa pagbabayad.",
+    "stkNote": "May ipapadalang STK push sa numero ng telepono sa ibaba.",
+    "phone": "Numero ng telepono",
+    "phonePlaceholder": "07.. o 2547..",
+    "payMpesa": "Magbayad gamit ang M-Pesa",
+    "paypalNote": "Magpatuloy sa PayPal upang magbayad para sa napiling plano sa USD.",
+    "payPaypal": "Magbayad gamit ang PayPal",
+    "settleNote": "Ang mga bayad na subscription ay maaaring bayaran sa pamamagitan ng M-Pesa o PayPal.",
+    "activationNote": "Ang napili mong plano ay i-activate pagkatapos ng matagumpay na kumpirmasyon ng pagbabayad.",
+    "historyNote": "Ang kasaysayan ng pagbabayad ay makikita sa Administration → Payments."
+  },
+  "intl": {
+    "territory": "Teritoryo",
+    "searchTerritory": "Maghanap ng teritoryo…",
+    "selectTerritory": "Piliin ang iyong teritoryo",
+    "territoryRequired": "Mangyaring piliin ang iyong teritoryo.",
+    "workingLanguage": "Wikang ginagamit sa trabaho",
+    "meetingLanguage": "Wika sa pulong",
+    "useDefault": "Default ng organisasyon",
+    "beta": "beta ng transkripsyon",
+    "unavailable": "walang transkripsyon"
+  },
+  "generate": {
+    "title": "Gumawa ng dokumento mula sa session na ito",
+    "as": "Gawin bilang",
+    "instructions": "Tagubilin (opsyonal)",
+    "placeholder": "hal. Liham sa Permanenteng Kalihim na nagbubuod ng mga desisyon 2 at 3",
+    "button": "Gumawa",
+    "working": "Ginagawa ang iyong dokumento… maaaring tumagal ng isang minuto.",
+    "done": "Nagawa na ang dokumento.",
+    "failed": "Hindi magawa ang dokumento.",
+    "hint": "Ginagamit ang mga transcript na may tsek para isama, sa pagkakasunod-sunod. Susuriin at aaprubahan mo bago ibahagi ang anuman."
+  },
+  "queue": {
+    "queued": "Nakapila para sa transkripsyon. Awtomatikong nag-a-update ang pahinang ito."
+  },
+  "pdfExport": {
+    "button": "I-export ang PDF"
+  },
+  "access": {
+    "readOnly": "Read-only ang iyong workspace dahil natapos na ang iyong trial o subscription. Maaari mo pa ring tingnan at i-export ang iyong mga dokumento.",
+    "grace": "Natapos ang iyong trial o subscription noong {date}. May {n} araw ka pang buong access.",
+    "trialEnding": "Matatapos ang iyong libreng trial sa {n} araw.",
+    "choosePlan": "Pumili ng plano"
+  },
+  "sessionLang": {
+    "saved": "Na-save ang wika sa pulong. Nalalapat ito sa mga recording na ita-transcribe mula ngayon.",
+    "failed": "Hindi ma-save ang wika sa pulong."
+  },
+  "i18nNote": {
+    "machine": "Isinalin ng makina"
+  }
+}

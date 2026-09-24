@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Keel",
+    "signIn": "Logi sisse",
+    "signOut": "Logi välja",
+    "createAccount": "Loo konto",
+    "getStarted": "Alusta",
+    "startFreeTrial": "Alusta tasuta prooviperioodi",
+    "cancel": "Tühista",
+    "back": "Tagasi",
+    "download": "Laadi alla",
+    "viewAll": "Vaata kõiki"
+  },
+  "brand": {
+    "tagline": "AI haldustööruum",
+    "secureWorkspace": "Turvaline haldustööruum",
+    "badge": "Inglise keel · Heli"
+  },
+  "nav": {
+    "dashboard": "Töölaud",
+    "workspace": "Tööruum",
+    "sessions": "Seansid ja salvestised",
+    "documents": "Dokumendid",
+    "correspondence": "Kirjavahetus",
+    "knowledge": "Teadmusbaas",
+    "assistant": "Assistent",
+    "askWorker": "Küsi Workerilt",
+    "actions": "Täitmist vajavad toimingud",
+    "administration": "Haldus",
+    "organisation": "Organisatsioon",
+    "users": "Kasutajad",
+    "audit": "Auditijälg",
+    "subscription": "Tellimus",
+    "payments": "Maksed",
+    "billing": "Arveldamine"
+  },
+  "roles": {
+    "viewer": "Vaatleja",
+    "officer": "Ametnik",
+    "admin": "Administraator",
+    "superadmin": "Ülemadministraator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Muutke oma sõnad valmis, arhiveeritud dokumentideks.",
+      "body": "Worker on AI haldustöökoht organisatsioonidele, mis koostavad suures koguses ametlikke dokumente koosolekutest, briifingutest ja kirjavahetusest. Salvestage koosolek või dikteerige ning Worker transkribeerib selle, koostab protokollid, memod, kirjad, aruanded ja poliitikabriifingud ning viib need läbi ülevaatamise ja kinnitamise — täieliku auditijäljega.",
+      "badgeRow": "Heli · Inglise keel · Turvaline tööruum"
+    },
+    "what": {
+      "title": "Mida Worker teeb",
+      "lead": "Rutiinne kontoritöö, mis ümbritseb koosolekuid ja kirjavahetust — tehtud minutitega, mitte tundidega.",
+      "f1": {
+        "title": "Salvesta ja transkribei",
+        "body": "Jäädvustage koosolekuid, intervjuusid, briifinguid või dikteerimist. Heli transkribeeritakse kohapeal inglise keeles."
+      },
+      "f2": {
+        "title": "Koosta AI-ga",
+        "body": "Looge protokolle, märgukirju, kirju, aruandeid, poliitikakokkuvõtteid ja ringkirju õiges ametlikus vormis."
+      },
+      "f3": {
+        "title": "Ülevaatus ja kinnitamine",
+        "body": "Iga dokument läbib mustandi, ülevaatamise, kinnitamise ja lõpetamise — inimesed jäävad kontrolli."
+      },
+      "f4": {
+        "title": "Turvaline ja auditeeritud",
+        "body": "Rollipõhine juurdepääs ja täielik auditijälg. Kirjavahetust saadab alati ainult inimene."
+      }
+    },
+    "start": {
+      "title": "Alustamine võtab vaid minuti",
+      "lead": "Looge konto ja alustage 14-päevast tasuta prooviperioodi.",
+      "s1": {
+        "title": "Looge oma konto",
+        "body": "Sisestage oma nimi, e-posti aadress ja parool."
+      },
+      "s2": {
+        "title": "Kinnitage oma e-posti aadress",
+        "body": "Sisestage 6-kohaline kood, mille me teile e-postiga saadame."
+      },
+      "s3": {
+        "title": "Logige turvaliselt sisse",
+        "body": "Iga sisselogimine kinnitatakse ühekordse e-postiga saadetud koodiga."
+      },
+      "s4": {
+        "title": "Alustage töötamist",
+        "body": "Looge sessioon, salvestage ja genereerige oma esimene dokument."
+      }
+    },
+    "pricing": {
+      "title": "Lihtne tellimuse hinnastamine",
+      "lead": "Alustage 14-päevase tasuta prooviperioodiga. Valige plaan, mis vastab teie organisatsiooni haldustöö mahule.",
+      "perMonth": "/kuu",
+      "mostPopular": "KÕIGE POPULAARSEM",
+      "starter": {
+        "name": "Algaja",
+        "desc": "Väikestele meeskondadele, kes alustavad AI-abiga haldustööd."
+      },
+      "professional": {
+        "name": "Professionaalne",
+        "desc": "Organisatsioonidele, kus on regulaarne ja suure mahuga dokumentide tootmine."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Suurematele organisatsioonidele, kellel on märkimisväärne halduskoormus."
+      },
+      "paymentsNote": "M-Pesa ja PayPal on tasuliste tellimuste jaoks toetatud."
+    },
+    "final": {
+      "title": "Kas olete valmis Workerit proovima?",
+      "cta": "Looge oma konto"
+    }
+  },
+  "auth": {
+    "email": "E-post",
+    "password": "Parool",
+    "fullName": "Täisnimi",
+    "confirmPassword": "Kinnitage parool",
+    "currentPassword": "Praegune parool",
+    "newPassword": "Uus parool",
+    "confirmNewPassword": "Kinnitage uus parool",
+    "code6": "6-kohaline kood",
+    "signInFailed": "Sisselogimine ebaõnnestus. Kontrollige oma volitusi.",
+    "forgotPassword": "Unustasite parooli?",
+    "mfaNotice": "Iga sisselogimise kinnitamiseks saadetakse e-postiga ühekordne kood.",
+    "createYourAccount": "Looge oma konto",
+    "pwMin": "Parool peab olema vähemalt {n} tähemärki pikk.",
+    "newPwMin": "Uus parool peab olema vähemalt {n} tähemärki pikk.",
+    "pwMismatch": "Paroolid ei ühti.",
+    "createFailed": "Kontot ei saanud luua.",
+    "haveAccount": "Kas teil on juba konto?",
+    "startAtSignIn": "Alustage sisselogimisest või registreerimisest.",
+    "goToSignIn": "Minge sisselogimisele",
+    "invalidCode": "Vale või aegunud kood.",
+    "codeSent": "Uus kood on saadetud.",
+    "resendFailed": "Uuesti saatmine ebaõnnestus.",
+    "verifyEmailTitle": "Kinnitage oma e-posti aadress",
+    "verifyEmailTo": "Kinnitage oma e-posti aadress — {email}",
+    "verify": "Kinnita",
+    "resendCode": "Saada kood uuesti",
+    "signInAgain": "Palun logige uuesti sisse.",
+    "mfaPrompt": "Sisestage sisselogimiskood, mille saatsime e-postiga",
+    "mfaPromptTo": "Sisestage sisselogimiskood, mille saatsime e-postiga aadressile {email}",
+    "verifySignIn": "Kinnita ja logi sisse",
+    "requestFailed": "Taotlust ei saanud töödelda.",
+    "resetTitle": "Lähtestage oma parool",
+    "sendResetCode": "Saada lähtestamiskood",
+    "backToSignIn": "Tagasi sisselogimisele",
+    "resetPrompt": "Sisestage e-postiga saadetud kood ja valige uus parool",
+    "resetPassword": "Lähtesta parool",
+    "setNewPassword": "Määrake uus parool",
+    "forcedChange": "Turvalisuse huvides määrake enne jätkamist oma parool.",
+    "updateAccountPassword": "Värskendage oma konto parooli.",
+    "changeFailed": "Parooli ei saanud muuta.",
+    "updatePassword": "Värskenda parooli",
+    "signOutInstead": "Logi selle asemel välja"
+  },
+  "notFound": {
+    "title": "Lehte ei leitud",
+    "subtitle": "Seda lehte selles tööruumis ei ole.",
+    "back": "Tagasi töölauale"
+  },
+  "status": {
+    "draft": "mustand",
+    "in_review": "ülevaatamisel",
+    "approved": "kinnitatud",
+    "final": "lõplik",
+    "archived": "arhiveeritud",
+    "open": "avatud",
+    "processing": "töötlemisel",
+    "ready": "valmis",
+    "pending": "ootel",
+    "transcribing": "transkribeerimisel",
+    "transcribed": "transkribeeritud",
+    "failed": "ebaõnnestunud",
+    "sent": "saadetud",
+    "received": "vastu võetud",
+    "completed": "lõpetatud",
+    "cancelled": "tühistatud",
+    "active": "aktiivne",
+    "suspended": "peatatud"
+  },
+  "kind": {
+    "meeting": "koosolek",
+    "interview": "intervjuu",
+    "briefing": "briifing",
+    "dictation": "dikteerimine",
+    "field_report": "väliaruanne",
+    "consultation": "konsultatsioon",
+    "other": "muu"
+  },
+  "classification": {
+    "unclassified": "liigitamata",
+    "internal": "asutusesisene",
+    "confidential": "konfidentsiaalne",
+    "restricted": "piiratud"
+  },
+  "dashboard": {
+    "welcome": "Tere tulemast, {name}",
+    "defaultName": "Ametnik",
+    "subtitle": "Teie haldustööruum — salvestage, koostage, vaadake üle ja arhiveerige.",
+    "stats": {
+      "sessions": "Seansid",
+      "documents": "Dokumendid",
+      "awaitingReview": "Ülevaatamise ootel",
+      "outstandingActions": "Täitmata toimingud"
+    },
+    "recentSessions": "Hiljutised seansid",
+    "documentsToAction": "Toimingut vajavad dokumendid",
+    "noSessions": "Seansse veel pole.",
+    "nothingToAction": "Miski ei vaja teie tähelepanu."
+  },
+  "sessions": {
+    "subtitle": "Iga seanss on toimik — heli, transkriptsioon ja sellest loodud dokumendid.",
+    "new": "Uus seanss",
+    "createFailed": "Seanssi ei saanud luua.",
+    "titlePlaceholder": "nt Maakonna julgeolekukomitee — iganädalane briifing",
+    "create": "Loo seanss",
+    "empty": "Seansse veel pole. Looge üks, et salvestamist alustada.",
+    "fields": {
+      "title": "Pealkiri",
+      "kind": "Liik",
+      "date": "Kuupäev",
+      "classification": "Klassifikatsioon",
+      "status": "Olek",
+      "department": "Osakond",
+      "location": "Asukoht"
+    }
+  },
+  "session": {
+    "loadFailed": "Seanssi ei saanud laadida.",
+    "micDenied": "Mikrofoni juurdepääs on keelatud või pole saadaval.",
+    "audioSaved": "Heli on seanssi salvestatud.",
+    "uploadFailed": "Üleslaadimine ebaõnnestus.",
+    "transcribing": "Toimub kohalik transkribeerimine — pikema heli puhul võib see veidi aega võtta.",
+    "transcribed": "Transkribeerimine on lõpetatud.",
+    "transcribeFailed": "Transkribeerimine ebaõnnestus. Kontrollige, kas STT-teenus töötab.",
+    "updateFailed": "Uuendamine ebaõnnestus.",
+    "draftingMinutes": "Protokolli koostamine transkriptsioonist…",
+    "minutesCreated": "Protokolli mustand on loodud.",
+    "minutesFailed": "Protokolli ei saanud luua.",
+    "notFound": "Seanssi ei leitud.",
+    "noDate": "kuupäev puudub",
+    "noLocation": "asukoht puudub",
+    "generateMinutes": "Koosta protokoll",
+    "captureAudio": "Salvesta heli",
+    "stopSave": "Peata ja salvesta",
+    "startRecording": "Alusta salvestamist",
+    "or": "või",
+    "uploadAudio": "Laadi heli üles",
+    "audioNote": "Heli jääb hosti. Transkribeerimine toimub kohapeal inglise keeles. Protokoll ühendab kõik selle seansi klipid järjestuses.",
+    "documentsFrom": "Selle seansi dokumendid",
+    "noDocuments": "Dokumente veel pole. Transkribeerige klipp, seejärel koostage protokoll.",
+    "recordingsTitle": "Salvestised ja transkriptsioonid",
+    "clipOne": "{n} klipp",
+    "clipMany": "{n} klippi",
+    "noRecordings": "Salvestisi veel pole. Salvestage või laadige heli üles ülal.",
+    "includeTitle": "Kaasa see klipp protokolli koostamisel",
+    "inMinutes": "Protokollis",
+    "transcribe": "Transkribeeri",
+    "transcribeHint": "Transkribeerige see klipp, et näha ja muuta selle transkriptsiooni siin.",
+    "audioLoadFailed": "Heli ei saanud laadida.",
+    "loadAudio": "Laadi heli",
+    "words": "{n} sõna",
+    "verified": "kinnitatud",
+    "editVerify": "Muuda ja kinnita",
+    "saveVerified": "Salvesta ja märgi kinnitatuks",
+    "saveDraft": "Salvesta mustand",
+    "emptyTranscript": "Tühi transkriptsioon."
+  },
+  "docType": {
+    "minutes": "protokoll",
+    "memo": "memorandum",
+    "letter": "kiri",
+    "report": "aruanne",
+    "policy_brief": "poliitikaülevaade",
+    "briefing_note": "briifingumärkus",
+    "concept_note": "kontseptsioonimärkus",
+    "circular": "ringkiri",
+    "action_matrix": "tegevusmaatriks",
+    "speech": "kõne"
+  },
+  "approval": {
+    "submit": "esitatud",
+    "submitted": "esitatud",
+    "approve": "kinnitatud",
+    "approved": "kinnitatud",
+    "reject": "tagasi lükatud",
+    "rejected": "tagasi lükatud",
+    "finalize": "lõplikustatud",
+    "finalized": "lõplikustatud"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Sisemine memorandum",
+      "desc": "Standardne sisemine memorandum koos väljadega Kellele / Kellelt / Teema."
+    },
+    "letter-official": {
+      "name": "Ametlik kiri",
+      "desc": "Vormikohane väljuv kiri büroo kirjaplangil."
+    },
+    "circular-general": {
+      "name": "Ringkiri",
+      "desc": "Paljudele adressaatidele saadetav teadaanne."
+    },
+    "report-standard": {
+      "name": "Aruanne",
+      "desc": "Üldine aruanne koos kokkuvõtte, peatükkide ja soovitustega."
+    },
+    "policy-brief": {
+      "name": "Poliitikaülevaade",
+      "desc": "Lühike ülevaade otsustajatele."
+    },
+    "briefing-note": {
+      "name": "Briifingumärkus",
+      "desc": "Lühimärkus juhi briifimiseks enne kohtumist."
+    },
+    "concept-note": {
+      "name": "Kontseptsioonimärkus",
+      "desc": "Kavandatava programmi või tegevuse ülevaade."
+    },
+    "minutes-blank": {
+      "name": "Koosoleku protokoll (tühi)",
+      "desc": "Tühi protokolli struktuur käsitsi täitmiseks."
+    },
+    "speech-remarks": {
+      "name": "Kõne / märkused",
+      "desc": "Ametlikud märkused ürituse jaoks."
+    }
+  },
+  "documents": {
+    "subtitle": "Protokollid, memod, kirjad, aruanded ja kokkuvõtted — koostatud AI abil, kinnitatud inimeste poolt.",
+    "startFromTemplate": "Alusta mallist",
+    "fromSpreadsheet": "Aruanne tabelist",
+    "draftWithAI": "Koosta AI-ga",
+    "templateTitle": "Alusta mallist",
+    "allTypes": "Kõik tüübid",
+    "orgTemplates": "Teie organisatsiooni mallid",
+    "savedByOrg": "Salvestatud teie organisatsiooni poolt",
+    "useTemplate": "Kasuta seda malli",
+    "generalTemplates": "Üldised mallid",
+    "spreadsheetFailed": "Sellest tabelist ei saanud aruannet koostada.",
+    "templateFailed": "Mallist ei saanud luua.",
+    "draftFailed": "Dokumenti ei saanud koostada.",
+    "fields": {
+      "type": "Dokumendi tüüp",
+      "title": "Pealkiri",
+      "recipient": "Saaja (valikuline)",
+      "department": "Osakond (valikuline)",
+      "brief": "Juhised / lühikokkuvõte"
+    },
+    "briefPlaceholder": "Kirjeldage eesmärki, põhipunkte ja kõiki fakte, mida lisada. Assistent koostab ametliku dokumendi, mida saate muuta ja kinnitada.",
+    "generateDraft": "Loo mustand",
+    "empty": "Dokumente veel pole.",
+    "table": {
+      "title": "Pealkiri",
+      "type": "Tüüp",
+      "ref": "Viide",
+      "status": "Olek",
+      "ver": "Vers."
+    }
+  },
+  "doc": {
+    "loadFailed": "Dokumenti ei saanud laadida.",
+    "invalidJson": "Sisu ei ole kehtiv JSON.",
+    "saved": "Salvestatud. Versioon suurendatud.",
+    "saveFailed": "Salvestamine ebaõnnestus.",
+    "done": {
+      "submit": "Dokument esitatud ülevaatamiseks.",
+      "approve": "Dokument kinnitatud.",
+      "reject": "Dokument tagasi lükatud.",
+      "finalize": "Dokument lõplikustatud."
+    },
+    "failed": {
+      "submit": "Ei saanud esitada.",
+      "approve": "Ei saanud kinnitada.",
+      "reject": "Ei saanud tagasi lükata.",
+      "finalize": "Ei saanud lõplikustada."
+    },
+    "templateName": "Malli nimi",
+    "templateDefault": "{title} mall",
+    "templateSaved": "Salvestatud teie organisatsiooni jaoks taaskasutatava mallina.",
+    "templateSaveFailed": "Malli ei õnnestunud salvestada.",
+    "exportFailed": "Eksport ebaõnnestus.",
+    "notFound": "Dokumenti ei leitud.",
+    "exportDocx": "Ekspordi DOCX",
+    "exportPptx": "Ekspordi PPTX",
+    "exportXlsx": "Ekspordi XLSX",
+    "saveAsTemplate": "Salvesta mallina",
+    "content": "Sisu",
+    "workflow": "Töövoog",
+    "aiAssisted": "AI-abiga mustand",
+    "auditChain": "Auditi ahel: heli → transkriptsioon → AI mustand → inimtoimetamine → kinnitamine → lõplik. Iga samm on salvestatud.",
+    "comment": "Kommentaar (valikuline)",
+    "commentPlaceholder": "Lisage protokolli märkus",
+    "submit": "Esita ülevaatamiseks",
+    "approve": "Kinnita",
+    "reject": "Lükka tagasi",
+    "finalize": "Lõpeta",
+    "finalLocked": "Lõplik — redigeerimiseks lukustatud",
+    "editJson": "Redigeeri sisu (JSON)",
+    "jsonNote": "Struktureeritud sisu määrab bränditud DOCX-i. Redigeerige allolevaid välju ja salvestage; bränding ja paigutus rakendatakse eksportimisel automaatselt.",
+    "saveContent": "Salvesta sisu",
+    "approvalHistory": "Kinnitamise ajalugu"
+  },
+  "emails": {
+    "subtitle": "Koostage kirju ja e-kirju AI abiga. Midagi ei saadeta enne, kui inimene klõpsab saatmise nuppu.",
+    "needIntent": "Andke assistendile teema või eesmärk, millest mustand koostada.",
+    "draftReady": "Mustand on valmis. Enne saatmist vaadake üle ja redigeerige.",
+    "draftFailed": "Mustandi koostamine ebaõnnestus.",
+    "draftSaved": "Mustand salvestatud.",
+    "saveFailed": "Ei õnnestunud salvestada.",
+    "confirmSend": "Kas saata see e-kiri kohe? See toiming salvestatakse auditi jälgimise logisse.",
+    "sent": "E-kiri saadetud.",
+    "sendFailed": "Saatmine ebaõnnestus.",
+    "compose": "Koosta",
+    "messages": "Sõnumid",
+    "empty": "Kirjavahetust veel ei ole.",
+    "message": "Sõnum",
+    "details": "Üksikasjad",
+    "to": "Saaja",
+    "cc": "Koopia",
+    "subject": "Teema",
+    "intent": "Mida see peaks ütlema? (AI jaoks)",
+    "intentPlaceholder": "nt Kutsu juhid reedel kell 10 turvalisuse barazale",
+    "body": "Sisu",
+    "saveDraft": "Salvesta mustand",
+    "toLabel": "Saaja:",
+    "ccLabel": "Koopia:",
+    "subjectLabel": "Teema:",
+    "aiAssisted": "AI abiga",
+    "sendNow": "Saada kohe",
+    "selectHint": "Valige sõnum või koostage uus."
+  },
+  "knowledge": {
+    "subtitle": "Viitematerjal, mida assistent saab kasutada — poliitikad, mallid, pretsedendid.",
+    "added": "Lisatud teadmistebaasi.",
+    "addFailed": "Ei saanud lisada.",
+    "chooseFile": "Valige üleslaaditav fail.",
+    "ocrFailed": "Fail salvestatud. OCR ei suutnud sellest failist teksti lugeda (see võib olla madala kvaliteediga). Saate teksti käsitsi kleepida.",
+    "extracted": "Fail salvestatud ja {n} tähemärki teksti eraldatud.",
+    "noText": "Fail salvestatud. Sellest vormingust ei saanud teksti eraldada.",
+    "uploadFailed": "Üleslaadimine ebaõnnestus.",
+    "confirmRemove": "Kas eemaldada see viide?",
+    "uploadTitle": "Laadi dokument üles",
+    "file": "Fail",
+    "titleOptional": "Pealkiri (valikuline)",
+    "titleDefault": "Vaikimisi faili nimi",
+    "categoryOptional": "Kategooria (valikuline)",
+    "uploadExtract": "Laadi üles ja eralda",
+    "uploadNote": "Wordi, PDF-, CSV- ja tekstifailide tekst eraldatakse automaatselt. Skaneeritud PDF-id ja fotod loetakse automaatselt OCR-iga.",
+    "pasteTitle": "Lisa viide (kleebi tekst)",
+    "title": "Pealkiri",
+    "category": "Kategooria",
+    "categoryPlaceholder": "nt Ringkirjad, Poliitikad",
+    "textContent": "Teksti sisu",
+    "add": "Lisa",
+    "references": "Viited",
+    "empty": "Veel pole midagi.",
+    "uncategorised": "Kategoriseerimata",
+    "remove": "Eemalda"
+  },
+  "assistant": {
+    "subtitle": "Andke juhis lihtsas eesti keeles — tehke kokkuvõte, leidke, koostage või selgitage oma tööruumis.",
+    "failed": "Assistent ei suutnud seda töödelda.",
+    "instruction": "Juhis",
+    "placeholder": "nt. Tehke kokkuvõte selle nädala turvakomitee otsustest või loetlege memod, mis ootavad veel kinnitamist.",
+    "ask": "Küsi"
+  },
+  "actions": {
+    "subtitle": "Protokollidest ja tegevusmaatriksitest kogutud tegevusüksused kõigist sessioonidest.",
+    "empty": "Täitmata tegevusi ei leitud.",
+    "table": {
+      "action": "Tegevus",
+      "responsible": "Vastutaja",
+      "timeline": "Ajakava",
+      "source": "Allikas"
+    }
+  },
+  "paypal": {
+    "title": "PayPali makse",
+    "subtitle": "Tellimuse makse kinnitus.",
+    "confirming": "PayPali makse kinnitamine...",
+    "noOrder": "PayPali tellimust ei tagastatud.",
+    "confirmed": "Makse kinnitatud. Teie Workeri tellimus on nüüd aktiivne.",
+    "failed": "PayPali makset ei õnnestunud kinnitada.",
+    "success": "Makse õnnestus",
+    "viewSubscription": "Vaata tellimust",
+    "errorTitle": "Makset ei õnnestunud kinnitada",
+    "returnToSubscription": "Tagasi tellimuse juurde"
+  },
+  "tenant": {
+    "saved": "Organisatsiooni andmed salvestatud. Need kuvatakse igal eksporditud dokumendil.",
+    "saveFailed": "Salvestamine ebaõnnestus.",
+    "logoUploaded": "Logo üles laaditud.",
+    "signatureUploaded": "Allkiri üles laaditud.",
+    "uploadFailed": "Üleslaadimine ebaõnnestus.",
+    "subtitleShort": "Teie tööruumi bränding.",
+    "noOrg": "See konto ei ole organisatsiooniga seotud.",
+    "subtitle": "Teie nimi, kirjaplank, logo ja allkiri kuvatakse igal genereeritud dokumendil.",
+    "letterhead": "Kirjaplank",
+    "orgName": "Organisatsiooni nimi",
+    "line": "Kirjaplangi rida {n}",
+    "line1Placeholder": "nt. ... RIIGI VALITSUS",
+    "line2Placeholder": "nt. ... osakond",
+    "line3Placeholder": "nt. üksus / büroo",
+    "saveLetterhead": "Salvesta kirjaplank",
+    "blankHint": "Jätke read tühjaks, et kasutada oma organisatsiooni nime.",
+    "logoSignature": "Logo ja allkiri",
+    "logo": "Vapp / logo (PNG või JPG)",
+    "signature": "E-allkiri (PNG või JPG)",
+    "uploaded": "üles laaditud",
+    "brandingNote": "Logo kuvatakse dokumendi päises ja slaidide tiitellehtedel. Allkiri paigutatakse eksporditud dokumentide lõppu. Parimate tulemuste saamiseks kasutage läbipaistva taustaga PNG-faili."
+  },
+  "users": {
+    "createdTemp": "Kasutaja loodud. Ajutine parool: {temp} — jagage turvaliselt; esimesel sisselogimisel tuleb see muuta.",
+    "created": "Kasutaja loodud.",
+    "createFailed": "Kasutajat ei saanud luua.",
+    "confirmRemove": "Eemaldada {name}?",
+    "removeFailed": "Ei saanud eemaldada.",
+    "subtitle": "Halda juurdepääsu. Superadministraatori kontot ei saa siin muuta.",
+    "add": "Lisa kasutaja",
+    "create": "Loo kasutaja",
+    "empty": "Kasutajaid pole.",
+    "fields": {
+      "name": "Nimi",
+      "email": "E-post",
+      "role": "Roll",
+      "department": "Osakond",
+      "status": "Olek"
+    },
+    "suspend": "Peata",
+    "reinstate": "Taasta",
+    "remove": "Eemalda"
+  },
+  "audit": {
+    "subtitle": "Iga oluline tegevus salvestatakse. Logid sisaldavad ainult metaandmeid ja identifikaatoreid — mitte kunagi dokumentide sisu ega heli.",
+    "empty": "Auditi kirjeid pole.",
+    "table": {
+      "when": "Millal",
+      "actor": "Tegija",
+      "action": "Tegevus",
+      "resource": "Ressurss"
+    },
+    "system": "süsteem"
+  },
+  "payments": {
+    "stkSent": "STK-push saadetud. Paluge maksjal telefonis kinnitada.",
+    "initiateFailed": "Makset ei saanud algatada.",
+    "subtitle": "M-Pesa (Daraja STK push) ja PayPal tehingud.",
+    "requestTitle": "Taotle M-Pesa makset",
+    "phone": "Telefon (07.. või 2547..)",
+    "amountKes": "Summa (KES)",
+    "purpose": "Eesmärk",
+    "sendStk": "Saada STK-push",
+    "transactions": "Tehingud",
+    "empty": "Tehinguid pole.",
+    "table": {
+      "provider": "Pakkuja",
+      "amount": "Summa",
+      "status": "Olek",
+      "ref": "Viide"
+    }
+  },
+  "billing": {
+    "subtitle": "Arved ja kviitungid lõpetatud Worker'i tellimuse maksete kohta.",
+    "loadFailed": "Arveldusdokumente ei saanud laadida.",
+    "downloadFailed": {
+      "invoice": "Arve allalaadimine ebaõnnestus.",
+      "receipt": "Kviitungi allalaadimine ebaõnnestus."
+    },
+    "documentsTitle": "Arveldusdokumendid",
+    "intro": "Laadige alla oma organisatsiooni lõpetatud tellimuste maksete arved ja kviitungid.",
+    "disclaimer": "Need dokumendid kajastavad Worker'i tellimuste makseid ning on mõeldud maksmise ja hüvitamise eesmärgil. Neid ei esitata KRA/eTIMS maksuarvetena, välja arvatud juhul, kui need on eraldi väljastatud nõuetele vastava eTIMS integratsiooni kaudu.",
+    "invoices": "Arved",
+    "noInvoices": "Arveid veel pole.",
+    "receipts": "Kviitungid",
+    "noReceipts": "Kviitungid veel puuduvad.",
+    "downloadPdf": "Laadi alla PDF",
+    "table": {
+      "invoice": "Arve",
+      "receipt": "Kviitung",
+      "date": "Kuupäev",
+      "description": "Kirjeldus",
+      "amount": "Summa",
+      "status": "Olek",
+      "provider": "Teenusepakkuja",
+      "reference": "Viide"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Tellimuse laadimine ebaõnnestus.",
+    "selectFirst": "Valige esmalt tellimuse plaan.",
+    "mpesaSent": "M-Pesa STK push on saadetud. Kinnitage makse oma telefonis. Teie tellimus aktiveeritakse pärast makse kinnitamist.",
+    "mpesaFailed": "M-Pesa makse algatamine ebaõnnestus.",
+    "noApproveUrl": "PayPal'i kinnituslinki ei tagastatud.",
+    "paypalFailed": "PayPal'i makse alustamine ebaõnnestus.",
+    "subtitleShort": "Hallake oma Worker'i tellimust.",
+    "subtitle": "Hallake oma Worker'i plaani, prooviperioodi ja arveldust.",
+    "current": "Praegune tellimus",
+    "organisation": "Organisatsioon",
+    "status": "Olek",
+    "plan": "Plaan",
+    "freeTrial": "14-päevane tasuta prooviperiood",
+    "trialEnds": "Prooviperiood lõpeb",
+    "dayRemaining": "{n} päev jäänud",
+    "daysRemaining": "{n} päeva jäänud",
+    "renewsEnds": "Uueneb / lõpeb",
+    "chooseTitle": "Valige plaan",
+    "chooseSubtitle": "Kõik plaanid sisaldavad Worker'i haldustöövoogu. Teie 14-päevane prooviperiood on tasuta.",
+    "perMonth": "/ kuu",
+    "planSelected": "{plan} on valitud. Teie plaan on salvestatud ja makseks valmis.",
+    "selectFailed": "Plaani valimine ebaõnnestus.",
+    "selected": "Valitud",
+    "selectPlan": "Vali pakett",
+    "activateTitle": "Aktiveeri oma tellimus",
+    "selectAbove": "Jätkamiseks makse juurde valige ülalt pakett.",
+    "stkNote": "Allpool olevale telefoninumbrile saadetakse STK-push.",
+    "phone": "Telefoninumber",
+    "phonePlaceholder": "07.. või 2547..",
+    "payMpesa": "Maksa M-Pesaga",
+    "paypalNote": "Jätkake PayPaliga, et maksta valitud paketi eest USD-s.",
+    "payPaypal": "Maksa PayPaliga",
+    "settleNote": "Tasulisi tellimusi saab tasuda M-Pesa või PayPaliga.",
+    "activationNote": "Teie valitud pakett aktiveeritakse pärast makse kinnitamist.",
+    "historyNote": "Makseajalugu on saadaval jaotises Administreerimine → Maksed."
+  },
+  "intl": {
+    "territory": "Territoorium",
+    "searchTerritory": "Otsi territooriumi…",
+    "selectTerritory": "Valige oma territoorium",
+    "territoryRequired": "Palun valige oma territoorium.",
+    "workingLanguage": "Töökeel",
+    "meetingLanguage": "Koosoleku keel",
+    "useDefault": "Organisatsiooni vaikeväärtus",
+    "beta": "transkribeerimise beeta",
+    "unavailable": "transkribeerimine pole saadaval"
+  },
+  "generate": {
+    "title": "Loo sellest sessioonist dokument",
+    "as": "Loo kui",
+    "instructions": "Juhis (valikuline)",
+    "placeholder": "nt kiri alalisele sekretärile otsuste 2 ja 3 kokkuvõttega",
+    "button": "Loo",
+    "working": "Dokumendi koostamine… see võib võtta minuti.",
+    "done": "Dokument loodud.",
+    "failed": "Dokumenti ei õnnestunud luua.",
+    "hint": "Kasutab kaasamiseks märgitud transkriptsioone nende järjekorras. Enne jagamist vaatate üle ja kinnitate."
+  },
+  "queue": {
+    "queued": "Transkribeerimiseks järjekorras. See leht värskendub automaatselt."
+  },
+  "pdfExport": {
+    "button": "Ekspordi PDF"
+  },
+  "access": {
+    "readOnly": "Teie tööruum on kirjutuskaitstud, kuna prooviperiood või tellimus on lõppenud. Dokumente saate siiski vaadata ja eksportida.",
+    "grace": "Teie prooviperiood või tellimus lõppes {date}. Täisjuurdepääsuks on jäänud {n} päeva.",
+    "trialEnding": "Teie tasuta prooviperiood lõpeb {n} päeva pärast.",
+    "choosePlan": "Valige pakett"
+  },
+  "sessionLang": {
+    "saved": "Koosoleku keel salvestatud. See kehtib edaspidi transkribeeritavatele salvestistele.",
+    "failed": "Koosoleku keelt ei õnnestunud salvestada."
+  },
+  "i18nNote": {
+    "machine": "Masintõlgitud"
+  }
+}

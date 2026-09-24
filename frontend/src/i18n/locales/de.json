@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Sprache",
+    "signIn": "Anmelden",
+    "signOut": "Abmelden",
+    "createAccount": "Konto erstellen",
+    "getStarted": "Erste Schritte",
+    "startFreeTrial": "Kostenlose Testversion starten",
+    "cancel": "Abbrechen",
+    "back": "Zurück",
+    "download": "Herunterladen",
+    "viewAll": "Alle anzeigen"
+  },
+  "brand": {
+    "tagline": "KI-gestützter Verwaltungsarbeitsbereich",
+    "secureWorkspace": "Sicherer Verwaltungsarbeitsbereich",
+    "badge": "Englisch · Audio"
+  },
+  "nav": {
+    "dashboard": "Übersicht",
+    "workspace": "Arbeitsbereich",
+    "sessions": "Sitzungen & Aufzeichnungen",
+    "documents": "Dokumente",
+    "correspondence": "Korrespondenz",
+    "knowledge": "Wissensdatenbank",
+    "assistant": "Assistent",
+    "askWorker": "Worker fragen",
+    "actions": "Offene Aufgaben",
+    "administration": "Verwaltung",
+    "organisation": "Organisation",
+    "users": "Benutzer",
+    "audit": "Prüfprotokoll",
+    "subscription": "Abonnement",
+    "payments": "Zahlungen",
+    "billing": "Abrechnung"
+  },
+  "roles": {
+    "viewer": "Betrachter",
+    "officer": "Sachbearbeiter",
+    "admin": "Administrator",
+    "superadmin": "Superadministrator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Verwandeln Sie Ihre gesprochenen Worte in fertige, abgelegte Dokumente.",
+      "body": "Worker ist ein KI-gestützter Verwaltungsarbeitsplatz für Organisationen, die große Mengen formeller Dokumente aus Besprechungen, Briefings und Korrespondenz erstellen. Zeichnen Sie eine Besprechung auf oder diktieren Sie, und Worker transkribiert sie, erstellt Protokolle, Vermerke, Briefe, Berichte und Politikbriefings und führt sie durch Prüfung und Genehmigung – mit vollständigem Prüfprotokoll.",
+      "badgeRow": "Audio · Englisch · Sicherer Arbeitsplatz"
+    },
+    "what": {
+      "title": "Was Worker leistet",
+      "lead": "Die routinemäßige Büroarbeit rund um Besprechungen und Korrespondenz – erledigt in Minuten, nicht Stunden.",
+      "f1": {
+        "title": "Aufzeichnen & transkribieren",
+        "body": "Erfassen Sie Besprechungen, Interviews, Briefings oder Diktate. Audio wird lokal auf Englisch transkribiert."
+      },
+      "f2": {
+        "title": "Mit KI entwerfen",
+        "body": "Erstellen Sie Protokolle, Vermerke, Briefe, Berichte, Politikbriefings und Rundschreiben in korrekter amtlicher Form."
+      },
+      "f3": {
+        "title": "Prüfen & genehmigen",
+        "body": "Jedes Dokument durchläuft Entwurf, Prüfung, Genehmigung und Finalisierung — die Kontrolle bleibt bei den Menschen."
+      },
+      "f4": {
+        "title": "Sicher & revisionssicher",
+        "body": "Rollenbasierter Zugriff und eine vollständige Prüfspur. Korrespondenz wird ausschließlich von einer Person versendet."
+      }
+    },
+    "start": {
+      "title": "Der Einstieg dauert nur eine Minute",
+      "lead": "Erstellen Sie ein Konto und starten Sie Ihre 14-tägige kostenlose Testphase.",
+      "s1": {
+        "title": "Konto erstellen",
+        "body": "Geben Sie Ihren Namen, Ihre E-Mail-Adresse und ein Passwort ein."
+      },
+      "s2": {
+        "title": "E-Mail-Adresse bestätigen",
+        "body": "Geben Sie den 6-stelligen Code ein, den wir Ihnen per E-Mail senden."
+      },
+      "s3": {
+        "title": "Sicher anmelden",
+        "body": "Jede Anmeldung wird mit einem einmaligen, per E-Mail gesendeten Code bestätigt."
+      },
+      "s4": {
+        "title": "Arbeit beginnen",
+        "body": "Erstellen Sie eine Sitzung, zeichnen Sie auf und generieren Sie Ihr erstes Dokument."
+      }
+    },
+    "pricing": {
+      "title": "Einfache Abonnementpreise",
+      "lead": "Starten Sie mit einer 14-tägigen kostenlosen Testphase. Wählen Sie den Tarif, der zum Umfang der administrativen Arbeit Ihrer Organisation passt.",
+      "perMonth": "/Monat",
+      "mostPopular": "AM BELIEBTESTEN",
+      "starter": {
+        "name": "Starter",
+        "desc": "Für kleine Teams, die mit KI-gestützter administrativer Arbeit beginnen."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Für Organisationen mit regelmäßiger, umfangreicher Dokumentenerstellung."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Für größere Organisationen mit erheblichem administrativem Arbeitsaufkommen."
+      },
+      "paymentsNote": "M-Pesa und PayPal werden für kostenpflichtige Abonnements unterstützt."
+    },
+    "final": {
+      "title": "Bereit, Worker auszuprobieren?",
+      "cta": "Konto erstellen"
+    }
+  },
+  "auth": {
+    "email": "E-Mail",
+    "password": "Passwort",
+    "fullName": "Vollständiger Name",
+    "confirmPassword": "Passwort bestätigen",
+    "currentPassword": "Aktuelles Passwort",
+    "newPassword": "Neues Passwort",
+    "confirmNewPassword": "Neues Passwort bestätigen",
+    "code6": "6-stelliger Code",
+    "signInFailed": "Anmeldung fehlgeschlagen. Überprüfen Sie Ihre Zugangsdaten.",
+    "forgotPassword": "Passwort vergessen?",
+    "mfaNotice": "Zur Bestätigung jeder Anmeldung wird ein einmaliger Code per E-Mail gesendet.",
+    "createYourAccount": "Erstellen Sie Ihr Konto",
+    "pwMin": "Das Passwort muss mindestens {n} Zeichen lang sein.",
+    "newPwMin": "Das neue Passwort muss mindestens {n} Zeichen lang sein.",
+    "pwMismatch": "Die Passwörter stimmen nicht überein.",
+    "createFailed": "Konto konnte nicht erstellt werden.",
+    "haveAccount": "Sie haben bereits ein Konto?",
+    "startAtSignIn": "Beginnen Sie mit der Anmeldung oder Registrierung.",
+    "goToSignIn": "Zur Anmeldung",
+    "invalidCode": "Ungültiger oder abgelaufener Code.",
+    "codeSent": "Ein neuer Code wurde gesendet.",
+    "resendFailed": "Erneutes Senden nicht möglich.",
+    "verifyEmailTitle": "Bestätigen Sie Ihre E-Mail-Adresse",
+    "verifyEmailTo": "Bestätigen Sie Ihre E-Mail-Adresse — {email}",
+    "verify": "Bestätigen",
+    "resendCode": "Code erneut senden",
+    "signInAgain": "Bitte melden Sie sich erneut an.",
+    "mfaPrompt": "Geben Sie den Anmeldecode ein, den wir Ihnen per E-Mail gesendet haben",
+    "mfaPromptTo": "Geben Sie den Anmeldecode ein, den wir an {email} gesendet haben",
+    "verifySignIn": "Bestätigen & anmelden",
+    "requestFailed": "Anfrage konnte nicht verarbeitet werden.",
+    "resetTitle": "Passwort zurücksetzen",
+    "sendResetCode": "Zurücksetzungscode senden",
+    "backToSignIn": "Zurück zur Anmeldung",
+    "resetPrompt": "Geben Sie den per E-Mail gesendeten Code ein und wählen Sie ein neues Passwort",
+    "resetPassword": "Passwort zurücksetzen",
+    "setNewPassword": "Neues Passwort festlegen",
+    "forcedChange": "Legen Sie aus Sicherheitsgründen Ihr eigenes Passwort fest, bevor Sie fortfahren.",
+    "updateAccountPassword": "Aktualisieren Sie Ihr Kontopasswort.",
+    "changeFailed": "Passwort konnte nicht geändert werden.",
+    "updatePassword": "Passwort aktualisieren",
+    "signOutInstead": "Stattdessen abmelden"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "subtitle": "Diese Seite existiert in diesem Arbeitsbereich nicht.",
+    "back": "Zurück zum Dashboard"
+  },
+  "status": {
+    "draft": "Entwurf",
+    "in_review": "in Prüfung",
+    "approved": "genehmigt",
+    "final": "final",
+    "archived": "archiviert",
+    "open": "offen",
+    "processing": "wird verarbeitet",
+    "ready": "bereit",
+    "pending": "ausstehend",
+    "transcribing": "wird transkribiert",
+    "transcribed": "transkribiert",
+    "failed": "fehlgeschlagen",
+    "sent": "gesendet",
+    "received": "empfangen",
+    "completed": "abgeschlossen",
+    "cancelled": "abgebrochen",
+    "active": "aktiv",
+    "suspended": "ausgesetzt"
+  },
+  "kind": {
+    "meeting": "Besprechung",
+    "interview": "Interview",
+    "briefing": "Briefing",
+    "dictation": "Diktat",
+    "field_report": "Feldbericht",
+    "consultation": "Konsultation",
+    "other": "Sonstiges"
+  },
+  "classification": {
+    "unclassified": "nicht eingestuft",
+    "internal": "intern",
+    "confidential": "vertraulich",
+    "restricted": "eingeschränkt"
+  },
+  "dashboard": {
+    "welcome": "Willkommen, {name}",
+    "defaultName": "Beamter",
+    "subtitle": "Ihr administrativer Arbeitsbereich — erfassen, entwerfen, prüfen und ablegen.",
+    "stats": {
+      "sessions": "Sitzungen",
+      "documents": "Dokumente",
+      "awaitingReview": "Zur Prüfung ausstehend",
+      "outstandingActions": "Offene Aufgaben"
+    },
+    "recentSessions": "Letzte Sitzungen",
+    "documentsToAction": "Zu bearbeitende Dokumente",
+    "noSessions": "Noch keine Sitzungen.",
+    "nothingToAction": "Nichts erfordert Ihre Aufmerksamkeit."
+  },
+  "sessions": {
+    "subtitle": "Jede Sitzung ist eine Fallakte — Audio, Transkript und die daraus erstellten Dokumente.",
+    "new": "Neue Sitzung",
+    "createFailed": "Sitzung konnte nicht erstellt werden.",
+    "titlePlaceholder": "z. B. Bezirkssicherheitsausschuss — Wöchentliches Briefing",
+    "create": "Sitzung erstellen",
+    "empty": "Noch keine Sitzungen. Erstellen Sie eine, um mit der Aufnahme zu beginnen.",
+    "fields": {
+      "title": "Titel",
+      "kind": "Art",
+      "date": "Datum",
+      "classification": "Klassifizierung",
+      "status": "Status",
+      "department": "Abteilung",
+      "location": "Ort"
+    }
+  },
+  "session": {
+    "loadFailed": "Sitzung konnte nicht geladen werden.",
+    "micDenied": "Mikrofonzugriff verweigert oder nicht verfügbar.",
+    "audioSaved": "Audio in der Sitzung gespeichert.",
+    "uploadFailed": "Upload fehlgeschlagen.",
+    "transcribing": "Lokale Transkription läuft — bei längeren Audiodateien kann dies einen Moment dauern.",
+    "transcribed": "Transkription abgeschlossen.",
+    "transcribeFailed": "Transkription fehlgeschlagen. Prüfen Sie, ob der STT-Dienst ausgeführt wird.",
+    "updateFailed": "Aktualisierung nicht möglich.",
+    "draftingMinutes": "Protokoll wird aus dem Transkript erstellt…",
+    "minutesCreated": "Protokollentwurf erstellt.",
+    "minutesFailed": "Protokoll konnte nicht erstellt werden.",
+    "notFound": "Sitzung nicht gefunden.",
+    "noDate": "kein Datum",
+    "noLocation": "kein Ort",
+    "generateMinutes": "Protokoll erstellen",
+    "captureAudio": "Audio aufnehmen",
+    "stopSave": "Stoppen & speichern",
+    "startRecording": "Aufnahme starten",
+    "or": "oder",
+    "uploadAudio": "Audio hochladen",
+    "audioNote": "Audio verbleibt auf dem Host. Die Transkription erfolgt lokal auf Englisch. Das Protokoll kombiniert alle Clips dieser Sitzung in der Reihenfolge.",
+    "documentsFrom": "Dokumente aus dieser Sitzung",
+    "noDocuments": "Noch keine Dokumente. Transkribieren Sie einen Clip und erstellen Sie dann das Protokoll.",
+    "recordingsTitle": "Aufnahmen & Transkripte",
+    "clipOne": "{n} Clip",
+    "clipMany": "{n} Clips",
+    "noRecordings": "Noch keine Aufnahmen. Nehmen Sie oben Audio auf oder laden Sie es hoch.",
+    "includeTitle": "Diesen Clip bei der Protokollerstellung berücksichtigen",
+    "inMinutes": "Im Protokoll",
+    "transcribe": "Transkribieren",
+    "transcribeHint": "Transkribieren Sie diesen Clip, um sein Transkript hier anzuzeigen und zu bearbeiten.",
+    "audioLoadFailed": "Audio konnte nicht geladen werden.",
+    "loadAudio": "Audio laden",
+    "words": "{n} Wörter",
+    "verified": "verifiziert",
+    "editVerify": "Bearbeiten & verifizieren",
+    "saveVerified": "Speichern & als verifiziert markieren",
+    "saveDraft": "Entwurf speichern",
+    "emptyTranscript": "Leeres Transkript."
+  },
+  "docType": {
+    "minutes": "Protokoll",
+    "memo": "Vermerk",
+    "letter": "Schreiben",
+    "report": "Bericht",
+    "policy_brief": "Policy Brief",
+    "briefing_note": "Briefing-Vermerk",
+    "concept_note": "Konzeptpapier",
+    "circular": "Rundschreiben",
+    "action_matrix": "Maßnahmenmatrix",
+    "speech": "Rede"
+  },
+  "approval": {
+    "submit": "eingereicht",
+    "submitted": "eingereicht",
+    "approve": "genehmigt",
+    "approved": "genehmigt",
+    "reject": "abgelehnt",
+    "rejected": "abgelehnt",
+    "finalize": "abgeschlossen",
+    "finalized": "abgeschlossen"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Interner Vermerk",
+      "desc": "Standardmäßiger interner Vermerk mit An / Von / Betreff."
+    },
+    "letter-official": {
+      "name": "Offizielles Schreiben",
+      "desc": "Formelles Schreiben auf dem Briefkopf der Dienststelle."
+    },
+    "circular-general": {
+      "name": "Rundschreiben",
+      "desc": "Mitteilung an viele Empfänger."
+    },
+    "report-standard": {
+      "name": "Bericht",
+      "desc": "Allgemeiner Bericht mit Zusammenfassung, Abschnitten und Empfehlungen."
+    },
+    "policy-brief": {
+      "name": "Policy Brief",
+      "desc": "Kurzes Papier für Entscheidungsträger."
+    },
+    "briefing-note": {
+      "name": "Briefing-Vermerk",
+      "desc": "Kurzer Vermerk zur Vorbereitung einer Leitung vor einem Termin."
+    },
+    "concept-note": {
+      "name": "Konzeptpapier",
+      "desc": "Gliederung eines vorgeschlagenen Programms oder einer Maßnahme."
+    },
+    "minutes-blank": {
+      "name": "Besprechungsprotokoll (leer)",
+      "desc": "Leere Protokollstruktur zum manuellen Ausfüllen."
+    },
+    "speech-remarks": {
+      "name": "Rede / Anmerkungen",
+      "desc": "Formelle Anmerkungen für eine Veranstaltung."
+    }
+  },
+  "documents": {
+    "subtitle": "Protokolle, Memos, Briefe, Berichte und Kurzdossiers — mit KI entworfen, von Menschen genehmigt.",
+    "startFromTemplate": "Mit Vorlage beginnen",
+    "fromSpreadsheet": "Bericht aus Tabellenkalkulation",
+    "draftWithAI": "Mit KI entwerfen",
+    "templateTitle": "Mit einer Vorlage beginnen",
+    "allTypes": "Alle Typen",
+    "orgTemplates": "Vorlagen Ihrer Organisation",
+    "savedByOrg": "Von Ihrer Organisation gespeichert",
+    "useTemplate": "Diese Vorlage verwenden",
+    "generalTemplates": "Allgemeine Vorlagen",
+    "spreadsheetFailed": "Aus dieser Tabellenkalkulation konnte kein Bericht erstellt werden.",
+    "templateFailed": "Aus der Vorlage konnte nichts erstellt werden.",
+    "draftFailed": "Dokument konnte nicht entworfen werden.",
+    "fields": {
+      "type": "Dokumenttyp",
+      "title": "Titel",
+      "recipient": "Empfänger (optional)",
+      "department": "Abteilung (optional)",
+      "brief": "Anweisungen / Kurzdossier"
+    },
+    "briefPlaceholder": "Beschreiben Sie den Zweck, die Kernpunkte und alle aufzunehmenden Fakten. Der Assistent entwirft ein formelles Dokument, das Sie bearbeiten und genehmigen können.",
+    "generateDraft": "Entwurf erstellen",
+    "empty": "Noch keine Dokumente.",
+    "table": {
+      "title": "Titel",
+      "type": "Typ",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Dokument konnte nicht geladen werden.",
+    "invalidJson": "Inhalt ist kein gültiges JSON.",
+    "saved": "Gespeichert. Version erhöht.",
+    "saveFailed": "Speichern fehlgeschlagen.",
+    "done": {
+      "submit": "Dokument zur Prüfung eingereicht.",
+      "approve": "Dokument genehmigt.",
+      "reject": "Dokument abgelehnt.",
+      "finalize": "Dokument finalisiert."
+    },
+    "failed": {
+      "submit": "Einreichung nicht möglich.",
+      "approve": "Genehmigung nicht möglich.",
+      "reject": "Ablehnung nicht möglich.",
+      "finalize": "Finalisierung nicht möglich."
+    },
+    "templateName": "Vorlagenname",
+    "templateDefault": "Vorlage {title}",
+    "templateSaved": "Als wiederverwendbare Vorlage für Ihre Organisation gespeichert.",
+    "templateSaveFailed": "Vorlage konnte nicht gespeichert werden.",
+    "exportFailed": "Export fehlgeschlagen.",
+    "notFound": "Dokument nicht gefunden.",
+    "exportDocx": "DOCX exportieren",
+    "exportPptx": "PPTX exportieren",
+    "exportXlsx": "XLSX exportieren",
+    "saveAsTemplate": "Als Vorlage speichern",
+    "content": "Inhalt",
+    "workflow": "Workflow",
+    "aiAssisted": "KI-unterstützter Entwurf",
+    "auditChain": "Prüfkette: Audio → Transkript → KI-Entwurf → menschliche Bearbeitung → Freigabe → Final. Jeder Schritt wird aufgezeichnet.",
+    "comment": "Kommentar (optional)",
+    "commentPlaceholder": "Notiz für die Akte hinzufügen",
+    "submit": "Zur Prüfung einreichen",
+    "approve": "Genehmigen",
+    "reject": "Ablehnen",
+    "finalize": "Finalisieren",
+    "finalLocked": "Final — zur Bearbeitung gesperrt",
+    "editJson": "Inhalt bearbeiten (JSON)",
+    "jsonNote": "Strukturierte Inhalte steuern das gebrandete DOCX. Bearbeiten Sie die Felder unten und speichern Sie; Branding und Layout werden beim Export automatisch angewendet.",
+    "saveContent": "Inhalt speichern",
+    "approvalHistory": "Genehmigungsverlauf"
+  },
+  "emails": {
+    "subtitle": "Briefe und E-Mails mit KI entwerfen. Es wird nichts gesendet, bis eine Person auf Senden klickt.",
+    "needIntent": "Geben Sie dem Assistenten einen Betreff oder eine Absicht für den Entwurf an.",
+    "draftReady": "Entwurf bereit. Vor dem Senden prüfen und bearbeiten.",
+    "draftFailed": "Entwurf fehlgeschlagen.",
+    "draftSaved": "Entwurf gespeichert.",
+    "saveFailed": "Speichern nicht möglich.",
+    "confirmSend": "Diese E-Mail jetzt senden? Diese Aktion wird im Prüfpfad aufgezeichnet.",
+    "sent": "E-Mail gesendet.",
+    "sendFailed": "Senden fehlgeschlagen.",
+    "compose": "Verfassen",
+    "messages": "Nachrichten",
+    "empty": "Noch keine Korrespondenz.",
+    "message": "Nachricht",
+    "details": "Details",
+    "to": "An",
+    "cc": "Cc",
+    "subject": "Betreff",
+    "intent": "Was soll darin stehen? (für KI)",
+    "intentPlaceholder": "z. B. Häuptlinge zum Sicherheits-Baraza am Freitag um 10 Uhr einladen",
+    "body": "Text",
+    "saveDraft": "Entwurf speichern",
+    "toLabel": "An:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Betreff:",
+    "aiAssisted": "KI-unterstützt",
+    "sendNow": "Jetzt senden",
+    "selectHint": "Wählen Sie eine Nachricht aus oder verfassen Sie eine neue."
+  },
+  "knowledge": {
+    "subtitle": "Referenzmaterial, auf das der Assistent zurückgreifen kann — Richtlinien, Vorlagen, Präzedenzfälle.",
+    "added": "Zur Wissensdatenbank hinzugefügt.",
+    "addFailed": "Konnte nicht hinzugefügt werden.",
+    "chooseFile": "Wählen Sie eine Datei zum Hochladen.",
+    "ocrFailed": "Datei gespeichert. OCR konnte keinen Text aus dieser Datei lesen (möglicherweise ist die Qualität gering). Sie können den Text manuell einfügen.",
+    "extracted": "Datei gespeichert und {n} Zeichen Text extrahiert.",
+    "noText": "Datei gespeichert. Aus diesem Format konnte kein Text extrahiert werden.",
+    "uploadFailed": "Hochladen fehlgeschlagen.",
+    "confirmRemove": "Diese Referenz entfernen?",
+    "uploadTitle": "Dokument hochladen",
+    "file": "Datei",
+    "titleOptional": "Titel (optional)",
+    "titleDefault": "Standardmäßig Dateiname",
+    "categoryOptional": "Kategorie (optional)",
+    "uploadExtract": "Hochladen & extrahieren",
+    "uploadNote": "Bei Word-, PDF-, CSV- und Textdateien wird der Text automatisch extrahiert. Gescannte PDFs und Fotos werden automatisch per OCR gelesen.",
+    "pasteTitle": "Referenz hinzufügen (Text einfügen)",
+    "title": "Titel",
+    "category": "Kategorie",
+    "categoryPlaceholder": "z. B. Rundschreiben, Richtlinien",
+    "textContent": "Textinhalt",
+    "add": "Hinzufügen",
+    "references": "Referenzen",
+    "empty": "Noch nichts vorhanden.",
+    "uncategorised": "Nicht kategorisiert",
+    "remove": "Entfernen"
+  },
+  "assistant": {
+    "subtitle": "Geben Sie eine Anweisung in einfacher Sprache — zusammenfassen, finden, entwerfen oder erklären über Ihren gesamten Arbeitsbereich.",
+    "failed": "Der Assistent konnte dies nicht verarbeiten.",
+    "instruction": "Anweisung",
+    "placeholder": "z. B. Fassen Sie die Beschlüsse des Sicherheitsausschusses dieser Woche zusammen oder listen Sie Memos auf, die noch auf Genehmigung warten.",
+    "ask": "Fragen"
+  },
+  "actions": {
+    "subtitle": "Aufgaben, die aus Protokollen und Maßnahmenmatrizen über Sitzungen hinweg extrahiert wurden.",
+    "empty": "Keine offenen Aufgaben gefunden.",
+    "table": {
+      "action": "Aufgabe",
+      "responsible": "Verantwortlich",
+      "timeline": "Zeitrahmen",
+      "source": "Quelle"
+    }
+  },
+  "paypal": {
+    "title": "PayPal-Zahlung",
+    "subtitle": "Bestätigung der Abonnementzahlung.",
+    "confirming": "Ihre PayPal-Zahlung wird bestätigt...",
+    "noOrder": "Es wurde keine PayPal-Bestellung zurückgegeben.",
+    "confirmed": "Zahlung bestätigt. Ihr Worker-Abonnement ist jetzt aktiv.",
+    "failed": "Die PayPal-Zahlung konnte nicht bestätigt werden.",
+    "success": "Zahlung erfolgreich",
+    "viewSubscription": "Abonnement anzeigen",
+    "errorTitle": "Zahlung konnte nicht bestätigt werden",
+    "returnToSubscription": "Zurück zum Abonnement"
+  },
+  "tenant": {
+    "saved": "Organisationsdetails gespeichert. Sie erscheinen auf jedem Dokument, das Sie exportieren.",
+    "saveFailed": "Speichern fehlgeschlagen.",
+    "logoUploaded": "Logo hochgeladen.",
+    "signatureUploaded": "Signatur hochgeladen.",
+    "uploadFailed": "Hochladen fehlgeschlagen.",
+    "subtitleShort": "Branding für Ihren Arbeitsbereich.",
+    "noOrg": "Dieses Konto ist keiner Organisation zugeordnet.",
+    "subtitle": "Ihr Name, Briefkopf, Logo und Ihre Signatur erscheinen auf jedem Dokument, das Sie erstellen.",
+    "letterhead": "Briefkopf",
+    "orgName": "Organisationsname",
+    "line": "Briefkopfzeile {n}",
+    "line1Placeholder": "z. B. KREISVERWALTUNG VON ...",
+    "line2Placeholder": "z. B. Abteilung für ...",
+    "line3Placeholder": "z. B. Einheit / Büro",
+    "saveLetterhead": "Briefkopf speichern",
+    "blankHint": "Lassen Sie Zeilen leer, um auf Ihren Organisationsnamen zurückzugreifen.",
+    "logoSignature": "Logo & Signatur",
+    "logo": "Wappen / Logo (PNG oder JPG)",
+    "signature": "E-Signatur (PNG oder JPG)",
+    "uploaded": "hochgeladen",
+    "brandingNote": "Das Logo erscheint in der Dokumentkopfzeile und auf den Titelseiten von Folien. Die Signatur wird am Ende exportierter Dokumente platziert. Verwenden Sie für beste Ergebnisse ein PNG mit transparentem Hintergrund."
+  },
+  "users": {
+    "createdTemp": "Benutzer erstellt. Temporäres Passwort: {temp} — sicher übermitteln; es muss bei der ersten Anmeldung geändert werden.",
+    "created": "Benutzer erstellt.",
+    "createFailed": "Benutzer konnte nicht erstellt werden.",
+    "confirmRemove": "{name} entfernen?",
+    "removeFailed": "Entfernen nicht möglich.",
+    "subtitle": "Zugriff verwalten. Das Superadmin-Konto kann hier nicht geändert werden.",
+    "add": "Benutzer hinzufügen",
+    "create": "Benutzer erstellen",
+    "empty": "Keine Benutzer.",
+    "fields": {
+      "name": "Name",
+      "email": "E-Mail",
+      "role": "Rolle",
+      "department": "Abteilung",
+      "status": "Status"
+    },
+    "suspend": "Sperren",
+    "reinstate": "Wiederherstellen",
+    "remove": "Entfernen"
+  },
+  "audit": {
+    "subtitle": "Jede bedeutende Aktion wird aufgezeichnet. Protokolle enthalten nur Metadaten und Identifikatoren — niemals Dokumentinhalte oder Audio.",
+    "empty": "Keine Prüfeinträge.",
+    "table": {
+      "when": "Wann",
+      "actor": "Akteur",
+      "action": "Aktion",
+      "resource": "Ressource"
+    },
+    "system": "System"
+  },
+  "payments": {
+    "stkSent": "STK-Push gesendet. Bitten Sie den Zahler, die Zahlung auf seinem Telefon zu genehmigen.",
+    "initiateFailed": "Zahlung konnte nicht initiiert werden.",
+    "subtitle": "M-Pesa (Daraja STK-Push) und PayPal-Transaktionen.",
+    "requestTitle": "M-Pesa-Zahlung anfordern",
+    "phone": "Telefon (07.. oder 2547..)",
+    "amountKes": "Betrag (KES)",
+    "purpose": "Zweck",
+    "sendStk": "STK-Push senden",
+    "transactions": "Transaktionen",
+    "empty": "Keine Transaktionen.",
+    "table": {
+      "provider": "Anbieter",
+      "amount": "Betrag",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Rechnungen und Belege für abgeschlossene Worker-Abonnementzahlungen.",
+    "loadFailed": "Abrechnungsdokumente konnten nicht geladen werden.",
+    "downloadFailed": {
+      "invoice": "Rechnung konnte nicht heruntergeladen werden.",
+      "receipt": "Beleg konnte nicht heruntergeladen werden."
+    },
+    "documentsTitle": "Abrechnungsdokumente",
+    "intro": "Laden Sie Rechnungen und Belege für die abgeschlossenen Abonnementzahlungen Ihrer Organisation herunter.",
+    "disclaimer": "Diese Dokumente erfassen Worker-Abonnementzahlungen und dienen Zahlungs- und Erstattungszwecken. Sie gelten nicht als KRA/eTIMS-Steuerrechnungen, sofern sie nicht gesondert über eine konforme eTIMS-Integration ausgestellt werden.",
+    "invoices": "Rechnungen",
+    "noInvoices": "Noch keine Rechnungen.",
+    "receipts": "Belege",
+    "noReceipts": "Noch keine Belege.",
+    "downloadPdf": "PDF herunterladen",
+    "table": {
+      "invoice": "Rechnung",
+      "receipt": "Beleg",
+      "date": "Datum",
+      "description": "Beschreibung",
+      "amount": "Betrag",
+      "status": "Status",
+      "provider": "Anbieter",
+      "reference": "Referenz"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abonnement konnte nicht geladen werden.",
+    "selectFirst": "Wählen Sie zuerst einen Abonnementplan aus.",
+    "mpesaSent": "M-Pesa STK-Push gesendet. Bestätigen Sie die Zahlung auf Ihrem Telefon. Ihr Abonnement wird nach Zahlungsbestätigung aktiviert.",
+    "mpesaFailed": "M-Pesa-Zahlung konnte nicht initiiert werden.",
+    "noApproveUrl": "PayPal-Genehmigungs-URL wurde nicht zurückgegeben.",
+    "paypalFailed": "PayPal-Zahlung konnte nicht gestartet werden.",
+    "subtitleShort": "Verwalten Sie Ihr Worker-Abonnement.",
+    "subtitle": "Verwalten Sie Ihren Worker-Plan, Ihre Testphase und Ihre Abrechnung.",
+    "current": "Aktuelles Abonnement",
+    "organisation": "Organisation",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "14-tägige kostenlose Testphase",
+    "trialEnds": "Testphase endet",
+    "dayRemaining": "{n} Tag verbleibend",
+    "daysRemaining": "{n} Tage verbleibend",
+    "renewsEnds": "Verlängert sich / endet",
+    "chooseTitle": "Wählen Sie einen Plan",
+    "chooseSubtitle": "Alle Pläne umfassen den administrativen Workflow von Worker. Ihre 14-tägige Testphase ist kostenlos.",
+    "perMonth": "/ Monat",
+    "planSelected": "{plan} ausgewählt. Ihr Plan ist gespeichert und bereit für die Zahlung.",
+    "selectFailed": "Plan konnte nicht ausgewählt werden.",
+    "selected": "Ausgewählt",
+    "selectPlan": "Tarif auswählen",
+    "activateTitle": "Aktivieren Sie Ihr Abonnement",
+    "selectAbove": "Wählen Sie oben einen Tarif aus, um mit der Zahlung fortzufahren.",
+    "stkNote": "Ein STK-Push wird an die untenstehende Telefonnummer gesendet.",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "07.. oder 2547..",
+    "payMpesa": "Mit M-Pesa bezahlen",
+    "paypalNote": "Fahren Sie mit PayPal fort, um den ausgewählten Tarif in USD zu bezahlen.",
+    "payPaypal": "Mit PayPal bezahlen",
+    "settleNote": "Kostenpflichtige Abonnements können über M-Pesa oder PayPal abgerechnet werden.",
+    "activationNote": "Ihr ausgewählter Tarif wird nach erfolgreicher Zahlungsbestätigung aktiviert.",
+    "historyNote": "Der Zahlungsverlauf ist unter Administration → Zahlungen verfügbar."
+  },
+  "intl": {
+    "territory": "Gebiet",
+    "searchTerritory": "Gebiet suchen…",
+    "selectTerritory": "Wählen Sie Ihr Gebiet aus",
+    "territoryRequired": "Bitte wählen Sie Ihr Gebiet aus.",
+    "workingLanguage": "Arbeitssprache",
+    "meetingLanguage": "Besprechungssprache",
+    "useDefault": "Organisationsstandard",
+    "beta": "Transkription Beta",
+    "unavailable": "keine Transkription"
+  },
+  "generate": {
+    "title": "Ein Dokument aus dieser Sitzung erstellen",
+    "as": "Erstellen als",
+    "instructions": "Anweisung (optional)",
+    "placeholder": "z. B. Schreiben an den Staatssekretär mit Zusammenfassung der Beschlüsse 2 und 3",
+    "button": "Erstellen",
+    "working": "Ihr Dokument wird entworfen… dies kann eine Minute dauern.",
+    "done": "Dokument erstellt.",
+    "failed": "Das Dokument konnte nicht erstellt werden.",
+    "hint": "Verwendet die zur Aufnahme markierten Transkripte in der angegebenen Reihenfolge. Sie prüfen und genehmigen, bevor etwas geteilt wird."
+  },
+  "queue": {
+    "queued": "Zur Transkription in die Warteschlange gestellt. Diese Seite wird automatisch aktualisiert."
+  },
+  "pdfExport": {
+    "button": "PDF exportieren"
+  },
+  "access": {
+    "readOnly": "Ihr Arbeitsbereich ist schreibgeschützt, da Ihre Testphase oder Ihr Abonnement abgelaufen ist. Sie können Ihre Dokumente weiterhin anzeigen und exportieren.",
+    "grace": "Ihre Testphase oder Ihr Abonnement endete am {date}. Sie haben noch {n} Tage vollen Zugriff.",
+    "trialEnding": "Ihre kostenlose Testphase endet in {n} Tagen.",
+    "choosePlan": "Tarif auswählen"
+  },
+  "sessionLang": {
+    "saved": "Besprechungssprache gespeichert. Sie gilt für ab jetzt transkribierte Aufnahmen.",
+    "failed": "Die Besprechungssprache konnte nicht gespeichert werden."
+  },
+  "i18nNote": {
+    "machine": "Maschinell übersetzt"
+  }
+}

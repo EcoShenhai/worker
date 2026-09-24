@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Gjuha",
+    "signIn": "Hyr",
+    "signOut": "Dil",
+    "createAccount": "Krijo llogari",
+    "getStarted": "Filloni",
+    "startFreeTrial": "Filloni provën falas",
+    "cancel": "Anulo",
+    "back": "Kthehu",
+    "download": "Shkarko",
+    "viewAll": "Shiko të gjitha"
+  },
+  "brand": {
+    "tagline": "Hapësirë pune administrative me AI",
+    "secureWorkspace": "Hapësirë pune administrative e sigurt",
+    "badge": "Anglisht · Audio"
+  },
+  "nav": {
+    "dashboard": "Paneli",
+    "workspace": "Hapësira e punës",
+    "sessions": "Sesionet dhe regjistrimet",
+    "documents": "Dokumentet",
+    "correspondence": "Korrespondenca",
+    "knowledge": "Baza e njohurive",
+    "assistant": "Asistenti",
+    "askWorker": "Pyet Worker",
+    "actions": "Veprimet në pritje",
+    "administration": "Administrimi",
+    "organisation": "Organizata",
+    "users": "Përdoruesit",
+    "audit": "Gjurmët e auditimit",
+    "subscription": "Abonimi",
+    "payments": "Pagesat",
+    "billing": "Faturimi"
+  },
+  "roles": {
+    "viewer": "Shikues",
+    "officer": "Zyrtar",
+    "admin": "Administrator",
+    "superadmin": "Super administrator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Kthejeni atë që thoni në dokumente të përfunduara dhe të arkivuara.",
+      "body": "Worker është një hapësirë pune administrative me AI për organizatat që prodhojnë sasi të mëdha dokumentesh formale nga mbledhjet, informimet dhe korrespondenca. Regjistroni një mbledhje ose diktoni, dhe Worker e transkripton atë, harton procesverbale, memorandume, letra, raporte dhe përmbledhje politikash, dhe i kalon ato nëpër rishikim dhe miratim — me një gjurmë të plotë auditimi.",
+      "badgeRow": "Audio · Anglisht · Hapësirë pune e sigurt"
+    },
+    "what": {
+      "title": "Çfarë bën Worker",
+      "lead": "Puna rutinë e zyrës që rrethon mbledhjet dhe korrespondencën — kryhet në minuta, jo në orë.",
+      "f1": {
+        "title": "Regjistro dhe transkripto",
+        "body": "Kapni mbledhjet, intervistat, informimet ose diktime. Audioja transkriptohet lokalisht në anglisht."
+      },
+      "f2": {
+        "title": "Hartoni me AI",
+        "body": "Gjeneroni procesverbale, memorandume, letra, raporte, përmbledhje politikash dhe qarkore në formën e saktë zyrtare."
+      },
+      "f3": {
+        "title": "Rishikoni dhe miratoni",
+        "body": "Çdo dokument kalon nëpër fazat e hartimit, rishikimit, miratimit dhe finalizimit — njerëzit mbeten në kontroll."
+      },
+      "f4": {
+        "title": "I sigurt dhe i audituar",
+        "body": "Qasje e bazuar në role dhe një gjurmë e plotë auditimi. Korrespondenca dërgohet gjithmonë vetëm nga një person."
+      }
+    },
+    "start": {
+      "title": "Fillimi kërkon vetëm një minutë",
+      "lead": "Krijoni një llogari dhe filloni provën falas 14-ditore.",
+      "s1": {
+        "title": "Krijoni llogarinë tuaj",
+        "body": "Vendosni emrin, emailin dhe një fjalëkalim."
+      },
+      "s2": {
+        "title": "Verifikoni emailin tuaj",
+        "body": "Vendosni kodin 6-shifror që ju dërgojmë me email."
+      },
+      "s3": {
+        "title": "Hyni në mënyrë të sigurt",
+        "body": "Çdo hyrje konfirmohet me një kod një-përdorimësh të dërguar me email."
+      },
+      "s4": {
+        "title": "Filloni punën",
+        "body": "Krijoni një sesion, regjistroni dhe gjeneroni dokumentin tuaj të parë."
+      }
+    },
+    "pricing": {
+      "title": "Çmime të thjeshta abonimi",
+      "lead": "Filloni me një provë falas 14-ditore. Zgjidhni planin që përshtatet me volumin e punës administrative që prodhon organizata juaj.",
+      "perMonth": "/muaj",
+      "mostPopular": "MË I POPULLARIZUARI",
+      "starter": {
+        "name": "Fillestar",
+        "desc": "Për ekipe të vogla që fillojnë punën administrative të asistuar nga AI."
+      },
+      "professional": {
+        "name": "Profesional",
+        "desc": "Për organizata me prodhim të rregullt dhe me volum të lartë dokumentesh."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Për organizata më të mëdha me ngarkesa të konsiderueshme administrative."
+      },
+      "paymentsNote": "M-Pesa dhe PayPal mbështeten për abonimet me pagesë."
+    },
+    "final": {
+      "title": "Gati të provoni Worker?",
+      "cta": "Krijoni llogarinë tuaj"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Fjalëkalimi",
+    "fullName": "Emri i plotë",
+    "confirmPassword": "Konfirmo fjalëkalimin",
+    "currentPassword": "Fjalëkalimi aktual",
+    "newPassword": "Fjalëkalimi i ri",
+    "confirmNewPassword": "Konfirmo fjalëkalimin e ri",
+    "code6": "Kodi 6-shifror",
+    "signInFailed": "Hyrja dështoi. Kontrolloni kredencialet tuaja.",
+    "forgotPassword": "Keni harruar fjalëkalimin?",
+    "mfaNotice": "Një kod një-përdorimësh dërgohet me email për të konfirmuar çdo hyrje.",
+    "createYourAccount": "Krijoni llogarinë tuaj",
+    "pwMin": "Fjalëkalimi duhet të ketë të paktën {n} karaktere.",
+    "newPwMin": "Fjalëkalimi i ri duhet të ketë të paktën {n} karaktere.",
+    "pwMismatch": "Fjalëkalimet nuk përputhen.",
+    "createFailed": "Llogaria nuk mund të krijohej.",
+    "haveAccount": "Keni tashmë një llogari?",
+    "startAtSignIn": "Filloni te hyrja ose regjistrimi.",
+    "goToSignIn": "Shkoni te hyrja",
+    "invalidCode": "Kodi është i pavlefshëm ose ka skaduar.",
+    "codeSent": "Një kod i ri është dërguar.",
+    "resendFailed": "Dërgimi nuk mund të përsëritej.",
+    "verifyEmailTitle": "Verifikoni emailin tuaj",
+    "verifyEmailTo": "Verifikoni emailin tuaj — {email}",
+    "verify": "Verifiko",
+    "resendCode": "Ridërgo kodin",
+    "signInAgain": "Ju lutemi hyni përsëri.",
+    "mfaPrompt": "Vendosni kodin e hyrjes që ju dërguam me email",
+    "mfaPromptTo": "Vendosni kodin e hyrjes që ju dërguam me email në {email}",
+    "verifySignIn": "Verifiko dhe hyni",
+    "requestFailed": "Kërkesa nuk mund të përpunohej.",
+    "resetTitle": "Rivendosni fjalëkalimin tuaj",
+    "sendResetCode": "Dërgo kodin e rivendosjes",
+    "backToSignIn": "Kthehu te hyrja",
+    "resetPrompt": "Vendosni kodin që ju dërguam me email dhe zgjidhni një fjalëkalim të ri",
+    "resetPassword": "Rivendos fjalëkalimin",
+    "setNewPassword": "Vendosni një fjalëkalim të ri",
+    "forcedChange": "Për siguri, vendosni fjalëkalimin tuaj përpara se të vazhdoni.",
+    "updateAccountPassword": "Përditësoni fjalëkalimin e llogarisë tuaj.",
+    "changeFailed": "Fjalëkalimi nuk mund të ndryshohej.",
+    "updatePassword": "Përditëso fjalëkalimin",
+    "signOutInstead": "Dilni në vend të kësaj"
+  },
+  "notFound": {
+    "title": "Faqja nuk u gjet",
+    "subtitle": "Kjo faqe nuk ekziston në këtë hapësirë pune.",
+    "back": "Kthehu te paneli"
+  },
+  "status": {
+    "draft": "draft",
+    "in_review": "në shqyrtim",
+    "approved": "miratuar",
+    "final": "final",
+    "archived": "arkivuar",
+    "open": "i hapur",
+    "processing": "në përpunim",
+    "ready": "gati",
+    "pending": "në pritje",
+    "transcribing": "po transkriptohet",
+    "transcribed": "transkriptuar",
+    "failed": "dështoi",
+    "sent": "dërguar",
+    "received": "pranuar",
+    "completed": "përfunduar",
+    "cancelled": "anuluar",
+    "active": "aktiv",
+    "suspended": "pezulluar"
+  },
+  "kind": {
+    "meeting": "takim",
+    "interview": "intervistë",
+    "briefing": "informim",
+    "dictation": "diktim",
+    "field_report": "raport terreni",
+    "consultation": "konsultim",
+    "other": "tjetër"
+  },
+  "classification": {
+    "unclassified": "i paklasifikuar",
+    "internal": "i brendshëm",
+    "confidential": "konfidencial",
+    "restricted": "i kufizuar"
+  },
+  "dashboard": {
+    "welcome": "Mirë se vini, {name}",
+    "defaultName": "Oficer",
+    "subtitle": "Hapësira juaj administrative — regjistroni, hartoni, rishikoni dhe arkivoni.",
+    "stats": {
+      "sessions": "Sesione",
+      "documents": "Dokumente",
+      "awaitingReview": "Në pritje të rishikimit",
+      "outstandingActions": "Veprime të papërfunduara"
+    },
+    "recentSessions": "Sesionet e fundit",
+    "documentsToAction": "Dokumente për veprim",
+    "noSessions": "Nuk ka sesione ende.",
+    "nothingToAction": "Asgjë nuk kërkon vëmendjen tuaj."
+  },
+  "sessions": {
+    "subtitle": "Çdo sesion është një dosje — audio, transkript dhe dokumentet e prodhuara prej tij.",
+    "new": "Sesion i ri",
+    "createFailed": "Sesioni nuk mund të krijohej.",
+    "titlePlaceholder": "p.sh. Komiteti i Sigurisë së Qarkut — Informim Javor",
+    "create": "Krijo sesion",
+    "empty": "Nuk ka sesione ende. Krijoni një për të filluar regjistrimin.",
+    "fields": {
+      "title": "Titulli",
+      "kind": "Lloji",
+      "date": "Data",
+      "classification": "Klasifikimi",
+      "status": "Statusi",
+      "department": "Departamenti",
+      "location": "Vendndodhja"
+    }
+  },
+  "session": {
+    "loadFailed": "Sesioni nuk mund të ngarkohej.",
+    "micDenied": "Qasja në mikrofon u refuzua ose nuk është e disponueshme.",
+    "audioSaved": "Audio u ruajt në sesion.",
+    "uploadFailed": "Ngarkimi dështoi.",
+    "transcribing": "Po transkriptohet lokalisht — kjo mund të zgjasë për audio më të gjatë.",
+    "transcribed": "Transkriptimi përfundoi.",
+    "transcribeFailed": "Transkriptimi dështoi. Kontrolloni që shërbimi STT është aktiv.",
+    "updateFailed": "Nuk mund të përditësohej.",
+    "draftingMinutes": "Po hartohen minutat nga transkriptimi…",
+    "minutesCreated": "Minutat draft u krijuan.",
+    "minutesFailed": "Minutat nuk mund të gjeneroheshin.",
+    "notFound": "Sesioni nuk u gjet.",
+    "noDate": "pa datë",
+    "noLocation": "pa vendndodhje",
+    "generateMinutes": "Gjenero minutat",
+    "captureAudio": "Kap audio",
+    "stopSave": "Ndalo & ruaj",
+    "startRecording": "Fillo regjistrimin",
+    "or": "ose",
+    "uploadAudio": "Ngarko audio",
+    "audioNote": "Audio qëndron në host. Transkriptimi ekzekutohet lokalisht në anglisht. Minutat kombinojnë çdo klip në këtë sesion, sipas radhës.",
+    "documentsFrom": "Dokumentet nga ky sesion",
+    "noDocuments": "Nuk ka dokumente ende. Transkriptoni një klip, pastaj gjeneroni minutat.",
+    "recordingsTitle": "Regjistrimet & transkriptimet",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klipe",
+    "noRecordings": "Nuk ka regjistrime ende. Regjistroni ose ngarkoni audio më sipër.",
+    "includeTitle": "Përfshi këtë klip gjatë gjenerimit të minutave",
+    "inMinutes": "Në minutat",
+    "transcribe": "Transkripto",
+    "transcribeHint": "Transkriptoni këtë klip për të parë dhe redaktuar transkriptimin këtu.",
+    "audioLoadFailed": "Audio nuk mund të ngarkohej.",
+    "loadAudio": "Ngarko audio",
+    "words": "{n} fjalë",
+    "verified": "i verifikuar",
+    "editVerify": "Redakto dhe verifiko",
+    "saveVerified": "Ruaj dhe shëno si të verifikuar",
+    "saveDraft": "Ruaj draftin",
+    "emptyTranscript": "Transkript i zbrazët."
+  },
+  "docType": {
+    "minutes": "procesverbal",
+    "memo": "memorandum",
+    "letter": "letër",
+    "report": "raport",
+    "policy_brief": "përmbledhje politike",
+    "briefing_note": "shënim informues",
+    "concept_note": "shënim konceptual",
+    "circular": "qarkore",
+    "action_matrix": "matricë veprimesh",
+    "speech": "fjalim"
+  },
+  "approval": {
+    "submit": "dorëzuar",
+    "submitted": "dorëzuar",
+    "approve": "miratuar",
+    "approved": "miratuar",
+    "reject": "refuzuar",
+    "rejected": "refuzuar",
+    "finalize": "finalizuar",
+    "finalized": "finalizuar"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memorandum i Brendshëm",
+      "desc": "Memorandum standard i brendshëm me Për / Nga / Subjekt."
+    },
+    "letter-official": {
+      "name": "Letër Zyrtare",
+      "desc": "Letër formale dalëse në letrën zyrtare të zyrës."
+    },
+    "circular-general": {
+      "name": "Qarkore",
+      "desc": "Njoftim i shpërndarë për shumë marrës."
+    },
+    "report-standard": {
+      "name": "Raport",
+      "desc": "Raport i përgjithshëm me përmbledhje, seksione dhe rekomandime."
+    },
+    "policy-brief": {
+      "name": "Përmbledhje Politike",
+      "desc": "Përmbledhje koncize për vendimmarrësit."
+    },
+    "briefing-note": {
+      "name": "Shënim Informues",
+      "desc": "Shënim i shkurtër për të informuar një drejtues përpara një angazhimi."
+    },
+    "concept-note": {
+      "name": "Shënim Konceptual",
+      "desc": "Përshkrim i një programi ose aktiviteti të propozuar."
+    },
+    "minutes-blank": {
+      "name": "Procesverbal Mbledhjeje (bosh)",
+      "desc": "Strukturë bosh procesverbali për t'u plotësuar me dorë."
+    },
+    "speech-remarks": {
+      "name": "Fjalim / Vërejtje",
+      "desc": "Vërejtje formale për një event."
+    }
+  },
+  "documents": {
+    "subtitle": "Procesverbale, memorandume, letra, raporte dhe përmbledhje — hartuar me AI, miratuar nga njerëzit.",
+    "startFromTemplate": "Filloni nga shablloni",
+    "fromSpreadsheet": "Raport nga fletëllogaritja",
+    "draftWithAI": "Hartoni me AI",
+    "templateTitle": "Filloni nga një shabllon",
+    "allTypes": "Të gjitha llojet",
+    "orgTemplates": "Shabllonet e organizatës tuaj",
+    "savedByOrg": "Ruajtur nga organizata juaj",
+    "useTemplate": "Përdorni këtë shabllon",
+    "generalTemplates": "Shabllone të përgjithshme",
+    "spreadsheetFailed": "Nuk mund të ndërtohej një raport nga ajo fletëllogaritje.",
+    "templateFailed": "Nuk mund të krijohej nga shablloni.",
+    "draftFailed": "Nuk mund të hartohej dokumenti.",
+    "fields": {
+      "type": "Lloji i dokumentit",
+      "title": "Titulli",
+      "recipient": "Marrësi (opsionale)",
+      "department": "Departamenti (opsionale)",
+      "brief": "Udhëzime / përmbledhje"
+    },
+    "briefPlaceholder": "Përshkruani qëllimin, pikat kryesore dhe çdo fakt që duhet përfshirë. Asistenti do të hartojë një dokument formal që mund ta redaktoni dhe miratoni.",
+    "generateDraft": "Gjeneroni draftin",
+    "empty": "Nuk ka dokumente ende.",
+    "table": {
+      "title": "Titulli",
+      "type": "Lloji",
+      "ref": "Ref.",
+      "status": "Statusi",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Nuk mund të ngarkohej dokumenti.",
+    "invalidJson": "Përmbajtja nuk është JSON i vlefshëm.",
+    "saved": "U ruajt. Versioni u rrit.",
+    "saveFailed": "Ruajtja dështoi.",
+    "done": {
+      "submit": "Dokumenti u dorëzua për shqyrtim.",
+      "approve": "Dokumenti u miratua.",
+      "reject": "Dokumenti u refuzua.",
+      "finalize": "Dokumenti u finalizua."
+    },
+    "failed": {
+      "submit": "Nuk mund të dorëzohej.",
+      "approve": "Nuk mund të miratohej.",
+      "reject": "Nuk mund të refuzohej.",
+      "finalize": "Nuk mund të finalizohej."
+    },
+    "templateName": "Emri i shabllonit",
+    "templateDefault": "Shablloni {title}",
+    "templateSaved": "U ruajt si shabllon i ripërdorshëm për organizatën tuaj.",
+    "templateSaveFailed": "Shablloni nuk mund të ruhej.",
+    "exportFailed": "Eksportimi dështoi.",
+    "notFound": "Dokumenti nuk u gjet.",
+    "exportDocx": "Eksporto DOCX",
+    "exportPptx": "Eksporto PPTX",
+    "exportXlsx": "Eksporto XLSX",
+    "saveAsTemplate": "Ruaj si shabllon",
+    "content": "Përmbajtja",
+    "workflow": "Rrjedha e punës",
+    "aiAssisted": "Draft i asistuar nga AI",
+    "auditChain": "Zinxhiri i auditimit: audio → transkript → draft AI → redaktim njerëzor → miratim → final. Çdo hap regjistrohet.",
+    "comment": "Koment (opsional)",
+    "commentPlaceholder": "Shtoni një shënim për regjistrin",
+    "submit": "Dërgo për shqyrtim",
+    "approve": "Mirato",
+    "reject": "Refuzo",
+    "finalize": "Finalizo",
+    "finalLocked": "Final — i bllokuar për redaktim",
+    "editJson": "Redakto përmbajtjen (JSON)",
+    "jsonNote": "Përmbajtja e strukturuar drejton DOCX me markë. Redaktoni fushat më poshtë dhe ruani; marka dhe faqosja aplikohen automatikisht gjatë eksportimit.",
+    "saveContent": "Ruaj përmbajtjen",
+    "approvalHistory": "Historiku i miratimeve"
+  },
+  "emails": {
+    "subtitle": "Hartoni letra dhe email-e me AI. Asgjë nuk dërgohet derisa një person të klikojë dërgo.",
+    "needIntent": "Jepini asistentit një subjekt ose qëllim për të hartuar draftin.",
+    "draftReady": "Drafti është gati. Shqyrtojeni dhe redaktojeni përpara dërgimit.",
+    "draftFailed": "Hartimi i draftit dështoi.",
+    "draftSaved": "Drafti u ruajt.",
+    "saveFailed": "Nuk mund të ruhej.",
+    "confirmSend": "Të dërgohet ky email tani? Ky veprim regjistrohet në gjurmën e auditimit.",
+    "sent": "Email-i u dërgua.",
+    "sendFailed": "Dërgimi dështoi.",
+    "compose": "Hartoni",
+    "messages": "Mesazhet",
+    "empty": "Nuk ka korrespondencë ende.",
+    "message": "Mesazh",
+    "details": "Detajet",
+    "to": "Për",
+    "cc": "Cc",
+    "subject": "Subjekti",
+    "intent": "Çfarë duhet të thotë kjo? (për AI)",
+    "intentPlaceholder": "p.sh. Ftoni kryetarët në barazën e sigurisë të premten në orën 10:00",
+    "body": "Teksti",
+    "saveDraft": "Ruaj draftin",
+    "toLabel": "Për:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Subjekti:",
+    "aiAssisted": "Me ndihmën e AI",
+    "sendNow": "Dërgo tani",
+    "selectHint": "Zgjidhni një mesazh ose shkruani një të ri."
+  },
+  "knowledge": {
+    "subtitle": "Material referues që asistenti mund të përdorë — politika, shabllone, precedentë.",
+    "added": "U shtua në bazën e njohurive.",
+    "addFailed": "Nuk mund të shtohej.",
+    "chooseFile": "Zgjidhni një skedar për t'u ngarkuar.",
+    "ocrFailed": "Skedari u ruajt. OCR nuk mund të lexonte tekst nga ky skedar (mund të jetë i cilësisë së dobët). Mund ta ngjitni tekstin manualisht.",
+    "extracted": "Skedari u ruajt dhe u nxorën {n} karaktere teksti.",
+    "noText": "Skedari u ruajt. Nuk mund të nxirret tekst nga ky format.",
+    "uploadFailed": "Ngarkimi dështoi.",
+    "confirmRemove": "Të hiqet kjo referencë?",
+    "uploadTitle": "Ngarko një dokument",
+    "file": "Skedari",
+    "titleOptional": "Titulli (opsional)",
+    "titleDefault": "Parazgjedhur emri i skedarit",
+    "categoryOptional": "Kategoria (opsionale)",
+    "uploadExtract": "Ngarko & nxirr",
+    "uploadNote": "Skedarët Word, PDF, CSV dhe tekstualë kanë tekstin e nxjerrë automatikisht. PDF-të e skanuara dhe fotot lexohen automatikisht me OCR.",
+    "pasteTitle": "Shto referencë (ngjit tekst)",
+    "title": "Titulli",
+    "category": "Kategoria",
+    "categoryPlaceholder": "p.sh. Qarkore, Politika",
+    "textContent": "Përmbajtja e tekstit",
+    "add": "Shto",
+    "references": "Referencat",
+    "empty": "Asgjë ende.",
+    "uncategorised": "Pa kategori",
+    "remove": "Hiq"
+  },
+  "assistant": {
+    "subtitle": "Jepni një udhëzim në gjuhë të thjeshtë — përmblidhni, gjeni, shkruani ose shpjegoni në të gjithë hapësirën tuaj të punës.",
+    "failed": "Asistenti nuk mund ta përpunonte atë.",
+    "instruction": "Udhëzim",
+    "placeholder": "p.sh. Përmblidh vendimet e komitetit të sigurisë të kësaj jave, ose listo memorandume që presin miratim.",
+    "ask": "Pyet"
+  },
+  "actions": {
+    "subtitle": "Veprimet e nxjerra nga procesverbalet dhe matricat e veprimeve nëpër sesione.",
+    "empty": "Nuk u gjetën veprime të papërfunduara.",
+    "table": {
+      "action": "Veprimi",
+      "responsible": "Përgjegjësi",
+      "timeline": "Afati kohor",
+      "source": "Burimi"
+    }
+  },
+  "paypal": {
+    "title": "Pagesa me PayPal",
+    "subtitle": "Konfirmimi i pagesës së abonimit.",
+    "confirming": "Po konfirmohet pagesa juaj me PayPal...",
+    "noOrder": "Nuk u kthye asnjë porosi PayPal.",
+    "confirmed": "Pagesa u konfirmua. Abonimi juaj në Worker tani është aktiv.",
+    "failed": "Pagesa me PayPal nuk mund të konfirmohej.",
+    "success": "Pagesa u krye me sukses",
+    "viewSubscription": "Shiko abonimin",
+    "errorTitle": "Pagesa nuk mund të konfirmohej",
+    "returnToSubscription": "Kthehu te abonimi"
+  },
+  "tenant": {
+    "saved": "Të dhënat e organizatës u ruajtën. Ato shfaqen në çdo dokument që eksportoni.",
+    "saveFailed": "Nuk mund të ruhej.",
+    "logoUploaded": "Logoja u ngarkua.",
+    "signatureUploaded": "Nënshkrimi u ngarkua.",
+    "uploadFailed": "Ngarkimi dështoi.",
+    "subtitleShort": "Brandimi për hapësirën tuaj të punës.",
+    "noOrg": "Kjo llogari nuk është e lidhur me një organizatë.",
+    "subtitle": "Emri juaj, koka e letrës, logoja dhe nënshkrimi shfaqen në çdo dokument që gjeneroni.",
+    "letterhead": "Koka e letrës",
+    "orgName": "Emri i organizatës",
+    "line": "Rreshti i kokës së letrës {n}",
+    "line1Placeholder": "p.sh. QEVERIA E QARKUT TË ...",
+    "line2Placeholder": "p.sh. Departamenti i ...",
+    "line3Placeholder": "p.sh. Njësia / Zyra",
+    "saveLetterhead": "Ruaj kokën e letrës",
+    "blankHint": "Lërini rreshtat bosh për t'u kthyer te emri i organizatës suaj.",
+    "logoSignature": "Logo & nënshkrim",
+    "logo": "Stema / logoja (PNG ose JPG)",
+    "signature": "Nënshkrim elektronik (PNG ose JPG)",
+    "uploaded": "u ngarkua",
+    "brandingNote": "Logoja shfaqet në krye të dokumentit dhe në faqet e titullit të sllajdeve. Nënshkrimi vendoset në fund të dokumenteve të eksportuara. Për rezultate më të mira, përdorni një PNG me sfond transparent."
+  },
+  "users": {
+    "createdTemp": "Përdoruesi u krijua. Fjalëkalim i përkohshëm: {temp} — ndajeni në mënyrë të sigurt; duhet ta ndryshojë në hyrjen e parë.",
+    "created": "Përdoruesi u krijua.",
+    "createFailed": "Përdoruesi nuk mund të krijohej.",
+    "confirmRemove": "Të hiqet {name}?",
+    "removeFailed": "Nuk mund të hiqej.",
+    "subtitle": "Menaxhoni aksesin. Llogaria e superadministratorit nuk mund të modifikohet këtu.",
+    "add": "Shto përdorues",
+    "create": "Krijo përdorues",
+    "empty": "Nuk ka përdorues.",
+    "fields": {
+      "name": "Emri",
+      "email": "Email",
+      "role": "Roli",
+      "department": "Departamenti",
+      "status": "Statusi"
+    },
+    "suspend": "Pezullo",
+    "reinstate": "Rikthe",
+    "remove": "Hiq"
+  },
+  "audit": {
+    "subtitle": "Çdo veprim i rëndësishëm regjistrohet. Regjistrat përmbajnë vetëm metadata dhe identifikues — kurrë përmbajtje dokumentesh ose audio.",
+    "empty": "Nuk ka regjistrime auditimi.",
+    "table": {
+      "when": "Kur",
+      "actor": "Aktori",
+      "action": "Veprimi",
+      "resource": "Burimi"
+    },
+    "system": "sistemi"
+  },
+  "payments": {
+    "stkSent": "Kërkesa STK u dërgua. Kërkojini paguesit ta miratojë në telefonin e tij.",
+    "initiateFailed": "Pagesa nuk mund të iniciohej.",
+    "subtitle": "Transaksione M-Pesa (Daraja STK push) dhe PayPal.",
+    "requestTitle": "Kërko pagesë M-Pesa",
+    "phone": "Telefoni (07.. ose 2547..)",
+    "amountKes": "Shuma (KES)",
+    "purpose": "Qëllimi",
+    "sendStk": "Dërgo STK push",
+    "transactions": "Transaksionet",
+    "empty": "Nuk ka transaksione.",
+    "table": {
+      "provider": "Ofruesi",
+      "amount": "Shuma",
+      "status": "Statusi",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Fatura dhe kuponë për pagesat e përfunduara të abonimit Worker.",
+    "loadFailed": "Dokumentet e faturimit nuk mund të ngarkoheshin.",
+    "downloadFailed": {
+      "invoice": "Fatura nuk mund të shkarkohej.",
+      "receipt": "Kuponi nuk mund të shkarkohej."
+    },
+    "documentsTitle": "Dokumentet e faturimit",
+    "intro": "Shkarkoni faturat dhe kuponat për pagesat e përfunduara të abonimit të organizatës tuaj.",
+    "disclaimer": "Këto dokumente regjistrojnë pagesat e abonimit të Worker dhe ofrohen për qëllime pagese dhe rimbursimi. Ato nuk paraqiten si fatura tatimore KRA/eTIMS, përveç rasteve kur lëshohen veçmas përmes një integrimi të përputhshëm eTIMS.",
+    "invoices": "Faturat",
+    "noInvoices": "Nuk ka fatura ende.",
+    "receipts": "Kuponat",
+    "noReceipts": "Nuk ka kuponë ende.",
+    "downloadPdf": "Shkarko PDF",
+    "table": {
+      "invoice": "Fatura",
+      "receipt": "Kuponi",
+      "date": "Data",
+      "description": "Përshkrimi",
+      "amount": "Shuma",
+      "status": "Statusi",
+      "provider": "Ofruesi",
+      "reference": "Referenca"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abonimi nuk mund të ngarkohej.",
+    "selectFirst": "Zgjidhni fillimisht një plan abonimi.",
+    "mpesaSent": "Kërkesa STK e M-Pesa u dërgua. Miratoni pagesën në telefonin tuaj. Abonimi juaj do të aktivizohet pas konfirmimit të pagesës.",
+    "mpesaFailed": "Pagesa me M-Pesa nuk mund të fillohej.",
+    "noApproveUrl": "URL-ja e miratimit të PayPal nuk u kthye.",
+    "paypalFailed": "Pagesa me PayPal nuk mund të fillohej.",
+    "subtitleShort": "Menaxhoni abonimin tuaj të Worker.",
+    "subtitle": "Menaxhoni planin, provën dhe faturimin tuaj të Worker.",
+    "current": "Abonimi aktual",
+    "organisation": "Organizata",
+    "status": "Statusi",
+    "plan": "Plani",
+    "freeTrial": "Provë falas 14-ditore",
+    "trialEnds": "Prova përfundon",
+    "dayRemaining": "{n} ditë e mbetur",
+    "daysRemaining": "{n} ditë të mbetura",
+    "renewsEnds": "Rinovohet / përfundon",
+    "chooseTitle": "Zgjidhni një plan",
+    "chooseSubtitle": "Të gjitha planet përfshijnë rrjedhën administrative të Worker. Prova juaj 14-ditore është falas.",
+    "perMonth": "/ muaj",
+    "planSelected": "{plan} u zgjodh. Plani juaj u ruajt dhe është gati për pagesë.",
+    "selectFailed": "Plani nuk mund të zgjidhej.",
+    "selected": "Zgjedhur",
+    "selectPlan": "Zgjidh planin",
+    "activateTitle": "Aktivizo abonimin tënd",
+    "selectAbove": "Zgjidh një plan më sipër për të vazhduar me pagesën.",
+    "stkNote": "Një njoftim STK do të dërgohet në numrin e telefonit më poshtë.",
+    "phone": "Numri i telefonit",
+    "phonePlaceholder": "07.. ose 2547..",
+    "payMpesa": "Paguaj me M-Pesa",
+    "paypalNote": "Vazhdo në PayPal për të paguar planin e zgjedhur në USD.",
+    "payPaypal": "Paguaj me PayPal",
+    "settleNote": "Abonimet e paguara mund të shlyhen përmes M-Pesa ose PayPal.",
+    "activationNote": "Plani i zgjedhur do të aktivizohet pas konfirmimit të suksesshëm të pagesës.",
+    "historyNote": "Historiku i pagesave është i disponueshëm te Administrimi → Pagesat."
+  },
+  "intl": {
+    "territory": "Territori",
+    "searchTerritory": "Kërko territor…",
+    "selectTerritory": "Zgjidh territorin tënd",
+    "territoryRequired": "Ju lutem zgjidhni territorin tuaj.",
+    "workingLanguage": "Gjuha e punës",
+    "meetingLanguage": "Gjuha e mbledhjes",
+    "useDefault": "Parazgjedhja e organizatës",
+    "beta": "transkriptim beta",
+    "unavailable": "pa transkriptim"
+  },
+  "generate": {
+    "title": "Gjenero një dokument nga kjo sesion",
+    "as": "Gjenero si",
+    "instructions": "Udhëzim (opsional)",
+    "placeholder": "p.sh. Letër drejtuar Sekretarit të Përhershëm duke përmbledhur vendimet 2 dhe 3",
+    "button": "Gjenero",
+    "working": "Po hartojmë dokumentin tuaj… kjo mund të zgjasë një minutë.",
+    "done": "Dokumenti u krijua.",
+    "failed": "Dokumenti nuk mund të gjenerohej.",
+    "hint": "Përdor transkriptimet e shënuara për përfshirje, sipas radhës. Ju rishikoni dhe miratoni përpara se diçka të ndahet."
+  },
+  "queue": {
+    "queued": "Në radhë për transkriptim. Kjo faqe përditësohet automatikisht."
+  },
+  "pdfExport": {
+    "button": "Eksporto PDF"
+  },
+  "access": {
+    "readOnly": "Hapësira juaj e punës është vetëm për lexim, sepse periudha e provës ose abonimi ka përfunduar. Ju mund t'i shikoni dhe eksportoni dokumentet tuaja.",
+    "grace": "Periudha e provës ose abonimi juaj përfundoi më {date}. Ju kanë mbetur {n} ditë akses të plotë.",
+    "trialEnding": "Periudha e provës falas përfundon pas {n} ditësh.",
+    "choosePlan": "Zgjidh një plan"
+  },
+  "sessionLang": {
+    "saved": "Gjuha e mbledhjes u ruajt. Ajo zbatohet për regjistrimet e transkriptuara nga tani e tutje.",
+    "failed": "Gjuha e mbledhjes nuk mund të ruhej."
+  },
+  "i18nNote": {
+    "machine": "Përkthyer nga makina"
+  }
+}

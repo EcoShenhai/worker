@@ -661,5 +661,8 @@
   "sessionLang": {
     "saved": "Meeting language saved. It applies to recordings transcribed from now on.",
     "failed": "Could not save the meeting language."
+  },
+  "i18nNote": {
+    "machine": "Machine-translated"
   }
 }

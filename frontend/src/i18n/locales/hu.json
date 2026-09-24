@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Nyelv",
+    "signIn": "Bejelentkezés",
+    "signOut": "Kijelentkezés",
+    "createAccount": "Fiók létrehozása",
+    "getStarted": "Kezdje el",
+    "startFreeTrial": "Ingyenes próba indítása",
+    "cancel": "Mégse",
+    "back": "Vissza",
+    "download": "Letöltés",
+    "viewAll": "Összes megtekintése"
+  },
+  "brand": {
+    "tagline": "AI adminisztratív munkaterület",
+    "secureWorkspace": "Biztonságos adminisztratív munkaterület",
+    "badge": "Angol · Hanganyag"
+  },
+  "nav": {
+    "dashboard": "Irányítópult",
+    "workspace": "Munkaterület",
+    "sessions": "Ülések és felvételek",
+    "documents": "Dokumentumok",
+    "correspondence": "Levelezés",
+    "knowledge": "Tudásbázis",
+    "assistant": "Asszisztens",
+    "askWorker": "Kérdezze Workert",
+    "actions": "Függőben lévő feladatok",
+    "administration": "Adminisztráció",
+    "organisation": "Szervezet",
+    "users": "Felhasználók",
+    "audit": "Ellenőrzési napló",
+    "subscription": "Előfizetés",
+    "payments": "Fizetések",
+    "billing": "Számlázás"
+  },
+  "roles": {
+    "viewer": "Megtekintő",
+    "officer": "Ügyintéző",
+    "admin": "Adminisztrátor",
+    "superadmin": "Szuperadminisztrátor"
+  },
+  "landing": {
+    "hero": {
+      "title": "Alakítsa a kimondott szavait kész, iktatott dokumentumokká.",
+      "body": "A Worker egy AI-alapú adminisztratív munkaterület azon szervezetek számára, amelyek nagy mennyiségű hivatalos dokumentumot állítanak elő ülésekből, tájékoztatókból és levelezésből. Rögzítsen egy ülést vagy diktáljon, és a Worker átírja szöveggé, megfogalmazza a jegyzőkönyveket, feljegyzéseket, leveleket, jelentéseket és szakpolitikai összefoglalókat, majd végigvezeti azokat a felülvizsgálati és jóváhagyási folyamaton – teljes ellenőrzési naplóval.",
+      "badgeRow": "Hanganyag · Angol · Biztonságos munkaterület"
+    },
+    "what": {
+      "title": "Mit tesz a Worker",
+      "lead": "Az ülések és a levelezés körüli rutin irodai munka – percek alatt elvégezve, nem órák alatt.",
+      "f1": {
+        "title": "Rögzítés és átírás",
+        "body": "Rögzítsen üléseket, interjúkat, tájékoztatókat vagy diktálást. A hanganyag helyben, angol nyelven kerül átírásra."
+      },
+      "f2": {
+        "title": "Tervezés AI-jal",
+        "body": "Készítsen jegyzőkönyveket, feljegyzéseket, leveleket, jelentéseket, szakpolitikai összefoglalókat és körleveleket a megfelelő hivatalos formában."
+      },
+      "f3": {
+        "title": "Ellenőrzés és jóváhagyás",
+        "body": "Minden dokumentum a tervezés, ellenőrzés, jóváhagyás és véglegesítés szakaszain halad át – az emberek irányítanak."
+      },
+      "f4": {
+        "title": "Biztonságos és naplózott",
+        "body": "Szerepkör-alapú hozzáférés és teljes napló. Levelezést kizárólag személy küldhet."
+      }
+    },
+    "start": {
+      "title": "Az indulás egy percet vesz igénybe",
+      "lead": "Hozzon létre fiókot, és kezdje el a 14 napos ingyenes próbaidőszakot.",
+      "s1": {
+        "title": "Hozza létre fiókját",
+        "body": "Adja meg nevét, e-mail-címét és egy jelszót."
+      },
+      "s2": {
+        "title": "Erősítse meg e-mail-címét",
+        "body": "Adja meg a 6 jegyű kódot, amelyet e-mailben küldünk."
+      },
+      "s3": {
+        "title": "Jelentkezzen be biztonságosan",
+        "body": "Minden bejelentkezést egy egyszeri, e-mailben küldött kód erősít meg."
+      },
+      "s4": {
+        "title": "Kezdje el a munkát",
+        "body": "Hozzon létre munkamenetet, rögzítsen, és készítse el első dokumentumát."
+      }
+    },
+    "pricing": {
+      "title": "Egyszerű előfizetési díjszabás",
+      "lead": "Kezdje 14 napos ingyenes próbaidőszakkal. Válassza ki a szervezete által előállított adminisztratív munkamennyiséghez illő csomagot.",
+      "perMonth": "/hónap",
+      "mostPopular": "LEGNÉPSZERŰBB",
+      "starter": {
+        "name": "Kezdő",
+        "desc": "Kis csapatoknak, amelyek most ismerkednek az AI-támogatott adminisztratív munkával."
+      },
+      "professional": {
+        "name": "Professzionális",
+        "desc": "Rendszeres, nagy volumenű dokumentumkészítést folytató szervezeteknek."
+      },
+      "premium": {
+        "name": "Prémium",
+        "desc": "Nagyobb szervezeteknek jelentős adminisztratív munkateherrel."
+      },
+      "paymentsNote": "Az M-Pesa és a PayPal támogatott a fizetős előfizetésekhez."
+    },
+    "final": {
+      "title": "Készen áll kipróbálni a Workert?",
+      "cta": "Hozza létre fiókját"
+    }
+  },
+  "auth": {
+    "email": "E-mail",
+    "password": "Jelszó",
+    "fullName": "Teljes név",
+    "confirmPassword": "Jelszó megerősítése",
+    "currentPassword": "Jelenlegi jelszó",
+    "newPassword": "Új jelszó",
+    "confirmNewPassword": "Új jelszó megerősítése",
+    "code6": "6 jegyű kód",
+    "signInFailed": "A bejelentkezés nem sikerült. Ellenőrizze a hitelesítő adatait.",
+    "forgotPassword": "Elfelejtette jelszavát?",
+    "mfaNotice": "Minden bejelentkezés megerősítéséhez egyszeri kódot küldünk e-mailben.",
+    "createYourAccount": "Hozza létre fiókját",
+    "pwMin": "A jelszónak legalább {n} karakter hosszúnak kell lennie.",
+    "newPwMin": "Az új jelszónak legalább {n} karakter hosszúnak kell lennie.",
+    "pwMismatch": "A jelszavak nem egyeznek.",
+    "createFailed": "Nem sikerült létrehozni a fiókot.",
+    "haveAccount": "Már rendelkezik fiókkal?",
+    "startAtSignIn": "Kezdje a bejelentkezéssel vagy a regisztrációval.",
+    "goToSignIn": "Ugrás a bejelentkezéshez",
+    "invalidCode": "Érvénytelen vagy lejárt kód.",
+    "codeSent": "Új kód elküldve.",
+    "resendFailed": "Nem sikerült újraküldeni.",
+    "verifyEmailTitle": "Erősítse meg e-mail-címét",
+    "verifyEmailTo": "Erősítse meg e-mail-címét — {email}",
+    "verify": "Megerősítés",
+    "resendCode": "Kód újraküldése",
+    "signInAgain": "Kérjük, jelentkezzen be újra.",
+    "mfaPrompt": "Adja meg a bejelentkezési kódot, amelyet e-mailben küldtünk",
+    "mfaPromptTo": "Adja meg a bejelentkezési kódot, amelyet a(z) {email} címre küldtünk",
+    "verifySignIn": "Megerősítés és bejelentkezés",
+    "requestFailed": "Nem sikerült feldolgozni a kérést.",
+    "resetTitle": "Jelszó visszaállítása",
+    "sendResetCode": "Visszaállítási kód küldése",
+    "backToSignIn": "Vissza a bejelentkezéshez",
+    "resetPrompt": "Adja meg az e-mailben küldött kódot, és válasszon új jelszót",
+    "resetPassword": "Jelszó visszaállítása",
+    "setNewPassword": "Új jelszó beállítása",
+    "forcedChange": "A biztonság érdekében a folytatás előtt állítson be saját jelszót.",
+    "updateAccountPassword": "Frissítse fiókja jelszavát.",
+    "changeFailed": "Nem sikerült megváltoztatni a jelszót.",
+    "updatePassword": "Jelszó frissítése",
+    "signOutInstead": "Inkább jelentkezzen ki"
+  },
+  "notFound": {
+    "title": "Az oldal nem található",
+    "subtitle": "Ez az oldal nem létezik ebben a munkaterületben.",
+    "back": "Vissza az irányítópultra"
+  },
+  "status": {
+    "draft": "vázlat",
+    "in_review": "ellenőrzés alatt",
+    "approved": "jóváhagyva",
+    "final": "végleges",
+    "archived": "archiválva",
+    "open": "nyitott",
+    "processing": "feldolgozás alatt",
+    "ready": "kész",
+    "pending": "függőben",
+    "transcribing": "átírás folyamatban",
+    "transcribed": "átírva",
+    "failed": "sikertelen",
+    "sent": "elküldve",
+    "received": "megérkezett",
+    "completed": "befejezve",
+    "cancelled": "törölve",
+    "active": "aktív",
+    "suspended": "felfüggesztve"
+  },
+  "kind": {
+    "meeting": "megbeszélés",
+    "interview": "interjú",
+    "briefing": "tájékoztató",
+    "dictation": "diktálás",
+    "field_report": "helyszíni jelentés",
+    "consultation": "konzultáció",
+    "other": "egyéb"
+  },
+  "classification": {
+    "unclassified": "nem minősített",
+    "internal": "belső",
+    "confidential": "bizalmas",
+    "restricted": "korlátozott"
+  },
+  "dashboard": {
+    "welcome": "Üdvözöljük, {name}",
+    "defaultName": "Tisztviselő",
+    "subtitle": "Az Ön ügyviteli munkaterülete — rögzítés, szerkesztés, ellenőrzés és iktatás.",
+    "stats": {
+      "sessions": "Munkamenetek",
+      "documents": "Dokumentumok",
+      "awaitingReview": "Ellenőrzésre vár",
+      "outstandingActions": "Függőben lévő intézkedések"
+    },
+    "recentSessions": "Legutóbbi munkamenetek",
+    "documentsToAction": "Intézkedést igénylő dokumentumok",
+    "noSessions": "Még nincsenek munkamenetek.",
+    "nothingToAction": "Jelenleg nincs teendője."
+  },
+  "sessions": {
+    "subtitle": "Minden munkamenet egy ügyirat — hanganyag, átirat és az abból készült dokumentumok.",
+    "new": "Új munkamenet",
+    "createFailed": "A munkamenet létrehozása nem sikerült.",
+    "titlePlaceholder": "pl. Megyei Biztonsági Bizottság — heti tájékoztató",
+    "create": "Munkamenet létrehozása",
+    "empty": "Még nincsenek munkamenetek. Hozzon létre egyet a rögzítés megkezdéséhez.",
+    "fields": {
+      "title": "Cím",
+      "kind": "Típus",
+      "date": "Dátum",
+      "classification": "Minősítés",
+      "status": "Állapot",
+      "department": "Osztály",
+      "location": "Helyszín"
+    }
+  },
+  "session": {
+    "loadFailed": "Nem sikerült betölteni a munkamenetet.",
+    "micDenied": "A mikrofonhozzáférés megtagadva vagy nem elérhető.",
+    "audioSaved": "A hang a munkamenethez mentve.",
+    "uploadFailed": "A feltöltés nem sikerült.",
+    "transcribing": "Helyi átírás folyamatban — hosszabb hanganyag esetén ez eltarthat egy ideig.",
+    "transcribed": "Az átírás elkészült.",
+    "transcribeFailed": "Az átírás nem sikerült. Ellenőrizze, hogy az STT szolgáltatás fut-e.",
+    "updateFailed": "Nem sikerült frissíteni.",
+    "draftingMinutes": "Jegyzőkönyv tervezetének készítése az átiratból…",
+    "minutesCreated": "A jegyzőkönyv tervezete elkészült.",
+    "minutesFailed": "Nem sikerült létrehozni a jegyzőkönyvet.",
+    "notFound": "A munkamenet nem található.",
+    "noDate": "nincs dátum",
+    "noLocation": "nincs helyszín",
+    "generateMinutes": "Jegyzőkönyv készítése",
+    "captureAudio": "Hang rögzítése",
+    "stopSave": "Leállítás és mentés",
+    "startRecording": "Felvétel indítása",
+    "or": "vagy",
+    "uploadAudio": "Hang feltöltése",
+    "audioNote": "A hang a gazdagépen marad. Az átírás helyben, angol nyelven fut. A jegyzőkönyv a munkamenet minden klipjét sorrendben összevonja.",
+    "documentsFrom": "Dokumentumok ebből a munkamenetből",
+    "noDocuments": "Még nincsenek dokumentumok. Töltsön fel egy klipet, majd készítsen jegyzőkönyvet.",
+    "recordingsTitle": "Felvételek és átiratok",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Még nincsenek felvételek. Rögzítsen vagy töltsön fel hangot fent.",
+    "includeTitle": "A klip beszámítása a jegyzőkönyv készítésekor",
+    "inMinutes": "A jegyzőkönyvben",
+    "transcribe": "Átírás",
+    "transcribeHint": "Írja át ezt a klipet, hogy itt láthassa és szerkeszthesse az átiratát.",
+    "audioLoadFailed": "Nem sikerült betölteni a hangot.",
+    "loadAudio": "Hang betöltése",
+    "words": "{n} szó",
+    "verified": "ellenőrizve",
+    "editVerify": "Szerkesztés és ellenőrzés",
+    "saveVerified": "Mentés és megjelölés ellenőrzöttként",
+    "saveDraft": "Piszkozat mentése",
+    "emptyTranscript": "Üres átirat."
+  },
+  "docType": {
+    "minutes": "jegyzőkönyv",
+    "memo": "feljegyzés",
+    "letter": "levél",
+    "report": "jelentés",
+    "policy_brief": "szakpolitikai összefoglaló",
+    "briefing_note": "tájékoztató feljegyzés",
+    "concept_note": "koncepciójegyzet",
+    "circular": "körlevél",
+    "action_matrix": "intézkedési mátrix",
+    "speech": "beszéd"
+  },
+  "approval": {
+    "submit": "benyújtva",
+    "submitted": "benyújtva",
+    "approve": "jóváhagyva",
+    "approved": "jóváhagyva",
+    "reject": "elutasítva",
+    "rejected": "elutasítva",
+    "finalize": "véglegesítve",
+    "finalized": "véglegesítve"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Belső feljegyzés",
+      "desc": "Szabványos belső feljegyzés Címzett / Feladó / Tárgy mezőkkel."
+    },
+    "letter-official": {
+      "name": "Hivatalos levél",
+      "desc": "Formális kimenő levél a hivatalos levélpapíron."
+    },
+    "circular-general": {
+      "name": "Körlevél",
+      "desc": "Több címzettnek kiküldött értesítés."
+    },
+    "report-standard": {
+      "name": "Jelentés",
+      "desc": "Általános jelentés összefoglalóval, fejezetekkel és javaslatokkal."
+    },
+    "policy-brief": {
+      "name": "Szakpolitikai összefoglaló",
+      "desc": "Tömör összefoglaló döntéshozók számára."
+    },
+    "briefing-note": {
+      "name": "Tájékoztató feljegyzés",
+      "desc": "Rövid feljegyzés egy vezető tájékoztatására egy esemény előtt."
+    },
+    "concept-note": {
+      "name": "Koncepciójegyzet",
+      "desc": "Egy javasolt program vagy tevékenység vázlata."
+    },
+    "minutes-blank": {
+      "name": "Megbeszélés jegyzőkönyve (üres)",
+      "desc": "Üres jegyzőkönyv-szerkezet kézi kitöltéshez."
+    },
+    "speech-remarks": {
+      "name": "Beszéd / Megjegyzések",
+      "desc": "Formális megjegyzések egy eseményhez."
+    }
+  },
+  "documents": {
+    "subtitle": "Jegyzőkönyvek, feljegyzések, levelek, jelentések és összefoglalók — AI-val megfogalmazva, emberek által jóváhagyva.",
+    "startFromTemplate": "Indítás sablonból",
+    "fromSpreadsheet": "Jelentés táblázatból",
+    "draftWithAI": "Piszkozat AI-val",
+    "templateTitle": "Indítás sablonból",
+    "allTypes": "Minden típus",
+    "orgTemplates": "Szervezete sablonjai",
+    "savedByOrg": "Szervezete által mentve",
+    "useTemplate": "Sablon használata",
+    "generalTemplates": "Általános sablonok",
+    "spreadsheetFailed": "Nem sikerült jelentést készíteni a táblázatból.",
+    "templateFailed": "Nem sikerült létrehozni a sablonból.",
+    "draftFailed": "Nem sikerült megfogalmazni a dokumentumot.",
+    "fields": {
+      "type": "Dokumentum típusa",
+      "title": "Cím",
+      "recipient": "Címzett (opcionális)",
+      "department": "Osztály (opcionális)",
+      "brief": "Utasítások / összefoglaló"
+    },
+    "briefPlaceholder": "Írja le a célt, a kulcsfontosságú pontokat és a feltüntetendő tényeket. Az asszisztens megfogalmaz egy formális dokumentumot, amelyet szerkeszthet és jóváhagyhat.",
+    "generateDraft": "Piszkozat létrehozása",
+    "empty": "Még nincsenek dokumentumok.",
+    "table": {
+      "title": "Cím",
+      "type": "Típus",
+      "ref": "Hiv.",
+      "status": "Állapot",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Nem sikerült betölteni a dokumentumot.",
+    "invalidJson": "A tartalom nem érvényes JSON.",
+    "saved": "Mentve. Verzió növelve.",
+    "saveFailed": "A mentés nem sikerült.",
+    "done": {
+      "submit": "A dokumentum felülvizsgálatra benyújtva.",
+      "approve": "A dokumentum jóváhagyva.",
+      "reject": "A dokumentum elutasítva.",
+      "finalize": "A dokumentum véglegesítve."
+    },
+    "failed": {
+      "submit": "Nem sikerült benyújtani.",
+      "approve": "Nem sikerült jóváhagyni.",
+      "reject": "Nem sikerült elutasítani.",
+      "finalize": "Nem sikerült véglegesíteni."
+    },
+    "templateName": "Sablon neve",
+    "templateDefault": "{title} sablon",
+    "templateSaved": "Újrafelhasználható sablonként mentve a szervezet számára.",
+    "templateSaveFailed": "A sablon mentése nem sikerült.",
+    "exportFailed": "Az exportálás nem sikerült.",
+    "notFound": "A dokumentum nem található.",
+    "exportDocx": "Exportálás DOCX-be",
+    "exportPptx": "Exportálás PPTX-be",
+    "exportXlsx": "Exportálás XLSX-be",
+    "saveAsTemplate": "Mentés sablonként",
+    "content": "Tartalom",
+    "workflow": "Munkafolyamat",
+    "aiAssisted": "AI-támogatott piszkozat",
+    "auditChain": "Ellenőrzési lánc: hang → átirat → AI-piszkozat → emberi szerkesztés → jóváhagyás → végleges. Minden lépés rögzítésre kerül.",
+    "comment": "Megjegyzés (nem kötelező)",
+    "commentPlaceholder": "Adjon hozzá megjegyzést a nyilvántartáshoz",
+    "submit": "Beküldés ellenőrzésre",
+    "approve": "Jóváhagyás",
+    "reject": "Elutasítás",
+    "finalize": "Véglegesítés",
+    "finalLocked": "Végleges — szerkesztésre zárolva",
+    "editJson": "Tartalom szerkesztése (JSON)",
+    "jsonNote": "A strukturált tartalom vezérli a márkázott DOCX-et. Szerkessze az alábbi mezőket, és mentse; a márkázás és az elrendezés exportáláskor automatikusan alkalmazásra kerül.",
+    "saveContent": "Tartalom mentése",
+    "approvalHistory": "Jóváhagyási előzmények"
+  },
+  "emails": {
+    "subtitle": "Fogalmazzon leveleket és e-maileket AI segítségével. Semmi sem kerül elküldésre, amíg egy személy rá nem kattint a küldésre.",
+    "needIntent": "Adjon az asszisztensnek egy tárgyat vagy szándékot a piszkozat elkészítéséhez.",
+    "draftReady": "A piszkozat elkészült. Küldés előtt tekintse át és szerkessze.",
+    "draftFailed": "A piszkozat elkészítése nem sikerült.",
+    "draftSaved": "A piszkozat mentve.",
+    "saveFailed": "A mentés nem sikerült.",
+    "confirmSend": "Elküldi ezt az e-mailt most? Ez a művelet rögzítésre kerül az ellenőrzési naplóban.",
+    "sent": "Az e-mail elküldve.",
+    "sendFailed": "A küldés nem sikerült.",
+    "compose": "Írás",
+    "messages": "Üzenetek",
+    "empty": "Még nincs levelezés.",
+    "message": "Üzenet",
+    "details": "Részletek",
+    "to": "Címzett",
+    "cc": "Titkos másolat",
+    "subject": "Tárgy",
+    "intent": "Mit tartalmazzon? (AI számára)",
+    "intentPlaceholder": "pl. Meghívó a vezetőknek a pénteki biztonsági barazára 10 órára",
+    "body": "Szövegtörzs",
+    "saveDraft": "Piszkozat mentése",
+    "toLabel": "Címzett:",
+    "ccLabel": "Titkos másolat:",
+    "subjectLabel": "Tárgy:",
+    "aiAssisted": "AI-támogatott",
+    "sendNow": "Küldés most",
+    "selectHint": "Válasszon üzenetet, vagy írjon újat."
+  },
+  "knowledge": {
+    "subtitle": "Referenciaanyag, amelyre az asszisztens támaszkodhat — irányelvek, sablonok, precedensek.",
+    "added": "Hozzáadva a tudásbázishoz.",
+    "addFailed": "Nem sikerült hozzáadni.",
+    "chooseFile": "Válasszon feltöltendő fájlt.",
+    "ocrFailed": "A fájl mentve. Az OCR nem tudott szöveget kiolvasni ebből a fájlból (lehet, hogy gyenge minőségű). A szöveget manuálisan is beillesztheti.",
+    "extracted": "A fájl mentve, {n} karakter szöveg kinyerve.",
+    "noText": "A fájl mentve. Ebből a formátumból nem sikerült szöveget kinyerni.",
+    "uploadFailed": "A feltöltés nem sikerült.",
+    "confirmRemove": "Eltávolítja ezt a hivatkozást?",
+    "uploadTitle": "Dokumentum feltöltése",
+    "file": "Fájl",
+    "titleOptional": "Cím (nem kötelező)",
+    "titleDefault": "Alapértelmezésben a fájlnév",
+    "categoryOptional": "Kategória (nem kötelező)",
+    "uploadExtract": "Feltöltés és kinyerés",
+    "uploadNote": "A Word-, PDF-, CSV- és szöveges fájlok szövege automatikusan kinyerésre kerül. A beolvasott PDF-eket és fényképeket OCR-rel automatikusan beolvassuk.",
+    "pasteTitle": "Hivatkozás hozzáadása (szöveg beillesztése)",
+    "title": "Cím",
+    "category": "Kategória",
+    "categoryPlaceholder": "pl. Körlevelek, Irányelvek",
+    "textContent": "Szöveges tartalom",
+    "add": "Hozzáadás",
+    "references": "Hivatkozások",
+    "empty": "Még nincs semmi.",
+    "uncategorised": "Kategorizálatlan",
+    "remove": "Eltávolítás"
+  },
+  "assistant": {
+    "subtitle": "Adjon utasítást egyszerű magyar nyelven — összegzés, keresés, piszkozat készítése vagy magyarázat a munkaterületén.",
+    "failed": "Az asszisztens nem tudta feldolgozni ezt.",
+    "instruction": "Utasítás",
+    "placeholder": "Például: Foglalja össze a heti biztonsági bizottság döntéseit, vagy listázza a jóváhagyásra váró feljegyzéseket.",
+    "ask": "Kérdezzen"
+  },
+  "actions": {
+    "subtitle": "A jegyzőkönyvekből és intézkedési mátrixokból kinyert teendők a munkamenetekből.",
+    "empty": "Nem található függőben lévő teendő.",
+    "table": {
+      "action": "Teendő",
+      "responsible": "Felelős",
+      "timeline": "Határidő",
+      "source": "Forrás"
+    }
+  },
+  "paypal": {
+    "title": "PayPal fizetés",
+    "subtitle": "Előfizetési díj fizetésének visszaigazolása.",
+    "confirming": "PayPal fizetésének visszaigazolása...",
+    "noOrder": "Nem érkezett vissza PayPal megrendelés.",
+    "confirmed": "Fizetés visszaigazolva. Worker előfizetése aktív.",
+    "failed": "A PayPal fizetést nem sikerült visszaigazolni.",
+    "success": "Sikeres fizetés",
+    "viewSubscription": "Előfizetés megtekintése",
+    "errorTitle": "A fizetést nem sikerült visszaigazolni",
+    "returnToSubscription": "Visszatérés az előfizetéshez"
+  },
+  "tenant": {
+    "saved": "A szervezet adatai mentve. Minden exportált dokumentumon megjelennek.",
+    "saveFailed": "Nem sikerült menteni.",
+    "logoUploaded": "Logó feltöltve.",
+    "signatureUploaded": "Aláírás feltöltve.",
+    "uploadFailed": "A feltöltés nem sikerült.",
+    "subtitleShort": "Arculat a munkaterületéhez.",
+    "noOrg": "Ez a fiók nincs szervezethez rendelve.",
+    "subtitle": "Neve, fejléce, logója és aláírása minden Ön által készített dokumentumon megjelenik.",
+    "letterhead": "Fejléc",
+    "orgName": "Szervezet neve",
+    "line": "Fejléc {n}. sora",
+    "line1Placeholder": "pl. ... MEGYEI ÖNKORMÁNYZAT",
+    "line2Placeholder": "pl. ... Osztály",
+    "line3Placeholder": "pl. Egység / Iroda",
+    "saveLetterhead": "Fejléc mentése",
+    "blankHint": "A sorok üresen hagyásával a szervezet neve jelenik meg.",
+    "logoSignature": "Logó és aláírás",
+    "logo": "Címer / logó (PNG vagy JPG)",
+    "signature": "E-aláírás (PNG vagy JPG)",
+    "uploaded": "feltöltve",
+    "brandingNote": "A logó a dokumentum fejlécében és a diák címlapjain jelenik meg. Az aláírás az exportált dokumentumok végére kerül. A legjobb eredmény érdekében átlátszó hátterű PNG-t használjon."
+  },
+  "users": {
+    "createdTemp": "Felhasználó létrehozva. Ideiglenes jelszó: {temp} — ossza meg biztonságosan; az első bejelentkezéskor módosítania kell.",
+    "created": "Felhasználó létrehozva.",
+    "createFailed": "Nem sikerült létrehozni a felhasználót.",
+    "confirmRemove": "Eltávolítja {name} felhasználót?",
+    "removeFailed": "Nem sikerült eltávolítani.",
+    "subtitle": "Hozzáférés kezelése. A szuperadmin fiók itt nem módosítható.",
+    "add": "Felhasználó hozzáadása",
+    "create": "Felhasználó létrehozása",
+    "empty": "Nincsenek felhasználók.",
+    "fields": {
+      "name": "Név",
+      "email": "E-mail",
+      "role": "Szerepkör",
+      "department": "Osztály",
+      "status": "Állapot"
+    },
+    "suspend": "Felfüggesztés",
+    "reinstate": "Visszaállítás",
+    "remove": "Eltávolítás"
+  },
+  "audit": {
+    "subtitle": "Minden jelentős művelet rögzítésre kerül. A naplók csak metaadatokat és azonosítókat tartalmaznak — soha nem dokumentumtörzseket vagy hanganyagot.",
+    "empty": "Nincsenek naplóbejegyzések.",
+    "table": {
+      "when": "Mikor",
+      "actor": "Végrehajtó",
+      "action": "Művelet",
+      "resource": "Erőforrás"
+    },
+    "system": "rendszer"
+  },
+  "payments": {
+    "stkSent": "STK push elküldve. Kérje meg a fizetőt, hogy hagyja jóvá a telefonján.",
+    "initiateFailed": "Nem sikerült elindítani a fizetést.",
+    "subtitle": "M-Pesa (Daraja STK push) és PayPal tranzakciók.",
+    "requestTitle": "M-Pesa fizetés kérése",
+    "phone": "Telefon (07.. vagy 2547..)",
+    "amountKes": "Összeg (KES)",
+    "purpose": "Cél",
+    "sendStk": "STK push küldése",
+    "transactions": "Tranzakciók",
+    "empty": "Nincsenek tranzakciók.",
+    "table": {
+      "provider": "Szolgáltató",
+      "amount": "Összeg",
+      "status": "Állapot",
+      "ref": "Hiv."
+    }
+  },
+  "billing": {
+    "subtitle": "Számlák és nyugták a teljesített Worker-előfizetési fizetésekhez.",
+    "loadFailed": "Nem sikerült betölteni a számlázási dokumentumokat.",
+    "downloadFailed": {
+      "invoice": "A számla letöltése nem sikerült.",
+      "receipt": "A nyugta letöltése nem sikerült."
+    },
+    "documentsTitle": "Számlázási dokumentumok",
+    "intro": "Töltse le szervezete befejezett előfizetési befizetéseihez tartozó számlákat és nyugtákat.",
+    "disclaimer": "Ezek a dokumentumok a Worker előfizetési befizetéseit rögzítik, és fizetési, illetve költségtérítési célokat szolgálnak. Nem minősülnek KRA/eTIMS adószámlának, kivéve, ha külön, megfelelő eTIMS integráción keresztül kerülnek kiállításra.",
+    "invoices": "Számlák",
+    "noInvoices": "Még nincsenek számlák.",
+    "receipts": "Nyugták",
+    "noReceipts": "Még nincsenek nyugták.",
+    "downloadPdf": "PDF letöltése",
+    "table": {
+      "invoice": "Számla",
+      "receipt": "Nyugta",
+      "date": "Dátum",
+      "description": "Leírás",
+      "amount": "Összeg",
+      "status": "Állapot",
+      "provider": "Szolgáltató",
+      "reference": "Hivatkozás"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Az előfizetés betöltése nem sikerült.",
+    "selectFirst": "Először válasszon előfizetési csomagot.",
+    "mpesaSent": "Az M-Pesa STK push elküldve. Hagyja jóvá a fizetést a telefonján. Előfizetése a fizetés visszaigazolása után aktiválódik.",
+    "mpesaFailed": "Az M-Pesa fizetés indítása nem sikerült.",
+    "noApproveUrl": "A PayPal jóváhagyási URL nem érkezett vissza.",
+    "paypalFailed": "A PayPal fizetés indítása nem sikerült.",
+    "subtitleShort": "Kezelje Worker előfizetését.",
+    "subtitle": "Kezelje Worker csomagját, próbaidőszakát és számlázását.",
+    "current": "Jelenlegi előfizetés",
+    "organisation": "Szervezet",
+    "status": "Állapot",
+    "plan": "Csomag",
+    "freeTrial": "14 napos ingyenes próbaidőszak",
+    "trialEnds": "A próbaidőszak vége",
+    "dayRemaining": "{n} nap van hátra",
+    "daysRemaining": "{n} nap van hátra",
+    "renewsEnds": "Megújul / lejár",
+    "chooseTitle": "Válasszon csomagot",
+    "chooseSubtitle": "Minden csomag tartalmazza a Worker adminisztratív munkafolyamatát. A 14 napos próbaidőszak ingyenes.",
+    "perMonth": "/ hónap",
+    "planSelected": "{plan} kiválasztva. A csomag mentve, és készen áll a fizetésre.",
+    "selectFailed": "A csomag kiválasztása nem sikerült.",
+    "selected": "Kiválasztva",
+    "selectPlan": "Csomag kiválasztása",
+    "activateTitle": "Előfizetés aktiválása",
+    "selectAbove": "A fizetés folytatásához válasszon csomagot a fentiek közül.",
+    "stkNote": "Az STK-értesítést az alábbi telefonszámra küldjük el.",
+    "phone": "Telefonszám",
+    "phonePlaceholder": "07.. vagy 2547..",
+    "payMpesa": "Fizetés M-Pesa-val",
+    "paypalNote": "A kiválasztott csomag USD-ben történő kifizetéséhez továbblép a PayPal-ra.",
+    "payPaypal": "Fizetés PayPal-lal",
+    "settleNote": "A fizetős előfizetések M-Pesa-val vagy PayPal-lal rendezhetők.",
+    "activationNote": "A kiválasztott csomag a sikeres fizetés visszaigazolása után aktiválódik.",
+    "historyNote": "A fizetési előzmények az Administration → Payments menüpont alatt érhetők el."
+  },
+  "intl": {
+    "territory": "Territórium",
+    "searchTerritory": "Territórium keresése…",
+    "selectTerritory": "Válassza ki a territóriumot",
+    "territoryRequired": "Kérjük, válassza ki a territóriumot.",
+    "workingLanguage": "Munkanyelv",
+    "meetingLanguage": "Értekezlet nyelve",
+    "useDefault": "Szervezeti alapértelmezés",
+    "beta": "átírás béta",
+    "unavailable": "nincs átírás"
+  },
+  "generate": {
+    "title": "Dokumentum létrehozása ebből a munkamenetből",
+    "as": "Létrehozás mint",
+    "instructions": "Utasítás (nem kötelező)",
+    "placeholder": "pl. Levél a közigazgatási államtitkárnak a 2. és 3. döntés összefoglalásával",
+    "button": "Létrehozás",
+    "working": "A dokumentum megfogalmazása… ez eltarthat egy percig.",
+    "done": "A dokumentum elkészült.",
+    "failed": "A dokumentumot nem sikerült létrehozni.",
+    "hint": "A felvételre megjelölt átiratok felhasználásával, sorrendben. Ön ellenőrzi és jóváhagyja, mielőtt bármit megosztanánk."
+  },
+  "queue": {
+    "queued": "Átírásra vár. Ez az oldal automatikusan frissül."
+  },
+  "pdfExport": {
+    "button": "PDF exportálása"
+  },
+  "access": {
+    "readOnly": "A munkaterülete csak olvasható, mert a próbaidőszaka vagy előfizetése lejárt. A dokumentumait továbbra is megtekintheti és exportálhatja.",
+    "grace": "A próbaidőszaka vagy előfizetése lejárt ekkor: {date}. Még {n} napig fér hozzá teljes körűen.",
+    "trialEnding": "Az ingyenes próbaidőszaka {n} nap múlva lejár.",
+    "choosePlan": "Csomag választása"
+  },
+  "sessionLang": {
+    "saved": "Az értekezlet nyelve mentve. A mostantól átírt felvételekre érvényes.",
+    "failed": "Az értekezlet nyelvét nem sikerült menteni."
+  },
+  "i18nNote": {
+    "machine": "Gépi fordítás"
+  }
+}

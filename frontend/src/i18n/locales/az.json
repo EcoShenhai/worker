@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Dil",
+    "signIn": "Daxil ol",
+    "signOut": "Çıxış",
+    "createAccount": "Hesab yarat",
+    "getStarted": "Başlayın",
+    "startFreeTrial": "Pulsuz sınağa başlayın",
+    "cancel": "Ləğv et",
+    "back": "Geri",
+    "download": "Yüklə",
+    "viewAll": "Hamısına bax"
+  },
+  "brand": {
+    "tagline": "AI inzibati iş məkanı",
+    "secureWorkspace": "Təhlükəsiz inzibati iş məkanı",
+    "badge": "İngilis dili · Audio"
+  },
+  "nav": {
+    "dashboard": "İdarə paneli",
+    "workspace": "İş məkanı",
+    "sessions": "Sessiyalar və yazılar",
+    "documents": "Sənədlər",
+    "correspondence": "Yazışmalar",
+    "knowledge": "Bilik bazası",
+    "assistant": "Köməkçi",
+    "askWorker": "Worker-dən soruş",
+    "actions": "İcra olunmamış tapşırıqlar",
+    "administration": "İnzibati idarəetmə",
+    "organisation": "Təşkilat",
+    "users": "İstifadəçilər",
+    "audit": "Audit jurnalı",
+    "subscription": "Abunəlik",
+    "payments": "Ödənişlər",
+    "billing": "Hesablaşma"
+  },
+  "roles": {
+    "viewer": "İzləyici",
+    "officer": "Məmur",
+    "admin": "İnzibatçı",
+    "superadmin": "Baş inzibatçı"
+  },
+  "landing": {
+    "hero": {
+      "title": "Dediklərinizi tamamlanmış, qeydə alınmış sənədlərə çevirin.",
+      "body": "Worker — iclaslar, brifinqlər və yazışmalar əsasında çoxlu rəsmi sənəd hazırlayan təşkilatlar üçün AI inzibati iş məkanıdır. İclası yazın və ya diktə edin, Worker onu transkripsiya edir, protokol, memorandum, məktub, hesabat və siyasət qeydləri hazırlayır və tam audit jurnalı ilə birlikdə baxış və təsdiq mərhələlərindən keçirir.",
+      "badgeRow": "Audio · İngilis dili · Təhlükəsiz iş məkanı"
+    },
+    "what": {
+      "title": "Worker nə edir",
+      "lead": "İclaslar və yazışmalar ətrafında rutin ofis işləri — saatlarla deyil, dəqiqələrlə həll olunur.",
+      "f1": {
+        "title": "Yazın və transkripsiya edin",
+        "body": "İclasları, müsahibələri, brifinqləri və ya diktəni qeydə alın. Audio ingilis dilində yerli olaraq transkripsiya edilir."
+      },
+      "f2": {
+        "title": "AI ilə qaralama",
+        "body": "Protokollar, memorandumlar, məktublar, hesabatlar, siyasət brifinqləri və dövri məlumatları düzgün rəsmi formada yaradın."
+      },
+      "f3": {
+        "title": "Baxış və təsdiq",
+        "body": "Hər sənəd qaralama, baxış, təsdiq və yekunlaşdırma mərhələlərindən keçir — nəzarət həmişə insanlarda qalır."
+      },
+      "f4": {
+        "title": "Təhlükəsiz və audit edilən",
+        "body": "Rola əsaslanan giriş və tam audit izi. Yazışmalar yalnız şəxs tərəfindən göndərilir."
+      }
+    },
+    "start": {
+      "title": "Başlamaq bir dəqiqə çəkir",
+      "lead": "Hesab yaradın və 14 günlük pulsuz sınağa başlayın.",
+      "s1": {
+        "title": "Hesabınızı yaradın",
+        "body": "Adınızı, e-poçt ünvanınızı və şifrənizi daxil edin."
+      },
+      "s2": {
+        "title": "E-poçtunuzu təsdiqləyin",
+        "body": "E-poçtla göndərdiyimiz 6 rəqəmli kodu daxil edin."
+      },
+      "s3": {
+        "title": "Təhlükəsiz daxil olun",
+        "body": "Hər daxil olma e-poçtla göndərilən birdəfəlik kodla təsdiqlənir."
+      },
+      "s4": {
+        "title": "İşə başlayın",
+        "body": "Sessiya yaradın, qeyd edin və ilk sənədinizi yaradın."
+      }
+    },
+    "pricing": {
+      "title": "Sadə abunə qiymətləri",
+      "lead": "14 günlük pulsuz sınaqla başlayın. Təşkilatınızın istehsal etdiyi inzibati iş həcminə uyğun planı seçin.",
+      "perMonth": "/ay",
+      "mostPopular": "ƏN POPULYAR",
+      "starter": {
+        "name": "Başlanğıc",
+        "desc": "AI dəstəkli inzibati işə yeni başlayan kiçik komandalar üçün."
+      },
+      "professional": {
+        "name": "Peşəkar",
+        "desc": "Müntəzəm, yüksək həcmli sənəd istehsalı olan təşkilatlar üçün."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Əhəmiyyətli inzibati iş yükü olan daha böyük təşkilatlar üçün."
+      },
+      "paymentsNote": "Ödənişli abunələr üçün M-Pesa və PayPal dəstəklənir."
+    },
+    "final": {
+      "title": "Worker-i sınamağa hazırsınız?",
+      "cta": "Hesabınızı yaradın"
+    }
+  },
+  "auth": {
+    "email": "E-poçt",
+    "password": "Şifrə",
+    "fullName": "Tam ad",
+    "confirmPassword": "Şifrəni təsdiqləyin",
+    "currentPassword": "Cari şifrə",
+    "newPassword": "Yeni şifrə",
+    "confirmNewPassword": "Yeni şifrəni təsdiqləyin",
+    "code6": "6 rəqəmli kod",
+    "signInFailed": "Daxil olma alınmadı. Məlumatlarınızı yoxlayın.",
+    "forgotPassword": "Şifrəni unutmusunuz?",
+    "mfaNotice": "Hər daxil olmanı təsdiqləmək üçün e-poçtla birdəfəlik kod göndərilir.",
+    "createYourAccount": "Hesabınızı yaradın",
+    "pwMin": "Şifrə ən azı {n} simvol olmalıdır.",
+    "newPwMin": "Yeni şifrə ən azı {n} simvol olmalıdır.",
+    "pwMismatch": "Şifrələr uyğun gəlmir.",
+    "createFailed": "Hesab yaradıla bilmədi.",
+    "haveAccount": "Artıq hesabınız var?",
+    "startAtSignIn": "Daxil olma və ya qeydiyyatdan başlayın.",
+    "goToSignIn": "Daxil olma səhifəsinə keçin",
+    "invalidCode": "Yanlış və ya vaxtı keçmiş kod.",
+    "codeSent": "Yeni kod göndərildi.",
+    "resendFailed": "Yenidən göndərilə bilmədi.",
+    "verifyEmailTitle": "E-poçtunuzu təsdiqləyin",
+    "verifyEmailTo": "E-poçtunuzu təsdiqləyin — {email}",
+    "verify": "Təsdiqlə",
+    "resendCode": "Kodu yenidən göndər",
+    "signInAgain": "Zəhmət olmasa yenidən daxil olun.",
+    "mfaPrompt": "E-poçtla göndərdiyimiz daxil olma kodunu daxil edin",
+    "mfaPromptTo": "{email} ünvanına göndərdiyimiz daxil olma kodunu daxil edin",
+    "verifySignIn": "Təsdiqlə və daxil ol",
+    "requestFailed": "Sorğu emal edilə bilmədi.",
+    "resetTitle": "Şifrənizi sıfırlayın",
+    "sendResetCode": "Sıfırlama kodu göndər",
+    "backToSignIn": "Daxil olma səhifəsinə qayıt",
+    "resetPrompt": "E-poçtla göndərdiyimiz kodu daxil edin və yeni şifrə seçin",
+    "resetPassword": "Şifrəni sıfırla",
+    "setNewPassword": "Yeni şifrə təyin edin",
+    "forcedChange": "Təhlükəsizlik üçün davam etməzdən əvvəl öz şifrənizi təyin edin.",
+    "updateAccountPassword": "Hesab şifrənizi yeniləyin.",
+    "changeFailed": "Şifrə dəyişdirilə bilmədi.",
+    "updatePassword": "Şifrəni yenilə",
+    "signOutInstead": "Əvəzində çıxış edin"
+  },
+  "notFound": {
+    "title": "Səhifə tapılmadı",
+    "subtitle": "Bu iş sahəsində belə bir səhifə mövcud deyil.",
+    "back": "İdarə panelinə qayıt"
+  },
+  "status": {
+    "draft": "qaralama",
+    "in_review": "baxışda",
+    "approved": "təsdiqlənmiş",
+    "final": "yekun",
+    "archived": "arxivlənmiş",
+    "open": "açıq",
+    "processing": "emal olunur",
+    "ready": "hazır",
+    "pending": "gözləmədə",
+    "transcribing": "transkripsiya olunur",
+    "transcribed": "transkripsiya olunub",
+    "failed": "uğursuz",
+    "sent": "göndərilib",
+    "received": "alınıb",
+    "completed": "tamamlanıb",
+    "cancelled": "ləğv edilib",
+    "active": "aktiv",
+    "suspended": "dayandırılıb"
+  },
+  "kind": {
+    "meeting": "iclas",
+    "interview": "müsahibə",
+    "briefing": "brifinq",
+    "dictation": "diktə",
+    "field_report": "sahə hesabatı",
+    "consultation": "məsləhətləşmə",
+    "other": "digər"
+  },
+  "classification": {
+    "unclassified": "təsnifatsız",
+    "internal": "daxili",
+    "confidential": "məxfi",
+    "restricted": "məhdud"
+  },
+  "dashboard": {
+    "welcome": "Xoş gəlmisiniz, {name}",
+    "defaultName": "Məmurun adı",
+    "subtitle": "İnzibati iş sahəniz — qeyd edin, hazırlayın, nəzərdən keçirin və arxivləşdirin.",
+    "stats": {
+      "sessions": "Sessiyalar",
+      "documents": "Sənədlər",
+      "awaitingReview": "Baxış gözləyir",
+      "outstandingActions": "İcra olunmamış tədbirlər"
+    },
+    "recentSessions": "Son sessiyalar",
+    "documentsToAction": "Tədbir tələb edən sənədlər",
+    "noSessions": "Hələ sessiya yoxdur.",
+    "nothingToAction": "Diqqətinizi tələb edən heç nə yoxdur."
+  },
+  "sessions": {
+    "subtitle": "Hər sessiya bir iş qovluğudur — audio, transkript və ondan hazırlanan sənədlər.",
+    "new": "Yeni sessiya",
+    "createFailed": "Sessiya yaradıla bilmədi.",
+    "titlePlaceholder": "məs. Rayon Təhlükəsizlik Komitəsi — Həftəlik Brifinq",
+    "create": "Sessiya yarat",
+    "empty": "Hələ sessiya yoxdur. Qeydə başlamaq üçün birini yaradın.",
+    "fields": {
+      "title": "Başlıq",
+      "kind": "Növ",
+      "date": "Tarix",
+      "classification": "Təsnifat",
+      "status": "Status",
+      "department": "Şöbə",
+      "location": "Yer"
+    }
+  },
+  "session": {
+    "loadFailed": "Sessiyanı yükləmək mümkün olmadı.",
+    "micDenied": "Mikrofona giriş rədd edildi və ya mövcud deyil.",
+    "audioSaved": "Audio sessiyaya yadda saxlanıldı.",
+    "uploadFailed": "Yükləmə uğursuz oldu.",
+    "transcribing": "Yerli olaraq transkripsiya edilir — uzun audio üçün bu bir az vaxt ala bilər.",
+    "transcribed": "Transkripsiya tamamlandı.",
+    "transcribeFailed": "Transkripsiya uğursuz oldu. STT xidmətinin işlədiyini yoxlayın.",
+    "updateFailed": "Yeniləmək mümkün olmadı.",
+    "draftingMinutes": "Transkriptdən protokol hazırlanır…",
+    "minutesCreated": "Qaralama protokol yaradıldı.",
+    "minutesFailed": "Protokol yaratmaq mümkün olmadı.",
+    "notFound": "Sessiya tapılmadı.",
+    "noDate": "tarix yoxdur",
+    "noLocation": "yer yoxdur",
+    "generateMinutes": "Protokol yarat",
+    "captureAudio": "Audio yaz",
+    "stopSave": "Dayandır və saxla",
+    "startRecording": "Yazmağa başla",
+    "or": "və ya",
+    "uploadAudio": "Audio yüklə",
+    "audioNote": "Audio hostda qalır. Transkripsiya yerli olaraq ingilis dilində aparılır. Protokol bu sessiyadakı hər klipi sıra ilə birləşdirir.",
+    "documentsFrom": "Bu sessiyadan sənədlər",
+    "noDocuments": "Hələ sənəd yoxdur. Klipi transkripsiya edin, sonra protokol yaradın.",
+    "recordingsTitle": "Yazılar və transkriptlər",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Hələ yazı yoxdur. Yuxarıda audio yazın və ya yükləyin.",
+    "includeTitle": "Protokol yaradılarkən bu klipi daxil et",
+    "inMinutes": "Protokolda",
+    "transcribe": "Transkripsiya et",
+    "transcribeHint": "Transkripti burada görmək və redaktə etmək üçün bu klipi transkripsiya edin.",
+    "audioLoadFailed": "Audionu yükləmək mümkün olmadı.",
+    "loadAudio": "Audionu yüklə",
+    "words": "{n} söz",
+    "verified": "təsdiqlənib",
+    "editVerify": "Redaktə et və təsdiqlə",
+    "saveVerified": "Yadda saxla və təsdiqlənmiş kimi qeyd et",
+    "saveDraft": "Qaralama kimi yadda saxla",
+    "emptyTranscript": "Boş transkript."
+  },
+  "docType": {
+    "minutes": "protokol",
+    "memo": "memo",
+    "letter": "məktub",
+    "report": "hesabat",
+    "policy_brief": "siyasət qeydi",
+    "briefing_note": "brifinq qeydi",
+    "concept_note": "konsepsiya qeydi",
+    "circular": "dövri məktub",
+    "action_matrix": "tədbirlər matrisi",
+    "speech": "çıxış"
+  },
+  "approval": {
+    "submit": "təqdim edilib",
+    "submitted": "təqdim edilib",
+    "approve": "təsdiqlənib",
+    "approved": "təsdiqlənib",
+    "reject": "rədd edilib",
+    "rejected": "rədd edilib",
+    "finalize": "yekunlaşdırılıb",
+    "finalized": "yekunlaşdırılıb"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Daxili Memo",
+      "desc": "Kimə / Kimdən / Mövzu ilə standart daxili memorandum."
+    },
+    "letter-official": {
+      "name": "Rəsmi Məktub",
+      "desc": "İdarə blankında rəsmi göndərilən məktub."
+    },
+    "circular-general": {
+      "name": "Dövri Məktub",
+      "desc": "Çoxsaylı alıcılara göndərilən bildiriş."
+    },
+    "report-standard": {
+      "name": "Hesabat",
+      "desc": "Xülasə, bölmələr və tövsiyələrlə ümumi hesabat."
+    },
+    "policy-brief": {
+      "name": "Siyasət Qeydi",
+      "desc": "Qərar qəbul edənlər üçün qısa qeyd."
+    },
+    "briefing-note": {
+      "name": "Brifinq Qeydi",
+      "desc": "Görüşdən əvvəl rəhbəri məlumatlandırmaq üçün qısa qeyd."
+    },
+    "concept-note": {
+      "name": "Konsepsiya Qeydi",
+      "desc": "Təklif olunan proqram və ya tədbirin icmalı."
+    },
+    "minutes-blank": {
+      "name": "İclas Protokolu (boş)",
+      "desc": "Əl ilə doldurmaq üçün boş protokol strukturu."
+    },
+    "speech-remarks": {
+      "name": "Nitq / Çıxış",
+      "desc": "Tədbir üçün rəsmi çıxış."
+    }
+  },
+  "documents": {
+    "subtitle": "Protokollar, memorandumlar, məktublar, hesabatlar və brifinqlər — AI ilə hazırlanır, insanlar tərəfindən təsdiqlənir.",
+    "startFromTemplate": "Şablondan başla",
+    "fromSpreadsheet": "Elektron cədvəldən hesabat",
+    "draftWithAI": "AI ilə layihə hazırla",
+    "templateTitle": "Şablondan başlayın",
+    "allTypes": "Bütün növlər",
+    "orgTemplates": "Təşkilatınızın şablonları",
+    "savedByOrg": "Təşkilatınız tərəfindən yadda saxlanılıb",
+    "useTemplate": "Bu şablondan istifadə et",
+    "generalTemplates": "Ümumi şablonlar",
+    "spreadsheetFailed": "Həmin elektron cədvəldən hesabat yaratmaq mümkün olmadı.",
+    "templateFailed": "Şablondan yaratmaq mümkün olmadı.",
+    "draftFailed": "Sənədin layihəsini hazırlamaq mümkün olmadı.",
+    "fields": {
+      "type": "Sənəd növü",
+      "title": "Başlıq",
+      "recipient": "Alıcı (istəyə bağlı)",
+      "department": "Şöbə (istəyə bağlı)",
+      "brief": "Təlimatlar / brifinq"
+    },
+    "briefPlaceholder": "Məqsədi, əsas məqamları və daxil edilməli faktları təsvir edin. Assistant redaktə edə və təsdiqləyə biləcəyiniz rəsmi sənədin layihəsini hazırlayacaq.",
+    "generateDraft": "Layihə yarat",
+    "empty": "Hələ sənəd yoxdur.",
+    "table": {
+      "title": "Başlıq",
+      "type": "Növ",
+      "ref": "İst.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Sənədi yükləmək mümkün olmadı.",
+    "invalidJson": "Məzmun etibarlı JSON deyil.",
+    "saved": "Yadda saxlanıldı. Versiya artırıldı.",
+    "saveFailed": "Yadda saxlamaq mümkün olmadı.",
+    "done": {
+      "submit": "Sənəd baxış üçün təqdim edildi.",
+      "approve": "Sənəd təsdiqləndi.",
+      "reject": "Sənəd rədd edildi.",
+      "finalize": "Sənəd yekunlaşdırıldı."
+    },
+    "failed": {
+      "submit": "Təqdim etmək mümkün olmadı.",
+      "approve": "Təsdiqləmək mümkün olmadı.",
+      "reject": "Rədd etmək mümkün olmadı.",
+      "finalize": "Yekunlaşdırmaq mümkün olmadı."
+    },
+    "templateName": "Şablon adı",
+    "templateDefault": "{title} şablonu",
+    "templateSaved": "Təşkilatınız üçün yenidən istifadə edilə bilən şablon kimi yadda saxlanıldı.",
+    "templateSaveFailed": "Şablon yadda saxlanıla bilmədi.",
+    "exportFailed": "İxrac uğursuz oldu.",
+    "notFound": "Sənəd tapılmadı.",
+    "exportDocx": "DOCX ixrac et",
+    "exportPptx": "PPTX ixrac et",
+    "exportXlsx": "XLSX ixrac et",
+    "saveAsTemplate": "Şablon kimi yadda saxla",
+    "content": "Məzmun",
+    "workflow": "İş axını",
+    "aiAssisted": "Süni intellekt dəstəkli layihə",
+    "auditChain": "Audit zənciri: audio → transkript → süni intellekt layihəsi → insan redaktəsi → təsdiq → yekun. Hər addım qeydə alınır.",
+    "comment": "Şərh (istəyə bağlı)",
+    "commentPlaceholder": "Qeyd üçün qeyd əlavə edin",
+    "submit": "Baxış üçün təqdim et",
+    "approve": "Təsdiq et",
+    "reject": "Rədd et",
+    "finalize": "Yekunlaşdır",
+    "finalLocked": "Yekun — redaktə üçün kilidlənib",
+    "editJson": "Məzmunu redaktə et (JSON)",
+    "jsonNote": "Strukturlaşdırılmış məzmun brendli DOCX-i idarə edir. Aşağıdakı sahələri redaktə edin və yadda saxlayın; brendinq və tərtibat ixrac zamanı avtomatik tətbiq olunur.",
+    "saveContent": "Məzmunu yadda saxla",
+    "approvalHistory": "Təsdiq tarixçəsi"
+  },
+  "emails": {
+    "subtitle": "Süni intellekt ilə məktub və e-poçt layihələri hazırlayın. İnsan göndər düyməsini basana qədər heç nə göndərilmir.",
+    "needIntent": "Layihə hazırlamaq üçün köməkçiyə mövzu və ya məqsəd verin.",
+    "draftReady": "Layihə hazırdır. Göndərməzdən əvvəl nəzərdən keçirin və redaktə edin.",
+    "draftFailed": "Layihə uğursuz oldu.",
+    "draftSaved": "Layihə yadda saxlanıldı.",
+    "saveFailed": "Yadda saxlanıla bilmədi.",
+    "confirmSend": "Bu e-poçt indi göndərilsin? Bu əməliyyat audit jurnalında qeydə alınır.",
+    "sent": "E-poçt göndərildi.",
+    "sendFailed": "Göndərmə uğursuz oldu.",
+    "compose": "Yaz",
+    "messages": "Mesajlar",
+    "empty": "Hələ yazışma yoxdur.",
+    "message": "Mesaj",
+    "details": "Təfərrüatlar",
+    "to": "Kimə",
+    "cc": "Kopya",
+    "subject": "Mövzu",
+    "intent": "Bu nə deməlidir? (AI üçün)",
+    "intentPlaceholder": "məs. Cümə günü saat 10-da təhlükəsizlik barazasına rəisləri dəvət edin",
+    "body": "Mətn",
+    "saveDraft": "Qaralama saxla",
+    "toLabel": "Kimə:",
+    "ccLabel": "Kopya:",
+    "subjectLabel": "Mövzu:",
+    "aiAssisted": "AI dəstəyi ilə",
+    "sendNow": "İndi göndər",
+    "selectHint": "Mesaj seçin və ya yenisini yazın."
+  },
+  "knowledge": {
+    "subtitle": "Köməkçinin istifadə edə biləcəyi istinad materialları — siyasətlər, şablonlar, presedentlər.",
+    "added": "Bilik bazasına əlavə edildi.",
+    "addFailed": "Əlavə etmək mümkün olmadı.",
+    "chooseFile": "Yükləmək üçün fayl seçin.",
+    "ocrFailed": "Fayl saxlanıldı. OCR bu fayldan mətni oxuya bilmədi (keyfiyyəti aşağı ola bilər). Mətni əl ilə yapışdıra bilərsiniz.",
+    "extracted": "Fayl saxlanıldı və {n} simvol mətn çıxarıldı.",
+    "noText": "Fayl saxlanıldı. Bu formatdan mətn çıxarmaq mümkün olmadı.",
+    "uploadFailed": "Yükləmə uğursuz oldu.",
+    "confirmRemove": "Bu istinad silinsin?",
+    "uploadTitle": "Sənəd yüklə",
+    "file": "Fayl",
+    "titleOptional": "Başlıq (istəyə bağlı)",
+    "titleDefault": "Standart olaraq fayl adı",
+    "categoryOptional": "Kateqoriya (istəyə bağlı)",
+    "uploadExtract": "Yüklə və çıxar",
+    "uploadNote": "Word, PDF, CSV və mətn fayllarının mətni avtomatik çıxarılır. Skan edilmiş PDF-lər və fotoşəkillər OCR ilə avtomatik oxunur.",
+    "pasteTitle": "İstinad əlavə et (mətni yapışdır)",
+    "title": "Başlıq",
+    "category": "Kateqoriya",
+    "categoryPlaceholder": "məs. Sirkulyarlar, Siyasətlər",
+    "textContent": "Mətn məzmunu",
+    "add": "Əlavə et",
+    "references": "İstinadlar",
+    "empty": "Hələ heç nə yoxdur.",
+    "uncategorised": "Kateqoriyasız",
+    "remove": "Sil"
+  },
+  "assistant": {
+    "subtitle": "Sadə dildə təlimat verin — iş sahəniz üzrə xülasə et, tap, qaralama yaz və ya izah et.",
+    "failed": "Köməkçi bunu emal edə bilmədi.",
+    "instruction": "Təlimat",
+    "placeholder": "Məsələn, bu həftəki təhlükəsizlik komitəsinin qərarlarını ümumiləşdirin və ya hələ təsdiq gözləyən memo-ları sadalayın.",
+    "ask": "Sorğu"
+  },
+  "actions": {
+    "subtitle": "Sessiyalar üzrə protokol və tədbir matrislərindən çıxarılmış tədbir elementləri.",
+    "empty": "Heç bir gözləyən tədbir tapılmadı.",
+    "table": {
+      "action": "Tədbir",
+      "responsible": "Məsul şəxs",
+      "timeline": "Vaxt qrafiki",
+      "source": "Mənbə"
+    }
+  },
+  "paypal": {
+    "title": "PayPal ödənişi",
+    "subtitle": "Abunə ödənişinin təsdiqi.",
+    "confirming": "PayPal ödənişiniz təsdiqlənir...",
+    "noOrder": "Heç bir PayPal sifarişi qaytarılmadı.",
+    "confirmed": "Ödəniş təsdiqləndi. Worker abunəliyiniz artıq aktivdir.",
+    "failed": "PayPal ödənişi təsdiqlənə bilmədi.",
+    "success": "Ödəniş uğurlu oldu",
+    "viewSubscription": "Abunəliyə bax",
+    "errorTitle": "Ödəniş təsdiqlənə bilmədi",
+    "returnToSubscription": "Abunəliyə qayıt"
+  },
+  "tenant": {
+    "saved": "Təşkilat məlumatları yadda saxlanıldı. Onlar ixrac etdiyiniz hər sənəddə görünür.",
+    "saveFailed": "Yadda saxlana bilmədi.",
+    "logoUploaded": "Loqo yükləndi.",
+    "signatureUploaded": "İmza yükləndi.",
+    "uploadFailed": "Yükləmə uğursuz oldu.",
+    "subtitleShort": "İş sahəniz üçün brendinq.",
+    "noOrg": "Bu hesab heç bir təşkilatla əlaqəli deyil.",
+    "subtitle": "Adınız, blank başlığı, loqo və imzanız yaratdığınız hər sənəddə görünür.",
+    "letterhead": "Blank başlığı",
+    "orgName": "Təşkilatın adı",
+    "line": "Blank başlığı sətri {n}",
+    "line1Placeholder": "məs. ... HÖKUMƏTİ",
+    "line2Placeholder": "məs. ... Departamenti",
+    "line3Placeholder": "məs. Bölmə / Ofis",
+    "saveLetterhead": "Blank başlığını yadda saxla",
+    "blankHint": "Təşkilat adınıza qayıtmaq üçün sətirləri boş buraxın.",
+    "logoSignature": "Loqo və imza",
+    "logo": "Gerb / loqo (PNG və ya JPG)",
+    "signature": "Elektron imza (PNG və ya JPG)",
+    "uploaded": "yükləndi",
+    "brandingNote": "Loqo sənəd başlığında və slayd başlıq səhifələrində görünür. İmza ixrac edilən sənədlərin sonunda yerləşdirilir. Ən yaxşı nəticə üçün şəffaf fonlu PNG istifadə edin."
+  },
+  "users": {
+    "createdTemp": "İstifadəçi yaradıldı. Müvəqqəti şifrə: {temp} — təhlükəsiz şəkildə paylaşın; ilk girişdə dəyişdirilməlidir.",
+    "created": "İstifadəçi yaradıldı.",
+    "createFailed": "İstifadəçi yaradıla bilmədi.",
+    "confirmRemove": "{name} silinsin?",
+    "removeFailed": "Silinə bilmədi.",
+    "subtitle": "Girişi idarə edin. Superadmin hesabı burada dəyişdirilə bilməz.",
+    "add": "İstifadəçi əlavə et",
+    "create": "İstifadəçi yarat",
+    "empty": "İstifadəçi yoxdur.",
+    "fields": {
+      "name": "Ad",
+      "email": "E-poçt",
+      "role": "Rol",
+      "department": "Şöbə",
+      "status": "Status"
+    },
+    "suspend": "Dayandır",
+    "reinstate": "Bərpa et",
+    "remove": "Sil"
+  },
+  "audit": {
+    "subtitle": "Hər mühüm əməliyyat qeydə alınır. Jurnallar yalnız metadata və identifikatorları saxlayır — heç vaxt sənəd mətnlərini və ya audionu.",
+    "empty": "Audit qeydi yoxdur.",
+    "table": {
+      "when": "Nə vaxt",
+      "actor": "İcraçı",
+      "action": "Əməliyyat",
+      "resource": "Resurs"
+    },
+    "system": "sistem"
+  },
+  "payments": {
+    "stkSent": "STK push göndərildi. Ödəyicidən telefonunda təsdiqləməsini xahiş edin.",
+    "initiateFailed": "Ödəniş başladıla bilmədi.",
+    "subtitle": "M-Pesa (Daraja STK push) və PayPal əməliyyatları.",
+    "requestTitle": "M-Pesa ödənişi tələb et",
+    "phone": "Telefon (07.. və ya 2547..)",
+    "amountKes": "Məbləğ (KES)",
+    "purpose": "Məqsəd",
+    "sendStk": "STK push göndər",
+    "transactions": "Əməliyyatlar",
+    "empty": "Əməliyyat yoxdur.",
+    "table": {
+      "provider": "Provayder",
+      "amount": "Məbləğ",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Tamamlanmış Worker abunə ödənişləri üçün fakturalar və qəbzlər.",
+    "loadFailed": "Ödəniş sənədləri yüklənə bilmədi.",
+    "downloadFailed": {
+      "invoice": "Qaimə-faktura yüklənə bilmədi.",
+      "receipt": "Qəbz yüklənə bilmədi."
+    },
+    "documentsTitle": "Ödəniş sənədləri",
+    "intro": "Təşkilatınızın tamamlanmış abunə ödənişləri üçün qaimə-fakturaları və qəbzləri yükləyin.",
+    "disclaimer": "Bu sənədlər Worker abunə ödənişlərini qeyd edir və ödəniş və kompensasiya məqsədləri üçün təqdim olunur. Onlar ayrıca uyğun eTIMS inteqrasiyası vasitəsilə verilmədiyi təqdirdə KRA/eTIMS vergi qaimə-fakturaları kimi təqdim edilmir.",
+    "invoices": "Qaimə-fakturalar",
+    "noInvoices": "Hələ qaimə-faktura yoxdur.",
+    "receipts": "Qəbzlər",
+    "noReceipts": "Hələ qəbz yoxdur.",
+    "downloadPdf": "PDF yüklə",
+    "table": {
+      "invoice": "Qaimə-faktura",
+      "receipt": "Qəbz",
+      "date": "Tarix",
+      "description": "Təsvir",
+      "amount": "Məbləğ",
+      "status": "Status",
+      "provider": "Provayder",
+      "reference": "İstinad"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abunə yüklənə bilmədi.",
+    "selectFirst": "Əvvəlcə abunə planı seçin.",
+    "mpesaSent": "M-Pesa STK push göndərildi. Ödənişi telefonunuzda təsdiqləyin. Abunəliyiniz ödəniş təsdiqləndikdən sonra aktivləşəcək.",
+    "mpesaFailed": "M-Pesa ödənişi başladıla bilmədi.",
+    "noApproveUrl": "PayPal təsdiq URL-i qaytarılmadı.",
+    "paypalFailed": "PayPal ödənişi başladıla bilmədi.",
+    "subtitleShort": "Worker abunəliyinizi idarə edin.",
+    "subtitle": "Worker planınızı, sınaq müddətini və ödənişləri idarə edin.",
+    "current": "Cari abunə",
+    "organisation": "Təşkilat",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "14 günlük pulsuz sınaq",
+    "trialEnds": "Sınaq müddəti bitir",
+    "dayRemaining": "{n} gün qalıb",
+    "daysRemaining": "{n} gün qalıb",
+    "renewsEnds": "Yenilənir / bitir",
+    "chooseTitle": "Plan seçin",
+    "chooseSubtitle": "Bütün planlara Worker inzibati iş axını daxildir. 14 günlük sınaq müddətiniz pulsuzdur.",
+    "perMonth": "/ ay",
+    "planSelected": "{plan} seçildi. Planınız yadda saxlanıldı və ödəniş üçün hazırdır.",
+    "selectFailed": "Plan seçilə bilmədi.",
+    "selected": "Seçildi",
+    "selectPlan": "Plan seçin",
+    "activateTitle": "Abunəliyinizi aktivləşdirin",
+    "selectAbove": "Ödənişə davam etmək üçün yuxarıdan plan seçin.",
+    "stkNote": "Aşağıdakı telefon nömrəsinə STK bildirişi göndəriləcək.",
+    "phone": "Telefon nömrəsi",
+    "phonePlaceholder": "07.. və ya 2547..",
+    "payMpesa": "M-Pesa ilə ödə",
+    "paypalNote": "Seçilmiş planı USD ilə ödəmək üçün PayPal-a keçin.",
+    "payPaypal": "PayPal ilə ödə",
+    "settleNote": "Ödənişli abunəliklər M-Pesa və ya PayPal vasitəsilə ödənilə bilər.",
+    "activationNote": "Seçdiyiniz plan ödəniş uğurla təsdiqləndikdən sonra aktivləşdiriləcək.",
+    "historyNote": "Ödəniş tarixçəsi İdarəetmə → Ödənişlər bölməsində mövcuddur."
+  },
+  "intl": {
+    "territory": "Ərazi",
+    "searchTerritory": "Ərazi axtarın…",
+    "selectTerritory": "Ərazinizi seçin",
+    "territoryRequired": "Zəhmət olmasa ərazinizi seçin.",
+    "workingLanguage": "İş dili",
+    "meetingLanguage": "İclas dili",
+    "useDefault": "Təşkilat standartı",
+    "beta": "transkripsiya beta",
+    "unavailable": "transkripsiya yoxdur"
+  },
+  "generate": {
+    "title": "Bu sessiyadan sənəd yaradın",
+    "as": "Belə yaradın",
+    "instructions": "Təlimat (istəyə bağlı)",
+    "placeholder": "məs. Daimi Katibə 2 və 3-cü qərarları ümumiləşdirən məktub",
+    "button": "Yarat",
+    "working": "Sənədiniz hazırlanır… bu bir dəqiqə çəkə bilər.",
+    "done": "Sənəd yaradıldı.",
+    "failed": "Sənəd yaradıla bilmədi.",
+    "hint": "Daxil edilmək üçün işarələnmiş transkriptlərdən sıra ilə istifadə edir. Hər hansı bir şey paylaşılmadan əvvəl siz nəzərdən keçirib təsdiqləyirsiniz."
+  },
+  "queue": {
+    "queued": "Transkripsiya üçün növbəyə salındı. Bu səhifə avtomatik yenilənir."
+  },
+  "pdfExport": {
+    "button": "PDF ixrac et"
+  },
+  "access": {
+    "readOnly": "Sınaq müddətiniz və ya abunəliyiniz bitdiyi üçün iş sahəniz yalnız oxuma rejimindədir. Sənədlərinizi hələ də görə və ixrac edə bilərsiniz.",
+    "grace": "Sınaq müddətiniz və ya abunəliyiniz {date} tarixində bitdi. Tam giriş üçün {n} gününüz qalıb.",
+    "trialEnding": "Pulsuz sınaq müddətiniz {n} gün ərzində bitir.",
+    "choosePlan": "Plan seçin"
+  },
+  "sessionLang": {
+    "saved": "İclas dili yadda saxlanıldı. Bundan sonra transkripsiya edilən yazılara tətbiq olunur.",
+    "failed": "İclas dilini yadda saxlamaq mümkün olmadı."
+  },
+  "i18nNote": {
+    "machine": "Maşın tərcüməsi"
+  }
+}

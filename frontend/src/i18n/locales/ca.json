@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Idioma",
+    "signIn": "Inicia sessió",
+    "signOut": "Tanca la sessió",
+    "createAccount": "Crea un compte",
+    "getStarted": "Comença",
+    "startFreeTrial": "Inicia la prova gratuïta",
+    "cancel": "Cancel·la",
+    "back": "Enrere",
+    "download": "Baixa",
+    "viewAll": "Mostra-ho tot"
+  },
+  "brand": {
+    "tagline": "Espai de treball administratiu amb IA",
+    "secureWorkspace": "Espai de treball administratiu segur",
+    "badge": "Anglès · Àudio"
+  },
+  "nav": {
+    "dashboard": "Tauler",
+    "workspace": "Espai de treball",
+    "sessions": "Sessions i enregistraments",
+    "documents": "Documents",
+    "correspondence": "Correspondència",
+    "knowledge": "Base de coneixement",
+    "assistant": "Assistent",
+    "askWorker": "Pregunta a Worker",
+    "actions": "Accions pendents",
+    "administration": "Administració",
+    "organisation": "Organització",
+    "users": "Usuaris",
+    "audit": "Pista d'auditoria",
+    "subscription": "Subscripció",
+    "payments": "Pagaments",
+    "billing": "Facturació"
+  },
+  "roles": {
+    "viewer": "Visualitzador",
+    "officer": "Oficial",
+    "admin": "Administrador",
+    "superadmin": "Superadministrador"
+  },
+  "landing": {
+    "hero": {
+      "title": "Convertiu el que dieu en documentació acabada i arxivada.",
+      "body": "Worker és un espai de treball administratiu amb IA per a organitzacions que produeixen grans quantitats de documents formals a partir de reunions, informes i correspondència. Enregistreu una reunió o dicteu, i Worker la transcriu, redacta actes, memòries, cartes, informes i resums de polítiques, i els fa passar per revisió i aprovació — amb una pista d'auditoria completa.",
+      "badgeRow": "Àudio · Anglès · Espai de treball segur"
+    },
+    "what": {
+      "title": "Què fa Worker",
+      "lead": "La feina rutinària d'oficina que envolta les reunions i la correspondència — resolta en minuts, no en hores.",
+      "f1": {
+        "title": "Enregistra i transcriu",
+        "body": "Captureu reunions, entrevistes, informes o dictats. L'àudio es transcriu localment en anglès."
+      },
+      "f2": {
+        "title": "Redacta amb IA",
+        "body": "Genera actes, memòries, cartes, informes, notes de política i circulars amb la forma oficial correcta."
+      },
+      "f3": {
+        "title": "Revisa i aprova",
+        "body": "Cada document passa per esborrany, revisió, aprovació i finalització — les persones mantenen el control."
+      },
+      "f4": {
+        "title": "Segur i auditat",
+        "body": "Accés basat en rols i un registre d'auditoria complet. La correspondència només s'envia mai per una persona."
+      }
+    },
+    "start": {
+      "title": "Començar només triga un minut",
+      "lead": "Crea un compte i comença la teva prova gratuïta de 14 dies.",
+      "s1": {
+        "title": "Crea el teu compte",
+        "body": "Introdueix el teu nom, correu electrònic i una contrasenya."
+      },
+      "s2": {
+        "title": "Verifica el teu correu electrònic",
+        "body": "Introdueix el codi de 6 dígits que t'enviem per correu electrònic."
+      },
+      "s3": {
+        "title": "Inicia sessió de manera segura",
+        "body": "Cada inici de sessió es confirma amb un codi d'un sol ús enviat per correu electrònic."
+      },
+      "s4": {
+        "title": "Comença a treballar",
+        "body": "Crea una sessió, enregistra i genera el teu primer document."
+      }
+    },
+    "pricing": {
+      "title": "Preus de subscripció senzills",
+      "lead": "Comença amb una prova gratuïta de 14 dies. Tria el pla que s'adapti al volum de treball administratiu que produeix la teva organització.",
+      "perMonth": "/mes",
+      "mostPopular": "MÉS POPULAR",
+      "starter": {
+        "name": "Inicial",
+        "desc": "Per a equips petits que comencen amb el treball administratiu assistit per IA."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Per a organitzacions amb producció documental regular i d'alt volum."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Per a organitzacions més grans amb càrregues de treball administratiu substancials."
+      },
+      "paymentsNote": "M-Pesa i PayPal admesos per a subscripcions de pagament."
+    },
+    "final": {
+      "title": "A punt per provar Worker?",
+      "cta": "Crea el teu compte"
+    }
+  },
+  "auth": {
+    "email": "Correu electrònic",
+    "password": "Contrasenya",
+    "fullName": "Nom complet",
+    "confirmPassword": "Confirma la contrasenya",
+    "currentPassword": "Contrasenya actual",
+    "newPassword": "Nova contrasenya",
+    "confirmNewPassword": "Confirma la nova contrasenya",
+    "code6": "Codi de 6 dígits",
+    "signInFailed": "No s'ha pogut iniciar sessió. Comprova les teves credencials.",
+    "forgotPassword": "Has oblidat la contrasenya?",
+    "mfaNotice": "S'envia un codi d'un sol ús per correu electrònic per confirmar cada inici de sessió.",
+    "createYourAccount": "Creeu el vostre compte",
+    "pwMin": "La contrasenya ha de tenir com a mínim {n} caràcters.",
+    "newPwMin": "La contrasenya nova ha de tenir com a mínim {n} caràcters.",
+    "pwMismatch": "Les contrasenyes no coincideixen.",
+    "createFailed": "No s'ha pogut crear el compte.",
+    "haveAccount": "Ja teniu un compte?",
+    "startAtSignIn": "Comenceu iniciant la sessió o registrant-vos.",
+    "goToSignIn": "Vés a iniciar sessió",
+    "invalidCode": "Codi no vàlid o caducat.",
+    "codeSent": "S'ha enviat un codi nou.",
+    "resendFailed": "No s'ha pogut reenviar.",
+    "verifyEmailTitle": "Verifiqueu el vostre correu electrònic",
+    "verifyEmailTo": "Verifiqueu el vostre correu electrònic — {email}",
+    "verify": "Verifica",
+    "resendCode": "Reenviar codi",
+    "signInAgain": "Torneu a iniciar sessió.",
+    "mfaPrompt": "Introduïu el codi d'inici de sessió que us hem enviat per correu electrònic",
+    "mfaPromptTo": "Introduïu el codi d'inici de sessió que hem enviat per correu electrònic a {email}",
+    "verifySignIn": "Verifica i inicia sessió",
+    "requestFailed": "No s'ha pogut processar la sol·licitud.",
+    "resetTitle": "Restabliu la contrasenya",
+    "sendResetCode": "Enviar codi de restabliment",
+    "backToSignIn": "Torna a iniciar sessió",
+    "resetPrompt": "Introduïu el codi que us hem enviat per correu electrònic i trieu una contrasenya nova",
+    "resetPassword": "Restablir contrasenya",
+    "setNewPassword": "Establiu una contrasenya nova",
+    "forcedChange": "Per seguretat, establiu la vostra pròpia contrasenya abans de continuar.",
+    "updateAccountPassword": "Actualitzeu la contrasenya del vostre compte.",
+    "changeFailed": "No s'ha pogut canviar la contrasenya.",
+    "updatePassword": "Actualitzar contrasenya",
+    "signOutInstead": "Tanca la sessió"
+  },
+  "notFound": {
+    "title": "Pàgina no trobada",
+    "subtitle": "Aquesta pàgina no existeix en aquest espai de treball.",
+    "back": "Torna al tauler"
+  },
+  "status": {
+    "draft": "esborrany",
+    "in_review": "en revisió",
+    "approved": "aprovat",
+    "final": "final",
+    "archived": "arxivat",
+    "open": "obert",
+    "processing": "processant",
+    "ready": "a punt",
+    "pending": "pendent",
+    "transcribing": "transcrivint",
+    "transcribed": "transcrit",
+    "failed": "fallit",
+    "sent": "enviat",
+    "received": "rebut",
+    "completed": "completat",
+    "cancelled": "cancel·lat",
+    "active": "actiu",
+    "suspended": "suspès"
+  },
+  "kind": {
+    "meeting": "reunió",
+    "interview": "entrevista",
+    "briefing": "informe",
+    "dictation": "dictat",
+    "field_report": "informe de camp",
+    "consultation": "consulta",
+    "other": "altre"
+  },
+  "classification": {
+    "unclassified": "sense classificar",
+    "internal": "intern",
+    "confidential": "confidencial",
+    "restricted": "restringit"
+  },
+  "dashboard": {
+    "welcome": "Benvingut/da, {name}",
+    "defaultName": "Funcionari/ària",
+    "subtitle": "El seu espai de treball administratiu — capturi, redacti, revisi i arxivi.",
+    "stats": {
+      "sessions": "Sessions",
+      "documents": "Documents",
+      "awaitingReview": "Pendent de revisió",
+      "outstandingActions": "Accions pendents"
+    },
+    "recentSessions": "Sessions recents",
+    "documentsToAction": "Documents per tramitar",
+    "noSessions": "Encara no hi ha sessions.",
+    "nothingToAction": "No hi ha res que requereixi la seva atenció."
+  },
+  "sessions": {
+    "subtitle": "Cada sessió és un expedient — àudio, transcripció i els documents que se'n deriven.",
+    "new": "Nova sessió",
+    "createFailed": "No s'ha pogut crear la sessió.",
+    "titlePlaceholder": "p. ex. Comitè de Seguretat del Territori — Informe setmanal",
+    "create": "Crea la sessió",
+    "empty": "Encara no hi ha sessions. Creeu-ne una per començar a enregistrar.",
+    "fields": {
+      "title": "Títol",
+      "kind": "Tipus",
+      "date": "Data",
+      "classification": "Classificació",
+      "status": "Estat",
+      "department": "Departament",
+      "location": "Ubicació"
+    }
+  },
+  "session": {
+    "loadFailed": "No s'ha pogut carregar la sessió.",
+    "micDenied": "Accés al micròfon denegat o no disponible.",
+    "audioSaved": "Àudio desat a la sessió.",
+    "uploadFailed": "L'enviament ha fallat.",
+    "transcribing": "Transcripció local en curs — pot trigar una mica amb àudios llargs.",
+    "transcribed": "Transcripció completada.",
+    "transcribeFailed": "La transcripció ha fallat. Comproveu que el servei STT estigui en funcionament.",
+    "updateFailed": "No s'ha pogut actualitzar.",
+    "draftingMinutes": "Redactant l'acta a partir de la transcripció…",
+    "minutesCreated": "Esborrany de l'acta creat.",
+    "minutesFailed": "No s'ha pogut generar l'acta.",
+    "notFound": "Sessió no trobada.",
+    "noDate": "sense data",
+    "noLocation": "sense ubicació",
+    "generateMinutes": "Generar acta",
+    "captureAudio": "Capturar àudio",
+    "stopSave": "Aturar i desar",
+    "startRecording": "Iniciar gravació",
+    "or": "o",
+    "uploadAudio": "Enviar àudio",
+    "audioNote": "L'àudio roman a l'amfitrió. La transcripció s'executa localment en anglès. L'acta combina tots els clips d'aquesta sessió, en ordre.",
+    "documentsFrom": "Documents d'aquesta sessió",
+    "noDocuments": "Encara no hi ha documents. Transcriviu un clip i després genereu l'acta.",
+    "recordingsTitle": "Gravacions i transcripcions",
+    "clipOne": "{n} clip",
+    "clipMany": "{n} clips",
+    "noRecordings": "Encara no hi ha gravacions. Graveu o envieu àudio a dalt.",
+    "includeTitle": "Incloure aquest clip en generar l'acta",
+    "inMinutes": "A l'acta",
+    "transcribe": "Transcriure",
+    "transcribeHint": "Transcriviu aquest clip per veure i editar-ne la transcripció aquí.",
+    "audioLoadFailed": "No s'ha pogut carregar l'àudio.",
+    "loadAudio": "Carregar àudio",
+    "words": "{n} paraules",
+    "verified": "verificat",
+    "editVerify": "Edita i verifica",
+    "saveVerified": "Desa i marca com a verificat",
+    "saveDraft": "Desa l'esborrany",
+    "emptyTranscript": "Transcripció buida."
+  },
+  "docType": {
+    "minutes": "acta",
+    "memo": "memoràndum",
+    "letter": "carta",
+    "report": "informe",
+    "policy_brief": "nota de política",
+    "briefing_note": "nota informativa",
+    "concept_note": "nota conceptual",
+    "circular": "circular",
+    "action_matrix": "matriu d'accions",
+    "speech": "discurs"
+  },
+  "approval": {
+    "submit": "enviat",
+    "submitted": "enviat",
+    "approve": "aprovat",
+    "approved": "aprovat",
+    "reject": "rebutjat",
+    "rejected": "rebutjat",
+    "finalize": "finalitzat",
+    "finalized": "finalitzat"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memoràndum intern",
+      "desc": "Memoràndum intern estàndard amb A / De / Assumpte."
+    },
+    "letter-official": {
+      "name": "Carta oficial",
+      "desc": "Carta formal de sortida amb el paper de carta de l'oficina."
+    },
+    "circular-general": {
+      "name": "Circular",
+      "desc": "Avís circulat a molts destinataris."
+    },
+    "report-standard": {
+      "name": "Informe",
+      "desc": "Informe general amb resum, seccions i recomanacions."
+    },
+    "policy-brief": {
+      "name": "Nota de política",
+      "desc": "Nota concisa per als responsables de la presa de decisions."
+    },
+    "briefing-note": {
+      "name": "Nota informativa",
+      "desc": "Nota breu per informar un superior abans d'un compromís."
+    },
+    "concept-note": {
+      "name": "Nota conceptual",
+      "desc": "Esbós d'un programa o activitat proposats."
+    },
+    "minutes-blank": {
+      "name": "Acta de reunió (en blanc)",
+      "desc": "Estructura d'acta en blanc per omplir a mà."
+    },
+    "speech-remarks": {
+      "name": "Discurs / Observacions",
+      "desc": "Observacions formals per a un esdeveniment."
+    }
+  },
+  "documents": {
+    "subtitle": "Actes, memòries, cartes, informes i resums — redactats amb IA, aprovats per persones.",
+    "startFromTemplate": "Comença des d'una plantilla",
+    "fromSpreadsheet": "Informe des d'un full de càlcul",
+    "draftWithAI": "Esborrany amb IA",
+    "templateTitle": "Comença des d'una plantilla",
+    "allTypes": "Tots els tipus",
+    "orgTemplates": "Plantilles de la vostra organització",
+    "savedByOrg": "Desades per la vostra organització",
+    "useTemplate": "Utilitza aquesta plantilla",
+    "generalTemplates": "Plantilles generals",
+    "spreadsheetFailed": "No s'ha pogut crear un informe a partir d'aquest full de càlcul.",
+    "templateFailed": "No s'ha pogut crear a partir de la plantilla.",
+    "draftFailed": "No s'ha pogut redactar el document.",
+    "fields": {
+      "type": "Tipus de document",
+      "title": "Títol",
+      "recipient": "Destinatari (opcional)",
+      "department": "Departament (opcional)",
+      "brief": "Instruccions / resum"
+    },
+    "briefPlaceholder": "Descriu el propòsit, els punts clau i qualsevol fet que calgui incloure. L'assistent redactarà un document formal que podreu editar i aprovar.",
+    "generateDraft": "Genera l'esborrany",
+    "empty": "Encara no hi ha documents.",
+    "table": {
+      "title": "Títol",
+      "type": "Tipus",
+      "ref": "Ref.",
+      "status": "Estat",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "No s'ha pogut carregar el document.",
+    "invalidJson": "El contingut no és JSON vàlid.",
+    "saved": "Desat. Versió incrementada.",
+    "saveFailed": "No s'ha pogut desar.",
+    "done": {
+      "submit": "Document enviat per a revisió.",
+      "approve": "Document aprovat.",
+      "reject": "Document rebutjat.",
+      "finalize": "Document finalitzat."
+    },
+    "failed": {
+      "submit": "No s'ha pogut enviar.",
+      "approve": "No s'ha pogut aprovar.",
+      "reject": "No s'ha pogut rebutjar.",
+      "finalize": "No s'ha pogut finalitzar."
+    },
+    "templateName": "Nom de la plantilla",
+    "templateDefault": "Plantilla {title}",
+    "templateSaved": "Desat com a plantilla reutilitzable per a la vostra organització.",
+    "templateSaveFailed": "No s'ha pogut desar la plantilla.",
+    "exportFailed": "L'exportació ha fallat.",
+    "notFound": "Document no trobat.",
+    "exportDocx": "Exporta DOCX",
+    "exportPptx": "Exporta PPTX",
+    "exportXlsx": "Exporta XLSX",
+    "saveAsTemplate": "Desa com a plantilla",
+    "content": "Contingut",
+    "workflow": "Flux de treball",
+    "aiAssisted": "Esborrany assistit per IA",
+    "auditChain": "Cadena d'auditoria: àudio → transcripció → esborrany d'IA → edició humana → aprovació → final. Cada pas queda registrat.",
+    "comment": "Comentari (opcional)",
+    "commentPlaceholder": "Afegiu una nota per al registre",
+    "submit": "Envia per a revisió",
+    "approve": "Aprova",
+    "reject": "Rebutja",
+    "finalize": "Finalitza",
+    "finalLocked": "Final — bloquejat per a edició",
+    "editJson": "Edita el contingut (JSON)",
+    "jsonNote": "El contingut estructurat genera el DOCX de marca. Editeu els camps següents i deseu; la marca i el disseny s'apliquen automàticament en exportar.",
+    "saveContent": "Desa el contingut",
+    "approvalHistory": "Historial d'aprovacions"
+  },
+  "emails": {
+    "subtitle": "Redacteu cartes i correus amb IA. No s'envia res fins que una persona fa clic a envia.",
+    "needIntent": "Doneu a l'assistent un assumpte o una intenció per redactar.",
+    "draftReady": "Esborrany a punt. Reviseu-lo i editeu-lo abans d'enviar.",
+    "draftFailed": "La redacció ha fallat.",
+    "draftSaved": "Esborrany desat.",
+    "saveFailed": "No s'ha pogut desar.",
+    "confirmSend": "Voleu enviar aquest correu ara? Aquesta acció queda registrada al registre d'auditoria.",
+    "sent": "Correu enviat.",
+    "sendFailed": "L'enviament ha fallat.",
+    "compose": "Redacta",
+    "messages": "Missatges",
+    "empty": "Encara no hi ha correspondència.",
+    "message": "Missatge",
+    "details": "Detalls",
+    "to": "A",
+    "cc": "Cc",
+    "subject": "Assumpte",
+    "intent": "Què hauria de dir? (per a la IA)",
+    "intentPlaceholder": "p. ex. Convida els caps al baraza de seguretat divendres a les 10 h",
+    "body": "Cos",
+    "saveDraft": "Desa l'esborrany",
+    "toLabel": "A:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Assumpte:",
+    "aiAssisted": "Amb assistència de la IA",
+    "sendNow": "Envia ara",
+    "selectHint": "Seleccioneu un missatge o redacteu-ne un de nou."
+  },
+  "knowledge": {
+    "subtitle": "Material de referència que l'assistent pot consultar: polítiques, plantilles, precedents.",
+    "added": "Afegit a la base de coneixement.",
+    "addFailed": "No s'ha pogut afegir.",
+    "chooseFile": "Trieu un fitxer per pujar.",
+    "ocrFailed": "Fitxer desat. L'OCR no ha pogut llegir text d'aquest fitxer (pot ser de baixa qualitat). Podeu enganxar el text manualment.",
+    "extracted": "Fitxer desat i {n} caràcters de text extrets.",
+    "noText": "Fitxer desat. No s'ha pogut extreure text d'aquest format.",
+    "uploadFailed": "La pujada ha fallat.",
+    "confirmRemove": "Voleu eliminar aquesta referència?",
+    "uploadTitle": "Puja un document",
+    "file": "Fitxer",
+    "titleOptional": "Títol (opcional)",
+    "titleDefault": "Per defecte, el nom del fitxer",
+    "categoryOptional": "Categoria (opcional)",
+    "uploadExtract": "Puja i extreu",
+    "uploadNote": "El text dels fitxers de Word, PDF, CSV i text s'extreu automàticament. Els PDF escanejats i les fotos es llegeixen automàticament amb OCR.",
+    "pasteTitle": "Afegeix una referència (enganxa text)",
+    "title": "Títol",
+    "category": "Categoria",
+    "categoryPlaceholder": "p. ex. Circulars, Polítiques",
+    "textContent": "Contingut de text",
+    "add": "Afegeix",
+    "references": "Referències",
+    "empty": "Encara no hi ha res.",
+    "uncategorised": "Sense categoria",
+    "remove": "Elimina"
+  },
+  "assistant": {
+    "subtitle": "Doneu una instrucció en llenguatge planer: resumiu, cerqueu, redacteu o expliqueu a tot el vostre espai de treball.",
+    "failed": "L'assistent no ha pogut processar això.",
+    "instruction": "Instrucció",
+    "placeholder": "p. ex. Resumiu les decisions del comitè de seguretat d'aquesta setmana o llisteu les notes que encara esperen aprovació.",
+    "ask": "Pregunta"
+  },
+  "actions": {
+    "subtitle": "Elements d'acció extrets de les actes i les matrius d'accions de totes les sessions.",
+    "empty": "No s'han trobat accions pendents.",
+    "table": {
+      "action": "Acció",
+      "responsible": "Responsable",
+      "timeline": "Termini",
+      "source": "Font"
+    }
+  },
+  "paypal": {
+    "title": "Pagament amb PayPal",
+    "subtitle": "Confirmació del pagament de la subscripció.",
+    "confirming": "S'està confirmant el vostre pagament amb PayPal...",
+    "noOrder": "No s'ha retornat cap comanda de PayPal.",
+    "confirmed": "Pagament confirmat. La vostra subscripció a Worker ja és activa.",
+    "failed": "No s'ha pogut confirmar el pagament amb PayPal.",
+    "success": "Pagament correcte",
+    "viewSubscription": "Veure la subscripció",
+    "errorTitle": "No s'ha pogut confirmar el pagament",
+    "returnToSubscription": "Tornar a la subscripció"
+  },
+  "tenant": {
+    "saved": "S'han desat les dades de l'organització. Apareixen a tots els documents que exporteu.",
+    "saveFailed": "No s'ha pogut desar.",
+    "logoUploaded": "Logotip pujat.",
+    "signatureUploaded": "Signatura pujada.",
+    "uploadFailed": "No s'ha pogut pujar.",
+    "subtitleShort": "Imatge de marca del vostre espai de treball.",
+    "noOrg": "Aquest compte no està associat a cap organització.",
+    "subtitle": "El vostre nom, capçalera, logotip i signatura apareixen a tots els documents que genereu.",
+    "letterhead": "Capçalera",
+    "orgName": "Nom de l'organització",
+    "line": "Línia de capçalera {n}",
+    "line1Placeholder": "p. ex. GOVERN DEL COMTAT DE ...",
+    "line2Placeholder": "p. ex. Departament de ...",
+    "line3Placeholder": "p. ex. Unitat / Oficina",
+    "saveLetterhead": "Desar la capçalera",
+    "blankHint": "Deixeu les línies en blanc per utilitzar el nom de la vostra organització.",
+    "logoSignature": "Logotip i signatura",
+    "logo": "Escut / logotip (PNG o JPG)",
+    "signature": "Signatura electrònica (PNG o JPG)",
+    "uploaded": "pujat",
+    "brandingNote": "El logotip apareix a la capçalera del document i a les pàgines de títol de les diapositives. La signatura es col·loca al final dels documents exportats. Per obtenir els millors resultats, feu servir un PNG amb fons transparent."
+  },
+  "users": {
+    "createdTemp": "Usuari creat. Contrasenya temporal: {temp} — compartiu-la de manera segura; l'usuari l'haurà de canviar en el primer inici de sessió.",
+    "created": "Usuari creat.",
+    "createFailed": "No s'ha pogut crear l'usuari.",
+    "confirmRemove": "Voleu eliminar {name}?",
+    "removeFailed": "No s'ha pogut eliminar.",
+    "subtitle": "Gestioneu l'accés. El compte de superadministrador no es pot modificar aquí.",
+    "add": "Afegeix un usuari",
+    "create": "Crea un usuari",
+    "empty": "No hi ha usuaris.",
+    "fields": {
+      "name": "Nom",
+      "email": "Correu electrònic",
+      "role": "Rol",
+      "department": "Departament",
+      "status": "Estat"
+    },
+    "suspend": "Suspèn",
+    "reinstate": "Rehabilita",
+    "remove": "Elimina"
+  },
+  "audit": {
+    "subtitle": "Cada acció significativa es registra. Els registres només contenen metadades i identificadors — mai el contingut de documents ni àudio.",
+    "empty": "No hi ha entrades d'auditoria.",
+    "table": {
+      "when": "Quan",
+      "actor": "Actor",
+      "action": "Acció",
+      "resource": "Recurs"
+    },
+    "system": "sistema"
+  },
+  "payments": {
+    "stkSent": "STK push enviat. Demaneu al pagador que l'aprovi al seu telèfon.",
+    "initiateFailed": "No s'ha pogut iniciar el pagament.",
+    "subtitle": "Transaccions de M-Pesa (Daraja STK push) i PayPal.",
+    "requestTitle": "Sol·licita un pagament per M-Pesa",
+    "phone": "Telèfon (07.. o 2547..)",
+    "amountKes": "Import (KES)",
+    "purpose": "Concepte",
+    "sendStk": "Envia STK push",
+    "transactions": "Transaccions",
+    "empty": "No hi ha transaccions.",
+    "table": {
+      "provider": "Proveïdor",
+      "amount": "Import",
+      "status": "Estat",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Factures i rebuts dels pagaments de subscripció de Worker completats.",
+    "loadFailed": "No s'han pogut carregar els documents de facturació.",
+    "downloadFailed": {
+      "invoice": "No s'ha pogut descarregar la factura.",
+      "receipt": "No s'ha pogut descarregar el rebut."
+    },
+    "documentsTitle": "Documents de facturació",
+    "intro": "Descarregueu factures i rebuts dels pagaments de subscripció completats de la vostra organització.",
+    "disclaimer": "Aquests documents registren els pagaments de subscripció de Worker i es proporcionen amb finalitats de pagament i reemborsament. No es presenten com a factures fiscals de KRA/eTIMS tret que s'emetin per separat mitjançant una integració eTIMS conforme.",
+    "invoices": "Factures",
+    "noInvoices": "Encara no hi ha factures.",
+    "receipts": "Rebuts",
+    "noReceipts": "Encara no hi ha rebuts.",
+    "downloadPdf": "Descarregar PDF",
+    "table": {
+      "invoice": "Factura",
+      "receipt": "Rebut",
+      "date": "Data",
+      "description": "Descripció",
+      "amount": "Import",
+      "status": "Estat",
+      "provider": "Proveïdor",
+      "reference": "Referència"
+    }
+  },
+  "subscription": {
+    "loadFailed": "No s'ha pogut carregar la subscripció.",
+    "selectFirst": "Seleccioneu primer un pla de subscripció.",
+    "mpesaSent": "STK push de M-Pesa enviat. Aproveu el pagament al vostre telèfon. La vostra subscripció s'activarà després de la confirmació del pagament.",
+    "mpesaFailed": "No s'ha pogut iniciar el pagament amb M-Pesa.",
+    "noApproveUrl": "No s'ha retornat l'URL d'aprovació de PayPal.",
+    "paypalFailed": "No s'ha pogut iniciar el pagament amb PayPal.",
+    "subtitleShort": "Gestioneu la vostra subscripció de Worker.",
+    "subtitle": "Gestioneu el vostre pla de Worker, la prova i la facturació.",
+    "current": "Subscripció actual",
+    "organisation": "Organització",
+    "status": "Estat",
+    "plan": "Pla",
+    "freeTrial": "Prova gratuïta de 14 dies",
+    "trialEnds": "La prova finalitza",
+    "dayRemaining": "Queda {n} dia",
+    "daysRemaining": "Queden {n} dies",
+    "renewsEnds": "Es renova / finalitza",
+    "chooseTitle": "Trieu un pla",
+    "chooseSubtitle": "Tots els plans inclouen el flux de treball administratiu de Worker. La vostra prova de 14 dies és gratuïta.",
+    "perMonth": "/ mes",
+    "planSelected": "{plan} seleccionat. El vostre pla s'ha desat i està a punt per al pagament.",
+    "selectFailed": "No s'ha pogut seleccionar el pla.",
+    "selected": "Seleccionat",
+    "selectPlan": "Seleccioneu un pla",
+    "activateTitle": "Activeu la vostra subscripció",
+    "selectAbove": "Seleccioneu un pla a dalt per continuar al pagament.",
+    "stkNote": "S'enviarà una notificació STK al número de telèfon següent.",
+    "phone": "Número de telèfon",
+    "phonePlaceholder": "07.. o 2547..",
+    "payMpesa": "Pagueu amb M-Pesa",
+    "paypalNote": "Continueu a PayPal per pagar el pla seleccionat en USD.",
+    "payPaypal": "Pagueu amb PayPal",
+    "settleNote": "Les subscripcions de pagament es poden liquidar mitjançant M-Pesa o PayPal.",
+    "activationNote": "El pla seleccionat s'activarà després de la confirmació correcta del pagament.",
+    "historyNote": "L'historial de pagaments està disponible a Administració → Pagaments."
+  },
+  "intl": {
+    "territory": "Territori",
+    "searchTerritory": "Cerqueu territori…",
+    "selectTerritory": "Seleccioneu el vostre territori",
+    "territoryRequired": "Seleccioneu el vostre territori.",
+    "workingLanguage": "Llengua de treball",
+    "meetingLanguage": "Llengua de la reunió",
+    "useDefault": "Predeterminat de l'organització",
+    "beta": "transcripció beta",
+    "unavailable": "sense transcripció"
+  },
+  "generate": {
+    "title": "Genereu un document a partir d'aquesta sessió",
+    "as": "Genereu com a",
+    "instructions": "Instrucció (opcional)",
+    "placeholder": "p. ex. Carta al Secretari Permanent que resumeixi les decisions 2 i 3",
+    "button": "Genereu",
+    "working": "S'està redactant el vostre document… això pot trigar un minut.",
+    "done": "Document creat.",
+    "failed": "No s'ha pogut generar el document.",
+    "hint": "Utilitza les transcripcions marcades per incloure-les, en ordre. Reviseu i aprovar abans que es comparteixi res."
+  },
+  "queue": {
+    "queued": "En cua per a transcripció. Aquesta pàgina s'actualitza automàticament."
+  },
+  "pdfExport": {
+    "button": "Exporteu PDF"
+  },
+  "access": {
+    "readOnly": "El vostre espai de treball és de només lectura perquè la prova o la subscripció ha finalitzat. Encara podeu veure i exportar els vostres documents.",
+    "grace": "La vostra prova o subscripció va finalitzar el {date}. Us queden {n} dies d'accés complet.",
+    "trialEnding": "La vostra prova gratuïta finalitza d'aquí a {n} dies.",
+    "choosePlan": "Trieu un pla"
+  },
+  "sessionLang": {
+    "saved": "Llengua de la reunió desada. S'aplica a les gravacions transcrites a partir d'ara.",
+    "failed": "No s'ha pogut desar la llengua de la reunió."
+  },
+  "i18nNote": {
+    "machine": "Traducció automàtica"
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Luqadda",
+    "signIn": "Gal",
+    "signOut": "Ka bax",
+    "createAccount": "Samee akoon",
+    "getStarted": "Bilow",
+    "startFreeTrial": "Bilow tijaabada bilaashka ah",
+    "cancel": "Jooji",
+    "back": "Dib u noqo",
+    "download": "Soo dejiso",
+    "viewAll": "Dhammaan eeg"
+  },
+  "brand": {
+    "tagline": "Goob shaqo maamuleed oo AI ah",
+    "secureWorkspace": "Goob shaqo maamuleed oo ammaan ah",
+    "badge": "Ingiriisi · Cod"
+  },
+  "nav": {
+    "dashboard": "Shaxda guud",
+    "workspace": "Goobta shaqada",
+    "sessions": "Kulamada & Duubista",
+    "documents": "Dukumentiyada",
+    "correspondence": "Waraaqaha",
+    "knowledge": "Kaydka Aqoonta",
+    "assistant": "Kaaliyaha",
+    "askWorker": "Weydii Worker",
+    "actions": "Ficilada Haray",
+    "administration": "Maamulka",
+    "organisation": "Ururka",
+    "users": "Isticmaalayaasha",
+    "audit": "Raadraaca Hantidhawrka",
+    "subscription": "Diiwaangelinta",
+    "payments": "Lacag-bixinta",
+    "billing": "Biilasha"
+  },
+  "roles": {
+    "viewer": "Daawade",
+    "officer": "Sarkaal",
+    "admin": "Maamule",
+    "superadmin": "Maamule sare"
+  },
+  "landing": {
+    "hero": {
+      "title": "U beddel waxa aad tidhaahdo dukumentiyo dhammeystiran oo la kaydiyay.",
+      "body": "Worker waa goob shaqo maamuleed oo AI ah oo loogu talagalay ururada soo saara tiro badan oo dukumentiyo rasmi ah oo ka yimaada kulamo, warbixinno iyo waraaqo. Duub kulan ama cod dhig, Worker ayaa qora, diyaariyaa qoraallada kulanka, qoraallada, waraaqaha, warbixinnada iyo soo koobidda siyaasadda, oo u maraa dib u eegis iyo ansixin — iyadoo leh raadraac hantidhawr oo buuxa.",
+      "badgeRow": "Cod · Ingiriisi · Goob shaqo oo ammaan ah"
+    },
+    "what": {
+      "title": "Waxa Worker qabto",
+      "lead": "Shaqada xafiiska ee caadiga ah ee ku xeeran kulamada iyo waraaqaha — lagu qabto daqiiqado, ma aha saacado.",
+      "f1": {
+        "title": "Duub & qor",
+        "body": "Qabso kulamo, wareysiyo, warbixinno ama cod-dhigid. Codka waxaa lagu qoraa gudaha Ingiriisi."
+      },
+      "f2": {
+        "title": "Qorista AI",
+        "body": "Soo saar qoraallada shirarka, xusuus-qorrada, waraaqaha, warbixinnada, warbixinnada siyaasadda iyo wareegyada qaabka rasmiga ah ee saxda ah."
+      },
+      "f3": {
+        "title": "Dib u eegis & ansixin",
+        "body": "Dokument kastaa wuxuu maraa qoraal, dib u eegis, ansixin iyo dhamaystir — dadka ayaa gacanta ku haya."
+      },
+      "f4": {
+        "title": "Ammaan & la xisaabtamay",
+        "body": "Helitaan ku saleysan doorka iyo raad xisaabeed buuxa. Waraaqaha waxaa had iyo jeer dira qof."
+      }
+    },
+    "start": {
+      "title": "Bilaabista waxay qaadataa daqiiqad",
+      "lead": "Samee akoon oo bilow tijaabadaada 14-maalmood ee bilaashka ah.",
+      "s1": {
+        "title": "Samee akoonkaaga",
+        "body": "Geli magacaaga, iimaylkaaga iyo furaha sirta ah."
+      },
+      "s2": {
+        "title": "Xaqiiji iimaylkaaga",
+        "body": "Geli koodhka 6-lambar ah ee aan iimaylka kuugu soo dirno."
+      },
+      "s3": {
+        "title": "Gal si ammaan ah",
+        "body": "Gelitaan kastaa wuxuu ku xaqiijiyaa koodh hal-mar ah oo iimayl lagu soo diro."
+      },
+      "s4": {
+        "title": "Bilow shaqada",
+        "body": "Samee fadhi, duub, oo soo saar dokumentkaagii ugu horreeyay."
+      }
+    },
+    "pricing": {
+      "title": "Qiimaha rukhsad fudud",
+      "lead": "Ku bilow tijaabo 14-maalmood oo bilaash ah. Dooro qorshaha ku habboon baaxadda shaqada maamul ee ururkaagu soo saaro.",
+      "perMonth": "/bishii",
+      "mostPopular": "UGU CAANSAN",
+      "starter": {
+        "name": "Bilow",
+        "desc": "Kooxaha yaryar ee bilaabaya shaqada maamul ee AI caawiya."
+      },
+      "professional": {
+        "name": "Xirfadle",
+        "desc": "Ururrada leh soo saarid dokument oo joogto ah oo badan."
+      },
+      "premium": {
+        "name": "Heer sare",
+        "desc": "Ururrada waaweyn ee leh culays maamul oo la taaban karo."
+      },
+      "paymentsNote": "M-Pesa iyo PayPal waa la taageeraa rukhsadaha la bixiyay."
+    },
+    "final": {
+      "title": "Diyaar ma u tahay inaad tijaabiso Worker?",
+      "cta": "Samee akoonkaaga"
+    }
+  },
+  "auth": {
+    "email": "Iimayl",
+    "password": "Furaha sirta ah",
+    "fullName": "Magaca buuxa",
+    "confirmPassword": "Xaqiiji furaha sirta ah",
+    "currentPassword": "Furaha sirta ah ee hadda",
+    "newPassword": "Furaha sirta ah ee cusub",
+    "confirmNewPassword": "Xaqiiji furaha sirta ah ee cusub",
+    "code6": "Koodh 6-lambar ah",
+    "signInFailed": "Gelitaanku wuu guuldareystay. Hubi aqoonsigaaga.",
+    "forgotPassword": "Ma illowday furaha sirta ah?",
+    "mfaNotice": "Koodh hal-mar ah ayaa iimayl lagu soo diraa si loo xaqiijiyo gelitaan kasta.",
+    "createYourAccount": "Samee akoonkaaga",
+    "pwMin": "Furaha sirta ah waa inuu ka koobnaadaa ugu yaraan {n} xaraf.",
+    "newPwMin": "Furaha sirta ah ee cusub waa inuu ka koobnaadaa ugu yaraan {n} xaraf.",
+    "pwMismatch": "Furayaasha sirta ah isku mid ma aha.",
+    "createFailed": "Akoonka lama samayn karin.",
+    "haveAccount": "Horeba ma u lahayd akoon?",
+    "startAtSignIn": "Ka bilow gelitaanka ama isdiiwaangelinta.",
+    "goToSignIn": "Tag gelitaanka",
+    "invalidCode": "Koodh aan sax ahayn ama dhacay.",
+    "codeSent": "Koodh cusub ayaa la diray.",
+    "resendFailed": "Lama dib u diri karin.",
+    "verifyEmailTitle": "Xaqiiji iimaylkaaga",
+    "verifyEmailTo": "Xaqiiji iimaylkaaga — {email}",
+    "verify": "Xaqiiji",
+    "resendCode": "Dib u dir koodhka",
+    "signInAgain": "Fadlan mar kale gal.",
+    "mfaPrompt": "Geli koodhka gelitaanka ee aan iimayl kuugu soo dirnay",
+    "mfaPromptTo": "Geli koodhka gelitaanka ee aan iimayl kuugu soo dirnay {email}",
+    "verifySignIn": "Xaqiiji oo gal",
+    "requestFailed": "Codsiga lama fulin karin.",
+    "resetTitle": "Dib u dhig furahaaga sirta ah",
+    "sendResetCode": "Dir koodhka dib u dhigista",
+    "backToSignIn": "Ku noqo gelitaanka",
+    "resetPrompt": "Geli koodhka aan iimayl kuugu soo dirnay oo dooro furaha sirta ah ee cusub",
+    "resetPassword": "Dib u dhig furaha sirta ah",
+    "setNewPassword": "Deji furaha sirta ah ee cusub",
+    "forcedChange": "Ammaan ahaan, deji furahaaga sirta ah ka hor intaadan sii wadin.",
+    "updateAccountPassword": "Cusboonaysii furaha sirta ah ee akoonkaaga.",
+    "changeFailed": "Furaha sirta ah lama beddeli karin.",
+    "updatePassword": "Cusboonaysii furaha sirta ah",
+    "signOutInstead": "Halkii, ka bax"
+  },
+  "notFound": {
+    "title": "Bogga lama helin",
+    "subtitle": "Boggaas kama jiro goobtan shaqada.",
+    "back": "Ku noqo shaxda koontaroolka"
+  },
+  "status": {
+    "draft": "qabyo",
+    "in_review": "dib u eegis",
+    "approved": "la ansixiyay",
+    "final": "kama dambays",
+    "archived": "la keydiyay",
+    "open": "furan",
+    "processing": "wuu socdaa",
+    "ready": "diyaar",
+    "pending": "sugaya",
+    "transcribing": "waxaa lagu qorayaa",
+    "transcribed": "la qoray",
+    "failed": "guuldareystay",
+    "sent": "la diray",
+    "received": "la helay",
+    "completed": "la dhammeeyay",
+    "cancelled": "la joojiyay",
+    "active": "firfircoon",
+    "suspended": "la hakiyay"
+  },
+  "kind": {
+    "meeting": "shir",
+    "interview": "wareysi",
+    "briefing": "warbixin",
+    "dictation": "dikteyn",
+    "field_report": "warbixin goobeed",
+    "consultation": "la-tashi",
+    "other": "kale"
+  },
+  "classification": {
+    "unclassified": "aan la kala saarin",
+    "internal": "gudaha",
+    "confidential": "qarsoodi",
+    "restricted": "xaddidan"
+  },
+  "dashboard": {
+    "welcome": "Ku soo dhawoow, {name}",
+    "defaultName": "Sarkaal",
+    "subtitle": "Goobtaada shaqo ee maamulka — qabashada, qorista, dib u eegista iyo kaydinta.",
+    "stats": {
+      "sessions": "Fadhiyada",
+      "documents": "Dukumentiyada",
+      "awaitingReview": "Sugaya dib u eegis",
+      "outstandingActions": "Tallaabooyin aan la dhammeyn"
+    },
+    "recentSessions": "Fadhiyadii ugu dambeeyay",
+    "documentsToAction": "Dukumentiyada tallaabo u baahan",
+    "noSessions": "Weli ma jiraan fadhiyo.",
+    "nothingToAction": "Ma jiraan wax feejignaan u baahan."
+  },
+  "sessions": {
+    "subtitle": "Fadhi kastaa waa fayl kiis — cod, qoraal, iyo dukumentiyada laga soo saaray.",
+    "new": "Fadhi cusub",
+    "createFailed": "Fadhi lama abuuri karin.",
+    "titlePlaceholder": "tus. Guddiga Amniga Degmada — Warbixin Toddobaadle",
+    "create": "Abuur fadhi",
+    "empty": "Weli ma jiraan fadhiyo. Abuur mid si aad u bilowdo duubista.",
+    "fields": {
+      "title": "Cinwaan",
+      "kind": "Nooc",
+      "date": "Taariikh",
+      "classification": "Kala-saarid",
+      "status": "Xaalad",
+      "department": "Waax",
+      "location": "Goob"
+    }
+  },
+  "session": {
+    "loadFailed": "Lama soo kicin karin kulanka.",
+    "micDenied": "Helitaanka makarafoonka waa la diiday ama lama heli karo.",
+    "audioSaved": "Codka waa lagu kaydiyay kulanka.",
+    "uploadFailed": "Soo gelinta waa fashilantay.",
+    "transcribing": "Gudaha ayaa lagu qorayaa — tani waxay qaadan kartaa waqti cod dheer.",
+    "transcribed": "Qoraalku wuu dhammaaday.",
+    "transcribeFailed": "Qoraalku waa fashilmay. Hubi in adeegga STT uu shaqeynayo.",
+    "updateFailed": "Lama cusboonaysiin karin.",
+    "draftingMinutes": "Qoraallada daqiiqadaha ayaa laga sameynayaa qoraalka…",
+    "minutesCreated": "Qoraallada daqiiqadaha waa la sameeyay.",
+    "minutesFailed": "Lama soo saari karin daqiiqadaha.",
+    "notFound": "Kulanka lama helin.",
+    "noDate": "taariikh ma leh",
+    "noLocation": "goob ma leh",
+    "generateMinutes": "Soo saar daqiiqadaha",
+    "captureAudio": "Qabo codka",
+    "stopSave": "Jooji & kaydi",
+    "startRecording": "Bilow duubista",
+    "or": "ama",
+    "uploadAudio": "Soo geli codka",
+    "audioNote": "Codku wuxuu ku sii jiraa martigeliyaha. Qoraalku wuxuu ku socdaa gudaha Ingiriisi. Daqiiqaduhu waxay isku daraan dhammaan qaybaha kulankan, si kala horreysan.",
+    "documentsFrom": "Dukumeentiyada kulankan",
+    "noDocuments": "Weli dukumeenti ma jiro. Qor qayb, kadib soo saar daqiiqadaha.",
+    "recordingsTitle": "Duubitaanno & qoraallo",
+    "clipOne": "{n} qayb",
+    "clipMany": "{n} qaybood",
+    "noRecordings": "Weli duubitaanno ma jiro. Duub ama soo geli codka kore.",
+    "includeTitle": "Ku dar qaybtan marka la soo saarayo daqiiqadaha",
+    "inMinutes": "Daqiiqadaha gudahood",
+    "transcribe": "Qor",
+    "transcribeHint": "Qor qaybtan si aad u aragto oo u tafatirto qoraalkeeda halkan.",
+    "audioLoadFailed": "Lama soo kicin karin codka.",
+    "loadAudio": "Soo kici codka",
+    "words": "{n} eray",
+    "verified": "la xaqiijiyay",
+    "editVerify": "Tafatir & xaqiiji",
+    "saveVerified": "Kaydi & calaamadee la xaqiijiyay",
+    "saveDraft": "Kaydi qabyo",
+    "emptyTranscript": "Qoraal madhan."
+  },
+  "docType": {
+    "minutes": "daqiiqooyin",
+    "memo": "warqad gaaban",
+    "letter": "warqad",
+    "report": "warbixin",
+    "policy_brief": "soo koobid siyaasad",
+    "briefing_note": "qoraal wargelin",
+    "concept_note": "qoraal fikrad",
+    "circular": "wareegto",
+    "action_matrix": "shaxda tallaabooyinka",
+    "speech": "khudbad"
+  },
+  "approval": {
+    "submit": "la gudbiyay",
+    "submitted": "la gudbiyay",
+    "approve": "la ansixiyay",
+    "approved": "la ansixiyay",
+    "reject": "la diiday",
+    "rejected": "la diiday",
+    "finalize": "la dhammeeyay",
+    "finalized": "la dhammeeyay"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Warqad Gaaban oo Gudaha",
+      "desc": "Warqad gaaban oo gudaha ah oo caadi ah oo leh Ku / Ka / Mawduuc."
+    },
+    "letter-official": {
+      "name": "Warqad Rasmi ah",
+      "desc": "Warqad rasmi ah oo dibadda loo dirayo oo ku qoran warqadda rasmiga ah ee xafiiska."
+    },
+    "circular-general": {
+      "name": "Wareegto",
+      "desc": "Ogeysiis loo qaybiyay dad badan oo qaata."
+    },
+    "report-standard": {
+      "name": "Warbixin",
+      "desc": "Warbixin guud oo leh soo koobid, qaybo iyo talooyin."
+    },
+    "policy-brief": {
+      "name": "Soo Koobid Siyaasad",
+      "desc": "Soo koobid kooban oo loogu talagalay go'aan-qaadayaasha."
+    },
+    "briefing-note": {
+      "name": "Qoraal Wargelin",
+      "desc": "Qoraal gaaban oo lagu wargeliyo masuul ka hor kulanka."
+    },
+    "concept-note": {
+      "name": "Qoraal Fikrad",
+      "desc": "Qoraal kooban oo lagu qeexayo barnaamij ama hawl la soo jeediyay."
+    },
+    "minutes-blank": {
+      "name": "Daqiiqooyinka Kulanka (madhan)",
+      "desc": "Qaab-dhismeedka daqiiqooyin madhan oo gacanta lagu buuxiyo."
+    },
+    "speech-remarks": {
+      "name": "Hadal / Faallooyin",
+      "desc": "Faallooyin rasmi ah oo loogu talagalay munaasabad."
+    }
+  },
+  "documents": {
+    "subtitle": "Qoraallada shirarka, xusuus-qorrada, waraaqaha, warbixinada iyo soo-koobidda — oo ay AI qortay, dadkuna ansixiyeen.",
+    "startFromTemplate": "Ka bilow template",
+    "fromSpreadsheet": "Warbixin ka soo baxda spreadsheet",
+    "draftWithAI": "Ku qor AI",
+    "templateTitle": "Ka bilow template",
+    "allTypes": "Dhammaan noocyada",
+    "orgTemplates": "Templates-ka hay'addaada",
+    "savedByOrg": "Waxaa kaydiyay hay'addaada",
+    "useTemplate": "Isticmaal template-kan",
+    "generalTemplates": "Templates-ka guud",
+    "spreadsheetFailed": "Warbixin lama sameyn karin spreadsheet-kaas.",
+    "templateFailed": "Lama abuuri karin template-ka.",
+    "draftFailed": "Dokumentiga lama qori karin.",
+    "fields": {
+      "type": "Nooca dokumentiga",
+      "title": "Cinwaanka",
+      "recipient": "Qaataha (ikhtiyaari)",
+      "department": "Waaxda (ikhtiyaari)",
+      "brief": "Tilmaamaha / soo-koobid"
+    },
+    "briefPlaceholder": "Sharax ujeeddada, qodobbada muhiimka ah, iyo xaqiiqo kasta oo lagu darayo. Kaaliyaha ayaa qori doona dokumenti rasmi ah oo aad wax ka beddeli karto oo ansixin karto.",
+    "generateDraft": "Soo saar qoraal",
+    "empty": "Weli dokumenti ma jiro.",
+    "table": {
+      "title": "Cinwaanka",
+      "type": "Nooca",
+      "ref": "Tixraac",
+      "status": "Xaaladda",
+      "ver": "Nooc."
+    }
+  },
+  "doc": {
+    "loadFailed": "Dokumentiga lama soo kicin karin.",
+    "invalidJson": "Nuxurku ma aha JSON sax ah.",
+    "saved": "Waa la kaydiyay. Nooca waa la kordhiyay.",
+    "saveFailed": "Kaydintu waa fashilantay.",
+    "done": {
+      "submit": "Dokumentiga waxaa loo gudbiyay dib u eegis.",
+      "approve": "Dokumentiga waa la ansixiyay.",
+      "reject": "Dokumentiga waa la diiday.",
+      "finalize": "Dokumentiga waa la dhammeeyay."
+    },
+    "failed": {
+      "submit": "Lama gudbin karin.",
+      "approve": "Lama ansixin karin.",
+      "reject": "Lama diidi karin.",
+      "finalize": "Lama dhammeeyn karin."
+    },
+    "templateName": "Magaca template-ka",
+    "templateDefault": "Template-ka {title}",
+    "templateSaved": "Waxaa loo keydiyay sidii template dib loo isticmaali karo oo loogu talagalay hay'addaada.",
+    "templateSaveFailed": "Ma keydin karin template-ka.",
+    "exportFailed": "Dhoofinta waa fashilantay.",
+    "notFound": "Dokumentiga lama helin.",
+    "exportDocx": "Dhoofi DOCX",
+    "exportPptx": "Dhoofi PPTX",
+    "exportXlsx": "Dhoofi XLSX",
+    "saveAsTemplate": "Ku keydi sidii template",
+    "content": "Nuxurka",
+    "workflow": "Habka shaqada",
+    "aiAssisted": "Qabyo-qoraal lagu caawiyay AI",
+    "auditChain": "Silsiladda hantidhawrka: cod → qoraal → qabyo-qoraal AI → tafatir bini'aadam → ansixin → kama dambays. Tallaabo kastaa waa la diiwaangeliyaa.",
+    "comment": "Faallo (ikhtiyaari)",
+    "commentPlaceholder": "Ku dar qoraal diiwaanka",
+    "submit": "U gudbi dib u eegis",
+    "approve": "Ansixi",
+    "reject": "Diid",
+    "finalize": "Dhammeystir",
+    "finalLocked": "Kama dambays — waa xidhan tahay tafatirka",
+    "editJson": "Tafatir nuxurka (JSON)",
+    "jsonNote": "Nuxurka habaysan ayaa horseeda DOCX-ka sumaysan. Tafatir goobaha hoose oo keydi; sumaynta iyo qaabaynta si otomaatig ah ayaa loo dabaqaa marka la dhoofinayo.",
+    "saveContent": "Keydi nuxurka",
+    "approvalHistory": "Taariikhda ansixinta"
+  },
+  "emails": {
+    "subtitle": "Ku qor waraaqo iyo iimaylo AI. Waxba lama dirto ilaa qof uu riixo dir.",
+    "needIntent": "Si caawiye mawduuc ama ujeeddo uu wax ka qoro.",
+    "draftReady": "Qabyo-qoraalku diyaar. Dib u eeg oo tafatir ka hor dirista.",
+    "draftFailed": "Qabyo-qoraalku waa fashilmay.",
+    "draftSaved": "Qabyo-qoraalka waa la keydiyay.",
+    "saveFailed": "Ma keydin karin.",
+    "confirmSend": "Ma hadda dirtaa iimaylkan? Falkan waxaa lagu diiwaangelinayaa raadka hantidhawrka.",
+    "sent": "Iimaylka waa la diray.",
+    "sendFailed": "Dirista waa fashilantay.",
+    "compose": "Qor",
+    "messages": "Fariimaha",
+    "empty": "Weli warqad isdhaafsi ma jiro.",
+    "message": "Fariin",
+    "details": "Faahfaahin",
+    "to": "Loo dirayo",
+    "cc": "Cc",
+    "subject": "Mawduuca",
+    "intent": "Maxay tani sheegaysaa? (AI ahaan)",
+    "intentPlaceholder": "tus. Ku casuumi madaxda baraza amniga Jimcaha 10am",
+    "body": "Qoraalka",
+    "saveDraft": "Kaydi qabyo",
+    "toLabel": "Loo dirayo:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Mawduuca:",
+    "aiAssisted": "AI caawiyay",
+    "sendNow": "Dir hadda",
+    "selectHint": "Dooro fariin ama qor mid cusub."
+  },
+  "knowledge": {
+    "subtitle": "Agab tixraac oo kaaliyaha uu isticmaali karo — siyaasado, qaabab, tusaalayaal.",
+    "added": "Waxaa lagu daray kaydka aqoonta.",
+    "addFailed": "Lama dari karin.",
+    "chooseFile": "Dooro fayl aad soo gelinayso.",
+    "ocrFailed": "Faylka waa la kaydiyay. OCR ma awoodin inuu akhriyo qoraalka faylkan (waxaa laga yaabaa inuu tayo hooseeyo). Waxaad gacanta ku qori kartaa qoraalka.",
+    "extracted": "Faylka waa la kaydiyay oo {n} xaraf oo qoraal ah ayaa la soo saaray.",
+    "noText": "Faylka waa la kaydiyay. Qoraal lama soo saari karin qaabkan.",
+    "uploadFailed": "Soo gelinta waa fashilantay.",
+    "confirmRemove": "Ma saarayaa tixraacan?",
+    "uploadTitle": "Soo geli dukumeenti",
+    "file": "Fayl",
+    "titleOptional": "Cinwaan (ikhtiyaari)",
+    "titleDefault": "Wuxuu si otomaatig ah u qaataa magaca faylka",
+    "categoryOptional": "Qayb (ikhtiyaari)",
+    "uploadExtract": "Soo geli & soo saar",
+    "uploadNote": "Word, PDF, CSV iyo faylalka qoraalka si otomaatig ah ayaa qoraalkooda loo soo saaraa. PDF-yada la sawiray iyo sawirrada si otomaatig ah ayaa OCR loogu akhriyaa.",
+    "pasteTitle": "Ku dar tixraac (ku dheji qoraal)",
+    "title": "Cinwaan",
+    "category": "Qayb",
+    "categoryPlaceholder": "tus. Wareegtooyin, Siyaasado",
+    "textContent": "Qoraalka ku jira",
+    "add": "Ku dar",
+    "references": "Tixraacyo",
+    "empty": "Weli waxba ma jiraan.",
+    "uncategorised": "Aan la kala saarin",
+    "remove": "Saar"
+  },
+  "assistant": {
+    "subtitle": "Ku bixi tilmaan Ingiriisi fudud — soo koob, raadi, qor ama sharax gudaha goobtaada shaqada.",
+    "failed": "Kaaliyaha ma awoodin inuu taas farsameeyo.",
+    "instruction": "Tilmaan",
+    "placeholder": "tus. Soo koob go'aannada guddiga amniga ee toddobaadkan, ama liis dukumentiyada weli sugaya ansixinta.",
+    "ask": "Weydii"
+  },
+  "actions": {
+    "subtitle": "Waxqabadyada laga soo saaray qoraallada shirarka iyo shaxda waxqabadka ee fadhiyada kala duwan.",
+    "empty": "Ma jiraan waxqabadyo hadhay.",
+    "table": {
+      "action": "Waxqabad",
+      "responsible": "Mas'uul",
+      "timeline": "Jadwal",
+      "source": "Isha"
+    }
+  },
+  "paypal": {
+    "title": "Lacag-bixinta PayPal",
+    "subtitle": "Xaqiijinta lacag-bixinta rukhsadda.",
+    "confirming": "Waxaa la xaqiijinayaa lacag-bixintaada PayPal...",
+    "noOrder": "Ma jiro dalab PayPal la soo celiyay.",
+    "confirmed": "Lacag-bixinta la xaqiijiyay. Rukhsaddaada Worker hadda waa firfircoon.",
+    "failed": "Lacag-bixinta PayPal lama xaqiijin karin.",
+    "success": "Lacag-bixin guul leh",
+    "viewSubscription": "Eeg rukhsadda",
+    "errorTitle": "Lacag-bixinta lama xaqiijin karin",
+    "returnToSubscription": "Ku noqo rukhsadda"
+  },
+  "tenant": {
+    "saved": "Faahfaahinta hay'adda waa la kaydiyay. Waxay ka muuqdaan dukumenti kasta oo aad dhoofiso.",
+    "saveFailed": "Lama kaydin karin.",
+    "logoUploaded": "Astaanta la soo geliyay.",
+    "signatureUploaded": "Saxiixa la soo geliyay.",
+    "uploadFailed": "Soo gelinta waa fashilantay.",
+    "subtitleShort": "Astaanta ganacsigaaga shaqadaada.",
+    "noOrg": "Akoonkan lama xiriirin hay'ad.",
+    "subtitle": "Magacaaga, warqadda rasmiga ah, astaanta iyo saxiixaada waxay ka muuqdaan dukumenti kasta oo aad soo saarto.",
+    "letterhead": "Warqadda rasmiga ah",
+    "orgName": "Magaca hay'adda",
+    "line": "Sadarka warqadda rasmiga ah {n}",
+    "line1Placeholder": "tus. DEGMADA ...",
+    "line2Placeholder": "tus. Waaxda ...",
+    "line3Placeholder": "tus. Unug / Xafiis",
+    "saveLetterhead": "Kaydi warqadda rasmiga ah",
+    "blankHint": "Ka tag sadarrada madhan si aad ugu noqoto magaca hay'addaada.",
+    "logoSignature": "Astaanta & saxiixa",
+    "logo": "Calaamadda / astaanta (PNG ama JPG)",
+    "signature": "Saxiixa elektarooniga (PNG ama JPG)",
+    "uploaded": "la soo geliyay",
+    "brandingNote": "Astaantu waxay ka muuqataa madaxa dukumentiga iyo bogagga cinwaanka slide-ka. Saxiixa waxaa la dhigaa dhammaadka dukumentiyada la dhoofiyay. Isticmaal PNG leh asal hufan si natiijada ugu fiican loo helo."
+  },
+  "users": {
+    "createdTemp": "Isticmaale la abuuray. Furaha ku meel gaadhka ah: {temp} — si ammaan ah u wadaag; waa inuu beddelo marka ugu horreysa ee uu galo.",
+    "created": "Isticmaale la abuuray.",
+    "createFailed": "Lama abuuri karin isticmaale.",
+    "confirmRemove": "Ma ka saarayaa {name}?",
+    "removeFailed": "Lama saari karin.",
+    "subtitle": "Maamul gelitaanka. Akoonka superadmin lama beddeli karo halkan.",
+    "add": "Ku dar isticmaale",
+    "create": "Abuur isticmaale",
+    "empty": "Ma jiraan isticmaalayaal.",
+    "fields": {
+      "name": "Magac",
+      "email": "Iimayl",
+      "role": "Doorka",
+      "department": "Waaxda",
+      "status": "Xaaladda"
+    },
+    "suspend": "Hakii",
+    "reinstate": "Soo celi",
+    "remove": "Ka saar"
+  },
+  "audit": {
+    "subtitle": "Ficil kasta oo muhiim ah waa la diiwaangeliyaa. Diiwaannada waxay hayaan oo keliya xogta iyo aqoonsiga — marnaba ma hayaan qoraallada ama codka.",
+    "empty": "Ma jiraan diiwaanno hanti.",
+    "table": {
+      "when": "Goorta",
+      "actor": "Falka",
+      "action": "Ficilka",
+      "resource": "Kheyraadka"
+    },
+    "system": "nidaamka"
+  },
+  "payments": {
+    "stkSent": "STK push la diray. Weydii bixiyaha inuu ku ansixiyo telefoonkiisa.",
+    "initiateFailed": "Lama bilaabi karin lacag-bixinta.",
+    "subtitle": "M-Pesa (Daraja STK push) iyo macaamilada PayPal.",
+    "requestTitle": "Codso lacag-bixin M-Pesa",
+    "phone": "Telefoon (07.. ama 2547..)",
+    "amountKes": "Qadarka (KES)",
+    "purpose": "Ujeeddada",
+    "sendStk": "Dir STK push",
+    "transactions": "Macaamilada",
+    "empty": "Ma jiraan macaamilo.",
+    "table": {
+      "provider": "Bixiyaha",
+      "amount": "Qadarka",
+      "status": "Xaaladda",
+      "ref": "Tixraaca"
+    }
+  },
+  "billing": {
+    "subtitle": "Qaansheegadka iyo rasiidhada lacag-bixinnada rukhsiga Worker ee dhammeystiran.",
+    "loadFailed": "Lama soo dejisan karin dukumeentiyada biilasha.",
+    "downloadFailed": {
+      "invoice": "Ma soo dejisan karin qaansheegta.",
+      "receipt": "Ma soo dejisan karin rasiidka."
+    },
+    "documentsTitle": "Dukumentiyada biilasha",
+    "intro": "Soo dejiso qaansheegyo iyo rasiidooyin lacag-bixinnada rukhsadaha ururkaaga ee dhammeystiran.",
+    "disclaimer": "Dukumentiyadan waxay diiwaangeliyaan lacag-bixinnada rukhsadda Worker waxaana loo bixiyaa ujeedooyin lacag-bixin iyo magdhow. Looma soo bandhigo sida qaansheegyo canshuureed KRA/eTIMS haddii aan si gaar ah loogu soo saarin isku-xirka eTIMS ee waafaqsan.",
+    "invoices": "Qaansheegyo",
+    "noInvoices": "Weli ma jiraan qaansheegyo.",
+    "receipts": "Rasiidooyin",
+    "noReceipts": "Weli ma jiraan rasiidooyin.",
+    "downloadPdf": "Soo dejiso PDF",
+    "table": {
+      "invoice": "Qaansheeg",
+      "receipt": "Rasiid",
+      "date": "Taariikh",
+      "description": "Sharaxaad",
+      "amount": "Qadar",
+      "status": "Xaalad",
+      "provider": "Bixiye",
+      "reference": "Tixraac"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Ma soo dejisan karin rukhsadda.",
+    "selectFirst": "Marka hore dooro qorshe rukhsad.",
+    "mpesaSent": "M-Pesa STK push waa la diray. Ku ansixi lacag-bixinta telefoonkaaga. Rukhsaddaadu waxay shaqeyn doontaa ka dib marka la xaqiijiyo lacag-bixinta.",
+    "mpesaFailed": "Ma bilaabin karin lacag-bixinta M-Pesa.",
+    "noApproveUrl": "URL-ka ansixinta PayPal lama soo celin.",
+    "paypalFailed": "Ma bilaabin karin lacag-bixinta PayPal.",
+    "subtitleShort": "Maamul rukhsaddaada Worker.",
+    "subtitle": "Maamul qorshahaaga Worker, tijaabada iyo biilasha.",
+    "current": "Rukhsadda hadda",
+    "organisation": "Urur",
+    "status": "Xaalad",
+    "plan": "Qorshe",
+    "freeTrial": "Tijaabo bilaash ah 14-maalmood",
+    "trialEnds": "Tijaabadu waxay dhammaanaysaa",
+    "dayRemaining": "{n} maalmood ayaa ka hadhay",
+    "daysRemaining": "{n} maalmood ayaa ka hadhay",
+    "renewsEnds": "Cusboonaysiin / dhammaad",
+    "chooseTitle": "Dooro qorshe",
+    "chooseSubtitle": "Dhammaan qorshayaashu waxay ka kooban yihiin habka maamulka Worker. Tijaabadaada 14-maalmood waa bilaash.",
+    "perMonth": "/ bishii",
+    "planSelected": "{plan} waa la doortay. Qorshahaaga waa la keydiyay oo diyaar u ah lacag-bixin.",
+    "selectFailed": "Ma dooran karin qorshaha.",
+    "selected": "La doortay",
+    "selectPlan": "Dooro qorshe",
+    "activateTitle": "Dhaqaalee rukhsigaaga",
+    "selectAbove": "Dooro qorshe kore si aad u sii gudubto lacag-bixinta.",
+    "stkNote": "STK push ayaa loo diri doonaa lambarka taleefanka ee hoose.",
+    "phone": "Lambarka taleefanka",
+    "phonePlaceholder": "07.. ama 2547..",
+    "payMpesa": "Ku bixi M-Pesa",
+    "paypalNote": "U gudub PayPal si aad u bixiso qorshaha la doortay ee USD.",
+    "payPaypal": "Ku bixi PayPal",
+    "settleNote": "Rukhsiga la bixiyay waxaa lagu dhammayn karaa M-Pesa ama PayPal.",
+    "activationNote": "Qorshahaaga la doortay waa la dhaqaaleeyn doonaa ka dib xaqiijinta lacag-bixinta guulaysata.",
+    "historyNote": "Taariikhda lacag-bixinta waxaa laga heli karaa Maamulka → Lacag-bixinta."
+  },
+  "intl": {
+    "territory": "Territory",
+    "searchTerritory": "Raadi territory…",
+    "selectTerritory": "Dooro territory-gaaga",
+    "territoryRequired": "Fadlan dooro territory-gaaga.",
+    "workingLanguage": "Luqadda shaqada",
+    "meetingLanguage": "Luqadda shirka",
+    "useDefault": "Caadiga ururka",
+    "beta": "beta qoraal-u-beddel",
+    "unavailable": "qoraal-u-beddel ma jiro"
+  },
+  "generate": {
+    "title": "Ka soo saar dukumeenti kulankan",
+    "as": "U soo saar sida",
+    "instructions": "Tilmaame (ikhtiyaari)",
+    "placeholder": "tus. Warqad loo dirayo Xoghayaha Joogtada ah oo soo koobaya go'aannada 2 iyo 3",
+    "button": "Soo saar",
+    "working": "Waxaa la qorayaa dukumeentigaaga… tan waxay qaadan kartaa hal daqiiqad.",
+    "done": "Dukumeentiga waa la abuuray.",
+    "failed": "Dukumeentiga lama soo saari karin.",
+    "hint": "Waxay isticmaashaa qoraallada la calaamadeeyay in lagu daro, si kala horreysa. Waxaad dib u eegtaa oo ansixisaa ka hor inta aan wax la wadaagin."
+  },
+  "queue": {
+    "queued": "Waa la safay qoraal-u-beddelka. Boggan si otomaatig ah ayuu isu cusboonaysiiyaa."
+  },
+  "pdfExport": {
+    "button": "Dhoofi PDF"
+  },
+  "access": {
+    "readOnly": "Goobtaada shaqada waa akhris-kaliya sababtoo ah tijaabadaada ama rukhsigaaga wuu dhammaaday. Weli waad arki kartaa oo dhoofi kartaa dukumeentiyadaada.",
+    "grace": "Tijaabadaada ama rukhsigaaga wuxuu dhammaaday {date}. Waxaad haysataa {n} maalmood oo gelitaan buuxa ah.",
+    "trialEnding": "Tijaabadaada bilaashka ah waxay dhammaanaysaa {n} maalmood.",
+    "choosePlan": "Dooro qorshe"
+  },
+  "sessionLang": {
+    "saved": "Luqadda shirka waa la keydiyay. Waxay khusaysaa duubista la qoraal-u-beddelayo laga bilaabo hadda.",
+    "failed": "Luqadda shirka lama keydin karin."
+  },
+  "i18nNote": {
+    "machine": "Mashiin-turjun"
+  }
+}

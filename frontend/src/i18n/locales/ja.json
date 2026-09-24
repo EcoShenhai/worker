@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "言語",
+    "signIn": "サインイン",
+    "signOut": "サインアウト",
+    "createAccount": "アカウントを作成",
+    "getStarted": "始める",
+    "startFreeTrial": "無料トライアルを開始",
+    "cancel": "キャンセル",
+    "back": "戻る",
+    "download": "ダウンロード",
+    "viewAll": "すべて表示"
+  },
+  "brand": {
+    "tagline": "AI行政ワークスペース",
+    "secureWorkspace": "安全な行政ワークスペース",
+    "badge": "英語 · 音声"
+  },
+  "nav": {
+    "dashboard": "ダッシュボード",
+    "workspace": "ワークスペース",
+    "sessions": "セッションと録音",
+    "documents": "文書",
+    "correspondence": "通信文",
+    "knowledge": "ナレッジベース",
+    "assistant": "アシスタント",
+    "askWorker": "Workerに質問",
+    "actions": "未完了のアクション",
+    "administration": "管理",
+    "organisation": "組織",
+    "users": "ユーザー",
+    "audit": "監査証跡",
+    "subscription": "サブスクリプション",
+    "payments": "支払い",
+    "billing": "請求"
+  },
+  "roles": {
+    "viewer": "閲覧者",
+    "officer": "担当者",
+    "admin": "管理者",
+    "superadmin": "スーパー管理者"
+  },
+  "landing": {
+    "hero": {
+      "title": "話した内容を、完成した書類として提出。",
+      "body": "Workerは、会議・ブリーフィング・通信文から大量の正式文書を作成する組織向けのAI行政ワークプレースです。会議を録音するか口述すると、Workerが文字起こしを行い、議事録、メモ、書簡、報告書、政策概要を作成し、完全な監査証跡とともにレビューと承認のプロセスを進めます。",
+      "badgeRow": "音声 · 英語 · 安全なワークプレース"
+    },
+    "what": {
+      "title": "Workerが行うこと",
+      "lead": "会議や通信文に付随する日常的な事務作業を、数時間ではなく数分で処理します。",
+      "f1": {
+        "title": "録音と文字起こし",
+        "body": "会議、インタビュー、ブリーフィング、口述を記録します。音声は英語でローカルに文字起こしされます。"
+      },
+      "f2": {
+        "title": "AIによる下書き作成",
+        "body": "議事録、メモ、書簡、報告書、政策概要、回覧文書を正しい公文書形式で生成します。"
+      },
+      "f3": {
+        "title": "レビューと承認",
+        "body": "すべての文書は下書き、レビュー、承認、最終化の段階を経ます。人の管理下に置かれます。"
+      },
+      "f4": {
+        "title": "安全で監査可能",
+        "body": "役割ベースのアクセスと完全な監査証跡。通信は必ず人が送信します。"
+      }
+    },
+    "start": {
+      "title": "開始は1分で完了",
+      "lead": "アカウントを作成し、14日間の無料トライアルを開始してください。",
+      "s1": {
+        "title": "アカウントを作成",
+        "body": "名前、メールアドレス、パスワードを入力してください。"
+      },
+      "s2": {
+        "title": "メールアドレスを確認",
+        "body": "メールで送信された6桁のコードを入力してください。"
+      },
+      "s3": {
+        "title": "安全にサインイン",
+        "body": "各サインインはメールで送信されるワンタイムコードで確認します。"
+      },
+      "s4": {
+        "title": "作業を開始",
+        "body": "セッションを作成し、記録し、最初の文書を生成してください。"
+      }
+    },
+    "pricing": {
+      "title": "シンプルなサブスクリプション料金",
+      "lead": "14日間の無料トライアルから開始。組織が作成する事務作業の量に合ったプランをお選びください。",
+      "perMonth": "/月",
+      "mostPopular": "最も人気",
+      "starter": {
+        "name": "スターター",
+        "desc": "AI支援による事務作業を始める小規模チーム向け。"
+      },
+      "professional": {
+        "name": "プロフェッショナル",
+        "desc": "定期的に大量の文書を作成する組織向け。"
+      },
+      "premium": {
+        "name": "プレミアム",
+        "desc": "相当な事務作業量を抱える大規模組織向け。"
+      },
+      "paymentsNote": "有料サブスクリプションにはM-PesaとPayPalをご利用いただけます。"
+    },
+    "final": {
+      "title": "Workerをお試しになりますか？",
+      "cta": "アカウントを作成"
+    }
+  },
+  "auth": {
+    "email": "メールアドレス",
+    "password": "パスワード",
+    "fullName": "氏名",
+    "confirmPassword": "パスワードの確認",
+    "currentPassword": "現在のパスワード",
+    "newPassword": "新しいパスワード",
+    "confirmNewPassword": "新しいパスワードの確認",
+    "code6": "6桁のコード",
+    "signInFailed": "サインインに失敗しました。認証情報を確認してください。",
+    "forgotPassword": "パスワードをお忘れですか？",
+    "mfaNotice": "各サインインの確認のため、ワンタイムコードがメールで送信されます。",
+    "createYourAccount": "アカウントを作成",
+    "pwMin": "パスワードは{n}文字以上で入力してください。",
+    "newPwMin": "新しいパスワードは{n}文字以上で入力してください。",
+    "pwMismatch": "パスワードが一致しません。",
+    "createFailed": "アカウントを作成できませんでした。",
+    "haveAccount": "すでにアカウントをお持ちですか？",
+    "startAtSignIn": "サインインまたは登録から開始してください。",
+    "goToSignIn": "サインインへ移動",
+    "invalidCode": "コードが無効または期限切れです。",
+    "codeSent": "新しいコードを送信しました。",
+    "resendFailed": "再送信できませんでした。",
+    "verifyEmailTitle": "メールアドレスを確認",
+    "verifyEmailTo": "メールアドレスを確認 — {email}",
+    "verify": "確認",
+    "resendCode": "コードを再送信",
+    "signInAgain": "もう一度サインインしてください。",
+    "mfaPrompt": "メールで送信したサインインコードを入力してください",
+    "mfaPromptTo": "{email}に送信したサインインコードを入力してください",
+    "verifySignIn": "確認してサインイン",
+    "requestFailed": "リクエストを処理できませんでした。",
+    "resetTitle": "パスワードをリセット",
+    "sendResetCode": "リセットコードを送信",
+    "backToSignIn": "サインインに戻る",
+    "resetPrompt": "メールで送信したコードを入力し、新しいパスワードを設定してください",
+    "resetPassword": "パスワードをリセット",
+    "setNewPassword": "新しいパスワードを設定",
+    "forcedChange": "セキュリティのため、続行する前にご自身のパスワードを設定してください。",
+    "updateAccountPassword": "アカウントのパスワードを更新してください。",
+    "changeFailed": "パスワードを変更できませんでした。",
+    "updatePassword": "パスワードを更新",
+    "signOutInstead": "代わりにサインアウト"
+  },
+  "notFound": {
+    "title": "ページが見つかりません",
+    "subtitle": "そのページはこのワークスペースに存在しません。",
+    "back": "ダッシュボードに戻る"
+  },
+  "status": {
+    "draft": "下書き",
+    "in_review": "レビュー中",
+    "approved": "承認済み",
+    "final": "最終",
+    "archived": "アーカイブ済み",
+    "open": "オープン",
+    "processing": "処理中",
+    "ready": "準備完了",
+    "pending": "保留中",
+    "transcribing": "文字起こし中",
+    "transcribed": "文字起こし済み",
+    "failed": "失敗",
+    "sent": "送信済み",
+    "received": "受信済み",
+    "completed": "完了",
+    "cancelled": "キャンセル済み",
+    "active": "有効",
+    "suspended": "停止中"
+  },
+  "kind": {
+    "meeting": "会議",
+    "interview": "インタビュー",
+    "briefing": "ブリーフィング",
+    "dictation": "口述",
+    "field_report": "現地報告",
+    "consultation": "協議",
+    "other": "その他"
+  },
+  "classification": {
+    "unclassified": "未分類",
+    "internal": "社内限定",
+    "confidential": "機密",
+    "restricted": "閲覧制限"
+  },
+  "dashboard": {
+    "welcome": "ようこそ、{name}",
+    "defaultName": "担当官",
+    "subtitle": "業務用ワークスペース — 記録、作成、確認、保管。",
+    "stats": {
+      "sessions": "セッション",
+      "documents": "文書",
+      "awaitingReview": "確認待ち",
+      "outstandingActions": "未対応のアクション"
+    },
+    "recentSessions": "最近のセッション",
+    "documentsToAction": "対応が必要な文書",
+    "noSessions": "セッションはまだありません。",
+    "nothingToAction": "対応が必要な項目はありません。"
+  },
+  "sessions": {
+    "subtitle": "各セッションはケースファイルです — 音声、文字起こし、そこから作成された文書。",
+    "new": "新規セッション",
+    "createFailed": "セッションを作成できませんでした。",
+    "titlePlaceholder": "例：県治安委員会 — 週次ブリーフィング",
+    "create": "セッションを作成",
+    "empty": "セッションはまだありません。作成して録音を開始してください。",
+    "fields": {
+      "title": "タイトル",
+      "kind": "種類",
+      "date": "日付",
+      "classification": "分類",
+      "status": "ステータス",
+      "department": "部署",
+      "location": "場所"
+    }
+  },
+  "session": {
+    "loadFailed": "セッションを読み込めませんでした。",
+    "micDenied": "マイクへのアクセスが拒否されたか、利用できません。",
+    "audioSaved": "音声をセッションに保存しました。",
+    "uploadFailed": "アップロードに失敗しました。",
+    "transcribing": "ローカルで文字起こし中 — 長い音声の場合、少し時間がかかることがあります。",
+    "transcribed": "文字起こしが完了しました。",
+    "transcribeFailed": "文字起こしに失敗しました。STTサービスが実行中か確認してください。",
+    "updateFailed": "更新できませんでした。",
+    "draftingMinutes": "文字起こしから議事録を作成中…",
+    "minutesCreated": "議事録の下書きを作成しました。",
+    "minutesFailed": "議事録を生成できませんでした。",
+    "notFound": "セッションが見つかりません。",
+    "noDate": "日付なし",
+    "noLocation": "場所なし",
+    "generateMinutes": "議事録を生成",
+    "captureAudio": "音声をキャプチャ",
+    "stopSave": "停止して保存",
+    "startRecording": "録音を開始",
+    "or": "または",
+    "uploadAudio": "音声をアップロード",
+    "audioNote": "音声はホスト上に保持されます。文字起こしは英語でローカルに実行されます。議事録はこのセッションのすべてのクリップを順番に結合します。",
+    "documentsFrom": "このセッションのドキュメント",
+    "noDocuments": "ドキュメントはまだありません。クリップを文字起こししてから、議事録を生成してください。",
+    "recordingsTitle": "録音と文字起こし",
+    "clipOne": "{n}件のクリップ",
+    "clipMany": "{n}件のクリップ",
+    "noRecordings": "録音はまだありません。上記で音声を録音またはアップロードしてください。",
+    "includeTitle": "議事録生成時にこのクリップを含める",
+    "inMinutes": "議事録に含める",
+    "transcribe": "文字起こし",
+    "transcribeHint": "このクリップを文字起こしすると、ここで文字起こしを表示・編集できます。",
+    "audioLoadFailed": "音声を読み込めませんでした。",
+    "loadAudio": "音声を読み込む",
+    "words": "{n}語",
+    "verified": "検証済み",
+    "editVerify": "編集して検証",
+    "saveVerified": "保存して検証済みにする",
+    "saveDraft": "下書きを保存",
+    "emptyTranscript": "文字起こしが空です。"
+  },
+  "docType": {
+    "minutes": "議事録",
+    "memo": "メモ",
+    "letter": "書簡",
+    "report": "報告書",
+    "policy_brief": "政策概要",
+    "briefing_note": "ブリーフィングノート",
+    "concept_note": "コンセプトノート",
+    "circular": "回覧",
+    "action_matrix": "アクションマトリックス",
+    "speech": "スピーチ"
+  },
+  "approval": {
+    "submit": "提出済み",
+    "submitted": "提出済み",
+    "approve": "承認済み",
+    "approved": "承認済み",
+    "reject": "却下済み",
+    "rejected": "却下済み",
+    "finalize": "確定済み",
+    "finalized": "確定済み"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "社内メモ",
+      "desc": "宛先／差出人／件名を含む標準的な社内メモ。"
+    },
+    "letter-official": {
+      "name": "公文書",
+      "desc": "庁名入りレターヘッドを使用した正式な発信書簡。"
+    },
+    "circular-general": {
+      "name": "回覧",
+      "desc": "多数の受信者に回覧する通知。"
+    },
+    "report-standard": {
+      "name": "報告書",
+      "desc": "要約、各セクション、提言を含む一般的な報告書。"
+    },
+    "policy-brief": {
+      "name": "政策概要",
+      "desc": "意思決定者向けの簡潔な概要。"
+    },
+    "briefing-note": {
+      "name": "ブリーフィングノート",
+      "desc": "会合に先立ち上司に概要を伝える短いノート。"
+    },
+    "concept-note": {
+      "name": "コンセプトノート",
+      "desc": "提案するプログラムまたは活動の概要。"
+    },
+    "minutes-blank": {
+      "name": "議事録（白紙）",
+      "desc": "手書きで記入する白紙の議事録構成。"
+    },
+    "speech-remarks": {
+      "name": "スピーチ・所見",
+      "desc": "イベント用の公式な所見。"
+    }
+  },
+  "documents": {
+    "subtitle": "議事録、メモ、書簡、報告書、概要 — AIが起草し、人が承認。",
+    "startFromTemplate": "テンプレートから開始",
+    "fromSpreadsheet": "スプレッドシートから報告書を作成",
+    "draftWithAI": "AIで起草",
+    "templateTitle": "テンプレートから開始",
+    "allTypes": "すべての種類",
+    "orgTemplates": "組織のテンプレート",
+    "savedByOrg": "組織により保存済み",
+    "useTemplate": "このテンプレートを使用",
+    "generalTemplates": "一般テンプレート",
+    "spreadsheetFailed": "そのスプレッドシートから報告書を作成できませんでした。",
+    "templateFailed": "テンプレートから作成できませんでした。",
+    "draftFailed": "文書を起草できませんでした。",
+    "fields": {
+      "type": "文書の種類",
+      "title": "タイトル",
+      "recipient": "受信者（任意）",
+      "department": "部署（任意）",
+      "brief": "指示・概要"
+    },
+    "briefPlaceholder": "目的、要点、含めるべき事実を記述してください。アシスタントが編集・承認可能な公式文書を起草します。",
+    "generateDraft": "下書きを生成",
+    "empty": "文書はまだありません。",
+    "table": {
+      "title": "タイトル",
+      "type": "種類",
+      "ref": "参照番号",
+      "status": "ステータス",
+      "ver": "版"
+    }
+  },
+  "doc": {
+    "loadFailed": "文書を読み込めませんでした。",
+    "invalidJson": "コンテンツが有効なJSONではありません。",
+    "saved": "保存しました。版が更新されました。",
+    "saveFailed": "保存に失敗しました。",
+    "done": {
+      "submit": "文書をレビューに提出しました。",
+      "approve": "文書を承認しました。",
+      "reject": "文書を却下しました。",
+      "finalize": "文書を確定しました。"
+    },
+    "failed": {
+      "submit": "提出できませんでした。",
+      "approve": "承認できませんでした。",
+      "reject": "却下できませんでした。",
+      "finalize": "確定できませんでした。"
+    },
+    "templateName": "テンプレート名",
+    "templateDefault": "{title}テンプレート",
+    "templateSaved": "組織の再利用可能なテンプレートとして保存しました。",
+    "templateSaveFailed": "テンプレートを保存できませんでした。",
+    "exportFailed": "エクスポートに失敗しました。",
+    "notFound": "ドキュメントが見つかりません。",
+    "exportDocx": "DOCXをエクスポート",
+    "exportPptx": "PPTXをエクスポート",
+    "exportXlsx": "XLSXをエクスポート",
+    "saveAsTemplate": "テンプレートとして保存",
+    "content": "内容",
+    "workflow": "ワークフロー",
+    "aiAssisted": "AI支援による下書き",
+    "auditChain": "監査チェーン：音声 → 文字起こし → AI下書き → 人手による編集 → 承認 → 最終版。すべてのステップが記録されます。",
+    "comment": "コメント（任意）",
+    "commentPlaceholder": "記録用のメモを追加",
+    "submit": "レビュー用に提出",
+    "approve": "承認",
+    "reject": "却下",
+    "finalize": "確定",
+    "finalLocked": "最終版 — 編集ロック済み",
+    "editJson": "内容を編集（JSON）",
+    "jsonNote": "構造化された内容がブランド化されたDOCXを生成します。以下のフィールドを編集して保存してください。ブランドとレイアウトはエクスポート時に自動適用されます。",
+    "saveContent": "内容を保存",
+    "approvalHistory": "承認履歴"
+  },
+  "emails": {
+    "subtitle": "AIで手紙やメールの下書きを作成します。担当者が送信をクリックするまで送信されません。",
+    "needIntent": "下書きの基となる件名または意図をアシスタントに指定してください。",
+    "draftReady": "下書きの準備ができました。送信前に確認・編集してください。",
+    "draftFailed": "下書きの作成に失敗しました。",
+    "draftSaved": "下書きを保存しました。",
+    "saveFailed": "保存できませんでした。",
+    "confirmSend": "このメールを今すぐ送信しますか？この操作は監査証跡に記録されます。",
+    "sent": "メールを送信しました。",
+    "sendFailed": "送信に失敗しました。",
+    "compose": "作成",
+    "messages": "メッセージ",
+    "empty": "まだ通信はありません。",
+    "message": "メッセージ",
+    "details": "詳細",
+    "to": "宛先",
+    "cc": "Cc",
+    "subject": "件名",
+    "intent": "どのような内容にしますか？（AI用）",
+    "intentPlaceholder": "例：金曜日10時にセキュリティ・バラザへ首長を招待する",
+    "body": "本文",
+    "saveDraft": "下書きを保存",
+    "toLabel": "宛先：",
+    "ccLabel": "Cc：",
+    "subjectLabel": "件名：",
+    "aiAssisted": "AI支援",
+    "sendNow": "今すぐ送信",
+    "selectHint": "メッセージを選択するか、新規作成してください。"
+  },
+  "knowledge": {
+    "subtitle": "アシスタントが参照できる資料 — ポリシー、テンプレート、前例。",
+    "added": "ナレッジベースに追加しました。",
+    "addFailed": "追加できませんでした。",
+    "chooseFile": "アップロードするファイルを選択してください。",
+    "ocrFailed": "ファイルを保存しました。このファイルからOCRでテキストを読み取れませんでした（品質が低い可能性があります）。テキストを手動で貼り付けることができます。",
+    "extracted": "ファイルを保存し、{n}文字のテキストを抽出しました。",
+    "noText": "ファイルを保存しました。この形式からテキストを抽出できませんでした。",
+    "uploadFailed": "アップロードに失敗しました。",
+    "confirmRemove": "この参照を削除しますか？",
+    "uploadTitle": "ドキュメントをアップロード",
+    "file": "ファイル",
+    "titleOptional": "タイトル（任意）",
+    "titleDefault": "デフォルトはファイル名です",
+    "categoryOptional": "カテゴリ（任意）",
+    "uploadExtract": "アップロードして抽出",
+    "uploadNote": "Word、PDF、CSV、テキストファイルはテキストが自動的に抽出されます。スキャンしたPDFや写真はOCRで自動的に読み取られます。",
+    "pasteTitle": "参照を追加（テキストを貼り付け）",
+    "title": "タイトル",
+    "category": "カテゴリ",
+    "categoryPlaceholder": "例：通達、ポリシー",
+    "textContent": "テキスト内容",
+    "add": "追加",
+    "references": "参照",
+    "empty": "まだ何もありません。",
+    "uncategorised": "未分類",
+    "remove": "削除"
+  },
+  "assistant": {
+    "subtitle": "平易な英語で指示してください — ワークスペース全体にわたって要約、検索、下書き、説明を行います。",
+    "failed": "アシスタントはそれを処理できませんでした。",
+    "instruction": "指示",
+    "placeholder": "例：今週のセキュリティ委員会の決定事項を要約する、または承認待ちのメモを一覧表示する。",
+    "ask": "質問"
+  },
+  "actions": {
+    "subtitle": "各セッションの議事録およびアクションマトリクスから抽出されたアクション項目。",
+    "empty": "未完了のアクションは見つかりませんでした。",
+    "table": {
+      "action": "アクション",
+      "responsible": "担当者",
+      "timeline": "スケジュール",
+      "source": "ソース"
+    }
+  },
+  "paypal": {
+    "title": "PayPal 支払い",
+    "subtitle": "サブスクリプション支払いの確認。",
+    "confirming": "PayPal 支払いを確認しています...",
+    "noOrder": "PayPal 注文が返されませんでした。",
+    "confirmed": "支払いが確認されました。Worker サブスクリプションが有効になりました。",
+    "failed": "PayPal 支払いを確認できませんでした。",
+    "success": "支払いが完了しました",
+    "viewSubscription": "サブスクリプションを表示",
+    "errorTitle": "支払いを確認できませんでした",
+    "returnToSubscription": "サブスクリプションに戻る"
+  },
+  "tenant": {
+    "saved": "組織の詳細が保存されました。エクスポートするすべての文書に表示されます。",
+    "saveFailed": "保存できませんでした。",
+    "logoUploaded": "ロゴがアップロードされました。",
+    "signatureUploaded": "署名がアップロードされました。",
+    "uploadFailed": "アップロードに失敗しました。",
+    "subtitleShort": "ワークスペースのブランディング。",
+    "noOrg": "このアカウントは組織に関連付けられていません。",
+    "subtitle": "お名前、レターヘッド、ロゴ、署名は、生成するすべての文書に表示されます。",
+    "letterhead": "レターヘッド",
+    "orgName": "組織名",
+    "line": "レターヘッド行 {n}",
+    "line1Placeholder": "例：... 州政府",
+    "line2Placeholder": "例：... 部",
+    "line3Placeholder": "例：ユニット / オフィス",
+    "saveLetterhead": "レターヘッドを保存",
+    "blankHint": "行を空白のままにすると、組織名が使用されます。",
+    "logoSignature": "ロゴと署名",
+    "logo": "紋章 / ロゴ (PNG または JPG)",
+    "signature": "電子署名 (PNG または JPG)",
+    "uploaded": "アップロード済み",
+    "brandingNote": "ロゴは文書ヘッダーとスライドのタイトルページに表示されます。署名はエクスポートされた文書の末尾に配置されます。最良の結果を得るには、背景が透明な PNG を使用してください。"
+  },
+  "users": {
+    "createdTemp": "ユーザーを作成しました。一時パスワード: {temp} — 安全に共有してください。初回ログイン時に変更が必要です。",
+    "created": "ユーザーを作成しました。",
+    "createFailed": "ユーザーを作成できませんでした。",
+    "confirmRemove": "{name}を削除しますか？",
+    "removeFailed": "削除できませんでした。",
+    "subtitle": "アクセスを管理します。スーパー管理者アカウントはここでは変更できません。",
+    "add": "ユーザーを追加",
+    "create": "ユーザーを作成",
+    "empty": "ユーザーがいません。",
+    "fields": {
+      "name": "名前",
+      "email": "メールアドレス",
+      "role": "役割",
+      "department": "部署",
+      "status": "ステータス"
+    },
+    "suspend": "停止",
+    "reinstate": "復帰",
+    "remove": "削除"
+  },
+  "audit": {
+    "subtitle": "すべての重要な操作が記録されます。ログにはメタデータと識別子のみが保存され、文書の本文や音声は保存されません。",
+    "empty": "監査エントリがありません。",
+    "table": {
+      "when": "日時",
+      "actor": "実行者",
+      "action": "操作",
+      "resource": "リソース"
+    },
+    "system": "システム"
+  },
+  "payments": {
+    "stkSent": "STKプッシュを送信しました。支払者に電話での承認を依頼してください。",
+    "initiateFailed": "支払いを開始できませんでした。",
+    "subtitle": "M-Pesa（Daraja STKプッシュ）およびPayPalの取引。",
+    "requestTitle": "M-Pesa支払いをリクエスト",
+    "phone": "電話番号（07.. または 2547..）",
+    "amountKes": "金額（KES）",
+    "purpose": "目的",
+    "sendStk": "STKプッシュを送信",
+    "transactions": "取引",
+    "empty": "取引がありません。",
+    "table": {
+      "provider": "プロバイダー",
+      "amount": "金額",
+      "status": "ステータス",
+      "ref": "参照番号"
+    }
+  },
+  "billing": {
+    "subtitle": "完了したWorkerサブスクリプション支払いの請求書と領収書。",
+    "loadFailed": "請求書類を読み込めませんでした。",
+    "downloadFailed": {
+      "invoice": "請求書をダウンロードできませんでした。",
+      "receipt": "領収書をダウンロードできませんでした。"
+    },
+    "documentsTitle": "請求関連書類",
+    "intro": "組織の完了したサブスクリプション支払いの請求書と領収書をダウンロードできます。",
+    "disclaimer": "これらの書類はWorkerサブスクリプションの支払いを記録するもので、支払いおよび払い戻しの目的で提供されます。準拠したeTIMS連携を通じて別途発行されない限り、KRA/eTIMS税務請求書として提示されるものではありません。",
+    "invoices": "請求書",
+    "noInvoices": "請求書はまだありません。",
+    "receipts": "領収書",
+    "noReceipts": "領収書はまだありません。",
+    "downloadPdf": "PDFをダウンロード",
+    "table": {
+      "invoice": "請求書",
+      "receipt": "領収書",
+      "date": "日付",
+      "description": "説明",
+      "amount": "金額",
+      "status": "ステータス",
+      "provider": "プロバイダー",
+      "reference": "参照番号"
+    }
+  },
+  "subscription": {
+    "loadFailed": "サブスクリプションを読み込めませんでした。",
+    "selectFirst": "先にサブスクリプションプランを選択してください。",
+    "mpesaSent": "M-Pesa STKプッシュを送信しました。携帯電話で支払いを承認してください。支払い確認後にサブスクリプションが有効になります。",
+    "mpesaFailed": "M-Pesa支払いを開始できませんでした。",
+    "noApproveUrl": "PayPal承認URLが返されませんでした。",
+    "paypalFailed": "PayPal支払いを開始できませんでした。",
+    "subtitleShort": "Workerサブスクリプションを管理します。",
+    "subtitle": "Workerプラン、トライアル、請求を管理します。",
+    "current": "現在のサブスクリプション",
+    "organisation": "組織",
+    "status": "ステータス",
+    "plan": "プラン",
+    "freeTrial": "14日間無料トライアル",
+    "trialEnds": "トライアル終了日",
+    "dayRemaining": "残り{n}日",
+    "daysRemaining": "残り{n}日",
+    "renewsEnds": "更新 / 終了",
+    "chooseTitle": "プランを選択",
+    "chooseSubtitle": "すべてのプランにWorkerの管理ワークフローが含まれます。14日間のトライアルは無料です。",
+    "perMonth": "/ 月",
+    "planSelected": "{plan}を選択しました。プランは保存され、支払いの準備ができました。",
+    "selectFailed": "プランを選択できませんでした。",
+    "selected": "選択済み",
+    "selectPlan": "プランを選択",
+    "activateTitle": "サブスクリプションを有効化",
+    "selectAbove": "続行して支払いへ進むには、上記のプランを選択してください。",
+    "stkNote": "以下の電話番号にSTKプッシュが送信されます。",
+    "phone": "電話番号",
+    "phonePlaceholder": "07.. または 2547..",
+    "payMpesa": "M-Pesaで支払う",
+    "paypalNote": "PayPalへ進み、選択したプランをUSDでお支払いください。",
+    "payPaypal": "PayPalで支払う",
+    "settleNote": "有料サブスクリプションはM-PesaまたはPayPalで決済できます。",
+    "activationNote": "選択したプランは、支払い確認の成功後に有効化されます。",
+    "historyNote": "支払い履歴は「管理」→「支払い」で確認できます。"
+  },
+  "intl": {
+    "territory": "地域",
+    "searchTerritory": "地域を検索…",
+    "selectTerritory": "地域を選択してください",
+    "territoryRequired": "地域を選択してください。",
+    "workingLanguage": "業務言語",
+    "meetingLanguage": "会議言語",
+    "useDefault": "組織のデフォルト",
+    "beta": "文字起こしベータ",
+    "unavailable": "文字起こしなし"
+  },
+  "generate": {
+    "title": "このセッションから文書を生成",
+    "as": "生成形式",
+    "instructions": "指示（任意）",
+    "placeholder": "例：決定事項2および3を要約した事務次官宛の書簡",
+    "button": "生成",
+    "working": "文書を作成しています… 1分ほどかかる場合があります。",
+    "done": "文書を作成しました。",
+    "failed": "文書を生成できませんでした。",
+    "hint": "含めるためにチェックした文字起こしを順番に使用します。共有前に内容を確認し承認してください。"
+  },
+  "queue": {
+    "queued": "文字起こしの待機列に追加されました。このページは自動的に更新されます。"
+  },
+  "pdfExport": {
+    "button": "PDFをエクスポート"
+  },
+  "access": {
+    "readOnly": "トライアルまたはサブスクリプションが終了したため、ワークスペースは読み取り専用です。文書の閲覧とエクスポートは引き続き可能です。",
+    "grace": "トライアルまたはサブスクリプションは{date}に終了しました。完全なアクセスは残り{n}日です。",
+    "trialEnding": "無料トライアルは{n}日後に終了します。",
+    "choosePlan": "プランを選択"
+  },
+  "sessionLang": {
+    "saved": "会議言語を保存しました。今後録音される文字起こしに適用されます。",
+    "failed": "会議言語を保存できませんでした。"
+  },
+  "i18nNote": {
+    "machine": "機械翻訳"
+  }
+}

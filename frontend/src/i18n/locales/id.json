@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Bahasa",
+    "signIn": "Masuk",
+    "signOut": "Keluar",
+    "createAccount": "Buat akun",
+    "getStarted": "Mulai",
+    "startFreeTrial": "Mulai uji coba gratis",
+    "cancel": "Batal",
+    "back": "Kembali",
+    "download": "Unduh",
+    "viewAll": "Lihat semua"
+  },
+  "brand": {
+    "tagline": "Ruang kerja administratif AI",
+    "secureWorkspace": "Ruang kerja administratif yang aman",
+    "badge": "Bahasa Inggris · Audio"
+  },
+  "nav": {
+    "dashboard": "Dasbor",
+    "workspace": "Ruang kerja",
+    "sessions": "Sesi & Rekaman",
+    "documents": "Dokumen",
+    "correspondence": "Korespondensi",
+    "knowledge": "Basis Pengetahuan",
+    "assistant": "Asisten",
+    "askWorker": "Tanya Worker",
+    "actions": "Tindakan Tertunda",
+    "administration": "Administrasi",
+    "organisation": "Organisasi",
+    "users": "Pengguna",
+    "audit": "Jejak Audit",
+    "subscription": "Langganan",
+    "payments": "Pembayaran",
+    "billing": "Penagihan"
+  },
+  "roles": {
+    "viewer": "Pengamat",
+    "officer": "Petugas",
+    "admin": "Admin",
+    "superadmin": "Super admin"
+  },
+  "landing": {
+    "hero": {
+      "title": "Ubah ucapan Anda menjadi dokumen yang selesai dan terarsip.",
+      "body": "Worker adalah ruang kerja administratif AI untuk organisasi yang menghasilkan banyak dokumen resmi dari rapat, pengarahan, dan korespondensi. Rekam rapat atau dikte, dan Worker akan mentranskripsinya, menyusun notulen, memo, surat, laporan, dan ringkasan kebijakan, serta membawanya melalui proses peninjauan dan persetujuan — dengan jejak audit yang lengkap.",
+      "badgeRow": "Audio · Bahasa Inggris · Ruang kerja yang aman"
+    },
+    "what": {
+      "title": "Apa yang dilakukan Worker",
+      "lead": "Pekerjaan kantor rutin seputar rapat dan korespondensi — diselesaikan dalam hitungan menit, bukan jam.",
+      "f1": {
+        "title": "Rekam & transkripsikan",
+        "body": "Rekam rapat, wawancara, pengarahan, atau dikte. Audio ditranskripsikan secara lokal dalam bahasa Inggris."
+      },
+      "f2": {
+        "title": "Susun dengan AI",
+        "body": "Hasilkan notulen, memo, surat, laporan, ringkasan kebijakan, dan surat edaran dalam bentuk resmi yang benar."
+      },
+      "f3": {
+        "title": "Tinjau & setujui",
+        "body": "Setiap dokumen melewati tahap draf, tinjauan, persetujuan, dan finalisasi — manusia tetap memegang kendali."
+      },
+      "f4": {
+        "title": "Aman & teraudit",
+        "body": "Akses berbasis peran dan jejak audit yang lengkap. Korespondensi hanya dikirim oleh manusia."
+      }
+    },
+    "start": {
+      "title": "Memulai hanya butuh satu menit",
+      "lead": "Buat akun dan mulai uji coba gratis 14 hari Anda.",
+      "s1": {
+        "title": "Buat akun Anda",
+        "body": "Masukkan nama, email, dan kata sandi Anda."
+      },
+      "s2": {
+        "title": "Verifikasi email Anda",
+        "body": "Masukkan kode 6 digit yang kami kirimkan melalui email."
+      },
+      "s3": {
+        "title": "Masuk dengan aman",
+        "body": "Setiap kali masuk dikonfirmasi dengan kode sekali pakai yang dikirim melalui email."
+      },
+      "s4": {
+        "title": "Mulai bekerja",
+        "body": "Buat sesi, rekam, dan hasilkan dokumen pertama Anda."
+      }
+    },
+    "pricing": {
+      "title": "Harga langganan yang sederhana",
+      "lead": "Mulai dengan uji coba gratis 14 hari. Pilih paket yang sesuai dengan volume pekerjaan administrasi yang dihasilkan organisasi Anda.",
+      "perMonth": "/bulan",
+      "mostPopular": "PALING POPULER",
+      "starter": {
+        "name": "Starter",
+        "desc": "Untuk tim kecil yang baru memulai pekerjaan administrasi berbantuan AI."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Untuk organisasi dengan produksi dokumen rutin bervolume tinggi."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Untuk organisasi yang lebih besar dengan beban kerja administrasi yang substansial."
+      },
+      "paymentsNote": "M-Pesa dan PayPal didukung untuk langganan berbayar."
+    },
+    "final": {
+      "title": "Siap mencoba Worker?",
+      "cta": "Buat akun Anda"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Kata sandi",
+    "fullName": "Nama lengkap",
+    "confirmPassword": "Konfirmasi kata sandi",
+    "currentPassword": "Kata sandi saat ini",
+    "newPassword": "Kata sandi baru",
+    "confirmNewPassword": "Konfirmasi kata sandi baru",
+    "code6": "Kode 6 digit",
+    "signInFailed": "Gagal masuk. Periksa kredensial Anda.",
+    "forgotPassword": "Lupa kata sandi?",
+    "mfaNotice": "Kode sekali pakai dikirim melalui email untuk mengonfirmasi setiap kali masuk.",
+    "createYourAccount": "Buat akun Anda",
+    "pwMin": "Kata sandi harus minimal {n} karakter.",
+    "newPwMin": "Kata sandi baru harus minimal {n} karakter.",
+    "pwMismatch": "Kata sandi tidak cocok.",
+    "createFailed": "Tidak dapat membuat akun.",
+    "haveAccount": "Sudah punya akun?",
+    "startAtSignIn": "Mulai dari masuk atau pendaftaran.",
+    "goToSignIn": "Buka masuk",
+    "invalidCode": "Kode tidak valid atau kedaluwarsa.",
+    "codeSent": "Kode baru telah dikirim.",
+    "resendFailed": "Tidak dapat mengirim ulang.",
+    "verifyEmailTitle": "Verifikasi email Anda",
+    "verifyEmailTo": "Verifikasi email Anda — {email}",
+    "verify": "Verifikasi",
+    "resendCode": "Kirim ulang kode",
+    "signInAgain": "Silakan masuk kembali.",
+    "mfaPrompt": "Masukkan kode masuk yang kami kirim melalui email",
+    "mfaPromptTo": "Masukkan kode masuk yang kami kirim melalui email ke {email}",
+    "verifySignIn": "Verifikasi & masuk",
+    "requestFailed": "Tidak dapat memproses permintaan.",
+    "resetTitle": "Atur ulang kata sandi Anda",
+    "sendResetCode": "Kirim kode atur ulang",
+    "backToSignIn": "Kembali ke masuk",
+    "resetPrompt": "Masukkan kode yang kami kirim melalui email dan pilih kata sandi baru",
+    "resetPassword": "Atur ulang kata sandi",
+    "setNewPassword": "Tetapkan kata sandi baru",
+    "forcedChange": "Demi keamanan, tetapkan kata sandi Anda sendiri sebelum melanjutkan.",
+    "updateAccountPassword": "Perbarui kata sandi akun Anda.",
+    "changeFailed": "Tidak dapat mengubah kata sandi.",
+    "updatePassword": "Perbarui kata sandi",
+    "signOutInstead": "Keluar saja"
+  },
+  "notFound": {
+    "title": "Halaman tidak ditemukan",
+    "subtitle": "Halaman tersebut tidak ada di ruang kerja ini.",
+    "back": "Kembali ke dasbor"
+  },
+  "status": {
+    "draft": "draf",
+    "in_review": "dalam peninjauan",
+    "approved": "disetujui",
+    "final": "final",
+    "archived": "diarsipkan",
+    "open": "terbuka",
+    "processing": "memproses",
+    "ready": "siap",
+    "pending": "menunggu",
+    "transcribing": "mentranskripsi",
+    "transcribed": "tertranskripsi",
+    "failed": "gagal",
+    "sent": "terkirim",
+    "received": "diterima",
+    "completed": "selesai",
+    "cancelled": "dibatalkan",
+    "active": "aktif",
+    "suspended": "ditangguhkan"
+  },
+  "kind": {
+    "meeting": "rapat",
+    "interview": "wawancara",
+    "briefing": "pengarahan",
+    "dictation": "dikte",
+    "field_report": "laporan lapangan",
+    "consultation": "konsultasi",
+    "other": "lainnya"
+  },
+  "classification": {
+    "unclassified": "belum diklasifikasi",
+    "internal": "internal",
+    "confidential": "rahasia",
+    "restricted": "terbatas"
+  },
+  "dashboard": {
+    "welcome": "Selamat datang, {name}",
+    "defaultName": "Petugas",
+    "subtitle": "Ruang kerja administratif Anda — rekam, susun, tinjau, dan arsipkan.",
+    "stats": {
+      "sessions": "Sesi",
+      "documents": "Dokumen",
+      "awaitingReview": "Menunggu peninjauan",
+      "outstandingActions": "Tindakan tertunda"
+    },
+    "recentSessions": "Sesi terbaru",
+    "documentsToAction": "Dokumen untuk ditindaklanjuti",
+    "noSessions": "Belum ada sesi.",
+    "nothingToAction": "Tidak ada yang memerlukan perhatian Anda."
+  },
+  "sessions": {
+    "subtitle": "Setiap sesi adalah berkas kasus — audio, transkrip, dan dokumen yang dihasilkan darinya.",
+    "new": "Sesi baru",
+    "createFailed": "Tidak dapat membuat sesi.",
+    "titlePlaceholder": "mis. Komite Keamanan Wilayah — Pengarahan Mingguan",
+    "create": "Buat sesi",
+    "empty": "Belum ada sesi. Buat satu untuk mulai merekam.",
+    "fields": {
+      "title": "Judul",
+      "kind": "Jenis",
+      "date": "Tanggal",
+      "classification": "Klasifikasi",
+      "status": "Status",
+      "department": "Departemen",
+      "location": "Lokasi"
+    }
+  },
+  "session": {
+    "loadFailed": "Tidak dapat memuat sesi.",
+    "micDenied": "Akses mikrofon ditolak atau tidak tersedia.",
+    "audioSaved": "Audio disimpan ke sesi.",
+    "uploadFailed": "Unggahan gagal.",
+    "transcribing": "Mentranskripsi secara lokal — ini dapat memerlukan waktu untuk audio yang lebih panjang.",
+    "transcribed": "Transkripsi selesai.",
+    "transcribeFailed": "Transkripsi gagal. Periksa apakah layanan STT berjalan.",
+    "updateFailed": "Tidak dapat memperbarui.",
+    "draftingMinutes": "Menyusun risalah dari transkrip…",
+    "minutesCreated": "Draf risalah dibuat.",
+    "minutesFailed": "Tidak dapat menghasilkan risalah.",
+    "notFound": "Sesi tidak ditemukan.",
+    "noDate": "tanpa tanggal",
+    "noLocation": "tanpa lokasi",
+    "generateMinutes": "Hasilkan risalah",
+    "captureAudio": "Rekam audio",
+    "stopSave": "Hentikan & simpan",
+    "startRecording": "Mulai merekam",
+    "or": "atau",
+    "uploadAudio": "Unggah audio",
+    "audioNote": "Audio tetap berada di host. Transkripsi berjalan secara lokal dalam bahasa Inggris. Risalah menggabungkan setiap klip dalam sesi ini, secara berurutan.",
+    "documentsFrom": "Dokumen dari sesi ini",
+    "noDocuments": "Belum ada dokumen. Transkripsikan klip, lalu hasilkan risalah.",
+    "recordingsTitle": "Rekaman & transkrip",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Belum ada rekaman. Rekam atau unggah audio di atas.",
+    "includeTitle": "Sertakan klip ini saat menghasilkan risalah",
+    "inMinutes": "Dalam risalah",
+    "transcribe": "Transkripsikan",
+    "transcribeHint": "Transkripsikan klip ini untuk melihat dan mengedit transkripnya di sini.",
+    "audioLoadFailed": "Tidak dapat memuat audio.",
+    "loadAudio": "Muat audio",
+    "words": "{n} kata",
+    "verified": "terverifikasi",
+    "editVerify": "Edit & verifikasi",
+    "saveVerified": "Simpan & tandai terverifikasi",
+    "saveDraft": "Simpan draf",
+    "emptyTranscript": "Transkrip kosong."
+  },
+  "docType": {
+    "minutes": "notulen",
+    "memo": "memo",
+    "letter": "surat",
+    "report": "laporan",
+    "policy_brief": "ringkasan kebijakan",
+    "briefing_note": "catatan pengarahan",
+    "concept_note": "catatan konsep",
+    "circular": "surat edaran",
+    "action_matrix": "matriks tindakan",
+    "speech": "pidato"
+  },
+  "approval": {
+    "submit": "diajukan",
+    "submitted": "diajukan",
+    "approve": "disetujui",
+    "approved": "disetujui",
+    "reject": "ditolak",
+    "rejected": "ditolak",
+    "finalize": "difinalisasi",
+    "finalized": "difinalisasi"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memo Internal",
+      "desc": "Memorandum internal standar dengan Kepada / Dari / Perihal."
+    },
+    "letter-official": {
+      "name": "Surat Resmi",
+      "desc": "Surat keluar resmi pada kop surat kantor."
+    },
+    "circular-general": {
+      "name": "Surat Edaran",
+      "desc": "Pemberitahuan yang diedarkan kepada banyak penerima."
+    },
+    "report-standard": {
+      "name": "Laporan",
+      "desc": "Laporan umum dengan ringkasan, bagian, dan rekomendasi."
+    },
+    "policy-brief": {
+      "name": "Ringkasan Kebijakan",
+      "desc": "Ringkasan singkat untuk para pengambil keputusan."
+    },
+    "briefing-note": {
+      "name": "Catatan Pengarahan",
+      "desc": "Catatan singkat untuk mengarahan pimpinan sebelum suatu kegiatan."
+    },
+    "concept-note": {
+      "name": "Catatan Konsep",
+      "desc": "Garis besar program atau kegiatan yang diusulkan."
+    },
+    "minutes-blank": {
+      "name": "Notulen Rapat (kosong)",
+      "desc": "Struktur notulen kosong untuk diisi secara manual."
+    },
+    "speech-remarks": {
+      "name": "Pidato / Sambutan",
+      "desc": "Sambutan resmi untuk suatu acara."
+    }
+  },
+  "documents": {
+    "subtitle": "Notulen, memo, surat, laporan, dan ringkasan — disusun dengan AI, disetujui oleh manusia.",
+    "startFromTemplate": "Mulai dari templat",
+    "fromSpreadsheet": "Laporan dari spreadsheet",
+    "draftWithAI": "Susun dengan AI",
+    "templateTitle": "Mulai dari templat",
+    "allTypes": "Semua jenis",
+    "orgTemplates": "Templat organisasi Anda",
+    "savedByOrg": "Disimpan oleh organisasi Anda",
+    "useTemplate": "Gunakan templat ini",
+    "generalTemplates": "Templat umum",
+    "spreadsheetFailed": "Tidak dapat membuat laporan dari spreadsheet tersebut.",
+    "templateFailed": "Tidak dapat membuat dari templat.",
+    "draftFailed": "Tidak dapat menyusun dokumen.",
+    "fields": {
+      "type": "Jenis dokumen",
+      "title": "Judul",
+      "recipient": "Penerima (opsional)",
+      "department": "Departemen (opsional)",
+      "brief": "Instruksi / ringkasan"
+    },
+    "briefPlaceholder": "Jelaskan tujuan, poin-poin utama, dan fakta apa pun yang perlu disertakan. Asisten akan menyusun dokumen resmi yang dapat Anda edit dan setujui.",
+    "generateDraft": "Buat draf",
+    "empty": "Belum ada dokumen.",
+    "table": {
+      "title": "Judul",
+      "type": "Jenis",
+      "ref": "No.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Tidak dapat memuat dokumen.",
+    "invalidJson": "Konten bukan JSON yang valid.",
+    "saved": "Tersimpan. Versi diperbarui.",
+    "saveFailed": "Gagal menyimpan.",
+    "done": {
+      "submit": "Dokumen dikirim untuk ditinjau.",
+      "approve": "Dokumen disetujui.",
+      "reject": "Dokumen ditolak.",
+      "finalize": "Dokumen difinalisasi."
+    },
+    "failed": {
+      "submit": "Tidak dapat mengirim.",
+      "approve": "Tidak dapat menyetujui.",
+      "reject": "Tidak dapat menolak.",
+      "finalize": "Tidak dapat memfinalisasi."
+    },
+    "templateName": "Nama templat",
+    "templateDefault": "Templat {title}",
+    "templateSaved": "Disimpan sebagai templat yang dapat digunakan kembali untuk organisasi Anda.",
+    "templateSaveFailed": "Tidak dapat menyimpan templat.",
+    "exportFailed": "Ekspor gagal.",
+    "notFound": "Dokumen tidak ditemukan.",
+    "exportDocx": "Ekspor DOCX",
+    "exportPptx": "Ekspor PPTX",
+    "exportXlsx": "Ekspor XLSX",
+    "saveAsTemplate": "Simpan sebagai templat",
+    "content": "Konten",
+    "workflow": "Alur kerja",
+    "aiAssisted": "Draf berbantuan AI",
+    "auditChain": "Rantai audit: audio → transkrip → draf AI → penyuntingan manusia → persetujuan → final. Setiap langkah tercatat.",
+    "comment": "Komentar (opsional)",
+    "commentPlaceholder": "Tambahkan catatan untuk rekaman",
+    "submit": "Ajukan untuk peninjauan",
+    "approve": "Setujui",
+    "reject": "Tolak",
+    "finalize": "Finalkan",
+    "finalLocked": "Final — terkunci untuk penyuntingan",
+    "editJson": "Edit konten (JSON)",
+    "jsonNote": "Konten terstruktur menghasilkan DOCX berbranding. Edit kolom di bawah dan simpan; branding dan tata letak diterapkan secara otomatis saat ekspor.",
+    "saveContent": "Simpan konten",
+    "approvalHistory": "Riwayat persetujuan"
+  },
+  "emails": {
+    "subtitle": "Buat draf surat dan email dengan AI. Tidak ada yang terkirim sampai seseorang mengeklik kirim.",
+    "needIntent": "Berikan subjek atau maksud kepada asisten untuk membuat draf.",
+    "draftReady": "Draf siap. Tinjau dan edit sebelum mengirim.",
+    "draftFailed": "Draf gagal.",
+    "draftSaved": "Draf disimpan.",
+    "saveFailed": "Tidak dapat menyimpan.",
+    "confirmSend": "Kirim email ini sekarang? Tindakan ini tercatat dalam jejak audit.",
+    "sent": "Email terkirim.",
+    "sendFailed": "Pengiriman gagal.",
+    "compose": "Tulis",
+    "messages": "Pesan",
+    "empty": "Belum ada korespondensi.",
+    "message": "Pesan",
+    "details": "Detail",
+    "to": "Kepada",
+    "cc": "Cc",
+    "subject": "Subjek",
+    "intent": "Apa yang harus disampaikan? (untuk AI)",
+    "intentPlaceholder": "mis. Undang para kepala desa ke baraza keamanan pada Jumat pukul 10.00",
+    "body": "Isi",
+    "saveDraft": "Simpan draf",
+    "toLabel": "Kepada:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Subjek:",
+    "aiAssisted": "Dibantu AI",
+    "sendNow": "Kirim sekarang",
+    "selectHint": "Pilih pesan atau tulis pesan baru."
+  },
+  "knowledge": {
+    "subtitle": "Materi referensi yang dapat digunakan asisten — kebijakan, templat, preseden.",
+    "added": "Ditambahkan ke basis pengetahuan.",
+    "addFailed": "Tidak dapat menambahkan.",
+    "chooseFile": "Pilih file untuk diunggah.",
+    "ocrFailed": "File tersimpan. OCR tidak dapat membaca teks dari file ini (mungkin kualitasnya rendah). Anda dapat menempelkan teks secara manual.",
+    "extracted": "File tersimpan dan {n} karakter teks berhasil diekstrak.",
+    "noText": "File tersimpan. Tidak ada teks yang dapat diekstrak dari format ini.",
+    "uploadFailed": "Unggahan gagal.",
+    "confirmRemove": "Hapus referensi ini?",
+    "uploadTitle": "Unggah dokumen",
+    "file": "File",
+    "titleOptional": "Judul (opsional)",
+    "titleDefault": "Default ke nama file",
+    "categoryOptional": "Kategori (opsional)",
+    "uploadExtract": "Unggah & ekstrak",
+    "uploadNote": "File Word, PDF, CSV, dan teks akan diekstrak teksnya secara otomatis. PDF hasil pindai dan foto dibaca otomatis dengan OCR.",
+    "pasteTitle": "Tambah referensi (tempel teks)",
+    "title": "Judul",
+    "category": "Kategori",
+    "categoryPlaceholder": "mis. Surat Edaran, Kebijakan",
+    "textContent": "Konten teks",
+    "add": "Tambah",
+    "references": "Referensi",
+    "empty": "Belum ada apa pun.",
+    "uncategorised": "Tanpa kategori",
+    "remove": "Hapus"
+  },
+  "assistant": {
+    "subtitle": "Berikan instruksi dalam bahasa sehari-hari — ringkas, cari, susun, atau jelaskan di seluruh ruang kerja Anda.",
+    "failed": "Asisten tidak dapat memproses permintaan tersebut.",
+    "instruction": "Instruksi",
+    "placeholder": "mis. Ringkas keputusan dari rapat komite keamanan minggu ini, atau daftar memo yang masih menunggu persetujuan.",
+    "ask": "Tanya"
+  },
+  "actions": {
+    "subtitle": "Item tindakan yang diekstrak dari notulen dan matriks tindakan di seluruh sesi.",
+    "empty": "Tidak ada tindakan tertunda yang ditemukan.",
+    "table": {
+      "action": "Tindakan",
+      "responsible": "Penanggung jawab",
+      "timeline": "Linimasa",
+      "source": "Sumber"
+    }
+  },
+  "paypal": {
+    "title": "Pembayaran PayPal",
+    "subtitle": "Konfirmasi pembayaran langganan.",
+    "confirming": "Mengonfirmasi pembayaran PayPal Anda...",
+    "noOrder": "Tidak ada pesanan PayPal yang dikembalikan.",
+    "confirmed": "Pembayaran dikonfirmasi. Langganan Worker Anda kini aktif.",
+    "failed": "Pembayaran PayPal tidak dapat dikonfirmasi.",
+    "success": "Pembayaran berhasil",
+    "viewSubscription": "Lihat langganan",
+    "errorTitle": "Pembayaran tidak dapat dikonfirmasi",
+    "returnToSubscription": "Kembali ke langganan"
+  },
+  "tenant": {
+    "saved": "Detail organisasi disimpan. Detail ini muncul di setiap dokumen yang Anda ekspor.",
+    "saveFailed": "Tidak dapat menyimpan.",
+    "logoUploaded": "Logo diunggah.",
+    "signatureUploaded": "Tanda tangan diunggah.",
+    "uploadFailed": "Unggahan gagal.",
+    "subtitleShort": "Branding untuk ruang kerja Anda.",
+    "noOrg": "Akun ini tidak terkait dengan organisasi.",
+    "subtitle": "Nama, kop surat, logo, dan tanda tangan Anda muncul di setiap dokumen yang Anda buat.",
+    "letterhead": "Kop surat",
+    "orgName": "Nama organisasi",
+    "line": "Baris kop surat {n}",
+    "line1Placeholder": "mis. PEMERINTAH KABUPATEN ...",
+    "line2Placeholder": "mis. Dinas ...",
+    "line3Placeholder": "mis. Unit / Kantor",
+    "saveLetterhead": "Simpan kop surat",
+    "blankHint": "Biarkan baris kosong untuk menggunakan nama organisasi Anda.",
+    "logoSignature": "Logo & tanda tangan",
+    "logo": "Lambang / logo (PNG atau JPG)",
+    "signature": "Tanda tangan elektronik (PNG atau JPG)",
+    "uploaded": "diunggah",
+    "brandingNote": "Logo muncul di header dokumen dan pada halaman judul slide. Tanda tangan ditempatkan di akhir dokumen yang diekspor. Gunakan PNG dengan latar transparan untuk hasil terbaik."
+  },
+  "users": {
+    "createdTemp": "Pengguna dibuat. Kata sandi sementara: {temp} — bagikan dengan aman; mereka harus mengubahnya saat login pertama.",
+    "created": "Pengguna dibuat.",
+    "createFailed": "Tidak dapat membuat pengguna.",
+    "confirmRemove": "Hapus {name}?",
+    "removeFailed": "Tidak dapat menghapus.",
+    "subtitle": "Kelola akses. Akun superadmin tidak dapat diubah di sini.",
+    "add": "Tambah pengguna",
+    "create": "Buat pengguna",
+    "empty": "Tidak ada pengguna.",
+    "fields": {
+      "name": "Nama",
+      "email": "Email",
+      "role": "Peran",
+      "department": "Departemen",
+      "status": "Status"
+    },
+    "suspend": "Tangguhkan",
+    "reinstate": "Pulihkan",
+    "remove": "Hapus"
+  },
+  "audit": {
+    "subtitle": "Setiap tindakan penting dicatat. Log hanya menyimpan metadata dan pengenal — tidak pernah isi dokumen atau audio.",
+    "empty": "Tidak ada entri audit.",
+    "table": {
+      "when": "Waktu",
+      "actor": "Pelaku",
+      "action": "Tindakan",
+      "resource": "Sumber daya"
+    },
+    "system": "sistem"
+  },
+  "payments": {
+    "stkSent": "STK push terkirim. Minta pembayar menyetujui di ponsel mereka.",
+    "initiateFailed": "Tidak dapat memulai pembayaran.",
+    "subtitle": "Transaksi M-Pesa (Daraja STK push) dan PayPal.",
+    "requestTitle": "Minta pembayaran M-Pesa",
+    "phone": "Telepon (07.. atau 2547..)",
+    "amountKes": "Jumlah (KES)",
+    "purpose": "Tujuan",
+    "sendStk": "Kirim STK push",
+    "transactions": "Transaksi",
+    "empty": "Tidak ada transaksi.",
+    "table": {
+      "provider": "Penyedia",
+      "amount": "Jumlah",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Faktur dan kuitansi untuk pembayaran langganan Worker yang telah selesai.",
+    "loadFailed": "Tidak dapat memuat dokumen penagihan.",
+    "downloadFailed": {
+      "invoice": "Tidak dapat mengunduh faktur.",
+      "receipt": "Tidak dapat mengunduh kuitansi."
+    },
+    "documentsTitle": "Dokumen penagihan",
+    "intro": "Unduh faktur dan kuitansi untuk pembayaran langganan organisasi Anda yang telah selesai.",
+    "disclaimer": "Dokumen-dokumen ini mencatat pembayaran langganan Worker dan disediakan untuk keperluan pembayaran dan penggantian biaya. Dokumen ini tidak dinyatakan sebagai faktur pajak KRA/eTIMS kecuali diterbitkan secara terpisah melalui integrasi eTIMS yang patuh.",
+    "invoices": "Faktur",
+    "noInvoices": "Belum ada faktur.",
+    "receipts": "Kuitansi",
+    "noReceipts": "Belum ada kuitansi.",
+    "downloadPdf": "Unduh PDF",
+    "table": {
+      "invoice": "Faktur",
+      "receipt": "Kuitansi",
+      "date": "Tanggal",
+      "description": "Deskripsi",
+      "amount": "Jumlah",
+      "status": "Status",
+      "provider": "Penyedia",
+      "reference": "Referensi"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Tidak dapat memuat langganan.",
+    "selectFirst": "Pilih paket langganan terlebih dahulu.",
+    "mpesaSent": "STK push M-Pesa telah dikirim. Setujui pembayaran di ponsel Anda. Langganan Anda akan aktif setelah konfirmasi pembayaran.",
+    "mpesaFailed": "Tidak dapat memulai pembayaran M-Pesa.",
+    "noApproveUrl": "URL persetujuan PayPal tidak dikembalikan.",
+    "paypalFailed": "Tidak dapat memulai pembayaran PayPal.",
+    "subtitleShort": "Kelola langganan Worker Anda.",
+    "subtitle": "Kelola paket, uji coba, dan penagihan Worker Anda.",
+    "current": "Langganan saat ini",
+    "organisation": "Organisasi",
+    "status": "Status",
+    "plan": "Paket",
+    "freeTrial": "Uji coba gratis 14 hari",
+    "trialEnds": "Uji coba berakhir",
+    "dayRemaining": "{n} hari tersisa",
+    "daysRemaining": "{n} hari tersisa",
+    "renewsEnds": "Diperbarui / berakhir",
+    "chooseTitle": "Pilih paket",
+    "chooseSubtitle": "Semua paket mencakup alur kerja administratif Worker. Uji coba 14 hari Anda gratis.",
+    "perMonth": "/ bulan",
+    "planSelected": "{plan} dipilih. Paket Anda telah disimpan dan siap untuk pembayaran.",
+    "selectFailed": "Tidak dapat memilih paket.",
+    "selected": "Dipilih",
+    "selectPlan": "Pilih paket",
+    "activateTitle": "Aktifkan langganan Anda",
+    "selectAbove": "Pilih paket di atas untuk melanjutkan ke pembayaran.",
+    "stkNote": "STK push akan dikirim ke nomor telepon di bawah ini.",
+    "phone": "Nomor telepon",
+    "phonePlaceholder": "07.. atau 2547..",
+    "payMpesa": "Bayar dengan M-Pesa",
+    "paypalNote": "Lanjutkan ke PayPal untuk membayar paket yang dipilih dalam USD.",
+    "payPaypal": "Bayar dengan PayPal",
+    "settleNote": "Langganan berbayar dapat diselesaikan melalui M-Pesa atau PayPal.",
+    "activationNote": "Paket yang Anda pilih akan diaktifkan setelah konfirmasi pembayaran berhasil.",
+    "historyNote": "Riwayat pembayaran tersedia di Administrasi → Pembayaran."
+  },
+  "intl": {
+    "territory": "Wilayah",
+    "searchTerritory": "Cari wilayah…",
+    "selectTerritory": "Pilih wilayah Anda",
+    "territoryRequired": "Silakan pilih wilayah Anda.",
+    "workingLanguage": "Bahasa kerja",
+    "meetingLanguage": "Bahasa rapat",
+    "useDefault": "Bawaan organisasi",
+    "beta": "transkripsi beta",
+    "unavailable": "tanpa transkripsi"
+  },
+  "generate": {
+    "title": "Buat dokumen dari sesi ini",
+    "as": "Buat sebagai",
+    "instructions": "Instruksi (opsional)",
+    "placeholder": "mis. Surat kepada Sekretaris Jenderal yang merangkum keputusan 2 dan 3",
+    "button": "Buat",
+    "working": "Menyusun dokumen Anda… ini dapat memakan waktu satu menit.",
+    "done": "Dokumen dibuat.",
+    "failed": "Tidak dapat membuat dokumen.",
+    "hint": "Menggunakan transkrip yang dicentang untuk disertakan, secara berurutan. Anda meninjau dan menyetujui sebelum apa pun dibagikan."
+  },
+  "queue": {
+    "queued": "Dalam antrean untuk transkripsi. Halaman ini diperbarui secara otomatis."
+  },
+  "pdfExport": {
+    "button": "Ekspor PDF"
+  },
+  "access": {
+    "readOnly": "Ruang kerja Anda bersifat hanya-baca karena uji coba atau langganan Anda telah berakhir. Anda masih dapat melihat dan mengekspor dokumen Anda.",
+    "grace": "Uji coba atau langganan Anda berakhir pada {date}. Anda memiliki {n} hari akses penuh tersisa.",
+    "trialEnding": "Uji coba gratis Anda berakhir dalam {n} hari.",
+    "choosePlan": "Pilih paket"
+  },
+  "sessionLang": {
+    "saved": "Bahasa rapat disimpan. Berlaku untuk rekaman yang ditranskripsikan mulai sekarang.",
+    "failed": "Tidak dapat menyimpan bahasa rapat."
+  },
+  "i18nNote": {
+    "machine": "Diterjemahkan secara mesin"
+  }
+}

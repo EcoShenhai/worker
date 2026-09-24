@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Jezik",
+    "signIn": "Prijava",
+    "signOut": "Odjava",
+    "createAccount": "Kreiraj nalog",
+    "getStarted": "Započnite",
+    "startFreeTrial": "Započnite besplatnu probu",
+    "cancel": "Otkaži",
+    "back": "Nazad",
+    "download": "Preuzmi",
+    "viewAll": "Prikaži sve"
+  },
+  "brand": {
+    "tagline": "AI administrativni radni prostor",
+    "secureWorkspace": "Siguran administrativni radni prostor",
+    "badge": "Engleski · Audio"
+  },
+  "nav": {
+    "dashboard": "Kontrolna tabla",
+    "workspace": "Radni prostor",
+    "sessions": "Sesije i snimci",
+    "documents": "Dokumenti",
+    "correspondence": "Prepiska",
+    "knowledge": "Baza znanja",
+    "assistant": "Asistent",
+    "askWorker": "Pitajte Worker",
+    "actions": "Nerealizovane radnje",
+    "administration": "Administracija",
+    "organisation": "Organizacija",
+    "users": "Korisnici",
+    "audit": "Revizorski trag",
+    "subscription": "Pretplata",
+    "payments": "Plaćanja",
+    "billing": "Naplata"
+  },
+  "roles": {
+    "viewer": "Pregledalac",
+    "officer": "Službenik",
+    "admin": "Administrator",
+    "superadmin": "Super administrator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Pretvorite ono što izgovorite u završenu, arhiviranu dokumentaciju.",
+      "body": "Worker je AI administrativni radni prostor za organizacije koje proizvode velike količine formalnih dokumenata sa sastanaka, brifinga i prepiske. Snimite sastanak ili diktirajte, a Worker ga transkribuje, sastavlja zapisnike, memorandume, pisma, izvještaje i politike, te ih provodi kroz pregled i odobravanje — uz potpuni revizorski trag.",
+      "badgeRow": "Audio · Engleski · Siguran radni prostor"
+    },
+    "what": {
+      "title": "Šta Worker radi",
+      "lead": "Rutinski kancelarijski posao koji prati sastanke i prepisku — obavljen za nekoliko minuta, a ne sati.",
+      "f1": {
+        "title": "Snimanje i transkripcija",
+        "body": "Snimajte sastanke, intervjue, brifinge ili diktiranje. Audio se transkribuje lokalno na engleskom."
+      },
+      "f2": {
+        "title": "Sastavljanje uz pomoć AI",
+        "body": "Generišite zapisnike, memorandume, pisma, izvještaje, politike i cirkulare u ispravnoj službenoj formi."
+      },
+      "f3": {
+        "title": "Pregled i odobrenje",
+        "body": "Svaki dokument prolazi kroz nacrt, pregled, odobrenje i finalizaciju — ljudi zadržavaju kontrolu."
+      },
+      "f4": {
+        "title": "Sigurno i revidirano",
+        "body": "Pristup zasnovan na ulogama i potpuni revizijski trag. Prepisku uvijek šalje isključivo osoba."
+      }
+    },
+    "start": {
+      "title": "Početak traje samo minut",
+      "lead": "Kreirajte nalog i započnite 14-dnevni besplatni probni period.",
+      "s1": {
+        "title": "Kreirajte svoj nalog",
+        "body": "Unesite svoje ime, email adresu i lozinku."
+      },
+      "s2": {
+        "title": "Verifikujte svoju email adresu",
+        "body": "Unesite šestocifreni kod koji smo vam poslali emailom."
+      },
+      "s3": {
+        "title": "Prijavite se bezbjedno",
+        "body": "Svaka prijava se potvrđuje jednokratnim kodom poslanim emailom."
+      },
+      "s4": {
+        "title": "Počnite sa radom",
+        "body": "Kreirajte sesiju, snimajte i generišite svoj prvi dokument."
+      }
+    },
+    "pricing": {
+      "title": "Jednostavne cijene pretplate",
+      "lead": "Započnite sa 14-dnevnim besplatnim probnim periodom. Odaberite plan koji odgovara obimu administrativnog rada koji vaša organizacija proizvodi.",
+      "perMonth": "/mjesec",
+      "mostPopular": "NAJPOPULARNIJI",
+      "starter": {
+        "name": "Starter",
+        "desc": "Za male timove koji započinju sa administrativnim radom uz pomoć AI."
+      },
+      "professional": {
+        "name": "Profesionalni",
+        "desc": "Za organizacije sa redovnom proizvodnjom dokumenata velikog obima."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Za veće organizacije sa značajnim administrativnim opterećenjem."
+      },
+      "paymentsNote": "M-Pesa i PayPal su podržani za plaćene pretplate."
+    },
+    "final": {
+      "title": "Spremni da isprobate Worker?",
+      "cta": "Kreirajte svoj nalog"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Lozinka",
+    "fullName": "Puno ime",
+    "confirmPassword": "Potvrdite lozinku",
+    "currentPassword": "Trenutna lozinka",
+    "newPassword": "Nova lozinka",
+    "confirmNewPassword": "Potvrdite novu lozinku",
+    "code6": "Šestocifreni kod",
+    "signInFailed": "Prijava nije uspjela. Provjerite svoje podatke za prijavu.",
+    "forgotPassword": "Zaboravili ste lozinku?",
+    "mfaNotice": "Jednokratni kod se šalje emailom za potvrdu svake prijave.",
+    "createYourAccount": "Kreirajte svoj nalog",
+    "pwMin": "Lozinka mora imati najmanje {n} znakova.",
+    "newPwMin": "Nova lozinka mora imati najmanje {n} znakova.",
+    "pwMismatch": "Lozinke se ne poklapaju.",
+    "createFailed": "Nije moguće kreirati nalog.",
+    "haveAccount": "Već imate nalog?",
+    "startAtSignIn": "Počnite prijavom ili registracijom.",
+    "goToSignIn": "Idite na prijavu",
+    "invalidCode": "Nevažeći ili istekli kod.",
+    "codeSent": "Novi kod je poslan.",
+    "resendFailed": "Nije moguće ponovo poslati.",
+    "verifyEmailTitle": "Potvrdite svoju e-poštu",
+    "verifyEmailTo": "Potvrdite svoju e-poštu — {email}",
+    "verify": "Potvrdi",
+    "resendCode": "Ponovo pošalji kod",
+    "signInAgain": "Prijavite se ponovo.",
+    "mfaPrompt": "Unesite kod za prijavu koji smo poslali e-poštom",
+    "mfaPromptTo": "Unesite kod za prijavu koji smo poslali na {email}",
+    "verifySignIn": "Potvrdi i prijavi se",
+    "requestFailed": "Nije moguće obraditi zahtjev.",
+    "resetTitle": "Resetujte svoju lozinku",
+    "sendResetCode": "Pošalji kod za resetovanje",
+    "backToSignIn": "Nazad na prijavu",
+    "resetPrompt": "Unesite kod koji smo poslali e-poštom i odaberite novu lozinku",
+    "resetPassword": "Resetuj lozinku",
+    "setNewPassword": "Postavite novu lozinku",
+    "forcedChange": "Radi sigurnosti, postavite svoju lozinku prije nastavka.",
+    "updateAccountPassword": "Ažurirajte lozinku svog naloga.",
+    "changeFailed": "Nije moguće promijeniti lozinku.",
+    "updatePassword": "Ažuriraj lozinku",
+    "signOutInstead": "Odjavite se umjesto toga"
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "subtitle": "Ta stranica ne postoji u ovom radnom prostoru.",
+    "back": "Povratak na kontrolnu tablu"
+  },
+  "status": {
+    "draft": "nacrt",
+    "in_review": "u pregledu",
+    "approved": "odobreno",
+    "final": "konačno",
+    "archived": "arhivirano",
+    "open": "otvoreno",
+    "processing": "obrada u toku",
+    "ready": "spremno",
+    "pending": "na čekanju",
+    "transcribing": "transkripcija u toku",
+    "transcribed": "transkribovano",
+    "failed": "neuspješno",
+    "sent": "poslato",
+    "received": "primljeno",
+    "completed": "završeno",
+    "cancelled": "otkazano",
+    "active": "aktivno",
+    "suspended": "suspendovano"
+  },
+  "kind": {
+    "meeting": "sastanak",
+    "interview": "intervju",
+    "briefing": "brifing",
+    "dictation": "diktiranje",
+    "field_report": "izvještaj sa terena",
+    "consultation": "konsultacije",
+    "other": "ostalo"
+  },
+  "classification": {
+    "unclassified": "nekategorisano",
+    "internal": "interno",
+    "confidential": "povjerljivo",
+    "restricted": "ograničeno"
+  },
+  "dashboard": {
+    "welcome": "Dobrodošli, {name}",
+    "defaultName": "službeniče",
+    "subtitle": "Vaš administrativni radni prostor — snimanje, izrada nacrta, pregled i arhiviranje.",
+    "stats": {
+      "sessions": "Sesije",
+      "documents": "Dokumenti",
+      "awaitingReview": "Čeka pregled",
+      "outstandingActions": "Nezavršene radnje"
+    },
+    "recentSessions": "Nedavne sesije",
+    "documentsToAction": "Dokumenti za postupanje",
+    "noSessions": "Još nema sesija.",
+    "nothingToAction": "Ništa ne zahtijeva vašu pažnju."
+  },
+  "sessions": {
+    "subtitle": "Svaka sesija je predmet — audio zapis, transkript i dokumenti nastali iz njega.",
+    "new": "Nova sesija",
+    "createFailed": "Nije moguće kreirati sesiju.",
+    "titlePlaceholder": "npr. Okružni odbor za bezbjednost — nedjeljni brifing",
+    "create": "Kreiraj sesiju",
+    "empty": "Još nema sesija. Kreirajte je da biste započeli snimanje.",
+    "fields": {
+      "title": "Naslov",
+      "kind": "Vrsta",
+      "date": "Datum",
+      "classification": "Klasifikacija",
+      "status": "Status",
+      "department": "Odsjek",
+      "location": "Lokacija"
+    }
+  },
+  "session": {
+    "loadFailed": "Nije bilo moguće učitati sesiju.",
+    "micDenied": "Pristup mikrofonu je odbijen ili nedostupan.",
+    "audioSaved": "Audio je sačuvan u sesiji.",
+    "uploadFailed": "Prijenos nije uspio.",
+    "transcribing": "Lokalno transkribovanje — za duži audio ovo može potrajati.",
+    "transcribed": "Transkripcija je završena.",
+    "transcribeFailed": "Transkripcija nije uspjela. Provjerite da li je STT servis pokrenut.",
+    "updateFailed": "Nije bilo moguće ažurirati.",
+    "draftingMinutes": "Priprema nacrta zapisnika iz transkripta…",
+    "minutesCreated": "Nacrt zapisnika je kreiran.",
+    "minutesFailed": "Nije bilo moguće generisati zapisnik.",
+    "notFound": "Sesija nije pronađena.",
+    "noDate": "bez datuma",
+    "noLocation": "bez lokacije",
+    "generateMinutes": "Generiši zapisnik",
+    "captureAudio": "Snimi audio",
+    "stopSave": "Zaustavi i sačuvaj",
+    "startRecording": "Započni snimanje",
+    "or": "ili",
+    "uploadAudio": "Prenesi audio",
+    "audioNote": "Audio ostaje na hostu. Transkripcija se izvodi lokalno na engleskom. Zapisnik objedinjuje svaki snimak u ovoj sesiji, po redu.",
+    "documentsFrom": "Dokumenti iz ove sesije",
+    "noDocuments": "Još nema dokumenata. Transkribujte snimak, zatim generišite zapisnik.",
+    "recordingsTitle": "Snimci i transkripti",
+    "clipOne": "{n} snimak",
+    "clipMany": "{n} snimaka",
+    "noRecordings": "Još nema snimaka. Snimite ili prenesite audio iznad.",
+    "includeTitle": "Uključi ovaj snimak pri generisanju zapisnika",
+    "inMinutes": "U zapisniku",
+    "transcribe": "Transkribuj",
+    "transcribeHint": "Transkribujte ovaj snimak da biste vidjeli i uredili njegov transkript ovdje.",
+    "audioLoadFailed": "Nije bilo moguće učitati audio.",
+    "loadAudio": "Učitaj audio",
+    "words": "{n} riječi",
+    "verified": "verifikovano",
+    "editVerify": "Uredi i verifikuj",
+    "saveVerified": "Sačuvaj i označi kao verifikovano",
+    "saveDraft": "Sačuvaj nacrt",
+    "emptyTranscript": "Prazan transkript."
+  },
+  "docType": {
+    "minutes": "zapisnik",
+    "memo": "memorandum",
+    "letter": "dopis",
+    "report": "izvještaj",
+    "policy_brief": "kratak pregled politike",
+    "briefing_note": "informativna bilješka",
+    "concept_note": "konceptualna bilješka",
+    "circular": "cirkular",
+    "action_matrix": "matrica aktivnosti",
+    "speech": "govor"
+  },
+  "approval": {
+    "submit": "poslato",
+    "submitted": "poslato",
+    "approve": "odobreno",
+    "approved": "odobreno",
+    "reject": "odbijeno",
+    "rejected": "odbijeno",
+    "finalize": "finalizovano",
+    "finalized": "finalizovano"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Interni memorandum",
+      "desc": "Standardni interni memorandum sa Za / Od / Predmet."
+    },
+    "letter-official": {
+      "name": "Službeni dopis",
+      "desc": "Formalni odlazni dopis na memorandumu kancelarije."
+    },
+    "circular-general": {
+      "name": "Cirkular",
+      "desc": "Obavještenje koje se dostavlja većem broju primalaca."
+    },
+    "report-standard": {
+      "name": "Izvještaj",
+      "desc": "Opšti izvještaj sa sažetkom, odjeljcima i preporukama."
+    },
+    "policy-brief": {
+      "name": "Kratak pregled politike",
+      "desc": "Sažet pregled za donosioce odluka."
+    },
+    "briefing-note": {
+      "name": "Informativna bilješka",
+      "desc": "Kratka bilješka za informisanje rukovodioca prije sastanka."
+    },
+    "concept-note": {
+      "name": "Konceptualna bilješka",
+      "desc": "Pregled predloženog programa ili aktivnosti."
+    },
+    "minutes-blank": {
+      "name": "Zapisnik sa sastanka (prazan)",
+      "desc": "Prazna struktura zapisnika za ručno popunjavanje."
+    },
+    "speech-remarks": {
+      "name": "Govor / napomene",
+      "desc": "Formalne napomene za događaj."
+    }
+  },
+  "documents": {
+    "subtitle": "Zapisnici, memorandumi, pisma, izvještaji i kratki pregledi — sastavljeni uz pomoć AI, odobreni od strane ljudi.",
+    "startFromTemplate": "Započni od šablona",
+    "fromSpreadsheet": "Izvještaj iz tabele",
+    "draftWithAI": "Sastavi uz pomoć AI",
+    "templateTitle": "Započni od šablona",
+    "allTypes": "Svi tipovi",
+    "orgTemplates": "Šabloni vaše organizacije",
+    "savedByOrg": "Sačuvano od strane vaše organizacije",
+    "useTemplate": "Koristi ovaj šablon",
+    "generalTemplates": "Opšti šabloni",
+    "spreadsheetFailed": "Nije bilo moguće napraviti izvještaj iz te tabele.",
+    "templateFailed": "Nije bilo moguće kreirati iz šablona.",
+    "draftFailed": "Nije bilo moguće sastaviti dokument.",
+    "fields": {
+      "type": "Tip dokumenta",
+      "title": "Naslov",
+      "recipient": "Primalac (opciono)",
+      "department": "Odsjek (opciono)",
+      "brief": "Uputstva / kratak pregled"
+    },
+    "briefPlaceholder": "Opišite svrhu, ključne tačke i sve činjenice koje treba uključiti. Asistent će sastaviti formalni dokument koji možete urediti i odobriti.",
+    "generateDraft": "Generiši nacrt",
+    "empty": "Još nema dokumenata.",
+    "table": {
+      "title": "Naslov",
+      "type": "Tip",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Nije bilo moguće učitati dokument.",
+    "invalidJson": "Sadržaj nije validan JSON.",
+    "saved": "Sačuvano. Verzija uvećana.",
+    "saveFailed": "Čuvanje nije uspjelo.",
+    "done": {
+      "submit": "Dokument poslan na pregled.",
+      "approve": "Dokument odobren.",
+      "reject": "Dokument odbijen.",
+      "finalize": "Dokument finalizovan."
+    },
+    "failed": {
+      "submit": "Nije bilo moguće poslati.",
+      "approve": "Nije bilo moguće odobriti.",
+      "reject": "Nije bilo moguće odbiti.",
+      "finalize": "Nije bilo moguće finalizovati."
+    },
+    "templateName": "Naziv šablona",
+    "templateDefault": "Šablon {title}",
+    "templateSaved": "Sačuvano kao šablon koji se može ponovo koristiti za vašu organizaciju.",
+    "templateSaveFailed": "Šablon nije moguće sačuvati.",
+    "exportFailed": "Izvoz nije uspio.",
+    "notFound": "Dokument nije pronađen.",
+    "exportDocx": "Izvezi DOCX",
+    "exportPptx": "Izvezi PPTX",
+    "exportXlsx": "Izvezi XLSX",
+    "saveAsTemplate": "Sačuvaj kao šablon",
+    "content": "Sadržaj",
+    "workflow": "Tok rada",
+    "aiAssisted": "Nacrt uz pomoć AI",
+    "auditChain": "Lanac revizije: audio → transkript → AI nacrt → ljudska izmjena → odobrenje → finalno. Svaki korak se evidentira.",
+    "comment": "Komentar (opciono)",
+    "commentPlaceholder": "Dodajte napomenu za evidenciju",
+    "submit": "Pošalji na pregled",
+    "approve": "Odobri",
+    "reject": "Odbij",
+    "finalize": "Finalizuj",
+    "finalLocked": "Finalno — zaključano za uređivanje",
+    "editJson": "Uredi sadržaj (JSON)",
+    "jsonNote": "Strukturirani sadržaj pokreće brendirani DOCX. Uredite polja ispod i sačuvajte; brendiranje i izgled se automatski primjenjuju pri izvozu.",
+    "saveContent": "Sačuvaj sadržaj",
+    "approvalHistory": "Istorija odobrenja"
+  },
+  "emails": {
+    "subtitle": "Sastavljajte pisma i imejlove uz pomoć AI. Ništa se ne šalje dok osoba ne klikne pošalji.",
+    "needIntent": "Dajte asistentu temu ili namjeru za sastavljanje nacrta.",
+    "draftReady": "Nacrt je spreman. Pregledajte i uredite prije slanja.",
+    "draftFailed": "Sastavljanje nacrta nije uspjelo.",
+    "draftSaved": "Nacrt sačuvan.",
+    "saveFailed": "Nije moguće sačuvati.",
+    "confirmSend": "Poslati ovaj imejl sada? Ova radnja se evidentira u revizijskom tragu.",
+    "sent": "Imejl poslat.",
+    "sendFailed": "Slanje nije uspjelo.",
+    "compose": "Sastavi",
+    "messages": "Poruke",
+    "empty": "Još nema prepiske.",
+    "message": "Poruka",
+    "details": "Detalji",
+    "to": "Za",
+    "cc": "Cc",
+    "subject": "Predmet",
+    "intent": "Šta treba da piše? (za AI)",
+    "intentPlaceholder": "npr. Pozovite glavare na sigurnosnu barazu u petak u 10h",
+    "body": "Tekst",
+    "saveDraft": "Sačuvaj nacrt",
+    "toLabel": "Za:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Predmet:",
+    "aiAssisted": "Uz pomoć AI",
+    "sendNow": "Pošalji odmah",
+    "selectHint": "Izaberite poruku ili sastavite novu."
+  },
+  "knowledge": {
+    "subtitle": "Referentni materijal na koji se asistent može osloniti — politike, šabloni, presedani.",
+    "added": "Dodato u bazu znanja.",
+    "addFailed": "Nije moguće dodati.",
+    "chooseFile": "Izaberite datoteku za otpremanje.",
+    "ocrFailed": "Datoteka sačuvana. OCR nije mogao pročitati tekst iz ove datoteke (možda je lošeg kvaliteta). Tekst možete nalijepiti ručno.",
+    "extracted": "Datoteka sačuvana i izdvojeno je {n} znakova teksta.",
+    "noText": "Datoteka sačuvana. Iz ovog formata nije bilo moguće izdvojiti tekst.",
+    "uploadFailed": "Otpremanje nije uspjelo.",
+    "confirmRemove": "Ukloniti ovu referencu?",
+    "uploadTitle": "Otpremite dokument",
+    "file": "Datoteka",
+    "titleOptional": "Naslov (opciono)",
+    "titleDefault": "Podrazumijeva se naziv datoteke",
+    "categoryOptional": "Kategorija (opciono)",
+    "uploadExtract": "Otpremi i izdvoji",
+    "uploadNote": "Word, PDF, CSV i tekstualne datoteke automatski izdvajaju tekst. Skenirani PDF-ovi i fotografije se automatski čitaju pomoću OCR-a.",
+    "pasteTitle": "Dodaj referencu (nalijepi tekst)",
+    "title": "Naslov",
+    "category": "Kategorija",
+    "categoryPlaceholder": "npr. Okružnice, Politike",
+    "textContent": "Tekstualni sadržaj",
+    "add": "Dodaj",
+    "references": "Reference",
+    "empty": "Još ništa.",
+    "uncategorised": "Nekategorisano",
+    "remove": "Ukloni"
+  },
+  "assistant": {
+    "subtitle": "Dajte instrukciju jednostavnim jezikom — sažmite, pronađite, sastavite nacrt ili objasnite u okviru svog radnog prostora.",
+    "failed": "Asistent nije mogao obraditi to.",
+    "instruction": "Uputstvo",
+    "placeholder": "npr. Sumirajte odluke sa ovonedjeljnog sastanka odbora za bezbjednost ili navedite memorandume koji još čekaju odobrenje.",
+    "ask": "Pitaj"
+  },
+  "actions": {
+    "subtitle": "Stavke zadataka izdvojene iz zapisnika i matrica zadataka kroz sesije.",
+    "empty": "Nema pronađenih neriješenih zadataka.",
+    "table": {
+      "action": "Zadatak",
+      "responsible": "Odgovorno lice",
+      "timeline": "Rok",
+      "source": "Izvor"
+    }
+  },
+  "paypal": {
+    "title": "PayPal plaćanje",
+    "subtitle": "Potvrda plaćanja pretplate.",
+    "confirming": "Potvrđivanje vašeg PayPal plaćanja...",
+    "noOrder": "Nije vraćena nijedna PayPal narudžba.",
+    "confirmed": "Plaćanje potvrđeno. Vaša Worker pretplata je sada aktivna.",
+    "failed": "PayPal plaćanje nije moglo biti potvrđeno.",
+    "success": "Plaćanje uspješno",
+    "viewSubscription": "Prikaži pretplatu",
+    "errorTitle": "Plaćanje nije moglo biti potvrđeno",
+    "returnToSubscription": "Vrati se na pretplatu"
+  },
+  "tenant": {
+    "saved": "Podaci o organizaciji su sačuvani. Pojavljuju se na svakom dokumentu koji izvezete.",
+    "saveFailed": "Čuvanje nije uspjelo.",
+    "logoUploaded": "Logo je otpremljen.",
+    "signatureUploaded": "Potpis je otpremljen.",
+    "uploadFailed": "Otpremanje nije uspjelo.",
+    "subtitleShort": "Brendiranje za vaš radni prostor.",
+    "noOrg": "Ovaj nalog nije povezan sa organizacijom.",
+    "subtitle": "Vaše ime, zaglavlje, logo i potpis pojavljuju se na svakom dokumentu koji generišete.",
+    "letterhead": "Zaglavlje",
+    "orgName": "Naziv organizacije",
+    "line": "Linija zaglavlja {n}",
+    "line1Placeholder": "npr. VLADA TERITORIJE ...",
+    "line2Placeholder": "npr. Odsjek za ...",
+    "line3Placeholder": "npr. Jedinica / Kancelarija",
+    "saveLetterhead": "Sačuvaj zaglavlje",
+    "blankHint": "Ostavite linije prazne da biste koristili naziv vaše organizacije.",
+    "logoSignature": "Logo i potpis",
+    "logo": "Grb / logo (PNG ili JPG)",
+    "signature": "E-potpis (PNG ili JPG)",
+    "uploaded": "otpremljeno",
+    "brandingNote": "Logo se pojavljuje u zaglavlju dokumenta i na naslovnim stranicama slajdova. Potpis se postavlja na kraj izvezenih dokumenata. Koristite PNG sa providnom pozadinom za najbolje rezultate."
+  },
+  "users": {
+    "createdTemp": "Korisnik je kreiran. Privremena lozinka: {temp} — podijelite je bezbjedno; korisnik je mora promijeniti pri prvoj prijavi.",
+    "created": "Korisnik je kreiran.",
+    "createFailed": "Nije moguće kreirati korisnika.",
+    "confirmRemove": "Ukloniti {name}?",
+    "removeFailed": "Nije moguće ukloniti.",
+    "subtitle": "Upravljajte pristupom. Nalog superadministratora ne može se mijenjati ovdje.",
+    "add": "Dodaj korisnika",
+    "create": "Kreiraj korisnika",
+    "empty": "Nema korisnika.",
+    "fields": {
+      "name": "Ime",
+      "email": "E-mail",
+      "role": "Uloga",
+      "department": "Odsjek",
+      "status": "Status"
+    },
+    "suspend": "Suspenduj",
+    "reinstate": "Vrati",
+    "remove": "Ukloni"
+  },
+  "audit": {
+    "subtitle": "Svaka značajna radnja se evidentira. Evidencije sadrže samo metapodatke i identifikatore — nikada sadržaj dokumenata ili audio zapise.",
+    "empty": "Nema unosa u evidenciji.",
+    "table": {
+      "when": "Kada",
+      "actor": "Izvršilac",
+      "action": "Radnja",
+      "resource": "Resurs"
+    },
+    "system": "sistem"
+  },
+  "payments": {
+    "stkSent": "STK zahtjev je poslan. Zamolite platioca da odobri na telefonu.",
+    "initiateFailed": "Nije moguće pokrenuti plaćanje.",
+    "subtitle": "M-Pesa (Daraja STK push) i PayPal transakcije.",
+    "requestTitle": "Zatraži M-Pesa plaćanje",
+    "phone": "Telefon (07.. ili 2547..)",
+    "amountKes": "Iznos (KES)",
+    "purpose": "Svrha",
+    "sendStk": "Pošalji STK zahtjev",
+    "transactions": "Transakcije",
+    "empty": "Nema transakcija.",
+    "table": {
+      "provider": "Provajder",
+      "amount": "Iznos",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Fakture i potvrde za izvršena plaćanja Worker pretplate.",
+    "loadFailed": "Nije moguće učitati dokumente naplate.",
+    "downloadFailed": {
+      "invoice": "Nije bilo moguće preuzeti fakturu.",
+      "receipt": "Nije bilo moguće preuzeti potvrdu."
+    },
+    "documentsTitle": "Dokumenti za naplatu",
+    "intro": "Preuzmite fakture i potvrde za završena plaćanja pretplate vaše organizacije.",
+    "disclaimer": "Ovi dokumenti evidentiraju plaćanja pretplate za Worker i služe u svrhe plaćanja i refundacije. Ne predstavljaju se kao KRA/eTIMS poreske fakture osim ako nisu posebno izdate putem usklađene eTIMS integracije.",
+    "invoices": "Fakture",
+    "noInvoices": "Još nema faktura.",
+    "receipts": "Potvrde",
+    "noReceipts": "Još nema potvrda.",
+    "downloadPdf": "Preuzmi PDF",
+    "table": {
+      "invoice": "Faktura",
+      "receipt": "Potvrda",
+      "date": "Datum",
+      "description": "Opis",
+      "amount": "Iznos",
+      "status": "Status",
+      "provider": "Pružalac usluge",
+      "reference": "Referenca"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Nije bilo moguće učitati pretplatu.",
+    "selectFirst": "Prvo izaberite plan pretplate.",
+    "mpesaSent": "M-Pesa STK zahtjev je poslat. Odobrite plaćanje na telefonu. Vaša pretplata će se aktivirati nakon potvrde plaćanja.",
+    "mpesaFailed": "Nije bilo moguće pokrenuti M-Pesa plaćanje.",
+    "noApproveUrl": "PayPal URL za odobrenje nije vraćen.",
+    "paypalFailed": "Nije bilo moguće pokrenuti PayPal plaćanje.",
+    "subtitleShort": "Upravljajte svojom Worker pretplatom.",
+    "subtitle": "Upravljajte svojim Worker planom, probnim periodom i naplatom.",
+    "current": "Trenutna pretplata",
+    "organisation": "Organizacija",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "14-dnevni besplatni probni period",
+    "trialEnds": "Probni period ističe",
+    "dayRemaining": "Preostao {n} dan",
+    "daysRemaining": "Preostalo {n} dana",
+    "renewsEnds": "Obnavlja se / ističe",
+    "chooseTitle": "Izaberite plan",
+    "chooseSubtitle": "Svi planovi uključuju Worker administrativni tok rada. Vaš 14-dnevni probni period je besplatan.",
+    "perMonth": "/ mjesec",
+    "planSelected": "{plan} je izabran. Vaš plan je sačuvan i spreman za plaćanje.",
+    "selectFailed": "Nije bilo moguće izabrati plan.",
+    "selected": "Izabrano",
+    "selectPlan": "Izaberite plan",
+    "activateTitle": "Aktivirajte svoju pretplatu",
+    "selectAbove": "Izaberite plan iznad da nastavite na plaćanje.",
+    "stkNote": "STK zahtjev biće poslat na broj telefona ispod.",
+    "phone": "Broj telefona",
+    "phonePlaceholder": "07.. ili 2547..",
+    "payMpesa": "Platite putem M-Pesa",
+    "paypalNote": "Nastavite na PayPal da platite izabrani plan u USD.",
+    "payPaypal": "Platite putem PayPal",
+    "settleNote": "Plaćene pretplate mogu se izmiriti putem M-Pesa ili PayPal.",
+    "activationNote": "Vaš izabrani plan biće aktiviran nakon uspješne potvrde plaćanja.",
+    "historyNote": "Istorija plaćanja dostupna je pod Administracija → Plaćanja."
+  },
+  "intl": {
+    "territory": "Teritorija",
+    "searchTerritory": "Pretraži teritoriju…",
+    "selectTerritory": "Izaberite svoju teritoriju",
+    "territoryRequired": "Molimo izaberite svoju teritoriju.",
+    "workingLanguage": "Radni jezik",
+    "meetingLanguage": "Jezik sastanka",
+    "useDefault": "Podrazumijevano za organizaciju",
+    "beta": "transkripcija beta",
+    "unavailable": "nema transkripcije"
+  },
+  "generate": {
+    "title": "Generiši dokument iz ove sesije",
+    "as": "Generiši kao",
+    "instructions": "Uputstvo (opciono)",
+    "placeholder": "npr. Pismo stalnom sekretaru sa sažetkom odluka 2 i 3",
+    "button": "Generiši",
+    "working": "Priprema vašeg dokumenta… ovo može potrajati minut.",
+    "done": "Dokument kreiran.",
+    "failed": "Nije bilo moguće generisati dokument.",
+    "hint": "Koristi transkripte označene za uključivanje, po redu. Vi pregledate i odobravate prije nego što se bilo šta podijeli."
+  },
+  "queue": {
+    "queued": "U redu čekanja za transkripciju. Ova stranica se automatski ažurira."
+  },
+  "pdfExport": {
+    "button": "Izvezi PDF"
+  },
+  "access": {
+    "readOnly": "Vaš radni prostor je samo za čitanje jer je vaš probni period ili pretplata istekla. Još uvijek možete pregledati i izvesti svoje dokumente.",
+    "grace": "Vaš probni period ili pretplata istekli su {date}. Imate još {n} dana punog pristupa.",
+    "trialEnding": "Vaš besplatni probni period ističe za {n} dana.",
+    "choosePlan": "Izaberite plan"
+  },
+  "sessionLang": {
+    "saved": "Jezik sastanka sačuvan. Primjenjuje se na snimke transkribovane od sada.",
+    "failed": "Nije bilo moguće sačuvati jezik sastanka."
+  },
+  "i18nNote": {
+    "machine": "Mašinski prevedeno"
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Dil",
+    "signIn": "Girmek",
+    "signOut": "Çykmak",
+    "createAccount": "Hasap döretmek",
+    "getStarted": "Başlamak",
+    "startFreeTrial": "Mugt synag başlamak",
+    "cancel": "Ýatyrmak",
+    "back": "Yza",
+    "download": "Ýükläp almak",
+    "viewAll": "Hemmesini görmek"
+  },
+  "brand": {
+    "tagline": "AI administratiw iş meýdançasy",
+    "secureWorkspace": "Howpsuz administratiw iş meýdançasy",
+    "badge": "Iňlis dili · Ses ýazgysy"
+  },
+  "nav": {
+    "dashboard": "Baş panel",
+    "workspace": "Iş meýdançasy",
+    "sessions": "Sessiýalar we ýazgylar",
+    "documents": "Resminamalar",
+    "correspondence": "Hat alyşmalar",
+    "knowledge": "Bilim bazasy",
+    "assistant": "Kömekçi",
+    "askWorker": "Worker-den soramak",
+    "actions": "Ýerine ýetirilmedik işler",
+    "administration": "Administrasiýa",
+    "organisation": "Gurama",
+    "users": "Ulanyjylar",
+    "audit": "Audit ýazgysy",
+    "subscription": "Abuna",
+    "payments": "Tölegler",
+    "billing": "Hasap-faktura"
+  },
+  "roles": {
+    "viewer": "Synlaýjy",
+    "officer": "Işgär",
+    "admin": "Administrator",
+    "superadmin": "Baş administrator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Aýdanlaryňyzy taýýar, arhiwlenen resminamalara öwüriň.",
+      "body": "Worker — ýygnaklardan, brifinglerden we hat alyşmalardan köp mukdarda resmi resminamalar taýýarlaýan guramalar üçin AI administratiw iş meýdançasy. Ýygnagy ýazga alyň ýa-da diktirläň, Worker ony ýazga geçirýär, teswirnamalary, ýatlatmalary, hatlary, hasabatlary we syýasy brifingleri taýýarlaýar we olary gözden geçirmekden we tassyklamakdan geçirýär — doly audit ýazgysy bilen.",
+      "badgeRow": "Ses ýazgysy · Iňlis dili · Howpsuz iş meýdançasy"
+    },
+    "what": {
+      "title": "Worker nämäni edýär",
+      "lead": "Ýygnaklaryň we hat alyşmalaryň töweregindäki adaty ofis işleri — sagatlar däl-de, minutlar içinde ýerine ýetirilýär.",
+      "f1": {
+        "title": "Ýazga almak we ýazga geçirmek",
+        "body": "Ýygnaklary, söhbetdeşlikleri, brifingleri ýa-da diktirlemeleri ýazga alyň. Ses ýazgysy iňlis dilinde ýerli ýazga geçirilýär."
+      },
+      "f2": {
+        "title": "AI bilen taýýarla",
+        "body": "Protokollary, ýatlamalary, hatlary, hasabatlary, syýasat gysgaça beýanlaryny we aýlanmalary dogry resmi görnüşde dörediň."
+      },
+      "f3": {
+        "title": "Gözden geçir we tassykla",
+        "body": "Her resminama taýýarlama, gözden geçirme, tassyklama we jemleme tapgyrlaryndan geçýär — adamlar gözegçilikde galýar."
+      },
+      "f4": {
+        "title": "Ygtybarly we barlagly",
+        "body": "Rola esaslanýan giriş we doly barlag ýazgysy. Hatlar diňe adam tarapyndan iberilýär."
+      }
+    },
+    "start": {
+      "title": "Başlamak bir minudy alýar",
+      "lead": "Hasap dörediň we 14 günlük mugt synagdan başlaň.",
+      "s1": {
+        "title": "Hasabyňyzy dörediň",
+        "body": "Adyňyzy, e-poçtaňyzy we paroly giriziň."
+      },
+      "s2": {
+        "title": "E-poçtaňyzy tassyklaň",
+        "body": "E-poçta bilen iberilen 6 sanly kody giriziň."
+      },
+      "s3": {
+        "title": "Ygtybarly giriň",
+        "body": "Her giriş e-poçta bilen iberilen bir gezeklik kod bilen tassyklanýar."
+      },
+      "s4": {
+        "title": "Işe başlaň",
+        "body": "Sessiýa dörediň, ýazga alyň we ilkinji resminamaňyzy dörediň."
+      }
+    },
+    "pricing": {
+      "title": "Ýönekeý abuna bahasy",
+      "lead": "14 günlük mugt synagdan başlaň. Guramaňyzyň öndürýän administratiw işiniň mukdaryna laýyk meýilnamany saýlaň.",
+      "perMonth": "/aý",
+      "mostPopular": "IŇ MEŞHUR",
+      "starter": {
+        "name": "Başlangyç",
+        "desc": "AI kömekli administratiw işe başlaýan kiçi toparlar üçin."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Yzygiderli, köp mukdarda resminama öndürýän guramalar üçin."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Uly administratiw iş ýükü bolan has uly guramalar üçin."
+      },
+      "paymentsNote": "Tölenýän abunalar üçin M-Pesa we PayPal goldanýar."
+    },
+    "final": {
+      "title": "Worker-i synap görmäge taýynmy?",
+      "cta": "Hasabyňyzy dörediň"
+    }
+  },
+  "auth": {
+    "email": "E-poçta",
+    "password": "Parol",
+    "fullName": "Doly ady",
+    "confirmPassword": "Paroly tassykla",
+    "currentPassword": "Häzirki parol",
+    "newPassword": "Täze parol",
+    "confirmNewPassword": "Täze paroly tassykla",
+    "code6": "6 sanly kod",
+    "signInFailed": "Giriş şowsuz boldy. Maglumatlaryňyzy barlaň.",
+    "forgotPassword": "Paroly ýatdan çykardyňyzmy?",
+    "mfaNotice": "Her girişi tassyklamak üçin bir gezeklik kod e-poçta bilen iberilýär.",
+    "createYourAccount": "Hasabyňyzy dörediň",
+    "pwMin": "Parol azyndan {n} simwoldan ybarat bolmaly.",
+    "newPwMin": "Täze parol azyndan {n} simwoldan ybarat bolmaly.",
+    "pwMismatch": "Parollar gabat gelmeýär.",
+    "createFailed": "Hasap döredip bolmady.",
+    "haveAccount": "Hasabyňyz barmy?",
+    "startAtSignIn": "Giriş ýa-da hasaba durmakdan başlaň.",
+    "goToSignIn": "Girişe geçiň",
+    "invalidCode": "Nädogry ýa-da möhleti geçen kod.",
+    "codeSent": "Täze kod iberildi.",
+    "resendFailed": "Täzeden iberip bolmady.",
+    "verifyEmailTitle": "E-poçtaňyzy tassyklaň",
+    "verifyEmailTo": "E-poçtaňyzy tassyklaň — {email}",
+    "verify": "Tassykla",
+    "resendCode": "Kody täzeden iber",
+    "signInAgain": "Haýyş, täzeden giriň.",
+    "mfaPrompt": "E-poçta bilen iberen giriş koduny giriziň",
+    "mfaPromptTo": "{email} salgysyna iberen giriş koduny giriziň",
+    "verifySignIn": "Tassykla we gir",
+    "requestFailed": "Haýyşy işläp bolmady.",
+    "resetTitle": "Parolyňyzy täzeden düzediň",
+    "sendResetCode": "Täzeden düzmek koduny iber",
+    "backToSignIn": "Girişe dolan",
+    "resetPrompt": "Iberen kodumyzy giriziň we täze parol saýlaň",
+    "resetPassword": "Paroly täzeden düzet",
+    "setNewPassword": "Täze parol dörediň",
+    "forcedChange": "Howpsuzlyk üçin, dowam etmezden öň öz parolyňyzy dörediň.",
+    "updateAccountPassword": "Hasabyňyzyň parolyny täzeläň.",
+    "changeFailed": "Paroly üýtgedip bolmady.",
+    "updatePassword": "Paroly täzele",
+    "signOutInstead": "Ýerine çykyň"
+  },
+  "notFound": {
+    "title": "Sahypa tapylmady",
+    "subtitle": "Bu iş giňişliginde beýle sahypa ýok.",
+    "back": "Dolandyryş paneliňe dolan"
+  },
+  "status": {
+    "draft": "garalama",
+    "in_review": "gözden geçirilýär",
+    "approved": "tassyklandy",
+    "final": "jemleýji",
+    "archived": "arhiwlendi",
+    "open": "açyk",
+    "processing": "işlenýär",
+    "ready": "taýýar",
+    "pending": "garaşylýar",
+    "transcribing": "transkripsiýa edilýär",
+    "transcribed": "transkripsiýa edildi",
+    "failed": "şowsuz",
+    "sent": "iberildi",
+    "received": "alynýar",
+    "completed": "tamamlandy",
+    "cancelled": "ýatyryldy",
+    "active": "işjeň",
+    "suspended": "durduruldy"
+  },
+  "kind": {
+    "meeting": "ýygnak",
+    "interview": "söhbetdeşlik",
+    "briefing": "brifing",
+    "dictation": "diktant",
+    "field_report": "meýdan hasabaty",
+    "consultation": "maslahat",
+    "other": "beýleki"
+  },
+  "classification": {
+    "unclassified": "klassifikasiýa edilmedik",
+    "internal": "içerki",
+    "confidential": "gizlin",
+    "restricted": "çäklendirilen"
+  },
+  "dashboard": {
+    "welcome": "Hoş geldiňiz, {name}",
+    "defaultName": "Işgär",
+    "subtitle": "Siziň administratiw iş meýdançyňyz — ýazga almak, taýýarlamak, gözden geçirmek we faýllamak.",
+    "stats": {
+      "sessions": "Sessiýalar",
+      "documents": "Resminamalar",
+      "awaitingReview": "Gözden geçirmäge garaşylýar",
+      "outstandingActions": "Ýerine ýetirilmedik çäreler"
+    },
+    "recentSessions": "Soňky sessiýalar",
+    "documentsToAction": "Çäre görülmeli resminamalar",
+    "noSessions": "Häzir sessiýalar ýok.",
+    "nothingToAction": "Ünsüňizi talap edýän zat ýok."
+  },
+  "sessions": {
+    "subtitle": "Her sessiýa bir iş faýlydyr — audio, transkripsiýa we ondan döredilen resminamalar.",
+    "new": "Täze sessiýa",
+    "createFailed": "Sessiýa döredip bolmady.",
+    "titlePlaceholder": "meselem, Welaýat Howpsuzlyk Komiteti — Hepdelik brifing",
+    "create": "Sessiýa döretmek",
+    "empty": "Häzir sessiýalar ýok. Ýazga almaga başlamak üçin birini dörediň.",
+    "fields": {
+      "title": "Ady",
+      "kind": "Görnüşi",
+      "date": "Sene",
+      "classification": "Klassifikasiýa",
+      "status": "Ýagdaýy",
+      "department": "Bölüm",
+      "location": "Ýerleşýän ýeri"
+    }
+  },
+  "session": {
+    "loadFailed": "Sessiýa ýüklenip bilinmedi.",
+    "micDenied": "Mikrofona giriş gadagan edildi ýa-da elýeterli däl.",
+    "audioSaved": "Audio sessiýa ýazdyryldy.",
+    "uploadFailed": "Ýüklemek başartmady.",
+    "transcribing": "Ýerli ýazga geçirilýär — uzyn audio üçin birnäçe wagt alyp biler.",
+    "transcribed": "Ýazga geçirmek tamamlandy.",
+    "transcribeFailed": "Ýazga geçirmek başartmady. STT hyzmatynyň işleýändigini barlaň.",
+    "updateFailed": "Täzelenip bilinmedi.",
+    "draftingMinutes": "Transkriptden teswirnama taýýarlanýar…",
+    "minutesCreated": "Teswirnamanyň taslamasy döredildi.",
+    "minutesFailed": "Teswirnama döredilip bilinmedi.",
+    "notFound": "Sessiýa tapylmady.",
+    "noDate": "sene ýok",
+    "noLocation": "ýerleşýän ýeri ýok",
+    "generateMinutes": "Teswirnama döret",
+    "captureAudio": "Audio ýazga al",
+    "stopSave": "Dur & ýazdyr",
+    "startRecording": "Ýazga başla",
+    "or": "ýa-da",
+    "uploadAudio": "Audio ýükle",
+    "audioNote": "Audio hostda saklanýar. Ýazga geçirmek ýerli ýagdaýda iňlis dilinde işleýär. Teswirnama bu sessiýadaky her klipi tertibi bilen birleşdirýär.",
+    "documentsFrom": "Bu sessiýadan resminamalar",
+    "noDocuments": "Häzir resminama ýok. Klip ýazga geçiriň, soň teswirnama dörediň.",
+    "recordingsTitle": "Ýazgylar & transkriptler",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Häzir ýazgy ýok. Ýokardaky audio ýazga alyň ýa-da ýükläň.",
+    "includeTitle": "Teswirnama döredilende bu klipi goş",
+    "inMinutes": "Teswirnamada",
+    "transcribe": "Ýazga geçir",
+    "transcribeHint": "Bu klipiň transkriptini görmek we redaktirlemek üçin ýazga geçiriň.",
+    "audioLoadFailed": "Audio ýüklenip bilinmedi.",
+    "loadAudio": "Audio ýükle",
+    "words": "{n} söz",
+    "verified": "tassyklandy",
+    "editVerify": "Redaktirle we tassykla",
+    "saveVerified": "Ýatda sakla we tassyklandy diýip belle",
+    "saveDraft": "Garaşsyz ýatda sakla",
+    "emptyTranscript": "Transkript boş."
+  },
+  "docType": {
+    "minutes": "protokol",
+    "memo": "bellik",
+    "letter": "hat",
+    "report": "hasabat",
+    "policy_brief": "syýasat gysgaça beýany",
+    "briefing_note": "brifing bellik",
+    "concept_note": "konsepsiýa bellik",
+    "circular": "töwerek hat",
+    "action_matrix": "hereket matrisasy",
+    "speech": "çykyş"
+  },
+  "approval": {
+    "submit": "tabşyryldy",
+    "submitted": "tabşyryldy",
+    "approve": "tassyklandy",
+    "approved": "tassyklandy",
+    "reject": "ret edildi",
+    "rejected": "ret edildi",
+    "finalize": "jemlendi",
+    "finalized": "jemlendi"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Içki bellik",
+      "desc": "Kim / Kimden / Mowzuk bilen standart içki bellik."
+    },
+    "letter-official": {
+      "name": "Resmi hat",
+      "desc": "Ofis blankynda resmi çykyş haty."
+    },
+    "circular-general": {
+      "name": "Töwerek hat",
+      "desc": "Köp alyjylara ýaýradylan duýduryş."
+    },
+    "report-standard": {
+      "name": "Hasabat",
+      "desc": "Jemleme, bölümler we teklipler bilen umumy hasabat."
+    },
+    "policy-brief": {
+      "name": "Syýasat gysgaça beýany",
+      "desc": "Karar berijiler üçin gysgaça beýan."
+    },
+    "briefing-note": {
+      "name": "Brifing bellik",
+      "desc": "Duşuşykdan öň ýolbaşçyny habardar etmek üçin gysga bellik."
+    },
+    "concept-note": {
+      "name": "Konsepsiýa bellik",
+      "desc": "Teklip edilýän maksatnama ýa-da çäreleriň meýilnamasy."
+    },
+    "minutes-blank": {
+      "name": "Ýygnak protokoly (boş)",
+      "desc": "El bilen doldurmak üçin boş protokol gurluşy."
+    },
+    "speech-remarks": {
+      "name": "Çykyş / Bellikler",
+      "desc": "Çäre üçin resmi bellikler."
+    }
+  },
+  "documents": {
+    "subtitle": "Protokollar, ýazgylar, hatlar, hasabatlar we gysgaça maglumatlar — AI bilen taýýarlanyp, adamlar tarapyndan tassyklandy.",
+    "startFromTemplate": "Şablondan başla",
+    "fromSpreadsheet": "Elektron tablisadan hasabat",
+    "draftWithAI": "AI bilen taýýarla",
+    "templateTitle": "Şablondan başlaň",
+    "allTypes": "Ähli görnüşler",
+    "orgTemplates": "Guramaňyzyň şablonlary",
+    "savedByOrg": "Guramaňyz tarapyndan saklandy",
+    "useTemplate": "Bu şablony ulanyň",
+    "generalTemplates": "Umumy şablonlar",
+    "spreadsheetFailed": "Şol elektron tablisadan hasabat döredip bolmady.",
+    "templateFailed": "Şablondan döredip bolmady.",
+    "draftFailed": "Resminamany taýýarlap bolmady.",
+    "fields": {
+      "type": "Resminamanyň görnüşi",
+      "title": "At",
+      "recipient": "Alyjy (hökmany däl)",
+      "department": "Bölüm (hökmany däl)",
+      "brief": "Görkezmeler / gysgaça maglumat"
+    },
+    "briefPlaceholder": "Maksadyny, esasy nokatlary we goşmaly faktlary beýan ediň. Kömekçi siziň redaktirläp we tassyk lap biljek resmi resminamany taýýarlar.",
+    "generateDraft": "Taýýarlamany döret",
+    "empty": "Häzir resminamalar ýok.",
+    "table": {
+      "title": "At",
+      "type": "Görnüş",
+      "ref": "Belgi",
+      "status": "Ýagdaý",
+      "ver": "Wersiýa"
+    }
+  },
+  "doc": {
+    "loadFailed": "Resminamany ýükläp bolmady.",
+    "invalidJson": "Mazmun dogry JSON däl.",
+    "saved": "Saklandy. Wersiýa ýokarlandyryldy.",
+    "saveFailed": "Saklap bolmady.",
+    "done": {
+      "submit": "Resminama gözden geçirmek üçin iberildi.",
+      "approve": "Resminama tassyklandy.",
+      "reject": "Resminama ret edildi.",
+      "finalize": "Resminama gutarnykly taýýarlandy."
+    },
+    "failed": {
+      "submit": "Iberip bolmady.",
+      "approve": "Tassyk lap bolmady.",
+      "reject": "Ret edip bolmady.",
+      "finalize": "Gutarnykly taýýarlap bolmady."
+    },
+    "templateName": "Şablon ady",
+    "templateDefault": "{title} şablony",
+    "templateSaved": "Guramaňyz üçin gaýtadan ulanylýan şablon hökmünde saklandy.",
+    "templateSaveFailed": "Şablon saklanmady.",
+    "exportFailed": "Eksport şowsuz boldy.",
+    "notFound": "Resminama tapylmady.",
+    "exportDocx": "DOCX eksport et",
+    "exportPptx": "PPTX eksport et",
+    "exportXlsx": "XLSX eksport et",
+    "saveAsTemplate": "Şablon hökmünde sakla",
+    "content": "Mazmun",
+    "workflow": "Iş akymy",
+    "aiAssisted": "AI kömekli garalama",
+    "auditChain": "Audit zynjyry: audio → transkript → AI garalama → adam redaksiýasy → tassyklama → jemleýji. Her ädim ýazga alynýar.",
+    "comment": "Teswir (hökmany däl)",
+    "commentPlaceholder": "Ýazgy üçin bellik goşuň",
+    "submit": "Görkezmek üçin iber",
+    "approve": "Tassykla",
+    "reject": "Ret et",
+    "finalize": "Jemle",
+    "finalLocked": "Jemleýji — redaktirlemek üçin gulplanan",
+    "editJson": "Mazmuny redaktirle (JSON)",
+    "jsonNote": "Gurluşly mazmun markaly DOCX-i dolandyrýar. Aşakdaky meýdanlary redaktirläp saklaň; marka we ýerleşiş eksportda awtomatik ýerine ýetirilýär.",
+    "saveContent": "Mazmuny sakla",
+    "approvalHistory": "Tassyklama taryhy"
+  },
+  "emails": {
+    "subtitle": "AI bilen hatlar we e-poçta garalamalary düzüň. Adam iber düwmesine basýança hiç zat iberilmeýär.",
+    "needIntent": "Garalama düzmek üçin kömekçä tema ýa-da maksat beriň.",
+    "draftReady": "Garalama taýýar. Ibermezden öň gözden geçiriň we redaktirläň.",
+    "draftFailed": "Garalama şowsuz boldy.",
+    "draftSaved": "Garalama saklandy.",
+    "saveFailed": "Saklanmady.",
+    "confirmSend": "Bu e-poçta häzir iberilsinmi? Bu hereket audit ýazgysynda ýazga alynýar.",
+    "sent": "E-poçta iberildi.",
+    "sendFailed": "Ibermek şowsuz boldy.",
+    "compose": "Düz",
+    "messages": "Habarlar",
+    "empty": "Häzir çeşme ýok.",
+    "message": "Habar",
+    "details": "Jikme-jiklikler",
+    "to": "Kime",
+    "cc": "Cc",
+    "subject": "Tema",
+    "intent": "Bu näme aýtmaly? (AI üçin)",
+    "intentPlaceholder": "Meselem: Anna günü sagat 10-da howpsuzlyk barazasyna ýolbaşçylary çagyr",
+    "body": "Esasy tekst",
+    "saveDraft": "Garalama ýazgysyny sakla",
+    "toLabel": "Kime:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Tema:",
+    "aiAssisted": "AI kömegi bilen",
+    "sendNow": "Häzir iber",
+    "selectHint": "Habar saýlaň ýa-da täzesini düzüň."
+  },
+  "knowledge": {
+    "subtitle": "Kömekçiniň peýdalanyp biljek maglumat çeşmeleri — syýasatlar, şablonlar, öňki mysallar.",
+    "added": "Bilim binýadyna goşuldy.",
+    "addFailed": "Goşup bolmady.",
+    "chooseFile": "Ýükläp almak üçin faýl saýlaň.",
+    "ocrFailed": "Faýl saklandy. OCR bu faýldan tekst oýlap bilmedi (hiliniň pes bolmagy mümkin). Teksti el bilen goýup bilersiňiz.",
+    "extracted": "Faýl saklandy we {n} sany nyşan tekst alyndy.",
+    "noText": "Faýl saklandy. Bu formatdan tekst alyp bolmady.",
+    "uploadFailed": "Ýükleme şowsuz boldy.",
+    "confirmRemove": "Bu çeşmäni aýyrmalymy?",
+    "uploadTitle": "Resminama ýükläň",
+    "file": "Faýl",
+    "titleOptional": "At (hökmany däl)",
+    "titleDefault": "Faýl adyna görä bellenýär",
+    "categoryOptional": "Kategoriýa (hökmany däl)",
+    "uploadExtract": "Ýükle we tekst aýyr",
+    "uploadNote": "Word, PDF, CSV we tekst faýllarynyň teksti awtomatik alynýar. Skanirlenen PDF-ler we suratlar OCR bilen awtomatik okalýar.",
+    "pasteTitle": "Çeşme goş (teksti goýuň)",
+    "title": "At",
+    "category": "Kategoriýa",
+    "categoryPlaceholder": "Meselem: Sirkulýarlar, Syýasatlar",
+    "textContent": "Tekst mazmuny",
+    "add": "Goş",
+    "references": "Çeşmeler",
+    "empty": "Häzirje hiç zat ýok.",
+    "uncategorised": "Kategoriýasyz",
+    "remove": "Aýyr"
+  },
+  "assistant": {
+    "subtitle": "Ýönekeý iňlis dilinde görkezme beriň — iş giňişligiňizde jemläň, tapyň, garalama ýazyň ýa-da düşündiriň.",
+    "failed": "Kömekçi muny işläp bilmedi.",
+    "instruction": "Görkezme",
+    "placeholder": "Meselem, şu hepdäniň howpsuzlyk komitetiniň kararlaryny jemläň ýa-da tassyklamaga garaşýan ýazgylary sanawaň.",
+    "ask": "Sora"
+  },
+  "actions": {
+    "subtitle": "Mejlisdäki teswirlerden we hereket matrisalaryndan alynan hereket elementleri.",
+    "empty": "Ýerine ýetirilmedik hereket tapylmady.",
+    "table": {
+      "action": "Hereket",
+      "responsible": "Jogapkär",
+      "timeline": "Möhlet",
+      "source": "Çeşme"
+    }
+  },
+  "paypal": {
+    "title": "PayPal tölegi",
+    "subtitle": "Abunalyk töleginiň tassyklamasy.",
+    "confirming": "PayPal tölegiňiz tassyklaýar...",
+    "noOrder": "PayPal sargyt yzyna gaýtarylmady.",
+    "confirmed": "Töleg tassyklandy. Worker abunalygyňyz indi işjeň.",
+    "failed": "PayPal tölegi tassyklanyp bilinmedi.",
+    "success": "Töleg üstünlikli",
+    "viewSubscription": "Abunalygy gör",
+    "errorTitle": "Töleg tassyklanyp bilinmedi",
+    "returnToSubscription": "Abunalyga dolan"
+  },
+  "tenant": {
+    "saved": "Gurama maglumatlary saklandy. Olar eksport edýän her resminamaňyzda görkezilýär.",
+    "saveFailed": "Saklap bolmady.",
+    "logoUploaded": "Logotip ýüklendi.",
+    "signatureUploaded": "Gol ýüklendi.",
+    "uploadFailed": "Ýüklemek şowsuz boldy.",
+    "subtitleShort": "Iş meýdançaňyz üçin marka.",
+    "noOrg": "Bu hasap gurama bilen baglanyşykly däl.",
+    "subtitle": "Adyňyz, hat kagyzy, logotip we gol ýazýan her resminamaňyzda görkezilýär.",
+    "letterhead": "Hat kagyzy",
+    "orgName": "Guramanyň ady",
+    "line": "Hat kagyzy setiri {n}",
+    "line1Placeholder": "Meselem, ... WELAÝAT HÄKIMLIGI",
+    "line2Placeholder": "Meselem, ... bölümi",
+    "line3Placeholder": "Meselem, bölüm / ofis",
+    "saveLetterhead": "Hat kagyzyny sakla",
+    "blankHint": "Guramanyň adyna dolanmak üçin setirleri boş goýuň.",
+    "logoSignature": "Logotip we gol",
+    "logo": "Gerbi / logotip (PNG ýa-da JPG)",
+    "signature": "Elektron gol (PNG ýa-da JPG)",
+    "uploaded": "ýüklendi",
+    "brandingNote": "Logotip resminamanyň sözbaşysynda we slaýd at sahypalarynda görkezilýär. Gol eksport edilen resminamalaryň soňunda ýerleşdirilýär. Iň gowy netije üçin dury fonly PNG ulanyň."
+  },
+  "users": {
+    "createdTemp": "Ulanyjy döredildi. Wagtlaýyn parol: {temp} — howpsuz paýlaşyň; ilkinji girişde ony üýtgetmeli.",
+    "created": "Ulanyjy döredildi.",
+    "createFailed": "Ulanyjyny döredip bolmady.",
+    "confirmRemove": "{name} aýrylsynmy?",
+    "removeFailed": "Aýryp bolmady.",
+    "subtitle": "Girişi dolandyryň. Superadmin hasabyny bu ýerde üýtgedip bolmaýar.",
+    "add": "Ulanyjy goş",
+    "create": "Ulanyjy döret",
+    "empty": "Ulanyjy ýok.",
+    "fields": {
+      "name": "Ady",
+      "email": "E-poçta",
+      "role": "Roly",
+      "department": "Bölüm",
+      "status": "Ýagdaýy"
+    },
+    "suspend": "Tolgut",
+    "reinstate": "Dikelt",
+    "remove": "Aýyr"
+  },
+  "audit": {
+    "subtitle": "Her möhüm hereket ýazga alynýar. Ýazgylarda diňe metadata we identifikatorlar saklanýar — hiç haçan resminama göwresi ýa-da ses ýazgysy däl.",
+    "empty": "Audit ýazgysy ýok.",
+    "table": {
+      "when": "Haçan",
+      "actor": "Hereket ediji",
+      "action": "Hereket",
+      "resource": "Çeşme"
+    },
+    "system": "ulgam"
+  },
+  "payments": {
+    "stkSent": "STK push iberildi. Töleg edijiden telefonynda tassyklamagyny haýyş ediň.",
+    "initiateFailed": "Tölegi başladyp bolmady.",
+    "subtitle": "M-Pesa (Daraja STK push) we PayPal amallary.",
+    "requestTitle": "M-Pesa tölegini sora",
+    "phone": "Telefon (07.. ýa-da 2547..)",
+    "amountKes": "Mukdary (KES)",
+    "purpose": "Maksady",
+    "sendStk": "STK push iber",
+    "transactions": "Amallar",
+    "empty": "Amal ýok.",
+    "table": {
+      "provider": "Üpjün ediji",
+      "amount": "Mukdary",
+      "status": "Ýagdaýy",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Tamamlanan Worker abuna tölegleri üçin hasap-fakturalar we kwitansiýalar.",
+    "loadFailed": "Hasap-faktura resminamalaryny ýükläp bolmady.",
+    "downloadFailed": {
+      "invoice": "Hasap-fakturany ýükläp bolmady.",
+      "receipt": "Kwitansiýany ýükläp bolmady."
+    },
+    "documentsTitle": "Hasap-faktura resminamalary",
+    "intro": "Guramaňyzyň tamamlanan abuna tölegleri üçin hasap-fakturalary we kwitansiýalary ýükläň.",
+    "disclaimer": "Bu resminamalar Worker abuna töleglerini ýazga alýar we töleg hem-de öwezini dolmak maksatlary üçin berilýär. Olar laýyk eTIMS integrasiýasy arkaly aýratyn berilmedik bolsa, KRA/eTIMS salgyt hasap-fakturasy hökmünde görkezilmeýär.",
+    "invoices": "Hasap-fakturalar",
+    "noInvoices": "Hasap-faktura ýok.",
+    "receipts": "Kwitansiýalar",
+    "noReceipts": "Kwitansiýa ýok.",
+    "downloadPdf": "PDF ýüklä",
+    "table": {
+      "invoice": "Hasap-faktura",
+      "receipt": "Kwitansiýa",
+      "date": "Sene",
+      "description": "Düşündiriş",
+      "amount": "Mukdar",
+      "status": "Ýagdaýy",
+      "provider": "Üpjün ediji",
+      "reference": "Salgylanma"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abunany ýükläp bolmady.",
+    "selectFirst": "Ilki abuna meýilnamasyny saýlaň.",
+    "mpesaSent": "M-Pesa STK push iberildi. Tölegi telefonyňyzda tassyklaň. Töleg tassyklanandan soň abunaňyz işjeňleşer.",
+    "mpesaFailed": "M-Pesa tölegini başladyp bolmady.",
+    "noApproveUrl": "PayPal tassyklama URL-y yzyna gaýtarylmady.",
+    "paypalFailed": "PayPal tölegini başladyp bolmady.",
+    "subtitleShort": "Worker abunaňyzy dolandyryň.",
+    "subtitle": "Worker meýilnamaňyzy, synag möhletiňizi we hasap-fakturany dolandyryň.",
+    "current": "Häzirki abuna",
+    "organisation": "Gurama",
+    "status": "Ýagdaýy",
+    "plan": "Meýilnama",
+    "freeTrial": "14 günlük mugt synag",
+    "trialEnds": "Synag gutarýar",
+    "dayRemaining": "{n} gün galdy",
+    "daysRemaining": "{n} gün galdy",
+    "renewsEnds": "Täzelenýär / gutarýar",
+    "chooseTitle": "Meýilnama saýlaň",
+    "chooseSubtitle": "Ähli meýilnamalar Worker administratiw iş akymyny öz içine alýar. 14 günlük synagyňyz mugt.",
+    "perMonth": "/ aý",
+    "planSelected": "{plan} saýlandy. Meýilnamaňyz saklandy we tölege taýýar.",
+    "selectFailed": "Meýilnamany saýlap bolmady.",
+    "selected": "Saýlandy",
+    "selectPlan": "Meýilnama saýlaň",
+    "activateTitle": "Abunalygyňyzy işjeňleşdiriň",
+    "selectAbove": "Tölegi dowam etdirmek üçin ýokardan meýilnama saýlaň.",
+    "stkNote": "Aşakdaky telefon belgisine STK push iberiler.",
+    "phone": "Telefon belgisi",
+    "phonePlaceholder": "07.. ýa-da 2547..",
+    "payMpesa": "M-Pesa bilen töle",
+    "paypalNote": "Saýlanan meýilnama üçin USD bilen tölemek üçin PayPal-a dowam ediň.",
+    "payPaypal": "PayPal bilen töle",
+    "settleNote": "Tölenen abunalyklar M-Pesa ýa-da PayPal arkaly hasaplaşylyp bilner.",
+    "activationNote": "Saýlanan meýilnamaňyz töleg tassyklanandan soň işjeňleşdiriler.",
+    "historyNote": "Töleg taryhy Administrasiýa → Tölegler bölüminde elýeterlidir."
+  },
+  "intl": {
+    "territory": "Territoriýa",
+    "searchTerritory": "Territoriýany gözläň…",
+    "selectTerritory": "Territoriýaňyzy saýlaň",
+    "territoryRequired": "Territoriýaňyzy saýlaň.",
+    "workingLanguage": "Iş dili",
+    "meetingLanguage": "Duşuşyk dili",
+    "useDefault": "Guramanyň deslapky sazlamasy",
+    "beta": "transkripsiýa beta",
+    "unavailable": "transkripsiýa ýok"
+  },
+  "generate": {
+    "title": "Bu sessiýadan resminama dörediň",
+    "as": "Hökmünde dörediň",
+    "instructions": "Görkezme (hökmany däl)",
+    "placeholder": "meselem, 2-nji we 3-nji kararlary jemleýän Hemişelik sekretara hat",
+    "button": "Döret",
+    "working": "Resminamaňyz taýýarlanýar… bu bir minut alyp biler.",
+    "done": "Resminama döredildi.",
+    "failed": "Resminama döredip bolmady.",
+    "hint": "Goşulmak üçin bellik edilen transkriptleri tertip boýunça ulanýar. Hiç zat paýlaşylmazdan öň siz gözden geçirip tassyklaýarsyňyz."
+  },
+  "queue": {
+    "queued": "Transkripsiýa üçin nobata goýuldy. Bu sahypa awtomatik täzelenýär."
+  },
+  "pdfExport": {
+    "button": "PDF eksport et"
+  },
+  "access": {
+    "readOnly": "Synag ýa-da abunalygyňyz gutarany üçin iş giňişligiňiz diňe okamak üçin. Resminamalaryňyzy görüp we eksport edip bilersiňiz.",
+    "grace": "Synag ýa-da abunalygyňyz {date} senesinde gutardy. Doly giriş üçin {n} günüňiz galdy.",
+    "trialEnding": "Mugt synagyňyz {n} gün içinde gutarýar.",
+    "choosePlan": "Meýilnama saýlaň"
+  },
+  "sessionLang": {
+    "saved": "Duşuşyk dili saklandy. Ol mundan beýläk transkripsiýa edilýän ýazgylara ulanylýar.",
+    "failed": "Duşuşyk dilini saklap bolmady."
+  },
+  "i18nNote": {
+    "machine": "Maşyn terjimesi"
+  }
+}

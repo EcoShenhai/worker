@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Idioma",
+    "signIn": "Iniciar sessão",
+    "signOut": "Terminar sessão",
+    "createAccount": "Criar conta",
+    "getStarted": "Começar",
+    "startFreeTrial": "Iniciar período de teste gratuito",
+    "cancel": "Cancelar",
+    "back": "Voltar",
+    "download": "Transferir",
+    "viewAll": "Ver tudo"
+  },
+  "brand": {
+    "tagline": "Espaço de trabalho administrativo com IA",
+    "secureWorkspace": "Espaço de trabalho administrativo seguro",
+    "badge": "Inglês · Áudio"
+  },
+  "nav": {
+    "dashboard": "Painel",
+    "workspace": "Espaço de trabalho",
+    "sessions": "Sessões e gravações",
+    "documents": "Documentos",
+    "correspondence": "Correspondência",
+    "knowledge": "Base de conhecimento",
+    "assistant": "Assistente",
+    "askWorker": "Perguntar ao Worker",
+    "actions": "Ações pendentes",
+    "administration": "Administração",
+    "organisation": "Organização",
+    "users": "Utilizadores",
+    "audit": "Registo de auditoria",
+    "subscription": "Subscrição",
+    "payments": "Pagamentos",
+    "billing": "Faturação"
+  },
+  "roles": {
+    "viewer": "Visualizador",
+    "officer": "Técnico",
+    "admin": "Administrador",
+    "superadmin": "Superadministrador"
+  },
+  "landing": {
+    "hero": {
+      "title": "Transforme o que diz em documentação finalizada e arquivada.",
+      "body": "O Worker é um espaço de trabalho administrativo com IA para organizações que produzem grandes quantidades de documentos formais a partir de reuniões, briefings e correspondência. Grave uma reunião ou dite, e o Worker transcreve-a, elabora atas, memorandos, cartas, relatórios e notas de política, e condu-los pelo processo de revisão e aprovação — com um registo de auditoria completo.",
+      "badgeRow": "Áudio · Inglês · Espaço de trabalho seguro"
+    },
+    "what": {
+      "title": "O que o Worker faz",
+      "lead": "O trabalho administrativo de rotina que envolve reuniões e correspondência — tratado em minutos, não em horas.",
+      "f1": {
+        "title": "Gravar e transcrever",
+        "body": "Capture reuniões, entrevistas, briefings ou ditado. O áudio é transcrito localmente em inglês."
+      },
+      "f2": {
+        "title": "Redigir com IA",
+        "body": "Gere atas, memorandos, ofícios, relatórios, notas de política e circulares na forma oficial correta."
+      },
+      "f3": {
+        "title": "Rever e aprovar",
+        "body": "Cada documento passa por rascunho, revisão, aprovação e finalização — as pessoas mantêm o controlo."
+      },
+      "f4": {
+        "title": "Seguro e auditado",
+        "body": "Acesso baseado em funções e um registo de auditoria completo. A correspondência é apenas enviada por uma pessoa."
+      }
+    },
+    "start": {
+      "title": "Começar leva um minuto",
+      "lead": "Crie uma conta e inicie o seu período de teste gratuito de 14 dias.",
+      "s1": {
+        "title": "Crie a sua conta",
+        "body": "Introduza o seu nome, email e uma palavra-passe."
+      },
+      "s2": {
+        "title": "Verifique o seu email",
+        "body": "Introduza o código de 6 dígitos que enviamos por email."
+      },
+      "s3": {
+        "title": "Inicie sessão com segurança",
+        "body": "Cada início de sessão é confirmado com um código de uso único enviado por email."
+      },
+      "s4": {
+        "title": "Comece a trabalhar",
+        "body": "Crie uma sessão, grave e gere o seu primeiro documento."
+      }
+    },
+    "pricing": {
+      "title": "Preços de subscrição simples",
+      "lead": "Comece com um período de teste gratuito de 14 dias. Escolha o plano que se adequa ao volume de trabalho administrativo da sua organização.",
+      "perMonth": "/mês",
+      "mostPopular": "MAIS POPULAR",
+      "starter": {
+        "name": "Inicial",
+        "desc": "Para pequenas equipas que estão a começar com trabalho administrativo assistido por IA."
+      },
+      "professional": {
+        "name": "Profissional",
+        "desc": "Para organizações com produção regular e elevada de documentos."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Para organizações maiores com cargas de trabalho administrativo substanciais."
+      },
+      "paymentsNote": "M-Pesa e PayPal suportados para subscrições pagas."
+    },
+    "final": {
+      "title": "Pronto para experimentar o Worker?",
+      "cta": "Crie a sua conta"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Palavra-passe",
+    "fullName": "Nome completo",
+    "confirmPassword": "Confirmar palavra-passe",
+    "currentPassword": "Palavra-passe atual",
+    "newPassword": "Nova palavra-passe",
+    "confirmNewPassword": "Confirmar nova palavra-passe",
+    "code6": "Código de 6 dígitos",
+    "signInFailed": "Falha ao iniciar sessão. Verifique as suas credenciais.",
+    "forgotPassword": "Esqueceu-se da palavra-passe?",
+    "mfaNotice": "Um código de uso único é enviado por email para confirmar cada início de sessão.",
+    "createYourAccount": "Crie a sua conta",
+    "pwMin": "A palavra-passe deve ter pelo menos {n} caracteres.",
+    "newPwMin": "A nova palavra-passe deve ter pelo menos {n} caracteres.",
+    "pwMismatch": "As palavras-passe não coincidem.",
+    "createFailed": "Não foi possível criar a conta.",
+    "haveAccount": "Já tem uma conta?",
+    "startAtSignIn": "Comece por iniciar sessão ou registar-se.",
+    "goToSignIn": "Ir para iniciar sessão",
+    "invalidCode": "Código inválido ou expirado.",
+    "codeSent": "Foi enviado um novo código.",
+    "resendFailed": "Não foi possível reenviar.",
+    "verifyEmailTitle": "Verifique o seu email",
+    "verifyEmailTo": "Verifique o seu email — {email}",
+    "verify": "Verificar",
+    "resendCode": "Reenviar código",
+    "signInAgain": "Inicie sessão novamente.",
+    "mfaPrompt": "Introduza o código de início de sessão que enviámos por email",
+    "mfaPromptTo": "Introduza o código de início de sessão que enviámos para {email}",
+    "verifySignIn": "Verificar e iniciar sessão",
+    "requestFailed": "Não foi possível processar o pedido.",
+    "resetTitle": "Redefina a sua palavra-passe",
+    "sendResetCode": "Enviar código de redefinição",
+    "backToSignIn": "Voltar ao início de sessão",
+    "resetPrompt": "Introduza o código que enviámos por email e escolha uma nova palavra-passe",
+    "resetPassword": "Redefinir palavra-passe",
+    "setNewPassword": "Defina uma nova palavra-passe",
+    "forcedChange": "Por segurança, defina a sua própria palavra-passe antes de continuar.",
+    "updateAccountPassword": "Atualize a palavra-passe da sua conta.",
+    "changeFailed": "Não foi possível alterar a palavra-passe.",
+    "updatePassword": "Atualizar palavra-passe",
+    "signOutInstead": "Terminar sessão"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "subtitle": "Essa página não existe neste espaço de trabalho.",
+    "back": "Voltar ao painel"
+  },
+  "status": {
+    "draft": "rascunho",
+    "in_review": "em revisão",
+    "approved": "aprovado",
+    "final": "final",
+    "archived": "arquivado",
+    "open": "aberto",
+    "processing": "em processamento",
+    "ready": "pronto",
+    "pending": "pendente",
+    "transcribing": "a transcrever",
+    "transcribed": "transcrito",
+    "failed": "falhou",
+    "sent": "enviado",
+    "received": "recebido",
+    "completed": "concluído",
+    "cancelled": "cancelado",
+    "active": "ativo",
+    "suspended": "suspenso"
+  },
+  "kind": {
+    "meeting": "reunião",
+    "interview": "entrevista",
+    "briefing": "sessão informativa",
+    "dictation": "ditado",
+    "field_report": "relatório de campo",
+    "consultation": "consulta",
+    "other": "outro"
+  },
+  "classification": {
+    "unclassified": "não classificado",
+    "internal": "interno",
+    "confidential": "confidencial",
+    "restricted": "restrito"
+  },
+  "dashboard": {
+    "welcome": "Bem-vindo, {name}",
+    "defaultName": "Funcionário",
+    "subtitle": "O seu espaço de trabalho administrativo — capturar, redigir, rever e arquivar.",
+    "stats": {
+      "sessions": "Sessões",
+      "documents": "Documentos",
+      "awaitingReview": "A aguardar revisão",
+      "outstandingActions": "Ações pendentes"
+    },
+    "recentSessions": "Sessões recentes",
+    "documentsToAction": "Documentos a tratar",
+    "noSessions": "Ainda não existem sessões.",
+    "nothingToAction": "Nada requer a sua atenção."
+  },
+  "sessions": {
+    "subtitle": "Cada sessão é um processo — áudio, transcrição e os documentos dela resultantes.",
+    "new": "Nova sessão",
+    "createFailed": "Não foi possível criar a sessão.",
+    "titlePlaceholder": "ex.: Comité de Segurança do Distrito — Sessão Informativa Semanal",
+    "create": "Criar sessão",
+    "empty": "Ainda não existem sessões. Crie uma para começar a gravar.",
+    "fields": {
+      "title": "Título",
+      "kind": "Tipo",
+      "date": "Data",
+      "classification": "Classificação",
+      "status": "Estado",
+      "department": "Departamento",
+      "location": "Localização"
+    }
+  },
+  "session": {
+    "loadFailed": "Não foi possível carregar a sessão.",
+    "micDenied": "Acesso ao microfone negado ou indisponível.",
+    "audioSaved": "Áudio guardado na sessão.",
+    "uploadFailed": "Falha no carregamento.",
+    "transcribing": "A transcrever localmente — isto pode demorar um momento para áudios mais longos.",
+    "transcribed": "Transcrição concluída.",
+    "transcribeFailed": "Falha na transcrição. Verifique se o serviço STT está em execução.",
+    "updateFailed": "Não foi possível atualizar.",
+    "draftingMinutes": "A elaborar a ata a partir da transcrição…",
+    "minutesCreated": "Minuta da ata criada.",
+    "minutesFailed": "Não foi possível gerar a ata.",
+    "notFound": "Sessão não encontrada.",
+    "noDate": "sem data",
+    "noLocation": "sem localização",
+    "generateMinutes": "Gerar ata",
+    "captureAudio": "Capturar áudio",
+    "stopSave": "Parar e guardar",
+    "startRecording": "Iniciar gravação",
+    "or": "ou",
+    "uploadAudio": "Carregar áudio",
+    "audioNote": "O áudio permanece no anfitrião. A transcrição é executada localmente em inglês. A ata combina todos os clipes desta sessão, por ordem.",
+    "documentsFrom": "Documentos desta sessão",
+    "noDocuments": "Ainda não há documentos. Transcreva um clipe e depois gere a ata.",
+    "recordingsTitle": "Gravações e transcrições",
+    "clipOne": "{n} clipe",
+    "clipMany": "{n} clipes",
+    "noRecordings": "Ainda não há gravações. Grave ou carregue áudio acima.",
+    "includeTitle": "Incluir este clipe ao gerar a ata",
+    "inMinutes": "Na ata",
+    "transcribe": "Transcrever",
+    "transcribeHint": "Transcreva este clipe para ver e editar a sua transcrição aqui.",
+    "audioLoadFailed": "Não foi possível carregar o áudio.",
+    "loadAudio": "Carregar áudio",
+    "words": "{n} palavras",
+    "verified": "verificado",
+    "editVerify": "Editar e verificar",
+    "saveVerified": "Salvar e marcar como verificado",
+    "saveDraft": "Salvar rascunho",
+    "emptyTranscript": "Transcrição vazia."
+  },
+  "docType": {
+    "minutes": "ata",
+    "memo": "memorando",
+    "letter": "ofício",
+    "report": "relatório",
+    "policy_brief": "resumo de políticas",
+    "briefing_note": "nota informativa",
+    "concept_note": "nota conceitual",
+    "circular": "circular",
+    "action_matrix": "matriz de ações",
+    "speech": "discurso"
+  },
+  "approval": {
+    "submit": "enviado",
+    "submitted": "enviado",
+    "approve": "aprovado",
+    "approved": "aprovado",
+    "reject": "rejeitado",
+    "rejected": "rejeitado",
+    "finalize": "finalizado",
+    "finalized": "finalizado"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memorando Interno",
+      "desc": "Memorando interno padrão com Para / De / Assunto."
+    },
+    "letter-official": {
+      "name": "Ofício Oficial",
+      "desc": "Ofício formal de saída em papel timbrado do órgão."
+    },
+    "circular-general": {
+      "name": "Circular",
+      "desc": "Aviso circulado para diversos destinatários."
+    },
+    "report-standard": {
+      "name": "Relatório",
+      "desc": "Relatório geral com sumário, seções e recomendações."
+    },
+    "policy-brief": {
+      "name": "Resumo de Políticas",
+      "desc": "Resumo conciso para tomadores de decisão."
+    },
+    "briefing-note": {
+      "name": "Nota Informativa",
+      "desc": "Nota breve para informar um superior antes de um compromisso."
+    },
+    "concept-note": {
+      "name": "Nota Conceitual",
+      "desc": "Esboço de um programa ou atividade proposta."
+    },
+    "minutes-blank": {
+      "name": "Ata de Reunião (em branco)",
+      "desc": "Estrutura de ata em branco para preencher manualmente."
+    },
+    "speech-remarks": {
+      "name": "Discurso / Observações",
+      "desc": "Observações formais para um evento."
+    }
+  },
+  "documents": {
+    "subtitle": "Atas, memorandos, ofícios, relatórios e sínteses — redigidos com IA, aprovados por pessoas.",
+    "startFromTemplate": "Começar a partir de modelo",
+    "fromSpreadsheet": "Relatório a partir de folha de cálculo",
+    "draftWithAI": "Redigir com IA",
+    "templateTitle": "Começar a partir de um modelo",
+    "allTypes": "Todos os tipos",
+    "orgTemplates": "Modelos da sua organização",
+    "savedByOrg": "Guardado pela sua organização",
+    "useTemplate": "Utilizar este modelo",
+    "generalTemplates": "Modelos gerais",
+    "spreadsheetFailed": "Não foi possível criar um relatório a partir dessa folha de cálculo.",
+    "templateFailed": "Não foi possível criar a partir do modelo.",
+    "draftFailed": "Não foi possível redigir o documento.",
+    "fields": {
+      "type": "Tipo de documento",
+      "title": "Título",
+      "recipient": "Destinatário (opcional)",
+      "department": "Departamento (opcional)",
+      "brief": "Instruções / síntese"
+    },
+    "briefPlaceholder": "Descreva o objetivo, os pontos principais e quaisquer factos a incluir. O assistente irá redigir um documento formal que poderá editar e aprovar.",
+    "generateDraft": "Gerar minuta",
+    "empty": "Ainda não existem documentos.",
+    "table": {
+      "title": "Título",
+      "type": "Tipo",
+      "ref": "Ref.",
+      "status": "Estado",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Não foi possível carregar o documento.",
+    "invalidJson": "O conteúdo não é JSON válido.",
+    "saved": "Guardado. Versão incrementada.",
+    "saveFailed": "Falha ao guardar.",
+    "done": {
+      "submit": "Documento submetido para revisão.",
+      "approve": "Documento aprovado.",
+      "reject": "Documento rejeitado.",
+      "finalize": "Documento finalizado."
+    },
+    "failed": {
+      "submit": "Não foi possível submeter.",
+      "approve": "Não foi possível aprovar.",
+      "reject": "Não foi possível rejeitar.",
+      "finalize": "Não foi possível finalizar."
+    },
+    "templateName": "Nome do modelo",
+    "templateDefault": "Modelo {title}",
+    "templateSaved": "Guardado como modelo reutilizável para a sua organização.",
+    "templateSaveFailed": "Não foi possível guardar o modelo.",
+    "exportFailed": "Falha na exportação.",
+    "notFound": "Documento não encontrado.",
+    "exportDocx": "Exportar DOCX",
+    "exportPptx": "Exportar PPTX",
+    "exportXlsx": "Exportar XLSX",
+    "saveAsTemplate": "Guardar como modelo",
+    "content": "Conteúdo",
+    "workflow": "Fluxo de trabalho",
+    "aiAssisted": "Rascunho assistido por IA",
+    "auditChain": "Cadeia de auditoria: áudio → transcrição → rascunho de IA → edição humana → aprovação → final. Cada passo é registado.",
+    "comment": "Comentário (opcional)",
+    "commentPlaceholder": "Adicione uma nota para o registo",
+    "submit": "Submeter para revisão",
+    "approve": "Aprovar",
+    "reject": "Rejeitar",
+    "finalize": "Finalizar",
+    "finalLocked": "Final — bloqueado para edição",
+    "editJson": "Editar conteúdo (JSON)",
+    "jsonNote": "O conteúdo estruturado gera o DOCX com a imagem da marca. Edite os campos abaixo e guarde; a imagem da marca e o esquema são aplicados automaticamente na exportação.",
+    "saveContent": "Guardar conteúdo",
+    "approvalHistory": "Histórico de aprovações"
+  },
+  "emails": {
+    "subtitle": "Redija cartas e e-mails com IA. Nada é enviado até que uma pessoa clique em enviar.",
+    "needIntent": "Indique ao assistente um assunto ou intenção para redigir.",
+    "draftReady": "Rascunho pronto. Reveja e edite antes de enviar.",
+    "draftFailed": "Falha ao redigir.",
+    "draftSaved": "Rascunho guardado.",
+    "saveFailed": "Não foi possível guardar.",
+    "confirmSend": "Enviar este e-mail agora? Esta ação é registada no registo de auditoria.",
+    "sent": "E-mail enviado.",
+    "sendFailed": "Falha no envio.",
+    "compose": "Compor",
+    "messages": "Mensagens",
+    "empty": "Ainda não há correspondência.",
+    "message": "Mensagem",
+    "details": "Detalhes",
+    "to": "Para",
+    "cc": "Cc",
+    "subject": "Assunto",
+    "intent": "O que deve constar aqui? (para IA)",
+    "intentPlaceholder": "ex.: Convidar os chefes para o baraza de segurança na sexta-feira às 10h",
+    "body": "Corpo",
+    "saveDraft": "Guardar rascunho",
+    "toLabel": "Para:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Assunto:",
+    "aiAssisted": "Assistido por IA",
+    "sendNow": "Enviar agora",
+    "selectHint": "Selecione uma mensagem ou redija uma nova."
+  },
+  "knowledge": {
+    "subtitle": "Material de referência que o assistente pode utilizar — políticas, modelos, precedentes.",
+    "added": "Adicionado à base de conhecimento.",
+    "addFailed": "Não foi possível adicionar.",
+    "chooseFile": "Escolha um ficheiro para carregar.",
+    "ocrFailed": "Ficheiro guardado. O OCR não conseguiu ler texto deste ficheiro (pode ter baixa qualidade). Pode colar o texto manualmente.",
+    "extracted": "Ficheiro guardado e {n} caracteres de texto extraídos.",
+    "noText": "Ficheiro guardado. Não foi possível extrair texto deste formato.",
+    "uploadFailed": "Falha no carregamento.",
+    "confirmRemove": "Remover esta referência?",
+    "uploadTitle": "Carregar um documento",
+    "file": "Ficheiro",
+    "titleOptional": "Título (opcional)",
+    "titleDefault": "Predefinição: nome do ficheiro",
+    "categoryOptional": "Categoria (opcional)",
+    "uploadExtract": "Carregar e extrair",
+    "uploadNote": "O texto dos ficheiros Word, PDF, CSV e de texto é extraído automaticamente. Os PDF digitalizados e as fotografias são lidos automaticamente com OCR.",
+    "pasteTitle": "Adicionar referência (colar texto)",
+    "title": "Título",
+    "category": "Categoria",
+    "categoryPlaceholder": "ex.: Circulares, Políticas",
+    "textContent": "Conteúdo de texto",
+    "add": "Adicionar",
+    "references": "Referências",
+    "empty": "Ainda nada.",
+    "uncategorised": "Sem categoria",
+    "remove": "Remover"
+  },
+  "assistant": {
+    "subtitle": "Dê uma instrução em linguagem simples — resumir, encontrar, redigir ou explicar em todo o seu espaço de trabalho.",
+    "failed": "O assistente não conseguiu processar isso.",
+    "instruction": "Instrução",
+    "placeholder": "ex.: Resumir as decisões da reunião do comité de segurança desta semana, ou listar os memorandos ainda pendentes de aprovação.",
+    "ask": "Perguntar"
+  },
+  "actions": {
+    "subtitle": "Itens de ação extraídos das atas e matrizes de ações de todas as sessões.",
+    "empty": "Nenhuma ação pendente encontrada.",
+    "table": {
+      "action": "Ação",
+      "responsible": "Responsável",
+      "timeline": "Prazo",
+      "source": "Origem"
+    }
+  },
+  "paypal": {
+    "title": "Pagamento PayPal",
+    "subtitle": "Confirmação de pagamento da subscrição.",
+    "confirming": "A confirmar o seu pagamento PayPal...",
+    "noOrder": "Nenhuma ordem PayPal foi devolvida.",
+    "confirmed": "Pagamento confirmado. A sua subscrição do Worker está agora ativa.",
+    "failed": "Não foi possível confirmar o pagamento PayPal.",
+    "success": "Pagamento efetuado com sucesso",
+    "viewSubscription": "Ver subscrição",
+    "errorTitle": "Não foi possível confirmar o pagamento",
+    "returnToSubscription": "Voltar à subscrição"
+  },
+  "tenant": {
+    "saved": "Dados da organização guardados. Aparecem em todos os documentos que exportar.",
+    "saveFailed": "Não foi possível guardar.",
+    "logoUploaded": "Logótipo carregado.",
+    "signatureUploaded": "Assinatura carregada.",
+    "uploadFailed": "Falha no carregamento.",
+    "subtitleShort": "Imagem de marca do seu espaço de trabalho.",
+    "noOrg": "Esta conta não está associada a uma organização.",
+    "subtitle": "O seu nome, timbre, logótipo e assinatura aparecem em todos os documentos que gerar.",
+    "letterhead": "Timbre",
+    "orgName": "Nome da organização",
+    "line": "Linha do timbre {n}",
+    "line1Placeholder": "ex.: GOVERNO DO DISTRITO DE ...",
+    "line2Placeholder": "ex.: Departamento de ...",
+    "line3Placeholder": "ex.: Unidade / Gabinete",
+    "saveLetterhead": "Guardar timbre",
+    "blankHint": "Deixe as linhas em branco para usar o nome da sua organização.",
+    "logoSignature": "Logótipo e assinatura",
+    "logo": "Brasão / logótipo (PNG ou JPG)",
+    "signature": "Assinatura eletrónica (PNG ou JPG)",
+    "uploaded": "carregado",
+    "brandingNote": "O logótipo aparece no cabeçalho do documento e nas páginas de título dos diapositivos. A assinatura é colocada no final dos documentos exportados. Utilize um PNG com fundo transparente para melhores resultados."
+  },
+  "users": {
+    "createdTemp": "Utilizador criado. Palavra-passe temporária: {temp} — partilhe de forma segura; o utilizador deve alterá-la no primeiro início de sessão.",
+    "created": "Utilizador criado.",
+    "createFailed": "Não foi possível criar o utilizador.",
+    "confirmRemove": "Remover {name}?",
+    "removeFailed": "Não foi possível remover.",
+    "subtitle": "Gerir acessos. A conta de superadministrador não pode ser modificada aqui.",
+    "add": "Adicionar utilizador",
+    "create": "Criar utilizador",
+    "empty": "Sem utilizadores.",
+    "fields": {
+      "name": "Nome",
+      "email": "Email",
+      "role": "Função",
+      "department": "Departamento",
+      "status": "Estado"
+    },
+    "suspend": "Suspender",
+    "reinstate": "Reativar",
+    "remove": "Remover"
+  },
+  "audit": {
+    "subtitle": "Todas as ações significativas são registadas. Os registos contêm apenas metadados e identificadores — nunca o conteúdo de documentos ou áudio.",
+    "empty": "Sem entradas de auditoria.",
+    "table": {
+      "when": "Quando",
+      "actor": "Autor",
+      "action": "Ação",
+      "resource": "Recurso"
+    },
+    "system": "sistema"
+  },
+  "payments": {
+    "stkSent": "Pedido STK enviado. Peça ao pagador para aprovar no telemóvel.",
+    "initiateFailed": "Não foi possível iniciar o pagamento.",
+    "subtitle": "Transações M-Pesa (Daraja STK push) e PayPal.",
+    "requestTitle": "Solicitar pagamento M-Pesa",
+    "phone": "Telefone (07.. ou 2547..)",
+    "amountKes": "Montante (KES)",
+    "purpose": "Finalidade",
+    "sendStk": "Enviar pedido STK",
+    "transactions": "Transações",
+    "empty": "Sem transações.",
+    "table": {
+      "provider": "Fornecedor",
+      "amount": "Montante",
+      "status": "Estado",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Faturas e recibos de pagamentos de subscrição do Worker concluídos.",
+    "loadFailed": "Não foi possível carregar os documentos de faturação.",
+    "downloadFailed": {
+      "invoice": "Não foi possível baixar a fatura.",
+      "receipt": "Não foi possível baixar o recibo."
+    },
+    "documentsTitle": "Documentos de faturação",
+    "intro": "Baixe faturas e recibos dos pagamentos de subscrição concluídos da sua organização.",
+    "disclaimer": "Estes documentos registam os pagamentos de subscrição do Worker e são fornecidos para fins de pagamento e reembolso. Não são apresentados como faturas fiscais KRA/eTIMS, salvo se emitidos separadamente através de uma integração eTIMS em conformidade.",
+    "invoices": "Faturas",
+    "noInvoices": "Ainda não há faturas.",
+    "receipts": "Recibos",
+    "noReceipts": "Ainda não há recibos.",
+    "downloadPdf": "Baixar PDF",
+    "table": {
+      "invoice": "Fatura",
+      "receipt": "Recibo",
+      "date": "Data",
+      "description": "Descrição",
+      "amount": "Valor",
+      "status": "Estado",
+      "provider": "Fornecedor",
+      "reference": "Referência"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Não foi possível carregar a subscrição.",
+    "selectFirst": "Selecione primeiro um plano de subscrição.",
+    "mpesaSent": "Pedido STK do M-Pesa enviado. Aprove o pagamento no seu telefone. A sua subscrição será ativada após a confirmação do pagamento.",
+    "mpesaFailed": "Não foi possível iniciar o pagamento por M-Pesa.",
+    "noApproveUrl": "O URL de aprovação do PayPal não foi devolvido.",
+    "paypalFailed": "Não foi possível iniciar o pagamento por PayPal.",
+    "subtitleShort": "Gerir a sua subscrição do Worker.",
+    "subtitle": "Gerir o seu plano, período de teste e faturação do Worker.",
+    "current": "Subscrição atual",
+    "organisation": "Organização",
+    "status": "Estado",
+    "plan": "Plano",
+    "freeTrial": "Período de teste gratuito de 14 dias",
+    "trialEnds": "O período de teste termina",
+    "dayRemaining": "{n} dia restante",
+    "daysRemaining": "{n} dias restantes",
+    "renewsEnds": "Renova / termina",
+    "chooseTitle": "Escolha um plano",
+    "chooseSubtitle": "Todos os planos incluem o fluxo de trabalho administrativo do Worker. O seu período de teste de 14 dias é gratuito.",
+    "perMonth": "/ mês",
+    "planSelected": "{plan} selecionado. O seu plano está guardado e pronto para pagamento.",
+    "selectFailed": "Não foi possível selecionar o plano.",
+    "selected": "Selecionado",
+    "selectPlan": "Selecionar plano",
+    "activateTitle": "Ative a sua subscrição",
+    "selectAbove": "Selecione um plano acima para continuar para o pagamento.",
+    "stkNote": "Um pedido STK será enviado para o número de telefone abaixo.",
+    "phone": "Número de telefone",
+    "phonePlaceholder": "07.. ou 2547..",
+    "payMpesa": "Pagar com M-Pesa",
+    "paypalNote": "Continue para o PayPal para pagar o plano selecionado em USD.",
+    "payPaypal": "Pagar com PayPal",
+    "settleNote": "As subscrições pagas podem ser liquidadas através de M-Pesa ou PayPal.",
+    "activationNote": "O plano selecionado será ativado após a confirmação bem-sucedida do pagamento.",
+    "historyNote": "O histórico de pagamentos está disponível em Administração → Pagamentos."
+  },
+  "intl": {
+    "territory": "Território",
+    "searchTerritory": "Pesquisar território…",
+    "selectTerritory": "Selecione o seu território",
+    "territoryRequired": "Selecione o seu território.",
+    "workingLanguage": "Idioma de trabalho",
+    "meetingLanguage": "Idioma da reunião",
+    "useDefault": "Predefinição da organização",
+    "beta": "transcrição beta",
+    "unavailable": "sem transcrição"
+  },
+  "generate": {
+    "title": "Gerar um documento a partir desta sessão",
+    "as": "Gerar como",
+    "instructions": "Instrução (opcional)",
+    "placeholder": "ex.: Carta ao Secretário Permanente resumindo as decisões 2 e 3",
+    "button": "Gerar",
+    "working": "A redigir o seu documento… isto pode demorar um minuto.",
+    "done": "Documento criado.",
+    "failed": "Não foi possível gerar o documento.",
+    "hint": "Utiliza as transcrições assinaladas para inclusão, por ordem. O utilizador revê e aprova antes de qualquer partilha."
+  },
+  "queue": {
+    "queued": "Em fila para transcrição. Esta página é atualizada automaticamente."
+  },
+  "pdfExport": {
+    "button": "Exportar PDF"
+  },
+  "access": {
+    "readOnly": "O seu espaço de trabalho está em modo de leitura porque o seu período de teste ou subscrição terminou. Ainda pode visualizar e exportar os seus documentos.",
+    "grace": "O seu período de teste ou subscrição terminou em {date}. Restam-lhe {n} dias de acesso completo.",
+    "trialEnding": "O seu período de teste gratuito termina em {n} dias.",
+    "choosePlan": "Escolher um plano"
+  },
+  "sessionLang": {
+    "saved": "Idioma da reunião guardado. Aplica-se às gravações transcritas a partir de agora.",
+    "failed": "Não foi possível guardar o idioma da reunião."
+  },
+  "i18nNote": {
+    "machine": "Traduzido automaticamente"
+  }
+}

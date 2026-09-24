@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Språk",
+    "signIn": "Logga in",
+    "signOut": "Logga ut",
+    "createAccount": "Skapa konto",
+    "getStarted": "Kom igång",
+    "startFreeTrial": "Starta kostnadsfri provperiod",
+    "cancel": "Avbryt",
+    "back": "Tillbaka",
+    "download": "Ladda ned",
+    "viewAll": "Visa alla"
+  },
+  "brand": {
+    "tagline": "AI-drivet administrativt arbetsområde",
+    "secureWorkspace": "Säkert administrativt arbetsområde",
+    "badge": "Engelska · Ljud"
+  },
+  "nav": {
+    "dashboard": "Översikt",
+    "workspace": "Arbetsområde",
+    "sessions": "Sessioner och inspelningar",
+    "documents": "Dokument",
+    "correspondence": "Korrespondens",
+    "knowledge": "Kunskapsbas",
+    "assistant": "Assistent",
+    "askWorker": "Fråga Worker",
+    "actions": "Utestående åtgärder",
+    "administration": "Administration",
+    "organisation": "Organisation",
+    "users": "Användare",
+    "audit": "Granskningslogg",
+    "subscription": "Prenumeration",
+    "payments": "Betalningar",
+    "billing": "Fakturering"
+  },
+  "roles": {
+    "viewer": "Läsare",
+    "officer": "Handläggare",
+    "admin": "Administratör",
+    "superadmin": "Superadministratör"
+  },
+  "landing": {
+    "hero": {
+      "title": "Förvandla det du säger till färdiga, diarieförda handlingar.",
+      "body": "Worker är en AI-drivet administrativ arbetsplats för organisationer som producerar stora mängder formella dokument från möten, briefingar och korrespondens. Spela in ett möte eller diktera, och Worker transkriberar det, utarbetar protokoll, promemorior, brev, rapporter och policysammanfattningar och tar dem genom granskning och godkännande – med en fullständig granskningslogg.",
+      "badgeRow": "Ljud · Engelska · Säkert arbetsområde"
+    },
+    "what": {
+      "title": "Vad Worker gör",
+      "lead": "Det rutinmässiga kontorsarbetet kring möten och korrespondens – hanterat på minuter, inte timmar.",
+      "f1": {
+        "title": "Spela in och transkribera",
+        "body": "Fånga möten, intervjuer, briefingar eller diktering. Ljud transkriberas lokalt på engelska."
+      },
+      "f2": {
+        "title": "Utkast med AI",
+        "body": "Generera protokoll, promemorior, brev, rapporter, policybriefs och cirkulär i korrekt officiell form."
+      },
+      "f3": {
+        "title": "Granska och godkänn",
+        "body": "Varje dokument går genom utkast, granskning, godkännande och slutförande — människor behåller kontrollen."
+      },
+      "f4": {
+        "title": "Säkert och granskningsbart",
+        "body": "Rollbaserad åtkomst och ett fullständigt granskningsspår. Korrespondens skickas alltid av en person."
+      }
+    },
+    "start": {
+      "title": "Att komma igång tar en minut",
+      "lead": "Skapa ett konto och starta din 14-dagars kostnadsfria provperiod.",
+      "s1": {
+        "title": "Skapa ditt konto",
+        "body": "Ange ditt namn, din e-post och ett lösenord."
+      },
+      "s2": {
+        "title": "Verifiera din e-post",
+        "body": "Ange den 6-siffriga kod vi mejlar dig."
+      },
+      "s3": {
+        "title": "Logga in säkert",
+        "body": "Varje inloggning bekräftas med en engångskod via e-post."
+      },
+      "s4": {
+        "title": "Börja arbeta",
+        "body": "Skapa en session, spela in och generera ditt första dokument."
+      }
+    },
+    "pricing": {
+      "title": "Enkel prenumerationsprissättning",
+      "lead": "Börja med en 14-dagars kostnadsfri provperiod. Välj den plan som passar omfattningen av det administrativa arbete din organisation producerar.",
+      "perMonth": "/månad",
+      "mostPopular": "MEST POPULÄR",
+      "starter": {
+        "name": "Starter",
+        "desc": "För små team som börjar med AI-assisterat administrativt arbete."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "För organisationer med regelbunden dokumentproduktion i hög volym."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "För större organisationer med betydande administrativa arbetsbelastningar."
+      },
+      "paymentsNote": "M-Pesa och PayPal stöds för betalda prenumerationer."
+    },
+    "final": {
+      "title": "Redo att prova Worker?",
+      "cta": "Skapa ditt konto"
+    }
+  },
+  "auth": {
+    "email": "E-post",
+    "password": "Lösenord",
+    "fullName": "Fullständigt namn",
+    "confirmPassword": "Bekräfta lösenord",
+    "currentPassword": "Nuvarande lösenord",
+    "newPassword": "Nytt lösenord",
+    "confirmNewPassword": "Bekräfta nytt lösenord",
+    "code6": "6-siffrig kod",
+    "signInFailed": "Inloggningen misslyckades. Kontrollera dina uppgifter.",
+    "forgotPassword": "Glömt lösenordet?",
+    "mfaNotice": "En engångskod skickas via e-post för att bekräfta varje inloggning.",
+    "createYourAccount": "Skapa ditt konto",
+    "pwMin": "Lösenordet måste innehålla minst {n} tecken.",
+    "newPwMin": "Det nya lösenordet måste innehålla minst {n} tecken.",
+    "pwMismatch": "Lösenorden matchar inte.",
+    "createFailed": "Kunde inte skapa kontot.",
+    "haveAccount": "Har du redan ett konto?",
+    "startAtSignIn": "Börja med inloggning eller registrering.",
+    "goToSignIn": "Gå till inloggning",
+    "invalidCode": "Ogiltig eller utgången kod.",
+    "codeSent": "En ny kod har skickats.",
+    "resendFailed": "Kunde inte skicka igen.",
+    "verifyEmailTitle": "Verifiera din e-postadress",
+    "verifyEmailTo": "Verifiera din e-postadress — {email}",
+    "verify": "Verifiera",
+    "resendCode": "Skicka koden igen",
+    "signInAgain": "Logga in igen.",
+    "mfaPrompt": "Ange inloggningskoden vi skickade via e-post",
+    "mfaPromptTo": "Ange inloggningskoden vi skickade via e-post till {email}",
+    "verifySignIn": "Verifiera och logga in",
+    "requestFailed": "Kunde inte behandla begäran.",
+    "resetTitle": "Återställ ditt lösenord",
+    "sendResetCode": "Skicka återställningskod",
+    "backToSignIn": "Tillbaka till inloggning",
+    "resetPrompt": "Ange koden vi skickade via e-post och välj ett nytt lösenord",
+    "resetPassword": "Återställ lösenord",
+    "setNewPassword": "Ange ett nytt lösenord",
+    "forcedChange": "Av säkerhetsskäl, ange ditt eget lösenord innan du fortsätter.",
+    "updateAccountPassword": "Uppdatera ditt kontolösenord.",
+    "changeFailed": "Kunde inte ändra lösenordet.",
+    "updatePassword": "Uppdatera lösenord",
+    "signOutInstead": "Logga ut i stället"
+  },
+  "notFound": {
+    "title": "Sidan hittades inte",
+    "subtitle": "Den sidan finns inte i den här arbetsytan.",
+    "back": "Återgå till instrumentpanelen"
+  },
+  "status": {
+    "draft": "utkast",
+    "in_review": "under granskning",
+    "approved": "godkänd",
+    "final": "slutlig",
+    "archived": "arkiverad",
+    "open": "öppen",
+    "processing": "bearbetar",
+    "ready": "klar",
+    "pending": "väntar",
+    "transcribing": "transkriberar",
+    "transcribed": "transkriberad",
+    "failed": "misslyckades",
+    "sent": "skickad",
+    "received": "mottagen",
+    "completed": "slutförd",
+    "cancelled": "avbruten",
+    "active": "aktiv",
+    "suspended": "avstängd"
+  },
+  "kind": {
+    "meeting": "möte",
+    "interview": "intervju",
+    "briefing": "genomgång",
+    "dictation": "diktering",
+    "field_report": "fältrapport",
+    "consultation": "konsultation",
+    "other": "övrigt"
+  },
+  "classification": {
+    "unclassified": "oklassificerad",
+    "internal": "intern",
+    "confidential": "konfidentiell",
+    "restricted": "begränsad"
+  },
+  "dashboard": {
+    "welcome": "Välkommen, {name}",
+    "defaultName": "Handläggare",
+    "subtitle": "Din administrativa arbetsyta — fånga, utforma, granska och arkivera.",
+    "stats": {
+      "sessions": "Sessioner",
+      "documents": "Dokument",
+      "awaitingReview": "Väntar på granskning",
+      "outstandingActions": "Utestående åtgärder"
+    },
+    "recentSessions": "Senaste sessionerna",
+    "documentsToAction": "Dokument att åtgärda",
+    "noSessions": "Inga sessioner ännu.",
+    "nothingToAction": "Inget kräver din uppmärksamhet."
+  },
+  "sessions": {
+    "subtitle": "Varje session är ett ärende — ljud, transkription och de dokument som skapats från den.",
+    "new": "Ny session",
+    "createFailed": "Kunde inte skapa sessionen.",
+    "titlePlaceholder": "t.ex. Länsstyrelsens säkerhetskommitté — veckovis genomgång",
+    "create": "Skapa session",
+    "empty": "Inga sessioner ännu. Skapa en för att börja spela in.",
+    "fields": {
+      "title": "Titel",
+      "kind": "Typ",
+      "date": "Datum",
+      "classification": "Klassificering",
+      "status": "Status",
+      "department": "Avdelning",
+      "location": "Plats"
+    }
+  },
+  "session": {
+    "loadFailed": "Kunde inte läsa in sessionen.",
+    "micDenied": "Åtkomst till mikrofon nekad eller otillgänglig.",
+    "audioSaved": "Ljudet har sparats i sessionen.",
+    "uploadFailed": "Uppladdningen misslyckades.",
+    "transcribing": "Transkriberar lokalt — detta kan ta en stund för längre ljud.",
+    "transcribed": "Transkriberingen är klar.",
+    "transcribeFailed": "Transkriberingen misslyckades. Kontrollera att STT-tjänsten körs.",
+    "updateFailed": "Kunde inte uppdatera.",
+    "draftingMinutes": "Skapar utkast till protokoll från transkriberingen…",
+    "minutesCreated": "Utkast till protokoll har skapats.",
+    "minutesFailed": "Kunde inte generera protokoll.",
+    "notFound": "Sessionen hittades inte.",
+    "noDate": "inget datum",
+    "noLocation": "ingen plats",
+    "generateMinutes": "Generera protokoll",
+    "captureAudio": "Spela in ljud",
+    "stopSave": "Stoppa och spara",
+    "startRecording": "Starta inspelning",
+    "or": "eller",
+    "uploadAudio": "Ladda upp ljud",
+    "audioNote": "Ljudet stannar på värden. Transkribering körs lokalt på engelska. Protokollet kombinerar varje klipp i denna session, i ordning.",
+    "documentsFrom": "Dokument från denna session",
+    "noDocuments": "Inga dokument ännu. Transkribera ett klipp och generera sedan protokoll.",
+    "recordingsTitle": "Inspelningar och transkriberingar",
+    "clipOne": "{n} klipp",
+    "clipMany": "{n} klipp",
+    "noRecordings": "Inga inspelningar ännu. Spela in eller ladda upp ljud ovan.",
+    "includeTitle": "Inkludera detta klipp när protokollet genereras",
+    "inMinutes": "I protokollet",
+    "transcribe": "Transkribera",
+    "transcribeHint": "Transkribera detta klipp för att se och redigera dess transkribering här.",
+    "audioLoadFailed": "Kunde inte läsa in ljudet.",
+    "loadAudio": "Läs in ljud",
+    "words": "{n} ord",
+    "verified": "verifierad",
+    "editVerify": "Redigera och verifiera",
+    "saveVerified": "Spara och markera som verifierad",
+    "saveDraft": "Spara utkast",
+    "emptyTranscript": "Tom transkription."
+  },
+  "docType": {
+    "minutes": "mötesprotokoll",
+    "memo": "promemoria",
+    "letter": "brev",
+    "report": "rapport",
+    "policy_brief": "policybrief",
+    "briefing_note": "briefinganteckning",
+    "concept_note": "konceptanteckning",
+    "circular": "cirkulär",
+    "action_matrix": "åtgärdsmatris",
+    "speech": "tal"
+  },
+  "approval": {
+    "submit": "inlämnad",
+    "submitted": "inlämnad",
+    "approve": "godkänd",
+    "approved": "godkänd",
+    "reject": "avvisad",
+    "rejected": "avvisad",
+    "finalize": "slutförd",
+    "finalized": "slutförd"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Intern promemoria",
+      "desc": "Standardiserad intern promemoria med Till / Från / Ämne."
+    },
+    "letter-official": {
+      "name": "Officiellt brev",
+      "desc": "Formellt utgående brev på kontorets brevpapper."
+    },
+    "circular-general": {
+      "name": "Cirkulär",
+      "desc": "Meddelande som cirkuleras till många mottagare."
+    },
+    "report-standard": {
+      "name": "Rapport",
+      "desc": "Allmän rapport med sammanfattning, avsnitt och rekommendationer."
+    },
+    "policy-brief": {
+      "name": "Policybrief",
+      "desc": "Kortfattad brief för beslutsfattare."
+    },
+    "briefing-note": {
+      "name": "Briefinganteckning",
+      "desc": "Kort anteckning för att briefa en uppdragsgivare inför ett möte."
+    },
+    "concept-note": {
+      "name": "Konceptanteckning",
+      "desc": "Översikt över ett föreslaget program eller en aktivitet."
+    },
+    "minutes-blank": {
+      "name": "Mötesprotokoll (tomt)",
+      "desc": "Tom protokollstruktur att fylla i för hand."
+    },
+    "speech-remarks": {
+      "name": "Tal / anförande",
+      "desc": "Formellt anförande för ett evenemang."
+    }
+  },
+  "documents": {
+    "subtitle": "Protokoll, pm, brev, rapporter och sammanfattningar – utformade med AI, godkända av människor.",
+    "startFromTemplate": "Utgå från mall",
+    "fromSpreadsheet": "Rapport från kalkylblad",
+    "draftWithAI": "Utforma med AI",
+    "templateTitle": "Utgå från en mall",
+    "allTypes": "Alla typer",
+    "orgTemplates": "Din organisations mallar",
+    "savedByOrg": "Sparade av din organisation",
+    "useTemplate": "Använd denna mall",
+    "generalTemplates": "Allmänna mallar",
+    "spreadsheetFailed": "Kunde inte skapa en rapport från det kalkylbladet.",
+    "templateFailed": "Kunde inte skapa från mall.",
+    "draftFailed": "Kunde inte utforma dokument.",
+    "fields": {
+      "type": "Dokumenttyp",
+      "title": "Titel",
+      "recipient": "Mottagare (valfritt)",
+      "department": "Avdelning (valfritt)",
+      "brief": "Instruktioner / direktiv"
+    },
+    "briefPlaceholder": "Beskriv syftet, huvudpunkterna och eventuella fakta som ska ingå. Assistenten utformar ett formellt dokument som du kan redigera och godkänna.",
+    "generateDraft": "Generera utkast",
+    "empty": "Inga dokument ännu.",
+    "table": {
+      "title": "Titel",
+      "type": "Typ",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Kunde inte läsa in dokument.",
+    "invalidJson": "Innehållet är inte giltig JSON.",
+    "saved": "Sparat. Versionen har ökats.",
+    "saveFailed": "Kunde inte spara.",
+    "done": {
+      "submit": "Dokumentet har skickats för granskning.",
+      "approve": "Dokumentet har godkänts.",
+      "reject": "Dokumentet har avvisats.",
+      "finalize": "Dokumentet har slutförts."
+    },
+    "failed": {
+      "submit": "Kunde inte skicka.",
+      "approve": "Kunde inte godkänna.",
+      "reject": "Kunde inte avvisa.",
+      "finalize": "Kunde inte slutföra."
+    },
+    "templateName": "Mallnamn",
+    "templateDefault": "Mall för {title}",
+    "templateSaved": "Sparad som en återanvändbar mall för din organisation.",
+    "templateSaveFailed": "Kunde inte spara mallen.",
+    "exportFailed": "Exporten misslyckades.",
+    "notFound": "Dokumentet hittades inte.",
+    "exportDocx": "Exportera DOCX",
+    "exportPptx": "Exportera PPTX",
+    "exportXlsx": "Exportera XLSX",
+    "saveAsTemplate": "Spara som mall",
+    "content": "Innehåll",
+    "workflow": "Arbetsflöde",
+    "aiAssisted": "AI-assisterat utkast",
+    "auditChain": "Granskningskedja: ljud → transkription → AI-utkast → mänsklig redigering → godkännande → slutversion. Varje steg registreras.",
+    "comment": "Kommentar (valfritt)",
+    "commentPlaceholder": "Lägg till en anteckning för protokollet",
+    "submit": "Skicka för granskning",
+    "approve": "Godkänn",
+    "reject": "Avvisa",
+    "finalize": "Slutför",
+    "finalLocked": "Slutversion — låst för redigering",
+    "editJson": "Redigera innehåll (JSON)",
+    "jsonNote": "Strukturerat innehåll styr den profilerade DOCX-filen. Redigera fälten nedan och spara; profilering och layout tillämpas automatiskt vid export.",
+    "saveContent": "Spara innehåll",
+    "approvalHistory": "Godkännandehistorik"
+  },
+  "emails": {
+    "subtitle": "Skapa brev och e-postmeddelanden med AI. Inget skickas förrän en person klickar på skicka.",
+    "needIntent": "Ange ett ämne eller syfte som assistenten kan utgå från.",
+    "draftReady": "Utkastet är klart. Granska och redigera före sändning.",
+    "draftFailed": "Utkastet misslyckades.",
+    "draftSaved": "Utkastet har sparats.",
+    "saveFailed": "Kunde inte spara.",
+    "confirmSend": "Skicka detta e-postmeddelande nu? Åtgärden registreras i granskningsloggen.",
+    "sent": "E-postmeddelandet har skickats.",
+    "sendFailed": "Sändningen misslyckades.",
+    "compose": "Skriv",
+    "messages": "Meddelanden",
+    "empty": "Ingen korrespondens ännu.",
+    "message": "Meddelande",
+    "details": "Uppgifter",
+    "to": "Till",
+    "cc": "Cc",
+    "subject": "Ämne",
+    "intent": "Vad ska detta stå? (för AI)",
+    "intentPlaceholder": "t.ex. Bjud in hövdingar till säkerhetsbarazan fredag kl. 10",
+    "body": "Brödtext",
+    "saveDraft": "Spara utkast",
+    "toLabel": "Till:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Ämne:",
+    "aiAssisted": "AI-assisterad",
+    "sendNow": "Skicka nu",
+    "selectHint": "Välj ett meddelande eller skriv ett nytt."
+  },
+  "knowledge": {
+    "subtitle": "Referensmaterial som assistenten kan använda — policyer, mallar, prejudikat.",
+    "added": "Tillagt i kunskapsbasen.",
+    "addFailed": "Kunde inte lägga till.",
+    "chooseFile": "Välj en fil att ladda upp.",
+    "ocrFailed": "Filen har sparats. OCR kunde inte läsa text från denna fil (den kan vara av låg kvalitet). Du kan klistra in texten manuellt.",
+    "extracted": "Filen har sparats och {n} tecken text har extraherats.",
+    "noText": "Filen har sparats. Ingen text kunde extraheras från detta format.",
+    "uploadFailed": "Uppladdningen misslyckades.",
+    "confirmRemove": "Ta bort denna referens?",
+    "uploadTitle": "Ladda upp ett dokument",
+    "file": "Fil",
+    "titleOptional": "Titel (valfritt)",
+    "titleDefault": "Standardvärdet är filnamnet",
+    "categoryOptional": "Kategori (valfritt)",
+    "uploadExtract": "Ladda upp och extrahera",
+    "uploadNote": "Text extraheras automatiskt från Word-, PDF-, CSV- och textfiler. Skannade PDF-filer och foton läses automatiskt med OCR.",
+    "pasteTitle": "Lägg till referens (klistra in text)",
+    "title": "Titel",
+    "category": "Kategori",
+    "categoryPlaceholder": "t.ex. Cirkulär, Policyer",
+    "textContent": "Textinnehåll",
+    "add": "Lägg till",
+    "references": "Referenser",
+    "empty": "Inget ännu.",
+    "uncategorised": "Okategoriserad",
+    "remove": "Ta bort"
+  },
+  "assistant": {
+    "subtitle": "Ge en instruktion på vanlig svenska — sammanfatta, hitta, skriv utkast eller förklara i hela din arbetsyta.",
+    "failed": "Assistenten kunde inte behandla det.",
+    "instruction": "Instruktion",
+    "placeholder": "t.ex. Sammanfatta besluten från veckans säkerhetskommitté, eller lista promemorior som fortfarande väntar på godkännande.",
+    "ask": "Fråga"
+  },
+  "actions": {
+    "subtitle": "Åtgärdspunkter extraherade från protokoll och åtgärdsmatriser över sessioner.",
+    "empty": "Inga utestående åtgärder hittades.",
+    "table": {
+      "action": "Åtgärd",
+      "responsible": "Ansvarig",
+      "timeline": "Tidslinje",
+      "source": "Källa"
+    }
+  },
+  "paypal": {
+    "title": "PayPal-betalning",
+    "subtitle": "Bekräftelse av prenumerationsbetalning.",
+    "confirming": "Bekräftar din PayPal-betalning...",
+    "noOrder": "Ingen PayPal-order returnerades.",
+    "confirmed": "Betalning bekräftad. Din Worker-prenumeration är nu aktiv.",
+    "failed": "PayPal-betalningen kunde inte bekräftas.",
+    "success": "Betalning lyckades",
+    "viewSubscription": "Visa prenumeration",
+    "errorTitle": "Betalningen kunde inte bekräftas",
+    "returnToSubscription": "Återgå till prenumeration"
+  },
+  "tenant": {
+    "saved": "Organisationsuppgifterna har sparats. De visas på varje dokument du exporterar.",
+    "saveFailed": "Kunde inte spara.",
+    "logoUploaded": "Logotyp uppladdad.",
+    "signatureUploaded": "Signatur uppladdad.",
+    "uploadFailed": "Uppladdning misslyckades.",
+    "subtitleShort": "Varumärkesprofil för din arbetsyta.",
+    "noOrg": "Detta konto är inte kopplat till en organisation.",
+    "subtitle": "Ditt namn, brevhuvud, logotyp och signatur visas på varje dokument du genererar.",
+    "letterhead": "Brevhuvud",
+    "orgName": "Organisationens namn",
+    "line": "Brevhuvudrad {n}",
+    "line1Placeholder": "t.ex. LÄNSSTYRELSEN I ...",
+    "line2Placeholder": "t.ex. Avdelningen för ...",
+    "line3Placeholder": "t.ex. Enhet / Kontor",
+    "saveLetterhead": "Spara brevhuvud",
+    "blankHint": "Lämna rader tomma för att använda organisationens namn.",
+    "logoSignature": "Logotyp och signatur",
+    "logo": "Vapen / logotyp (PNG eller JPG)",
+    "signature": "E-signatur (PNG eller JPG)",
+    "uploaded": "uppladdad",
+    "brandingNote": "Logotypen visas i dokumenthuvudet och på bildernas titelsidor. Signaturen placeras i slutet av exporterade dokument. Använd en PNG med transparent bakgrund för bästa resultat."
+  },
+  "users": {
+    "createdTemp": "Användare skapad. Tillfälligt lösenord: {temp} — dela på ett säkert sätt; användaren måste byta det vid första inloggningen.",
+    "created": "Användare skapad.",
+    "createFailed": "Kunde inte skapa användare.",
+    "confirmRemove": "Ta bort {name}?",
+    "removeFailed": "Kunde inte ta bort.",
+    "subtitle": "Hantera åtkomst. Superadmin-kontot kan inte ändras här.",
+    "add": "Lägg till användare",
+    "create": "Skapa användare",
+    "empty": "Inga användare.",
+    "fields": {
+      "name": "Namn",
+      "email": "E-post",
+      "role": "Roll",
+      "department": "Avdelning",
+      "status": "Status"
+    },
+    "suspend": "Stäng av",
+    "reinstate": "Återaktivera",
+    "remove": "Ta bort"
+  },
+  "audit": {
+    "subtitle": "Varje betydande åtgärd registreras. Loggar innehåller endast metadata och identifierare — aldrig dokumentinnehåll eller ljud.",
+    "empty": "Inga granskningsposter.",
+    "table": {
+      "when": "När",
+      "actor": "Utförare",
+      "action": "Åtgärd",
+      "resource": "Resurs"
+    },
+    "system": "system"
+  },
+  "payments": {
+    "stkSent": "STK-push skickad. Be betalaren godkänna på sin telefon.",
+    "initiateFailed": "Kunde inte initiera betalning.",
+    "subtitle": "M-Pesa (Daraja STK push) och PayPal-transaktioner.",
+    "requestTitle": "Begär M-Pesa-betalning",
+    "phone": "Telefon (07.. eller 2547..)",
+    "amountKes": "Belopp (KES)",
+    "purpose": "Syfte",
+    "sendStk": "Skicka STK-push",
+    "transactions": "Transaktioner",
+    "empty": "Inga transaktioner.",
+    "table": {
+      "provider": "Leverantör",
+      "amount": "Belopp",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Fakturor och kvitton för slutförda Worker-prenumerationsbetalningar.",
+    "loadFailed": "Kunde inte läsa in faktureringsdokument.",
+    "downloadFailed": {
+      "invoice": "Kunde inte ladda ner faktura.",
+      "receipt": "Kunde inte ladda ner kvitto."
+    },
+    "documentsTitle": "Faktureringsdokument",
+    "intro": "Ladda ner fakturor och kvitton för din organisations genomförda prenumerationsbetalningar.",
+    "disclaimer": "Dessa dokument registrerar Worker-prenumerationsbetalningar och tillhandahålls för betalnings- och återbetalningsändamål. De utgör inte KRA/eTIMS-skattfakturor om de inte separat utfärdats genom en kompatibel eTIMS-integration.",
+    "invoices": "Fakturor",
+    "noInvoices": "Inga fakturor ännu.",
+    "receipts": "Kvitton",
+    "noReceipts": "Inga kvitton ännu.",
+    "downloadPdf": "Ladda ner PDF",
+    "table": {
+      "invoice": "Faktura",
+      "receipt": "Kvitto",
+      "date": "Datum",
+      "description": "Beskrivning",
+      "amount": "Belopp",
+      "status": "Status",
+      "provider": "Leverantör",
+      "reference": "Referens"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Kunde inte ladda prenumeration.",
+    "selectFirst": "Välj en prenumerationsplan först.",
+    "mpesaSent": "M-Pesa STK-push skickad. Godkänn betalningen på din telefon. Din prenumeration aktiveras efter betalningsbekräftelse.",
+    "mpesaFailed": "Kunde inte initiera M-Pesa-betalning.",
+    "noApproveUrl": "PayPal-godkännande-URL returnerades inte.",
+    "paypalFailed": "Kunde inte starta PayPal-betalning.",
+    "subtitleShort": "Hantera din Worker-prenumeration.",
+    "subtitle": "Hantera din Worker-plan, provperiod och fakturering.",
+    "current": "Aktuell prenumeration",
+    "organisation": "Organisation",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "14 dagars gratis provperiod",
+    "trialEnds": "Provperioden slutar",
+    "dayRemaining": "{n} dag kvar",
+    "daysRemaining": "{n} dagar kvar",
+    "renewsEnds": "Förnyas / slutar",
+    "chooseTitle": "Välj en plan",
+    "chooseSubtitle": "Alla planer inkluderar Worker administrativa arbetsflöde. Din 14 dagars provperiod är gratis.",
+    "perMonth": "/ månad",
+    "planSelected": "{plan} vald. Din plan är sparad och redo för betalning.",
+    "selectFailed": "Kunde inte välja plan.",
+    "selected": "Vald",
+    "selectPlan": "Välj plan",
+    "activateTitle": "Aktivera din prenumeration",
+    "selectAbove": "Välj en plan ovan för att fortsätta till betalning.",
+    "stkNote": "En STK-push skickas till telefonnumret nedan.",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "07.. eller 2547..",
+    "payMpesa": "Betala med M-Pesa",
+    "paypalNote": "Fortsätt till PayPal för att betala för den valda planen i USD.",
+    "payPaypal": "Betala med PayPal",
+    "settleNote": "Betalda prenumerationer kan regleras via M-Pesa eller PayPal.",
+    "activationNote": "Din valda plan aktiveras efter bekräftad betalning.",
+    "historyNote": "Betalningshistorik finns under Administration → Betalningar."
+  },
+  "intl": {
+    "territory": "Territorium",
+    "searchTerritory": "Sök territorium…",
+    "selectTerritory": "Välj ditt territorium",
+    "territoryRequired": "Välj ditt territorium.",
+    "workingLanguage": "Arbetsspråk",
+    "meetingLanguage": "Mötesspråk",
+    "useDefault": "Organisationens standard",
+    "beta": "transkribering beta",
+    "unavailable": "ingen transkribering"
+  },
+  "generate": {
+    "title": "Generera ett dokument från denna session",
+    "as": "Generera som",
+    "instructions": "Instruktion (valfritt)",
+    "placeholder": "t.ex. Brev till ständige sekreteraren som sammanfattar beslut 2 och 3",
+    "button": "Generera",
+    "working": "Utformar ditt dokument… detta kan ta en minut.",
+    "done": "Dokumentet har skapats.",
+    "failed": "Kunde inte generera dokumentet.",
+    "hint": "Använder de transkriptioner som markerats för inkludering, i ordning. Du granskar och godkänner innan något delas."
+  },
+  "queue": {
+    "queued": "I kö för transkribering. Denna sida uppdateras automatiskt."
+  },
+  "pdfExport": {
+    "button": "Exportera PDF"
+  },
+  "access": {
+    "readOnly": "Din arbetsyta är skrivskyddad eftersom din provperiod eller prenumeration har upphört. Du kan fortfarande visa och exportera dina dokument.",
+    "grace": "Din provperiod eller prenumeration upphörde den {date}. Du har {n} dagar kvar med full åtkomst.",
+    "trialEnding": "Din kostnadsfria provperiod upphör om {n} dagar.",
+    "choosePlan": "Välj en plan"
+  },
+  "sessionLang": {
+    "saved": "Mötesspråket har sparats. Det gäller inspelningar som transkriberas från och med nu.",
+    "failed": "Kunde inte spara mötesspråket."
+  },
+  "i18nNote": {
+    "machine": "Maskinöversatt"
+  }
+}

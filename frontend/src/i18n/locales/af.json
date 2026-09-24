@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Taal",
+    "signIn": "Meld aan",
+    "signOut": "Meld af",
+    "createAccount": "Skep rekening",
+    "getStarted": "Begin",
+    "startFreeTrial": "Begin gratis proeftydperk",
+    "cancel": "Kanselleer",
+    "back": "Terug",
+    "download": "Laai af",
+    "viewAll": "Bekyk alles"
+  },
+  "brand": {
+    "tagline": "KI-administratiewe werkspasie",
+    "secureWorkspace": "Veilige administratiewe werkspasie",
+    "badge": "Engels · Klank"
+  },
+  "nav": {
+    "dashboard": "Paneelbord",
+    "workspace": "Werkspasie",
+    "sessions": "Sessies en opnames",
+    "documents": "Dokumente",
+    "correspondence": "Korrespondensie",
+    "knowledge": "Kennisbasis",
+    "assistant": "Assistent",
+    "askWorker": "Vra Worker",
+    "actions": "Uitstaande aksies",
+    "administration": "Administrasie",
+    "organisation": "Organisasie",
+    "users": "Gebruikers",
+    "audit": "Ouditspoor",
+    "subscription": "Intekening",
+    "payments": "Betalings",
+    "billing": "Fakturering"
+  },
+  "roles": {
+    "viewer": "Kyker",
+    "officer": "Beampte",
+    "admin": "Admin",
+    "superadmin": "Superadmin"
+  },
+  "landing": {
+    "hero": {
+      "title": "Verander wat jy sê in voltooide, geliasseerde papierwerk.",
+      "body": "Worker is 'n KI-administratiewe werkplek vir organisasies wat groot hoeveelhede formele dokumente uit vergaderings, inligtingsessies en korrespondensie produseer. Neem 'n vergadering op of dikteer, en Worker transkribeer dit, stel notules, memo's, briewe, verslae en beleidsopdragte op, en neem dit deur hersiening en goedkeuring — met 'n volledige ouditspoor.",
+      "badgeRow": "Klank · Engels · Veilige werkplek"
+    },
+    "what": {
+      "title": "Wat Worker doen",
+      "lead": "Die roetine kantoorwerk rondom vergaderings en korrespondensie — binne minute afgehandel, nie ure nie.",
+      "f1": {
+        "title": "Neem op en transkribeer",
+        "body": "Vang vergaderings, onderhoude, inligtingsessies of diktering op. Klank word plaaslik in Engels getranskribeer."
+      },
+      "f2": {
+        "title": "Opstel met KI",
+        "body": "Genereer notules, memo's, briewe, verslae, beleidsopsommings en omsendbriewe in die korrekte amptelike vorm."
+      },
+      "f3": {
+        "title": "Hersien en keur goed",
+        "body": "Elke dokument beweeg deur konsep, hersiening, goedkeuring en finalisering — mense bly in beheer."
+      },
+      "f4": {
+        "title": "Veilig en geouditeer",
+        "body": "Rolgebaseerde toegang en 'n volledige ouditspoor. Korrespondensie word slegs ooit deur 'n persoon gestuur."
+      }
+    },
+    "start": {
+      "title": "Om te begin neem 'n minuut",
+      "lead": "Skep 'n rekening en begin jou 14-dae gratis proeftydperk.",
+      "s1": {
+        "title": "Skep jou rekening",
+        "body": "Voer jou naam, e-pos en 'n wagwoord in."
+      },
+      "s2": {
+        "title": "Verifieer jou e-pos",
+        "body": "Voer die 6-syferkode in wat ons vir jou e-pos."
+      },
+      "s3": {
+        "title": "Meld veilig aan",
+        "body": "Elke aanmelding bevestig met 'n eenmalige kode wat per e-pos gestuur word."
+      },
+      "s4": {
+        "title": "Begin werk",
+        "body": "Skep 'n sessie, neem op en genereer jou eerste dokument."
+      }
+    },
+    "pricing": {
+      "title": "Eenvoudige intekeningpryse",
+      "lead": "Begin met 'n 14-dae gratis proeftydperk. Kies die plan wat pas by die volume administratiewe werk wat jou organisasie produseer.",
+      "perMonth": "/maand",
+      "mostPopular": "MEES GEWILD",
+      "starter": {
+        "name": "Beginner",
+        "desc": "Vir klein spanne wat begin met KI-ondersteunde administratiewe werk."
+      },
+      "professional": {
+        "name": "Professioneel",
+        "desc": "Vir organisasies met gereelde, hoë-volume dokumentproduksie."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Vir groter organisasies met aansienlike administratiewe werklading."
+      },
+      "paymentsNote": "M-Pesa en PayPal word ondersteun vir betaalde intekeninge."
+    },
+    "final": {
+      "title": "Gereed om Worker te probeer?",
+      "cta": "Skep jou rekening"
+    }
+  },
+  "auth": {
+    "email": "E-pos",
+    "password": "Wagwoord",
+    "fullName": "Volle naam",
+    "confirmPassword": "Bevestig wagwoord",
+    "currentPassword": "Huidige wagwoord",
+    "newPassword": "Nuwe wagwoord",
+    "confirmNewPassword": "Bevestig nuwe wagwoord",
+    "code6": "6-syferkode",
+    "signInFailed": "Aanmelding het misluk. Kyk jou geloofsbriewe.",
+    "forgotPassword": "Wagwoord vergeet?",
+    "mfaNotice": "'n Eenmalige kode word per e-pos gestuur om elke aanmelding te bevestig.",
+    "createYourAccount": "Skep u rekening",
+    "pwMin": "Wagwoord moet ten minste {n} karakters wees.",
+    "newPwMin": "Nuwe wagwoord moet ten minste {n} karakters wees.",
+    "pwMismatch": "Wagwoorde stem nie ooreen nie.",
+    "createFailed": "Kon nie rekening skep nie.",
+    "haveAccount": "Het u reeds 'n rekening?",
+    "startAtSignIn": "Begin by aanmelding of registrasie.",
+    "goToSignIn": "Gaan na aanmelding",
+    "invalidCode": "Ongeldige of verval code.",
+    "codeSent": "'n Nuwe kode is gestuur.",
+    "resendFailed": "Kon nie weer stuur nie.",
+    "verifyEmailTitle": "Verifieer u e-pos",
+    "verifyEmailTo": "Verifieer u e-pos — {email}",
+    "verify": "Verifieer",
+    "resendCode": "Stuur kode weer",
+    "signInAgain": "Meld asseblief weer aan.",
+    "mfaPrompt": "Voer die aanmeldkode in wat ons per e-pos gestuur het",
+    "mfaPromptTo": "Voer die aanmeldkode in wat ons per e-pos aan {email} gestuur het",
+    "verifySignIn": "Verifieer en meld aan",
+    "requestFailed": "Kon nie versoek verwerk nie.",
+    "resetTitle": "Herstel u wagwoord",
+    "sendResetCode": "Stuur herstelkode",
+    "backToSignIn": "Terug na aanmelding",
+    "resetPrompt": "Voer die kode in wat ons per e-pos gestuur het en kies 'n nuwe wagwoord",
+    "resetPassword": "Herstel wagwoord",
+    "setNewPassword": "Stel 'n nuwe wagwoord",
+    "forcedChange": "Stel u eie wagwoord vir veiligheid voordat u voortgaan.",
+    "updateAccountPassword": "Dateer u rekeningwagwoord op.",
+    "changeFailed": "Kon nie wagwoord verander nie.",
+    "updatePassword": "Dateer wagwoord op",
+    "signOutInstead": "Meld eerder af"
+  },
+  "notFound": {
+    "title": "Bladsy nie gevind nie",
+    "subtitle": "Daardie bladsy bestaan nie in hierdie werkspasie nie.",
+    "back": "Keer terug na paneelbord"
+  },
+  "status": {
+    "draft": "konsep",
+    "in_review": "in hersiening",
+    "approved": "goedgekeur",
+    "final": "finaal",
+    "archived": "geargiveer",
+    "open": "oop",
+    "processing": "verwerk",
+    "ready": "gereed",
+    "pending": "hangende",
+    "transcribing": "transkribeer",
+    "transcribed": "getranskribeer",
+    "failed": "misluk",
+    "sent": "gestuur",
+    "received": "ontvang",
+    "completed": "voltooi",
+    "cancelled": "gekanselleer",
+    "active": "aktief",
+    "suspended": "opgeskort"
+  },
+  "kind": {
+    "meeting": "vergadering",
+    "interview": "onderhoud",
+    "briefing": "inligtingsessie",
+    "dictation": "diktee",
+    "field_report": "veldverslag",
+    "consultation": "konsultasie",
+    "other": "ander"
+  },
+  "classification": {
+    "unclassified": "ongeklassifiseer",
+    "internal": "intern",
+    "confidential": "vertroulik",
+    "restricted": "beperk"
+  },
+  "dashboard": {
+    "welcome": "Welkom, {name}",
+    "defaultName": "Beampte",
+    "subtitle": "U administratiewe werkspasie — neem op, stel op, hersien en liasseer.",
+    "stats": {
+      "sessions": "Sessies",
+      "documents": "Dokumente",
+      "awaitingReview": "Wag op hersiening",
+      "outstandingActions": "Uitstaande aksies"
+    },
+    "recentSessions": "Onlangse sessies",
+    "documentsToAction": "Dokumente vir aksie",
+    "noSessions": "Nog geen sessies nie.",
+    "nothingToAction": "Niks benodig u aandag nie."
+  },
+  "sessions": {
+    "subtitle": "Elke sessie is 'n saakléer — klank, transkripsie en die dokumente wat daaruit voortgebring is.",
+    "new": "Nuwe sessie",
+    "createFailed": "Kon nie sessie skep nie.",
+    "titlePlaceholder": "bv. Distriksveiligheidskomitee — Weeklikse Inligtingsessie",
+    "create": "Skep sessie",
+    "empty": "Nog geen sessies nie. Skep een om opname te begin.",
+    "fields": {
+      "title": "Titel",
+      "kind": "Soort",
+      "date": "Datum",
+      "classification": "Klassifikasie",
+      "status": "Status",
+      "department": "Departement",
+      "location": "Ligging"
+    }
+  },
+  "session": {
+    "loadFailed": "Kon nie sessie laai nie.",
+    "micDenied": "Mikrofoontoegang geweier of onbeskikbaar.",
+    "audioSaved": "Klank is by die sessie gestoor.",
+    "uploadFailed": "Oplaai het misluk.",
+    "transcribing": "Transkribeer plaaslik — dit kan 'n oomblik neem vir langer klank.",
+    "transcribed": "Transkripsie voltooi.",
+    "transcribeFailed": "Transkripsie het misluk. Kontroleer of die STT-diens loop.",
+    "updateFailed": "Kon nie opdateer nie.",
+    "draftingMinutes": "Stel konsepnotule op uit die transkripsie…",
+    "minutesCreated": "Konsepnotule geskep.",
+    "minutesFailed": "Kon nie notule genereer nie.",
+    "notFound": "Sessie nie gevind nie.",
+    "noDate": "geen datum",
+    "noLocation": "geen ligging",
+    "generateMinutes": "Genereer notule",
+    "captureAudio": "Neem klank op",
+    "stopSave": "Stop & stoor",
+    "startRecording": "Begin opneem",
+    "or": "of",
+    "uploadAudio": "Laai klank op",
+    "audioNote": "Klank bly op die gasheer. Transkripsie loop plaaslik in Engels. Notule kombineer elke snit in hierdie sessie, in volgorde.",
+    "documentsFrom": "Dokumente uit hierdie sessie",
+    "noDocuments": "Nog geen dokumente nie. Transkribeer 'n snit, genereer dan notule.",
+    "recordingsTitle": "Opnames & transkripsies",
+    "clipOne": "{n} snit",
+    "clipMany": "{n} snitte",
+    "noRecordings": "Nog geen opnames nie. Neem op of laai klank hierbo op.",
+    "includeTitle": "Sluit hierdie snit in wanneer notule gegenereer word",
+    "inMinutes": "In notule",
+    "transcribe": "Transkribeer",
+    "transcribeHint": "Transkribeer hierdie snit om die transkripsie hier te sien en te wysig.",
+    "audioLoadFailed": "Kon nie klank laai nie.",
+    "loadAudio": "Laai klank",
+    "words": "{n} woorde",
+    "verified": "geverifieer",
+    "editVerify": "Wysig en verifieer",
+    "saveVerified": "Stoor en merk as geverifieer",
+    "saveDraft": "Stoor konsep",
+    "emptyTranscript": "Leë transkripsie."
+  },
+  "docType": {
+    "minutes": "notule",
+    "memo": "memo",
+    "letter": "brief",
+    "report": "verslag",
+    "policy_brief": "beleidsopdrag",
+    "briefing_note": "inligtingsnota",
+    "concept_note": "konsepnota",
+    "circular": "omsendbrief",
+    "action_matrix": "aksie-matrys",
+    "speech": "toespraak"
+  },
+  "approval": {
+    "submit": "ingedien",
+    "submitted": "ingedien",
+    "approve": "goedgekeur",
+    "approved": "goedgekeur",
+    "reject": "verwerp",
+    "rejected": "verwerp",
+    "finalize": "afgehandel",
+    "finalized": "afgehandel"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Interne Memo",
+      "desc": "Standaard interne memorandum met Aan / Van / Onderwerp."
+    },
+    "letter-official": {
+      "name": "Amptelike Brief",
+      "desc": "Formele uitgaande brief op die kantoor se briefhoof."
+    },
+    "circular-general": {
+      "name": "Omsendbrief",
+      "desc": "Kennisgewing wat aan baie ontvangers gestuur word."
+    },
+    "report-standard": {
+      "name": "Verslag",
+      "desc": "Algemene verslag met opsomming, afdelings en aanbevelings."
+    },
+    "policy-brief": {
+      "name": "Beleidsopdrag",
+      "desc": "Beknopte opdrag vir besluitnemers."
+    },
+    "briefing-note": {
+      "name": "Inligtingsnota",
+      "desc": "Kort nota om 'n prinsipaal voor 'n verbintenis in te lig."
+    },
+    "concept-note": {
+      "name": "Konsepnota",
+      "desc": "Uiteensetting van 'n voorgestelde program of aktiwiteit."
+    },
+    "minutes-blank": {
+      "name": "Vergaderingnotule (leeg)",
+      "desc": "Leë notule-struktuur om met die hand in te vul."
+    },
+    "speech-remarks": {
+      "name": "Toespraak / Opmerkings",
+      "desc": "Formele opmerkings vir 'n geleentheid."
+    }
+  },
+  "documents": {
+    "subtitle": "Notule, memo's, briewe, verslae en opsommings — opgestel met KI, goedgekeur deur mense.",
+    "startFromTemplate": "Begin vanaf sjabloon",
+    "fromSpreadsheet": "Verslag vanaf sigblad",
+    "draftWithAI": "Opstel met KI",
+    "templateTitle": "Begin vanaf 'n sjabloon",
+    "allTypes": "Alle tipes",
+    "orgTemplates": "U organisasie se sjablone",
+    "savedByOrg": "Gered deur u organisasie",
+    "useTemplate": "Gebruik hierdie sjabloon",
+    "generalTemplates": "Algemene sjablone",
+    "spreadsheetFailed": "Kon nie 'n verslag vanaf daardie sigblad bou nie.",
+    "templateFailed": "Kon nie vanaf sjabloon skep nie.",
+    "draftFailed": "Kon nie dokument opstel nie.",
+    "fields": {
+      "type": "Dokumenttipe",
+      "title": "Titel",
+      "recipient": "Ontvanger (opsioneel)",
+      "department": "Departement (opsioneel)",
+      "brief": "Instruksies / opdrag"
+    },
+    "briefPlaceholder": "Beskryf die doel, sleutelpunte en enige feite om in te sluit. Die assistent sal 'n formele dokument opstel wat u kan wysig en goedkeur.",
+    "generateDraft": "Genereer konsep",
+    "empty": "Nog geen dokumente nie.",
+    "table": {
+      "title": "Titel",
+      "type": "Tipe",
+      "ref": "Verw.",
+      "status": "Status",
+      "ver": "Weerg."
+    }
+  },
+  "doc": {
+    "loadFailed": "Kon nie dokument laai nie.",
+    "invalidJson": "Inhoud is nie geldige JSON nie.",
+    "saved": "Gered. Weergawe verhoog.",
+    "saveFailed": "Stoor het misluk.",
+    "done": {
+      "submit": "Dokument vir hersiening ingedien.",
+      "approve": "Dokument goedgekeur.",
+      "reject": "Dokument verwerp.",
+      "finalize": "Dokument gefinaliseer."
+    },
+    "failed": {
+      "submit": "Kon nie indien nie.",
+      "approve": "Kon nie goedkeur nie.",
+      "reject": "Kon nie verwerp nie.",
+      "finalize": "Kon nie finaliseer nie."
+    },
+    "templateName": "Sjabloonnaam",
+    "templateDefault": "{title}-sjabloon",
+    "templateSaved": "Gestoor as 'n herbruikbare sjabloon vir u organisasie.",
+    "templateSaveFailed": "Kon nie sjabloon stoor nie.",
+    "exportFailed": "Uitvoer het misluk.",
+    "notFound": "Dokument nie gevind nie.",
+    "exportDocx": "Voer DOCX uit",
+    "exportPptx": "Voer PPTX uit",
+    "exportXlsx": "Voer XLSX uit",
+    "saveAsTemplate": "Stoor as sjabloon",
+    "content": "Inhoud",
+    "workflow": "Werkvloei",
+    "aiAssisted": "KI-bystand konsep",
+    "auditChain": "Ouditspoor: klank → transkripsie → KI-konsep → menslike wysiging → goedkeuring → finaal. Elke stap word aangeteken.",
+    "comment": "Kommentaar (opsioneel)",
+    "commentPlaceholder": "Voeg 'n nota vir die rekord by",
+    "submit": "Dien in vir hersiening",
+    "approve": "Keur goed",
+    "reject": "Verwerp",
+    "finalize": "Finaliseer",
+    "finalLocked": "Finaal — gesluit vir wysiging",
+    "editJson": "Wysig inhoud (JSON)",
+    "jsonNote": "Gestruktureerde inhoud dryf die gebrande DOCX. Wysig die velde hieronder en stoor; handelsmerk en uitleg word outomaties toegepas tydens uitvoer.",
+    "saveContent": "Stoor inhoud",
+    "approvalHistory": "Goedkeuringsgeskiedenis"
+  },
+  "emails": {
+    "subtitle": "Stel briewe en e-posse met KI op. Niks word gestuur voordat 'n persoon op stuur klik nie.",
+    "needIntent": "Gee die assistent 'n onderwerp of bedoeling om van op te stel.",
+    "draftReady": "Konsep gereed. Hersien en wysig voor versending.",
+    "draftFailed": "Konsep het misluk.",
+    "draftSaved": "Konsep gestoor.",
+    "saveFailed": "Kon nie stoor nie.",
+    "confirmSend": "Stuur hierdie e-pos nou? Hierdie aksie word in die ouditspoor aangeteken.",
+    "sent": "E-pos gestuur.",
+    "sendFailed": "Versending het misluk.",
+    "compose": "Stel op",
+    "messages": "Boodskappe",
+    "empty": "Nog geen korrespondensie nie.",
+    "message": "Boodskap",
+    "details": "Besonderhede",
+    "to": "Aan",
+    "cc": "Cc",
+    "subject": "Onderwerp",
+    "intent": "Wat moet dit sê? (vir KI)",
+    "intentPlaceholder": "bv. Nooi hoofde na die veiligheidsbaraza op Vrydag 10:00",
+    "body": "Inhoud",
+    "saveDraft": "Stoor konsep",
+    "toLabel": "Aan:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Onderwerp:",
+    "aiAssisted": "KI-bystand",
+    "sendNow": "Stuur nou",
+    "selectHint": "Kies 'n boodskap of stel 'n nuwe een op."
+  },
+  "knowledge": {
+    "subtitle": "Verwysingsmateriaal waarop die assistent kan staatmaak — beleide, sjablone, presedente.",
+    "added": "By die kennisbasis gevoeg.",
+    "addFailed": "Kon nie byvoeg nie.",
+    "chooseFile": "Kies 'n lêer om op te laai.",
+    "ocrFailed": "Lêer gestoor. OCR kon nie teks uit hierdie lêer lees nie (dit mag van lae gehalte wees). U kan die teks handmatig plak.",
+    "extracted": "Lêer gestoor en {n} karakters se teks onttrek.",
+    "noText": "Lêer gestoor. Geen teks kon uit hierdie formaat onttrek word nie.",
+    "uploadFailed": "Oplaai het misluk.",
+    "confirmRemove": "Verwyder hierdie verwysing?",
+    "uploadTitle": "Laai 'n dokument op",
+    "file": "Lêer",
+    "titleOptional": "Titel (opsioneel)",
+    "titleDefault": "Verstek na lêernaam",
+    "categoryOptional": "Kategorie (opsioneel)",
+    "uploadExtract": "Laai op en onttrek",
+    "uploadNote": "Word-, PDF-, CSV- en tekslêers se teks word outomaties onttrek. Geskandeerde PDF's en foto's word outomaties met OCR gelees.",
+    "pasteTitle": "Voeg verwysing by (plak teks)",
+    "title": "Titel",
+    "category": "Kategorie",
+    "categoryPlaceholder": "bv. Omsendbriewe, Beleide",
+    "textContent": "Teksinhoud",
+    "add": "Voeg by",
+    "references": "Verwysings",
+    "empty": "Nog niks nie.",
+    "uncategorised": "Ongekategoriseer",
+    "remove": "Verwyder"
+  },
+  "assistant": {
+    "subtitle": "Gee 'n opdrag in eenvoudige Afrikaans — som op, vind, stel op of verduidelik regoor u werkspasie.",
+    "failed": "Die assistent kon dit nie verwerk nie.",
+    "instruction": "Instruksie",
+    "placeholder": "bv. Som die besluite van hierdie week se veiligheidskomitee op, of lys memoranda wat nog op goedkeuring wag.",
+    "ask": "Vra"
+  },
+  "actions": {
+    "subtitle": "Aksie-items onttrek uit notules en aksiematrikse oor sessies heen.",
+    "empty": "Geen uitstaande aksies gevind nie.",
+    "table": {
+      "action": "Aksie",
+      "responsible": "Verantwoordelik",
+      "timeline": "Tydlyn",
+      "source": "Bron"
+    }
+  },
+  "paypal": {
+    "title": "PayPal-betaling",
+    "subtitle": "Intekeningbetalingbevestiging.",
+    "confirming": "Bevestig tans u PayPal-betaling...",
+    "noOrder": "Geen PayPal-bestelling is terugbesorg nie.",
+    "confirmed": "Betaling bevestig. U Worker-intekening is nou aktief.",
+    "failed": "Die PayPal-betaling kon nie bevestig word nie.",
+    "success": "Betaling suksesvol",
+    "viewSubscription": "Bekyk intekening",
+    "errorTitle": "Betaling kon nie bevestig word nie",
+    "returnToSubscription": "Keer terug na intekening"
+  },
+  "tenant": {
+    "saved": "Organisasiebesonderhede gestoor. Dit verskyn op elke dokument wat u uitvoer.",
+    "saveFailed": "Kon nie stoor nie.",
+    "logoUploaded": "Logo opgelaai.",
+    "signatureUploaded": "Handtekening opgelaai.",
+    "uploadFailed": "Oplaai het misluk.",
+    "subtitleShort": "Handelsmerk vir u werkspasie.",
+    "noOrg": "Hierdie rekening is nie met 'n organisasie geassosieer nie.",
+    "subtitle": "U naam, briefhoof, logo en handtekening verskyn op elke dokument wat u genereer.",
+    "letterhead": "Briefhoof",
+    "orgName": "Organisasienaam",
+    "line": "Briefhooflyn {n}",
+    "line1Placeholder": "bv. PROVINSIALE REGERING VAN ...",
+    "line2Placeholder": "bv. Departement van ...",
+    "line3Placeholder": "bv. Eenheid / Kantoor",
+    "saveLetterhead": "Stoor briefhoof",
+    "blankHint": "Los lyne leeg om terug te val op u organisasienaam.",
+    "logoSignature": "Logo & handtekening",
+    "logo": "Wapen / logo (PNG of JPG)",
+    "signature": "E-handtekening (PNG of JPG)",
+    "uploaded": "opgelaai",
+    "brandingNote": "Die logo verskyn in die dokumentkop en op skyfietitelblaaie. Die handtekening word aan die einde van uitgevoerde dokumente geplaas. Gebruik 'n PNG met deursigtige agtergrond vir die beste resultate."
+  },
+  "users": {
+    "createdTemp": "Gebruiker geskep. Tydelike wagwoord: {temp} — deel veilig; hulle moet dit by eerste aanmelding verander.",
+    "created": "Gebruiker geskep.",
+    "createFailed": "Kon nie gebruiker skep nie.",
+    "confirmRemove": "Verwyder {name}?",
+    "removeFailed": "Kon nie verwyder nie.",
+    "subtitle": "Bestuur toegang. Die superadmin-rekening kan nie hier gewysig word nie.",
+    "add": "Voeg gebruiker by",
+    "create": "Skep gebruiker",
+    "empty": "Geen gebruikers nie.",
+    "fields": {
+      "name": "Naam",
+      "email": "E-pos",
+      "role": "Rol",
+      "department": "Departement",
+      "status": "Status"
+    },
+    "suspend": "Skors",
+    "reinstate": "Herinstel",
+    "remove": "Verwyder"
+  },
+  "audit": {
+    "subtitle": "Elke beduidende aksie word aangeteken. Logs bevat slegs metadata en identifiseerders — nooit dokumentinhoud of klank nie.",
+    "empty": "Geen ouditinskrywings nie.",
+    "table": {
+      "when": "Wanneer",
+      "actor": "Akteur",
+      "action": "Aksie",
+      "resource": "Hulpbron"
+    },
+    "system": "stelsel"
+  },
+  "payments": {
+    "stkSent": "STK-push gestuur. Vra die betaler om op hul selfoon goed te keur.",
+    "initiateFailed": "Kon nie betaling begin nie.",
+    "subtitle": "M-Pesa (Daraja STK-push) en PayPal-transaksies.",
+    "requestTitle": "Versoek M-Pesa-betaling",
+    "phone": "Foon (07.. of 2547..)",
+    "amountKes": "Bedrag (KES)",
+    "purpose": "Doel",
+    "sendStk": "Stuur STK-push",
+    "transactions": "Transaksies",
+    "empty": "Geen transaksies nie.",
+    "table": {
+      "provider": "Verskaffer",
+      "amount": "Bedrag",
+      "status": "Status",
+      "ref": "Verw."
+    }
+  },
+  "billing": {
+    "subtitle": "Fakture en kwitansies vir voltooide Worker-intekeningbetalings.",
+    "loadFailed": "Kon nie faktureringsdokumente laai nie.",
+    "downloadFailed": {
+      "invoice": "Kon nie die faktuur aflaai nie.",
+      "receipt": "Kon nie die kwitansie aflaai nie."
+    },
+    "documentsTitle": "Faktureringsdokumente",
+    "intro": "Laai fakture en kwitansies af vir u organisasie se voltooide intekenbetalings.",
+    "disclaimer": "Hierdie dokumente dokumenteer Worker-intekenbetalings en word verskaf vir betalings- en vergoedingsdoeleindes. Dit word nie as KRA/eTIMS-belastingfakture voorgestel nie, tensy dit afsonderlik deur 'n voldoenende eTIMS-integrasie uitgereik word.",
+    "invoices": "Fakture",
+    "noInvoices": "Nog geen fakture nie.",
+    "receipts": "Kwitansies",
+    "noReceipts": "Nog geen kwitansies nie.",
+    "downloadPdf": "Laai PDF af",
+    "table": {
+      "invoice": "Faktuur",
+      "receipt": "Kwitansie",
+      "date": "Datum",
+      "description": "Beskrywing",
+      "amount": "Bedrag",
+      "status": "Status",
+      "provider": "Verskaffer",
+      "reference": "Verwysing"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Kon nie die intekening laai nie.",
+    "selectFirst": "Kies eers 'n intekeningsplan.",
+    "mpesaSent": "M-Pesa STK-stoot gestuur. Keur die betaling op u selfoon goed. U intekening sal aktiveer nadat die betaling bevestig is.",
+    "mpesaFailed": "Kon nie die M-Pesa-betaling begin nie.",
+    "noApproveUrl": "PayPal-goedkeurings-URL is nie teruggegee nie.",
+    "paypalFailed": "Kon nie die PayPal-betaling begin nie.",
+    "subtitleShort": "Bestuur u Worker-intekening.",
+    "subtitle": "Bestuur u Worker-plan, proeftydperk en fakturering.",
+    "current": "Huidige intekening",
+    "organisation": "Organisasie",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "14-dae gratis proeftydperk",
+    "trialEnds": "Proeftydperk eindig",
+    "dayRemaining": "{n} dag oor",
+    "daysRemaining": "{n} dae oor",
+    "renewsEnds": "Hernu / eindig",
+    "chooseTitle": "Kies 'n plan",
+    "chooseSubtitle": "Alle planne sluit die Worker-administratiewe werkstroom in. U 14-dae proeftydperk is gratis.",
+    "perMonth": "/ maand",
+    "planSelected": "{plan} gekies. U plan is gestoor en gereed vir betaling.",
+    "selectFailed": "Kon nie die plan kies nie.",
+    "selected": "Gekies",
+    "selectPlan": "Kies plan",
+    "activateTitle": "Aktiveer u intekening",
+    "selectAbove": "Kies 'n plan hierbo om na betaling voort te gaan.",
+    "stkNote": "'n STK-stoot sal na die selfoonnommer hieronder gestuur word.",
+    "phone": "Selfoonnommer",
+    "phonePlaceholder": "07.. of 2547..",
+    "payMpesa": "Betaal met M-Pesa",
+    "paypalNote": "Gaan voort na PayPal om vir die gekose plan in USD te betaal.",
+    "payPaypal": "Betaal met PayPal",
+    "settleNote": "Betaalde intekeninge kan deur M-Pesa of PayPal vereffen word.",
+    "activationNote": "U gekose plan sal geaktiveer word na suksesvolle betalingsbevestiging.",
+    "historyNote": "Betalingsgeskiedenis is beskikbaar onder Administrasie → Betalings."
+  },
+  "intl": {
+    "territory": "Gebied",
+    "searchTerritory": "Soek gebied…",
+    "selectTerritory": "Kies u gebied",
+    "territoryRequired": "Kies asseblief u gebied.",
+    "workingLanguage": "Werkingstaal",
+    "meetingLanguage": "Vergaderingstaal",
+    "useDefault": "Organisasie-verstek",
+    "beta": "transkripsie beta",
+    "unavailable": "geen transkripsie"
+  },
+  "generate": {
+    "title": "Genereer 'n dokument uit hierdie sessie",
+    "as": "Genereer as",
+    "instructions": "Instruksie (opsioneel)",
+    "placeholder": "bv. Brief aan die Permanent Secretary wat besluite 2 en 3 opsom",
+    "button": "Genereer",
+    "working": "U dokument word opgestel… dit kan 'n minuut neem.",
+    "done": "Dokument geskep.",
+    "failed": "Kon nie die dokument genereer nie.",
+    "hint": "Gebruik die transkripsies wat vir insluiting gemerk is, in volgorde. U hersien en keur goed voordat enigiets gedeel word."
+  },
+  "queue": {
+    "queued": "In die tou vir transkripsie. Hierdie bladsy werk outomaties op."
+  },
+  "pdfExport": {
+    "button": "Voer PDF uit"
+  },
+  "access": {
+    "readOnly": "U werkruimte is leesalleen omdat u proeftydperk of intekening geëindig het. U kan steeds u dokumente sien en uitvoer.",
+    "grace": "U proeftydperk of intekening het op {date} geëindig. U het {n} dae van volle toegang oor.",
+    "trialEnding": "U gratis proeftydperk eindig oor {n} dae.",
+    "choosePlan": "Kies 'n plan"
+  },
+  "sessionLang": {
+    "saved": "Vergaderingstaal gestoor. Dit geld vir opnames wat van nou af getranskribeer word.",
+    "failed": "Kon nie die vergaderingstaal stoor nie."
+  },
+  "i18nNote": {
+    "machine": "Masjienvertaal"
+  }
+}

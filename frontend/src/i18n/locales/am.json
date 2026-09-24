@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "ቋንቋ",
+    "signIn": "ግባ",
+    "signOut": "ውጣ",
+    "createAccount": "መዝገብ ይክፈቱ",
+    "getStarted": "ይጀምሩ",
+    "startFreeTrial": "ነጻ ሙከራ ይጀምሩ",
+    "cancel": "ሰርዝ",
+    "back": "ተመለስ",
+    "download": "አውርድ",
+    "viewAll": "ሁሉንም ይመልከቱ"
+  },
+  "brand": {
+    "tagline": "የAI አስተዳደራዊ የሥራ ቦታ",
+    "secureWorkspace": "ደህንነቱ የተጠበቀ አስተዳደራዊ የሥራ ቦታ",
+    "badge": "እንግሊዝኛ · ድምጽ"
+  },
+  "nav": {
+    "dashboard": "ዳሽቦርድ",
+    "workspace": "የሥራ ቦታ",
+    "sessions": "ክፍለ ጊዜዎች እና ቀረጻዎች",
+    "documents": "ሰነዶች",
+    "correspondence": "የደብዳቤ ልውውጥ",
+    "knowledge": "የእውቀት መሠረት",
+    "assistant": "ረዳት",
+    "askWorker": "Workerን ይጠይቁ",
+    "actions": "በመጠባበቅ ላይ ያሉ ተግባራት",
+    "administration": "አስተዳደር",
+    "organisation": "ድርጅት",
+    "users": "ተጠቃሚዎች",
+    "audit": "የክትትል መዝገብ",
+    "subscription": "የደንበኝነት ምዝገባ",
+    "payments": "ክፍያዎች",
+    "billing": "የክፍያ ሂሳብ"
+  },
+  "roles": {
+    "viewer": "ተመልካች",
+    "officer": "መኮንን",
+    "admin": "አስተዳዳሪ",
+    "superadmin": "ዋና አስተዳዳሪ"
+  },
+  "landing": {
+    "hero": {
+      "title": "የሚናገሩትን ወደ ተጠናቀቀ እና የተመዘገበ ሰነድ ይለውጡ።",
+      "body": "Worker ከስብሰባዎች፣ ከመግለጫዎች እና ከደብዳቤ ልውውጥ ብዙ መደበኛ ሰነዶችን ለሚያዘጋጁ ድርጅቶች የተዘጋጀ የAI አስተዳደራዊ የሥራ ቦታ ነው። ስብሰባ ይቅረጹ ወይም ያነቡ፤ Worker በድምጽ ይጽፈዋል፣ የስብሰባ ማስታወሻ፣ ማስታወሻ ደብዳቤ፣ ደብዳቤዎች፣ ሪፖርቶች እና የፖሊሲ ማጠቃለያዎችን ያርቅቃል፣ እንዲሁም ሙሉ የክትትል መዝገብ በማካተት በግምገማ እና በማጽደቅ ሂደት ያሳልፋል።",
+      "badgeRow": "ድምጽ · እንግሊዝኛ · ደህንነቱ የተጠበቀ የሥራ ቦታ"
+    },
+    "what": {
+      "title": "Worker ምን ያደርጋል",
+      "lead": "በስብሰባዎች እና በደብዳቤ ልውውጥ ዙሪያ ያለው የተለመደ የቢሮ ሥራ — በሰዓታት ሳይሆን በደቂቃዎች ይጠናቀቃል።",
+      "f1": {
+        "title": "ይቅረጹ እና ይጻፉ",
+        "body": "ስብሰባዎችን፣ ቃለ መጠይቆችን፣ መግለጫዎችን ወይም የቃል ንባብን ይያዙ። ድምጽ በአካባቢው በእንግሊዝኛ ይጻፋል።"
+      },
+      "f2": {
+        "title": "በAI አርቅ",
+        "body": "ቃለ ምልልሶችን፣ ማስታወሻዎችን፣ ደብዳቤዎችን፣ ሪፖርቶችን፣ የፖሊሲ ማጠቃለያዎችን እና ሰርኩላሮችን በትክክለኛ ይፋዊ ቅርጸት ያመንጩ።"
+      },
+      "f3": {
+        "title": "ገምግም እና አጽድቅ",
+        "body": "እያንዳንዱ ሰነድ በረቂቅ፣ በግምገማ፣ በማጽደቅ እና በማጠናቀቅ ደረጃዎች ያልፋል — ሰዎች ቁጥጥሩን ይይዛሉ።"
+      },
+      "f4": {
+        "title": "ደህንነቱ የተጠበቀ እና የተመረመረ",
+        "body": "በሚና ላይ የተመሰረተ መዳረሻ እና ሙሉ የመረመረ መዝገብ። ደብዳቤ የሚላከው በሰው ብቻ ነው።"
+      }
+    },
+    "start": {
+      "title": "ለመጀመር አንድ ደቂቃ ብቻ ይወስዳል",
+      "lead": "መለያ ይፍጠሩ እና የ14 ቀን ነፃ ሙከራዎን ይጀምሩ።",
+      "s1": {
+        "title": "መለያዎን ይፍጠሩ",
+        "body": "ስምዎን፣ ኢሜይልዎን እና የይለፍ ቃል ያስገቡ።"
+      },
+      "s2": {
+        "title": "ኢሜይልዎን ያረጋግጡ",
+        "body": "በኢሜይል የምንልክልዎትን ባለ 6 አሃዝ ኮድ ያስገቡ።"
+      },
+      "s3": {
+        "title": "በደህንነት ይግቡ",
+        "body": "እያንዳንዱ መግቢያ በኢሜይል በሚላክ የአንድ ጊዜ ኮድ ይረጋገጣል።"
+      },
+      "s4": {
+        "title": "ሥራ ይጀምሩ",
+        "body": "ክፍለ ጊዜ ይፍጠሩ፣ ይቅረጹ እና የመጀመሪያ ሰነድዎን ያመንጩ።"
+      }
+    },
+    "pricing": {
+      "title": "ቀላል የደንበኝነት ዋጋ",
+      "lead": "በ14 ቀን ነፃ ሙከራ ይጀምሩ። ለድርጅትዎ የአስተዳደር ሥራ መጠን የሚስማማውን እቅድ ይምረጡ።",
+      "perMonth": "/ወር",
+      "mostPopular": "በጣም ተወዳጅ",
+      "starter": {
+        "name": "መጀመሪያ",
+        "desc": "በAI የሚደገፍ የአስተዳደር ሥራ ለሚጀምሩ አነስተኛ ቡድኖች።"
+      },
+      "professional": {
+        "name": "ባለሙያ",
+        "desc": "መደበኛ እና ከፍተኛ መጠን ያለው የሰነድ ምርት ለሚያመነጩ ድርጅቶች።"
+      },
+      "premium": {
+        "name": "ፕሪሚየም",
+        "desc": "ከፍተኛ የአስተዳደር ሥራ ጫና ላላቸው ትላልቅ ድርጅቶች።"
+      },
+      "paymentsNote": "ለሚከፈልባቸው ደንበኝነቶች M-Pesa እና PayPal ይደገፋሉ።"
+    },
+    "final": {
+      "title": "Workerን ለመሞከር ተዘጋጅተዋል?",
+      "cta": "መለያዎን ይፍጠሩ"
+    }
+  },
+  "auth": {
+    "email": "ኢሜይል",
+    "password": "የይለፍ ቃል",
+    "fullName": "ሙሉ ስም",
+    "confirmPassword": "የይለፍ ቃል ያረጋግጡ",
+    "currentPassword": "የአሁኑ የይለፍ ቃል",
+    "newPassword": "አዲስ የይለፍ ቃል",
+    "confirmNewPassword": "አዲሱን የይለፍ ቃል ያረጋግጡ",
+    "code6": "ባለ 6 አሃዝ ኮድ",
+    "signInFailed": "መግቢያ አልተሳካም። መረጃዎን ያረጋግጡ።",
+    "forgotPassword": "የይለፍ ቃል ረሱ?",
+    "mfaNotice": "እያንዳንዱን መግቢያ ለማረጋገጥ የአንድ ጊዜ ኮድ በኢሜይል ይላካል።",
+    "createYourAccount": "መለያዎን ይፍጠሩ",
+    "pwMin": "የይለፍ ቃል ቢያንስ {n} ቁምፊዎች መሆን አለበት።",
+    "newPwMin": "አዲስ የይለፍ ቃል ቢያንስ {n} ቁምፊዎች መሆን አለበት።",
+    "pwMismatch": "የይለፍ ቃላቱ አይመሳሰሉም።",
+    "createFailed": "መለያ መፍጠር አልተቻለም።",
+    "haveAccount": "መለያ አለዎት?",
+    "startAtSignIn": "በመግቢያ ወይም በምዝገባ ይጀምሩ።",
+    "goToSignIn": "ወደ መግቢያ ይሂዱ",
+    "invalidCode": "ልክ ያልሆነ ወይም ጊዜው ያለፈበት ኮድ።",
+    "codeSent": "አዲስ ኮድ ተልኳል።",
+    "resendFailed": "እንደገና መላክ አልተቻለም።",
+    "verifyEmailTitle": "ኢሜይልዎን ያረጋግጡ",
+    "verifyEmailTo": "ኢሜይልዎን ያረጋግጡ — {email}",
+    "verify": "አረጋግጥ",
+    "resendCode": "ኮድ እንደገና ላክ",
+    "signInAgain": "እባክዎ እንደገና ይግቡ።",
+    "mfaPrompt": "የላክንልዎትን የመግቢያ ኮድ ያስገቡ",
+    "mfaPromptTo": "ወደ {email} የላክንልዎትን የመግቢያ ኮድ ያስገቡ",
+    "verifySignIn": "አረጋግጥ እና ግባ",
+    "requestFailed": "ጥያቄውን ማስኬድ አልተቻለም።",
+    "resetTitle": "የይለፍ ቃልዎን ዳግም ያስጀምሩ",
+    "sendResetCode": "የዳግም ማስጀመሪያ ኮድ ላክ",
+    "backToSignIn": "ወደ መግቢያ ተመለስ",
+    "resetPrompt": "የላክንልዎትን ኮድ ያስገቡ እና አዲስ የይለፍ ቃል ይምረጡ",
+    "resetPassword": "የይለፍ ቃል ዳግም አስጀምር",
+    "setNewPassword": "አዲስ የይለፍ ቃል ያስቀምጡ",
+    "forcedChange": "ለደህንነት ሲባል ከመቀጠልዎ በፊት የራስዎን የይለፍ ቃል ያስቀምጡ።",
+    "updateAccountPassword": "የመለያዎን የይለፍ ቃል ያዘምኑ።",
+    "changeFailed": "የይለፍ ቃል መቀየር አልተቻለም።",
+    "updatePassword": "የይለፍ ቃል አዘምን",
+    "signOutInstead": "በምትኩ ውጣ"
+  },
+  "notFound": {
+    "title": "ገጹ አልተገኘም",
+    "subtitle": "ይህ ገጽ በዚህ የስራ ቦታ ውስጥ የለም።",
+    "back": "ወደ ዳሽቦርድ ተመለስ"
+  },
+  "status": {
+    "draft": "ረቂቅ",
+    "in_review": "በግምገማ ላይ",
+    "approved": "ጸድቋል",
+    "final": "የመጨረሻ",
+    "archived": "በማህደር ተቀምጧል",
+    "open": "ክፍት",
+    "processing": "በሂደት ላይ",
+    "ready": "ዝግጁ",
+    "pending": "በመጠባበቅ ላይ",
+    "transcribing": "በመተርጎም ላይ",
+    "transcribed": "ተተርጉሟል",
+    "failed": "አልተሳካም",
+    "sent": "ተልኳል",
+    "received": "ተቀብሏል",
+    "completed": "ተጠናቅቋል",
+    "cancelled": "ተሰርዟል",
+    "active": "ንቁ",
+    "suspended": "ታግዷል"
+  },
+  "kind": {
+    "meeting": "ስብሰባ",
+    "interview": "ቃለ መጠይቅ",
+    "briefing": "ገለጻ",
+    "dictation": "አነባበብ",
+    "field_report": "የመስክ ሪፖርት",
+    "consultation": "ምክክር",
+    "other": "ሌላ"
+  },
+  "classification": {
+    "unclassified": "ያልተመደበ",
+    "internal": "ውስጣዊ",
+    "confidential": "ሚስጥራዊ",
+    "restricted": "የተገደበ"
+  },
+  "dashboard": {
+    "welcome": "እንኳን ደህና መጡ፣ {name}",
+    "defaultName": "መኮንን",
+    "subtitle": "የእርስዎ የአስተዳደር የሥራ ቦታ — ይቅረጹ፣ ይረቂቁ፣ ይገምግሙ እና ያስቀምጡ።",
+    "stats": {
+      "sessions": "ክፍለ ጊዜዎች",
+      "documents": "ሰነዶች",
+      "awaitingReview": "ግምገማ በመጠባበቅ ላይ",
+      "outstandingActions": "ያልተጠናቀቁ ተግባራት"
+    },
+    "recentSessions": "የቅርብ ጊዜ ክፍለ ጊዜዎች",
+    "documentsToAction": "እርምጃ የሚያስፈልጋቸው ሰነዶች",
+    "noSessions": "እስካሁን ክፍለ ጊዜ የለም።",
+    "nothingToAction": "ትኩረትዎን የሚፈልግ ነገር የለም።"
+  },
+  "sessions": {
+    "subtitle": "እያንዳንዱ ክፍለ ጊዜ የጉዳይ ፋይል ነው — ድምጽ፣ ጽሑፍ እና ከእሱ የተዘጋጁ ሰነዶች።",
+    "new": "አዲስ ክፍለ ጊዜ",
+    "createFailed": "ክፍለ ጊዜ መፍጠር አልተቻለም።",
+    "titlePlaceholder": "ለምሳሌ፦ የካውንቲ የደህንነት ኮሚቴ — ሳምንታዊ ገለጻ",
+    "create": "ክፍለ ጊዜ ፍጠር",
+    "empty": "እስካሁን ክፍለ ጊዜ የለም። ለመቅረጽ አንዱን ይፍጠሩ።",
+    "fields": {
+      "title": "ርዕስ",
+      "kind": "ዓይነት",
+      "date": "ቀን",
+      "classification": "ምደባ",
+      "status": "ሁኔታ",
+      "department": "መምሪያ",
+      "location": "አካባቢ"
+    }
+  },
+  "session": {
+    "loadFailed": "ክፍለ ጊዜውን መጫን አልተቻለም።",
+    "micDenied": "የማይክሮፎን መዳረሻ ተከልክሏል ወይም አይገኝም።",
+    "audioSaved": "ድምጽ በክፍለ ጊዜው ውስጥ ተቀምጧል።",
+    "uploadFailed": "መጫን አልተሳካም።",
+    "transcribing": "በአካባቢው በመተርጎም ላይ — ለረጅም ድምጽ ትንሽ ጊዜ ሊወስድ ይችላል።",
+    "transcribed": "ትርጉም ተጠናቅቋል።",
+    "transcribeFailed": "ትርጉም አልተሳካም። የSTT አገልግሎቱ እየሰራ መሆኑን ያረጋግጡ።",
+    "updateFailed": "ማዘመን አልተቻለም።",
+    "draftingMinutes": "ከትርጉሙ ረቂቅ ቃለ ጉባኤ በመሳል ላይ…",
+    "minutesCreated": "ረቂቅ ቃለ ጉባኤ ተፈጥሯል።",
+    "minutesFailed": "ቃለ ጉባኤ ማመንጨት አልተቻለም።",
+    "notFound": "ክፍለ ጊዜው አልተገኘም።",
+    "noDate": "ቀን የለም",
+    "noLocation": "አካባቢ የለም",
+    "generateMinutes": "ቃለ ጉባኤ አመንጭ",
+    "captureAudio": "ድምጽ ቅዳ",
+    "stopSave": "አቁም እና አስቀምጥ",
+    "startRecording": "ቀረጻ ጀምር",
+    "or": "ወይም",
+    "uploadAudio": "ድምጽ ጫን",
+    "audioNote": "ድምጽ በአስተናጋጁ ላይ ይቆያል። ትርጉም በአካባቢው በእንግሊዝኛ ይሰራል። ቃለ ጉባኤ በዚህ ክፍለ ጊዜ ውስጥ ያሉትን ሁሉንም ክሊፖች በቅደም ተከተል ያጣምራል።",
+    "documentsFrom": "ከዚህ ክፍለ ጊዜ የተገኙ ሰነዶች",
+    "noDocuments": "እስካሁን ሰነዶች የሉም። ክሊፕ ተርጉም፣ ከዚያ ቃለ ጉባኤ አመንጭ።",
+    "recordingsTitle": "ቀረጻዎች እና ትርጉሞች",
+    "clipOne": "{n} ክሊፕ",
+    "clipMany": "{n} ክሊፖች",
+    "noRecordings": "እስካሁን ቀረጻዎች የሉም። ከላይ ድምጽ ይቅዱ ወይም ይጫኑ።",
+    "includeTitle": "ቃለ ጉባኤ በሚመነጭበት ጊዜ ይህን ክሊፕ አካትት",
+    "inMinutes": "በቃለ ጉባኤ ውስጥ",
+    "transcribe": "ተርጉም",
+    "transcribeHint": "የዚህን ክሊፕ ትርጉም እዚህ ለማየት እና ለማረም ተርጉም።",
+    "audioLoadFailed": "ድምጽ መጫን አልተቻለም።",
+    "loadAudio": "ድምጽ ጫን",
+    "words": "{n} ቃላት",
+    "verified": "የተረጋገጠ",
+    "editVerify": "አርትዕ እና አረጋግጥ",
+    "saveVerified": "አስቀምጥ እና እንደተረጋገጠ ምልክት አድርግ",
+    "saveDraft": "ረቂቅ አስቀምጥ",
+    "emptyTranscript": "ባዶ ግልባጭ።"
+  },
+  "docType": {
+    "minutes": "ቃለ ምልልስ",
+    "memo": "ማስታወሻ",
+    "letter": "ደብዳቤ",
+    "report": "ሪፖርት",
+    "policy_brief": "የፖሊሲ አጭር ማብራሪያ",
+    "briefing_note": "የመረጃ ማስታወሻ",
+    "concept_note": "የፅንሰ ሀሳብ ማስታወሻ",
+    "circular": "ዙሪያ ደብዳቤ",
+    "action_matrix": "የተግባር ማትሪክስ",
+    "speech": "ንግግር"
+  },
+  "approval": {
+    "submit": "ተልኳል",
+    "submitted": "ተልኳል",
+    "approve": "ጸድቋል",
+    "approved": "ጸድቋል",
+    "reject": "ተቀባይነት አላገኘም",
+    "rejected": "ተቀባይነት አላገኘም",
+    "finalize": "ተጠናቋል",
+    "finalized": "ተጠናቋል"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "የውስጥ ማስታወሻ",
+      "desc": "መደበኛ የውስጥ ማስታወሻ ከተቀባይ / ከላኪ / ርዕስ ጋር።"
+    },
+    "letter-official": {
+      "name": "መደበኛ ደብዳቤ",
+      "desc": "በቢሮ ደብዳቤ ራስጌ ላይ የሚላክ መደበኛ ደብዳቤ።"
+    },
+    "circular-general": {
+      "name": "ዙሪያ ደብዳቤ",
+      "desc": "ለብዙ ተቀባዮች የሚሰራጭ ማስታወቂያ።"
+    },
+    "report-standard": {
+      "name": "ሪፖርት",
+      "desc": "አጠቃላይ ሪፖርት ከማጠቃለያ፣ ክፍሎች እና ምክረ ሀሳቦች ጋር።"
+    },
+    "policy-brief": {
+      "name": "የፖሊሲ አጭር ማብራሪያ",
+      "desc": "ለውሳኔ ሰጪዎች የተዘጋጀ አጭር ማብራሪያ።"
+    },
+    "briefing-note": {
+      "name": "የመረጃ ማስታወሻ",
+      "desc": "ከስብሰባ በፊት ለኃላፊው የሚዘጋጅ አጭር ማስታወሻ።"
+    },
+    "concept-note": {
+      "name": "የፅንሰ ሀሳብ ማስታወሻ",
+      "desc": "የቀረበ ፕሮግራም ወይም እንቅስቃሴ ማብራሪያ።"
+    },
+    "minutes-blank": {
+      "name": "የስብሰባ ቃለ ምልልስ (ባዶ)",
+      "desc": "በእጅ ለመሙላት የተዘጋጀ ባዶ የቃለ ምልልስ አወቃቀር።"
+    },
+    "speech-remarks": {
+      "name": "ንግግር / ማስታወሻዎች",
+      "desc": "ለአንድ ዝግጅት የሚቀርብ መደበኛ ንግግር።"
+    }
+  },
+  "documents": {
+    "subtitle": "ቃለ-ስብሰባ፣ ማስታወሻ፣ ደብዳቤ፣ ሪፖርት እና ማጠቃለያ — በAI የተረቀቀ፣ በሰዎች የጸደቀ።",
+    "startFromTemplate": "ከአብነት ጀምር",
+    "fromSpreadsheet": "ከተመን ሉህ ሪፖርት",
+    "draftWithAI": "በAI አረቅ",
+    "templateTitle": "ከአብነት ጀምር",
+    "allTypes": "ሁሉም ዓይነቶች",
+    "orgTemplates": "የድርጅትዎ አብነቶች",
+    "savedByOrg": "በድርጅትዎ የተቀመጠ",
+    "useTemplate": "ይህን አብነት ተጠቀም",
+    "generalTemplates": "አጠቃላይ አብነቶች",
+    "spreadsheetFailed": "ከዚያ ተመን ሉህ ሪፖርት መፍጠር አልተቻለም።",
+    "templateFailed": "ከአብነት መፍጠር አልተቻለም።",
+    "draftFailed": "ሰነድ ማረቅ አልተቻለም።",
+    "fields": {
+      "type": "የሰነድ ዓይነት",
+      "title": "ርዕስ",
+      "recipient": "ተቀባይ (አማራጭ)",
+      "department": "ክፍል (አማራጭ)",
+      "brief": "መመሪያ / ማጠቃለያ"
+    },
+    "briefPlaceholder": "ዓላማውን፣ ዋና ዋና ነጥቦችን እና ሊካተቱ የሚገቡ እውነታዎችን ይግለጹ። ረዳቱ ሊያርትዑትና ሊያጸድቁት የሚችሉትን መደበኛ ሰነድ ያረቅልዎታል።",
+    "generateDraft": "ረቂቅ ፍጠር",
+    "empty": "እስካሁን ሰነድ የለም።",
+    "table": {
+      "title": "ርዕስ",
+      "type": "ዓይነት",
+      "ref": "ማጣቀሻ",
+      "status": "ሁኔታ",
+      "ver": "ቅጂ"
+    }
+  },
+  "doc": {
+    "loadFailed": "ሰነድ መጫን አልተቻለም።",
+    "invalidJson": "ይዘቱ ትክክለኛ JSON አይደለም።",
+    "saved": "ተቀምጧል። ቅጂ ተጨምሯል።",
+    "saveFailed": "ማስቀመጥ አልተሳካም።",
+    "done": {
+      "submit": "ሰነዱ ለግምገማ ቀርቧል።",
+      "approve": "ሰነዱ ጸድቋል።",
+      "reject": "ሰነዱ ውድቅ ተደርጓል።",
+      "finalize": "ሰነዱ ተጠናቋል።"
+    },
+    "failed": {
+      "submit": "ማቅረብ አልተቻለም።",
+      "approve": "ማጽደቅ አልተቻለም።",
+      "reject": "መውደቅ አልተቻለም።",
+      "finalize": "ማጠናቀቅ አልተቻለም።"
+    },
+    "templateName": "የአብነት ስም",
+    "templateDefault": "የ{title} አብነት",
+    "templateSaved": "ለድርጅትዎ እንደገና ጥቅም ላይ የሚውል አብነት ሆኖ ተቀምጧል።",
+    "templateSaveFailed": "አብነቱን ማስቀመጥ አልተቻለም።",
+    "exportFailed": "መላክ አልተሳካም።",
+    "notFound": "ሰነዱ አልተገኘም።",
+    "exportDocx": "DOCX ላክ",
+    "exportPptx": "PPTX ላክ",
+    "exportXlsx": "XLSX ላክ",
+    "saveAsTemplate": "እንደ አብነት አስቀምጥ",
+    "content": "ይዘት",
+    "workflow": "የሥራ ፍሰት",
+    "aiAssisted": "በAI የተደገፈ ረቂቅ",
+    "auditChain": "የኦዲት ሰንሰለት፦ ድምጽ → ጽሑፍ → የAI ረቂቅ → የሰው እርማት → ማጽደቅ → የመጨረሻ። እያንዳንዱ ደረጃ ይመዘገባል።",
+    "comment": "አስተያየት (አማራጭ)",
+    "commentPlaceholder": "ለመዝገቡ ማስታወሻ ያክሉ",
+    "submit": "ለግምገማ አስገባ",
+    "approve": "አጽድቅ",
+    "reject": "ውድቅ አድርግ",
+    "finalize": "የመጨረሻ አድርግ",
+    "finalLocked": "የመጨረሻ — ለማርትዕ ተቆልፏል",
+    "editJson": "ይዘት አርትዕ (JSON)",
+    "jsonNote": "የተዋቀረ ይዘት የምርት ስም ያለው DOCXን ይመራል። ከታች ያሉትን መስኮች ያርትዑና ያስቀምጡ፤ የምርት ስም አቀራረብና አቀማመጥ በመላክ ጊዜ በራስ-ሰር ይተገበራሉ።",
+    "saveContent": "ይዘት አስቀምጥ",
+    "approvalHistory": "የማጽደቅ ታሪክ"
+  },
+  "emails": {
+    "subtitle": "በAI ደብዳቤዎችንና ኢሜይሎችን አርቅቅ። አንድ ሰው ላክ እስኪጫን ድረስ ምንም አይላክም።",
+    "needIntent": "ረቂቁን ለመጻፍ ለረዳቱ ርዕስ ወይም ዓላማ ይስጡ።",
+    "draftReady": "ረቂቁ ዝግጁ ነው። ከመላክዎ በፊት ይገምግሙና ያርትዑ።",
+    "draftFailed": "ረቂቅ ማዘጋጀት አልተሳካም።",
+    "draftSaved": "ረቂቁ ተቀምጧል።",
+    "saveFailed": "ማስቀመጥ አልተቻለም።",
+    "confirmSend": "ይህን ኢሜይል አሁን ይላክ? ይህ እርምጃ በኦዲት መዝገብ ውስጥ ይመዘገባል።",
+    "sent": "ኢሜይሉ ተልኳል።",
+    "sendFailed": "መላክ አልተሳካም።",
+    "compose": "አዘጋጅ",
+    "messages": "መልዕክቶች",
+    "empty": "እስካሁን ደብዳቤ የለም።",
+    "message": "መልዕክት",
+    "details": "ዝርዝሮች",
+    "to": "ለ",
+    "cc": "ኮፒ",
+    "subject": "ርዕስ",
+    "intent": "ይህ ምን ማለት አለበት? (ለ AI)",
+    "intentPlaceholder": "ለምሳሌ፦ አለቆችን አርብ ከጠዋቱ 10 ሰዓት ለሚካሄደው የፀጥታ ባራዛ ይጋብዙ",
+    "body": "ዋና ጽሑፍ",
+    "saveDraft": "ረቂቅ አስቀምጥ",
+    "toLabel": "ለ፦",
+    "ccLabel": "ኮፒ፦",
+    "subjectLabel": "ርዕስ፦",
+    "aiAssisted": "በ AI የተደገፈ",
+    "sendNow": "አሁን ላክ",
+    "selectHint": "መልእክት ይምረጡ ወይም አዲስ ይጻፉ።"
+  },
+  "knowledge": {
+    "subtitle": "ረዳቱ ሊጠቀምባቸው የሚችላቸው የማጣቀሻ ቁሳቁሶች — ፖሊሲዎች፣ አብነቶች፣ ቅድመ ሁኔታዎች።",
+    "added": "ወደ ዕውቀት መሠረት ተጨምሯል።",
+    "addFailed": "ማከል አልተቻለም።",
+    "chooseFile": "ለመጫን ፋይል ይምረጡ።",
+    "ocrFailed": "ፋይሉ ተቀምጧል። OCR ከዚህ ፋይል ጽሑፍ ማንበብ አልቻለም (ጥራቱ ዝቅተኛ ሊሆን ይችላል)። ጽሑፉን በእጅ መለጠፍ ይችላሉ።",
+    "extracted": "ፋይሉ ተቀምጦ {n} ቁምፊዎች ጽሑፍ ተወጥቷል።",
+    "noText": "ፋይሉ ተቀምጧል። ከዚህ ቅርጸት ጽሑፍ ማውጣት አልተቻለም።",
+    "uploadFailed": "መጫን አልተሳካም።",
+    "confirmRemove": "ይህን ማጣቀሻ ያስወግዱ?",
+    "uploadTitle": "ሰነድ ይጫኑ",
+    "file": "ፋይል",
+    "titleOptional": "ርዕስ (አማራጭ)",
+    "titleDefault": "በነባሪ የፋይል ስም ይሆናል",
+    "categoryOptional": "ምድብ (አማራጭ)",
+    "uploadExtract": "ጫን እና አውጣ",
+    "uploadNote": "Word፣ PDF፣ CSV እና የጽሑፍ ፋይሎች ጽሑፋቸው በራስ-ሰር ይወጣል። የተቃኙ PDFዎች እና ፎቶዎች በ OCR በራስ-ሰር ይነበባሉ።",
+    "pasteTitle": "ማጣቀሻ ጨምር (ጽሑፍ ለጥፍ)",
+    "title": "ርዕስ",
+    "category": "ምድብ",
+    "categoryPlaceholder": "ለምሳሌ፦ ሰርኩላሮች፣ ፖሊሲዎች",
+    "textContent": "የጽሑፍ ይዘት",
+    "add": "ጨምር",
+    "references": "ማጣቀሻዎች",
+    "empty": "እስካሁን ምንም የለም።",
+    "uncategorised": "ያልተመደበ",
+    "remove": "አስወግድ"
+  },
+  "assistant": {
+    "subtitle": "በቀላል እንግሊዝኛ መመሪያ ይስጡ — በሥራ ቦታዎ ላይ ማጠቃለል፣ መፈለግ፣ ረቂቅ ማዘጋጀት ወይም ማብራራት።",
+    "failed": "ረዳቱ ያንን ማካሄድ አልቻለም።",
+    "instruction": "መመሪያ",
+    "placeholder": "ምሳሌ፦ የዚህ ሳምንት የደህንነት ኮሚቴ ውሳኔዎችን ጠቅለል አድርግ፣ ወይም እስካሁን ማጽደቅ የሚጠብቁ ማስታወሻዎችን ዘርዝር።",
+    "ask": "ጠይቅ"
+  },
+  "actions": {
+    "subtitle": "ከስብሰባ ቃለ-ጉባኤዎች እና ከተግባር ማትሪክስ በክፍለ-ጊዜዎች የተወጡ የተግባር ዝርዝሮች።",
+    "empty": "ምንም ያልተጠናቀቁ ተግባራት አልተገኙም።",
+    "table": {
+      "action": "ተግባር",
+      "responsible": "ኃላፊ",
+      "timeline": "የጊዜ ሰሌዳ",
+      "source": "ምንጭ"
+    }
+  },
+  "paypal": {
+    "title": "የPayPal ክፍያ",
+    "subtitle": "የደንበኝነት ምዝገባ ክፍያ ማረጋገጫ።",
+    "confirming": "የPayPal ክፍያዎን በማረጋገጥ ላይ...",
+    "noOrder": "ምንም የPayPal ትዕዛዝ አልተመለሰም።",
+    "confirmed": "ክፍያ ተረጋግጧል። የWorker ደንበኝነት ምዝገባዎ አሁን ንቁ ነው።",
+    "failed": "የPayPal ክፍያ ሊረጋገጥ አልቻለም።",
+    "success": "ክፍያ ተሳክቷል",
+    "viewSubscription": "ደንበኝነት ምዝገባን ይመልከቱ",
+    "errorTitle": "ክፍያ ሊረጋገጥ አልቻለም",
+    "returnToSubscription": "ወደ ደንበኝነት ምዝገባ ይመለሱ"
+  },
+  "tenant": {
+    "saved": "የድርጅት ዝርዝሮች ተቀምጠዋል። በሚላኩ ሰነዶች ሁሉ ላይ ይታያሉ።",
+    "saveFailed": "ማስቀመጥ አልተቻለም።",
+    "logoUploaded": "አርማ ተጭኗል።",
+    "signatureUploaded": "ፊርማ ተጭኗል።",
+    "uploadFailed": "መጫን አልተሳካም።",
+    "subtitleShort": "ለስራ ቦታዎ የምርት ምልክት።",
+    "noOrg": "ይህ መዝገብ ከድርጅት ጋር አልተያዘም።",
+    "subtitle": "ስምዎ፣ የደብዳቤ ራስጌ፣ አርማ እና ፊርማ በሚፈጥሩት ሰነድ ሁሉ ላይ ይታያሉ።",
+    "letterhead": "የደብዳቤ ራስጌ",
+    "orgName": "የድርጅት ስም",
+    "line": "የደብዳቤ ራስጌ መስመር {n}",
+    "line1Placeholder": "ምሳሌ፦ የ... ክልል መንግስት",
+    "line2Placeholder": "ምሳሌ፦ የ... ክፍል",
+    "line3Placeholder": "ምሳሌ፦ ክፍል / ቢሮ",
+    "saveLetterhead": "የደብዳቤ ራስጌ አስቀምጥ",
+    "blankHint": "ወደ ድርጅት ስምዎ ለመመለስ መስመሮቹን ባዶ ይተዉ።",
+    "logoSignature": "አርማ እና ፊርማ",
+    "logo": "አርማ (PNG ወይም JPG)",
+    "signature": "ኢ-ፊርማ (PNG ወይም JPG)",
+    "uploaded": "ተጭኗል",
+    "brandingNote": "አርማው በሰነድ ራስጌ እና በስላይድ ርዕስ ገጾች ላይ ይታያል። ፊርማው በሚላኩ ሰነዶች መጨረሻ ላይ ይቀመጣል። ለተሻለ ውጤት ግልጽ ዳራ ያለው PNG ይጠቀሙ።"
+  },
+  "users": {
+    "createdTemp": "ተጠቃሚ ተፈጥሯል። ጊዜያዊ የይለፍ ቃል፦ {temp} — በደህንነት ያጋሩ፤ በመጀመሪያ ግባት ላይ መቀየር አለባቸው።",
+    "created": "ተጠቃሚ ተፈጥሯል።",
+    "createFailed": "ተጠቃሚ መፍጠር አልተቻለም።",
+    "confirmRemove": "{name} ይወገድ?",
+    "removeFailed": "ማስወገድ አልተቻለም።",
+    "subtitle": "መዳረሻ ያስተዳድሩ። የሱፐር አድሚን መዝገብ በዚህ ሊቀየር አይችልም።",
+    "add": "ተጠቃሚ ጨምር",
+    "create": "ተጠቃሚ ፍጠር",
+    "empty": "ተጠቃሚዎች የሉም።",
+    "fields": {
+      "name": "ስም",
+      "email": "ኢሜይል",
+      "role": "ሚና",
+      "department": "መምሪያ",
+      "status": "ሁኔታ"
+    },
+    "suspend": "አግድ",
+    "reinstate": "እነበረበት መልስ",
+    "remove": "አስወግድ"
+  },
+  "audit": {
+    "subtitle": "እያንዳንዱ ጉልህ እርምጃ ይመዘገባል። መዝገቦች ሜታዳታ እና መለያዎችን ብቻ ይይዛሉ — የሰነድ ይዘቶችን ወይም ድምጽን ፈጽሞ አይይዙም።",
+    "empty": "የኦዲት መዝገቦች የሉም።",
+    "table": {
+      "when": "መቼ",
+      "actor": "ፈጻሚ",
+      "action": "እርምጃ",
+      "resource": "ግብዓት"
+    },
+    "system": "ሲስተም"
+  },
+  "payments": {
+    "stkSent": "STK ግፊት ተልኳል። ከፋዩ በስልካቸው ላይ እንዲያጸድቅ ይጠይቁ።",
+    "initiateFailed": "ክፍያ መጀመር አልተቻለም።",
+    "subtitle": "የM-Pesa (Daraja STK push) እና የPayPal ግብይቶች።",
+    "requestTitle": "የM-Pesa ክፍያ ጠይቅ",
+    "phone": "ስልክ (07.. ወይም 2547..)",
+    "amountKes": "መጠን (KES)",
+    "purpose": "ዓላማ",
+    "sendStk": "STK ግፊት ላክ",
+    "transactions": "ግብይቶች",
+    "empty": "ግብይቶች የሉም።",
+    "table": {
+      "provider": "አቅራቢ",
+      "amount": "መጠን",
+      "status": "ሁኔታ",
+      "ref": "ማጣቀሻ"
+    }
+  },
+  "billing": {
+    "subtitle": "ለተጠናቀቁ የWorker የደንበኝነት ክፍያዎች ደረሰኞች እና ደረሰኞች።",
+    "loadFailed": "የክፍያ ሰነዶችን መጫን አልተቻለም።",
+    "downloadFailed": {
+      "invoice": "ደረሰኙን ማውረድ አልተቻለም።",
+      "receipt": "ደረሰኙን ማውረድ አልተቻለም።"
+    },
+    "documentsTitle": "የክፍያ ሰነዶች",
+    "intro": "የድርጅትዎ የተጠናቀቁ የደንበኝነት ክፍያዎች ደረሰኞችን እና ደረሰኞችን ያውርዱ።",
+    "disclaimer": "እነዚህ ሰነዶች የWorker የደንበኝነት ክፍያዎችን ይመዘግባሉ እና ለክፍያ እና ለተመላሽ ገንዘብ ዓላማዎች ይቀርባሉ። በተኳሃኝ የeTIMS ውህደት በተናጠል ካልተሰጡ በስተቀር እንደ KRA/eTIMS የታክስ ደረሰኝ አይወከሉም።",
+    "invoices": "ደረሰኞች",
+    "noInvoices": "እስካሁን ደረሰኝ የለም።",
+    "receipts": "ደረሰኞች",
+    "noReceipts": "እስካሁን ደረሰኝ የለም።",
+    "downloadPdf": "PDF አውርድ",
+    "table": {
+      "invoice": "ደረሰኝ",
+      "receipt": "ደረሰኝ",
+      "date": "ቀን",
+      "description": "መግለጫ",
+      "amount": "መጠን",
+      "status": "ሁኔታ",
+      "provider": "አቅራቢ",
+      "reference": "ማጣቀሻ"
+    }
+  },
+  "subscription": {
+    "loadFailed": "የደንበኝነት ምዝገባን መጫን አልተቻለም።",
+    "selectFirst": "መጀመሪያ የደንበኝነት እቅድ ይምረጡ።",
+    "mpesaSent": "M-Pesa STK ግፊት ተልኳል። ክፍያውን በስልክዎ ያጽድቁ። ክፍያው ከተረጋገጠ በኋላ የደንበኝነት ምዝገባዎ ይነቃል።",
+    "mpesaFailed": "የM-Pesa ክፍያ መጀመር አልተቻለም።",
+    "noApproveUrl": "የPayPal ማጽደቂያ URL አልተመለሰም።",
+    "paypalFailed": "የPayPal ክፍያ መጀመር አልተቻለም።",
+    "subtitleShort": "የWorker የደንበኝነት ምዝገባዎን ያስተዳድሩ።",
+    "subtitle": "የWorker እቅድዎን፣ የሙከራ ጊዜዎን እና የክፍያ ሂሳብዎን ያስተዳድሩ።",
+    "current": "የአሁኑ የደንበኝነት ምዝገባ",
+    "organisation": "ድርጅት",
+    "status": "ሁኔታ",
+    "plan": "እቅድ",
+    "freeTrial": "የ14 ቀን ነፃ ሙከራ",
+    "trialEnds": "ሙከራው ያበቃል",
+    "dayRemaining": "{n} ቀን ቀርቷል",
+    "daysRemaining": "{n} ቀናት ቀርተዋል",
+    "renewsEnds": "ይታደሳል / ያበቃል",
+    "chooseTitle": "እቅድ ይምረጡ",
+    "chooseSubtitle": "ሁሉም እቅዶች የWorker የአስተዳደር የሥራ ሂደትን ያካትታሉ። የ14 ቀን ሙከራዎ ነፃ ነው።",
+    "perMonth": "/ በወር",
+    "planSelected": "{plan} ተመርጧል። እቅድዎ ተቀምጦ ለክፍያ ዝግጁ ነው።",
+    "selectFailed": "እቅድ መምረጥ አልተቻለም።",
+    "selected": "ተመርጧል",
+    "selectPlan": "እቅድ ይምረጡ",
+    "activateTitle": "የደንበኝነት ምዝገባዎን ያግብሩ",
+    "selectAbove": "ወደ ክፍያ ለመቀጠል ከላይ አንድ እቅድ ይምረጡ።",
+    "stkNote": "የ STK ግፊት ከታች ወደሚገኘው የስልክ ቁጥር ይላካል።",
+    "phone": "የስልክ ቁጥር",
+    "phonePlaceholder": "07.. ወይም 2547..",
+    "payMpesa": "በ M-Pesa ይክፈሉ",
+    "paypalNote": "የተመረጠውን እቅድ በ USD ለመክፈል ወደ PayPal ይቀጥሉ።",
+    "payPaypal": "በ PayPal ይክፈሉ",
+    "settleNote": "የሚከፈሉ የደንበኝነት ምዝገባዎች በ M-Pesa ወይም PayPal ሊከፈሉ ይችላሉ።",
+    "activationNote": "የተመረጠው እቅድዎ የክፍያ ማረጋገጫ ከተሳካ በኋላ ይገባል።",
+    "historyNote": "የክፍያ ታሪክ በአስተዳደር → ክፍያዎች ስር ይገኛል።"
+  },
+  "intl": {
+    "territory": "ግዛት",
+    "searchTerritory": "ግዛት ይፈልጉ…",
+    "selectTerritory": "ግዛትዎን ይምረጡ",
+    "territoryRequired": "እባክዎ ግዛትዎን ይምረጡ።",
+    "workingLanguage": "የሥራ ቋንቋ",
+    "meetingLanguage": "የስብሰባ ቋንቋ",
+    "useDefault": "የድርጅት ነባሪ",
+    "beta": "የጽሑፍ ቅዳ ቤታ",
+    "unavailable": "የጽሑፍ ቅዳ የለም"
+  },
+  "generate": {
+    "title": "ከዚህ ክፍለ ጊዜ ሰነድ ያመንጩ",
+    "as": "እንደ ያመንጩ",
+    "instructions": "መመሪያ (አማራጭ)",
+    "placeholder": "ለምሳሌ፦ ለቋሚ ፀሐፊ የሚላክ ደብዳቤ ውሳኔ 2 እና 3ን የሚያጠቃልል",
+    "button": "አመንጩ",
+    "working": "ሰነድዎን በማርቀቅ ላይ… አንድ ደቂቃ ሊወስድ ይችላል።",
+    "done": "ሰነድ ተፈጥሯል።",
+    "failed": "ሰነዱን ማመንጨት አልተቻለም።",
+    "hint": "ለማካተት የተመረጡትን የጽሑፍ ቅዳዎች በቅደም ተከተል ይጠቀማል። ማንኛውም ነገር ከመጋራቱ በፊት እርስዎ ይገምግሙ እና ያጽድቁ።"
+  },
+  "queue": {
+    "queued": "ለጽሑፍ ቅዳ ተሰልፏል። ይህ ገጽ በራስ-ሰር ይዘምናል።"
+  },
+  "pdfExport": {
+    "button": "PDF ወደ ውጭ ላክ"
+  },
+  "access": {
+    "readOnly": "የእርስዎ የሥራ ቦታ ንባብ-ብቻ ነው ምክንያቱም የሙከራ ጊዜዎ ወይም የደንበኝነት ምዝገባዎ አልቋል። አሁንም ሰነዶችዎን ማየት እና ወደ ውጭ መላክ ይችላሉ።",
+    "grace": "የሙከራ ጊዜዎ ወይም የደንበኝነት ምዝገባዎ በ {date} አልቋል። ለ {n} ቀናት ሙሉ መዳረሻ ይቀርዎታል።",
+    "trialEnding": "የነጻ ሙከራ ጊዜዎ በ {n} ቀናት ውስጥ ያበቃል።",
+    "choosePlan": "እቅድ ይምረጡ"
+  },
+  "sessionLang": {
+    "saved": "የስብሰባ ቋንቋ ተቀምጧል። ከአሁን በኋላ ለሚቀዱ ቅጂዎች ተግባራዊ ይሆናል።",
+    "failed": "የስብሰባ ቋንቋውን ማስቀመጥ አልተቻለም።"
+  },
+  "i18nNote": {
+    "machine": "በማሽን የተተረጎመ"
+  }
+}

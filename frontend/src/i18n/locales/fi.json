@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Kieli",
+    "signIn": "Kirjaudu sisään",
+    "signOut": "Kirjaudu ulos",
+    "createAccount": "Luo tili",
+    "getStarted": "Aloita",
+    "startFreeTrial": "Aloita maksuton kokeilu",
+    "cancel": "Peruuta",
+    "back": "Takaisin",
+    "download": "Lataa",
+    "viewAll": "Näytä kaikki"
+  },
+  "brand": {
+    "tagline": "AI-hallintotyötila",
+    "secureWorkspace": "Turvallinen hallintotyötila",
+    "badge": "Englanti · Ääni"
+  },
+  "nav": {
+    "dashboard": "Kojelauta",
+    "workspace": "Työtila",
+    "sessions": "Istunnot ja tallenteet",
+    "documents": "Asiakirjat",
+    "correspondence": "Kirjeenvaihto",
+    "knowledge": "Tietopankki",
+    "assistant": "Avustaja",
+    "askWorker": "Kysy Workerilta",
+    "actions": "Avoimet toimenpiteet",
+    "administration": "Hallinto",
+    "organisation": "Organisaatio",
+    "users": "Käyttäjät",
+    "audit": "Tarkastusloki",
+    "subscription": "Tilaus",
+    "payments": "Maksut",
+    "billing": "Laskutus"
+  },
+  "roles": {
+    "viewer": "Katselija",
+    "officer": "Virkailija",
+    "admin": "Ylläpitäjä",
+    "superadmin": "Pääylläpitäjä"
+  },
+  "landing": {
+    "hero": {
+      "title": "Muuta puheesi valmiiksi, arkistoiduiksi asiakirjoiksi.",
+      "body": "Worker on AI-pohjainen hallinnollinen työpaikka organisaatioille, jotka tuottavat suuria määriä virallisia asiakirjoja kokouksista, tiedotustilaisuuksista ja kirjeenvaihdosta. Tallenna kokous tai sanelu, niin Worker litteroi sen, laatii pöytäkirjat, muistiot, kirjeet, raportit ja politiikkakatsaukset sekä vie ne hyväksyntäprosessin läpi — täydellisen tarkastuspolun kera.",
+      "badgeRow": "Ääni · Englanti · Turvallinen työtila"
+    },
+    "what": {
+      "title": "Mitä Worker tekee",
+      "lead": "Kokouksiin ja kirjeenvaihtoon liittyvät rutiinityöt — hoidettu minuuteissa, ei tunneissa.",
+      "f1": {
+        "title": "Tallenna ja litteroi",
+        "body": "Tallenna kokoukset, haastattelut, tiedotustilaisuudet tai sanelu. Ääni litteroidaan paikallisesti englanniksi."
+      },
+      "f2": {
+        "title": "Luonnostele tekoälyllä",
+        "body": "Tuota pöytäkirjoja, muistioita, kirjeitä, raportteja, politiikkakatsauksia ja kiertokirjeitä oikeassa virallisessa muodossa."
+      },
+      "f3": {
+        "title": "Tarkista ja hyväksy",
+        "body": "Jokainen asiakirja etenee luonnoksesta tarkistuksen ja hyväksynnän kautta viimeistelyyn — ihmiset pysyvät ohjaksissa."
+      },
+      "f4": {
+        "title": "Turvallinen ja auditoitu",
+        "body": "Roolipohjainen käyttöoikeus ja täydellinen auditointijälki. Kirjeenvaihto lähetetään aina vain henkilön toimesta."
+      }
+    },
+    "start": {
+      "title": "Aloittaminen kestää minuutin",
+      "lead": "Luo tili ja aloita 14 päivän ilmainen kokeilujakso.",
+      "s1": {
+        "title": "Luo tilisi",
+        "body": "Syötä nimesi, sähköpostiosoitteesi ja salasanasi."
+      },
+      "s2": {
+        "title": "Vahvista sähköpostiosoitteesi",
+        "body": "Syötä sähköpostitse lähetetty 6-numeroinen koodi."
+      },
+      "s3": {
+        "title": "Kirjaudu turvallisesti sisään",
+        "body": "Jokainen sisäänkirjautuminen vahvistetaan sähköpostitse lähetettävällä kertakäyttöisellä koodilla."
+      },
+      "s4": {
+        "title": "Aloita työskentely",
+        "body": "Luo istunto, tallenna ja tuota ensimmäinen asiakirjasi."
+      }
+    },
+    "pricing": {
+      "title": "Yksinkertainen tilaushinnoittelu",
+      "lead": "Aloita 14 päivän ilmainen kokeilujakso. Valitse organisaatiosi hallinnollisen työn määrään sopiva paketti.",
+      "perMonth": "/kk",
+      "mostPopular": "SUOSITUIN",
+      "starter": {
+        "name": "Aloittelija",
+        "desc": "Pienille tiimeille, jotka aloittavat tekoälyavusteisen hallinnollisen työn."
+      },
+      "professional": {
+        "name": "Ammattilainen",
+        "desc": "Organisaatioille, joilla on säännöllistä ja suurivolyymista asiakirjatuotantoa."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Suuremmille organisaatioille, joilla on merkittävä hallinnollinen työkuorma."
+      },
+      "paymentsNote": "M-Pesa ja PayPal tuetaan maksullisissa tilauksissa."
+    },
+    "final": {
+      "title": "Valmiina kokeilemaan Worker-palvelua?",
+      "cta": "Luo tilisi"
+    }
+  },
+  "auth": {
+    "email": "Sähköposti",
+    "password": "Salasana",
+    "fullName": "Koko nimi",
+    "confirmPassword": "Vahvista salasana",
+    "currentPassword": "Nykyinen salasana",
+    "newPassword": "Uusi salasana",
+    "confirmNewPassword": "Vahvista uusi salasana",
+    "code6": "6-numeroinen koodi",
+    "signInFailed": "Sisäänkirjautuminen epäonnistui. Tarkista tunnuksesi.",
+    "forgotPassword": "Unohditko salasanan?",
+    "mfaNotice": "Jokainen sisäänkirjautuminen vahvistetaan sähköpostitse lähetettävällä kertakäyttöisellä koodilla.",
+    "createYourAccount": "Luo tilisi",
+    "pwMin": "Salasanan on oltava vähintään {n} merkkiä.",
+    "newPwMin": "Uuden salasanan on oltava vähintään {n} merkkiä.",
+    "pwMismatch": "Salasanat eivät täsmää.",
+    "createFailed": "Tilin luonti ei onnistunut.",
+    "haveAccount": "Onko sinulla jo tili?",
+    "startAtSignIn": "Aloita kirjautumisesta tai rekisteröitymisestä.",
+    "goToSignIn": "Siirry kirjautumiseen",
+    "invalidCode": "Virheellinen tai vanhentunut koodi.",
+    "codeSent": "Uusi koodi on lähetetty.",
+    "resendFailed": "Lähetys ei onnistunut.",
+    "verifyEmailTitle": "Vahvista sähköpostiosoitteesi",
+    "verifyEmailTo": "Vahvista sähköpostiosoitteesi — {email}",
+    "verify": "Vahvista",
+    "resendCode": "Lähetä koodi uudelleen",
+    "signInAgain": "Kirjaudu uudelleen sisään.",
+    "mfaPrompt": "Syötä sähköpostitse lähetetty kirjautumiskoodi",
+    "mfaPromptTo": "Syötä kirjautumiskoodi, jonka lähetimme osoitteeseen {email}",
+    "verifySignIn": "Vahvista ja kirjaudu sisään",
+    "requestFailed": "Pyyntöä ei voitu käsitellä.",
+    "resetTitle": "Nollaa salasanasi",
+    "sendResetCode": "Lähetä nollauskoodi",
+    "backToSignIn": "Takaisin kirjautumiseen",
+    "resetPrompt": "Syötä sähköpostitse lähetetty koodi ja valitse uusi salasana",
+    "resetPassword": "Nollaa salasana",
+    "setNewPassword": "Aseta uusi salasana",
+    "forcedChange": "Aseta turvallisuuden vuoksi oma salasanasi ennen jatkamista.",
+    "updateAccountPassword": "Päivitä tilisi salasana.",
+    "changeFailed": "Salasanan vaihto ei onnistunut.",
+    "updatePassword": "Päivitä salasana",
+    "signOutInstead": "Kirjaudu sen sijaan ulos"
+  },
+  "notFound": {
+    "title": "Sivua ei löytynyt",
+    "subtitle": "Tätä sivua ei ole tässä työtilassa.",
+    "back": "Palaa kojelautaan"
+  },
+  "status": {
+    "draft": "luonnos",
+    "in_review": "tarkistettavana",
+    "approved": "hyväksytty",
+    "final": "lopullinen",
+    "archived": "arkistoitu",
+    "open": "avoin",
+    "processing": "käsitellään",
+    "ready": "valmis",
+    "pending": "odottaa",
+    "transcribing": "litteroidaan",
+    "transcribed": "litteroitu",
+    "failed": "epäonnistui",
+    "sent": "lähetetty",
+    "received": "vastaanotettu",
+    "completed": "valmis",
+    "cancelled": "peruutettu",
+    "active": "aktiivinen",
+    "suspended": "keskeytetty"
+  },
+  "kind": {
+    "meeting": "kokous",
+    "interview": "haastattelu",
+    "briefing": "tilannekatsaus",
+    "dictation": "sanelu",
+    "field_report": "kenttäraportti",
+    "consultation": "kuuleminen",
+    "other": "muu"
+  },
+  "classification": {
+    "unclassified": "luokittelematon",
+    "internal": "sisäinen",
+    "confidential": "luottamuksellinen",
+    "restricted": "rajoitettu"
+  },
+  "dashboard": {
+    "welcome": "Tervetuloa, {name}",
+    "defaultName": "Virkailija",
+    "subtitle": "Hallinnollinen työtilasi — tallenna, luonnostele, tarkista ja arkistoi.",
+    "stats": {
+      "sessions": "Istunnot",
+      "documents": "Asiakirjat",
+      "awaitingReview": "Odottaa tarkistusta",
+      "outstandingActions": "Avoimet toimenpiteet"
+    },
+    "recentSessions": "Viimeisimmät istunnot",
+    "documentsToAction": "Käsiteltävät asiakirjat",
+    "noSessions": "Ei vielä istuntoja.",
+    "nothingToAction": "Mikään ei vaadi huomiotasi."
+  },
+  "sessions": {
+    "subtitle": "Jokainen istunto on asiakirjakokonaisuus — ääni, litterointi ja siitä tuotetut asiakirjat.",
+    "new": "Uusi istunto",
+    "createFailed": "Istunnon luonti ei onnistunut.",
+    "titlePlaceholder": "esim. Alueen turvallisuuskomitea — viikoittainen tilannekatsaus",
+    "create": "Luo istunto",
+    "empty": "Ei vielä istuntoja. Luo yksi aloittaaksesi tallennuksen.",
+    "fields": {
+      "title": "Otsikko",
+      "kind": "Tyyppi",
+      "date": "Päivämäärä",
+      "classification": "Luokittelu",
+      "status": "Tila",
+      "department": "Osasto",
+      "location": "Sijainti"
+    }
+  },
+  "session": {
+    "loadFailed": "Istuntoa ei voitu ladata.",
+    "micDenied": "Mikrofonin käyttö estetty tai ei saatavilla.",
+    "audioSaved": "Ääni tallennettu istuntoon.",
+    "uploadFailed": "Lähetys epäonnistui.",
+    "transcribing": "Litteroidaan paikallisesti — pidempi ääni voi kestää hetken.",
+    "transcribed": "Litterointi valmis.",
+    "transcribeFailed": "Litterointi epäonnistui. Tarkista, että STT-palvelu on käynnissä.",
+    "updateFailed": "Päivitys epäonnistui.",
+    "draftingMinutes": "Laaditaan pöytäkirjaa litteroinnista…",
+    "minutesCreated": "Pöytäkirjaluonnos luotu.",
+    "minutesFailed": "Pöytäkirjaa ei voitu luoda.",
+    "notFound": "Istuntoa ei löytynyt.",
+    "noDate": "ei päivämäärää",
+    "noLocation": "ei sijaintia",
+    "generateMinutes": "Luo pöytäkirja",
+    "captureAudio": "Tallenna ääni",
+    "stopSave": "Lopeta ja tallenna",
+    "startRecording": "Aloita tallennus",
+    "or": "tai",
+    "uploadAudio": "Lähetä ääni",
+    "audioNote": "Ääni pysyy isännällä. Litterointi tapahtuu paikallisesti englanniksi. Pöytäkirja yhdistää kaikki tämän istunnon leikkeet järjestyksessä.",
+    "documentsFrom": "Tämän istunnon asiakirjat",
+    "noDocuments": "Ei asiakirjoja vielä. Litteroi leike ja luo sitten pöytäkirja.",
+    "recordingsTitle": "Tallenteet ja litteroinnit",
+    "clipOne": "{n} leike",
+    "clipMany": "{n} leikettä",
+    "noRecordings": "Ei tallenteita vielä. Tallenna tai lähetä ääntä yllä.",
+    "includeTitle": "Sisällytä tämä leike pöytäkirjaa luotaessa",
+    "inMinutes": "Pöytäkirjassa",
+    "transcribe": "Litteroi",
+    "transcribeHint": "Litteroi tämä leike nähdäksesi ja muokataksesi sen litterointia tässä.",
+    "audioLoadFailed": "Ääntä ei voitu ladata.",
+    "loadAudio": "Lataa ääni",
+    "words": "{n} sanaa",
+    "verified": "vahvistettu",
+    "editVerify": "Muokkaa ja vahvista",
+    "saveVerified": "Tallenna ja merkitse vahvistetuksi",
+    "saveDraft": "Tallenna luonnos",
+    "emptyTranscript": "Tyhjä litterointi."
+  },
+  "docType": {
+    "minutes": "pöytäkirja",
+    "memo": "muistio",
+    "letter": "kirje",
+    "report": "raportti",
+    "policy_brief": "politiikkatiivistelmä",
+    "briefing_note": "tilannekatsaus",
+    "concept_note": "konseptimuistio",
+    "circular": "kiertokirje",
+    "action_matrix": "toimenpidematriisi",
+    "speech": "puhe"
+  },
+  "approval": {
+    "submit": "lähetetty",
+    "submitted": "lähetetty",
+    "approve": "hyväksytty",
+    "approved": "hyväksytty",
+    "reject": "hylätty",
+    "rejected": "hylätty",
+    "finalize": "viimeistelty",
+    "finalized": "viimeistelty"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Sisäinen muistio",
+      "desc": "Vakiomuotoinen sisäinen muistio: vastaanottaja / lähettäjä / aihe."
+    },
+    "letter-official": {
+      "name": "Virallinen kirje",
+      "desc": "Muodollinen lähtevä kirje toimiston kirjelomakkeella."
+    },
+    "circular-general": {
+      "name": "Kiertokirje",
+      "desc": "Tiedote, joka kierrätetään useille vastaanottajille."
+    },
+    "report-standard": {
+      "name": "Raportti",
+      "desc": "Yleisraportti, jossa on tiivistelmä, osiot ja suositukset."
+    },
+    "policy-brief": {
+      "name": "Politiikkatiivistelmä",
+      "desc": "Tiivis yhteenveto päätöksentekijöille."
+    },
+    "briefing-note": {
+      "name": "Tilannekatsaus",
+      "desc": "Lyhyt muistio johtajan perehdyttämiseksi ennen tapaamista."
+    },
+    "concept-note": {
+      "name": "Konseptimuistio",
+      "desc": "Ehdotetun ohjelman tai toiminnan kuvaus."
+    },
+    "minutes-blank": {
+      "name": "Kokouksen pöytäkirja (tyhjä)",
+      "desc": "Tyhjä pöytäkirjapohja täytettäväksi käsin."
+    },
+    "speech-remarks": {
+      "name": "Puhe / huomautukset",
+      "desc": "Muodolliset huomautukset tilaisuutta varten."
+    }
+  },
+  "documents": {
+    "subtitle": "Pöytäkirjat, muistiot, kirjeet, raportit ja tiivistelmät — tekoälyn laatimat, ihmisten hyväksymät.",
+    "startFromTemplate": "Aloita mallipohjasta",
+    "fromSpreadsheet": "Raportti taulukosta",
+    "draftWithAI": "Laadi tekoälyllä",
+    "templateTitle": "Aloita mallipohjasta",
+    "allTypes": "Kaikki tyypit",
+    "orgTemplates": "Organisaatiosi mallipohjat",
+    "savedByOrg": "Organisaatiosi tallentamat",
+    "useTemplate": "Käytä tätä mallipohjaa",
+    "generalTemplates": "Yleiset mallipohjat",
+    "spreadsheetFailed": "Raporttia ei voitu laatia kyseisestä taulukosta.",
+    "templateFailed": "Mallipohjasta ei voitu luoda.",
+    "draftFailed": "Asiakirjaa ei voitu laatia.",
+    "fields": {
+      "type": "Asiakirjan tyyppi",
+      "title": "Otsikko",
+      "recipient": "Vastaanottaja (valinnainen)",
+      "department": "Osasto (valinnainen)",
+      "brief": "Ohjeet / tiivistelmä"
+    },
+    "briefPlaceholder": "Kuvaile tarkoitus, keskeiset kohdat ja mahdolliset sisällytettävät tiedot. Avustaja laatii muodollisen asiakirjan, jonka voit muokata ja hyväksyä.",
+    "generateDraft": "Luo luonnos",
+    "empty": "Ei vielä asiakirjoja.",
+    "table": {
+      "title": "Otsikko",
+      "type": "Tyyppi",
+      "ref": "Viite",
+      "status": "Tila",
+      "ver": "Versio"
+    }
+  },
+  "doc": {
+    "loadFailed": "Asiakirjaa ei voitu ladata.",
+    "invalidJson": "Sisältö ei ole kelvollista JSONia.",
+    "saved": "Tallennettu. Versiota kasvatettu.",
+    "saveFailed": "Tallennus epäonnistui.",
+    "done": {
+      "submit": "Asiakirja lähetetty tarkistettavaksi.",
+      "approve": "Asiakirja hyväksytty.",
+      "reject": "Asiakirja hylätty.",
+      "finalize": "Asiakirja viimeistelty."
+    },
+    "failed": {
+      "submit": "Lähetys epäonnistui.",
+      "approve": "Hyväksyntä epäonnistui.",
+      "reject": "Hylkäys epäonnistui.",
+      "finalize": "Viimeistely epäonnistui."
+    },
+    "templateName": "Mallin nimi",
+    "templateDefault": "{title}-malli",
+    "templateSaved": "Tallennettu uudelleenkäytettäväksi malliksi organisaatiollesi.",
+    "templateSaveFailed": "Mallia ei voitu tallentaa.",
+    "exportFailed": "Vienti epäonnistui.",
+    "notFound": "Asiakirjaa ei löytynyt.",
+    "exportDocx": "Vie DOCX",
+    "exportPptx": "Vie PPTX",
+    "exportXlsx": "Vie XLSX",
+    "saveAsTemplate": "Tallenna malliksi",
+    "content": "Sisältö",
+    "workflow": "Työnkulku",
+    "aiAssisted": "Tekoälyn avustama luonnos",
+    "auditChain": "Tarkastusketju: ääni → litterointi → tekoälyluonnos → ihmisen muokkaus → hyväksyntä → lopullinen. Jokainen vaihe tallennetaan.",
+    "comment": "Kommentti (valinnainen)",
+    "commentPlaceholder": "Lisää muistiinpano pöytäkirjaa varten",
+    "submit": "Lähetä tarkistettavaksi",
+    "approve": "Hyväksy",
+    "reject": "Hylkää",
+    "finalize": "Viimeistele",
+    "finalLocked": "Lopullinen — muokkaus lukittu",
+    "editJson": "Muokkaa sisältöä (JSON)",
+    "jsonNote": "Jäsennelty sisältö ohjaa brändättyä DOCX-tiedostoa. Muokkaa alla olevia kenttiä ja tallenna; brändäys ja asettelu lisätään automaattisesti viennin yhteydessä.",
+    "saveContent": "Tallenna sisältö",
+    "approvalHistory": "Hyväksyntähistoria"
+  },
+  "emails": {
+    "subtitle": "Laadi kirjeitä ja sähköposteja tekoälyn avulla. Mitään ei lähetetä ennen kuin henkilö napsauttaa lähetä.",
+    "needIntent": "Anna avustajalle aihe tai tarkoitus, jonka pohjalta luonnos laaditaan.",
+    "draftReady": "Luonnos valmis. Tarkista ja muokkaa ennen lähettämistä.",
+    "draftFailed": "Luonnoksen laatiminen epäonnistui.",
+    "draftSaved": "Luonnos tallennettu.",
+    "saveFailed": "Tallentaminen ei onnistunut.",
+    "confirmSend": "Lähetetäänkö tämä sähköposti nyt? Tämä toiminto tallennetaan tarkastusjälkeen.",
+    "sent": "Sähköposti lähetetty.",
+    "sendFailed": "Lähetys epäonnistui.",
+    "compose": "Laadi",
+    "messages": "Viestit",
+    "empty": "Ei vielä kirjeenvaihtoa.",
+    "message": "Viesti",
+    "details": "Tiedot",
+    "to": "Vastaanottaja",
+    "cc": "Kopio",
+    "subject": "Aihe",
+    "intent": "Mitä tässä pitäisi sanoa? (tekoälylle)",
+    "intentPlaceholder": "esim. Kutsu päälliköt turvallisuusbarazaan perjantaina klo 10",
+    "body": "Sisältö",
+    "saveDraft": "Tallenna luonnos",
+    "toLabel": "Vastaanottaja:",
+    "ccLabel": "Kopio:",
+    "subjectLabel": "Aihe:",
+    "aiAssisted": "Tekoälyn avustama",
+    "sendNow": "Lähetä nyt",
+    "selectHint": "Valitse viesti tai kirjoita uusi."
+  },
+  "knowledge": {
+    "subtitle": "Lähdemateriaali, jota avustaja voi hyödyntää — käytännöt, mallipohjat, ennakkotapaukset.",
+    "added": "Lisätty tietopankkiin.",
+    "addFailed": "Lisääminen ei onnistunut.",
+    "chooseFile": "Valitse ladattava tiedosto.",
+    "ocrFailed": "Tiedosto tallennettu. OCR ei voinut lukea tekstiä tästä tiedostosta (se voi olla heikkolaatuinen). Voit liittää tekstin manuaalisesti.",
+    "extracted": "Tiedosto tallennettu ja {n} merkkiä tekstiä poimittu.",
+    "noText": "Tiedosto tallennettu. Tekstiä ei voitu poimia tästä muodosta.",
+    "uploadFailed": "Lataus epäonnistui.",
+    "confirmRemove": "Poistetaanko tämä viite?",
+    "uploadTitle": "Lataa asiakirja",
+    "file": "Tiedosto",
+    "titleOptional": "Otsikko (valinnainen)",
+    "titleDefault": "Oletuksena tiedoston nimi",
+    "categoryOptional": "Luokka (valinnainen)",
+    "uploadExtract": "Lataa ja poimi",
+    "uploadNote": "Word-, PDF-, CSV- ja tekstitiedostojen teksti poimitaan automaattisesti. Skannatut PDF-tiedostot ja valokuvat luetaan automaattisesti OCR:llä.",
+    "pasteTitle": "Lisää viite (liitä teksti)",
+    "title": "Otsikko",
+    "category": "Luokka",
+    "categoryPlaceholder": "esim. Tiedotteet, Käytännöt",
+    "textContent": "Tekstisisältö",
+    "add": "Lisää",
+    "references": "Viitteet",
+    "empty": "Ei vielä mitään.",
+    "uncategorised": "Luokittelematon",
+    "remove": "Poista"
+  },
+  "assistant": {
+    "subtitle": "Anna ohje selkokielellä — tiivistä, etsi, luonnostele tai selitä työtilassasi.",
+    "failed": "Avustaja ei voinut käsitellä tätä.",
+    "instruction": "Ohje",
+    "placeholder": "esim. Tee yhteenveto tämän viikon turvallisuuskomitean päätöksistä tai luettele muistiot, jotka odottavat vielä hyväksyntää.",
+    "ask": "Kysy"
+  },
+  "actions": {
+    "subtitle": "Toimenpiteet poimittu pöytäkirjoista ja toimenpidematriiseista istuntojen välillä.",
+    "empty": "Avoimia toimenpiteitä ei löytynyt.",
+    "table": {
+      "action": "Toimenpide",
+      "responsible": "Vastuuhenkilö",
+      "timeline": "Aikataulu",
+      "source": "Lähde"
+    }
+  },
+  "paypal": {
+    "title": "PayPal-maksu",
+    "subtitle": "Tilausmaksun vahvistus.",
+    "confirming": "Vahvistetaan PayPal-maksuasi...",
+    "noOrder": "PayPal-tilausta ei palautettu.",
+    "confirmed": "Maksu vahvistettu. Worker-tilauksesi on nyt aktiivinen.",
+    "failed": "PayPal-maksua ei voitu vahvistaa.",
+    "success": "Maksu onnistui",
+    "viewSubscription": "Näytä tilaus",
+    "errorTitle": "Maksua ei voitu vahvistaa",
+    "returnToSubscription": "Palaa tilaukseen"
+  },
+  "tenant": {
+    "saved": "Organisaation tiedot tallennettu. Ne näkyvät jokaisessa viemässäsi asiakirjassa.",
+    "saveFailed": "Tallennus ei onnistunut.",
+    "logoUploaded": "Logo ladattu.",
+    "signatureUploaded": "Allekirjoitus ladattu.",
+    "uploadFailed": "Lataus epäonnistui.",
+    "subtitleShort": "Työtilasi brändäys.",
+    "noOrg": "Tätä tiliä ei ole liitetty organisaatioon.",
+    "subtitle": "Nimesi, kirjelomakkeesi, logosi ja allekirjoituksesi näkyvät jokaisessa luomassasi asiakirjassa.",
+    "letterhead": "Kirjelomake",
+    "orgName": "Organisaation nimi",
+    "line": "Kirjelomakkeen rivi {n}",
+    "line1Placeholder": "esim. KUNTALIITTO ...",
+    "line2Placeholder": "esim. Osasto ...",
+    "line3Placeholder": "esim. Yksikkö / toimisto",
+    "saveLetterhead": "Tallenna kirjelomake",
+    "blankHint": "Jätä rivit tyhjiksi, niin organisaatiosi nimi tulee niiden tilalle.",
+    "logoSignature": "Logo ja allekirjoitus",
+    "logo": "Vaakuna / logo (PNG tai JPG)",
+    "signature": "Sähköinen allekirjoitus (PNG tai JPG)",
+    "uploaded": "ladattu",
+    "brandingNote": "Logo näkyy asiakirjan ylätunnisteessa ja diojen otsikkosivuilla. Allekirjoitus sijoitetaan vietyjen asiakirjojen loppuun. Käytä parhaan tuloksen saavuttamiseksi PNG-tiedostoa, jossa on läpinäkyvä tausta."
+  },
+  "users": {
+    "createdTemp": "Käyttäjä luotu. Väliaikainen salasana: {temp} — jaa turvallisesti; käyttäjän on vaihdettava se ensimmäisellä kirjautumiskerralla.",
+    "created": "Käyttäjä luotu.",
+    "createFailed": "Käyttäjän luonti ei onnistunut.",
+    "confirmRemove": "Poistetaanko {name}?",
+    "removeFailed": "Poistaminen ei onnistunut.",
+    "subtitle": "Hallinnoi käyttöoikeuksia. Pääylläpitäjän tiliä ei voi muokata täällä.",
+    "add": "Lisää käyttäjä",
+    "create": "Luo käyttäjä",
+    "empty": "Ei käyttäjiä.",
+    "fields": {
+      "name": "Nimi",
+      "email": "Sähköposti",
+      "role": "Rooli",
+      "department": "Osasto",
+      "status": "Tila"
+    },
+    "suspend": "Keskeytä",
+    "reinstate": "Palauta",
+    "remove": "Poista"
+  },
+  "audit": {
+    "subtitle": "Jokainen merkittävä toimenpide kirjataan. Lokit sisältävät vain metatietoja ja tunnisteita — eivät koskaan asiakirjojen sisältöä tai äänitteitä.",
+    "empty": "Ei valvontamerkintöjä.",
+    "table": {
+      "when": "Milloin",
+      "actor": "Tekijä",
+      "action": "Toimenpide",
+      "resource": "Resurssi"
+    },
+    "system": "järjestelmä"
+  },
+  "payments": {
+    "stkSent": "STK-push lähetetty. Pyydä maksajaa hyväksymään se puhelimessaan.",
+    "initiateFailed": "Maksun aloittaminen ei onnistunut.",
+    "subtitle": "M-Pesa (Daraja STK push) ja PayPal -tapahtumat.",
+    "requestTitle": "Pyydä M-Pesa-maksua",
+    "phone": "Puhelin (07.. tai 2547..)",
+    "amountKes": "Summa (KES)",
+    "purpose": "Tarkoitus",
+    "sendStk": "Lähetä STK-push",
+    "transactions": "Tapahtumat",
+    "empty": "Ei tapahtumia.",
+    "table": {
+      "provider": "Palveluntarjoaja",
+      "amount": "Summa",
+      "status": "Tila",
+      "ref": "Viite"
+    }
+  },
+  "billing": {
+    "subtitle": "Laskut ja kuitit suoritetuista Worker-tilausmaksuista.",
+    "loadFailed": "Laskutusasiakirjojen lataaminen ei onnistunut.",
+    "downloadFailed": {
+      "invoice": "Laskua ei voitu ladata.",
+      "receipt": "Kuittia ei voitu ladata."
+    },
+    "documentsTitle": "Laskutusasiakirjat",
+    "intro": "Lataa organisaatiosi suoritettujen tilausmaksujen laskut ja kuitit.",
+    "disclaimer": "Nämä asiakirjat tallentavat Worker-tilausmaksut, ja ne on tarkoitettu maksu- ja korvauskäyttöön. Niitä ei esitetä KRA/eTIMS-verolaskuina, ellei niitä ole erikseen myönnetty yhteensopivan eTIMS-integraation kautta.",
+    "invoices": "Laskut",
+    "noInvoices": "Ei vielä laskuja.",
+    "receipts": "Kuitit",
+    "noReceipts": "Ei vielä kuitteja.",
+    "downloadPdf": "Lataa PDF",
+    "table": {
+      "invoice": "Lasku",
+      "receipt": "Kuitti",
+      "date": "Päivämäärä",
+      "description": "Kuvaus",
+      "amount": "Summa",
+      "status": "Tila",
+      "provider": "Palveluntarjoaja",
+      "reference": "Viite"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Tilausta ei voitu ladata.",
+    "selectFirst": "Valitse ensin tilauspaketti.",
+    "mpesaSent": "M-Pesa STK -työntö lähetetty. Hyväksy maksu puhelimessasi. Tilauksesi aktivoituu maksun vahvistamisen jälkeen.",
+    "mpesaFailed": "M-Pesa-maksua ei voitu aloittaa.",
+    "noApproveUrl": "PayPal-hyväksyntä-URL-osoitetta ei palautettu.",
+    "paypalFailed": "PayPal-maksua ei voitu aloittaa.",
+    "subtitleShort": "Hallinnoi Worker-tilaustasi.",
+    "subtitle": "Hallinnoi Worker-pakettiasi, kokeilujaksoa ja laskutusta.",
+    "current": "Nykyinen tilaus",
+    "organisation": "Organisaatio",
+    "status": "Tila",
+    "plan": "Paketti",
+    "freeTrial": "14 päivän ilmainen kokeilujakso",
+    "trialEnds": "Kokeilujakso päättyy",
+    "dayRemaining": "{n} päivä jäljellä",
+    "daysRemaining": "{n} päivää jäljellä",
+    "renewsEnds": "Uusiutuu / päättyy",
+    "chooseTitle": "Valitse paketti",
+    "chooseSubtitle": "Kaikki paketit sisältävät Worker-hallintotyönkulun. 14 päivän kokeilujaksosi on ilmainen.",
+    "perMonth": "/ kuukausi",
+    "planSelected": "{plan} valittu. Pakettisi on tallennettu ja valmis maksuun.",
+    "selectFailed": "Pakettia ei voitu valita.",
+    "selected": "Valittu",
+    "selectPlan": "Valitse paketti",
+    "activateTitle": "Aktivoi tilauksesi",
+    "selectAbove": "Valitse paketti yllä jatkaaksesi maksamiseen.",
+    "stkNote": "STK-painike lähetetään alla olevaan puhelinnumeroon.",
+    "phone": "Puhelinnumero",
+    "phonePlaceholder": "07.. tai 2547..",
+    "payMpesa": "Maksa M-Pesalla",
+    "paypalNote": "Jatka PayPal-palveluun maksaaksesi valitun paketin USD-maksuna.",
+    "payPaypal": "Maksa PayPalilla",
+    "settleNote": "Maksulliset tilaukset voidaan maksaa M-Pesan tai PayPalin kautta.",
+    "activationNote": "Valittu pakettisi aktivoidaan onnistuneen maksuvahvistuksen jälkeen.",
+    "historyNote": "Maksuhistoria on saatavilla kohdassa Hallinto → Maksut."
+  },
+  "intl": {
+    "territory": "Alue",
+    "searchTerritory": "Etsi aluetta…",
+    "selectTerritory": "Valitse alueesi",
+    "territoryRequired": "Valitse alueesi.",
+    "workingLanguage": "Työkieli",
+    "meetingLanguage": "Kokouskieli",
+    "useDefault": "Organisaation oletus",
+    "beta": "transkriptio beta",
+    "unavailable": "ei transkriptiota"
+  },
+  "generate": {
+    "title": "Luo asiakirja tästä istunnosta",
+    "as": "Luo muodossa",
+    "instructions": "Ohje (valinnainen)",
+    "placeholder": "esim. Kirje pysyvälle sihteerille päätösten 2 ja 3 yhteenvedosta",
+    "button": "Luo",
+    "working": "Luonnostellaan asiakirjaasi… tämä voi kestää minuutin.",
+    "done": "Asiakirja luotu.",
+    "failed": "Asiakirjan luonti epäonnistui.",
+    "hint": "Käyttää valitut transkriptiot sisällytettäväksi järjestyksessä. Tarkistat ja hyväksyt ennen kuin mitään jaetaan."
+  },
+  "queue": {
+    "queued": "Jonossa transkriptiota varten. Tämä sivu päivittyy automaattisesti."
+  },
+  "pdfExport": {
+    "button": "Vie PDF"
+  },
+  "access": {
+    "readOnly": "Työtilasi on vain luku -tilassa, koska kokeilujaksosi tai tilauksesi on päättynyt. Voit silti tarkastella ja viedä asiakirjojasi.",
+    "grace": "Kokeilujaksosi tai tilauksesi päättyi {date}. Sinulla on {n} päivää täyttä käyttöoikeutta jäljellä.",
+    "trialEnding": "Ilmainen kokeilujaksosi päättyy {n} päivän kuluttua.",
+    "choosePlan": "Valitse paketti"
+  },
+  "sessionLang": {
+    "saved": "Kokouskieli tallennettu. Se koskee tästä eteenpäin transkriboitavia tallenteita.",
+    "failed": "Kokouskielen tallennus epäonnistui."
+  },
+  "i18nNote": {
+    "machine": "Koneellisesti käännetty"
+  }
+}

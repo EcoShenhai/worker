@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Sprog",
+    "signIn": "Log ind",
+    "signOut": "Log ud",
+    "createAccount": "Opret konto",
+    "getStarted": "Kom i gang",
+    "startFreeTrial": "Start gratis prøveperiode",
+    "cancel": "Annuller",
+    "back": "Tilbage",
+    "download": "Download",
+    "viewAll": "Se alle"
+  },
+  "brand": {
+    "tagline": "AI-administrativt arbejdsområde",
+    "secureWorkspace": "Sikkert administrativt arbejdsområde",
+    "badge": "Engelsk · Lyd"
+  },
+  "nav": {
+    "dashboard": "Oversigt",
+    "workspace": "Arbejdsområde",
+    "sessions": "Sessioner og optagelser",
+    "documents": "Dokumenter",
+    "correspondence": "Korrespondance",
+    "knowledge": "Vidensbase",
+    "assistant": "Assistent",
+    "askWorker": "Spørg Worker",
+    "actions": "Udestående handlinger",
+    "administration": "Administration",
+    "organisation": "Organisation",
+    "users": "Brugere",
+    "audit": "Revisionsspor",
+    "subscription": "Abonnement",
+    "payments": "Betalinger",
+    "billing": "Fakturering"
+  },
+  "roles": {
+    "viewer": "Læser",
+    "officer": "Sagsbehandler",
+    "admin": "Administrator",
+    "superadmin": "Superadministrator"
+  },
+  "landing": {
+    "hero": {
+      "title": "Gør det, du siger, til færdigt og arkiveret papirarbejde.",
+      "body": "Worker er et AI-administrativt arbejdsområde til organisationer, der producerer store mængder formelle dokumenter fra møder, briefinger og korrespondance. Optag et møde, eller dikter, og Worker transskriberer det, udarbejder referater, notater, breve, rapporter og policybriefs og fører dem gennem gennemgang og godkendelse — med et komplet revisionsspor.",
+      "badgeRow": "Lyd · Engelsk · Sikkert arbejdsområde"
+    },
+    "what": {
+      "title": "Det gør Worker",
+      "lead": "Det rutinemæssige kontorarbejde omkring møder og korrespondance — klaret på minutter, ikke timer.",
+      "f1": {
+        "title": "Optag og transskribér",
+        "body": "Optag møder, interviews, briefinger eller diktat. Lyd transskriberes lokalt på engelsk."
+      },
+      "f2": {
+        "title": "Udkast med AI",
+        "body": "Generér referater, notater, breve, rapporter, policy briefs og cirkulærer i korrekt officiel form."
+      },
+      "f3": {
+        "title": "Gennemgå og godkend",
+        "body": "Ethvert dokument gennemgår udkast, gennemgang, godkendelse og færdiggørelse — mennesker bevarer kontrollen."
+      },
+      "f4": {
+        "title": "Sikker og reviderbar",
+        "body": "Rollebaseret adgang og et komplet revisionsspor. Korrespondance sendes altid kun af en person."
+      }
+    },
+    "start": {
+      "title": "Det tager kun et minut at komme i gang",
+      "lead": "Opret en konto og start din 14-dages gratis prøveperiode.",
+      "s1": {
+        "title": "Opret din konto",
+        "body": "Indtast dit navn, din e-mail og en adgangskode."
+      },
+      "s2": {
+        "title": "Bekræft din e-mail",
+        "body": "Indtast den 6-cifrede kode, vi sender til dig på e-mail."
+      },
+      "s3": {
+        "title": "Log ind sikkert",
+        "body": "Hver login bekræftes med en engangskode sendt på e-mail."
+      },
+      "s4": {
+        "title": "Begynd at arbejde",
+        "body": "Opret en session, optag, og generér dit første dokument."
+      }
+    },
+    "pricing": {
+      "title": "Enkel abonnementspris",
+      "lead": "Start med en 14-dages gratis prøveperiode. Vælg den plan, der passer til mængden af administrativt arbejde, din organisation producerer.",
+      "perMonth": "/måned",
+      "mostPopular": "MEST POPULÆR",
+      "starter": {
+        "name": "Starter",
+        "desc": "Til små teams, der starter med AI-assisteret administrativt arbejde."
+      },
+      "professional": {
+        "name": "Professional",
+        "desc": "Til organisationer med regelmæssig dokumentproduktion i højt tempo."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Til større organisationer med betydelige administrative arbejdsbyrder."
+      },
+      "paymentsNote": "M-Pesa og PayPal understøttes til betalte abonnementer."
+    },
+    "final": {
+      "title": "Klar til at prøve Worker?",
+      "cta": "Opret din konto"
+    }
+  },
+  "auth": {
+    "email": "E-mail",
+    "password": "Adgangskode",
+    "fullName": "Fulde navn",
+    "confirmPassword": "Bekræft adgangskode",
+    "currentPassword": "Nuværende adgangskode",
+    "newPassword": "Ny adgangskode",
+    "confirmNewPassword": "Bekræft ny adgangskode",
+    "code6": "6-cifret kode",
+    "signInFailed": "Login mislykkedes. Kontrollér dine oplysninger.",
+    "forgotPassword": "Glemt adgangskode?",
+    "mfaNotice": "En engangskode sendes på e-mail for at bekræfte hver login.",
+    "createYourAccount": "Opret din konto",
+    "pwMin": "Adgangskoden skal være på mindst {n} tegn.",
+    "newPwMin": "Den nye adgangskode skal være på mindst {n} tegn.",
+    "pwMismatch": "Adgangskoderne er ikke ens.",
+    "createFailed": "Kontoen kunne ikke oprettes.",
+    "haveAccount": "Har du allerede en konto?",
+    "startAtSignIn": "Start ved log ind eller registrering.",
+    "goToSignIn": "Gå til log ind",
+    "invalidCode": "Ugyldig eller udløbet kode.",
+    "codeSent": "En ny kode er blevet sendt.",
+    "resendFailed": "Koden kunne ikke sendes igen.",
+    "verifyEmailTitle": "Bekræft din e-mail",
+    "verifyEmailTo": "Bekræft din e-mail — {email}",
+    "verify": "Bekræft",
+    "resendCode": "Send kode igen",
+    "signInAgain": "Log ind igen.",
+    "mfaPrompt": "Indtast den log ind-kode, vi sendte via e-mail",
+    "mfaPromptTo": "Indtast den log ind-kode, vi sendte til {email}",
+    "verifySignIn": "Bekræft og log ind",
+    "requestFailed": "Anmodningen kunne ikke behandles.",
+    "resetTitle": "Nulstil din adgangskode",
+    "sendResetCode": "Send nulstillingskode",
+    "backToSignIn": "Tilbage til log ind",
+    "resetPrompt": "Indtast den kode, vi sendte via e-mail, og vælg en ny adgangskode",
+    "resetPassword": "Nulstil adgangskode",
+    "setNewPassword": "Angiv en ny adgangskode",
+    "forcedChange": "Af sikkerhedshensyn skal du angive din egen adgangskode, før du fortsætter.",
+    "updateAccountPassword": "Opdater din kontos adgangskode.",
+    "changeFailed": "Adgangskoden kunne ikke ændres.",
+    "updatePassword": "Opdater adgangskode",
+    "signOutInstead": "Log ud i stedet"
+  },
+  "notFound": {
+    "title": "Siden blev ikke fundet",
+    "subtitle": "Den side findes ikke i dette arbejdsområde.",
+    "back": "Tilbage til dashboard"
+  },
+  "status": {
+    "draft": "kladde",
+    "in_review": "til gennemsyn",
+    "approved": "godkendt",
+    "final": "endelig",
+    "archived": "arkiveret",
+    "open": "åben",
+    "processing": "behandler",
+    "ready": "klar",
+    "pending": "afventer",
+    "transcribing": "transskriberer",
+    "transcribed": "transskriberet",
+    "failed": "mislykkedes",
+    "sent": "sendt",
+    "received": "modtaget",
+    "completed": "afsluttet",
+    "cancelled": "annulleret",
+    "active": "aktiv",
+    "suspended": "suspenderet"
+  },
+  "kind": {
+    "meeting": "møde",
+    "interview": "interview",
+    "briefing": "briefing",
+    "dictation": "diktering",
+    "field_report": "feltrapport",
+    "consultation": "konsultation",
+    "other": "andet"
+  },
+  "classification": {
+    "unclassified": "uklassificeret",
+    "internal": "internt",
+    "confidential": "fortroligt",
+    "restricted": "begrænset"
+  },
+  "dashboard": {
+    "welcome": "Velkommen, {name}",
+    "defaultName": "Sagsbehandler",
+    "subtitle": "Dit administrative arbejdsområde — optag, udkast, gennemgå og arkivér.",
+    "stats": {
+      "sessions": "Sessioner",
+      "documents": "Dokumenter",
+      "awaitingReview": "Afventer gennemgang",
+      "outstandingActions": "Udestående handlinger"
+    },
+    "recentSessions": "Seneste sessioner",
+    "documentsToAction": "Dokumenter, der kræver handling",
+    "noSessions": "Ingen sessioner endnu.",
+    "nothingToAction": "Der er ikke noget, der kræver din opmærksomhed."
+  },
+  "sessions": {
+    "subtitle": "Hver session er en sagsmappe — lyd, transskription og de dokumenter, der er udarbejdet ud fra den.",
+    "new": "Ny session",
+    "createFailed": "Sessionen kunne ikke oprettes.",
+    "titlePlaceholder": "f.eks. Amtssikkerhedsudvalg — Ugentlig briefing",
+    "create": "Opret session",
+    "empty": "Ingen sessioner endnu. Opret en for at begynde optagelsen.",
+    "fields": {
+      "title": "Titel",
+      "kind": "Type",
+      "date": "Dato",
+      "classification": "Klassificering",
+      "status": "Status",
+      "department": "Afdeling",
+      "location": "Placering"
+    }
+  },
+  "session": {
+    "loadFailed": "Kunne ikke indlæse sessionen.",
+    "micDenied": "Adgang til mikrofon nægtet eller utilgængelig.",
+    "audioSaved": "Lyd gemt i sessionen.",
+    "uploadFailed": "Upload mislykkedes.",
+    "transcribing": "Transskriberer lokalt — det kan tage et øjeblik for længere lyd.",
+    "transcribed": "Transskription fuldført.",
+    "transcribeFailed": "Transskription mislykkedes. Kontrollér, at STT-tjenesten kører.",
+    "updateFailed": "Kunne ikke opdatere.",
+    "draftingMinutes": "Udarbejder referat fra transskriptionen…",
+    "minutesCreated": "Udkast til referat oprettet.",
+    "minutesFailed": "Kunne ikke generere referat.",
+    "notFound": "Sessionen blev ikke fundet.",
+    "noDate": "ingen dato",
+    "noLocation": "ingen placering",
+    "generateMinutes": "Generér referat",
+    "captureAudio": "Optag lyd",
+    "stopSave": "Stop og gem",
+    "startRecording": "Start optagelse",
+    "or": "eller",
+    "uploadAudio": "Upload lyd",
+    "audioNote": "Lyd forbliver på værten. Transskription kører lokalt på engelsk. Referatet kombinerer hvert klip i denne session i rækkefølge.",
+    "documentsFrom": "Dokumenter fra denne session",
+    "noDocuments": "Ingen dokumenter endnu. Transskribér et klip, og generér derefter referatet.",
+    "recordingsTitle": "Optagelser og transskriptioner",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Ingen optagelser endnu. Optag eller upload lyd ovenfor.",
+    "includeTitle": "Medtag dette klip ved generering af referat",
+    "inMinutes": "I referatet",
+    "transcribe": "Transskribér",
+    "transcribeHint": "Transskribér dette klip for at se og redigere dets transskription her.",
+    "audioLoadFailed": "Kunne ikke indlæse lyd.",
+    "loadAudio": "Indlæs lyd",
+    "words": "{n} ord",
+    "verified": "verificeret",
+    "editVerify": "Rediger og verificer",
+    "saveVerified": "Gem og markér som verificeret",
+    "saveDraft": "Gem kladde",
+    "emptyTranscript": "Tom udskrift."
+  },
+  "docType": {
+    "minutes": "referat",
+    "memo": "notat",
+    "letter": "brev",
+    "report": "rapport",
+    "policy_brief": "politiknotat",
+    "briefing_note": "briefingnotat",
+    "concept_note": "konceptnotat",
+    "circular": "cirkulære",
+    "action_matrix": "handlingsmatrix",
+    "speech": "tale"
+  },
+  "approval": {
+    "submit": "indsendt",
+    "submitted": "indsendt",
+    "approve": "godkendt",
+    "approved": "godkendt",
+    "reject": "afvist",
+    "rejected": "afvist",
+    "finalize": "færdiggjort",
+    "finalized": "færdiggjort"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Internt notat",
+      "desc": "Standard internt notat med Til / Fra / Emne."
+    },
+    "letter-official": {
+      "name": "Officielt brev",
+      "desc": "Formelt udgående brev på kontorets brevpapir."
+    },
+    "circular-general": {
+      "name": "Cirkulære",
+      "desc": "Meddelelse sendt i cirkulation til mange modtagere."
+    },
+    "report-standard": {
+      "name": "Rapport",
+      "desc": "Generel rapport med resumé, afsnit og anbefalinger."
+    },
+    "policy-brief": {
+      "name": "Politiknotat",
+      "desc": "Kortfattet notat til beslutningstagere."
+    },
+    "briefing-note": {
+      "name": "Briefingnotat",
+      "desc": "Kort notat til briefing af en leder forud for en opgave."
+    },
+    "concept-note": {
+      "name": "Konceptnotat",
+      "desc": "Oversigt over et foreslået program eller aktivitet."
+    },
+    "minutes-blank": {
+      "name": "Mødereferat (tomt)",
+      "desc": "Tom referatstruktur til udfyldning i hånden."
+    },
+    "speech-remarks": {
+      "name": "Tale / bemærkninger",
+      "desc": "Formelle bemærkninger til en begivenhed."
+    }
+  },
+  "documents": {
+    "subtitle": "Referater, notater, breve, rapporter og oplæg — udarbejdet med AI, godkendt af mennesker.",
+    "startFromTemplate": "Start fra skabelon",
+    "fromSpreadsheet": "Rapport fra regneark",
+    "draftWithAI": "Udkast med AI",
+    "templateTitle": "Start fra en skabelon",
+    "allTypes": "Alle typer",
+    "orgTemplates": "Din organisations skabeloner",
+    "savedByOrg": "Gemt af din organisation",
+    "useTemplate": "Brug denne skabelon",
+    "generalTemplates": "Generelle skabeloner",
+    "spreadsheetFailed": "Kunne ikke oprette en rapport fra det regneark.",
+    "templateFailed": "Kunne ikke oprette fra skabelon.",
+    "draftFailed": "Kunne ikke udarbejde dokument.",
+    "fields": {
+      "type": "Dokumenttype",
+      "title": "Titel",
+      "recipient": "Modtager (valgfrit)",
+      "department": "Afdeling (valgfrit)",
+      "brief": "Instruktioner / oplæg"
+    },
+    "briefPlaceholder": "Beskriv formålet, hovedpunkterne og eventuelle fakta, der skal medtages. Assistenten udarbejder et formelt dokument, som du kan redigere og godkende.",
+    "generateDraft": "Generér udkast",
+    "empty": "Ingen dokumenter endnu.",
+    "table": {
+      "title": "Titel",
+      "type": "Type",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Kunne ikke indlæse dokument.",
+    "invalidJson": "Indholdet er ikke gyldig JSON.",
+    "saved": "Gemt. Version forhøjet.",
+    "saveFailed": "Lagring mislykkedes.",
+    "done": {
+      "submit": "Dokument sendt til gennemgang.",
+      "approve": "Dokument godkendt.",
+      "reject": "Dokument afvist.",
+      "finalize": "Dokument færdiggjort."
+    },
+    "failed": {
+      "submit": "Kunne ikke sende.",
+      "approve": "Kunne ikke godkende.",
+      "reject": "Kunne ikke afvise.",
+      "finalize": "Kunne ikke færdiggøre."
+    },
+    "templateName": "Skabelonnavn",
+    "templateDefault": "{title}-skabelon",
+    "templateSaved": "Gemt som en genanvendelig skabelon til din organisation.",
+    "templateSaveFailed": "Skabelonen kunne ikke gemmes.",
+    "exportFailed": "Eksport mislykkedes.",
+    "notFound": "Dokumentet blev ikke fundet.",
+    "exportDocx": "Eksportér DOCX",
+    "exportPptx": "Eksportér PPTX",
+    "exportXlsx": "Eksportér XLSX",
+    "saveAsTemplate": "Gem som skabelon",
+    "content": "Indhold",
+    "workflow": "Arbejdsgang",
+    "aiAssisted": "AI-assisteret kladde",
+    "auditChain": "Revisionsspor: lyd → udskrift → AI-kladde → menneskelig redigering → godkendelse → endelig. Hvert trin registreres.",
+    "comment": "Kommentar (valgfrit)",
+    "commentPlaceholder": "Tilføj en bemærkning til journalen",
+    "submit": "Send til gennemgang",
+    "approve": "Godkend",
+    "reject": "Afvis",
+    "finalize": "Afslut",
+    "finalLocked": "Endelig — låst for redigering",
+    "editJson": "Redigér indhold (JSON)",
+    "jsonNote": "Struktureret indhold driver den branded DOCX. Redigér felterne nedenfor, og gem; branding og layout anvendes automatisk ved eksport.",
+    "saveContent": "Gem indhold",
+    "approvalHistory": "Godkendelseshistorik"
+  },
+  "emails": {
+    "subtitle": "Udkast til breve og e-mails med AI. Der sendes intet, før en person klikker på send.",
+    "needIntent": "Giv assistenten et emne eller formål at udarbejde udkastet ud fra.",
+    "draftReady": "Udkastet er klar. Gennemgå og redigér, før du sender.",
+    "draftFailed": "Udkast mislykkedes.",
+    "draftSaved": "Udkastet er gemt.",
+    "saveFailed": "Kunne ikke gemme.",
+    "confirmSend": "Send denne e-mail nu? Denne handling registreres i revisionssporet.",
+    "sent": "E-mailen er sendt.",
+    "sendFailed": "Afsendelse mislykkedes.",
+    "compose": "Skriv",
+    "messages": "Beskeder",
+    "empty": "Ingen korrespondance endnu.",
+    "message": "Besked",
+    "details": "Detaljer",
+    "to": "Til",
+    "cc": "Cc",
+    "subject": "Emne",
+    "intent": "Hvad skal der stå? (til AI)",
+    "intentPlaceholder": "f.eks. Inviter høvdinge til sikkerhedsbarazaen fredag kl. 10",
+    "body": "Brødtekst",
+    "saveDraft": "Gem kladde",
+    "toLabel": "Til:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Emne:",
+    "aiAssisted": "AI-assisteret",
+    "sendNow": "Send nu",
+    "selectHint": "Vælg en meddelelse, eller skriv en ny."
+  },
+  "knowledge": {
+    "subtitle": "Referencemateriale, som assistenten kan trække på — politikker, skabeloner, præcedenser.",
+    "added": "Føjet til vidensbasen.",
+    "addFailed": "Kunne ikke føje til.",
+    "chooseFile": "Vælg en fil, der skal uploades.",
+    "ocrFailed": "Filen er gemt. OCR kunne ikke læse tekst fra denne fil (den er muligvis af lav kvalitet). Du kan indsætte teksten manuelt.",
+    "extracted": "Filen er gemt, og {n} tegn tekst er udtrukket.",
+    "noText": "Filen er gemt. Der kunne ikke udtrækkes tekst fra dette format.",
+    "uploadFailed": "Upload mislykkedes.",
+    "confirmRemove": "Fjern denne reference?",
+    "uploadTitle": "Upload et dokument",
+    "file": "Fil",
+    "titleOptional": "Titel (valgfrit)",
+    "titleDefault": "Bruger filnavn som standard",
+    "categoryOptional": "Kategori (valgfrit)",
+    "uploadExtract": "Upload og udtræk",
+    "uploadNote": "Word-, PDF-, CSV- og tekstfiler får automatisk udtrukket deres tekst. Scanninger af PDF'er og fotos læses automatisk med OCR.",
+    "pasteTitle": "Tilføj reference (indsæt tekst)",
+    "title": "Titel",
+    "category": "Kategori",
+    "categoryPlaceholder": "f.eks. Cirkulærer, Politikker",
+    "textContent": "Tekstindhold",
+    "add": "Tilføj",
+    "references": "Referencer",
+    "empty": "Intet endnu.",
+    "uncategorised": "Ukategoriseret",
+    "remove": "Fjern"
+  },
+  "assistant": {
+    "subtitle": "Giv en instruktion på almindeligt dansk — opsummer, find, udkast eller forklar på tværs af dit arbejdsområde.",
+    "failed": "Assistenten kunne ikke behandle det.",
+    "instruction": "Instruktion",
+    "placeholder": "f.eks. Opsummer beslutningerne fra denne uges sikkerhedsudvalg, eller list notater, der stadig afventer godkendelse.",
+    "ask": "Spørg"
+  },
+  "actions": {
+    "subtitle": "Handlingspunkter udtrukket fra referater og handlingsmatricer på tværs af sessioner.",
+    "empty": "Ingen udestående handlinger fundet.",
+    "table": {
+      "action": "Handling",
+      "responsible": "Ansvarlig",
+      "timeline": "Tidslinje",
+      "source": "Kilde"
+    }
+  },
+  "paypal": {
+    "title": "PayPal-betaling",
+    "subtitle": "Bekræftelse af abonnementsbetaling.",
+    "confirming": "Bekræfter din PayPal-betaling...",
+    "noOrder": "Ingen PayPal-ordre blev returneret.",
+    "confirmed": "Betaling bekræftet. Dit Worker-abonnement er nu aktivt.",
+    "failed": "PayPal-betalingen kunne ikke bekræftes.",
+    "success": "Betaling gennemført",
+    "viewSubscription": "Se abonnement",
+    "errorTitle": "Betalingen kunne ikke bekræftes",
+    "returnToSubscription": "Tilbage til abonnement"
+  },
+  "tenant": {
+    "saved": "Organisationsoplysninger gemt. De vises på alle dokumenter, du eksporterer.",
+    "saveFailed": "Kunne ikke gemme.",
+    "logoUploaded": "Logo uploadet.",
+    "signatureUploaded": "Underskrift uploadet.",
+    "uploadFailed": "Upload mislykkedes.",
+    "subtitleShort": "Branding til dit arbejdsområde.",
+    "noOrg": "Denne konto er ikke tilknyttet en organisation.",
+    "subtitle": "Dit navn, brevhoved, logo og underskrift vises på alle dokumenter, du genererer.",
+    "letterhead": "Brevhoved",
+    "orgName": "Organisationsnavn",
+    "line": "Brevhovedlinje {n}",
+    "line1Placeholder": "f.eks. REGIONENS MYNDIGHED FOR ...",
+    "line2Placeholder": "f.eks. Afdeling for ...",
+    "line3Placeholder": "f.eks. Enhed / Kontor",
+    "saveLetterhead": "Gem brevhoved",
+    "blankHint": "Lad linjerne stå tomme for at bruge dit organisationsnavn i stedet.",
+    "logoSignature": "Logo & underskrift",
+    "logo": "Våbenskjold / logo (PNG eller JPG)",
+    "signature": "E-underskrift (PNG eller JPG)",
+    "uploaded": "uploadet",
+    "brandingNote": "Logoet vises i dokumentets sidehoved og på dias' titelsider. Underskriften placeres i slutningen af eksporterede dokumenter. Brug en PNG med gennemsigtig baggrund for det bedste resultat."
+  },
+  "users": {
+    "createdTemp": "Bruger oprettet. Midlertidig adgangskode: {temp} — del den sikkert; brugeren skal ændre den ved første login.",
+    "created": "Bruger oprettet.",
+    "createFailed": "Kunne ikke oprette bruger.",
+    "confirmRemove": "Fjern {name}?",
+    "removeFailed": "Kunne ikke fjerne.",
+    "subtitle": "Administrer adgang. Superadmin-kontoen kan ikke ændres her.",
+    "add": "Tilføj bruger",
+    "create": "Opret bruger",
+    "empty": "Ingen brugere.",
+    "fields": {
+      "name": "Navn",
+      "email": "E-mail",
+      "role": "Rolle",
+      "department": "Afdeling",
+      "status": "Status"
+    },
+    "suspend": "Suspender",
+    "reinstate": "Genindsæt",
+    "remove": "Fjern"
+  },
+  "audit": {
+    "subtitle": "Hver betydningsfuld handling registreres. Logfiler indeholder kun metadata og identifikatorer — aldrig dokumentindhold eller lyd.",
+    "empty": "Ingen revisionsposter.",
+    "table": {
+      "when": "Hvornår",
+      "actor": "Aktør",
+      "action": "Handling",
+      "resource": "Ressource"
+    },
+    "system": "system"
+  },
+  "payments": {
+    "stkSent": "STK-push sendt. Bed betaleren om at godkende på sin telefon.",
+    "initiateFailed": "Kunne ikke starte betaling.",
+    "subtitle": "M-Pesa (Daraja STK push) og PayPal-transaktioner.",
+    "requestTitle": "Anmod om M-Pesa-betaling",
+    "phone": "Telefon (07.. eller 2547..)",
+    "amountKes": "Beløb (KES)",
+    "purpose": "Formål",
+    "sendStk": "Send STK-push",
+    "transactions": "Transaktioner",
+    "empty": "Ingen transaktioner.",
+    "table": {
+      "provider": "Udbyder",
+      "amount": "Beløb",
+      "status": "Status",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Fakturaer og kvitteringer for gennemførte Worker-abonnementsbetalinger.",
+    "loadFailed": "Kunne ikke indlæse faktureringsdokumenter.",
+    "downloadFailed": {
+      "invoice": "Kunne ikke downloade faktura.",
+      "receipt": "Kunne ikke downloade kvittering."
+    },
+    "documentsTitle": "Faktureringsdokumenter",
+    "intro": "Download fakturaer og kvitteringer for din organisations gennemførte abonnementsbetalinger.",
+    "disclaimer": "Disse dokumenter registrerer Worker-abonnementsbetalinger og er beregnet til betalings- og refusionsformål. De betragtes ikke som KRA/eTIMS-momsfakturaer, medmindre de udstedes separat gennem en kompatibel eTIMS-integration.",
+    "invoices": "Fakturaer",
+    "noInvoices": "Ingen fakturaer endnu.",
+    "receipts": "Kvitteringer",
+    "noReceipts": "Ingen kvitteringer endnu.",
+    "downloadPdf": "Download PDF",
+    "table": {
+      "invoice": "Faktura",
+      "receipt": "Kvittering",
+      "date": "Dato",
+      "description": "Beskrivelse",
+      "amount": "Beløb",
+      "status": "Status",
+      "provider": "Udbyder",
+      "reference": "Reference"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Kunne ikke indlæse abonnement.",
+    "selectFirst": "Vælg først en abonnementsplan.",
+    "mpesaSent": "M-Pesa STK-push sendt. Godkend betalingen på din telefon. Dit abonnement aktiveres efter betalingsbekræftelse.",
+    "mpesaFailed": "Kunne ikke starte M-Pesa-betaling.",
+    "noApproveUrl": "PayPal-godkendelses-URL blev ikke returneret.",
+    "paypalFailed": "Kunne ikke starte PayPal-betaling.",
+    "subtitleShort": "Administrer dit Worker-abonnement.",
+    "subtitle": "Administrer din Worker-plan, prøveperiode og fakturering.",
+    "current": "Nuværende abonnement",
+    "organisation": "Organisation",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "14 dages gratis prøveperiode",
+    "trialEnds": "Prøveperiode slutter",
+    "dayRemaining": "{n} dag tilbage",
+    "daysRemaining": "{n} dage tilbage",
+    "renewsEnds": "Fornyes / slutter",
+    "chooseTitle": "Vælg en plan",
+    "chooseSubtitle": "Alle planer inkluderer Worker-administrationsworkflowen. Din 14-dages prøveperiode er gratis.",
+    "perMonth": "/ måned",
+    "planSelected": "{plan} valgt. Din plan er gemt og klar til betaling.",
+    "selectFailed": "Kunne ikke vælge plan.",
+    "selected": "Valgt",
+    "selectPlan": "Vælg plan",
+    "activateTitle": "Aktivér dit abonnement",
+    "selectAbove": "Vælg en plan ovenfor for at fortsætte til betaling.",
+    "stkNote": "Der sendes en STK-anmodning til telefonnummeret nedenfor.",
+    "phone": "Telefonnummer",
+    "phonePlaceholder": "07.. eller 2547..",
+    "payMpesa": "Betal med M-Pesa",
+    "paypalNote": "Fortsæt til PayPal for at betale for den valgte plan i USD.",
+    "payPaypal": "Betal med PayPal",
+    "settleNote": "Betalte abonnementer kan afregnes via M-Pesa eller PayPal.",
+    "activationNote": "Din valgte plan aktiveres efter bekræftet betaling.",
+    "historyNote": "Betalingshistorik findes under Administration → Betalinger."
+  },
+  "intl": {
+    "territory": "Territorium",
+    "searchTerritory": "Søg territorium…",
+    "selectTerritory": "Vælg dit territorium",
+    "territoryRequired": "Vælg venligst dit territorium.",
+    "workingLanguage": "Arbejdssprog",
+    "meetingLanguage": "Mødesprog",
+    "useDefault": "Organisationens standard",
+    "beta": "transskription beta",
+    "unavailable": "ingen transskription"
+  },
+  "generate": {
+    "title": "Generér et dokument fra denne session",
+    "as": "Generér som",
+    "instructions": "Instruktion (valgfrit)",
+    "placeholder": "f.eks. Brev til departementschefen med opsummering af beslutning 2 og 3",
+    "button": "Generér",
+    "working": "Udarbejder dit dokument… dette kan tage et minut.",
+    "done": "Dokument oprettet.",
+    "failed": "Kunne ikke generere dokumentet.",
+    "hint": "Bruger de markerede transskriptioner i rækkefølge. Du gennemgår og godkender, før noget deles."
+  },
+  "queue": {
+    "queued": "Sat i kø til transskription. Denne side opdateres automatisk."
+  },
+  "pdfExport": {
+    "button": "Eksportér PDF"
+  },
+  "access": {
+    "readOnly": "Dit arbejdsområde er skrivebeskyttet, fordi din prøveperiode eller dit abonnement er udløbet. Du kan stadig se og eksportere dine dokumenter.",
+    "grace": "Din prøveperiode eller dit abonnement udløb den {date}. Du har {n} dage med fuld adgang tilbage.",
+    "trialEnding": "Din gratis prøveperiode slutter om {n} dage.",
+    "choosePlan": "Vælg en plan"
+  },
+  "sessionLang": {
+    "saved": "Mødesprog gemt. Det gælder for optagelser, der transskriberes fra nu af.",
+    "failed": "Kunne ikke gemme mødesproget."
+  },
+  "i18nNote": {
+    "machine": "Maskinoversat"
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Ngôn ngữ",
+    "signIn": "Đăng nhập",
+    "signOut": "Đăng xuất",
+    "createAccount": "Tạo tài khoản",
+    "getStarted": "Bắt đầu",
+    "startFreeTrial": "Bắt đầu dùng thử miễn phí",
+    "cancel": "Hủy",
+    "back": "Quay lại",
+    "download": "Tải xuống",
+    "viewAll": "Xem tất cả"
+  },
+  "brand": {
+    "tagline": "Không gian làm việc hành chính AI",
+    "secureWorkspace": "Không gian làm việc hành chính an toàn",
+    "badge": "Tiếng Anh · Âm thanh"
+  },
+  "nav": {
+    "dashboard": "Bảng điều khiển",
+    "workspace": "Không gian làm việc",
+    "sessions": "Phiên & Bản ghi âm",
+    "documents": "Tài liệu",
+    "correspondence": "Thư từ",
+    "knowledge": "Cơ sở tri thức",
+    "assistant": "Trợ lý",
+    "askWorker": "Hỏi Worker",
+    "actions": "Công việc còn tồn đọng",
+    "administration": "Quản trị",
+    "organisation": "Tổ chức",
+    "users": "Người dùng",
+    "audit": "Nhật ký kiểm toán",
+    "subscription": "Đăng ký",
+    "payments": "Thanh toán",
+    "billing": "Hóa đơn"
+  },
+  "roles": {
+    "viewer": "Người xem",
+    "officer": "Cán bộ",
+    "admin": "Quản trị viên",
+    "superadmin": "Quản trị viên cấp cao"
+  },
+  "landing": {
+    "hero": {
+      "title": "Biến lời bạn nói thành hồ sơ hoàn chỉnh, được lưu trữ.",
+      "body": "Worker là không gian làm việc hành chính AI dành cho các tổ chức tạo ra số lượng lớn tài liệu chính thức từ các cuộc họp, buổi giao ban và thư từ. Hãy ghi âm một cuộc họp hoặc đọc chính tả, Worker sẽ chuyển thành văn bản, soạn biên bản, bản ghi nhớ, thư, báo cáo và tóm tắt chính sách, rồi đưa chúng qua quy trình xem xét và phê duyệt — với nhật ký kiểm toán đầy đủ.",
+      "badgeRow": "Âm thanh · Tiếng Anh · Không gian làm việc an toàn"
+    },
+    "what": {
+      "title": "Worker làm được gì",
+      "lead": "Công việc văn phòng thường ngày xoay quanh các cuộc họp và thư từ — được xử lý trong vài phút, không phải vài giờ.",
+      "f1": {
+        "title": "Ghi âm & chuyển thành văn bản",
+        "body": "Ghi lại các cuộc họp, phỏng vấn, buổi giao ban hoặc đọc chính tả. Âm thanh được chuyển thành văn bản cục bộ bằng tiếng Anh."
+      },
+      "f2": {
+        "title": "Soạn thảo với AI",
+        "body": "Tạo biên bản, bản ghi nhớ, thư từ, báo cáo, tóm tắt chính sách và thông tư theo đúng thể thức chính thức."
+      },
+      "f3": {
+        "title": "Xem xét & phê duyệt",
+        "body": "Mọi tài liệu đều trải qua các bước soạn thảo, xem xét, phê duyệt và hoàn tất — con người luôn nắm quyền kiểm soát."
+      },
+      "f4": {
+        "title": "An toàn & được kiểm toán",
+        "body": "Phân quyền truy cập theo vai trò và nhật ký kiểm toán đầy đủ. Thư từ chỉ được gửi bởi con người."
+      }
+    },
+    "start": {
+      "title": "Bắt đầu chỉ mất một phút",
+      "lead": "Tạo tài khoản và bắt đầu dùng thử miễn phí 14 ngày.",
+      "s1": {
+        "title": "Tạo tài khoản của bạn",
+        "body": "Nhập tên, email và mật khẩu của bạn."
+      },
+      "s2": {
+        "title": "Xác minh email của bạn",
+        "body": "Nhập mã 6 chữ số chúng tôi gửi qua email."
+      },
+      "s3": {
+        "title": "Đăng nhập an toàn",
+        "body": "Mỗi lần đăng nhập đều xác nhận bằng mã dùng một lần gửi qua email."
+      },
+      "s4": {
+        "title": "Bắt đầu làm việc",
+        "body": "Tạo phiên làm việc, ghi âm và tạo tài liệu đầu tiên của bạn."
+      }
+    },
+    "pricing": {
+      "title": "Giá thuê bao đơn giản",
+      "lead": "Bắt đầu với bản dùng thử miễn phí 14 ngày. Chọn gói phù hợp với khối lượng công việc hành chính mà tổ chức của bạn tạo ra.",
+      "perMonth": "/tháng",
+      "mostPopular": "PHỔ BIẾN NHẤT",
+      "starter": {
+        "name": "Khởi đầu",
+        "desc": "Dành cho các nhóm nhỏ mới bắt đầu với công việc hành chính hỗ trợ bởi AI."
+      },
+      "professional": {
+        "name": "Chuyên nghiệp",
+        "desc": "Dành cho các tổ chức có nhu cầu sản xuất tài liệu thường xuyên, khối lượng lớn."
+      },
+      "premium": {
+        "name": "Cao cấp",
+        "desc": "Dành cho các tổ chức lớn hơn với khối lượng công việc hành chính đáng kể."
+      },
+      "paymentsNote": "Hỗ trợ M-Pesa và PayPal cho các gói thuê bao trả phí."
+    },
+    "final": {
+      "title": "Sẵn sàng dùng thử Worker?",
+      "cta": "Tạo tài khoản của bạn"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Mật khẩu",
+    "fullName": "Họ và tên",
+    "confirmPassword": "Xác nhận mật khẩu",
+    "currentPassword": "Mật khẩu hiện tại",
+    "newPassword": "Mật khẩu mới",
+    "confirmNewPassword": "Xác nhận mật khẩu mới",
+    "code6": "Mã 6 chữ số",
+    "signInFailed": "Đăng nhập thất bại. Vui lòng kiểm tra thông tin đăng nhập.",
+    "forgotPassword": "Quên mật khẩu?",
+    "mfaNotice": "Một mã dùng một lần được gửi qua email để xác nhận mỗi lần đăng nhập.",
+    "createYourAccount": "Tạo tài khoản của bạn",
+    "pwMin": "Mật khẩu phải có ít nhất {n} ký tự.",
+    "newPwMin": "Mật khẩu mới phải có ít nhất {n} ký tự.",
+    "pwMismatch": "Mật khẩu không khớp.",
+    "createFailed": "Không thể tạo tài khoản.",
+    "haveAccount": "Đã có tài khoản?",
+    "startAtSignIn": "Bắt đầu tại đăng nhập hoặc đăng ký.",
+    "goToSignIn": "Đi đến đăng nhập",
+    "invalidCode": "Mã không hợp lệ hoặc đã hết hạn.",
+    "codeSent": "Một mã mới đã được gửi.",
+    "resendFailed": "Không thể gửi lại.",
+    "verifyEmailTitle": "Xác minh email của bạn",
+    "verifyEmailTo": "Xác minh email của bạn — {email}",
+    "verify": "Xác minh",
+    "resendCode": "Gửi lại mã",
+    "signInAgain": "Vui lòng đăng nhập lại.",
+    "mfaPrompt": "Nhập mã đăng nhập chúng tôi đã gửi qua email",
+    "mfaPromptTo": "Nhập mã đăng nhập chúng tôi đã gửi qua email đến {email}",
+    "verifySignIn": "Xác minh & đăng nhập",
+    "requestFailed": "Không thể xử lý yêu cầu.",
+    "resetTitle": "Đặt lại mật khẩu của bạn",
+    "sendResetCode": "Gửi mã đặt lại",
+    "backToSignIn": "Quay lại đăng nhập",
+    "resetPrompt": "Nhập mã chúng tôi đã gửi qua email và chọn mật khẩu mới",
+    "resetPassword": "Đặt lại mật khẩu",
+    "setNewPassword": "Đặt mật khẩu mới",
+    "forcedChange": "Vì lý do bảo mật, hãy đặt mật khẩu của riêng bạn trước khi tiếp tục.",
+    "updateAccountPassword": "Cập nhật mật khẩu tài khoản của bạn.",
+    "changeFailed": "Không thể thay đổi mật khẩu.",
+    "updatePassword": "Cập nhật mật khẩu",
+    "signOutInstead": "Thay vào đó, đăng xuất"
+  },
+  "notFound": {
+    "title": "Không tìm thấy trang",
+    "subtitle": "Trang đó không tồn tại trong không gian làm việc này.",
+    "back": "Quay lại bảng điều khiển"
+  },
+  "status": {
+    "draft": "bản nháp",
+    "in_review": "đang xem xét",
+    "approved": "đã phê duyệt",
+    "final": "cuối cùng",
+    "archived": "đã lưu trữ",
+    "open": "mở",
+    "processing": "đang xử lý",
+    "ready": "sẵn sàng",
+    "pending": "đang chờ",
+    "transcribing": "đang ghi âm chuyển văn bản",
+    "transcribed": "đã chuyển văn bản",
+    "failed": "thất bại",
+    "sent": "đã gửi",
+    "received": "đã nhận",
+    "completed": "đã hoàn thành",
+    "cancelled": "đã hủy",
+    "active": "đang hoạt động",
+    "suspended": "đã tạm ngưng"
+  },
+  "kind": {
+    "meeting": "cuộc họp",
+    "interview": "phỏng vấn",
+    "briefing": "báo cáo tóm tắt",
+    "dictation": "đọc chính tả",
+    "field_report": "báo cáo hiện trường",
+    "consultation": "tham vấn",
+    "other": "khác"
+  },
+  "classification": {
+    "unclassified": "chưa phân loại",
+    "internal": "nội bộ",
+    "confidential": "mật",
+    "restricted": "hạn chế"
+  },
+  "dashboard": {
+    "welcome": "Chào mừng, {name}",
+    "defaultName": "Cán bộ",
+    "subtitle": "Không gian làm việc hành chính của bạn — ghi nhận, soạn thảo, xem xét và lưu trữ.",
+    "stats": {
+      "sessions": "Phiên làm việc",
+      "documents": "Tài liệu",
+      "awaitingReview": "Chờ xem xét",
+      "outstandingActions": "Hành động còn tồn đọng"
+    },
+    "recentSessions": "Phiên làm việc gần đây",
+    "documentsToAction": "Tài liệu cần xử lý",
+    "noSessions": "Chưa có phiên làm việc nào.",
+    "nothingToAction": "Không có nội dung nào cần bạn xử lý."
+  },
+  "sessions": {
+    "subtitle": "Mỗi phiên làm việc là một hồ sơ — âm thanh, bản chuyển văn bản và các tài liệu được tạo ra từ đó.",
+    "new": "Phiên làm việc mới",
+    "createFailed": "Không thể tạo phiên làm việc.",
+    "titlePlaceholder": "ví dụ: Ủy ban An ninh Quận — Báo cáo tóm tắt hàng tuần",
+    "create": "Tạo phiên làm việc",
+    "empty": "Chưa có phiên làm việc nào. Hãy tạo một phiên để bắt đầu ghi âm.",
+    "fields": {
+      "title": "Tiêu đề",
+      "kind": "Loại",
+      "date": "Ngày",
+      "classification": "Phân loại",
+      "status": "Trạng thái",
+      "department": "Phòng ban",
+      "location": "Địa điểm"
+    }
+  },
+  "session": {
+    "loadFailed": "Không thể tải phiên.",
+    "micDenied": "Quyền truy cập micrô bị từ chối hoặc không khả dụng.",
+    "audioSaved": "Âm thanh đã được lưu vào phiên.",
+    "uploadFailed": "Tải lên thất bại.",
+    "transcribing": "Đang phiên âm cục bộ — quá trình này có thể mất một lúc với âm thanh dài.",
+    "transcribed": "Phiên âm hoàn tất.",
+    "transcribeFailed": "Phiên âm thất bại. Vui lòng kiểm tra dịch vụ STT đang chạy.",
+    "updateFailed": "Không thể cập nhật.",
+    "draftingMinutes": "Đang soạn biên bản từ bản phiên âm…",
+    "minutesCreated": "Biên bản nháp đã được tạo.",
+    "minutesFailed": "Không thể tạo biên bản.",
+    "notFound": "Không tìm thấy phiên.",
+    "noDate": "không có ngày",
+    "noLocation": "không có địa điểm",
+    "generateMinutes": "Tạo biên bản",
+    "captureAudio": "Ghi âm",
+    "stopSave": "Dừng & lưu",
+    "startRecording": "Bắt đầu ghi âm",
+    "or": "hoặc",
+    "uploadAudio": "Tải lên âm thanh",
+    "audioNote": "Âm thanh được lưu trên máy chủ. Phiên âm chạy cục bộ bằng tiếng Anh. Biên bản kết hợp mọi đoạn ghi trong phiên này, theo thứ tự.",
+    "documentsFrom": "Tài liệu từ phiên này",
+    "noDocuments": "Chưa có tài liệu. Hãy phiên âm một đoạn ghi, sau đó tạo biên bản.",
+    "recordingsTitle": "Bản ghi âm & bản phiên âm",
+    "clipOne": "{n} đoạn ghi",
+    "clipMany": "{n} đoạn ghi",
+    "noRecordings": "Chưa có bản ghi âm. Hãy ghi âm hoặc tải lên âm thanh ở trên.",
+    "includeTitle": "Bao gồm đoạn ghi này khi tạo biên bản",
+    "inMinutes": "Trong biên bản",
+    "transcribe": "Phiên âm",
+    "transcribeHint": "Phiên âm đoạn ghi này để xem và chỉnh sửa bản phiên âm tại đây.",
+    "audioLoadFailed": "Không thể tải âm thanh.",
+    "loadAudio": "Tải âm thanh",
+    "words": "{n} từ",
+    "verified": "đã xác minh",
+    "editVerify": "Chỉnh sửa & xác minh",
+    "saveVerified": "Lưu & đánh dấu đã xác minh",
+    "saveDraft": "Lưu bản nháp",
+    "emptyTranscript": "Bản ghi trống."
+  },
+  "docType": {
+    "minutes": "biên bản cuộc họp",
+    "memo": "bản ghi nhớ",
+    "letter": "thư",
+    "report": "báo cáo",
+    "policy_brief": "bản tóm tắt chính sách",
+    "briefing_note": "bản ghi chú giao ban",
+    "concept_note": "bản ghi chú ý tưởng",
+    "circular": "thông tư",
+    "action_matrix": "ma trận hành động",
+    "speech": "bài phát biểu"
+  },
+  "approval": {
+    "submit": "đã gửi",
+    "submitted": "đã gửi",
+    "approve": "đã phê duyệt",
+    "approved": "đã phê duyệt",
+    "reject": "đã từ chối",
+    "rejected": "đã từ chối",
+    "finalize": "đã hoàn tất",
+    "finalized": "đã hoàn tất"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Bản ghi nhớ nội bộ",
+      "desc": "Bản ghi nhớ nội bộ tiêu chuẩn với Kính gửi / Từ / Chủ đề."
+    },
+    "letter-official": {
+      "name": "Thư chính thức",
+      "desc": "Thư gửi đi trang trọng trên giấy tiêu đề của cơ quan."
+    },
+    "circular-general": {
+      "name": "Thông tư",
+      "desc": "Thông báo được gửi đến nhiều người nhận."
+    },
+    "report-standard": {
+      "name": "Báo cáo",
+      "desc": "Báo cáo tổng hợp với tóm tắt, các phần và khuyến nghị."
+    },
+    "policy-brief": {
+      "name": "Bản tóm tắt chính sách",
+      "desc": "Bản tóm tắt ngắn gọn dành cho người ra quyết định."
+    },
+    "briefing-note": {
+      "name": "Bản ghi chú giao ban",
+      "desc": "Ghi chú ngắn để báo cáo cho lãnh đạo trước một cuộc họp."
+    },
+    "concept-note": {
+      "name": "Bản ghi chú ý tưởng",
+      "desc": "Đề cương của một chương trình hoặc hoạt động được đề xuất."
+    },
+    "minutes-blank": {
+      "name": "Biên bản cuộc họp (trống)",
+      "desc": "Cấu trúc biên bản trống để điền thủ công."
+    },
+    "speech-remarks": {
+      "name": "Bài phát biểu / Phát biểu",
+      "desc": "Phát biểu chính thức cho một sự kiện."
+    }
+  },
+  "documents": {
+    "subtitle": "Biên bản, bản ghi nhớ, thư từ, báo cáo và bản tóm tắt — soạn thảo bằng AI, phê duyệt bởi con người.",
+    "startFromTemplate": "Bắt đầu từ mẫu",
+    "fromSpreadsheet": "Báo cáo từ bảng tính",
+    "draftWithAI": "Soạn thảo bằng AI",
+    "templateTitle": "Bắt đầu từ một mẫu",
+    "allTypes": "Tất cả các loại",
+    "orgTemplates": "Mẫu của tổ chức bạn",
+    "savedByOrg": "Được lưu bởi tổ chức của bạn",
+    "useTemplate": "Sử dụng mẫu này",
+    "generalTemplates": "Mẫu chung",
+    "spreadsheetFailed": "Không thể tạo báo cáo từ bảng tính đó.",
+    "templateFailed": "Không thể tạo từ mẫu.",
+    "draftFailed": "Không thể soạn thảo tài liệu.",
+    "fields": {
+      "type": "Loại tài liệu",
+      "title": "Tiêu đề",
+      "recipient": "Người nhận (không bắt buộc)",
+      "department": "Phòng ban (không bắt buộc)",
+      "brief": "Hướng dẫn / bản tóm tắt"
+    },
+    "briefPlaceholder": "Mô tả mục đích, các điểm chính và mọi thông tin cần đưa vào. Trợ lý sẽ soạn thảo một tài liệu chính thức để bạn chỉnh sửa và phê duyệt.",
+    "generateDraft": "Tạo bản nháp",
+    "empty": "Chưa có tài liệu nào.",
+    "table": {
+      "title": "Tiêu đề",
+      "type": "Loại",
+      "ref": "Số tham chiếu",
+      "status": "Trạng thái",
+      "ver": "Phiên bản"
+    }
+  },
+  "doc": {
+    "loadFailed": "Không thể tải tài liệu.",
+    "invalidJson": "Nội dung không phải là JSON hợp lệ.",
+    "saved": "Đã lưu. Phiên bản đã được tăng.",
+    "saveFailed": "Lưu không thành công.",
+    "done": {
+      "submit": "Tài liệu đã được gửi để xem xét.",
+      "approve": "Tài liệu đã được phê duyệt.",
+      "reject": "Tài liệu đã bị từ chối.",
+      "finalize": "Tài liệu đã được hoàn tất."
+    },
+    "failed": {
+      "submit": "Không thể gửi.",
+      "approve": "Không thể phê duyệt.",
+      "reject": "Không thể từ chối.",
+      "finalize": "Không thể hoàn tất."
+    },
+    "templateName": "Tên mẫu",
+    "templateDefault": "Mẫu {title}",
+    "templateSaved": "Đã lưu làm mẫu tái sử dụng cho tổ chức của bạn.",
+    "templateSaveFailed": "Không thể lưu mẫu.",
+    "exportFailed": "Xuất thất bại.",
+    "notFound": "Không tìm thấy tài liệu.",
+    "exportDocx": "Xuất DOCX",
+    "exportPptx": "Xuất PPTX",
+    "exportXlsx": "Xuất XLSX",
+    "saveAsTemplate": "Lưu làm mẫu",
+    "content": "Nội dung",
+    "workflow": "Quy trình",
+    "aiAssisted": "Bản nháp có hỗ trợ AI",
+    "auditChain": "Chuỗi kiểm toán: âm thanh → bản ghi → bản nháp AI → chỉnh sửa thủ công → phê duyệt → bản cuối. Mọi bước đều được ghi lại.",
+    "comment": "Nhận xét (không bắt buộc)",
+    "commentPlaceholder": "Thêm ghi chú cho hồ sơ",
+    "submit": "Gửi để xem xét",
+    "approve": "Phê duyệt",
+    "reject": "Từ chối",
+    "finalize": "Hoàn tất",
+    "finalLocked": "Bản cuối — đã khóa chỉnh sửa",
+    "editJson": "Chỉnh sửa nội dung (JSON)",
+    "jsonNote": "Nội dung có cấu trúc tạo nên tệp DOCX mang thương hiệu. Chỉnh sửa các trường bên dưới và lưu; thương hiệu và bố cục được áp dụng tự động khi xuất.",
+    "saveContent": "Lưu nội dung",
+    "approvalHistory": "Lịch sử phê duyệt"
+  },
+  "emails": {
+    "subtitle": "Soạn thư và email bằng AI. Không có gì được gửi cho đến khi người dùng nhấn gửi.",
+    "needIntent": "Hãy cung cấp cho trợ lý một tiêu đề hoặc mục đích để soạn thảo.",
+    "draftReady": "Bản nháp đã sẵn sàng. Vui lòng xem xét và chỉnh sửa trước khi gửi.",
+    "draftFailed": "Soạn thảo thất bại.",
+    "draftSaved": "Đã lưu bản nháp.",
+    "saveFailed": "Không thể lưu.",
+    "confirmSend": "Gửi email này ngay bây giờ? Hành động này được ghi lại trong nhật ký kiểm toán.",
+    "sent": "Đã gửi email.",
+    "sendFailed": "Gửi thất bại.",
+    "compose": "Soạn thảo",
+    "messages": "Tin nhắn",
+    "empty": "Chưa có thư từ nào.",
+    "message": "Tin nhắn",
+    "details": "Chi tiết",
+    "to": "Đến",
+    "cc": "Cc",
+    "subject": "Chủ đề",
+    "intent": "Nội dung này nên viết gì? (cho AI)",
+    "intentPlaceholder": "ví dụ: Mời các trưởng thôn đến dự baraza an ninh vào 10 giờ thứ Sáu",
+    "body": "Nội dung",
+    "saveDraft": "Lưu bản nháp",
+    "toLabel": "Đến:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Chủ đề:",
+    "aiAssisted": "Có hỗ trợ của AI",
+    "sendNow": "Gửi ngay",
+    "selectHint": "Chọn một tin nhắn hoặc soạn tin nhắn mới."
+  },
+  "knowledge": {
+    "subtitle": "Tài liệu tham khảo mà trợ lý có thể sử dụng — chính sách, mẫu, tiền lệ.",
+    "added": "Đã thêm vào cơ sở kiến thức.",
+    "addFailed": "Không thể thêm.",
+    "chooseFile": "Chọn một tệp để tải lên.",
+    "ocrFailed": "Đã lưu tệp. OCR không thể đọc văn bản từ tệp này (có thể do chất lượng thấp). Bạn có thể dán văn bản thủ công.",
+    "extracted": "Đã lưu tệp và trích xuất {n} ký tự văn bản.",
+    "noText": "Đã lưu tệp. Không thể trích xuất văn bản từ định dạng này.",
+    "uploadFailed": "Tải lên thất bại.",
+    "confirmRemove": "Xóa tài liệu tham khảo này?",
+    "uploadTitle": "Tải lên tài liệu",
+    "file": "Tệp",
+    "titleOptional": "Tiêu đề (không bắt buộc)",
+    "titleDefault": "Mặc định theo tên tệp",
+    "categoryOptional": "Danh mục (không bắt buộc)",
+    "uploadExtract": "Tải lên & trích xuất",
+    "uploadNote": "Các tệp Word, PDF, CSV và văn bản được trích xuất văn bản tự động. PDF quét và ảnh được đọc tự động bằng OCR.",
+    "pasteTitle": "Thêm tài liệu tham khảo (dán văn bản)",
+    "title": "Tiêu đề",
+    "category": "Danh mục",
+    "categoryPlaceholder": "ví dụ: Thông tư, Chính sách",
+    "textContent": "Nội dung văn bản",
+    "add": "Thêm",
+    "references": "Tài liệu tham khảo",
+    "empty": "Chưa có gì.",
+    "uncategorised": "Chưa phân loại",
+    "remove": "Xóa"
+  },
+  "assistant": {
+    "subtitle": "Đưa ra hướng dẫn bằng ngôn ngữ đơn giản — tóm tắt, tìm kiếm, soạn thảo hoặc giải thích trong toàn bộ không gian làm việc của bạn.",
+    "failed": "Trợ lý không thể xử lý yêu cầu đó.",
+    "instruction": "Hướng dẫn",
+    "placeholder": "Ví dụ: Tóm tắt các quyết định từ cuộc họp ủy ban an ninh tuần này, hoặc liệt kê các bản ghi nhớ vẫn đang chờ phê duyệt.",
+    "ask": "Hỏi"
+  },
+  "actions": {
+    "subtitle": "Các mục hành động được trích xuất từ biên bản và ma trận hành động qua các phiên.",
+    "empty": "Không tìm thấy hành động nào chưa hoàn thành.",
+    "table": {
+      "action": "Hành động",
+      "responsible": "Người chịu trách nhiệm",
+      "timeline": "Tiến độ",
+      "source": "Nguồn"
+    }
+  },
+  "paypal": {
+    "title": "Thanh toán PayPal",
+    "subtitle": "Xác nhận thanh toán đăng ký.",
+    "confirming": "Đang xác nhận thanh toán PayPal của bạn...",
+    "noOrder": "Không có đơn hàng PayPal nào được trả về.",
+    "confirmed": "Thanh toán đã được xác nhận. Đăng ký Worker của bạn hiện đã hoạt động.",
+    "failed": "Không thể xác nhận thanh toán PayPal.",
+    "success": "Thanh toán thành công",
+    "viewSubscription": "Xem đăng ký",
+    "errorTitle": "Không thể xác nhận thanh toán",
+    "returnToSubscription": "Quay lại đăng ký"
+  },
+  "tenant": {
+    "saved": "Đã lưu thông tin tổ chức. Chúng xuất hiện trên mọi tài liệu bạn xuất.",
+    "saveFailed": "Không thể lưu.",
+    "logoUploaded": "Đã tải lên logo.",
+    "signatureUploaded": "Đã tải lên chữ ký.",
+    "uploadFailed": "Tải lên thất bại.",
+    "subtitleShort": "Thương hiệu cho không gian làm việc của bạn.",
+    "noOrg": "Tài khoản này không được liên kết với một tổ chức.",
+    "subtitle": "Tên, tiêu đề thư, logo và chữ ký của bạn xuất hiện trên mọi tài liệu bạn tạo.",
+    "letterhead": "Tiêu đề thư",
+    "orgName": "Tên tổ chức",
+    "line": "Dòng tiêu đề thư {n}",
+    "line1Placeholder": "Ví dụ: CHÍNH QUYỀN QUẬN ...",
+    "line2Placeholder": "Ví dụ: Sở ...",
+    "line3Placeholder": "Ví dụ: Đơn vị / Văn phòng",
+    "saveLetterhead": "Lưu tiêu đề thư",
+    "blankHint": "Để trống các dòng để sử dụng tên tổ chức của bạn.",
+    "logoSignature": "Logo & chữ ký",
+    "logo": "Huy hiệu / logo (PNG hoặc JPG)",
+    "signature": "Chữ ký điện tử (PNG hoặc JPG)",
+    "uploaded": "đã tải lên",
+    "brandingNote": "Logo xuất hiện trong tiêu đề tài liệu và trên trang tiêu đề slide. Chữ ký được đặt ở cuối tài liệu xuất. Sử dụng PNG có nền trong suốt để có kết quả tốt nhất."
+  },
+  "users": {
+    "createdTemp": "Đã tạo người dùng. Mật khẩu tạm thời: {temp} — hãy chia sẻ an toàn; họ phải đổi mật khẩu khi đăng nhập lần đầu.",
+    "created": "Đã tạo người dùng.",
+    "createFailed": "Không thể tạo người dùng.",
+    "confirmRemove": "Xóa {name}?",
+    "removeFailed": "Không thể xóa.",
+    "subtitle": "Quản lý quyền truy cập. Không thể sửa tài khoản superadmin tại đây.",
+    "add": "Thêm người dùng",
+    "create": "Tạo người dùng",
+    "empty": "Không có người dùng.",
+    "fields": {
+      "name": "Tên",
+      "email": "Email",
+      "role": "Vai trò",
+      "department": "Bộ phận",
+      "status": "Trạng thái"
+    },
+    "suspend": "Tạm ngưng",
+    "reinstate": "Khôi phục",
+    "remove": "Xóa"
+  },
+  "audit": {
+    "subtitle": "Mọi hành động quan trọng đều được ghi lại. Nhật ký chỉ chứa siêu dữ liệu và mã định danh — không bao giờ chứa nội dung tài liệu hay âm thanh.",
+    "empty": "Không có mục nhật ký.",
+    "table": {
+      "when": "Thời gian",
+      "actor": "Người thực hiện",
+      "action": "Hành động",
+      "resource": "Tài nguyên"
+    },
+    "system": "hệ thống"
+  },
+  "payments": {
+    "stkSent": "Đã gửi STK push. Hãy yêu cầu người thanh toán phê duyệt trên điện thoại của họ.",
+    "initiateFailed": "Không thể khởi tạo thanh toán.",
+    "subtitle": "Giao dịch M-Pesa (Daraja STK push) và PayPal.",
+    "requestTitle": "Yêu cầu thanh toán M-Pesa",
+    "phone": "Số điện thoại (07.. hoặc 2547..)",
+    "amountKes": "Số tiền (KES)",
+    "purpose": "Mục đích",
+    "sendStk": "Gửi STK push",
+    "transactions": "Giao dịch",
+    "empty": "Không có giao dịch.",
+    "table": {
+      "provider": "Nhà cung cấp",
+      "amount": "Số tiền",
+      "status": "Trạng thái",
+      "ref": "Mã tham chiếu"
+    }
+  },
+  "billing": {
+    "subtitle": "Hóa đơn và biên lai cho các khoản thanh toán đăng ký Worker đã hoàn tất.",
+    "loadFailed": "Không thể tải tài liệu thanh toán.",
+    "downloadFailed": {
+      "invoice": "Không thể tải hóa đơn.",
+      "receipt": "Không thể tải biên lai."
+    },
+    "documentsTitle": "Chứng từ thanh toán",
+    "intro": "Tải hóa đơn và biên lai cho các khoản thanh toán đăng ký đã hoàn tất của tổ chức của bạn.",
+    "disclaimer": "Các chứng từ này ghi lại các khoản thanh toán đăng ký Worker và được cung cấp cho mục đích thanh toán và hoàn trả. Chúng không được trình bày như hóa đơn thuế KRA/eTIMS trừ khi được phát hành riêng thông qua tích hợp eTIMS tuân thủ.",
+    "invoices": "Hóa đơn",
+    "noInvoices": "Chưa có hóa đơn.",
+    "receipts": "Biên lai",
+    "noReceipts": "Chưa có biên lai.",
+    "downloadPdf": "Tải PDF",
+    "table": {
+      "invoice": "Hóa đơn",
+      "receipt": "Biên lai",
+      "date": "Ngày",
+      "description": "Mô tả",
+      "amount": "Số tiền",
+      "status": "Trạng thái",
+      "provider": "Nhà cung cấp",
+      "reference": "Tham chiếu"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Không thể tải đăng ký.",
+    "selectFirst": "Vui lòng chọn gói đăng ký trước.",
+    "mpesaSent": "Đã gửi yêu cầu thanh toán M-Pesa STK. Vui lòng phê duyệt thanh toán trên điện thoại của bạn. Đăng ký của bạn sẽ được kích hoạt sau khi xác nhận thanh toán.",
+    "mpesaFailed": "Không thể khởi tạo thanh toán M-Pesa.",
+    "noApproveUrl": "URL phê duyệt PayPal không được trả về.",
+    "paypalFailed": "Không thể bắt đầu thanh toán PayPal.",
+    "subtitleShort": "Quản lý đăng ký Worker của bạn.",
+    "subtitle": "Quản lý gói, bản dùng thử và thanh toán Worker của bạn.",
+    "current": "Đăng ký hiện tại",
+    "organisation": "Tổ chức",
+    "status": "Trạng thái",
+    "plan": "Gói",
+    "freeTrial": "Dùng thử miễn phí 14 ngày",
+    "trialEnds": "Bản dùng thử kết thúc",
+    "dayRemaining": "Còn {n} ngày",
+    "daysRemaining": "Còn {n} ngày",
+    "renewsEnds": "Gia hạn / kết thúc",
+    "chooseTitle": "Chọn gói",
+    "chooseSubtitle": "Tất cả các gói đều bao gồm quy trình hành chính Worker. Bản dùng thử 14 ngày của bạn là miễn phí.",
+    "perMonth": "/ tháng",
+    "planSelected": "Đã chọn {plan}. Gói của bạn đã được lưu và sẵn sàng để thanh toán.",
+    "selectFailed": "Không thể chọn gói.",
+    "selected": "Đã chọn",
+    "selectPlan": "Chọn gói",
+    "activateTitle": "Kích hoạt đăng ký của bạn",
+    "selectAbove": "Chọn một gói ở trên để tiếp tục thanh toán.",
+    "stkNote": "Yêu cầu STK sẽ được gửi đến số điện thoại bên dưới.",
+    "phone": "Số điện thoại",
+    "phonePlaceholder": "07.. hoặc 2547..",
+    "payMpesa": "Thanh toán bằng M-Pesa",
+    "paypalNote": "Tiếp tục đến PayPal để thanh toán gói đã chọn bằng USD.",
+    "payPaypal": "Thanh toán bằng PayPal",
+    "settleNote": "Các đăng ký trả phí có thể được thanh toán qua M-Pesa hoặc PayPal.",
+    "activationNote": "Gói bạn chọn sẽ được kích hoạt sau khi xác nhận thanh toán thành công.",
+    "historyNote": "Lịch sử thanh toán có tại mục Quản trị → Thanh toán."
+  },
+  "intl": {
+    "territory": "Lãnh thổ",
+    "searchTerritory": "Tìm kiếm lãnh thổ…",
+    "selectTerritory": "Chọn lãnh thổ của bạn",
+    "territoryRequired": "Vui lòng chọn lãnh thổ của bạn.",
+    "workingLanguage": "Ngôn ngữ làm việc",
+    "meetingLanguage": "Ngôn ngữ cuộc họp",
+    "useDefault": "Mặc định của tổ chức",
+    "beta": "phiên bản beta chuyển văn bản",
+    "unavailable": "không có chuyển văn bản"
+  },
+  "generate": {
+    "title": "Tạo tài liệu từ phiên này",
+    "as": "Tạo dưới dạng",
+    "instructions": "Hướng dẫn (không bắt buộc)",
+    "placeholder": "ví dụ: Thư gửi Thư ký Thường trực tóm tắt quyết định 2 và 3",
+    "button": "Tạo",
+    "working": "Đang soạn tài liệu của bạn… quá trình này có thể mất một phút.",
+    "done": "Đã tạo tài liệu.",
+    "failed": "Không thể tạo tài liệu.",
+    "hint": "Sử dụng các bản chuyển văn bản được đánh dấu để đưa vào, theo thứ tự. Bạn xem xét và phê duyệt trước khi bất cứ điều gì được chia sẻ."
+  },
+  "queue": {
+    "queued": "Đã xếp hàng chờ chuyển văn bản. Trang này tự động cập nhật."
+  },
+  "pdfExport": {
+    "button": "Xuất PDF"
+  },
+  "access": {
+    "readOnly": "Không gian làm việc của bạn ở chế độ chỉ đọc vì bản dùng thử hoặc đăng ký của bạn đã kết thúc. Bạn vẫn có thể xem và xuất tài liệu của mình.",
+    "grace": "Bản dùng thử hoặc đăng ký của bạn đã kết thúc vào {date}. Bạn còn {n} ngày truy cập đầy đủ.",
+    "trialEnding": "Bản dùng thử miễn phí của bạn kết thúc sau {n} ngày.",
+    "choosePlan": "Chọn một gói"
+  },
+  "sessionLang": {
+    "saved": "Đã lưu ngôn ngữ cuộc họp. Ngôn ngữ này áp dụng cho các bản ghi âm được chuyển văn bản từ bây giờ.",
+    "failed": "Không thể lưu ngôn ngữ cuộc họp."
+  },
+  "i18nNote": {
+    "machine": "Dịch bằng máy"
+  }
+}

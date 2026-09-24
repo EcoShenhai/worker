@@ -2,6 +2,9 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useState } 
 import en from './locales/en.json';
 import fr from './locales/fr.json';
 
+// Other languages load on demand: one file per language, fetched only when selected.
+const LOADERS = import.meta.glob(['./locales/*.json', '!./locales/en.json', '!./locales/fr.json']);
+
 // 72 UI languages, native names. Translated dictionaries live in ./locales/.
 // Any language (or key) without a translation falls back to English.
 export const RTL_LANGS = new Set(['ar', 'he', 'fa', 'ur', 'dv']);
@@ -81,7 +84,9 @@ export const LANGS = [
   { code: 'vi', label: 'Tiếng Việt' },
 ];
 
-const DICTS = { en, fr };
+const BASE_DICTS = { en, fr };
+// Human-curated; every other language is machine-translated until reviewed.
+export const HUMAN_LANGS = new Set(['en', 'fr']);
 const STORAGE_KEY = 'worker.lang';
 const isSupported = (code) => LANGS.some((l) => l.code === code);
 
@@ -106,9 +111,19 @@ const I18nContext = createContext(null);
 
 export function LanguageProvider({ children }) {
   const [lang, setLangState] = useState(initialLang);
+  const [dicts, setDicts] = useState(BASE_DICTS);
+
+  useEffect(() => {
+    if (dicts[lang]) return undefined;
+    const load = LOADERS[`./locales/${lang}.json`];
+    if (!load) return undefined;
+    let alive = true;
+    load().then((m) => { if (alive) setDicts((d) => ({ ...d, [lang]: m.default || m })); }).catch(() => {});
+    return () => { alive = false; };
+  }, [lang, dicts]);
 
   // The language actually rendered: selected one if translated, else English.
-  const rendered = DICTS[lang] ? lang : 'en';
+  const rendered = dicts[lang] ? lang : 'en';
   const dir = RTL_LANGS.has(rendered) ? 'rtl' : 'ltr';
 
   useEffect(() => {
@@ -123,11 +138,11 @@ export function LanguageProvider({ children }) {
   }, []);
 
   const t = useCallback((key, vars) => {
-    const val = lookup(DICTS[rendered], key) ?? lookup(DICTS.en, key) ?? key;
+    const val = lookup(dicts[rendered], key) ?? lookup(dicts.en, key) ?? key;
     return interpolate(val, vars);
-  }, [rendered]);
+  }, [rendered, dicts]);
 
-  const value = useMemo(() => ({ lang, setLang, t, dir }), [lang, setLang, t, dir]);
+  const value = useMemo(() => ({ lang, setLang, t, dir, machine: !HUMAN_LANGS.has(rendered) }), [lang, setLang, t, dir, rendered]);
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }
 
@@ -137,6 +152,6 @@ export function useI18n() {
   if (ctx) return ctx;
   return {
     lang: 'en', setLang: () => {}, dir: 'ltr',
-    t: (key, vars) => interpolate(lookup(DICTS.en, key) ?? key, vars),
+    t: (key, vars) => interpolate(lookup(BASE_DICTS.en, key) ?? key, vars),
   };
 }

@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Oqaatsit",
+    "signIn": "Iserit",
+    "signOut": "Anigit",
+    "createAccount": "Kontu pilersikkit",
+    "getStarted": "Aallartikkit",
+    "startFreeTrial": "Akisuumik misileraarit",
+    "cancel": "Taamaatippit",
+    "back": "Uterit",
+    "download": "Aakkit",
+    "viewAll": "Tamarmik takukkit"
+  },
+  "brand": {
+    "tagline": "AI-naqiterisarfik allaffimmut",
+    "secureWorkspace": "Allaffik isumannaatsumik naqiterisarfik",
+    "badge": "Tuluttut · Nipit"
+  },
+  "nav": {
+    "dashboard": "Takussutissiaq",
+    "workspace": "Naqiterisarfik",
+    "sessions": "Katilluinerit & Nipilersornerit",
+    "documents": "Allagaqat",
+    "correspondence": "Allakkat",
+    "knowledge": "Ilisimatusarfik",
+    "assistant": "Ikiorti",
+    "askWorker": "Worker aperukkit",
+    "actions": "Suliat ilaannaanngitsut",
+    "administration": "Aqunneqarneq",
+    "organisation": "Organisationi",
+    "users": "Atuisut",
+    "audit": "Kontrollip malittarisaa",
+    "subscription": "Nalunaarsuineq",
+    "payments": "Akiliutit",
+    "billing": "Akiliutinut nalunaarsuineq"
+  },
+  "roles": {
+    "viewer": "Takutsi",
+    "officer": "Sulisartoq",
+    "admin": "Aqunneqartartoq",
+    "superadmin": "Aqunneqartartorsuaq"
+  },
+  "landing": {
+    "hero": {
+      "title": "Oqaatit allagartuunngortikkit, naqiterneqartumik.",
+      "body": "Worker tassaavoq AI-p allaffimmut naqiterisarfia organisationinut, katilluinerit, nalunaarsuinerit allakkat-llu allagartuutinik amerlasuunik pilersitsisartunut. Katilluineq nipilersornerluunniit nalunaarsoruk, Worker-ip allattorsimassiuvoq, katilluinerit nalunaarsorlugit, memorandumit, allakkat, nalunaarusiat politikamut-llu nalunaarsuinerit pilersissavai, aqunneqarnermut akuerineqarnermullu ingerlaneranni — kontrollip malittarisaa tamakkerlugu.",
+      "badgeRow": "Nipit · Tuluttut · Naqiterisarfik isumannaatsumik"
+    },
+    "what": {
+      "title": "Worker-ip suna sulivoq",
+      "lead": "Allaffimmi suliat nalinginnaasut katilluinerit allakkat-llu eqqaani — minutsinik suliarineqartarput, nalunaaquttanik-lluunniit.",
+      "f1": {
+        "title": "Nalunaarsoruk & allattorsimassioruk",
+        "body": "Katilluinerit, aperinernit, nalunaarsuinerit imaluunniit nipilersornerit nalunaarsorukkit. Nipit tuluttut nunaqarfimmi allattorsimassiorneqartarput."
+      },
+      "f2": {
+        "title": "AI-mik allappoq",
+        "body": "Nalunaarusiat, allakkat, nalunaarutit, nalliutit, politikimut nalunaarutit kiisalu nalunaarutit nalunaarutissat nalinginnaasumik nalunaarutissatut allattorsimaffiullu saqqummersitit."
+      },
+      "f3": {
+        "title": "Nalliuttorsiorneq aalajangersarneq",
+        "body": "Nalunaarusiat tamarmik allattorsimaffimmut, nalliuttorsiornermut, aalajangersarnermut naammassinerullu ingerlanneqartarput — inuit aaqqissuussinermik naammassisuusarput."
+      },
+      "f4": {
+        "title": "Toqqissisimaffik nalunaarsorneqartoq",
+        "body": "Atuisutut isumaqatigiissutit aalajangersakkat kiisalu nalunaarsorneqartut tamarmik. Allakkat inuit nammineq nassiussinnaasarput."
+      }
+    },
+    "start": {
+      "title": "Aallartitsineq minutsi marluk",
+      "lead": "Kontomik pilersitsigit 14-ulluit akisussaaffimmik atuisinnaassuseq aallartillugu.",
+      "s1": {
+        "title": "Kontot pilersitsigit",
+        "body": "Atit, email-it kiisalu isertaatit allaguk."
+      },
+      "s2": {
+        "title": "Email-it uppernarsaruk",
+        "body": "6-nummarit koodi emailikkut nassiunneqartut allaguk."
+      },
+      "s3": {
+        "title": "Toqqissisimaffimmik iserneq",
+        "body": "Iserneq tamarmik ataatsimut koodimik emailikkut uppernarsarneqartarput."
+      },
+      "s4": {
+        "title": "Suliniutit aallartigit",
+        "body": "Katillugit nalunaarsuigit, toqqorsigit, kiisalu nalunaarusiamik siullermik saqqummersitit."
+      }
+    },
+    "pricing": {
+      "title": "Akissarsiat nalinginnaasumik",
+      "lead": "14-ulluit akisussaaffimmik atuisinnaassuseq aallartillugu. Suliffissuup suliniutai naammassisinnaasai naapertorlugit pilersitsigit.",
+      "perMonth": "/qaammat",
+      "mostPopular": "ATUARNEQARNEQ",
+      "starter": {
+        "name": "Aallartitaq",
+        "desc": "Suliffissuit mikisut AI-mik ikiorsiissutinik suliniutinik aallartitsisartut."
+      },
+      "professional": {
+        "name": "Suliniutissarsiortaq",
+        "desc": "Suliffissuit nalunaarusianik amerlasuunik suliniuteqartartut."
+      },
+      "premium": {
+        "name": "Pingaarneq",
+        "desc": "Suliffissuit angisuut suliniutinik amerlasuunik suliniuteqartartut."
+      },
+      "paymentsNote": "M-Pesa kiisalu PayPal akissarsiamik atuisinnaassutsimik ikiorsiissutit."
+    },
+    "final": {
+      "title": "Worker atuisinnaassuseq qaangiuppat?",
+      "cta": "Kontot pilersitsigit"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Isertaat",
+    "fullName": "Ateq tamakkiisoq",
+    "confirmPassword": "Isertaat uppernarsaruk",
+    "currentPassword": "Isertaat maannakkut",
+    "newPassword": "Isertaat nutaaq",
+    "confirmNewPassword": "Isertaat nutaaq uppernarsaruk",
+    "code6": "6-nummarit koodi",
+    "signInFailed": "Iserneq ajortoq. Uppernarsaasat takukkit.",
+    "forgotPassword": "Isertaat nunguppat?",
+    "mfaNotice": "Iserneq tamarmik ataatsimut koodimik emailikkut uppernarsarneqartarput.",
+    "createYourAccount": "Kontut piiaanngilatit",
+    "pwMin": "Kodeq isumaqatigiissutit minnerpaamik {n} naqinnerussaaq.",
+    "newPwMin": "Kodeq nutaaq isumaqatigiissutit minnerpaamik {n} naqinnerussaaq.",
+    "pwMismatch": "Kodeq isumaqatigiissutit naapertuupput.",
+    "createFailed": "Kontut piiaanngillat.",
+    "haveAccount": "Kontut qarneq?",
+    "startAtSignIn": "Isersinermi nalunaarsuinermilu aallartikkit.",
+    "goToSignIn": "Isersinermut ingerlagit",
+    "invalidCode": "Kodeq ajortorsiorneqarsimasoq imaluunniit naammassimasoq.",
+    "codeSent": "Kodeq nutaaq nassiunneqarsimasoq.",
+    "resendFailed": "Nassiussinissamut ajornartorsiuteqarpoq.",
+    "verifyEmailTitle": "E-mailit uppernarsaruk",
+    "verifyEmailTo": "E-mailit uppernarsaruk — {email}",
+    "verify": "Uppernarsaruk",
+    "resendCode": "Kodeq nassiunneqassaaq",
+    "signInAgain": "Isersinissamut qaangiuppat isersinngikkit.",
+    "mfaPrompt": "Isersinermi kodeq e-mailikkut nassiunneqarsimasoq allaguk",
+    "mfaPromptTo": "Isersinermi kodeq e-mailikkut {email}-mut nassiunneqarsimasoq allaguk",
+    "verifySignIn": "Uppernarsaruk & isersinngikkit",
+    "requestFailed": "Piumasaqaatip suliarineqarsinnaanngillat.",
+    "resetTitle": "Kodeq nutaaq isumaqatigiissutit",
+    "sendResetCode": "Kodeq nutaaq nassiunneqassaaq",
+    "backToSignIn": "Isersinermut utikkit",
+    "resetPrompt": "Kodeq e-mailikkut nassiunneqarsimasoq allaguk kodeq nutaalu toqqaruk",
+    "resetPassword": "Kodeq nutaaq isumaqatigiissutit",
+    "setNewPassword": "Kodeq nutaaq toqqaruk",
+    "forcedChange": "Suleqatigiissutissamut, kodeq nammineq toqqaruk ingerlanissamut.",
+    "updateAccountPassword": "Kontut kodeq nutaaq isumaqatigiissutit.",
+    "changeFailed": "Kodeq allanngortinneqarsinnaanngillat.",
+    "updatePassword": "Kodeq nutaaq isumaqatigiissutit",
+    "signOutInstead": "Anigukkit"
+  },
+  "notFound": {
+    "title": "Qupperneq nassaarineqanngilaq",
+    "subtitle": "Qupperneq taanna suliffissuarmi manna nassaarineqanngilaq.",
+    "back": "Dashboardimut utikkit"
+  },
+  "status": {
+    "draft": "allagartaaq",
+    "in_review": "nalilersorneqarpoq",
+    "approved": "akuersissutigineqarpoq",
+    "final": "naammassimasoq",
+    "archived": "toqqorsivimmut inissinneqarsimasoq",
+    "open": "ammasoq",
+    "processing": "suliarineqarpoq",
+    "ready": "naammattuq",
+    "pending": "utoqqatsissutissaaq",
+    "transcribing": "allanneqarpoq",
+    "transcribed": "allanneqareerpoq",
+    "failed": "naalagaaffiup iluani",
+    "sent": "nassiunneqarpoq",
+    "received": "tiguneqarpoq",
+    "completed": "naammassineqarpoq",
+    "cancelled": "taamaattumik unitsinneqa",
+    "active": "suliniartoq",
+    "suspended": "unitsinneqa"
+  },
+  "kind": {
+    "meeting": "ataatsimiinneq",
+    "interview": "apeqqarnermi",
+    "briefing": "nalunaarut",
+    "dictation": "allanneq",
+    "field_report": "nunap iluani nalunaarut",
+    "consultation": "siunnersuineq",
+    "other": "allat"
+  },
+  "classification": {
+    "unclassified": "nalunaarsorneqanngitsoq",
+    "internal": "iluani",
+    "confidential": "isertuussisariaqanngitsoq",
+    "restricted": "killeqarpoq"
+  },
+  "dashboard": {
+    "welcome": "Tikilluarit, {name}",
+    "defaultName": "Naalagaaffiup sulisua",
+    "subtitle": "Sulisartuutivut — allattorit, nalunaarsorit, naliliisarit, immiussarit.",
+    "stats": {
+      "sessions": "Ataatsimiinnerit",
+      "documents": "Allagaatit",
+      "awaitingReview": "Naliliisarnissamut utoqqatsissutissat",
+      "outstandingActions": "Suliniartut"
+    },
+    "recentSessions": "Ataatsimiinnerit kingulliit",
+    "documentsToAction": "Allagaatit suliniartariaqartut",
+    "noSessions": "Ataatsimiinnerit nungulluinnarput.",
+    "nothingToAction": "Suliniartariaqartut nungulluinnarput."
+  },
+  "sessions": {
+    "subtitle": "Ataatsimiinnerit tamarmik nalunaarsuutit — nipi, allanneq, allagaatillu.",
+    "new": "Ataatsimiinneq nutaaq",
+    "createFailed": "Ataatsimiinneq nutaaq pilersinneqarsinnaanngilaq.",
+    "titlePlaceholder": "ass. Nunap illersuutaa — ataatsimiinneq sap. akunnerit",
+    "create": "Ataatsimiinneq nutaaq pilersiguk",
+    "empty": "Ataatsimiinnerit nungulluinnarput. Nipilersornissamut ataatsimiinneq nutaaq pilersiguk.",
+    "fields": {
+      "title": "Taaguut",
+      "kind": "Suussuseq",
+      "date": "Ulloq",
+      "classification": "Kategoriseringi",
+      "status": "Statusi",
+      "department": "Immikkoortoq",
+      "location": "Sumiiffik"
+    }
+  },
+  "session": {
+    "loadFailed": "Sessioni atorsinnaanngilaq.",
+    "micDenied": "Microfoni atorsinnaanngilaq imaluunniit atuutinngilaq.",
+    "audioSaved": "Nipilersuut sessionimut toqqorneqarpoq.",
+    "uploadFailed": "Nassiussineq naalungilaq.",
+    "transcribing": "Nipilersuut nalunaarsorneqarpoq – sivisunerusumik nipilersuutini sivisunerusumik naalungassaaq.",
+    "transcribed": "Nalunaarsorneq naammassivoq.",
+    "transcribeFailed": "Nalunaarsorneq naalungilaq. STT-p suliaqarnissaa takukkit.",
+    "updateFailed": "Nutarterineq naalungilaq.",
+    "draftingMinutes": "Nalunaarsornermit nalunaarsuutit pilersorneqarput…",
+    "minutesCreated": "Nalunaarsuutit pilersorneqarput.",
+    "minutesFailed": "Nalunaarsuutit pilersinneqarsinnaanngillat.",
+    "notFound": "Sessioni nassaarneqanngilaq.",
+    "noDate": "ullorsiorneqanngilaq",
+    "noLocation": "sumiiffissiorneqanngilaq",
+    "generateMinutes": "Nalunaarsuutit pilersikkit",
+    "captureAudio": "Nipilersuut toqqoruk",
+    "stopSave": "Unitsippoq & toqqoruk",
+    "startRecording": "Nalunaarsorneq aallartippoq",
+    "or": "imaluunniit",
+    "uploadAudio": "Nipilersuut nassiuguk",
+    "audioNote": "Nipilersuut hostimiissaaq. Nalunaarsorneq tulattumi tulattumit tulattumik tulattumik. Nalunaarsuutit sessionimi nipilersuutit tamarmik ataatsimut katersorneqarput, ingerlanerit malillugit.",
+    "documentsFrom": "Sessionimit dokumentit",
+    "noDocuments": "Dokumentit suli nassaarneqanngillat. Nipilersuut nalunaarsoruk, nalunaarsuutit pilersikkit.",
+    "recordingsTitle": "Nalunaarsorneq & nalunaarsuutit",
+    "clipOne": "{n} nipilersuut",
+    "clipMany": "{n} nipilersuutit",
+    "noRecordings": "Nalunaarsorneq suli nassaarneqanngilaq. Nipilersuut nalunaarsoruk imaluunniit nassiuguk.",
+    "includeTitle": "Nipilersuut una nalunaarsuutini pilersinneqarnissaa ilanngukkit",
+    "inMinutes": "Nalunaarsuutini",
+    "transcribe": "Nalunaarsoruk",
+    "transcribeHint": "Nipilersuut una nalunaarsoruk nalunaarsuutit takunissaat aamma allanngortinnissaat pillugu.",
+    "audioLoadFailed": "Nipilersuut atorsinnaanngilaq.",
+    "loadAudio": "Nipilersuut atoruk",
+    "words": "{n} words",
+    "verified": "verificeret",
+    "editVerify": "Rediger & verificer",
+    "saveVerified": "Gem & marker som verificeret",
+    "saveDraft": "Gem kladde",
+    "emptyTranscript": "Tom transskription."
+  },
+  "docType": {
+    "minutes": "mødeminutter",
+    "memo": "notat",
+    "letter": "brev",
+    "report": "rapport",
+    "policy_brief": "politiknotat",
+    "briefing_note": "briefingnotat",
+    "concept_note": "konceptnotat",
+    "circular": "cirkulære",
+    "action_matrix": "handlingsmatrix",
+    "speech": "tale"
+  },
+  "approval": {
+    "submit": "indsendt",
+    "submitted": "indsendt",
+    "approve": "godkendt",
+    "approved": "godkendt",
+    "reject": "afvist",
+    "rejected": "afvist",
+    "finalize": "færdiggjort",
+    "finalized": "færdiggjort"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Internt notat",
+      "desc": "Standard internt memorandum med Til / Fra / Emne."
+    },
+    "letter-official": {
+      "name": "Officielt brev",
+      "desc": "Formelt udgående brev på kontorets brevpapir."
+    },
+    "circular-general": {
+      "name": "Cirkulære",
+      "desc": "Meddelelse sendt i cirkulation til mange modtagere."
+    },
+    "report-standard": {
+      "name": "Rapport",
+      "desc": "Generel rapport med resumé, afsnit og anbefalinger."
+    },
+    "policy-brief": {
+      "name": "Politiknotat",
+      "desc": "Kortfattet notat til beslutningstagere."
+    },
+    "briefing-note": {
+      "name": "Briefingnotat",
+      "desc": "Kort notat til briefing af en leder forud for et møde."
+    },
+    "concept-note": {
+      "name": "Konceptnotat",
+      "desc": "Oversigt over et foreslået program eller aktivitet."
+    },
+    "minutes-blank": {
+      "name": "Mødeminutter (blank)",
+      "desc": "Blank minutstruktur til at udfylde i hånden."
+    },
+    "speech-remarks": {
+      "name": "Oqaluttuut / Oqaaseqaatit",
+      "desc": "Nalliuttorsiornermut oqaaseqaatit."
+    }
+  },
+  "documents": {
+    "subtitle": "Katitseqat, nalunaarutit, allakkat, nalunaarusiat aamma eqikkaat — AI-mik allanneqartut, inunnik akuerineqartut.",
+    "startFromTemplate": "Malittarisassamit aallartigit",
+    "fromSpreadsheet": "Nalunaarusia spreadsheet-imit",
+    "draftWithAI": "AI-mik allaguk",
+    "templateTitle": "Malittarisassamit aallartigit",
+    "allTypes": "Suussutit tamarmik",
+    "orgTemplates": "Suliniutivit malittarisassai",
+    "savedByOrg": "Suliniutivit toqqorsimavaat",
+    "useTemplate": "Malittarisassaq una atoruk",
+    "generalTemplates": "Malittarisassat nalinginnaasut",
+    "spreadsheetFailed": "Spreadsheet-imit nalunaarusiaq sananeqarsinnaanngilaq.",
+    "templateFailed": "Malittarisassamit sananeqarsinnaanngilaq.",
+    "draftFailed": "Dokumenti allanneqarsinnaanngilaq.",
+    "fields": {
+      "type": "Dokumentip suussusia",
+      "title": "Taaguut",
+      "recipient": "Nassiussaq (kissaateqarneq)",
+      "department": "Immikkoortoq (kissaateqarneq)",
+      "brief": "Malittarisassat / eqikkaat"
+    },
+    "briefPlaceholder": "Siunertaq, pingaarnersaat aamma paasissutissat ilanngunneqassartut allaqqigit. Assistenti dokumentimik nalinginnaasumik allassimasoqaqqassaaq, allanngortissinnaasartogulu akuerisinnaasarlugu.",
+    "generateDraft": "Allanneqartoq pilersiguk",
+    "empty": "Dokumentit suli nassaassaqanngillat.",
+    "table": {
+      "title": "Taaguut",
+      "type": "Suussusia",
+      "ref": "Ref.",
+      "status": "Statusi",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "Dokumenti atuarneqarsinnaanngilaq.",
+    "invalidJson": "Imai JSON-iusinnaanngilaq.",
+    "saved": "Toqqorneqarpoq. Versioni qaffakkiartinneqarpoq.",
+    "saveFailed": "Toqqorsinnaanngilaq.",
+    "done": {
+      "submit": "Dokumenti naliliiffigineqarnissamut nassiunneqarpoq.",
+      "approve": "Dokumenti akuerineqarpoq.",
+      "reject": "Dokumenti akerineqarpoq.",
+      "finalize": "Dokumenti naammassineqarpoq."
+    },
+    "failed": {
+      "submit": "Nassiussinnaanngilaq.",
+      "approve": "Akuerisinnaanngilaq.",
+      "reject": "Akerisinnaanngilaq.",
+      "finalize": "Naammassisinnanngilaq."
+    },
+    "templateName": "Ilisarnaatip taaguutaa",
+    "templateDefault": "{title} ilisarnaat",
+    "templateSaved": "Suliffissap ilisarnaatitut atorsinnaasartutut toqqorsimavoq.",
+    "templateSaveFailed": "Ilisarnaat toqqorsinnaanngilaq.",
+    "exportFailed": "Aamma annaanneqarsinnaanngilaq.",
+    "notFound": "Dokumenti nassaarineqanngilaq.",
+    "exportDocx": "DOCX aamma annaanneq",
+    "exportPptx": "PPTX aamma annaanneq",
+    "exportXlsx": "XLSX aamma annaanneq",
+    "saveAsTemplate": "Ilisarnaatitut toqqoruk",
+    "content": "Imai",
+    "workflow": "Suleriaatsit",
+    "aiAssisted": "AI-p ikiortillugu allassimasoq",
+    "auditChain": "Kontrollip najoqqutaa: nipi → allassimasoq → AI-p allassimasoq → inunnit allanngortinneqartoq → akuerineqartoq → naanerisoq. Najoqqutap ilaanni tamani nalunaarsorneqartarpoq.",
+    "comment": "Oqaaseqaat (kissaallugu)",
+    "commentPlaceholder": "Nalunaarsuutissatut allaguk",
+    "submit": "Misissuinissamut nassiuguk",
+    "approve": "Akueruk",
+    "reject": "Akuerinngiluk",
+    "finalize": "Naanerisiguk",
+    "finalLocked": "Naanerisoq — allanngortitsinissamut kilitimeqarsimavoq",
+    "editJson": "Imai allanngortikkuk (JSON)",
+    "jsonNote": "Imai ilusilersorneqarsimasoq DOCX-ip ilisarnaatilikku atortuutissavaa. Allanngortikkukit allaguk, toqqorlugillu; ilisarnaatit ilusilersuullu annaanneqarnermi nammineq atortuutissapput.",
+    "saveContent": "Imai toqqoruk",
+    "approvalHistory": "Akuerisimanermut oqaluttuat"
+  },
+  "emails": {
+    "subtitle": "Allakkat immaqqallu AI-mik allaguk. Inuk nassiusinissamut toorlugu nassiunneqartarneq ajorpoq.",
+    "needIntent": "Assistentip allagissaanissaanut sammisamik imaluunniit siunertamik tunisiguk.",
+    "draftReady": "Allagissap ilusaa naammassimavoq. Nassiussinissinnut misissuillu allanngortikkuk.",
+    "draftFailed": "Allagissap ilusaa naammassinngilaq.",
+    "draftSaved": "Allagissap ilusaa toqqorsimavoq.",
+    "saveFailed": "Toqqorsinnaanngilaq.",
+    "confirmSend": "E-maili massakkut nassiunneqassava? Iliuuseq kontrollip najoqqutaanut nalunaarsorneqassaaq.",
+    "sent": "E-maili nassiunneqarsimavoq.",
+    "sendFailed": "Nassiussinnaanngilaq.",
+    "compose": "Allaguk",
+    "messages": "Allakkat",
+    "empty": "Allakkat suli nassaarineqanngillat.",
+    "message": "Allakkat",
+    "details": "Nassuiaatit",
+    "to": "Nassiussivik",
+    "cc": "Cc",
+    "subject": "Saqqummiutaq",
+    "intent": "Una suna oqarfigisassava? (AI-mut)",
+    "intentPlaceholder": "ass. Pissartassat qinuffiusartumut tulliuttumut ataatsimiittarfik 10:00",
+    "body": "Timaa",
+    "saveDraft": "Allagaq toqqoruk",
+    "toLabel": "Tumit:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Saqqummiutaq:",
+    "aiAssisted": "AI-ikkut ikiorsiisoq",
+    "sendNow": "Massakkut nassiuguk",
+    "selectHint": "Allagaq toqqaruk imaluunniit nutaaq allaguk."
+  },
+  "knowledge": {
+    "subtitle": "Ikiorsiisup atorsinnaasai — politikkiit, mallit, kingulissat.",
+    "added": "Ilisimatusarfimmut ilanngunneqarpoq.",
+    "addFailed": "Ilanngussinnaanngilaq.",
+    "chooseFile": "Fiili toqqaruk ikkussissaguk.",
+    "ocrFailed": "Fiili toqqorneqarpoq. OCR-ip allagaq taanna atuarsinnaanngilaa (imaluunniit ajortorsiorneqarsimasoq). Allagaq nammineq allassinnaavat.",
+    "extracted": "Fiili toqqorneqarpoq, allagammi {n} naqinnernik aamma annaanneqarpoq.",
+    "noText": "Fiili toqqorneqarpoq. Taassuma formatip allagaq annaanneqarsinnaanngilaq.",
+    "uploadFailed": "Ikkussineq naalungiarsimasoq.",
+    "confirmRemove": "Una ilisimatusarfiup ilaani peeruk?",
+    "uploadTitle": "Dokumenti ikkussiguk",
+    "file": "Fiili",
+    "titleOptional": "Taaguut (kissaateqarneq)",
+    "titleDefault": "Fiilip taagua nalinginnaasumik",
+    "categoryOptional": "Kategori (kissaateqarneq)",
+    "uploadExtract": "Ikkussiguk & annaanneq",
+    "uploadNote": "Word, PDF, CSV aamma allagaq-fiilit allagai nammineq annaanneqartarput. PDF-t skannertai aamma assit OCR-ikkut nammineq atuarneqartarput.",
+    "pasteTitle": "Ilisimatusarfik ilannguk (allagaq nammineq)",
+    "title": "Taaguut",
+    "category": "Kategori",
+    "categoryPlaceholder": "ass. Nalunaarutit, Politikkiit",
+    "textContent": "Allagammi imai",
+    "add": "Ilannguk",
+    "references": "Ilisimatusarfiit",
+    "empty": "Soorunami.",
+    "uncategorised": "Kategorilersorneqanngitsut",
+    "remove": "Peeruk"
+  },
+  "assistant": {
+    "subtitle": "Tulattumik qalipaatigut nalunaarutiguk — naatsorsuigit, naniigit, allaguk imaluunniit nassuiaagit suliffissuarni.",
+    "failed": "Ikiorsiisoq taanna suliaqarsinnaanngilaq.",
+    "instruction": "Naliliinermut",
+    "placeholder": "Assersuut: ukiortaami ingerlanermi naliliinermut ataatsimiititaliap aalajangiisai naatsorsuutigineqassapput, imaluunniit nalunaarsuutit akuerineqarnissaminnik utaqqisut allattorsimaffigineqassapput.",
+    "ask": "Apeqqut"
+  },
+  "actions": {
+    "subtitle": "Ataatsimiititaliani nalunaarsuutinit aamma ingerlanermi nalunaarsuutinit piiaaffiusut.",
+    "empty": "Piiaaffiusut nassaarineqanngillat.",
+    "table": {
+      "action": "Iliuuseq",
+      "responsible": "Akisussaasoq",
+      "timeline": "Piffissaq",
+      "source": "Pilersaarut"
+    }
+  },
+  "paypal": {
+    "title": "PayPal akiliffik",
+    "subtitle": "Nalunaarsuutinut akiligassap uppernarsaataa.",
+    "confirming": "PayPal akiligassat uppernarsarneqarput...",
+    "noOrder": "PayPal-ip nalunaarsuutaa utersarneqanngilaq.",
+    "confirmed": "Akiligassi uppernarsarneqarpoq. Worker-imi nalunaarsuutivit maanna atuutilersimavoq.",
+    "failed": "PayPal akiligassi uppernarsarneqarsinnaanngilaq.",
+    "success": "Akiligassi iluatsilluarpoq",
+    "viewSubscription": "Nalunaarsuutit takukkit",
+    "errorTitle": "Akiligassi uppernarsarneqarsinnaanngilaq",
+    "returnToSubscription": "Nalunaarsuutinut utersarneq"
+  },
+  "tenant": {
+    "saved": "Suliffeqarfik pillugu paasissutissat toqqorneqarput. Dokumentit aallartitat tamaasa takutissapput.",
+    "saveFailed": "Toqqorsinnaanngilaq.",
+    "logoUploaded": "Ilisarnaat toqqorneqarpoq.",
+    "signatureUploaded": "Allagartaa toqqorneqarpoq.",
+    "uploadFailed": "Toqqorsinnaanngilaq.",
+    "subtitleShort": "Suliffissamut ilisarnaatit.",
+    "noOrg": "Kontut suliffeqarfimmik attaveqanngilaq.",
+    "subtitle": "Atit, allagartaat, ilisarnaat aamma allagartaa dokumentit tamaasa takutissapput.",
+    "letterhead": "Allagartaat",
+    "orgName": "Suliffeqarfik aqqa",
+    "line": "Allagartaap qulaani {n}",
+    "line1Placeholder": "Assersuut: KOMMUNIP ...",
+    "line2Placeholder": "Assersuut: ...-mut immikkoortoq",
+    "line3Placeholder": "Assersuut: Immikkoortoq / Allaffik",
+    "saveLetterhead": "Allagartaat toqqoruk",
+    "blankHint": "Qulaani allagartaat mannissapput suliffeqarfik aqqa atorsinnaassappat.",
+    "logoSignature": "Ilisarnaat & allagartaa",
+    "logo": "Ilisarnaat (PNG imaluunniit JPG)",
+    "signature": "E-allagartaa (PNG imaluunniit JPG)",
+    "uploaded": "toqqorneqarpoq",
+    "brandingNote": "Ilisarnaat dokumentip qulaani aamma quppernermi taaguutini takutissapput. Allagartaa dokumentit naanerini issappoq. PNG-ip qaavani takuneqarsinnaanngitsumik atorsinnaavat."
+  },
+  "users": {
+    "createdTemp": "Atuisoq pilersinneqarpoq. Nalliuttorsiorneq isumaqanngitsoq: {temp} — isertitassanngortillugu; atuisartaa isaaffissami siulleq nalliuttorsiorneqartariaqarpoq.",
+    "created": "Atuisoq pilersinneqarpoq.",
+    "createFailed": "Atuisoq pilersinneqarsinnaanngilaq.",
+    "confirmRemove": "{name} peerneqassaaq?",
+    "removeFailed": "Peerneqarsinnaanngilaq.",
+    "subtitle": "Isersinnaanermik aqutsineq. Superadmin-kontu uani allanngortinneqarsinnaanngilaq.",
+    "add": "Atuisoq ilanngukkit",
+    "create": "Atuisoq pilersiguk",
+    "empty": "Atuisoqanngilaq.",
+    "fields": {
+      "name": "Ateq",
+      "email": "E-mail",
+      "role": "Suliassaaq",
+      "department": "Immikkoortoq",
+      "status": "Inissisimaffik"
+    },
+    "suspend": "Nalliuttorsiorneq",
+    "reinstate": "Utertillugu inissisimaffik",
+    "remove": "Peeruk"
+  },
+  "audit": {
+    "subtitle": "Suliassat tamarmik pingaarutilik nalunaarsorneqarput. Nalunaarsuutit metadata-mik identifikations-nik imaqarput — dokumentinik imaluunniit nipinik imaqanngillat.",
+    "empty": "Nalunaarsuutinik ilanngussaqanngilaq.",
+    "table": {
+      "when": "Qaqugu",
+      "actor": "Suliassartoq",
+      "action": "Suliassaq",
+      "resource": "Atugassartoq"
+    },
+    "system": "systemi"
+  },
+  "payments": {
+    "stkSent": "STK-push nassiunneqarpoq. Akiliisartaa telefonimi nalliuttorsiorneqartariaqarpoq.",
+    "initiateFailed": "Akiliineq aallartinneqarsinnaanngilaq.",
+    "subtitle": "M-Pesa (Daraja STK push) aamma PayPal-akiliisut.",
+    "requestTitle": "M-Pesa-akiliineq piniaruk",
+    "phone": "Telefon (07.. imaluunniit 2547..)",
+    "amountKes": "Nalliuttorsiorneq (KES)",
+    "purpose": "Siunertaq",
+    "sendStk": "STK-push nassiuguk",
+    "transactions": "Akiliisut",
+    "empty": "Akiliisunik ilanngussaqanngilaq.",
+    "table": {
+      "provider": "Nalliuttorsiornermik suliaqartoq",
+      "amount": "Nalliuttorsiorneq",
+      "status": "Inissisimaffik",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Worker-akiliisut naammassineqartut pillugit akiliisut nalunaarsuutit.",
+    "loadFailed": "Akiliisunik nalunaarsuutinik ikkussinnaanngilaq.",
+    "downloadFailed": {
+      "invoice": "Faktura aaneqarsinnaanngilaq.",
+      "receipt": "Nalunaarut aaneqarsinnaanngilaq."
+    },
+    "documentsTitle": "Akissarsiornermut dokumentit",
+    "intro": "Aaqqissuussaffiup akissarsiornerata naammassissimaneranut fakturat nalunaarutillu aaneqarsinnaapput.",
+    "disclaimer": "Dokumentit taakku Worker akissarsiornermut akissarsiornerit nalunaarsuutissat akissarsiornermullu utertitsinermullu atorneqartut. KRA/eTIMS akissarsiornermut fakturatut nalunaarsorneqanngillat, eTIMS integration naapertuuttumik immikkut saqqummersinneqarnersoq.",
+    "invoices": "Fakturat",
+    "noInvoices": "Fakturat suli nassaassaapput.",
+    "receipts": "Nalunaarutit",
+    "noReceipts": "Nalunaarutit suli nassaassaapput.",
+    "downloadPdf": "PDF aaneqarli",
+    "table": {
+      "invoice": "Faktura",
+      "receipt": "Nalunaarut",
+      "date": "Ulloq",
+      "description": "Nassuiaat",
+      "amount": "Akissarsiorneq",
+      "status": "Status",
+      "provider": "Nalunaarsuisoq",
+      "reference": "Referens"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abonnement aaneqarsinnaanngilaq.",
+    "selectFirst": "Abonnement plan toqqaavakkit.",
+    "mpesaSent": "M-Pesa STK push nassiunneqarpoq. Telefonikkut akissarsiorneq akuerivakkit. Abonnement akissarsiorneq uppernarsarneqarpat atulersinneqassaaq.",
+    "mpesaFailed": "M-Pesa akissarsiorneq aallartinneqarsinnaanngilaq.",
+    "noApproveUrl": "PayPal akuerinnissamut URL utertinneqanngilaq.",
+    "paypalFailed": "PayPal akissarsiorneq aallartinneqarsinnaanngilaq.",
+    "subtitleShort": "Worker abonnementit aaqqissuutissavat.",
+    "subtitle": "Worker planit, trialit akissarsiornerillu aaqqissuutissavat.",
+    "current": "Abonnement massakkut",
+    "organisation": "Aaqqissuussaffik",
+    "status": "Status",
+    "plan": "Plan",
+    "freeTrial": "14-ullut trial akissarsiorneqanngitsoq",
+    "trialEnds": "Trial naammassivoq",
+    "dayRemaining": "{n} ulloq naammassivoq",
+    "daysRemaining": "{n} ullut naammassivoq",
+    "renewsEnds": "Nutaaq / naammassivoq",
+    "chooseTitle": "Plan toqqaavakkit",
+    "chooseSubtitle": "Planit tamarmik Worker aaqqissuussinermut suliniutit ilaapput. 14-ullut trial akissarsiorneqanngitsoq.",
+    "perMonth": "/ qaammat",
+    "planSelected": "{plan} toqqaavakkit. Planit toqqaavakkit akissarsiornermut sakkukillisimasoq.",
+    "selectFailed": "Plan toqqaavakkit aaneqarsinnaanngilaq.",
+    "selected": "Toqqoqqaappoq",
+    "selectPlan": "Pilaan toqqaruk",
+    "activateTitle": "Atortuutit atulersiguk",
+    "selectAbove": "Pilaan toqqaruk akiliinissamut ingerlanissamut.",
+    "stkNote": "STK-push telefonip normua tulliuttoq aqqutigalugu nassiunneqassaaq.",
+    "phone": "Telefonip normua",
+    "phonePlaceholder": "07.. imaluunniit 2547..",
+    "payMpesa": "M-Pesa-mik akiliruk",
+    "paypalNote": "PayPal-mut ingerlagit pilaan toqqoqqaasumut USD-mik akiliniarlutit.",
+    "payPaypal": "PayPal-mik akiliruk",
+    "settleNote": "Atortuutit akileqqaasut M-Pesa-mik imaluunniit PayPal-mik akilerneqarsinnaapput.",
+    "activationNote": "Pilaan toqqoqqaasat akiliinermi uppernarsaammat atulersinneqassaaq.",
+    "historyNote": "Akiliinermi oqaluttuat Administration → Payments-mi nassaassaapput."
+  },
+  "intl": {
+    "territory": "Nunaqarfik",
+    "searchTerritory": "Nunaqarfik ujaruk…",
+    "selectTerritory": "Nunaqarfik toqqaruk",
+    "territoryRequired": "Nunaqarfik toqqaruk.",
+    "workingLanguage": "Sulisartut oqaasii",
+    "meetingLanguage": "Katillutik oqaasii",
+    "useDefault": "Organisationip nalinginnaasumik atortaa",
+    "beta": "transcription beta",
+    "unavailable": "transcription anguneqanngilaq"
+  },
+  "generate": {
+    "title": "Uani katillutik dokumentimik pilersitsigit",
+    "as": "Pilersitsigit",
+    "instructions": "Ilitsersuut (kissaateqanngitsumik)",
+    "placeholder": "ass. Allakkat Permanent Secretary-mut nalunaarutit 2 aamma 3 naapitsisut",
+    "button": "Pilersitsigit",
+    "working": "Dokumentit pilersissaguk… minutsi ataaseq sivisussuseqarsinnaavoq.",
+    "done": "Dokumenti pilersinneqarpoq.",
+    "failed": "Dokumenti pilersinneqarsinnaanngilaq.",
+    "hint": "Transkriptit ilanngussinissamut toqqoqqaasut atorlugit, ingerlanerup tungaanut. Nammineq takugit aamma akueriguk sapaatissamut ingerlanneqarnissaanut."
+  },
+  "queue": {
+    "queued": "Transcription-imut qimusserneqarpoq. Qupperneq nammineq nutarterneqartarpoq."
+  },
+  "pdfExport": {
+    "button": "PDF-mik anissigit"
+  },
+  "access": {
+    "readOnly": "Sulisartut atortuutit atuinnaapput trial imaluunniit atortuutit naammassimmat. Dokumentit takusinnaavatit aamma anissisinnaavatit.",
+    "grace": "Trial imaluunniit atortuutit {date}-mi naammassimmat. {n} ullut atuinissamut atortuutit piareersimapput.",
+    "trialEnding": "Trial akisuumasoq {n} ullut qaangiuppat naammassissaaq.",
+    "choosePlan": "Pilaan toqqaruk"
+  },
+  "sessionLang": {
+    "saved": "Katillutik oqaasii toqqoqqaapput. Maannamut transkriberneqartussat atortuutissaaq.",
+    "failed": "Katillutik oqaasii toqqoqqaasinnaanngilaq."
+  },
+  "i18nNote": {
+    "machine": "Maskiinumik nutarterneqarsimasut"
+  }
+}

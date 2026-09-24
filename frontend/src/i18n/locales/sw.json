@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Lugha",
+    "signIn": "Ingia",
+    "signOut": "Toka",
+    "createAccount": "Fungua akaunti",
+    "getStarted": "Anza",
+    "startFreeTrial": "Anza jaribio la bure",
+    "cancel": "Ghairi",
+    "back": "Rudi",
+    "download": "Pakua",
+    "viewAll": "Tazama zote"
+  },
+  "brand": {
+    "tagline": "Eneo la kazi la kiutawala la AI",
+    "secureWorkspace": "Eneo salama la kazi la kiutawala",
+    "badge": "Kiingereza · Sauti"
+  },
+  "nav": {
+    "dashboard": "Dashibodi",
+    "workspace": "Eneo la kazi",
+    "sessions": "Vikao na Rekodi",
+    "documents": "Nyaraka",
+    "correspondence": "Mawasiliano",
+    "knowledge": "Hifadhi ya Maarifa",
+    "assistant": "Msaidizi",
+    "askWorker": "Uliza Worker",
+    "actions": "Vitendo Vinavyosubiri",
+    "administration": "Utawala",
+    "organisation": "Shirika",
+    "users": "Watumiaji",
+    "audit": "Ufuatiliaji wa Ukaguzi",
+    "subscription": "Usajili",
+    "payments": "Malipo",
+    "billing": "Bili"
+  },
+  "roles": {
+    "viewer": "Mtazamaji",
+    "officer": "Afisa",
+    "admin": "Msimamizi",
+    "superadmin": "Msimamizi mkuu"
+  },
+  "landing": {
+    "hero": {
+      "title": "Badilisha unayosema kuwa nyaraka zilizokamilika na kupangwa.",
+      "body": "Worker ni eneo la kazi la kiutawala la AI kwa mashirika yanayozalisha kiasi kikubwa cha nyaraka rasmi kutoka kwa mikutano, maelezo na mawasiliano. Rekodi mkutano au amuru kwa sauti, na Worker itainukuu, itaandae kumbukumbu, memo, barua, ripoti na muhtasari wa sera, na kuzipitisha katika ukaguzi na uidhinishaji — pamoja na ufuatiliaji kamili wa ukaguzi.",
+      "badgeRow": "Sauti · Kiingereza · Eneo salama la kazi"
+    },
+    "what": {
+      "title": "Kile Worker hufanya",
+      "lead": "Kazi za kawaida za ofisi zinazohusu mikutano na mawasiliano — hushughulikiwa kwa dakika, si saa.",
+      "f1": {
+        "title": "Rekodi na inukuu",
+        "body": "Nasa mikutano, mahojiano, maelezo au amri kwa sauti. Sauti inanukuliwa kienyeji kwa Kiingereza."
+      },
+      "f2": {
+        "title": "Andika kwa AI",
+        "body": "Tengeneza kumbukumbu, memo, barua, ripoti, muhtasari wa sera na mizunguko kwa muundo rasmi sahihi."
+      },
+      "f3": {
+        "title": "Kagua na uidhinishe",
+        "body": "Kila hati hupitia rasimu, ukaguzi, uidhinishaji na ukamilishaji — watu hubaki na udhibiti."
+      },
+      "f4": {
+        "title": "Salama na kukaguliwa",
+        "body": "Ufikiaji kulingana na jukumu na rekodi kamili ya ukaguzi. Mawasiliano hutumwa tu na mtu."
+      }
+    },
+    "start": {
+      "title": "Kuanza huchukua dakika moja",
+      "lead": "Fungua akaunti na uanze jaribio lako la bure la siku 14.",
+      "s1": {
+        "title": "Fungua akaunti yako",
+        "body": "Weka jina lako, barua pepe na nenosiri."
+      },
+      "s2": {
+        "title": "Thibitisha barua pepe yako",
+        "body": "Weka msimbo wa tarakimu 6 tunaokutumia kwa barua pepe."
+      },
+      "s3": {
+        "title": "Ingia kwa usalama",
+        "body": "Kila kuingia huthibitishwa kwa msimbo wa mara moja unaotumwa kwa barua pepe."
+      },
+      "s4": {
+        "title": "Anza kufanya kazi",
+        "body": "Unda kikao, rekodi, na tengeneza hati yako ya kwanza."
+      }
+    },
+    "pricing": {
+      "title": "Bei rahisi za usajili",
+      "lead": "Anza na jaribio la bure la siku 14. Chagua mpango unaolingana na kiasi cha kazi za kiutawala ambazo shirika lako huzalisha.",
+      "perMonth": "/mwezi",
+      "mostPopular": "MAARUFU ZAIDI",
+      "starter": {
+        "name": "Msingi",
+        "desc": "Kwa timu ndogo zinazoanza kazi za kiutawala zinazosaidiwa na AI."
+      },
+      "professional": {
+        "name": "Kitaalamu",
+        "desc": "Kwa mashirika yenye uzalishaji wa hati wa kawaida na wa kiwango cha juu."
+      },
+      "premium": {
+        "name": "Bora",
+        "desc": "Kwa mashirika makubwa yenye mizigo mikubwa ya kazi za kiutawala."
+      },
+      "paymentsNote": "M-Pesa na PayPal zinaungwa mkono kwa usajili unaolipiwa."
+    },
+    "final": {
+      "title": "Uko tayari kujaribu Worker?",
+      "cta": "Fungua akaunti yako"
+    }
+  },
+  "auth": {
+    "email": "Barua pepe",
+    "password": "Nenosiri",
+    "fullName": "Jina kamili",
+    "confirmPassword": "Thibitisha nenosiri",
+    "currentPassword": "Nenosiri la sasa",
+    "newPassword": "Nenosiri jipya",
+    "confirmNewPassword": "Thibitisha nenosiri jipya",
+    "code6": "Msimbo wa tarakimu 6",
+    "signInFailed": "Kuingia kumeshindikana. Angalia vitambulisho vyako.",
+    "forgotPassword": "Umesahau nenosiri?",
+    "mfaNotice": "Msimbo wa mara moja hutumwa kwa barua pepe kuthibitisha kila kuingia.",
+    "createYourAccount": "Fungua akaunti yako",
+    "pwMin": "Nenosiri lazima liwe na angalau herufi {n}.",
+    "newPwMin": "Nenosiri jipya lazima liwe na angalau herufi {n}.",
+    "pwMismatch": "Manenosiri hayafanani.",
+    "createFailed": "Imeshindwa kufungua akaunti.",
+    "haveAccount": "Tayari una akaunti?",
+    "startAtSignIn": "Anza kwa kuingia au kujisajili.",
+    "goToSignIn": "Nenda kwenye kuingia",
+    "invalidCode": "Msimbo si sahihi au umeisha muda wake.",
+    "codeSent": "Msimbo mpya umetumwa.",
+    "resendFailed": "Imeshindwa kutuma tena.",
+    "verifyEmailTitle": "Thibitisha barua pepe yako",
+    "verifyEmailTo": "Thibitisha barua pepe yako — {email}",
+    "verify": "Thibitisha",
+    "resendCode": "Tuma msimbo tena",
+    "signInAgain": "Tafadhali ingia tena.",
+    "mfaPrompt": "Weka msimbo wa kuingia tuliokutumia kwa barua pepe",
+    "mfaPromptTo": "Weka msimbo wa kuingia tuliokutumia kwa barua pepe {email}",
+    "verifySignIn": "Thibitisha na uingie",
+    "requestFailed": "Imeshindwa kushughulikia ombi.",
+    "resetTitle": "Weka upya nenosiri lako",
+    "sendResetCode": "Tuma msimbo wa kuweka upya",
+    "backToSignIn": "Rudi kwenye kuingia",
+    "resetPrompt": "Weka msimbo tuliokutumia kwa barua pepe na uchague nenosiri jipya",
+    "resetPassword": "Weka upya nenosiri",
+    "setNewPassword": "Weka nenosiri jipya",
+    "forcedChange": "Kwa usalama, weka nenosiri lako mwenyewe kabla ya kuendelea.",
+    "updateAccountPassword": "Sasisha nenosiri la akaunti yako.",
+    "changeFailed": "Imeshindwa kubadilisha nenosiri.",
+    "updatePassword": "Sasisha nenosiri",
+    "signOutInstead": "Toka badala yake"
+  },
+  "notFound": {
+    "title": "Ukurasa haupatikani",
+    "subtitle": "Ukurasa huo haupo katika eneo hili la kazi.",
+    "back": "Rudi kwenye dashibodi"
+  },
+  "status": {
+    "draft": "rasimu",
+    "in_review": "inakaguliwa",
+    "approved": "imeidhinishwa",
+    "final": "ya mwisho",
+    "archived": "imehifadhiwa kwenye kumbukumbu",
+    "open": "wazi",
+    "processing": "inachakatwa",
+    "ready": "tayari",
+    "pending": "inasubiri",
+    "transcribing": "inainakili",
+    "transcribed": "imeinakiliwa",
+    "failed": "imeshindikana",
+    "sent": "imetumwa",
+    "received": "imepokelewa",
+    "completed": "imekamilika",
+    "cancelled": "imefutwa",
+    "active": "inatumika",
+    "suspended": "imesimamishwa"
+  },
+  "kind": {
+    "meeting": "mkutano",
+    "interview": "mahojiano",
+    "briefing": "maelezo",
+    "dictation": "imla",
+    "field_report": "ripoti ya uwandani",
+    "consultation": "mashauriano",
+    "other": "nyingine"
+  },
+  "classification": {
+    "unclassified": "haijaainishwa",
+    "internal": "ya ndani",
+    "confidential": "ya siri",
+    "restricted": "yenye mipaka"
+  },
+  "dashboard": {
+    "welcome": "Karibu, {name}",
+    "defaultName": "Afisa",
+    "subtitle": "Eneo lako la kazi la kiutawala — rekodi, andika, hakiki na hifadhi.",
+    "stats": {
+      "sessions": "Vikao",
+      "documents": "Nyaraka",
+      "awaitingReview": "Zinasubiri hakiki",
+      "outstandingActions": "Hatua zinazosubiri"
+    },
+    "recentSessions": "Vikao vya hivi karibuni",
+    "documentsToAction": "Nyaraka za kuchukuliwa hatua",
+    "noSessions": "Hakuna vikao bado.",
+    "nothingToAction": "Hakuna kinachohitaji uangalizi wako."
+  },
+  "sessions": {
+    "subtitle": "Kila kikao ni faili ya kesi — sauti, nakala, na nyaraka zinazotokana nacho.",
+    "new": "Kikao kipya",
+    "createFailed": "Imeshindikana kuunda kikao.",
+    "titlePlaceholder": "k.m. Kamati ya Usalama ya Kaunti — Maelezo ya Kila Wiki",
+    "create": "Unda kikao",
+    "empty": "Hakuna vikao bado. Unda kimoja ili kuanza kurekodi.",
+    "fields": {
+      "title": "Kichwa",
+      "kind": "Aina",
+      "date": "Tarehe",
+      "classification": "Uainishaji",
+      "status": "Hali",
+      "department": "Idara",
+      "location": "Mahali"
+    }
+  },
+  "session": {
+    "loadFailed": "Imeshindwa kupakia kikao.",
+    "micDenied": "Ufikiaji wa maikrofoni umekataliwa au haupatikani.",
+    "audioSaved": "Sauti imehifadhiwa kwenye kikao.",
+    "uploadFailed": "Upakiaji umeshindwa.",
+    "transcribing": "Inanukuu kwa ndani — hii inaweza kuchukua muda kwa sauti ndefu.",
+    "transcribed": "Unukuzi umekamilika.",
+    "transcribeFailed": "Unukuzi umeshindwa. Angalia kama huduma ya STT inaendeshwa.",
+    "updateFailed": "Imeshindwa kusasisha.",
+    "draftingMinutes": "Inaandaa muhtasari kutoka kwa unukuzi…",
+    "minutesCreated": "Muhtasari wa awali umeundwa.",
+    "minutesFailed": "Imeshindwa kuzalisha muhtasari.",
+    "notFound": "Kikao hakipatikani.",
+    "noDate": "hakuna tarehe",
+    "noLocation": "hakuna mahali",
+    "generateMinutes": "Zalisha muhtasari",
+    "captureAudio": "Nasa sauti",
+    "stopSave": "Simama na uhifadhi",
+    "startRecording": "Anza kurekodi",
+    "or": "au",
+    "uploadAudio": "Pakia sauti",
+    "audioNote": "Sauti inabaki kwenye mwenyeji. Unukuzi unaendeshwa kwa ndani kwa Kiingereza. Muhtasari unachanganya kila klipu katika kikao hiki, kwa mpangilio.",
+    "documentsFrom": "Nyaraka kutoka kwa kikao hiki",
+    "noDocuments": "Hakuna nyaraka bado. Nukuu klipu, kisha zalisha muhtasari.",
+    "recordingsTitle": "Rekodi na unukuzi",
+    "clipOne": "klipu {n}",
+    "clipMany": "klipu {n}",
+    "noRecordings": "Hakuna rekodi bado. Rekodi au pakia sauti hapo juu.",
+    "includeTitle": "Jumuisha klipu hii wakati wa kuzalisha muhtasari",
+    "inMinutes": "Katika muhtasari",
+    "transcribe": "Nukuu",
+    "transcribeHint": "Nukuu klipu hii ili kuona na kuhariri unukuzi wake hapa.",
+    "audioLoadFailed": "Imeshindwa kupakia sauti.",
+    "loadAudio": "Pakia sauti",
+    "words": "maneno {n}",
+    "verified": "imethibitishwa",
+    "editVerify": "Hariri na uthibitishe",
+    "saveVerified": "Hifadhi na uweke alama ya kuthibitishwa",
+    "saveDraft": "Hifadhi rasimu",
+    "emptyTranscript": "Nakala tupu."
+  },
+  "docType": {
+    "minutes": "kumbukumbu za mkutano",
+    "memo": "memo",
+    "letter": "barua",
+    "report": "ripoti",
+    "policy_brief": "muhtasari wa sera",
+    "briefing_note": "nota ya maelezo",
+    "concept_note": "nota ya dhana",
+    "circular": "mzunguko",
+    "action_matrix": "matriki ya hatua",
+    "speech": "hotuba"
+  },
+  "approval": {
+    "submit": "imewasilishwa",
+    "submitted": "imewasilishwa",
+    "approve": "imeidhinishwa",
+    "approved": "imeidhinishwa",
+    "reject": "imekataliwa",
+    "rejected": "imekataliwa",
+    "finalize": "imekamilishwa",
+    "finalized": "imekamilishwa"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memo ya Ndani",
+      "desc": "Memoranda ya kawaida ya ndani yenye Kwa / Kutoka / Somo."
+    },
+    "letter-official": {
+      "name": "Barua Rasmi",
+      "desc": "Barua rasmi inayotoka kwenye karatasi ya barua ya ofisi."
+    },
+    "circular-general": {
+      "name": "Mzunguko",
+      "desc": "Taarifa inayosambazwa kwa wapokeaji wengi."
+    },
+    "report-standard": {
+      "name": "Ripoti",
+      "desc": "Ripoti ya jumla yenye muhtasari, sehemu na mapendekezo."
+    },
+    "policy-brief": {
+      "name": "Muhtasari wa Sera",
+      "desc": "Muhtasari mfupi kwa watoa maamuzi."
+    },
+    "briefing-note": {
+      "name": "Nota ya Maelezo",
+      "desc": "Nota fupi ya kumweleza mkuu kabla ya shughuli."
+    },
+    "concept-note": {
+      "name": "Nota ya Dhana",
+      "desc": "Muhtasari wa programu au shughuli inayopendekezwa."
+    },
+    "minutes-blank": {
+      "name": "Kumbukumbu za Mkutano (tupu)",
+      "desc": "Muundo tupu wa kumbukumbu za mkutano wa kujazwa kwa mkono."
+    },
+    "speech-remarks": {
+      "name": "Hotuba / Maneno",
+      "desc": "Maneno rasmi kwa hafla."
+    }
+  },
+  "documents": {
+    "subtitle": "Kumbukumbu, memo, barua, ripoti na muhtasari — zilizoandaliwa kwa AI, zilizoidhinishwa na watu.",
+    "startFromTemplate": "Anza na kiolezo",
+    "fromSpreadsheet": "Ripoti kutoka lahajedwali",
+    "draftWithAI": "Andaa kwa AI",
+    "templateTitle": "Anza na kiolezo",
+    "allTypes": "Aina zote",
+    "orgTemplates": "Violezo vya taasisi yako",
+    "savedByOrg": "Imehifadhiwa na taasisi yako",
+    "useTemplate": "Tumia kiolezo hiki",
+    "generalTemplates": "Violezo vya jumla",
+    "spreadsheetFailed": "Imeshindwa kuunda ripoti kutoka lahajedwali hilo.",
+    "templateFailed": "Imeshindwa kuunda kutoka kiolezo.",
+    "draftFailed": "Imeshindwa kuandaa hati.",
+    "fields": {
+      "type": "Aina ya hati",
+      "title": "Kichwa",
+      "recipient": "Mpokeaji (si lazima)",
+      "department": "Idara (si lazima)",
+      "brief": "Maelekezo / muhtasari"
+    },
+    "briefPlaceholder": "Eleza madhumuni, mambo muhimu, na ukweli wowote wa kujumuisha. Msaidizi ataandaa hati rasmi unayoweza kuhariri na kuidhinisha.",
+    "generateDraft": "Tengeneza rasimu",
+    "empty": "Hakuna hati bado.",
+    "table": {
+      "title": "Kichwa",
+      "type": "Aina",
+      "ref": "Kumb.",
+      "status": "Hali",
+      "ver": "Toleo"
+    }
+  },
+  "doc": {
+    "loadFailed": "Imeshindwa kupakia hati.",
+    "invalidJson": "Maudhui si JSON halali.",
+    "saved": "Imehifadhiwa. Toleo limeongezwa.",
+    "saveFailed": "Kuhifadhi kumeshindwa.",
+    "done": {
+      "submit": "Hati imewasilishwa kwa ukaguzi.",
+      "approve": "Hati imeidhinishwa.",
+      "reject": "Hati imekataliwa.",
+      "finalize": "Hati imekamilishwa."
+    },
+    "failed": {
+      "submit": "Imeshindwa kuwasilisha.",
+      "approve": "Imeshindwa kuidhinisha.",
+      "reject": "Imeshindwa kukataa.",
+      "finalize": "Imeshindwa kukamilisha."
+    },
+    "templateName": "Jina la kiolezo",
+    "templateDefault": "Kiolezo cha {title}",
+    "templateSaved": "Imehifadhiwa kama kiolezo kinachoweza kutumika tena kwa taasisi yako.",
+    "templateSaveFailed": "Imeshindwa kuhifadhi kiolezo.",
+    "exportFailed": "Uhamishaji umeshindwa.",
+    "notFound": "Hati haipatikani.",
+    "exportDocx": "Hamisha DOCX",
+    "exportPptx": "Hamisha PPTX",
+    "exportXlsx": "Hamisha XLSX",
+    "saveAsTemplate": "Hifadhi kama kiolezo",
+    "content": "Maudhui",
+    "workflow": "Mtiririko wa kazi",
+    "aiAssisted": "Rasimu iliyosaidiwa na AI",
+    "auditChain": "Mnyororo wa ukaguzi: sauti → nakala → rasimu ya AI → uhariri wa binadamu → idhini → mwisho. Kila hatua imerekodiwa.",
+    "comment": "Maoni (si lazima)",
+    "commentPlaceholder": "Ongeza dokezo kwa kumbukumbu",
+    "submit": "Wasilisha kwa ukaguzi",
+    "approve": "Idhinisha",
+    "reject": "Kataa",
+    "finalize": "Kamilisha",
+    "finalLocked": "Mwisho — umefungwa kwa uhariri",
+    "editJson": "Hariri maudhui (JSON)",
+    "jsonNote": "Maudhui yenye muundo huendesha DOCX yenye chapa. Hariri sehemu zilizo hapa chini na uhifadhi; chapa na mpangilio hutumika kiotomatiki wakati wa uhamishaji.",
+    "saveContent": "Hifadhi maudhui",
+    "approvalHistory": "Historia ya idhini"
+  },
+  "emails": {
+    "subtitle": "Andaa barua na barua pepe kwa AI. Hakuna kinachotumwa hadi mtu abofye tuma.",
+    "needIntent": "Mpe msaidizi mada au lengo la kuandaa rasimu.",
+    "draftReady": "Rasimu iko tayari. Kagua na uhariri kabla ya kutuma.",
+    "draftFailed": "Uandaaji wa rasimu umeshindwa.",
+    "draftSaved": "Rasimu imehifadhiwa.",
+    "saveFailed": "Imeshindwa kuhifadhi.",
+    "confirmSend": "Tuma barua pepe hii sasa? Kitendo hiki kimerekodiwa katika ufuatiliaji wa ukaguzi.",
+    "sent": "Barua pepe imetumwa.",
+    "sendFailed": "Utumaji umeshindwa.",
+    "compose": "Andika",
+    "messages": "Ujumbe",
+    "empty": "Hakuna mawasiliano bado.",
+    "message": "Ujumbe",
+    "details": "Maelezo",
+    "to": "Kwa",
+    "cc": "Kwa nakala",
+    "subject": "Kichwa cha habari",
+    "intent": "Hii inapaswa kusema nini? (kwa AI)",
+    "intentPlaceholder": "k.m. Alika wakuu kwenye baraza la usalama Ijumaa saa 4 asubuhi",
+    "body": "Maudhui",
+    "saveDraft": "Hifadhi rasimu",
+    "toLabel": "Kwa:",
+    "ccLabel": "Kwa nakala:",
+    "subjectLabel": "Kichwa cha habari:",
+    "aiAssisted": "Imesaidiwa na AI",
+    "sendNow": "Tuma sasa",
+    "selectHint": "Chagua ujumbe au andika mpya."
+  },
+  "knowledge": {
+    "subtitle": "Nyenzo za kumbukumbu ambazo msaidizi anaweza kutumia — sera, violezo, mifano.",
+    "added": "Imeongezwa kwenye hifadhi ya maarifa.",
+    "addFailed": "Imeshindwa kuongeza.",
+    "chooseFile": "Chagua faili ya kupakia.",
+    "ocrFailed": "Faili imehifadhiwa. OCR haikuweza kusoma maandishi kutoka faili hii (inaweza kuwa ya ubora wa chini). Unaweza kubandika maandishi kwa mkono.",
+    "extracted": "Faili imehifadhiwa na herufi {n} za maandishi zimetolewa.",
+    "noText": "Faili imehifadhiwa. Hakuna maandishi yaliyoweza kutolewa kutoka muundo huu.",
+    "uploadFailed": "Upakiaji umeshindwa.",
+    "confirmRemove": "Ondoa kumbukumbu hii?",
+    "uploadTitle": "Pakia hati",
+    "file": "Faili",
+    "titleOptional": "Kichwa (si lazima)",
+    "titleDefault": "Huchukua jina la faili kama chaguo-msingi",
+    "categoryOptional": "Kategoria (si lazima)",
+    "uploadExtract": "Pakia na toa maandishi",
+    "uploadNote": "Faili za Word, PDF, CSV na maandishi hutolewa maandishi yake kiotomatiki. PDF zilizoskaniwa na picha husomwa kiotomatiki kwa OCR.",
+    "pasteTitle": "Ongeza kumbukumbu (bandika maandishi)",
+    "title": "Kichwa",
+    "category": "Kategoria",
+    "categoryPlaceholder": "k.m. Nyaraka za mzunguko, Sera",
+    "textContent": "Maudhui ya maandishi",
+    "add": "Ongeza",
+    "references": "Kumbukumbu",
+    "empty": "Hakuna kitu bado.",
+    "uncategorised": "Bila kategoria",
+    "remove": "Ondoa"
+  },
+  "assistant": {
+    "subtitle": "Toa maelekezo kwa lugha rahisi — fanya muhtasari, tafuta, andika rasimu au eleza katika eneo lako la kazi.",
+    "failed": "Msaidizi hakuweza kushughulikia hilo.",
+    "instruction": "Maelekezo",
+    "placeholder": "k.m. Fanya muhtasari wa maamuzi kutoka kikao cha kamati ya usalama cha wiki hii, au orodhesha kumbukumbu zinazosubiri idhini.",
+    "ask": "Uliza"
+  },
+  "actions": {
+    "subtitle": "Vipengele vya utekelezaji vilivyotolewa kutoka kwa kumbukumbu na matriki za utekelezaji katika vikao mbalimbali.",
+    "empty": "Hakuna vipengele vya utekelezaji vinavyosubiri.",
+    "table": {
+      "action": "Utekelezaji",
+      "responsible": "Mhusika",
+      "timeline": "Muda",
+      "source": "Chanzo"
+    }
+  },
+  "paypal": {
+    "title": "Malipo ya PayPal",
+    "subtitle": "Uthibitisho wa malipo ya usajili.",
+    "confirming": "Inathibitisha malipo yako ya PayPal...",
+    "noOrder": "Hakuna oda ya PayPal iliyorejeshwa.",
+    "confirmed": "Malipo yamethibitishwa. Usajili wako wa Worker sasa umewashwa.",
+    "failed": "Malipo ya PayPal hayakuweza kuthibitishwa.",
+    "success": "Malipo yamefanikiwa",
+    "viewSubscription": "Angalia usajili",
+    "errorTitle": "Malipo hayakuweza kuthibitishwa",
+    "returnToSubscription": "Rudi kwenye usajili"
+  },
+  "tenant": {
+    "saved": "Maelezo ya taasisi yamehifadhiwa. Yanaonekana kwenye kila hati unayotoa.",
+    "saveFailed": "Imeshindwa kuhifadhi.",
+    "logoUploaded": "Nembo imepakiwa.",
+    "signatureUploaded": "Sahihi imepakiwa.",
+    "uploadFailed": "Upakiaji umeshindwa.",
+    "subtitleShort": "Chapa ya eneo lako la kazi.",
+    "noOrg": "Akaunti hii haihusiani na taasisi yoyote.",
+    "subtitle": "Jina lako, kichwa cha barua, nembo na sahihi yanaonekana kwenye kila hati unayozalisha.",
+    "letterhead": "Kichwa cha barua",
+    "orgName": "Jina la taasisi",
+    "line": "Mstari wa kichwa cha barua {n}",
+    "line1Placeholder": "k.m. SERIKALI YA KAUNTI YA ...",
+    "line2Placeholder": "k.m. Idara ya ...",
+    "line3Placeholder": "k.m. Kitengo / Ofisi",
+    "saveLetterhead": "Hifadhi kichwa cha barua",
+    "blankHint": "Acha mistari wazi ili kutumia jina la taasisi yako.",
+    "logoSignature": "Nembo na sahihi",
+    "logo": "Nembo / alama (PNG au JPG)",
+    "signature": "Sahihi ya kielektroniki (PNG au JPG)",
+    "uploaded": "imepakiwa",
+    "brandingNote": "Nembo inaonekana kwenye kichwa cha hati na kwenye kurasa za kichwa cha slaidi. Sahihi inawekwa mwishoni mwa hati zilizotolewa. Tumia PNG yenye mandhari angavu kwa matokeo bora."
+  },
+  "users": {
+    "createdTemp": "Mtumiaji ameundwa. Nenosiri la muda: {temp} — shiriki kwa usalama; lazima alibadilishe anapoingia mara ya kwanza.",
+    "created": "Mtumiaji ameundwa.",
+    "createFailed": "Imeshindwa kuunda mtumiaji.",
+    "confirmRemove": "Ondoa {name}?",
+    "removeFailed": "Imeshindwa kuondoa.",
+    "subtitle": "Dhibiti ufikiaji. Akaunti ya msimamizi mkuu haiwezi kubadilishwa hapa.",
+    "add": "Ongeza mtumiaji",
+    "create": "Unda mtumiaji",
+    "empty": "Hakuna watumiaji.",
+    "fields": {
+      "name": "Jina",
+      "email": "Barua pepe",
+      "role": "Wajibu",
+      "department": "Idara",
+      "status": "Hali"
+    },
+    "suspend": "Simamisha",
+    "reinstate": "Rejesha",
+    "remove": "Ondoa"
+  },
+  "audit": {
+    "subtitle": "Kila hatua muhimu imerekodiwa. Kumbukumbu zina metadata na vitambulisho tu — kamwe si maudhui ya hati au sauti.",
+    "empty": "Hakuna kumbukumbu za ukaguzi.",
+    "table": {
+      "when": "Lini",
+      "actor": "Mtendaji",
+      "action": "Hatua",
+      "resource": "Rasilimali"
+    },
+    "system": "mfumo"
+  },
+  "payments": {
+    "stkSent": "Ombi la STK limetumwa. Mwambie mlipaji aidhinishe kwenye simu yake.",
+    "initiateFailed": "Imeshindwa kuanzisha malipo.",
+    "subtitle": "Miamala ya M-Pesa (Daraja STK push) na PayPal.",
+    "requestTitle": "Omba malipo ya M-Pesa",
+    "phone": "Simu (07.. au 2547..)",
+    "amountKes": "Kiasi (KES)",
+    "purpose": "Madhumuni",
+    "sendStk": "Tuma ombi la STK",
+    "transactions": "Miamala",
+    "empty": "Hakuna miamala.",
+    "table": {
+      "provider": "Mtoa huduma",
+      "amount": "Kiasi",
+      "status": "Hali",
+      "ref": "Kumb."
+    }
+  },
+  "billing": {
+    "subtitle": "Ankara na risiti za malipo ya usajili wa Worker yaliyokamilika.",
+    "loadFailed": "Imeshindwa kupakia hati za bili.",
+    "downloadFailed": {
+      "invoice": "Imeshindwa kupakua ankara.",
+      "receipt": "Imeshindwa kupakua risiti."
+    },
+    "documentsTitle": "Nyaraka za malipo",
+    "intro": "Pakua ankara na risiti za malipo ya usajili yaliyokamilika ya taasisi yako.",
+    "disclaimer": "Nyaraka hizi zinarekodi malipo ya usajili wa Worker na zimetolewa kwa madhumuni ya malipo na urejeshaji wa gharama. Haziwakilishi ankara za kodi za KRA/eTIMS isipokuwa zimetolewa kando kupitia muunganisho unaozingatia sheria wa eTIMS.",
+    "invoices": "Ankara",
+    "noInvoices": "Hakuna ankara bado.",
+    "receipts": "Risiti",
+    "noReceipts": "Hakuna risiti bado.",
+    "downloadPdf": "Pakua PDF",
+    "table": {
+      "invoice": "Ankara",
+      "receipt": "Risiti",
+      "date": "Tarehe",
+      "description": "Maelezo",
+      "amount": "Kiasi",
+      "status": "Hali",
+      "provider": "Mtoa huduma",
+      "reference": "Kumbukumbu"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Imeshindwa kupakia usajili.",
+    "selectFirst": "Chagua mpango wa usajili kwanza.",
+    "mpesaSent": "Ombi la malipo la M-Pesa STK limetumwa. Idhinisha malipo kwenye simu yako. Usajili wako utaanza baada ya uthibitisho wa malipo.",
+    "mpesaFailed": "Imeshindwa kuanzisha malipo ya M-Pesa.",
+    "noApproveUrl": "Kiungo cha uidhinishaji cha PayPal hakikurudishwa.",
+    "paypalFailed": "Imeshindwa kuanzisha malipo ya PayPal.",
+    "subtitleShort": "Simamia usajili wako wa Worker.",
+    "subtitle": "Simamia mpango wako wa Worker, kipindi cha majaribio na malipo.",
+    "current": "Usajili wa sasa",
+    "organisation": "Taasisi",
+    "status": "Hali",
+    "plan": "Mpango",
+    "freeTrial": "Kipindi cha majaribio cha siku 14 bila malipo",
+    "trialEnds": "Kipindi cha majaribio kinaisha",
+    "dayRemaining": "Siku {n} iliyobaki",
+    "daysRemaining": "Siku {n} zilizobaki",
+    "renewsEnds": "Inahuishwa upya / inaisha",
+    "chooseTitle": "Chagua mpango",
+    "chooseSubtitle": "Mipango yote inajumuisha mtiririko wa kazi wa uendeshaji wa Worker. Kipindi chako cha majaribio cha siku 14 ni bila malipo.",
+    "perMonth": "/ mwezi",
+    "planSelected": "{plan} imechaguliwa. Mpango wako umehifadhiwa na uko tayari kwa malipo.",
+    "selectFailed": "Imeshindwa kuchagua mpango.",
+    "selected": "Imechaguliwa",
+    "selectPlan": "Chagua mpango",
+    "activateTitle": "Washa usajili wako",
+    "selectAbove": "Chagua mpango hapo juu ili kuendelea na malipo.",
+    "stkNote": "Ombi la STK litatumwa kwa namba ya simu iliyo hapa chini.",
+    "phone": "Namba ya simu",
+    "phonePlaceholder": "07.. au 2547..",
+    "payMpesa": "Lipa kwa M-Pesa",
+    "paypalNote": "Endelea kwa PayPal ili kulipia mpango uliochaguliwa kwa USD.",
+    "payPaypal": "Lipa kwa PayPal",
+    "settleNote": "Usajili uliolipwa unaweza kulipwa kupitia M-Pesa au PayPal.",
+    "activationNote": "Mpango wako uliochaguliwa utawashwa baada ya uthibitisho wa malipo uliofanikiwa.",
+    "historyNote": "Historia ya malipo inapatikana chini ya Utawala → Malipo."
+  },
+  "intl": {
+    "territory": "Eneo",
+    "searchTerritory": "Tafuta eneo…",
+    "selectTerritory": "Chagua eneo lako",
+    "territoryRequired": "Tafadhali chagua eneo lako.",
+    "workingLanguage": "Lugha ya kazi",
+    "meetingLanguage": "Lugha ya mkutano",
+    "useDefault": "Chaguo-msingi la shirika",
+    "beta": "unukuzi beta",
+    "unavailable": "hakuna unukuzi"
+  },
+  "generate": {
+    "title": "Tengeneza hati kutoka kwa kikao hiki",
+    "as": "Tengeneza kama",
+    "instructions": "Maelekezo (si lazima)",
+    "placeholder": "k.m. Barua kwa Katibu Mkuu ikifupisha maamuzi 2 na 3",
+    "button": "Tengeneza",
+    "working": "Inaandaa hati yako… hii inaweza kuchukua dakika moja.",
+    "done": "Hati imetengenezwa.",
+    "failed": "Imeshindwa kutengeneza hati.",
+    "hint": "Inatumia unukuzi zilizotiwa alama kwa kujumuishwa, kwa mpangilio. Unakagua na kuidhinisha kabla ya kitu chochote kushirikiwa."
+  },
+  "queue": {
+    "queued": "Imepangwa kwa unukuzi. Ukurasa huu unajisasisha kiotomatiki."
+  },
+  "pdfExport": {
+    "button": "Hamisha PDF"
+  },
+  "access": {
+    "readOnly": "Nafasi yako ya kazi inasomwa tu kwa sababu jaribio lako au usajili wako umekwisha. Bado unaweza kuona na kuhamisha hati zako.",
+    "grace": "Jaribio lako au usajili wako uliisha tarehe {date}. Umebakiza siku {n} za ufikiaji kamili.",
+    "trialEnding": "Jaribio lako la bure linaisha baada ya siku {n}.",
+    "choosePlan": "Chagua mpango"
+  },
+  "sessionLang": {
+    "saved": "Lugha ya mkutano imehifadhiwa. Inatumika kwa rekodi zinazounukuliwa kuanzia sasa.",
+    "failed": "Imeshindwa kuhifadhi lugha ya mkutano."
+  },
+  "i18nNote": {
+    "machine": "Imetafsiriwa kwa mashine"
+  }
+}

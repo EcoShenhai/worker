@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Valoda",
+    "signIn": "Pieteikties",
+    "signOut": "Izrakstīties",
+    "createAccount": "Izveidot kontu",
+    "getStarted": "Sākt darbu",
+    "startFreeTrial": "Sākt bezmaksas izmēģinājumu",
+    "cancel": "Atcelt",
+    "back": "Atpakaļ",
+    "download": "Lejupielādēt",
+    "viewAll": "Skatīt visu"
+  },
+  "brand": {
+    "tagline": "AI administratīvā darbvieta",
+    "secureWorkspace": "Droša administratīvā darbvieta",
+    "badge": "Angļu · Audio"
+  },
+  "nav": {
+    "dashboard": "Informācijas panelis",
+    "workspace": "Darbvieta",
+    "sessions": "Sesijas un ieraksti",
+    "documents": "Dokumenti",
+    "correspondence": "Sarakste",
+    "knowledge": "Zināšanu bāze",
+    "assistant": "Asistents",
+    "askWorker": "Jautāt Worker",
+    "actions": "Neizpildītās darbības",
+    "administration": "Administrācija",
+    "organisation": "Organizācija",
+    "users": "Lietotāji",
+    "audit": "Audita žurnāls",
+    "subscription": "Abonements",
+    "payments": "Maksājumi",
+    "billing": "Norēķini"
+  },
+  "roles": {
+    "viewer": "Skatītājs",
+    "officer": "Darbinieks",
+    "admin": "Administrators",
+    "superadmin": "Superadministrators"
+  },
+  "landing": {
+    "hero": {
+      "title": "Pārvērsiet teikto pabeigtos, reģistrētos dokumentos.",
+      "body": "Worker ir AI administratīvā darbvieta organizācijām, kas no sanāksmēm, instruktāžām un sarakstes rada lielu daudzumu formālu dokumentu. Ierakstiet sanāksmi vai diktējiet, un Worker to pārraksta tekstā, sagatavo protokolus, memorandus, vēstules, ziņojumus un politikas kopsavilkumus un virza tos caur pārskatīšanu un apstiprināšanu — ar pilnīgu audita žurnālu.",
+      "badgeRow": "Audio · Angļu · Droša darbvieta"
+    },
+    "what": {
+      "title": "Ko dara Worker",
+      "lead": "Ikdienas biroja darbs, kas saistīts ar sanāksmēm un saraksti — paveikts minūtēs, nevis stundās.",
+      "f1": {
+        "title": "Ierakstīt un pārrakstīt",
+        "body": "Ierakstiet sanāksmes, intervijas, instruktāžas vai diktējumu. Audio tiek pārrakstīts lokāli angļu valodā."
+      },
+      "f2": {
+        "title": "Melnraksts ar AI",
+        "body": "Ģenerējiet protokolus, memorandus, vēstules, ziņojumus, politikas kopsavilkumus un apkārtrakstus pareizā oficiālā formā."
+      },
+      "f3": {
+        "title": "Pārskatīšana un apstiprināšana",
+        "body": "Katrs dokuments iziet melnraksta, pārskatīšanas, apstiprināšanas un pabeigšanas posmu — cilvēki saglabā kontroli."
+      },
+      "f4": {
+        "title": "Droši un auditēti",
+        "body": "Lomu balstīta piekļuve un pilnīgs audita žurnāls. Sarakste tiek nosūtīta tikai ar cilvēka starpniecību."
+      }
+    },
+    "start": {
+      "title": "Darba sākšana aizņem minūti",
+      "lead": "Izveidojiet kontu un sāciet 14 dienu bezmaksas izmēģinājuma periodu.",
+      "s1": {
+        "title": "Izveidojiet savu kontu",
+        "body": "Ievadiet savu vārdu, e-pastu un paroli."
+      },
+      "s2": {
+        "title": "Apstipriniet savu e-pastu",
+        "body": "Ievadiet 6 ciparu kodu, ko nosūtīsim uz jūsu e-pastu."
+      },
+      "s3": {
+        "title": "Piesakieties droši",
+        "body": "Katra pieteikšanās tiek apstiprināta ar vienreizēju kodu, kas nosūtīts uz e-pastu."
+      },
+      "s4": {
+        "title": "Sāciet strādāt",
+        "body": "Izveidojiet sesiju, ierakstiet un ģenerējiet savu pirmo dokumentu."
+      }
+    },
+    "pricing": {
+      "title": "Vienkārša abonementa cena",
+      "lead": "Sāciet ar 14 dienu bezmaksas izmēģinājuma periodu. Izvēlieties plānu, kas atbilst administratīvā darba apjomam, ko rada jūsu organizācija.",
+      "perMonth": "/mēnesī",
+      "mostPopular": "POPULĀRĀKAIS",
+      "starter": {
+        "name": "Iesācējs",
+        "desc": "Mazām komandām, kas sāk ar AI atbalstītu administratīvo darbu."
+      },
+      "professional": {
+        "name": "Profesionālis",
+        "desc": "Organizācijām ar regulāru, liela apjoma dokumentu sagatavošanu."
+      },
+      "premium": {
+        "name": "Premium",
+        "desc": "Lielākām organizācijām ar ievērojamu administratīvo darba apjomu."
+      },
+      "paymentsNote": "M-Pesa un PayPal tiek atbalstīti maksas abonementiem."
+    },
+    "final": {
+      "title": "Vai esat gatavs izmēģināt Worker?",
+      "cta": "Izveidojiet savu kontu"
+    }
+  },
+  "auth": {
+    "email": "E-pasts",
+    "password": "Parole",
+    "fullName": "Pilns vārds",
+    "confirmPassword": "Apstipriniet paroli",
+    "currentPassword": "Pašreizējā parole",
+    "newPassword": "Jaunā parole",
+    "confirmNewPassword": "Apstipriniet jauno paroli",
+    "code6": "6 ciparu kods",
+    "signInFailed": "Pieteikšanās neizdevās. Pārbaudiet savus akreditācijas datus.",
+    "forgotPassword": "Aizmirsāt paroli?",
+    "mfaNotice": "Vienreizējs kods tiek nosūtīts uz e-pastu, lai apstiprinātu katru pieteikšanos.",
+    "createYourAccount": "Izveidojiet savu kontu",
+    "pwMin": "Parolei jābūt vismaz {n} rakstzīmes garai.",
+    "newPwMin": "Jaunajai parolei jābūt vismaz {n} rakstzīmes garai.",
+    "pwMismatch": "Paroles nesakrīt.",
+    "createFailed": "Nevarēja izveidot kontu.",
+    "haveAccount": "Jau ir konts?",
+    "startAtSignIn": "Sāciet ar pierakstīšanos vai reģistrāciju.",
+    "goToSignIn": "Doties uz pierakstīšanos",
+    "invalidCode": "Nederīgs vai novecojis kods.",
+    "codeSent": "Jauns kods ir nosūtīts.",
+    "resendFailed": "Nevarēja nosūtīt atkārtoti.",
+    "verifyEmailTitle": "Apstipriniet savu e-pastu",
+    "verifyEmailTo": "Apstipriniet savu e-pastu — {email}",
+    "verify": "Apstiprināt",
+    "resendCode": "Nosūtīt kodu atkārtoti",
+    "signInAgain": "Lūdzu, pierakstieties vēlreiz.",
+    "mfaPrompt": "Ievadiet pierakstīšanās kodu, ko nosūtījām e-pastā",
+    "mfaPromptTo": "Ievadiet pierakstīšanās kodu, ko nosūtījām uz {email}",
+    "verifySignIn": "Apstiprināt un pierakstīties",
+    "requestFailed": "Nevarēja apstrādāt pieprasījumu.",
+    "resetTitle": "Atiestatiet savu paroli",
+    "sendResetCode": "Nosūtīt atiestatīšanas kodu",
+    "backToSignIn": "Atgriezties pie pierakstīšanās",
+    "resetPrompt": "Ievadiet e-pastā nosūtīto kodu un izvēlieties jaunu paroli",
+    "resetPassword": "Atiestatīt paroli",
+    "setNewPassword": "Iestatīt jaunu paroli",
+    "forcedChange": "Drošības nolūkos iestatiet savu paroli pirms turpināšanas.",
+    "updateAccountPassword": "Atjauniniet sava konta paroli.",
+    "changeFailed": "Nevarēja nomainīt paroli.",
+    "updatePassword": "Atjaunināt paroli",
+    "signOutInstead": "Tā vietā izrakstīties"
+  },
+  "notFound": {
+    "title": "Lapa nav atrasta",
+    "subtitle": "Šī lapa šajā darbvietā nepastāv.",
+    "back": "Atgriezties pie informācijas paneļa"
+  },
+  "status": {
+    "draft": "melnraksts",
+    "in_review": "pārskatīšanā",
+    "approved": "apstiprināts",
+    "final": "galīgais",
+    "archived": "arhivēts",
+    "open": "atvērts",
+    "processing": "apstrādē",
+    "ready": "gatavs",
+    "pending": "gaida",
+    "transcribing": "transkribē",
+    "transcribed": "transkribēts",
+    "failed": "neizdevās",
+    "sent": "nosūtīts",
+    "received": "saņemts",
+    "completed": "pabeigts",
+    "cancelled": "atcelts",
+    "active": "aktīvs",
+    "suspended": "apturēts"
+  },
+  "kind": {
+    "meeting": "sanāksme",
+    "interview": "intervija",
+    "briefing": "instruktāža",
+    "dictation": "diktāts",
+    "field_report": "lauka ziņojums",
+    "consultation": "konsultācija",
+    "other": "cits"
+  },
+  "classification": {
+    "unclassified": "neklasificēts",
+    "internal": "iekšējs",
+    "confidential": "konfidenciāls",
+    "restricted": "ierobežotas pieejamības"
+  },
+  "dashboard": {
+    "welcome": "Laipni lūdzam, {name}",
+    "defaultName": "Virsniek",
+    "subtitle": "Jūsu administratīvā darbvieta — ierakstīt, sagatavot, pārskatīt un reģistrēt.",
+    "stats": {
+      "sessions": "Sesijas",
+      "documents": "Dokumenti",
+      "awaitingReview": "Gaida pārskatīšanu",
+      "outstandingActions": "Neizpildītas darbības"
+    },
+    "recentSessions": "Nesenās sesijas",
+    "documentsToAction": "Dokumenti, kas jāapstrādā",
+    "noSessions": "Vēl nav nevienas sesijas.",
+    "nothingToAction": "Nekas neprasa jūsu uzmanību."
+  },
+  "sessions": {
+    "subtitle": "Katra sesija ir lietas fails — audio, transkripts un no tā izveidotie dokumenti.",
+    "new": "Jauna sesija",
+    "createFailed": "Nevarēja izveidot sesiju.",
+    "titlePlaceholder": "piem., Apgabala drošības komiteja — iknedēļas instruktāža",
+    "create": "Izveidot sesiju",
+    "empty": "Vēl nav nevienas sesijas. Izveidojiet vienu, lai sāktu ierakstīšanu.",
+    "fields": {
+      "title": "Nosaukums",
+      "kind": "Veids",
+      "date": "Datums",
+      "classification": "Klasifikācija",
+      "status": "Statuss",
+      "department": "Nodaļa",
+      "location": "Atrašanās vieta"
+    }
+  },
+  "session": {
+    "loadFailed": "Nevarēja ielādēt sesiju.",
+    "micDenied": "Piekļuve mikrofonam liegta vai nav pieejama.",
+    "audioSaved": "Audio saglabāts sesijā.",
+    "uploadFailed": "Augšupielāde neizdevās.",
+    "transcribing": "Notiek lokalizēta transkribēšana — garākam audio tas var aizņemt brīdi.",
+    "transcribed": "Transkribēšana pabeigta.",
+    "transcribeFailed": "Transkribēšana neizdevās. Pārbaudiet, vai STT pakalpojums darbojas.",
+    "updateFailed": "Nevarēja atjaunināt.",
+    "draftingMinutes": "Notiek protokola sagatavošana no transkripta…",
+    "minutesCreated": "Protokola melnraksts izveidots.",
+    "minutesFailed": "Nevarēja ģenerēt protokolu.",
+    "notFound": "Sesija nav atrasta.",
+    "noDate": "nav datuma",
+    "noLocation": "nav atrašanās vietas",
+    "generateMinutes": "Ģenerēt protokolu",
+    "captureAudio": "Ierakstīt audio",
+    "stopSave": "Apturēt un saglabāt",
+    "startRecording": "Sākt ierakstīšanu",
+    "or": "vai",
+    "uploadAudio": "Augšupielādēt audio",
+    "audioNote": "Audio paliek resursdatorā. Transkribēšana notiek lokāli angļu valodā. Protokols apvieno visus šīs sesijas klipus secībā.",
+    "documentsFrom": "Dokumenti no šīs sesijas",
+    "noDocuments": "Vēl nav dokumentu. Transkribējiet klipu, pēc tam ģenerējiet protokolu.",
+    "recordingsTitle": "Ieraksti un transkripti",
+    "clipOne": "{n} klips",
+    "clipMany": "{n} klipi",
+    "noRecordings": "Vēl nav ierakstu. Ierakstiet vai augšupielādējiet audio iepriekš.",
+    "includeTitle": "Iekļaut šo klipu protokola ģenerēšanā",
+    "inMinutes": "Protokolā",
+    "transcribe": "Transkribēt",
+    "transcribeHint": "Transkribējiet šo klipu, lai šeit redzētu un rediģētu tā transkriptu.",
+    "audioLoadFailed": "Nevarēja ielādēt audio.",
+    "loadAudio": "Ielādēt audio",
+    "words": "{n} vārdi",
+    "verified": "pārbaudīts",
+    "editVerify": "Rediģēt un pārbaudīt",
+    "saveVerified": "Saglabāt un atzīmēt kā pārbaudītu",
+    "saveDraft": "Saglabāt melnrakstu",
+    "emptyTranscript": "Tukšs stenogrammas teksts."
+  },
+  "docType": {
+    "minutes": "protokols",
+    "memo": "memorands",
+    "letter": "vēstule",
+    "report": "ziņojums",
+    "policy_brief": "politikas kopsavilkums",
+    "briefing_note": "informatīvā piezīme",
+    "concept_note": "koncepcijas piezīme",
+    "circular": "apkārtraksts",
+    "action_matrix": "darbību matrica",
+    "speech": "runa"
+  },
+  "approval": {
+    "submit": "iesniegts",
+    "submitted": "iesniegts",
+    "approve": "apstiprināts",
+    "approved": "apstiprināts",
+    "reject": "noraidīts",
+    "rejected": "noraidīts",
+    "finalize": "pabeigts",
+    "finalized": "pabeigts"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Iekšējais memorands",
+      "desc": "Standarta iekšējais memorands ar Kam / No / Par."
+    },
+    "letter-official": {
+      "name": "Oficiālā vēstule",
+      "desc": "Formāla izejošā vēstule uz iestādes veidlapas."
+    },
+    "circular-general": {
+      "name": "Apkārtraksts",
+      "desc": "Paziņojums, kas izplatīts daudziem adresātiem."
+    },
+    "report-standard": {
+      "name": "Ziņojums",
+      "desc": "Vispārīgs ziņojums ar kopsavilkumu, sadaļām un ieteikumiem."
+    },
+    "policy-brief": {
+      "name": "Politikas kopsavilkums",
+      "desc": "Īss kopsavilkums lēmumu pieņēmējiem."
+    },
+    "briefing-note": {
+      "name": "Informatīvā piezīme",
+      "desc": "Īsa piezīme, lai informētu vadītāju pirms pasākuma."
+    },
+    "concept-note": {
+      "name": "Koncepcijas piezīme",
+      "desc": "Ierosinātās programmas vai pasākuma izklāsts."
+    },
+    "minutes-blank": {
+      "name": "Sapulces protokols (tukšs)",
+      "desc": "Tukša protokola struktūra, ko aizpildīt ar roku."
+    },
+    "speech-remarks": {
+      "name": "Runa / piezīmes",
+      "desc": "Formāla runa pasākumam."
+    }
+  },
+  "documents": {
+    "subtitle": "Protokoli, memorandi, vēstules, ziņojumi un kopsavilkumi — sagatavoti ar AI, apstiprināti ar cilvēkiem.",
+    "startFromTemplate": "Sākt no veidnes",
+    "fromSpreadsheet": "Ziņojums no izklājlapas",
+    "draftWithAI": "Sagatavot ar AI",
+    "templateTitle": "Sākt no veidnes",
+    "allTypes": "Visi veidi",
+    "orgTemplates": "Jūsu organizācijas veidnes",
+    "savedByOrg": "Saglabājusi jūsu organizācija",
+    "useTemplate": "Izmantot šo veidni",
+    "generalTemplates": "Vispārīgas veidnes",
+    "spreadsheetFailed": "Nevarēja izveidot ziņojumu no šīs izklājlapas.",
+    "templateFailed": "Nevarēja izveidot no veidnes.",
+    "draftFailed": "Nevarēja sagatavot dokumentu.",
+    "fields": {
+      "type": "Dokumenta veids",
+      "title": "Nosaukums",
+      "recipient": "Saņēmējs (nav obligāts)",
+      "department": "Nodaļa (nav obligāta)",
+      "brief": "Norādījumi / kopsavilkums"
+    },
+    "briefPlaceholder": "Aprakstiet mērķi, galvenos punktus un jebkurus faktus, kas jāiekļauj. Asistents sagatavos formālu dokumentu, ko varēsiet rediģēt un apstiprināt.",
+    "generateDraft": "Ģenerēt melnrakstu",
+    "empty": "Vēl nav dokumentu.",
+    "table": {
+      "title": "Nosaukums",
+      "type": "Veids",
+      "ref": "Ats.",
+      "status": "Statuss",
+      "ver": "Vers."
+    }
+  },
+  "doc": {
+    "loadFailed": "Nevarēja ielādēt dokumentu.",
+    "invalidJson": "Saturs nav derīgs JSON.",
+    "saved": "Saglabāts. Versija palielināta.",
+    "saveFailed": "Saglabāšana neizdevās.",
+    "done": {
+      "submit": "Dokuments iesniegts pārskatīšanai.",
+      "approve": "Dokuments apstiprināts.",
+      "reject": "Dokuments noraidīts.",
+      "finalize": "Dokuments pabeigts."
+    },
+    "failed": {
+      "submit": "Nevarēja iesniegt.",
+      "approve": "Nevarēja apstiprināt.",
+      "reject": "Nevarēja noraidīt.",
+      "finalize": "Nevarēja pabeigt."
+    },
+    "templateName": "Veidnes nosaukums",
+    "templateDefault": "{title} veidne",
+    "templateSaved": "Saglabāts kā atkārtoti lietojama veidne jūsu organizācijai.",
+    "templateSaveFailed": "Veidni nevarēja saglabāt.",
+    "exportFailed": "Eksportēšana neizdevās.",
+    "notFound": "Dokuments nav atrasts.",
+    "exportDocx": "Eksportēt DOCX",
+    "exportPptx": "Eksportēt PPTX",
+    "exportXlsx": "Eksportēt XLSX",
+    "saveAsTemplate": "Saglabāt kā veidni",
+    "content": "Saturs",
+    "workflow": "Darbplūsma",
+    "aiAssisted": "AI sagatavots melnraksts",
+    "auditChain": "Audita ķēde: audio → transkripts → AI melnraksts → cilvēka labojums → apstiprinājums → gala versija. Katrs solis tiek reģistrēts.",
+    "comment": "Komentārs (neobligāts)",
+    "commentPlaceholder": "Pievienojiet piezīmi ierakstam",
+    "submit": "Iesniegt pārskatīšanai",
+    "approve": "Apstiprināt",
+    "reject": "Noraidīt",
+    "finalize": "Pabeigt",
+    "finalLocked": "Gala versija — bloķēta rediģēšanai",
+    "editJson": "Rediģēt saturu (JSON)",
+    "jsonNote": "Strukturētais saturs veido zīmola DOCX. Rediģējiet tālāk esošos laukus un saglabājiet; zīmols un izkārtojums tiek piemēroti automātiski eksportēšanas laikā.",
+    "saveContent": "Saglabāt saturu",
+    "approvalHistory": "Apstiprinājumu vēsture"
+  },
+  "emails": {
+    "subtitle": "Sagatavojiet vēstules un e-pastus ar AI. Nekas netiek nosūtīts, kamēr persona nenoklikšķina uz nosūtīt.",
+    "needIntent": "Norādiet asistentam tēmu vai nolūku melnraksta sagatavošanai.",
+    "draftReady": "Melnraksts gatavs. Pārskatiet un rediģējiet pirms nosūtīšanas.",
+    "draftFailed": "Melnraksta sagatavošana neizdevās.",
+    "draftSaved": "Melnraksts saglabāts.",
+    "saveFailed": "Nevarēja saglabāt.",
+    "confirmSend": "Nosūtīt šo e-pastu tagad? Šī darbība tiek reģistrēta audita žurnālā.",
+    "sent": "E-pasts nosūtīts.",
+    "sendFailed": "Nosūtīšana neizdevās.",
+    "compose": "Rakstīt",
+    "messages": "Ziņojumi",
+    "empty": "Vēl nav sarakstes.",
+    "message": "Ziņojums",
+    "details": "Detaļas",
+    "to": "Kam",
+    "cc": "Cc",
+    "subject": "Temats",
+    "intent": "Ko tam vajadzētu teikt? (AI)",
+    "intentPlaceholder": "piem., Uzaicināt vadītājus uz drošības sanāksmi piektdien plkst. 10:00",
+    "body": "Pamatteksts",
+    "saveDraft": "Saglabāt melnrakstu",
+    "toLabel": "Kam:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Temats:",
+    "aiAssisted": "AI atbalstīts",
+    "sendNow": "Sūtīt tagad",
+    "selectHint": "Atlasiet ziņojumu vai izveidojiet jaunu."
+  },
+  "knowledge": {
+    "subtitle": "Atsauces materiāls, ko asistents var izmantot — politikas, veidnes, precedenti.",
+    "added": "Pievienots zināšanu bāzei.",
+    "addFailed": "Nevarēja pievienot.",
+    "chooseFile": "Izvēlieties failu augšupielādei.",
+    "ocrFailed": "Fails saglabāts. OCR nevarēja nolasīt tekstu no šī faila (tas var būt zemas kvalitātes). Tekstu varat ielīmēt manuāli.",
+    "extracted": "Fails saglabāts un {n} teksta rakstzīmes izvilktas.",
+    "noText": "Fails saglabāts. No šī formāta nevarēja izvilkt tekstu.",
+    "uploadFailed": "Augšupielāde neizdevās.",
+    "confirmRemove": "Noņemt šo atsauci?",
+    "uploadTitle": "Augšupielādēt dokumentu",
+    "file": "Fails",
+    "titleOptional": "Nosaukums (neobligāts)",
+    "titleDefault": "Pēc noklusējuma faila nosaukums",
+    "categoryOptional": "Kategorija (neobligāta)",
+    "uploadExtract": "Augšupielādēt un izvilkt",
+    "uploadNote": "Word, PDF, CSV un teksta failiem teksts tiek izvilkts automātiski. Skenēti PDF un fotoattēli tiek nolasīti automātiski ar OCR.",
+    "pasteTitle": "Pievienot atsauci (ielīmēt tekstu)",
+    "title": "Nosaukums",
+    "category": "Kategorija",
+    "categoryPlaceholder": "piem., Apkārtraksti, Politikas",
+    "textContent": "Teksta saturs",
+    "add": "Pievienot",
+    "references": "Atsauces",
+    "empty": "Vēl nekas nav.",
+    "uncategorised": "Bez kategorijas",
+    "remove": "Noņemt"
+  },
+  "assistant": {
+    "subtitle": "Sniedziet norādījumu vienkāršā valodā — apkopojiet, atrodiet, sagatavojiet melnrakstu vai izskaidrojiet visā darbvietā.",
+    "failed": "Asistents nevarēja to apstrādāt.",
+    "instruction": "Instrukcija",
+    "placeholder": "Piemēram, apkopojiet šīs nedēļas drošības komitejas lēmumus vai uzskaitiet piezīmes, kas vēl gaida apstiprinājumu.",
+    "ask": "Jautāt"
+  },
+  "actions": {
+    "subtitle": "Darbības vienumi, kas iegūti no protokoliem un darbību matricām visās sesijās.",
+    "empty": "Nav atrastu neizpildītu darbību.",
+    "table": {
+      "action": "Darbība",
+      "responsible": "Atbildīgais",
+      "timeline": "Termiņš",
+      "source": "Avots"
+    }
+  },
+  "paypal": {
+    "title": "PayPal maksājums",
+    "subtitle": "Abonementa maksājuma apstiprinājums.",
+    "confirming": "Notiek PayPal maksājuma apstiprināšana...",
+    "noOrder": "Netika atgriezts neviens PayPal pasūtījums.",
+    "confirmed": "Maksājums apstiprināts. Jūsu Worker abonements tagad ir aktīvs.",
+    "failed": "PayPal maksājumu nevarēja apstiprināt.",
+    "success": "Maksājums veiksmīgs",
+    "viewSubscription": "Skatīt abonementu",
+    "errorTitle": "Maksājumu nevarēja apstiprināt",
+    "returnToSubscription": "Atgriezties pie abonementa"
+  },
+  "tenant": {
+    "saved": "Organizācijas informācija saglabāta. Tā parādās katrā eksportētajā dokumentā.",
+    "saveFailed": "Nevarēja saglabāt.",
+    "logoUploaded": "Logotips augšupielādēts.",
+    "signatureUploaded": "Paraksts augšupielādēts.",
+    "uploadFailed": "Augšupielāde neizdevās.",
+    "subtitleShort": "Jūsu darbvietas zīmols.",
+    "noOrg": "Šis konts nav saistīts ar organizāciju.",
+    "subtitle": "Jūsu vārds, veidlapas galvene, logotips un paraksts parādās katrā ģenerētajā dokumentā.",
+    "letterhead": "Veidlapas galvene",
+    "orgName": "Organizācijas nosaukums",
+    "line": "Veidlapas galvenes rinda {n}",
+    "line1Placeholder": "Piemēram, ... APRIŅĶA PAŠVALDĪBA",
+    "line2Placeholder": "Piemēram, ... departaments",
+    "line3Placeholder": "Piemēram, nodaļa / birojs",
+    "saveLetterhead": "Saglabāt veidlapas galveni",
+    "blankHint": "Atstājiet rindas tukšas, lai izmantotu organizācijas nosaukumu.",
+    "logoSignature": "Logotips un paraksts",
+    "logo": "Ģerbonis / logotips (PNG vai JPG)",
+    "signature": "Elektroniskais paraksts (PNG vai JPG)",
+    "uploaded": "augšupielādēts",
+    "brandingNote": "Logotips parādās dokumenta galvenē un slaidu titullapās. Paraksts tiek ievietots eksportēto dokumentu beigās. Labākam rezultātam izmantojiet PNG ar caurspīdīgu fonu."
+  },
+  "users": {
+    "createdTemp": "Lietotājs izveidots. Pagaidu parole: {temp} — nosūtiet droši; pirmajā pieteikšanās reizē tā ir jāmaina.",
+    "created": "Lietotājs izveidots.",
+    "createFailed": "Nevarēja izveidot lietotāju.",
+    "confirmRemove": "Noņemt {name}?",
+    "removeFailed": "Nevarēja noņemt.",
+    "subtitle": "Pārvaldiet piekļuvi. Superadministratora kontu šeit nevar mainīt.",
+    "add": "Pievienot lietotāju",
+    "create": "Izveidot lietotāju",
+    "empty": "Nav lietotāju.",
+    "fields": {
+      "name": "Vārds",
+      "email": "E-pasts",
+      "role": "Loma",
+      "department": "Nodaļa",
+      "status": "Statuss"
+    },
+    "suspend": "Apturēt",
+    "reinstate": "Atjaunot",
+    "remove": "Noņemt"
+  },
+  "audit": {
+    "subtitle": "Katra nozīmīgā darbība tiek reģistrēta. Žurnāli satur tikai metadatus un identifikatorus — nekad dokumentu saturu vai audio.",
+    "empty": "Nav audita ierakstu.",
+    "table": {
+      "when": "Kad",
+      "actor": "Veicējs",
+      "action": "Darbība",
+      "resource": "Resurss"
+    },
+    "system": "sistēma"
+  },
+  "payments": {
+    "stkSent": "STK pieprasījums nosūtīts. Lūdziet maksātājam apstiprināt to tālrunī.",
+    "initiateFailed": "Nevarēja uzsākt maksājumu.",
+    "subtitle": "M-Pesa (Daraja STK pieprasījums) un PayPal darījumi.",
+    "requestTitle": "Pieprasīt M-Pesa maksājumu",
+    "phone": "Tālrunis (07.. vai 2547..)",
+    "amountKes": "Summa (KES)",
+    "purpose": "Mērķis",
+    "sendStk": "Sūtīt STK pieprasījumu",
+    "transactions": "Darījumi",
+    "empty": "Nav darījumu.",
+    "table": {
+      "provider": "Pakalpojumu sniedzējs",
+      "amount": "Summa",
+      "status": "Statuss",
+      "ref": "Atsauce"
+    }
+  },
+  "billing": {
+    "subtitle": "Rēķini un kvītis par pabeigtiem Worker abonementa maksājumiem.",
+    "loadFailed": "Nevarēja ielādēt norēķinu dokumentus.",
+    "downloadFailed": {
+      "invoice": "Rēķinu neizdevās lejupielādēt.",
+      "receipt": "Kvīti neizdevās lejupielādēt."
+    },
+    "documentsTitle": "Norēķinu dokumenti",
+    "intro": "Lejupielādējiet rēķinus un kvītis par jūsu organizācijas veiktajiem abonementa maksājumiem.",
+    "disclaimer": "Šie dokumenti apliecina Worker abonementa maksājumus un ir paredzēti maksājumu un atlīdzināšanas nolūkiem. Tie nav uzskatāmi par KRA/eTIMS nodokļu rēķiniem, ja vien tie nav atsevišķi izsniegti, izmantojot atbilstošu eTIMS integrāciju.",
+    "invoices": "Rēķini",
+    "noInvoices": "Vēl nav rēķinu.",
+    "receipts": "Kvītis",
+    "noReceipts": "Vēl nav kvīšu.",
+    "downloadPdf": "Lejupielādēt PDF",
+    "table": {
+      "invoice": "Rēķins",
+      "receipt": "Kvīts",
+      "date": "Datums",
+      "description": "Apraksts",
+      "amount": "Summa",
+      "status": "Statuss",
+      "provider": "Pakalpojumu sniedzējs",
+      "reference": "Atsauce"
+    }
+  },
+  "subscription": {
+    "loadFailed": "Abonementu neizdevās ielādēt.",
+    "selectFirst": "Vispirms izvēlieties abonementa plānu.",
+    "mpesaSent": "M-Pesa STK pieprasījums nosūtīts. Apstipriniet maksājumu savā tālrunī. Jūsu abonements tiks aktivizēts pēc maksājuma apstiprināšanas.",
+    "mpesaFailed": "M-Pesa maksājumu neizdevās uzsākt.",
+    "noApproveUrl": "PayPal apstiprinājuma saite netika atgriezta.",
+    "paypalFailed": "PayPal maksājumu neizdevās uzsākt.",
+    "subtitleShort": "Pārvaldiet savu Worker abonementu.",
+    "subtitle": "Pārvaldiet savu Worker plānu, izmēģinājuma periodu un norēķinus.",
+    "current": "Pašreizējais abonements",
+    "organisation": "Organizācija",
+    "status": "Statuss",
+    "plan": "Plāns",
+    "freeTrial": "14 dienu bezmaksas izmēģinājuma periods",
+    "trialEnds": "Izmēģinājuma periods beidzas",
+    "dayRemaining": "Atlikusi {n} diena",
+    "daysRemaining": "Atlikušas {n} dienas",
+    "renewsEnds": "Atjaunojas / beidzas",
+    "chooseTitle": "Izvēlieties plānu",
+    "chooseSubtitle": "Visi plāni ietver Worker administratīvo darbplūsmu. Jūsu 14 dienu izmēģinājuma periods ir bezmaksas.",
+    "perMonth": "/ mēnesī",
+    "planSelected": "{plan} izvēlēts. Jūsu plāns ir saglabāts un gatavs maksājumam.",
+    "selectFailed": "Plānu neizdevās izvēlēties.",
+    "selected": "Atlasīts",
+    "selectPlan": "Izvēlēties plānu",
+    "activateTitle": "Aktivizējiet savu abonementu",
+    "selectAbove": "Lai turpinātu uz apmaksu, izvēlieties plānu augstāk.",
+    "stkNote": "Uz tālāk norādīto tālruņa numuru tiks nosūtīts STK pieprasījums.",
+    "phone": "Tālruņa numurs",
+    "phonePlaceholder": "07.. vai 2547..",
+    "payMpesa": "Maksāt ar M-Pesa",
+    "paypalNote": "Turpiniet uz PayPal, lai samaksātu par izvēlēto plānu ASV dolāros.",
+    "payPaypal": "Maksāt ar PayPal",
+    "settleNote": "Apmaksātos abonementus var norēķināt, izmantojot M-Pesa vai PayPal.",
+    "activationNote": "Jūsu izvēlētais plāns tiks aktivizēts pēc veiksmīga maksājuma apstiprinājuma.",
+    "historyNote": "Maksājumu vēsture ir pieejama sadaļā Administrācija → Maksājumi."
+  },
+  "intl": {
+    "territory": "Teritorija",
+    "searchTerritory": "Meklēt teritoriju…",
+    "selectTerritory": "Izvēlieties savu teritoriju",
+    "territoryRequired": "Lūdzu, izvēlieties savu teritoriju.",
+    "workingLanguage": "Darba valoda",
+    "meetingLanguage": "Sanāksmes valoda",
+    "useDefault": "Organizācijas noklusējums",
+    "beta": "transkripcijas beta",
+    "unavailable": "nav transkripcijas"
+  },
+  "generate": {
+    "title": "Ģenerēt dokumentu no šīs sesijas",
+    "as": "Ģenerēt kā",
+    "instructions": "Instrukcija (neobligāta)",
+    "placeholder": "piem., Vēstule pastāvīgajam sekretāram, apkopojot lēmumus 2 un 3",
+    "button": "Ģenerēt",
+    "working": "Sagatavojam jūsu dokumentu… tas var aizņemt minūti.",
+    "done": "Dokuments izveidots.",
+    "failed": "Nevarēja ģenerēt dokumentu.",
+    "hint": "Izmanto atzīmētos transkriptus iekļaušanai, secībā. Jūs pārskatāt un apstiprināt, pirms kaut kas tiek kopīgots."
+  },
+  "queue": {
+    "queued": "Iekļauts transkripcijas rindā. Šī lapa atjauninās automātiski."
+  },
+  "pdfExport": {
+    "button": "Eksportēt PDF"
+  },
+  "access": {
+    "readOnly": "Jūsu darbvieta ir tikai lasāma, jo jūsu izmēģinājuma periods vai abonements ir beidzies. Jūs joprojām varat skatīt un eksportēt savus dokumentus.",
+    "grace": "Jūsu izmēģinājuma periods vai abonements beidzās {date}. Jums atlicis {n} dienas pilnīgai piekļuvei.",
+    "trialEnding": "Jūsu bezmaksas izmēģinājuma periods beigsies pēc {n} dienām.",
+    "choosePlan": "Izvēlēties plānu"
+  },
+  "sessionLang": {
+    "saved": "Sanāksmes valoda saglabāta. Tā tiks piemērota ierakstiem, kas tiks transkribēti no šī brīža.",
+    "failed": "Nevarēja saglabāt sanāksmes valodu."
+  },
+  "i18nNote": {
+    "machine": "Mašīntulkojums"
+  }
+}

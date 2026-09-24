@@ -662,5 +662,8 @@
   "sessionLang": {
     "saved": "Langue de la réunion enregistrée. Elle s’applique aux enregistrements transcrits à partir de maintenant.",
     "failed": "Impossible d’enregistrer la langue de la réunion."
+  },
+  "i18nNote": {
+    "machine": "Traduction automatique"
   }
 }

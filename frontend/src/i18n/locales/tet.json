@@ -1,0 +1,668 @@
+{
+  "common": {
+    "language": "Lian",
+    "signIn": "Tama",
+    "signOut": "Sai",
+    "createAccount": "Kria konta",
+    "getStarted": "Hahu",
+    "startFreeTrial": "Hahu prova grátis",
+    "cancel": "Kansela",
+    "back": "Fila",
+    "download": "Download",
+    "viewAll": "Haree hotu"
+  },
+  "brand": {
+    "tagline": "Espasu servisu administrativu AI",
+    "secureWorkspace": "Espasu servisu administrativu seguru",
+    "badge": "Inglês · Áudio"
+  },
+  "nav": {
+    "dashboard": "Painel",
+    "workspace": "Espasu servisu",
+    "sessions": "Sesaun & Rekording",
+    "documents": "Dokumentu",
+    "correspondence": "Korespondénsia",
+    "knowledge": "Baze Koñesimentu",
+    "assistant": "Asistente",
+    "askWorker": "Husik Worker",
+    "actions": "Aksaun Pendente",
+    "administration": "Administrasaun",
+    "organisation": "Organizasaun",
+    "users": "Uzuáriu",
+    "audit": "Trilha Auditoria",
+    "subscription": "Soskrision",
+    "payments": "Pagamentu",
+    "billing": "Faturasaun"
+  },
+  "roles": {
+    "viewer": "Visualizadór",
+    "officer": "Ofisiál",
+    "admin": "Administradór",
+    "superadmin": "Super administradór"
+  },
+  "landing": {
+    "hero": {
+      "title": "Transforma buat ne'ebé ita ko'alia ba dokumentu kompletu no arkivadu.",
+      "body": "Worker mak fatin servisu administrativu AI ba organizasaun sira ne'ebé prodús dokumentu formál barak husi reuniaun, brifing no korespondénsia. Rekorda reuniaun ida ka dikta, no Worker transkreve, halo minuta, memorandu, karta, relatóriu no brifing polítika, no lori sira liu revizaun no aprovasaun — ho trilha auditoria kompletu.",
+      "badgeRow": "Áudio · Inglés · Fatin servisu seguru"
+    },
+    "what": {
+      "title": "Saida mak Worker halo",
+      "lead": "Servisu eskritóriu rutina ne'ebé envolve reuniaun no korespondénsia — rezolve iha minutu, la'ós oras.",
+      "f1": {
+        "title": "Rekorda & transkreve",
+        "body": "Kaptura reuniaun, entrevista, brifing ka dikta. Áudio transkreve lokál iha Inglés."
+      },
+      "f2": {
+        "title": "Skreve ho IA",
+        "body": "Jera minutu, memorandu, karta, relatóriu, rezumu polítika no sirkulár iha forma ofisiál ne'ebé loos."
+      },
+      "f3": {
+        "title": "Revee & aprova",
+        "body": "Dokumentu hotu-hotu la'o liu husi sketsa, revizaun, aprovasaun no finalizasaun — ema sira nafatin kontrola."
+      },
+      "f4": {
+        "title": "Seguru & auditadu",
+        "body": "Asesu bazeia ba papel no dalan audit kompletu. Korespondénsia haruka de'it husi ema ida."
+      }
+    },
+    "start": {
+      "title": "Hahu servisu presiza minutu ida",
+      "lead": "Kria konta no hahu prova grátis loron 14.",
+      "s1": {
+        "title": "Kria ita-nia konta",
+        "body": "Hatama ita-nia naran, email no password."
+      },
+      "s2": {
+        "title": "Verifika ita-nia email",
+        "body": "Hatama kódigu díjitu 6 ne'ebé ami haruka liu email."
+      },
+      "s3": {
+        "title": "Tama ho seguru",
+        "body": "Tama hotu-hotu konfirma ho kódigu one-time ne'ebé haruka liu email."
+      },
+      "s4": {
+        "title": "Hahu servisu",
+        "body": "Kria sesaun, rekorda, no jera ita-nia dokumentu primeiru."
+      }
+    },
+    "pricing": {
+      "title": "Presu subskripsaun simples",
+      "lead": "Hahu ho prova grátis loron 14. Hili planu ne'ebé apropriadu ba volume servisu administrativu ne'ebé ita-nia organizasaun produz.",
+      "perMonth": "/fulan",
+      "mostPopular": "POPULÁR LIU",
+      "starter": {
+        "name": "Starter",
+        "desc": "Ba ekipa ki'ik sira ne'ebé hahu servisu administrativu ho asisténsia IA."
+      },
+      "professional": {
+        "name": "Profesionál",
+        "desc": "Ba organizasaun sira ne'ebé produz dokumentu barak no regular."
+      },
+      "premium": {
+        "name": "Prémiu",
+        "desc": "Ba organizasaun boot sira ho karga servisu administrativu substánsia."
+      },
+      "paymentsNote": "M-Pesa no PayPal suporta ba subskripsaun selu."
+    },
+    "final": {
+      "title": "Prontu atu koko Worker?",
+      "cta": "Kria ita-nia konta"
+    }
+  },
+  "auth": {
+    "email": "Email",
+    "password": "Password",
+    "fullName": "Naran kompletu",
+    "confirmPassword": "Konfirma password",
+    "currentPassword": "Password atuál",
+    "newPassword": "Password foun",
+    "confirmNewPassword": "Konfirma password foun",
+    "code6": "Kódigu díjitu 6",
+    "signInFailed": "Tama falla. Verifika ita-nia kredensiál.",
+    "forgotPassword": "Haluha password?",
+    "mfaNotice": "Kódigu one-time haruka liu email atu konfirma tama hotu-hotu.",
+    "createYourAccount": "Kria ita-nia konta",
+    "pwMin": "Liafuan-pase tenke iha karakter {n} ka liu.",
+    "newPwMin": "Liafuan-pase foun tenke iha karakter {n} ka liu.",
+    "pwMismatch": "Liafuan-pase la hanesan.",
+    "createFailed": "La konsege kria konta.",
+    "haveAccount": "Iha ona konta?",
+    "startAtSignIn": "Hahu iha tama ka rejistu.",
+    "goToSignIn": "Bá tama",
+    "invalidCode": "Kódigu la válidu ka expira.",
+    "codeSent": "Kódigu foun haruka ona.",
+    "resendFailed": "La konsege haruka fali.",
+    "verifyEmailTitle": "Verifika ita-nia email",
+    "verifyEmailTo": "Verifika ita-nia email — {email}",
+    "verify": "Verifika",
+    "resendCode": "Haruka fali kódigu",
+    "signInAgain": "Favór tama fali.",
+    "mfaPrompt": "Hatama kódigu tama ne'ebé ami haruka liu email",
+    "mfaPromptTo": "Hatama kódigu tama ne'ebé ami haruka liu email ba {email}",
+    "verifySignIn": "Verifika & tama",
+    "requestFailed": "La konsege prosesa pedidu.",
+    "resetTitle": "Reset ita-nia liafuan-pase",
+    "sendResetCode": "Haruka kódigu reset",
+    "backToSignIn": "Fila ba tama",
+    "resetPrompt": "Hatama kódigu ne'ebé ami haruka liu email no hili liafuan-pase foun",
+    "resetPassword": "Reset liafuan-pase",
+    "setNewPassword": "Define liafuan-pase foun",
+    "forcedChange": "Ba seguransa, define ita-nia liafuan-pase rasik antes kontinua.",
+    "updateAccountPassword": "Atualiza ita-nia liafuan-pase konta.",
+    "changeFailed": "La konsege troka liafuan-pase.",
+    "updatePassword": "Atualiza liafuan-pase",
+    "signOutInstead": "Sai de'it"
+  },
+  "notFound": {
+    "title": "Pájina la hetan",
+    "subtitle": "Pájina ne'e la eziste iha espasu servisu ne'e.",
+    "back": "Fila ba dashboard"
+  },
+  "status": {
+    "draft": "rascunhu",
+    "in_review": "iha revizaun",
+    "approved": "aprovadu",
+    "final": "final",
+    "archived": "arkivadu",
+    "open": "loke",
+    "processing": "prosesamentu",
+    "ready": "prontu",
+    "pending": "pendente",
+    "transcribing": "transkrisaun",
+    "transcribed": "transkritu",
+    "failed": "falla",
+    "sent": "haruka",
+    "received": "simu",
+    "completed": "kompletu",
+    "cancelled": "kansela",
+    "active": "ativu",
+    "suspended": "suspende"
+  },
+  "kind": {
+    "meeting": "reuniaun",
+    "interview": "entrevista",
+    "briefing": "brifing",
+    "dictation": "ditasun",
+    "field_report": "relatóriu kampu",
+    "consultation": "konsultasaun",
+    "other": "seluk"
+  },
+  "classification": {
+    "unclassified": "la klasifika",
+    "internal": "internu",
+    "confidential": "konfidensial",
+    "restricted": "restrita"
+  },
+  "dashboard": {
+    "welcome": "Bemvindu, {name}",
+    "defaultName": "Ofisial",
+    "subtitle": "Ita-nia espasu servisu administrativu — rekolla, redige, revê no arkiva.",
+    "stats": {
+      "sessions": "Sesaun",
+      "documents": "Dokumentu",
+      "awaitingReview": "Hein revizaun",
+      "outstandingActions": "Aksaun pendente"
+    },
+    "recentSessions": "Sesaun foun",
+    "documentsToAction": "Dokumentu atu asaun",
+    "noSessions": "Seidauk iha sesaun.",
+    "nothingToAction": "La iha buat ida presiza ita-nia atensaun."
+  },
+  "sessions": {
+    "subtitle": "Kada sesaun mak hanesan dosi kazu — áudio, transkrisaun, no dokumentu sira ne'ebé prodús husi ne'e.",
+    "new": "Sesaun foun",
+    "createFailed": "La konsege kria sesaun.",
+    "titlePlaceholder": "ezemplu: Komité Seguransa Munisípiu — Brifing Semanal",
+    "create": "Kria sesaun",
+    "empty": "Seidauk iha sesaun. Kria ida atu hahú rekolla.",
+    "fields": {
+      "title": "Títulu",
+      "kind": "Tipu",
+      "date": "Data",
+      "classification": "Klassifikasaun",
+      "status": "Status",
+      "department": "Departamentu",
+      "location": "Fatin"
+    }
+  },
+  "session": {
+    "loadFailed": "La konsege karga sesaun.",
+    "micDenied": "Asesu mikrofone la permite ka la disponivel.",
+    "audioSaved": "Áudio rai ona iha sesaun.",
+    "uploadFailed": "Upload falha.",
+    "transcribing": "Transkrisaun lokal — ida ne'e bele demora ba áudio naruk.",
+    "transcribed": "Transkrisaun kompletu.",
+    "transcribeFailed": "Transkrisaun falha. Verifika servisu STT hala'o.",
+    "updateFailed": "La konsege atualiza.",
+    "draftingMinutes": "Halo minuta rascunhu husi transkrisaun…",
+    "minutesCreated": "Minuta rascunhu kria ona.",
+    "minutesFailed": "La konsege jera minuta.",
+    "notFound": "Sesaun la hetan.",
+    "noDate": "la iha data",
+    "noLocation": "la iha fatin",
+    "generateMinutes": "Jera minuta",
+    "captureAudio": "Kaptura áudio",
+    "stopSave": "Para & rai",
+    "startRecording": "Hahu rekord",
+    "or": "ka",
+    "uploadAudio": "Upload áudio",
+    "audioNote": "Áudio hela iha host. Transkrisaun hala'o lokal iha Inglés. Minuta kombina klip hotu iha sesaun ne'e, tuir orden.",
+    "documentsFrom": "Dokumentu husi sesaun ne'e",
+    "noDocuments": "Seidauk iha dokumentu. Transkrisaun klip ida, depois jera minuta.",
+    "recordingsTitle": "Rekording & transkrisaun",
+    "clipOne": "{n} klip",
+    "clipMany": "{n} klip",
+    "noRecordings": "Seidauk iha rekording. Rekord ka upload áudio iha leten.",
+    "includeTitle": "Inklui klip ne'e bainhira jera minuta",
+    "inMinutes": "Iha minuta",
+    "transcribe": "Transkrisaun",
+    "transcribeHint": "Transkrisaun klip ne'e atu haree no edita nia transkrisaun iha ne'e.",
+    "audioLoadFailed": "La konsege karga áudio.",
+    "loadAudio": "Karga áudio",
+    "words": "{n} liafuan",
+    "verified": "verifikadu",
+    "editVerify": "Edita & verifika",
+    "saveVerified": "Rai & marka verifikadu",
+    "saveDraft": "Rai rascunhu",
+    "emptyTranscript": "Transkrisaun mamuk."
+  },
+  "docType": {
+    "minutes": "minutu",
+    "memo": "memorandu",
+    "letter": "karta",
+    "report": "relatóriu",
+    "policy_brief": "resumu polítika",
+    "briefing_note": "nota informasaun",
+    "concept_note": "nota konzeitu",
+    "circular": "sirkulár",
+    "action_matrix": "matris asaun",
+    "speech": "diskursu"
+  },
+  "approval": {
+    "submit": "submete",
+    "submitted": "submete",
+    "approve": "aprovadu",
+    "approved": "aprovadu",
+    "reject": "rejeitadu",
+    "rejected": "rejeitadu",
+    "finalize": "finalizadu",
+    "finalized": "finalizadu"
+  },
+  "templates": {
+    "memo-standard": {
+      "name": "Memorandu Internu",
+      "desc": "Memorandu internu padraun ho Ba / Husi / Asuntu."
+    },
+    "letter-official": {
+      "name": "Karta Ofisiál",
+      "desc": "Karta formál ba liur iha kabeçalhu eskritóriu."
+    },
+    "circular-general": {
+      "name": "Sirkulár",
+      "desc": "Avisu sirkuladu ba destinatáriu barak."
+    },
+    "report-standard": {
+      "name": "Relatóriu",
+      "desc": "Relatóriu jerál ho rezumu, seksaun no rekomendasaun."
+    },
+    "policy-brief": {
+      "name": "Resumu Polítika",
+      "desc": "Resumu badak ba foti-desizaun."
+    },
+    "briefing-note": {
+      "name": "Nota Informasaun",
+      "desc": "Nota badak atu informa xefe antes enkontru."
+    },
+    "concept-note": {
+      "name": "Nota Konzeitu",
+      "desc": "Eskizu programa ka atividade ne'ebé proposta."
+    },
+    "minutes-blank": {
+      "name": "Minutu Reuniaun (mamuk)",
+      "desc": "Estrutura minutu mamuk atu prenxe ho liman."
+    },
+    "speech-remarks": {
+      "name": "Diskursu / Komentáriu",
+      "desc": "Komentáriu formál ba eventu ida."
+    }
+  },
+  "documents": {
+    "subtitle": "Minutu, memorandu, karta, relatóriu no rezumu — redige ho IA, aprovadu husi ema.",
+    "startFromTemplate": "Hahu husi template",
+    "fromSpreadsheet": "Relatóriu husi spreadsheet",
+    "draftWithAI": "Redige ho IA",
+    "templateTitle": "Hahu husi template ida",
+    "allTypes": "Tipu hotu",
+    "orgTemplates": "Template sira husi ita-nia organizasaun",
+    "savedByOrg": "Salva husi ita-nia organizasaun",
+    "useTemplate": "Uza template ida ne'e",
+    "generalTemplates": "Template jerál sira",
+    "spreadsheetFailed": "La konsege kria relatóriu husi spreadsheet ida ne'ebá.",
+    "templateFailed": "La konsege kria husi template.",
+    "draftFailed": "La konsege redige dokumentu.",
+    "fields": {
+      "type": "Tipu dokumentu",
+      "title": "Títulu",
+      "recipient": "Simu-na'in (opsionál)",
+      "department": "Departamentu (opsionál)",
+      "brief": "Instrusaun / rezumu"
+    },
+    "briefPlaceholder": "Deskreve objetivu, pontu xave sira, no fatu ruma atu inklui. Asistente sei redige dokumentu formál ida ne'ebé ita bele edita no aprova.",
+    "generateDraft": "Jera rascunhu",
+    "empty": "Seidauk iha dokumentu.",
+    "table": {
+      "title": "Títulu",
+      "type": "Tipu",
+      "ref": "Ref.",
+      "status": "Status",
+      "ver": "Ver."
+    }
+  },
+  "doc": {
+    "loadFailed": "La konsege karrega dokumentu.",
+    "invalidJson": "Konteúdu la'ós JSON válidu.",
+    "saved": "Salva ona. Versaun aumenta.",
+    "saveFailed": "Salva falha.",
+    "done": {
+      "submit": "Dokumentu submete ona ba revizaun.",
+      "approve": "Dokumentu aprovadu ona.",
+      "reject": "Dokumentu rejeitadu ona.",
+      "finalize": "Dokumentu finaliza ona."
+    },
+    "failed": {
+      "submit": "La konsege submete.",
+      "approve": "La konsege aprova.",
+      "reject": "La konsege rejeita.",
+      "finalize": "La konsege finaliza."
+    },
+    "templateName": "Naran template",
+    "templateDefault": "Template {title}",
+    "templateSaved": "Rai ona nu'udar template ne'ebé bele uza fila-fila ba ita-nia organizasaun.",
+    "templateSaveFailed": "La konsege rai template.",
+    "exportFailed": "Eksporta falla.",
+    "notFound": "Dokumentu la hetan.",
+    "exportDocx": "Eksporta DOCX",
+    "exportPptx": "Eksporta PPTX",
+    "exportXlsx": "Eksporta XLSX",
+    "saveAsTemplate": "Rai nu'udar template",
+    "content": "Konteúdu",
+    "workflow": "Fluxu servisu",
+    "aiAssisted": "Raskunhu ne'ebé asistidu husi IA",
+    "auditChain": "Kadeia audit: áudio → transkrisaun → raskunhu IA → edisaun umanu → aprovasaun → final. Pasu hotu-hotu rejistradu.",
+    "comment": "Komentáriu (opsional)",
+    "commentPlaceholder": "Aumenta nota ba rejistu",
+    "submit": "Haruka ba revizaun",
+    "approve": "Aprova",
+    "reject": "Rejeita",
+    "finalize": "Finaliza",
+    "finalLocked": "Final — xave ona ba edisaun",
+    "editJson": "Edita konteúdu (JSON)",
+    "jsonNote": "Konteúdu estruturado mak orienta DOCX ne'ebé iha marka. Edita kampu sira iha okos no rai; marka no layout aplika automatikamente bainhira eksporta.",
+    "saveContent": "Rai konteúdu",
+    "approvalHistory": "Istória aprovasaun"
+  },
+  "emails": {
+    "subtitle": "Raskunhu karta no email ho IA. La iha buat ida mak haruka to'o ema ida klik haruka.",
+    "needIntent": "Fó ba asistenti kona-ba asuntu ka intensaun atu raskunhu.",
+    "draftReady": "Raskunhu prontu. Reviza no edita antes haruka.",
+    "draftFailed": "Raskunhu falla.",
+    "draftSaved": "Raskunhu rai ona.",
+    "saveFailed": "La konsege rai.",
+    "confirmSend": "Haruka email ne'e agora? Asaun ne'e rejistradu iha trilha audit.",
+    "sent": "Email haruka ona.",
+    "sendFailed": "Haruka falla.",
+    "compose": "Kompoin",
+    "messages": "Mensajen sira",
+    "empty": "Seidauk iha korrespondénsia.",
+    "message": "Mensajen",
+    "details": "Detallu sira",
+    "to": "Ba",
+    "cc": "Cc",
+    "subject": "Asuntu",
+    "intent": "Saida mak ida ne'e tenke dehan? (ba AI)",
+    "intentPlaceholder": "ezemplu: Konvida xefes ba baraza seguransa iha Sesta 10am",
+    "body": "Konteudu",
+    "saveDraft": "Rai rascunhu",
+    "toLabel": "Ba:",
+    "ccLabel": "Cc:",
+    "subjectLabel": "Asuntu:",
+    "aiAssisted": "AI ajuda",
+    "sendNow": "Haruka agora",
+    "selectHint": "Hili mensajen ida ka hakerek foun ida."
+  },
+  "knowledge": {
+    "subtitle": "Materiál referénsia ne'ebé asistenti bele uza — polítika, template, precedent.",
+    "added": "Aumenta ona ba base koñesimentu.",
+    "addFailed": "La bele aumenta.",
+    "chooseFile": "Hili file ida atu upload.",
+    "ocrFailed": "File rai ona. OCR la bele lee testu husi file ida ne'e (bele fali kualidade ki'ik). Bele paste testu manualmente.",
+    "extracted": "File rai ona no {n} karakter testu extrai ona.",
+    "noText": "File rai ona. La bele extrai testu husi formatu ida ne'e.",
+    "uploadFailed": "Upload falha.",
+    "confirmRemove": "Hasai referénsia ida ne'e?",
+    "uploadTitle": "Upload dokumentu ida",
+    "file": "File",
+    "titleOptional": "Títulu (opsional)",
+    "titleDefault": "Default ba naran file",
+    "categoryOptional": "Kategoria (opsional)",
+    "uploadExtract": "Upload & extrai",
+    "uploadNote": "Word, PDF, CSV no file testu extrai sira-nia testu automatikamente. PDF skane no foto lee automatikamente ho OCR.",
+    "pasteTitle": "Aumenta referénsia (paste testu)",
+    "title": "Títulu",
+    "category": "Kategoria",
+    "categoryPlaceholder": "ezemplu: Sirkulár, Polítika",
+    "textContent": "Konteudu testu",
+    "add": "Aumenta",
+    "references": "Referénsia",
+    "empty": "Seidauk iha buat ida.",
+    "uncategorised": "La kategoriza",
+    "remove": "Hasai"
+  },
+  "assistant": {
+    "subtitle": "Fó instrusaun iha Inglés simples — sumariza, buka, hakerek ka esplika iha ita-nia espasu servisu.",
+    "failed": "Asistenti la bele prosesa ida ne'e.",
+    "instruction": "Instruksaun",
+    "placeholder": "Ezemplu: Sumariza desizaun sira husi komité seguransa semana ne'e, ka lista memorandu sira ne'ebé seidauk hetan aprovasaun.",
+    "ask": "Husik"
+  },
+  "actions": {
+    "subtitle": "Item asaun sira ne'ebé extrai husi minutu no matriz asaun iha sesaun hotu.",
+    "empty": "La hetan asaun sira ne'ebé seidauk rezolve.",
+    "table": {
+      "action": "Asaun",
+      "responsible": "Responsável",
+      "timeline": "Kronograma",
+      "source": "Fonte"
+    }
+  },
+  "paypal": {
+    "title": "Pagamentu PayPal",
+    "subtitle": "Konfirmasaun pagamentu subskrisaun.",
+    "confirming": "Konfirma ita-nia pagamentu PayPal...",
+    "noOrder": "La iha orden PayPal ne'ebé fila fali.",
+    "confirmed": "Pagamentu konfirmadu. Ita-nia subskrisaun Worker agora ativu.",
+    "failed": "Pagamentu PayPal la bele konfirma.",
+    "success": "Pagamentu susesu",
+    "viewSubscription": "Haree subskrisaun",
+    "errorTitle": "Pagamentu la bele konfirma",
+    "returnToSubscription": "Fila ba subskrisaun"
+  },
+  "tenant": {
+    "saved": "Detallu organizasaun rai ona. Sira aparexe iha dokumentu hotu ne'ebé ita exporta.",
+    "saveFailed": "La bele rai.",
+    "logoUploaded": "Logo upload ona.",
+    "signatureUploaded": "Asinatura upload ona.",
+    "uploadFailed": "Upload falha.",
+    "subtitleShort": "Branding ba ita-nia espasu servisu.",
+    "noOrg": "Konta ne'e la asosia ho organizasaun ida.",
+    "subtitle": "Ita-nia naran, letterhead, logo no asinatura aparexe iha dokumentu hotu ne'ebé ita jera.",
+    "letterhead": "Letterhead",
+    "orgName": "Naran organizasaun",
+    "line": "Linha letterhead {n}",
+    "line1Placeholder": "Ezemplu: GOBERNU DISTRITU ...",
+    "line2Placeholder": "Ezemplu: Departamentu ...",
+    "line3Placeholder": "Ezemplu: Unidade / Eskritóriu",
+    "saveLetterhead": "Rai letterhead",
+    "blankHint": "Husu linha sira mamuk atu fila fali ba ita-nia naran organizasaun.",
+    "logoSignature": "Logo & asinatura",
+    "logo": "Krest / logo (PNG ka JPG)",
+    "signature": "Asinatura-e (PNG ka JPG)",
+    "uploaded": "upload ona",
+    "brandingNote": "Logo aparexe iha header dokumentu no iha pájina titulu slide. Asinatura tau iha rohan dokumentu sira ne'ebé exporta. Uza PNG ho fundu transparente ba rezultadu di'ak liu."
+  },
+  "users": {
+    "createdTemp": "Uza-na'in kria ona. Liafuan-passe temporáriu: {temp} — fahe ho seguransa; tenke troka iha login dahuluk.",
+    "created": "Uza-na'in kria ona.",
+    "createFailed": "La konsege kria uza-na'in.",
+    "confirmRemove": "Hasai {name}?",
+    "removeFailed": "La konsege hasai.",
+    "subtitle": "Jere asesu. Konta superadmin la bele modifika iha ne'e.",
+    "add": "Aumenta uza-na'in",
+    "create": "Kria uza-na'in",
+    "empty": "Laiha uza-na'in.",
+    "fields": {
+      "name": "Naran",
+      "email": "Email",
+      "role": "Kargu",
+      "department": "Departamentu",
+      "status": "Estatutu"
+    },
+    "suspend": "Suspende",
+    "reinstate": "Restaura",
+    "remove": "Hasai"
+  },
+  "audit": {
+    "subtitle": "Asaun importante hotu-hotu rejistadu. Logs iha de'it metadadus no identifikadores — la iha dokumentu korpu ka audio.",
+    "empty": "Laiha rejistu auditória.",
+    "table": {
+      "when": "Bainhira",
+      "actor": "Atór",
+      "action": "Asaun",
+      "resource": "Rekursu"
+    },
+    "system": "sistema"
+  },
+  "payments": {
+    "stkSent": "STK push haruka ona. Husu pagadór aprova iha nia telefone.",
+    "initiateFailed": "La konsege hahú pagamentu.",
+    "subtitle": "Transaksaun M-Pesa (Daraja STK push) no PayPal.",
+    "requestTitle": "Husu pagamentu M-Pesa",
+    "phone": "Telefone (07.. ka 2547..)",
+    "amountKes": "Montante (KES)",
+    "purpose": "Objetivu",
+    "sendStk": "Haruka STK push",
+    "transactions": "Transaksaun",
+    "empty": "Laiha transaksaun.",
+    "table": {
+      "provider": "Fornesedór",
+      "amount": "Montante",
+      "status": "Estatutu",
+      "ref": "Ref."
+    }
+  },
+  "billing": {
+    "subtitle": "Fatura no resibu ba pagamentu subskrisaun Worker ne'ebé kompletu.",
+    "loadFailed": "La konsege karrega dokumentu fatura.",
+    "downloadFailed": {
+      "invoice": "La bele download invoice.",
+      "receipt": "La bele download resibu."
+    },
+    "documentsTitle": "Dokumentu billing",
+    "intro": "Download invoice no resibu ba pagamentu subskripsaun ne'ebé kompletu husi ita-nia organizasaun.",
+    "disclaimer": "Dokumentu sira ne'e rejista pagamentu subskripsaun Worker no fornese ba objetivu pagamentu no reembolsu. Sira la reprezenta hanesan invoice tax KRA/eTIMS mesmu se emite ketak liu husi integrasaun eTIMS ne'ebé konforme.",
+    "invoices": "Invoice",
+    "noInvoices": "Seidauk iha invoice.",
+    "receipts": "Resibu",
+    "noReceipts": "Seidauk iha resibu.",
+    "downloadPdf": "Download PDF",
+    "table": {
+      "invoice": "Invoice",
+      "receipt": "Resibu",
+      "date": "Data",
+      "description": "Deskrisaun",
+      "amount": "Montante",
+      "status": "Status",
+      "provider": "Fornesedór",
+      "reference": "Referénsia"
+    }
+  },
+  "subscription": {
+    "loadFailed": "La bele karga subskripsaun.",
+    "selectFirst": "Hili uluk planu subskripsaun ida.",
+    "mpesaSent": "M-Pesa STK push haruka ona. Aprova pagamentu iha ita-nia telefone. Ita-nia subskripsaun sei ativa hafoin konfirmasaun pagamentu.",
+    "mpesaFailed": "La bele inisia pagamentu M-Pesa.",
+    "noApproveUrl": "URL aprovasaun PayPal la fila fali.",
+    "paypalFailed": "La bele hahú pagamentu PayPal.",
+    "subtitleShort": "Jere ita-nia subskripsaun Worker.",
+    "subtitle": "Jere ita-nia planu Worker, trial no billing.",
+    "current": "Subskripsaun atuál",
+    "organisation": "Organizasaun",
+    "status": "Status",
+    "plan": "Planu",
+    "freeTrial": "Trial grátis loron 14",
+    "trialEnds": "Trial remata",
+    "dayRemaining": "Loron {n} sei hela",
+    "daysRemaining": "Loron {n} sei hela",
+    "renewsEnds": "Renova / remata",
+    "chooseTitle": "Hili planu ida",
+    "chooseSubtitle": "Planu hotu inklui fluxu servisu administrativu Worker. Ita-nia trial loron 14 grátis.",
+    "perMonth": "/ fulan",
+    "planSelected": "{plan} hili ona. Ita-nia planu rai ona no prontu ba pagamentu.",
+    "selectFailed": "La bele hili planu.",
+    "selected": "Selecionadu",
+    "selectPlan": "Hili planu",
+    "activateTitle": "Ativa ita-nia subskripsaun",
+    "selectAbove": "Hili planu ida iha leten atu kontinua ba pagamentu.",
+    "stkNote": "STK push ida sei haruka ba númeru telefone iha kraik.",
+    "phone": "Númeru telefone",
+    "phonePlaceholder": "07.. ka 2547..",
+    "payMpesa": "Selu ho M-Pesa",
+    "paypalNote": "Kontinua ba PayPal atu selu planu ne'ebé hili ona iha USD.",
+    "payPaypal": "Selu ho PayPal",
+    "settleNote": "Subskripsaun ne'ebé selu ona bele rezolve liu husi M-Pesa ka PayPal.",
+    "activationNote": "Ita-nia planu ne'ebé hili ona sei ativa hafoin konfirmasaun pagamentu susesu.",
+    "historyNote": "Istória pagamentu disponível iha Administrasaun → Pagamentus."
+  },
+  "intl": {
+    "territory": "Territóriu",
+    "searchTerritory": "Buka territóriu…",
+    "selectTerritory": "Hili ita-nia territóriu",
+    "territoryRequired": "Favor hili ita-nia territóriu.",
+    "workingLanguage": "Lian servisu",
+    "meetingLanguage": "Lian reuniaun",
+    "useDefault": "Padraun organizasaun",
+    "beta": "transkrisaun beta",
+    "unavailable": "la iha transkrisaun"
+  },
+  "generate": {
+    "title": "Jera dokumentu husi sesaun ida-ne'e",
+    "as": "Jera hanesan",
+    "instructions": "Instrusaun (opsional)",
+    "placeholder": "ezemplu: Karta ba Sekretáriu Permanente ne'ebé rezume desizaun 2 no 3",
+    "button": "Jera",
+    "working": "Halo eskrita ita-nia dokumentu… ne'e bele foti minutu ida.",
+    "done": "Dokumentu kria ona.",
+    "failed": "La bele jera dokumentu.",
+    "hint": "Uza transkrisaun sira ne'ebé marka ona atu inklui, tuir orden. Ita reviza no aprova antes buat ruma fahe."
+  },
+  "queue": {
+    "queued": "Fila ba transkrisaun. Pájina ida-ne'e atualiza automatikamente."
+  },
+  "pdfExport": {
+    "button": "Esporta PDF"
+  },
+  "access": {
+    "readOnly": "Ita-nia espasu servisu read-only tanba ita-nia prova ka subskripsaun remata ona. Ita sei bele haree no esporta ita-nia dokumentu sira.",
+    "grace": "Ita-nia prova ka subskripsaun remata iha {date}. Ita iha {n} loron asesu kompletu nafatin.",
+    "trialEnding": "Ita-nia prova grátis remata iha {n} loron.",
+    "choosePlan": "Hili planu ida"
+  },
+  "sessionLang": {
+    "saved": "Lian reuniaun rai ona. Aplikavel ba gravasaun sira ne'ebé transkrisa husi agora ba oin.",
+    "failed": "La bele rai lian reuniaun."
+  },
+  "i18nNote": {
+    "machine": "Tradusaun mákina"
+  }
+}
