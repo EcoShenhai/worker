@@ -635,5 +635,16 @@
     "useDefault": "Langue par défaut de l’organisation",
     "beta": "transcription bêta",
     "unavailable": "pas de transcription"
+  },
+  "generate": {
+    "title": "Générer un document à partir de cette séance",
+    "as": "Générer en tant que",
+    "instructions": "Instruction (facultative)",
+    "placeholder": "ex. Lettre au Secrétaire permanent résumant les décisions 2 et 3",
+    "button": "Générer",
+    "working": "Rédaction de votre document… cela peut prendre une minute.",
+    "done": "Document créé.",
+    "failed": "Impossible de générer le document.",
+    "hint": "Utilise les transcriptions cochées, dans l’ordre. Vous relisez et approuvez avant tout partage."
   }
 }

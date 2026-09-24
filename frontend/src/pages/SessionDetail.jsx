@@ -119,6 +119,29 @@ export default function SessionDetail() {
     }
   };
 
+  const DOC_TYPES = ['minutes', 'memo', 'letter', 'report', 'policy_brief', 'briefing_note', 'concept_note', 'circular', 'action_matrix', 'speech'];
+  const [genType, setGenType] = useState('minutes');
+  const [genNote, setGenNote] = useState('');
+  const typeLabel = (x) => {
+    const key = `docType.${x}`;
+    const s = t(key);
+    const txt = s && s !== key ? s : x.replace(/_/g, ' ');
+    return txt.charAt(0).toUpperCase() + txt.slice(1);
+  };
+  const generateDocument = async () => {
+    setBusy('generate');
+    setMsg({ type: 'warn', text: t('generate.working') });
+    try {
+      const { data } = await api.post(`/sessions/${id}/generate`, { type: genType, instructions: genNote });
+      const doc = data.document || data;
+      setMsg({ type: 'ok', text: t('generate.done') });
+      navigate(`/documents/${doc.id}`);
+    } catch (e) {
+      setMsg({ type: 'err', text: e.response?.data?.message || t('generate.failed') });
+      setBusy('');
+    }
+  };
+
   if (loading) return <div className="empty"><span className="spinner" /></div>;
   if (!session) return <Empty>{t('session.notFound')}</Empty>;
 
@@ -138,6 +161,25 @@ export default function SessionDetail() {
         }
       />
       {msg && <Notice type={msg.type}>{msg.text}</Notice>}
+      {hasTranscript && (
+        <div className="card" style={{ marginBottom: '1rem' }}>
+          <div className="card-head"><h3>{t('generate.title')}</h3></div>
+          <div className="card-body">
+            <div className="grid cols-2">
+              <div className="field"><label>{t('generate.as')}</label>
+                <select value={genType} onChange={(e) => setGenType(e.target.value)}>
+                  {DOC_TYPES.map((x) => <option key={x} value={x}>{typeLabel(x)}</option>)}
+                </select>
+              </div>
+              <div className="field"><label>{t('generate.instructions')}</label>
+                <input value={genNote} maxLength={2000} onChange={(e) => setGenNote(e.target.value)} placeholder={t('generate.placeholder')} />
+              </div>
+            </div>
+            <button className="btn" onClick={generateDocument} disabled={busy === 'generate'}>{busy === 'generate' ? <span className="spinner" /> : t('generate.button')}</button>
+            <p className="muted" style={{ fontSize: '0.8rem', marginTop: '0.6rem', marginBottom: 0 }}>{t('generate.hint')}</p>
+          </div>
+        </div>
+      )}
 
       <div className="grid cols-2" style={{ marginBottom: '1rem' }}>
         <div className="card">

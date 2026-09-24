@@ -634,5 +634,16 @@
     "useDefault": "Organisation default",
     "beta": "transcription beta",
     "unavailable": "no transcription"
+  },
+  "generate": {
+    "title": "Generate a document from this session",
+    "as": "Generate as",
+    "instructions": "Instruction (optional)",
+    "placeholder": "e.g. Letter to the Permanent Secretary summarising decisions 2 and 3",
+    "button": "Generate",
+    "working": "Drafting your document… this can take a minute.",
+    "done": "Document created.",
+    "failed": "Could not generate the document.",
+    "hint": "Uses the transcripts ticked for inclusion, in order. You review and approve before anything is shared."
   }
 }
