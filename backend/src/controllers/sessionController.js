@@ -1,4 +1,5 @@
 'use strict';
+const { normLanguage } = require('../utils/international');
 const { WorkspaceSession, Recording, Transcript, Document } = require('../models');
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
@@ -15,7 +16,7 @@ const list = asyncHandler(async (req, res) => {
 });
 
 const create = asyncHandler(async (req, res) => {
-  const { title, kind, department, classification, occurredOn, location, attendees, agenda, notes } = req.body;
+  const { title, kind, department, classification, occurredOn, location, language, attendees, agenda, notes } = req.body;
   if (!title) throw ApiError.badRequest('title is required');
   const session = await WorkspaceSession.create({
     title,
@@ -24,6 +25,7 @@ const create = asyncHandler(async (req, res) => {
     classification: classification || 'internal',
     occurredOn: occurredOn || null,
     location,
+    language: normLanguage(language),
     attendees: Array.isArray(attendees) ? attendees : [],
     agenda: Array.isArray(agenda) ? agenda : [],
     notes,
@@ -49,6 +51,7 @@ const update = asyncHandler(async (req, res) => {
   const session = await WorkspaceSession.findByPk(req.params.id);
   if (!owns(req, session)) throw ApiError.notFound('Session not found');
   const fields = ['title', 'kind', 'department', 'classification', 'occurredOn', 'location', 'attendees', 'agenda', 'notes', 'status'];
+  if (req.body.language !== undefined) session.language = normLanguage(req.body.language);
   fields.forEach((f) => {
     if (req.body[f] !== undefined) session[f] = req.body[f];
   });

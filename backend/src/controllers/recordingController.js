@@ -1,4 +1,5 @@
 'use strict';
+const { resolveSttLanguage } = require('../utils/international');
 const fs = require('fs/promises');
 const fss = require('fs');
 const path = require('path');
@@ -56,6 +57,8 @@ const transcribe = asyncHandler(async (req, res) => {
   if (!recording) throw ApiError.notFound('Recording not found');
   if (recording.status === 'transcribing') throw ApiError.conflict('Already transcribing');
 
+  const sttLanguage = await resolveSttLanguage(recording);
+
   recording.status = 'transcribing';
   recording.error = null;
   await recording.save();
@@ -63,7 +66,7 @@ const transcribe = asyncHandler(async (req, res) => {
   const filePath = await storage.readPath(recording.storageKey);
 
   try {
-    const result = await STTService.transcribe(filePath, {});
+    const result = await STTService.transcribe(filePath, { language: sttLanguage });
     const t = await sequelize.transaction(async (tx) => {
       // Replace any prior transcript for this recording.
       await Transcript.destroy({ where: { recordingId: recording.id }, transaction: tx });

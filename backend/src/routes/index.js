@@ -2,6 +2,7 @@
 const router = require('express').Router();
 
 router.use('/auth', require('./authRoutes'));
+router.use('/meta', require('./metaRoutes')); // public: territory & language options
 router.use('/sessions', require('./sessionRoutes'));
 router.use('/recordings', require('./recordingRoutes'));
 router.use('/transcripts', require('./transcriptRoutes'));

@@ -1,4 +1,5 @@
 'use strict';
+const { normTerritory, normLanguage, defaultLanguageFor } = require('../utils/international');
 const { trialDates } = require('../services/payments/trial');
 const crypto = require('crypto');
 const jwt = require('jsonwebtoken');
@@ -36,18 +37,20 @@ async function issueTokens(req, user) {
 }
 
 const register = asyncHandler(async (req, res) => {
-  const { name, email, password } = req.body;
+  const { name, email, password, territory: rawTerritory, language: rawLanguage } = req.body;
   if (!name || !email || !password) throw ApiError.badRequest('Name, email and password are required');
   if (String(password).length < MIN_PASSWORD) throw ApiError.badRequest(`Password must be at least ${MIN_PASSWORD} characters`);
   const normEmail = String(email).trim().toLowerCase();
   const existing = await User.findOne({ where: { email: normEmail } });
   if (existing) throw ApiError.conflict('An account with this email already exists');
+  const territory = normTerritory(rawTerritory);
+  const defaultLanguage = normLanguage(rawLanguage) || (territory ? defaultLanguageFor(territory) : null);
   const user = User.build({ name: String(name).trim(), email: normEmail, role: 'admin', status: 'active' });
   await user.setPassword(String(password));
   user.emailVerified = false;
   await user.save();
   // Every self-registration starts a brand-new tenant, owned by this user.
-  const tenant = await Tenant.create({ name: `${String(name).trim()} (Workspace)`, ownerId: user.id, ...trialDates() });
+  const tenant = await Tenant.create({ name: `${String(name).trim()} (Workspace)`, ownerId: user.id, territory, defaultLanguage, ...trialDates() });
   user.tenantId = tenant.id;
   await user.save();
   await codeService.issueCode({ userId: user.id, email: user.email, name: user.name, purpose: 'verify_email' });

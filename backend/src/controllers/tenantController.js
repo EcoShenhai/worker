@@ -1,4 +1,5 @@
 'use strict';
+const { normTerritory, normLanguage } = require('../utils/international');
 const path = require('path');
 const fs = require('fs/promises');
 const { Tenant } = require('../models');
@@ -19,6 +20,7 @@ const get = asyncHandler(async (req, res) => {
     tenant: {
       id: t.id, name: t.name,
       letterheadLine1: t.letterheadLine1, letterheadLine2: t.letterheadLine2, letterheadLine3: t.letterheadLine3,
+      territory: t.territory, defaultLanguage: t.defaultLanguage,
       hasLogo: !!t.logoKey, hasSignature: !!t.signatureKey,
       subscriptionPlan: t.subscriptionPlan,
       subscriptionStatus: t.subscriptionStatus,
@@ -34,6 +36,8 @@ const get = asyncHandler(async (req, res) => {
 const update = asyncHandler(async (req, res) => {
   const t = await myTenant(req);
   if (!t) throw ApiError.badRequest('No tenant associated with this account');
+  if (req.body.territory !== undefined) t.territory = normTerritory(req.body.territory);
+  if (req.body.defaultLanguage !== undefined) t.defaultLanguage = normLanguage(req.body.defaultLanguage);
   ['name', 'letterheadLine1', 'letterheadLine2', 'letterheadLine3'].forEach((f) => {
     if (req.body[f] !== undefined) t[f] = req.body[f] === '' ? null : req.body[f];
   });

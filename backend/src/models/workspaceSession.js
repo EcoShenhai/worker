@@ -32,6 +32,7 @@ module.exports = (sequelize) => {
       },
       occurredOn: { type: DataTypes.DATEONLY, allowNull: true },
       location: { type: DataTypes.STRING, allowNull: true },
+      language: { type: DataTypes.STRING(8), allowNull: true },
       // Free-form attendee list captured by the officer before/after the meeting.
       attendees: { type: DataTypes.JSONB, allowNull: false, defaultValue: [] },
       agenda: { type: DataTypes.JSONB, allowNull: false, defaultValue: [] },

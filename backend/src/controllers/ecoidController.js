@@ -1,4 +1,5 @@
 'use strict';
+const { normTerritory, normLanguage, defaultLanguageFor } = require('../utils/international');
 const { trialDates } = require('../services/payments/trial');
 /**
  * "Continue with EcoID" for Worker — additive; email + password + emailed code is unchanged.
@@ -58,12 +59,14 @@ const register = asyncHandler(async (req, res) => {
     return res.status(409).json({ message: 'A Worker account with this email already exists. Sign in with your email and password, then link EcoID from your account.', code: 'EMAIL_EXISTS' });
   }
   const workspace = String(b.workspaceName || '').trim() || `${name} (Workspace)`;
+  const territory = normTerritory(b.territory);
+  const defaultLanguage = normLanguage(b.language) || (territory ? defaultLanguageFor(territory) : null);
 
   const user = User.build({ name, email: profile.email, role: 'admin', status: 'active', globalEcoId: claims.sub });
   await user.setPassword(crypto.randomBytes(32).toString('base64url')); // unusable; owner may set one via "Forgot password"
   user.emailVerified = true; // verified by EcoID
   await user.save();
-  const tenant = await Tenant.create({ name: workspace, ownerId: user.id, ...trialDates() });
+  const tenant = await Tenant.create({ name: workspace, ownerId: user.id, territory, defaultLanguage, ...trialDates() });
   user.tenantId = tenant.id;
   await user.save();
   await record(req, 'auth.register.ecoid', user.id);
