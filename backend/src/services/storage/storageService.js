@@ -48,27 +48,24 @@ const localDriver = {
   },
 };
 
-// Placeholder for DO Spaces (S3-compatible). Wire up @aws-sdk/client-s3 here.
-const spacesDriver = {
-  async saveFromPath() {
-    throw new Error('Spaces driver not configured. Set STORAGE_DRIVER=local or implement spacesDriver.');
-  },
-  async saveBuffer() {
-    throw new Error('Spaces driver not configured.');
-  },
-  async readPath() {
-    throw new Error('Spaces driver not configured.');
-  },
-  async delete() {
-    throw new Error('Spaces driver not configured.');
-  },
-};
-
-const driver = config.storage.driver === 'spaces' ? spacesDriver : localDriver;
-logger.info(`Storage driver: ${config.storage.driver}`);
+// DigitalOcean Spaces: used only when STORAGE_DRIVER=spaces AND every SPACES_* value is set (no CHANGE_ME).
+// Otherwise stay on local storage and log why, never crash and never run half-configured.
+const { createSpacesDriver, spacesConfigProblems } = require('./spacesDriver');
+let activeDriver = 'local';
+let driver = localDriver;
+if (config.storage.driver === 'spaces') {
+  const problems = spacesConfigProblems(config.storage.spaces);
+  if (problems.length) {
+    logger.error(`Spaces storage requested but not configured (${problems.join(', ')}). Using local storage.`);
+  } else {
+    driver = createSpacesDriver(config.storage.spaces, localDriver);
+    activeDriver = 'spaces';
+  }
+}
+logger.info(`Storage driver: ${activeDriver}`);
 
 module.exports = {
-  driver: config.storage.driver,
+  driver: activeDriver,
   datedKey,
   saveFromPath: (...a) => driver.saveFromPath(...a),
   saveBuffer: (...a) => driver.saveBuffer(...a),
