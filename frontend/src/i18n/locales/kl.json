@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI-naqiterisarfik allaffimmut",
     "secureWorkspace": "Allaffik isumannaatsumik naqiterisarfik",
-    "badge": "Tuluttut · Nipit"
+    "badge": "Multilingual · Audio"
   },
   "nav": {
     "dashboard": "Takussutissiaq",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Oqaatit allagartuunngortikkit, naqiterneqartumik.",
       "body": "Worker tassaavoq AI-p allaffimmut naqiterisarfia organisationinut, katilluinerit, nalunaarsuinerit allakkat-llu allagartuutinik amerlasuunik pilersitsisartunut. Katilluineq nipilersornerluunniit nalunaarsoruk, Worker-ip allattorsimassiuvoq, katilluinerit nalunaarsorlugit, memorandumit, allakkat, nalunaarusiat politikamut-llu nalunaarsuinerit pilersissavai, aqunneqarnermut akuerineqarnermullu ingerlaneranni — kontrollip malittarisaa tamakkerlugu.",
-      "badgeRow": "Nipit · Tuluttut · Naqiterisarfik isumannaatsumik"
+      "badgeRow": "Audio · 72 languages · Secure workplace"
     },
     "what": {
       "title": "Worker-ip suna sulivoq",
       "lead": "Allaffimmi suliat nalinginnaasut katilluinerit allakkat-llu eqqaani — minutsinik suliarineqartarput, nalunaaquttanik-lluunniit.",
       "f1": {
         "title": "Nalunaarsoruk & allattorsimassioruk",
-        "body": "Katilluinerit, aperinernit, nalunaarsuinerit imaluunniit nipilersornerit nalunaarsorukkit. Nipit tuluttut nunaqarfimmi allattorsimassiorneqartarput."
+        "body": "Capture meetings, interviews, briefings or dictation. Audio is transcribed on Worker's own servers in 67 languages."
       },
       "f2": {
         "title": "AI-mik allappoq",
@@ -231,7 +231,7 @@
     "micDenied": "Microfoni atorsinnaanngilaq imaluunniit atuutinngilaq.",
     "audioSaved": "Nipilersuut sessionimut toqqorneqarpoq.",
     "uploadFailed": "Nassiussineq naalungilaq.",
-    "transcribing": "Nipilersuut nalunaarsorneqarpoq – sivisunerusumik nipilersuutini sivisunerusumik naalungassaaq.",
+    "transcribing": "Transcribing on Worker's servers — this can take a moment for longer audio.",
     "transcribed": "Nalunaarsorneq naammassivoq.",
     "transcribeFailed": "Nalunaarsorneq naalungilaq. STT-p suliaqarnissaa takukkit.",
     "updateFailed": "Nutarterineq naalungilaq.",
@@ -247,7 +247,7 @@
     "startRecording": "Nalunaarsorneq aallartippoq",
     "or": "imaluunniit",
     "uploadAudio": "Nipilersuut nassiuguk",
-    "audioNote": "Nipilersuut hostimiissaaq. Nalunaarsorneq tulattumi tulattumit tulattumik tulattumik. Nalunaarsuutit sessionimi nipilersuutit tamarmik ataatsimut katersorneqarput, ingerlanerit malillugit.",
+    "audioNote": "Audio stays on Worker's servers and is transcribed automatically in the session's meeting language. Documents combine the ticked clips in this session, in order.",
     "documentsFrom": "Sessionimit dokumentit",
     "noDocuments": "Dokumentit suli nassaarneqanngillat. Nipilersuut nalunaarsoruk, nalunaarsuutit pilersikkit.",
     "recordingsTitle": "Nalunaarsorneq & nalunaarsuutit",
@@ -460,7 +460,7 @@
     "remove": "Peeruk"
   },
   "assistant": {
-    "subtitle": "Tulattumik qalipaatigut nalunaarutiguk — naatsorsuigit, naniigit, allaguk imaluunniit nassuiaagit suliffissuarni.",
+    "subtitle": "Give an instruction in plain language — summarise, find, draft or explain across your workspace.",
     "failed": "Ikiorsiisoq taanna suliaqarsinnaanngilaq.",
     "instruction": "Naliliinermut",
     "placeholder": "Assersuut: ukiortaami ingerlanermi naliliinermut ataatsimiititaliap aalajangiisai naatsorsuutigineqassapput, imaluunniit nalunaarsuutit akuerineqarnissaminnik utaqqisut allattorsimaffigineqassapput.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Maskiinumik nutarterneqarsimasut"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administrative workplace",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker generates administrative documents; authorised users remain responsible for review and approval."
+  },
+  "ecoidReg": {
+    "continue": "Continue with EcoID",
+    "redirecting": "Redirecting to EcoID…",
+    "startFailed": "Could not start EcoID sign-in. Please try again.",
+    "finish": "Finish creating your Worker account",
+    "signingUpAs": "Signing up with EcoID as",
+    "workspaceName": "Workspace name",
+    "workspaceExample": "e.g. Acme Ltd",
+    "adminNote": "You'll be the admin of a new workspace and can invite colleagues later.",
+    "expired": "Your EcoID session expired. Please sign in again.",
+    "createFailed": "Could not create your account.",
+    "goToSignIn": "Go to sign in",
+    "haveAccount": "Already have a Worker account?",
+    "thenLink": "then link EcoID from your account."
   }
 }

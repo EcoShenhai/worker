@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI vinnusvæði fyrir stjórnsýslu",
     "secureWorkspace": "Öruggt vinnusvæði fyrir stjórnsýslu",
-    "badge": "Enska · Hljóð"
+    "badge": "Fjöltyngt · Hljóð"
   },
   "nav": {
     "dashboard": "Mælaborð",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Breyttu því sem þú segir í fullbúin, skráð skjöl.",
       "body": "Worker er AI vinnusvæði fyrir stjórnsýslu fyrir stofnanir sem framleiða mikið magn formlegra skjala úr fundum, kynningum og bréfaskiptum. Taktu upp fund eða lesa upp, og Worker umritar það, semur fundargerðir, minnisblöð, bréf, skýrslur og stefnumótandi greinargerðir, og leiðir þau í gegnum yfirferð og samþykki — með heildstæðri endurskoðunarslóð.",
-      "badgeRow": "Hljóð · Enska · Öruggt vinnusvæði"
+      "badgeRow": "Hljóð · 72 tungumál · Öruggur vinnustaður"
     },
     "what": {
       "title": "Hvað Worker gerir",
       "lead": "Venjuleg skrifstofuverk sem fylgja fundum og bréfaskiptum — afgreidd á mínútum, ekki klukkustundum.",
       "f1": {
         "title": "Taka upp og umrita",
-        "body": "Taktu upp fundi, viðtöl, kynningar eða upplestur. Hljóð er umritað á staðnum á ensku."
+        "body": "Taktu upp fundi, viðtöl, kynningar eða upplestur. Hljóð er umritað á eigin netþjónum Worker á 67 tungumálum."
       },
       "f2": {
         "title": "Drög með gervigreind",
@@ -231,7 +231,7 @@
     "micDenied": "Aðgangur að hljóðnema var hafnað eða hann er ekki tiltækur.",
     "audioSaved": "Hljóð var vistað í lotunni.",
     "uploadFailed": "Upphleðsla mistókst.",
-    "transcribing": "Umritun fer fram á staðnum — það getur tekið smá stund fyrir lengra hljóð.",
+    "transcribing": "Umritun á netþjónum Worker — þetta getur tekið smá stund fyrir lengra hljóð.",
     "transcribed": "Umritun lokið.",
     "transcribeFailed": "Umritun mistókst. Athugaðu hvort STT-þjónustan sé í gangi.",
     "updateFailed": "Ekki tókst að uppfæra.",
@@ -247,7 +247,7 @@
     "startRecording": "Byrja upptöku",
     "or": "eða",
     "uploadAudio": "Hlaða upp hljóði",
-    "audioNote": "Hljóð verður áfram á hýslinum. Umritun fer fram á staðnum á ensku. Fundargerð sameinar hvert hljóðbrot í þessari lotu, í réttri röð.",
+    "audioNote": "Hljóð verður áfram á netþjónum Worker og er umritað sjálfkrafa á fundartungumáli lotunnar. Skjöl sameina valda hljóðbúta í þessari lotu, í réttri röð.",
     "documentsFrom": "Skjöl úr þessari lotu",
     "noDocuments": "Engin skjöl enn. Umritaðu hljóðbrot og búðu síðan til fundargerð.",
     "recordingsTitle": "Upptökur og umritanir",
@@ -460,7 +460,7 @@
     "remove": "Fjarlægja"
   },
   "assistant": {
-    "subtitle": "Gefðu fyrirmæli á einföldu máli — taka saman, finna, skrifa drög eða útskýra í vinnusvæðinu þínu.",
+    "subtitle": "Gefðu fyrirmæli á einföldu máli — dragðu saman, finndu, skrifaðu drög eða útskýrðu yfir vinnusvæðið þitt.",
     "failed": "Aðstoðarmaðurinn gat ekki unnið úr þessu.",
     "instruction": "Leiðbeining",
     "placeholder": "t.d. Taktu saman ákvarðanir öryggisnefndar þessarar viku, eða listaðu upp minnisblöð sem bíða enn samþykkis.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Vélþýtt"
+  },
+  "siteFooter": {
+    "product": "Worker · AI stjórnsýsluvinnustaður",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker býr til stjórnsýsluskjöl; viðurkenndir notendur bera áfram ábyrgð á yfirferð og samþykki."
+  },
+  "ecoidReg": {
+    "continue": "Halda áfram með EcoID",
+    "redirecting": "Beint á EcoID…",
+    "startFailed": "Ekki tókst að hefja innskráningu með EcoID. Vinsamlegast reyndu aftur.",
+    "finish": "Ljúktu við að búa til Worker-reikninginn þinn",
+    "signingUpAs": "Skráir þig með EcoID sem",
+    "workspaceName": "Heiti vinnusvæðis",
+    "workspaceExample": "t.d. Acme Ltd",
+    "adminNote": "Þú verður stjórnandi nýs vinnusvæðis og getur boðið samstarfsfólki síðar.",
+    "expired": "EcoID-lotan þín rann út. Vinsamlegast skráðu þig inn aftur.",
+    "createFailed": "Ekki tókst að búa til reikninginn þinn.",
+    "goToSignIn": "Fara í innskráningu",
+    "haveAccount": "Ertu þegar með Worker-reikning?",
+    "thenLink": "tengdu þá EcoID frá reikningnum þínum."
   }
 }

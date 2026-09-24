@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI-drivet administrativt arbetsområde",
     "secureWorkspace": "Säkert administrativt arbetsområde",
-    "badge": "Engelska · Ljud"
+    "badge": "Flerspråkig · Ljud"
   },
   "nav": {
     "dashboard": "Översikt",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Förvandla det du säger till färdiga, diarieförda handlingar.",
       "body": "Worker är en AI-drivet administrativ arbetsplats för organisationer som producerar stora mängder formella dokument från möten, briefingar och korrespondens. Spela in ett möte eller diktera, och Worker transkriberar det, utarbetar protokoll, promemorior, brev, rapporter och policysammanfattningar och tar dem genom granskning och godkännande – med en fullständig granskningslogg.",
-      "badgeRow": "Ljud · Engelska · Säkert arbetsområde"
+      "badgeRow": "Ljud · 72 språk · Säker arbetsplats"
     },
     "what": {
       "title": "Vad Worker gör",
       "lead": "Det rutinmässiga kontorsarbetet kring möten och korrespondens – hanterat på minuter, inte timmar.",
       "f1": {
         "title": "Spela in och transkribera",
-        "body": "Fånga möten, intervjuer, briefingar eller diktering. Ljud transkriberas lokalt på engelska."
+        "body": "Spela in möten, intervjuer, briefingar eller diktering. Ljud transkriberas på Workers egna servrar på 67 språk."
       },
       "f2": {
         "title": "Utkast med AI",
@@ -231,7 +231,7 @@
     "micDenied": "Åtkomst till mikrofon nekad eller otillgänglig.",
     "audioSaved": "Ljudet har sparats i sessionen.",
     "uploadFailed": "Uppladdningen misslyckades.",
-    "transcribing": "Transkriberar lokalt — detta kan ta en stund för längre ljud.",
+    "transcribing": "Transkriberar på Workers servrar — detta kan ta en stund för längre ljud.",
     "transcribed": "Transkriberingen är klar.",
     "transcribeFailed": "Transkriberingen misslyckades. Kontrollera att STT-tjänsten körs.",
     "updateFailed": "Kunde inte uppdatera.",
@@ -247,7 +247,7 @@
     "startRecording": "Starta inspelning",
     "or": "eller",
     "uploadAudio": "Ladda upp ljud",
-    "audioNote": "Ljudet stannar på värden. Transkribering körs lokalt på engelska. Protokollet kombinerar varje klipp i denna session, i ordning.",
+    "audioNote": "Ljudet stannar på Workers servrar och transkriberas automatiskt på sessionens mötesspråk. Dokument kombinerar de markerade klippen i denna session, i ordning.",
     "documentsFrom": "Dokument från denna session",
     "noDocuments": "Inga dokument ännu. Transkribera ett klipp och generera sedan protokoll.",
     "recordingsTitle": "Inspelningar och transkriberingar",
@@ -460,7 +460,7 @@
     "remove": "Ta bort"
   },
   "assistant": {
-    "subtitle": "Ge en instruktion på vanlig svenska — sammanfatta, hitta, skriv utkast eller förklara i hela din arbetsyta.",
+    "subtitle": "Ge en instruktion på vanligt språk — sammanfatta, hitta, skriv utkast eller förklara i din arbetsyta.",
     "failed": "Assistenten kunde inte behandla det.",
     "instruction": "Instruktion",
     "placeholder": "t.ex. Sammanfatta besluten från veckans säkerhetskommitté, eller lista promemorior som fortfarande väntar på godkännande.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Maskinöversatt"
+  },
+  "siteFooter": {
+    "product": "Worker · AI-administrativ arbetsplats",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker genererar administrativa dokument; auktoriserade användare ansvarar fortfarande för granskning och godkännande."
+  },
+  "ecoidReg": {
+    "continue": "Fortsätt med EcoID",
+    "redirecting": "Omdirigerar till EcoID…",
+    "startFailed": "Kunde inte starta EcoID-inloggning. Försök igen.",
+    "finish": "Slutför skapandet av ditt Worker-konto",
+    "signingUpAs": "Registrerar dig med EcoID som",
+    "workspaceName": "Arbetsytans namn",
+    "workspaceExample": "t.ex. Acme Ltd",
+    "adminNote": "Du blir administratör för en ny arbetsyta och kan bjuda in kollegor senare.",
+    "expired": "Din EcoID-session har gått ut. Logga in igen.",
+    "createFailed": "Kunde inte skapa ditt konto.",
+    "goToSignIn": "Gå till inloggning",
+    "haveAccount": "Har du redan ett Worker-konto?",
+    "thenLink": "länka sedan EcoID från ditt konto."
   }
 }

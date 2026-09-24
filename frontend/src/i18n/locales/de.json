@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "KI-gestützter Verwaltungsarbeitsbereich",
     "secureWorkspace": "Sicherer Verwaltungsarbeitsbereich",
-    "badge": "Englisch · Audio"
+    "badge": "Mehrsprachig · Audio"
   },
   "nav": {
     "dashboard": "Übersicht",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Verwandeln Sie Ihre gesprochenen Worte in fertige, abgelegte Dokumente.",
       "body": "Worker ist ein KI-gestützter Verwaltungsarbeitsplatz für Organisationen, die große Mengen formeller Dokumente aus Besprechungen, Briefings und Korrespondenz erstellen. Zeichnen Sie eine Besprechung auf oder diktieren Sie, und Worker transkribiert sie, erstellt Protokolle, Vermerke, Briefe, Berichte und Politikbriefings und führt sie durch Prüfung und Genehmigung – mit vollständigem Prüfprotokoll.",
-      "badgeRow": "Audio · Englisch · Sicherer Arbeitsplatz"
+      "badgeRow": "Audio · 72 Sprachen · Sicherer Arbeitsplatz"
     },
     "what": {
       "title": "Was Worker leistet",
       "lead": "Die routinemäßige Büroarbeit rund um Besprechungen und Korrespondenz – erledigt in Minuten, nicht Stunden.",
       "f1": {
         "title": "Aufzeichnen & transkribieren",
-        "body": "Erfassen Sie Besprechungen, Interviews, Briefings oder Diktate. Audio wird lokal auf Englisch transkribiert."
+        "body": "Erfassen Sie Besprechungen, Interviews, Briefings oder Diktate. Audio wird auf Workers eigenen Servern in 67 Sprachen transkribiert."
       },
       "f2": {
         "title": "Mit KI entwerfen",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofonzugriff verweigert oder nicht verfügbar.",
     "audioSaved": "Audio in der Sitzung gespeichert.",
     "uploadFailed": "Upload fehlgeschlagen.",
-    "transcribing": "Lokale Transkription läuft — bei längeren Audiodateien kann dies einen Moment dauern.",
+    "transcribing": "Transkription auf Workers Servern — bei längeren Audiodateien kann dies einen Moment dauern.",
     "transcribed": "Transkription abgeschlossen.",
     "transcribeFailed": "Transkription fehlgeschlagen. Prüfen Sie, ob der STT-Dienst ausgeführt wird.",
     "updateFailed": "Aktualisierung nicht möglich.",
@@ -247,7 +247,7 @@
     "startRecording": "Aufnahme starten",
     "or": "oder",
     "uploadAudio": "Audio hochladen",
-    "audioNote": "Audio verbleibt auf dem Host. Die Transkription erfolgt lokal auf Englisch. Das Protokoll kombiniert alle Clips dieser Sitzung in der Reihenfolge.",
+    "audioNote": "Audio verbleibt auf Workers Servern und wird automatisch in der Besprechungssprache der Sitzung transkribiert. Dokumente kombinieren die markierten Clips dieser Sitzung in der Reihenfolge.",
     "documentsFrom": "Dokumente aus dieser Sitzung",
     "noDocuments": "Noch keine Dokumente. Transkribieren Sie einen Clip und erstellen Sie dann das Protokoll.",
     "recordingsTitle": "Aufnahmen & Transkripte",
@@ -460,7 +460,7 @@
     "remove": "Entfernen"
   },
   "assistant": {
-    "subtitle": "Geben Sie eine Anweisung in einfacher Sprache — zusammenfassen, finden, entwerfen oder erklären über Ihren gesamten Arbeitsbereich.",
+    "subtitle": "Geben Sie eine Anweisung in einfacher Sprache — zusammenfassen, suchen, entwerfen oder erklären Sie in Ihrem gesamten Arbeitsbereich.",
     "failed": "Der Assistent konnte dies nicht verarbeiten.",
     "instruction": "Anweisung",
     "placeholder": "z. B. Fassen Sie die Beschlüsse des Sicherheitsausschusses dieser Woche zusammen oder listen Sie Memos auf, die noch auf Genehmigung warten.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Maschinell übersetzt"
+  },
+  "siteFooter": {
+    "product": "Worker · KI-gestützter Verwaltungsarbeitsplatz",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker erstellt Verwaltungsdokumente; autorisierte Benutzer bleiben für Prüfung und Genehmigung verantwortlich."
+  },
+  "ecoidReg": {
+    "continue": "Weiter mit EcoID",
+    "redirecting": "Weiterleitung zu EcoID…",
+    "startFailed": "EcoID-Anmeldung konnte nicht gestartet werden. Bitte versuchen Sie es erneut.",
+    "finish": "Erstellung Ihres Worker-Kontos abschließen",
+    "signingUpAs": "Registrierung mit EcoID als",
+    "workspaceName": "Name des Arbeitsbereichs",
+    "workspaceExample": "z. B. Acme Ltd",
+    "adminNote": "Sie werden Administrator eines neuen Arbeitsbereichs und können später Kollegen einladen.",
+    "expired": "Ihre EcoID-Sitzung ist abgelaufen. Bitte melden Sie sich erneut an.",
+    "createFailed": "Ihr Konto konnte nicht erstellt werden.",
+    "goToSignIn": "Zur Anmeldung",
+    "haveAccount": "Sie haben bereits ein Worker-Konto?",
+    "thenLink": "verknüpfen Sie anschließend EcoID über Ihr Konto."
   }
 }

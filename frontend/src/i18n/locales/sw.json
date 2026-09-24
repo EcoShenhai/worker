@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Eneo la kazi la kiutawala la AI",
     "secureWorkspace": "Eneo salama la kazi la kiutawala",
-    "badge": "Kiingereza · Sauti"
+    "badge": "Lugha nyingi · Sauti"
   },
   "nav": {
     "dashboard": "Dashibodi",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Badilisha unayosema kuwa nyaraka zilizokamilika na kupangwa.",
       "body": "Worker ni eneo la kazi la kiutawala la AI kwa mashirika yanayozalisha kiasi kikubwa cha nyaraka rasmi kutoka kwa mikutano, maelezo na mawasiliano. Rekodi mkutano au amuru kwa sauti, na Worker itainukuu, itaandae kumbukumbu, memo, barua, ripoti na muhtasari wa sera, na kuzipitisha katika ukaguzi na uidhinishaji — pamoja na ufuatiliaji kamili wa ukaguzi.",
-      "badgeRow": "Sauti · Kiingereza · Eneo salama la kazi"
+      "badgeRow": "Sauti · Lugha 72 · Mahali salama pa kazi"
     },
     "what": {
       "title": "Kile Worker hufanya",
       "lead": "Kazi za kawaida za ofisi zinazohusu mikutano na mawasiliano — hushughulikiwa kwa dakika, si saa.",
       "f1": {
         "title": "Rekodi na inukuu",
-        "body": "Nasa mikutano, mahojiano, maelezo au amri kwa sauti. Sauti inanukuliwa kienyeji kwa Kiingereza."
+        "body": "Rekodi mikutano, mahojiano, maelezo mafupi au uandishi wa maneno. Sauti inanukuliwa kwenye seva za Worker katika lugha 67."
       },
       "f2": {
         "title": "Andika kwa AI",
@@ -231,7 +231,7 @@
     "micDenied": "Ufikiaji wa maikrofoni umekataliwa au haupatikani.",
     "audioSaved": "Sauti imehifadhiwa kwenye kikao.",
     "uploadFailed": "Upakiaji umeshindwa.",
-    "transcribing": "Inanukuu kwa ndani — hii inaweza kuchukua muda kwa sauti ndefu.",
+    "transcribing": "Inanukuliwa kwenye seva za Worker — hii inaweza kuchukua muda kwa sauti ndefu.",
     "transcribed": "Unukuzi umekamilika.",
     "transcribeFailed": "Unukuzi umeshindwa. Angalia kama huduma ya STT inaendeshwa.",
     "updateFailed": "Imeshindwa kusasisha.",
@@ -247,7 +247,7 @@
     "startRecording": "Anza kurekodi",
     "or": "au",
     "uploadAudio": "Pakia sauti",
-    "audioNote": "Sauti inabaki kwenye mwenyeji. Unukuzi unaendeshwa kwa ndani kwa Kiingereza. Muhtasari unachanganya kila klipu katika kikao hiki, kwa mpangilio.",
+    "audioNote": "Sauti hubaki kwenye seva za Worker na hunukuliwa kiotomatiki katika lugha ya mkutano wa kipindi hiki. Nyaraka huunganisha klipu zilizotiwa alama katika kipindi hiki, kwa mpangilio.",
     "documentsFrom": "Nyaraka kutoka kwa kikao hiki",
     "noDocuments": "Hakuna nyaraka bado. Nukuu klipu, kisha zalisha muhtasari.",
     "recordingsTitle": "Rekodi na unukuzi",
@@ -460,7 +460,7 @@
     "remove": "Ondoa"
   },
   "assistant": {
-    "subtitle": "Toa maelekezo kwa lugha rahisi — fanya muhtasari, tafuta, andika rasimu au eleza katika eneo lako la kazi.",
+    "subtitle": "Toa maelekezo kwa lugha ya kawaida — fupisha, tafuta, andika rasimu au eleza katika eneo lako la kazi.",
     "failed": "Msaidizi hakuweza kushughulikia hilo.",
     "instruction": "Maelekezo",
     "placeholder": "k.m. Fanya muhtasari wa maamuzi kutoka kikao cha kamati ya usalama cha wiki hii, au orodhesha kumbukumbu zinazosubiri idhini.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Imetafsiriwa kwa mashine"
+  },
+  "siteFooter": {
+    "product": "Worker · Mahali pa kazi pa kiutawala pa AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker huzalisha nyaraka za kiutawala; watumiaji walioidhinishwa hubaki na jukumu la kukagua na kuidhinisha."
+  },
+  "ecoidReg": {
+    "continue": "Endelea na EcoID",
+    "redirecting": "Inaelekeza kwa EcoID…",
+    "startFailed": "Imeshindwa kuanza kuingia kwa EcoID. Tafadhali jaribu tena.",
+    "finish": "Kamilisha kuunda akaunti yako ya Worker",
+    "signingUpAs": "Unajisajili na EcoID kama",
+    "workspaceName": "Jina la eneo la kazi",
+    "workspaceExample": "k.m. Acme Ltd",
+    "adminNote": "Utakuwa msimamizi wa eneo jipya la kazi na unaweza kuwaalika wenzako baadaye.",
+    "expired": "Kipindi chako cha EcoID kimeisha. Tafadhali ingia tena.",
+    "createFailed": "Imeshindwa kuunda akaunti yako.",
+    "goToSignIn": "Nenda kuingia",
+    "haveAccount": "Je, una akaunti ya Worker tayari?",
+    "thenLink": "kisha unganisha EcoID kutoka akaunti yako."
   }
 }

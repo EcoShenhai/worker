@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI-administrativt arbeidsområde",
     "secureWorkspace": "Sikkert administrativt arbeidsområde",
-    "badge": "Engelsk · Lyd"
+    "badge": "Flerspråklig · Lyd"
   },
   "nav": {
     "dashboard": "Dashbord",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Gjør det du sier om til ferdig, arkivert dokumentasjon.",
       "body": "Worker er et AI-administrativt arbeidsområde for organisasjoner som produserer store mengder formelle dokumenter fra møter, orienteringer og korrespondanse. Ta opp et møte eller dikter, og Worker transkriberer det, utarbeider møtereferater, notater, brev, rapporter og policybriefs, og fører dem gjennom gjennomgang og godkjenning – med et fullstendig revisjonsspor.",
-      "badgeRow": "Lyd · Engelsk · Sikkert arbeidsområde"
+      "badgeRow": "Lyd · 72 språk · Sikker arbeidsplass"
     },
     "what": {
       "title": "Hva Worker gjør",
       "lead": "Det rutinemessige kontorarbeidet rundt møter og korrespondanse – utført på minutter, ikke timer.",
       "f1": {
         "title": "Ta opp og transkriber",
-        "body": "Ta opp møter, intervjuer, orienteringer eller diktering. Lyd transkriberes lokalt på engelsk."
+        "body": "Ta opp møter, intervjuer, orienteringer eller diktering. Lyd transkriberes på Workers egne servere på 67 språk."
       },
       "f2": {
         "title": "Utkast med AI",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofontilgang avvist eller utilgjengelig.",
     "audioSaved": "Lyd lagret i økten.",
     "uploadFailed": "Opplasting mislyktes.",
-    "transcribing": "Transkriberer lokalt – dette kan ta litt tid for lengre lyd.",
+    "transcribing": "Transkriberer på Workers servere – dette kan ta litt tid for lengre lydopptak.",
     "transcribed": "Transkribering fullført.",
     "transcribeFailed": "Transkribering mislyktes. Kontroller at STT-tjenesten kjører.",
     "updateFailed": "Kunne ikke oppdatere.",
@@ -247,7 +247,7 @@
     "startRecording": "Start opptak",
     "or": "eller",
     "uploadAudio": "Last opp lyd",
-    "audioNote": "Lyden forblir på verten. Transkribering kjøres lokalt på engelsk. Referatet kombinerer alle klipp i denne økten, i rekkefølge.",
+    "audioNote": "Lyden forblir på Workers servere og transkriberes automatisk på øktens møtespråk. Dokumenter kombinerer de avkryssede klippene i denne økten, i rekkefølge.",
     "documentsFrom": "Dokumenter fra denne økten",
     "noDocuments": "Ingen dokumenter ennå. Transkriber et klipp, og generer deretter referat.",
     "recordingsTitle": "Opptak og transkripsjoner",
@@ -460,7 +460,7 @@
     "remove": "Fjern"
   },
   "assistant": {
-    "subtitle": "Gi en instruksjon på vanlig norsk — oppsummer, finn, skriv utkast eller forklar på tvers av arbeidsområdet ditt.",
+    "subtitle": "Gi en instruksjon på vanlig språk – oppsummer, finn, utform eller forklar på tvers av arbeidsområdet ditt.",
     "failed": "Assistenten kunne ikke behandle det.",
     "instruction": "Instruksjon",
     "placeholder": "f.eks. Oppsummer beslutningene fra sikkerhetskomiteen denne uken, eller list opp notater som fortsatt venter på godkjenning.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Maskinoversatt"
+  },
+  "siteFooter": {
+    "product": "Worker · AI-administrativ arbeidsplass",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker genererer administrative dokumenter; autoriserte brukere er fortsatt ansvarlige for gjennomgang og godkjenning."
+  },
+  "ecoidReg": {
+    "continue": "Fortsett med EcoID",
+    "redirecting": "Omdirigerer til EcoID…",
+    "startFailed": "Kunne ikke starte EcoID-pålogging. Prøv igjen.",
+    "finish": "Fullfør opprettelsen av Worker-kontoen din",
+    "signingUpAs": "Registrerer deg med EcoID som",
+    "workspaceName": "Navn på arbeidsområde",
+    "workspaceExample": "f.eks. Acme Ltd",
+    "adminNote": "Du blir administrator for et nytt arbeidsområde og kan invitere kolleger senere.",
+    "expired": "EcoID-økten din er utløpt. Logg inn på nytt.",
+    "createFailed": "Kunne ikke opprette kontoen din.",
+    "goToSignIn": "Gå til pålogging",
+    "haveAccount": "Har du allerede en Worker-konto?",
+    "thenLink": "koble deretter til EcoID fra kontoen din."
   }
 }

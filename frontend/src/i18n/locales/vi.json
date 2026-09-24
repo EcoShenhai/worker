@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Không gian làm việc hành chính AI",
     "secureWorkspace": "Không gian làm việc hành chính an toàn",
-    "badge": "Tiếng Anh · Âm thanh"
+    "badge": "Đa ngôn ngữ · Âm thanh"
   },
   "nav": {
     "dashboard": "Bảng điều khiển",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Biến lời bạn nói thành hồ sơ hoàn chỉnh, được lưu trữ.",
       "body": "Worker là không gian làm việc hành chính AI dành cho các tổ chức tạo ra số lượng lớn tài liệu chính thức từ các cuộc họp, buổi giao ban và thư từ. Hãy ghi âm một cuộc họp hoặc đọc chính tả, Worker sẽ chuyển thành văn bản, soạn biên bản, bản ghi nhớ, thư, báo cáo và tóm tắt chính sách, rồi đưa chúng qua quy trình xem xét và phê duyệt — với nhật ký kiểm toán đầy đủ.",
-      "badgeRow": "Âm thanh · Tiếng Anh · Không gian làm việc an toàn"
+      "badgeRow": "Âm thanh · 72 ngôn ngữ · Nơi làm việc an toàn"
     },
     "what": {
       "title": "Worker làm được gì",
       "lead": "Công việc văn phòng thường ngày xoay quanh các cuộc họp và thư từ — được xử lý trong vài phút, không phải vài giờ.",
       "f1": {
         "title": "Ghi âm & chuyển thành văn bản",
-        "body": "Ghi lại các cuộc họp, phỏng vấn, buổi giao ban hoặc đọc chính tả. Âm thanh được chuyển thành văn bản cục bộ bằng tiếng Anh."
+        "body": "Ghi lại các cuộc họp, phỏng vấn, buổi giới thiệu hoặc đọc chính tả. Âm thanh được chuyển thành văn bản trên máy chủ riêng của Worker bằng 67 ngôn ngữ."
       },
       "f2": {
         "title": "Soạn thảo với AI",
@@ -231,7 +231,7 @@
     "micDenied": "Quyền truy cập micrô bị từ chối hoặc không khả dụng.",
     "audioSaved": "Âm thanh đã được lưu vào phiên.",
     "uploadFailed": "Tải lên thất bại.",
-    "transcribing": "Đang phiên âm cục bộ — quá trình này có thể mất một lúc với âm thanh dài.",
+    "transcribing": "Đang chuyển thành văn bản trên máy chủ của Worker — quá trình này có thể mất một lúc với âm thanh dài.",
     "transcribed": "Phiên âm hoàn tất.",
     "transcribeFailed": "Phiên âm thất bại. Vui lòng kiểm tra dịch vụ STT đang chạy.",
     "updateFailed": "Không thể cập nhật.",
@@ -247,7 +247,7 @@
     "startRecording": "Bắt đầu ghi âm",
     "or": "hoặc",
     "uploadAudio": "Tải lên âm thanh",
-    "audioNote": "Âm thanh được lưu trên máy chủ. Phiên âm chạy cục bộ bằng tiếng Anh. Biên bản kết hợp mọi đoạn ghi trong phiên này, theo thứ tự.",
+    "audioNote": "Âm thanh được lưu trên máy chủ của Worker và tự động chuyển thành văn bản theo ngôn ngữ cuộc họp của phiên. Tài liệu sẽ kết hợp các đoạn clip được chọn trong phiên này theo thứ tự.",
     "documentsFrom": "Tài liệu từ phiên này",
     "noDocuments": "Chưa có tài liệu. Hãy phiên âm một đoạn ghi, sau đó tạo biên bản.",
     "recordingsTitle": "Bản ghi âm & bản phiên âm",
@@ -460,7 +460,7 @@
     "remove": "Xóa"
   },
   "assistant": {
-    "subtitle": "Đưa ra hướng dẫn bằng ngôn ngữ đơn giản — tóm tắt, tìm kiếm, soạn thảo hoặc giải thích trong toàn bộ không gian làm việc của bạn.",
+    "subtitle": "Đưa ra hướng dẫn bằng ngôn ngữ thông thường — tóm tắt, tìm kiếm, soạn thảo hoặc giải thích trong toàn bộ không gian làm việc của bạn.",
     "failed": "Trợ lý không thể xử lý yêu cầu đó.",
     "instruction": "Hướng dẫn",
     "placeholder": "Ví dụ: Tóm tắt các quyết định từ cuộc họp ủy ban an ninh tuần này, hoặc liệt kê các bản ghi nhớ vẫn đang chờ phê duyệt.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Dịch bằng máy"
+  },
+  "siteFooter": {
+    "product": "Worker · Nơi làm việc hành chính AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker tạo tài liệu hành chính; người dùng được ủy quyền vẫn chịu trách nhiệm xem xét và phê duyệt."
+  },
+  "ecoidReg": {
+    "continue": "Tiếp tục với EcoID",
+    "redirecting": "Đang chuyển hướng đến EcoID…",
+    "startFailed": "Không thể bắt đầu đăng nhập EcoID. Vui lòng thử lại.",
+    "finish": "Hoàn tất tạo tài khoản Worker của bạn",
+    "signingUpAs": "Đăng ký với EcoID với tư cách",
+    "workspaceName": "Tên không gian làm việc",
+    "workspaceExample": "ví dụ: Acme Ltd",
+    "adminNote": "Bạn sẽ là quản trị viên của một không gian làm việc mới và có thể mời đồng nghiệp sau.",
+    "expired": "Phiên EcoID của bạn đã hết hạn. Vui lòng đăng nhập lại.",
+    "createFailed": "Không thể tạo tài khoản của bạn.",
+    "goToSignIn": "Đi đến đăng nhập",
+    "haveAccount": "Đã có tài khoản Worker?",
+    "thenLink": "sau đó liên kết EcoID từ tài khoản của bạn."
   }
 }

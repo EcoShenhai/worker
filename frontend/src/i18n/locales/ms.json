@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Ruang kerja pentadbiran AI",
     "secureWorkspace": "Ruang kerja pentadbiran yang selamat",
-    "badge": "Bahasa Inggeris · Audio"
+    "badge": "Pelbagai Bahasa · Audio"
   },
   "nav": {
     "dashboard": "Papan pemuka",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Tukar apa yang anda sebut menjadi dokumen siap dan difailkan.",
       "body": "Worker ialah tempat kerja pentadbiran AI untuk organisasi yang menghasilkan dokumen rasmi dalam kuantiti yang banyak daripada mesyuarat, taklimat dan surat-menyurat. Rakam mesyuarat atau imlak, dan Worker akan mentranskripsikannya, merangka minit mesyuarat, memo, surat, laporan dan ringkasan dasar, serta membawanya melalui semakan dan kelulusan — dengan jejak audit yang lengkap.",
-      "badgeRow": "Audio · Bahasa Inggeris · Ruang kerja selamat"
+      "badgeRow": "Audio · 72 bahasa · Tempat kerja selamat"
     },
     "what": {
       "title": "Apa yang Worker lakukan",
       "lead": "Kerja pejabat rutin yang berkaitan dengan mesyuarat dan surat-menyurat — diselesaikan dalam beberapa minit, bukan jam.",
       "f1": {
         "title": "Rakam & transkripsi",
-        "body": "Rakam mesyuarat, temu bual, taklimat atau imlak. Audio ditranskripsikan secara setempat dalam bahasa Inggeris."
+        "body": "Rakam mesyuarat, temu bual, taklimat atau imlak. Audio ditranskripsikan pada pelayan Worker sendiri dalam 67 bahasa."
       },
       "f2": {
         "title": "Draf dengan AI",
@@ -231,7 +231,7 @@
     "micDenied": "Akses mikrofon ditolak atau tidak tersedia.",
     "audioSaved": "Audio disimpan ke sesi.",
     "uploadFailed": "Muat naik gagal.",
-    "transcribing": "Mentranskripsi secara setempat — ini mungkin mengambil masa untuk audio yang panjang.",
+    "transcribing": "Mentranskripsikan pada pelayan Worker — ini mungkin mengambil masa untuk audio yang lebih panjang.",
     "transcribed": "Transkripsi selesai.",
     "transcribeFailed": "Transkripsi gagal. Sila pastikan perkhidmatan STT sedang berjalan.",
     "updateFailed": "Tidak dapat mengemas kini.",
@@ -247,7 +247,7 @@
     "startRecording": "Mula merakam",
     "or": "atau",
     "uploadAudio": "Muat naik audio",
-    "audioNote": "Audio kekal pada hos. Transkripsi dijalankan secara setempat dalam bahasa Inggeris. Minit menggabungkan setiap klip dalam sesi ini, mengikut urutan.",
+    "audioNote": "Audio kekal pada pelayan Worker dan ditranskripsikan secara automatik dalam bahasa mesyuarat sesi ini. Dokumen menggabungkan klip yang ditanda dalam sesi ini, mengikut urutan.",
     "documentsFrom": "Dokumen daripada sesi ini",
     "noDocuments": "Belum ada dokumen. Transkripsikan klip, kemudian jana minit.",
     "recordingsTitle": "Rakaman & transkrip",
@@ -460,7 +460,7 @@
     "remove": "Buang"
   },
   "assistant": {
-    "subtitle": "Berikan arahan dalam bahasa Melayu mudah — ringkaskan, cari, karang atau jelaskan merentas ruang kerja anda.",
+    "subtitle": "Berikan arahan dalam bahasa mudah — ringkaskan, cari, rangka atau jelaskan merentas ruang kerja anda.",
     "failed": "Pembantu tidak dapat memproses perkara itu.",
     "instruction": "Arahan",
     "placeholder": "cth. Ringkaskan keputusan daripada mesyuarat jawatankuasa keselamatan minggu ini, atau senaraikan memo yang masih menunggu kelulusan.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Terjemahan mesin"
+  },
+  "siteFooter": {
+    "product": "Worker · Tempat kerja pentadbiran AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker menjana dokumen pentadbiran; pengguna yang diberi kuasa tetap bertanggungjawab untuk semakan dan kelulusan."
+  },
+  "ecoidReg": {
+    "continue": "Teruskan dengan EcoID",
+    "redirecting": "Mengalih ke EcoID…",
+    "startFailed": "Tidak dapat memulakan log masuk EcoID. Sila cuba lagi.",
+    "finish": "Selesaikan penciptaan akaun Worker anda",
+    "signingUpAs": "Mendaftar dengan EcoID sebagai",
+    "workspaceName": "Nama ruang kerja",
+    "workspaceExample": "cth. Acme Ltd",
+    "adminNote": "Anda akan menjadi admin ruang kerja baharu dan boleh menjemput rakan sekerja kemudian.",
+    "expired": "Sesi EcoID anda telah tamat. Sila log masuk semula.",
+    "createFailed": "Tidak dapat mencipta akaun anda.",
+    "goToSignIn": "Pergi ke log masuk",
+    "haveAccount": "Sudah mempunyai akaun Worker?",
+    "thenLink": "kemudian pautkan EcoID dari akaun anda."
   }
 }

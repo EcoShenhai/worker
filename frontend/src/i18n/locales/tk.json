@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administratiw iş meýdançasy",
     "secureWorkspace": "Howpsuz administratiw iş meýdançasy",
-    "badge": "Iňlis dili · Ses ýazgysy"
+    "badge": "Köp dilli · Ses"
   },
   "nav": {
     "dashboard": "Baş panel",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Aýdanlaryňyzy taýýar, arhiwlenen resminamalara öwüriň.",
       "body": "Worker — ýygnaklardan, brifinglerden we hat alyşmalardan köp mukdarda resmi resminamalar taýýarlaýan guramalar üçin AI administratiw iş meýdançasy. Ýygnagy ýazga alyň ýa-da diktirläň, Worker ony ýazga geçirýär, teswirnamalary, ýatlatmalary, hatlary, hasabatlary we syýasy brifingleri taýýarlaýar we olary gözden geçirmekden we tassyklamakdan geçirýär — doly audit ýazgysy bilen.",
-      "badgeRow": "Ses ýazgysy · Iňlis dili · Howpsuz iş meýdançasy"
+      "badgeRow": "Ses · 72 dil · Howpsuz iş ýeri"
     },
     "what": {
       "title": "Worker nämäni edýär",
       "lead": "Ýygnaklaryň we hat alyşmalaryň töweregindäki adaty ofis işleri — sagatlar däl-de, minutlar içinde ýerine ýetirilýär.",
       "f1": {
         "title": "Ýazga almak we ýazga geçirmek",
-        "body": "Ýygnaklary, söhbetdeşlikleri, brifingleri ýa-da diktirlemeleri ýazga alyň. Ses ýazgysy iňlis dilinde ýerli ýazga geçirilýär."
+        "body": "Duşuşyklary, söhbetdeşlikleri, brifingleri ýa-da diktantlary ýazga alyň. Ses Worker-iň öz serwerlerinde 67 dilde ýazga geçirilýär."
       },
       "f2": {
         "title": "AI bilen taýýarla",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofona giriş gadagan edildi ýa-da elýeterli däl.",
     "audioSaved": "Audio sessiýa ýazdyryldy.",
     "uploadFailed": "Ýüklemek başartmady.",
-    "transcribing": "Ýerli ýazga geçirilýär — uzyn audio üçin birnäçe wagt alyp biler.",
+    "transcribing": "Worker-iň serwerlerinde ýazga geçirilýär — uzyn ses üçin biraz wagt alyp biler.",
     "transcribed": "Ýazga geçirmek tamamlandy.",
     "transcribeFailed": "Ýazga geçirmek başartmady. STT hyzmatynyň işleýändigini barlaň.",
     "updateFailed": "Täzelenip bilinmedi.",
@@ -247,7 +247,7 @@
     "startRecording": "Ýazga başla",
     "or": "ýa-da",
     "uploadAudio": "Audio ýükle",
-    "audioNote": "Audio hostda saklanýar. Ýazga geçirmek ýerli ýagdaýda iňlis dilinde işleýär. Teswirnama bu sessiýadaky her klipi tertibi bilen birleşdirýär.",
+    "audioNote": "Ses Worker-iň serwerlerinde galýar we sessiýanyň duşuşyk dilinde awtomatik ýazga geçirilýär. Resminamalar bu sessiýadaky bellikli klipleri tertip boýunça birleşdirýär.",
     "documentsFrom": "Bu sessiýadan resminamalar",
     "noDocuments": "Häzir resminama ýok. Klip ýazga geçiriň, soň teswirnama dörediň.",
     "recordingsTitle": "Ýazgylar & transkriptler",
@@ -460,7 +460,7 @@
     "remove": "Aýyr"
   },
   "assistant": {
-    "subtitle": "Ýönekeý iňlis dilinde görkezme beriň — iş giňişligiňizde jemläň, tapyň, garalama ýazyň ýa-da düşündiriň.",
+    "subtitle": "Ýönekeý dilde görkezme beriň — iş giňişligiňizde jemläň, tapyň, taýýarlaň ýa-da düşündiriň.",
     "failed": "Kömekçi muny işläp bilmedi.",
     "instruction": "Görkezme",
     "placeholder": "Meselem, şu hepdäniň howpsuzlyk komitetiniň kararlaryny jemläň ýa-da tassyklamaga garaşýan ýazgylary sanawaň.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Maşyn terjimesi"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administratiw iş ýeri",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker administratiw resminamalary döredýär; ygtyýarly ulanyjylar gözden geçirmek we tassyklamak üçin jogapkär bolmagynda galýarlar."
+  },
+  "ecoidReg": {
+    "continue": "EcoID bilen dowam ediň",
+    "redirecting": "EcoID-e ugrukdyrylýar…",
+    "startFailed": "EcoID girişini başladyp bolmady. Haýyş edýäris, täzeden synanyşyň.",
+    "finish": "Worker hasabyňyzy döretmegi tamamlaň",
+    "signingUpAs": "EcoID bilen hasaba durýarsyňyz",
+    "workspaceName": "Iş giňişliginiň ady",
+    "workspaceExample": "meselem, Acme Ltd",
+    "adminNote": "Siz täze iş giňişliginiň admini bolarsyňyz we soňra kärdeşleriňizi çagyryp bilersiňiz.",
+    "expired": "EcoID sessiýaňyz gutardy. Haýyş edýäris, täzeden giriň.",
+    "createFailed": "Hasabyňyzy döredip bolmady.",
+    "goToSignIn": "Girişe geçiň",
+    "haveAccount": "Eýýäm Worker hasabyňyz barmy?",
+    "thenLink": "soňra hasabyňyzdan EcoID baglanyşdyryň."
   }
 }

@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Spațiu de lucru administrativ cu IA",
     "secureWorkspace": "Spațiu de lucru administrativ securizat",
-    "badge": "Engleză · Audio"
+    "badge": "Multilingv · Audio"
   },
   "nav": {
     "dashboard": "Panou de control",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Transformați ceea ce spuneți în documente finalizate și arhivate.",
       "body": "Worker este un spațiu de lucru administrativ cu IA pentru organizațiile care produc cantități mari de documente formale din ședințe, informări și corespondență. Înregistrați o ședință sau dictați, iar Worker o transcrie, redactează procese-verbale, note, scrisori, rapoarte și sinteze de politici și le supune revizuirii și aprobării — cu un jurnal de audit complet.",
-      "badgeRow": "Audio · Engleză · Spațiu de lucru securizat"
+      "badgeRow": "Audio · 72 de limbi · Loc de muncă securizat"
     },
     "what": {
       "title": "Ce face Worker",
       "lead": "Munca de birou de rutină care însoțește ședințele și corespondența — rezolvată în câteva minute, nu în ore.",
       "f1": {
         "title": "Înregistrare și transcriere",
-        "body": "Capturați ședințe, interviuri, informări sau dictare. Audio-ul este transcris local în limba engleză."
+        "body": "Înregistrați ședințe, interviuri, briefinguri sau dictare. Audio-ul este transcris pe serverele proprii ale Worker în 67 de limbi."
       },
       "f2": {
         "title": "Redactați cu AI",
@@ -231,7 +231,7 @@
     "micDenied": "Accesul la microfon a fost refuzat sau nu este disponibil.",
     "audioSaved": "Audio salvat în sesiune.",
     "uploadFailed": "Încărcarea a eșuat.",
-    "transcribing": "Se transcrie local — pentru audio mai lung poate dura puțin.",
+    "transcribing": "Se transcrie pe serverele Worker — acest lucru poate dura puțin pentru audio mai lung.",
     "transcribed": "Transcriere finalizată.",
     "transcribeFailed": "Transcrierea a eșuat. Verificați dacă serviciul STT rulează.",
     "updateFailed": "Nu s-a putut actualiza.",
@@ -247,7 +247,7 @@
     "startRecording": "Începeți înregistrarea",
     "or": "sau",
     "uploadAudio": "Încărcați audio",
-    "audioNote": "Audio rămâne pe gazdă. Transcrierea rulează local în engleză. Procesul-verbal combină toate clipurile din această sesiune, în ordine.",
+    "audioNote": "Audio-ul rămâne pe serverele Worker și este transcris automat în limba de ședință a sesiunii. Documentele combină clipurile bifate din această sesiune, în ordine.",
     "documentsFrom": "Documente din această sesiune",
     "noDocuments": "Încă nu există documente. Transcrieți un clip, apoi generați procesul-verbal.",
     "recordingsTitle": "Înregistrări și transcrieri",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Tradus automat"
+  },
+  "siteFooter": {
+    "product": "Worker · Loc de muncă administrativ AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker generează documente administrative; utilizatorii autorizați rămân responsabili pentru verificare și aprobare."
+  },
+  "ecoidReg": {
+    "continue": "Continuați cu EcoID",
+    "redirecting": "Redirecționare către EcoID…",
+    "startFailed": "Nu s-a putut începe autentificarea EcoID. Vă rugăm să încercați din nou.",
+    "finish": "Finalizați crearea contului Worker",
+    "signingUpAs": "Vă înregistrați cu EcoID ca",
+    "workspaceName": "Numele spațiului de lucru",
+    "workspaceExample": "de ex. Acme Ltd",
+    "adminNote": "Veți fi administratorul unui spațiu de lucru nou și puteți invita colegi mai târziu.",
+    "expired": "Sesiunea EcoID a expirat. Vă rugăm să vă autentificați din nou.",
+    "createFailed": "Nu s-a putut crea contul.",
+    "goToSignIn": "Mergeți la autentificare",
+    "haveAccount": "Aveți deja un cont Worker?",
+    "thenLink": "apoi conectați EcoID din contul dumneavoastră."
   }
 }

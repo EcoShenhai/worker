@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI行政工作空间",
     "secureWorkspace": "安全行政工作空间",
-    "badge": "英语 · 音频"
+    "badge": "多语言 · 音频"
   },
   "nav": {
     "dashboard": "仪表板",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "将您所说的话转化为完成并归档的文书。",
       "body": "Worker是面向需要从会议、简报和信函中产出大量正式文件的组织的AI行政工作场所。录制会议或口述，Worker会将其转录，起草会议纪要、备忘录、信函、报告和政策简报，并完成审查和批准——全程留有完整审计追踪。",
-      "badgeRow": "音频 · 英语 · 安全工作空间"
+      "badgeRow": "音频 · 72 种语言 · 安全办公场所"
     },
     "what": {
       "title": "Worker的功能",
       "lead": "围绕会议和信函的日常办公工作——几分钟内完成，而非数小时。",
       "f1": {
         "title": "录制与转录",
-        "body": "捕捉会议、访谈、简报或口述。音频在本地以英语转录。"
+        "body": "录制会议、访谈、简报或口述。音频在 Worker 自有服务器上以 67 种语言转写。"
       },
       "f2": {
         "title": "AI 起草",
@@ -231,7 +231,7 @@
     "micDenied": "麦克风访问被拒绝或不可用。",
     "audioSaved": "音频已保存至会话。",
     "uploadFailed": "上传失败。",
-    "transcribing": "正在本地转录——较长音频可能需要一些时间。",
+    "transcribing": "正在 Worker 的服务器上转写——较长音频可能需要一些时间。",
     "transcribed": "转录完成。",
     "transcribeFailed": "转录失败。请检查 STT 服务是否正在运行。",
     "updateFailed": "无法更新。",
@@ -247,7 +247,7 @@
     "startRecording": "开始录音",
     "or": "或",
     "uploadAudio": "上传音频",
-    "audioNote": "音频保留在主机上。转录在本地以英语运行。纪要将按顺序合并本会话中的每个片段。",
+    "audioNote": "音频保留在 Worker 的服务器上，并按会话的会议语言自动转写。文档按顺序合并本次会话中勾选的片段。",
     "documentsFrom": "来自本会话的文档",
     "noDocuments": "暂无文档。请先转录片段，然后生成纪要。",
     "recordingsTitle": "录音与转录",
@@ -460,7 +460,7 @@
     "remove": "移除"
   },
   "assistant": {
-    "subtitle": "用简单的英语给出指令——在工作区内进行总结、查找、起草或解释。",
+    "subtitle": "用平实的语言给出指令——在整个工作区内进行总结、查找、起草或解释。",
     "failed": "助手无法处理该请求。",
     "instruction": "指令",
     "placeholder": "例如：总结本周安全委员会的决议，或列出仍待批准的备忘录。",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "机器翻译"
+  },
+  "siteFooter": {
+    "product": "Worker · AI 行政办公场所",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker 生成行政文档；授权用户仍需负责审核与批准。"
+  },
+  "ecoidReg": {
+    "continue": "使用 EcoID 继续",
+    "redirecting": "正在重定向至 EcoID…",
+    "startFailed": "无法启动 EcoID 登录。请重试。",
+    "finish": "完成创建您的 Worker 账户",
+    "signingUpAs": "使用 EcoID 注册为",
+    "workspaceName": "工作区名称",
+    "workspaceExample": "例如：Acme Ltd",
+    "adminNote": "您将成为新工作区的管理员，之后可以邀请同事。",
+    "expired": "您的 EcoID 会话已过期。请重新登录。",
+    "createFailed": "无法创建您的账户。",
+    "goToSignIn": "前往登录",
+    "haveAccount": "已有 Worker 账户？",
+    "thenLink": "然后从您的账户关联 EcoID。"
   }
 }

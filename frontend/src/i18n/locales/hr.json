@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administrativni radni prostor",
     "secureWorkspace": "Siguran administrativni radni prostor",
-    "badge": "Engleski · Audio"
+    "badge": "Višejezično · Audio"
   },
   "nav": {
     "dashboard": "Nadzorna ploča",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Pretvorite ono što izgovorite u dovršenu, arhiviranu dokumentaciju.",
       "body": "Worker je AI administrativno radno mjesto za organizacije koje proizvode velike količine formalnih dokumenata sa sastanaka, brifinga i korespondencije. Snimite sastanak ili diktirajte, a Worker ga transkribira, sastavlja zapisnike, memorandume, pisma, izvješća i političke sažetke te ih provodi kroz pregled i odobrenje — uz potpuni revizijski trag.",
-      "badgeRow": "Audio · Engleski · Sigurno radno mjesto"
+      "badgeRow": "Audio · 72 jezika · Sigurno radno mjesto"
     },
     "what": {
       "title": "Što Worker radi",
       "lead": "Rutinski uredski posao koji okružuje sastanke i korespondenciju — obavljen u minutama, a ne satima.",
       "f1": {
         "title": "Snimanje i transkripcija",
-        "body": "Snimajte sastanke, intervjue, brifinge ili diktiranje. Audio se transkribira lokalno na engleskom."
+        "body": "Snimajte sastanke, intervjue, brifinge ili diktiranje. Audio se transkribira na Workerovim vlastitim poslužiteljima na 67 jezika."
       },
       "f2": {
         "title": "Sastavljanje uz AI",
@@ -231,7 +231,7 @@
     "micDenied": "Pristup mikrofonu odbijen ili nedostupan.",
     "audioSaved": "Audio je spremljen u sesiju.",
     "uploadFailed": "Prijenos nije uspio.",
-    "transcribing": "Lokalna transkripcija u tijeku — za dulji audio to može potrajati.",
+    "transcribing": "Transkribiranje na Workerovim poslužiteljima — za dulji audio to može potrajati.",
     "transcribed": "Transkripcija dovršena.",
     "transcribeFailed": "Transkripcija nije uspjela. Provjerite radi li STT usluga.",
     "updateFailed": "Nije moguće ažurirati.",
@@ -247,7 +247,7 @@
     "startRecording": "Pokreni snimanje",
     "or": "ili",
     "uploadAudio": "Prenesi audio",
-    "audioNote": "Audio ostaje na hostu. Transkripcija se izvodi lokalno na engleskom. Zapisnik obuhvaća sve isječke u ovoj sesiji, redom.",
+    "audioNote": "Audio ostaje na Workerovim poslužiteljima i automatski se transkribira na jeziku sastanka ove sesije. Dokumenti kombiniraju označene isječke u ovoj sesiji, redom.",
     "documentsFrom": "Dokumenti iz ove sesije",
     "noDocuments": "Još nema dokumenata. Transkribirajte isječak, zatim generirajte zapisnik.",
     "recordingsTitle": "Snimke i transkripti",
@@ -460,7 +460,7 @@
     "remove": "Ukloni"
   },
   "assistant": {
-    "subtitle": "Dajte uputu jednostavnim jezikom — sažmite, pronađite, sastavite ili objasnite u cijelom radnom prostoru.",
+    "subtitle": "Dajte uputu jednostavnim jezikom — sažmite, pronađite, sastavite ili objasnite unutar svog radnog prostora.",
     "failed": "Asistent nije mogao obraditi taj zahtjev.",
     "instruction": "Uputa",
     "placeholder": "npr. Sažmi odluke ovotjednog odbora za sigurnost ili navedi memorandume koji još čekaju odobrenje.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Strojno prevedeno"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administrativno radno mjesto",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker generira administrativne dokumente; ovlašteni korisnici i dalje su odgovorni za pregled i odobrenje."
+  },
+  "ecoidReg": {
+    "continue": "Nastavi s EcoID",
+    "redirecting": "Preusmjeravanje na EcoID…",
+    "startFailed": "Nije moguće pokrenuti prijavu putem EcoID-a. Pokušajte ponovno.",
+    "finish": "Dovršite stvaranje svog Worker računa",
+    "signingUpAs": "Registracija putem EcoID-a kao",
+    "workspaceName": "Naziv radnog prostora",
+    "workspaceExample": "npr. Acme Ltd",
+    "adminNote": "Bit ćete administrator novog radnog prostora i moći ćete kasnije pozvati kolege.",
+    "expired": "Vaša EcoID sesija je istekla. Prijavite se ponovno.",
+    "createFailed": "Nije moguće stvoriti vaš račun.",
+    "goToSignIn": "Idi na prijavu",
+    "haveAccount": "Već imate Worker račun?",
+    "thenLink": "zatim povežite EcoID sa svojim računom."
   }
 }

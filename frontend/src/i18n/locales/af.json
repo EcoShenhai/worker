@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "KI-administratiewe werkspasie",
     "secureWorkspace": "Veilige administratiewe werkspasie",
-    "badge": "Engels · Klank"
+    "badge": "Veeltalig · Klank"
   },
   "nav": {
     "dashboard": "Paneelbord",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Verander wat jy sê in voltooide, geliasseerde papierwerk.",
       "body": "Worker is 'n KI-administratiewe werkplek vir organisasies wat groot hoeveelhede formele dokumente uit vergaderings, inligtingsessies en korrespondensie produseer. Neem 'n vergadering op of dikteer, en Worker transkribeer dit, stel notules, memo's, briewe, verslae en beleidsopdragte op, en neem dit deur hersiening en goedkeuring — met 'n volledige ouditspoor.",
-      "badgeRow": "Klank · Engels · Veilige werkplek"
+      "badgeRow": "Klank · 72 tale · Veilige werkplek"
     },
     "what": {
       "title": "Wat Worker doen",
       "lead": "Die roetine kantoorwerk rondom vergaderings en korrespondensie — binne minute afgehandel, nie ure nie.",
       "f1": {
         "title": "Neem op en transkribeer",
-        "body": "Vang vergaderings, onderhoude, inligtingsessies of diktering op. Klank word plaaslik in Engels getranskribeer."
+        "body": "Neem vergaderings, onderhoude, inligtingsessies of diktee op. Klank word op Worker se eie bedieners in 67 tale getranskribeer."
       },
       "f2": {
         "title": "Opstel met KI",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofoontoegang geweier of onbeskikbaar.",
     "audioSaved": "Klank is by die sessie gestoor.",
     "uploadFailed": "Oplaai het misluk.",
-    "transcribing": "Transkribeer plaaslik — dit kan 'n oomblik neem vir langer klank.",
+    "transcribing": "Transkribeer op Worker se bedieners — dit kan 'n oomblik neem vir langer klank.",
     "transcribed": "Transkripsie voltooi.",
     "transcribeFailed": "Transkripsie het misluk. Kontroleer of die STT-diens loop.",
     "updateFailed": "Kon nie opdateer nie.",
@@ -247,7 +247,7 @@
     "startRecording": "Begin opneem",
     "or": "of",
     "uploadAudio": "Laai klank op",
-    "audioNote": "Klank bly op die gasheer. Transkripsie loop plaaslik in Engels. Notule kombineer elke snit in hierdie sessie, in volgorde.",
+    "audioNote": "Klank bly op Worker se bedieners en word outomaties in die sessie se vergaderingstaal getranskribeer. Dokumente kombineer die gemerkte snitte in hierdie sessie, in volgorde.",
     "documentsFrom": "Dokumente uit hierdie sessie",
     "noDocuments": "Nog geen dokumente nie. Transkribeer 'n snit, genereer dan notule.",
     "recordingsTitle": "Opnames & transkripsies",
@@ -460,7 +460,7 @@
     "remove": "Verwyder"
   },
   "assistant": {
-    "subtitle": "Gee 'n opdrag in eenvoudige Afrikaans — som op, vind, stel op of verduidelik regoor u werkspasie.",
+    "subtitle": "Gee 'n opdrag in eenvoudige taal — som op, vind, stel op of verduidelik regoor jou werkruimte.",
     "failed": "Die assistent kon dit nie verwerk nie.",
     "instruction": "Instruksie",
     "placeholder": "bv. Som die besluite van hierdie week se veiligheidskomitee op, of lys memoranda wat nog op goedkeuring wag.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Masjienvertaal"
+  },
+  "siteFooter": {
+    "product": "Worker · KI-administratiewe werkplek",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker genereer administratiewe dokumente; gemagtigde gebruikers bly verantwoordelik vir nasien en goedkeuring."
+  },
+  "ecoidReg": {
+    "continue": "Gaan voort met EcoID",
+    "redirecting": "Herlei na EcoID…",
+    "startFailed": "Kon nie EcoID-aanmelding begin nie. Probeer asseblief weer.",
+    "finish": "Voltooi die skep van jou Worker-rekening",
+    "signingUpAs": "Teken aan met EcoID as",
+    "workspaceName": "Werkruimtenaam",
+    "workspaceExample": "bv. Acme Ltd",
+    "adminNote": "Jy sal die admin van 'n nuwe werkruimte wees en kan later kollegas nooi.",
+    "expired": "Jou EcoID-sessie het verval. Meld asseblief weer aan.",
+    "createFailed": "Kon nie jou rekening skep nie.",
+    "goToSignIn": "Gaan na aanmelding",
+    "haveAccount": "Het jy reeds 'n Worker-rekening?",
+    "thenLink": "koppel dan EcoID vanaf jou rekening."
   }
 }

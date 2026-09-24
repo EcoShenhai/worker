@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administracinė darbo erdvė",
     "secureWorkspace": "Saugi administracinė darbo erdvė",
-    "badge": "Anglų · Garso įrašas"
+    "badge": "Daugiakalbis · Garso įrašai"
   },
   "nav": {
     "dashboard": "Valdymo skydelis",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Paverskite tai, ką sakote, užbaigtais, užregistruotais dokumentais.",
       "body": "Worker – tai AI administracinė darbo vieta organizacijoms, kurios rengia daug formalių dokumentų iš susitikimų, instruktažų ir korespondencijos. Įrašykite susitikimą arba diktuokite, o Worker jį transkribuos, parengs protokolus, memorandumus, laiškus, ataskaitas ir politikos apžvalgas bei praves juos per peržiūros ir tvirtinimo etapus – su išsamiu audito žurnalu.",
-      "badgeRow": "Garsas · Anglų · Saugi darbo vieta"
+      "badgeRow": "Garsas · 72 kalbos · Saugi darbo vieta"
     },
     "what": {
       "title": "Ką daro Worker",
       "lead": "Įprastas biuro darbas, susijęs su susitikimais ir korespondencija – atliekamas per minutes, o ne valandas.",
       "f1": {
         "title": "Įrašyti ir transkribuoti",
-        "body": "Fiksuokite susitikimus, pokalbius, instruktažus ar diktavimą. Garso įrašas transkribuojamas vietoje anglų kalba."
+        "body": "Įrašykite susitikimus, interviu, instruktažus ar diktavimą. Garsas transkribuojamas „Worker“ serveriuose 67 kalbomis."
       },
       "f2": {
         "title": "Rengimas su AI",
@@ -231,7 +231,7 @@
     "micDenied": "Prieiga prie mikrofono atmesta arba nepasiekiama.",
     "audioSaved": "Garso įrašas išsaugotas sesijoje.",
     "uploadFailed": "Įkėlimas nepavyko.",
-    "transcribing": "Transkribuojama vietiniu būdu — ilgesniam garso įrašui tai gali užtrukti.",
+    "transcribing": "Transkribuojama „Worker“ serveriuose — ilgesniam garso įrašui tai gali užtrukti.",
     "transcribed": "Transkribavimas baigtas.",
     "transcribeFailed": "Transkribavimas nepavyko. Patikrinkite, ar veikia STT paslauga.",
     "updateFailed": "Nepavyko atnaujinti.",
@@ -247,7 +247,7 @@
     "startRecording": "Pradėti įrašymą",
     "or": "arba",
     "uploadAudio": "Įkelti garso įrašą",
-    "audioNote": "Garso įrašas lieka pagrindiniame kompiuteryje. Transkribavimas vykdomas vietiniu būdu anglų kalba. Protokolas apjungia visus šios sesijos garso įrašus iš eilės.",
+    "audioNote": "Garsas lieka „Worker“ serveriuose ir automatiškai transkribuojamas sesijos susitikimo kalba. Dokumentai sujungia pažymėtus šios sesijos įrašus iš eilės.",
     "documentsFrom": "Dokumentai iš šios sesijos",
     "noDocuments": "Dokumentų kol kas nėra. Transkribuokite garso įrašą, tada sugeneruokite protokolą.",
     "recordingsTitle": "Įrašai ir transkripcijos",
@@ -460,7 +460,7 @@
     "remove": "Pašalinti"
   },
   "assistant": {
-    "subtitle": "Pateikite nurodymą paprasta anglų kalba — apibendrinkite, raskite, parengkite ar paaiškinkite visoje savo darbo erdvėje.",
+    "subtitle": "Pateikite nurodymą paprasta kalba — apibendrinkite, raskite, parengkite ar paaiškinkite visoje savo darbo erdvėje.",
     "failed": "Asistentas negalėjo to apdoroti.",
     "instruction": "Instrukcija",
     "placeholder": "pvz., Apibendrinkite šios savaitės saugumo komiteto sprendimus arba išvardykite memorandumus, dar laukiančius patvirtinimo.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Mašininis vertimas"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administracinė darbo vieta",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "„Worker“ generuoja administracinius dokumentus; įgalioti naudotojai išlieka atsakingi už peržiūrą ir patvirtinimą."
+  },
+  "ecoidReg": {
+    "continue": "Tęsti su „EcoID“",
+    "redirecting": "Nukreipiama į „EcoID“…",
+    "startFailed": "Nepavyko pradėti „EcoID“ prisijungimo. Bandykite dar kartą.",
+    "finish": "Užbaikite kurti „Worker“ paskyrą",
+    "signingUpAs": "Registruojamasi su „EcoID“ kaip",
+    "workspaceName": "Darbo erdvės pavadinimas",
+    "workspaceExample": "pvz., Acme Ltd",
+    "adminNote": "Būsite naujos darbo erdvės administratorius ir vėliau galėsite pakviesti kolegas.",
+    "expired": "Jūsų „EcoID“ sesija baigėsi. Prisijunkite dar kartą.",
+    "createFailed": "Nepavyko sukurti paskyros.",
+    "goToSignIn": "Eiti į prisijungimą",
+    "haveAccount": "Jau turite „Worker“ paskyrą?",
+    "thenLink": "tada susiekite „EcoID“ iš savo paskyros."
   }
 }

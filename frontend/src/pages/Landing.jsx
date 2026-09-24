@@ -122,9 +122,9 @@ export default function Landing() {
 
       <footer className="lp-foot">
         <div style={{ marginTop: 12, paddingTop: 12, borderTop: '1px solid var(--line)', lineHeight: 1.5 }}>
-          <div><strong>Worker AI Administrative Workplace</strong></div>
-          <div>© 2026 Shenhai Enterprises Limited · theshenhai.com · worker@theshenhai.com</div>
-          <div>Worker generates administrative documents; authorized users remain responsible for review and approval.</div>
+          <div><strong>{t('siteFooter.product')}</strong></div>
+          <div>{t('siteFooter.copyright', { year: new Date().getFullYear() })} · theshenhai.com · worker@theshenhai.com</div>
+          <div>{t('siteFooter.disclaimer')}</div>
         </div>
       </footer>
     </div>

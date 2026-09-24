@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Hapësirë pune administrative me AI",
     "secureWorkspace": "Hapësirë pune administrative e sigurt",
-    "badge": "Anglisht · Audio"
+    "badge": "Shumëgjuhësh · Audio"
   },
   "nav": {
     "dashboard": "Paneli",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Kthejeni atë që thoni në dokumente të përfunduara dhe të arkivuara.",
       "body": "Worker është një hapësirë pune administrative me AI për organizatat që prodhojnë sasi të mëdha dokumentesh formale nga mbledhjet, informimet dhe korrespondenca. Regjistroni një mbledhje ose diktoni, dhe Worker e transkripton atë, harton procesverbale, memorandume, letra, raporte dhe përmbledhje politikash, dhe i kalon ato nëpër rishikim dhe miratim — me një gjurmë të plotë auditimi.",
-      "badgeRow": "Audio · Anglisht · Hapësirë pune e sigurt"
+      "badgeRow": "Audio · 72 gjuhë · Vendpunë e sigurt"
     },
     "what": {
       "title": "Çfarë bën Worker",
       "lead": "Puna rutinë e zyrës që rrethon mbledhjet dhe korrespondencën — kryhet në minuta, jo në orë.",
       "f1": {
         "title": "Regjistro dhe transkripto",
-        "body": "Kapni mbledhjet, intervistat, informimet ose diktime. Audioja transkriptohet lokalisht në anglisht."
+        "body": "Regjistroni mbledhje, intervista, informacione ose diktime. Audio transkriptohet në serverat e Worker në 67 gjuhë."
       },
       "f2": {
         "title": "Hartoni me AI",
@@ -231,7 +231,7 @@
     "micDenied": "Qasja në mikrofon u refuzua ose nuk është e disponueshme.",
     "audioSaved": "Audio u ruajt në sesion.",
     "uploadFailed": "Ngarkimi dështoi.",
-    "transcribing": "Po transkriptohet lokalisht — kjo mund të zgjasë për audio më të gjatë.",
+    "transcribing": "Duke transkriptuar në serverat e Worker — kjo mund të zgjasë për audio më të gjatë.",
     "transcribed": "Transkriptimi përfundoi.",
     "transcribeFailed": "Transkriptimi dështoi. Kontrolloni që shërbimi STT është aktiv.",
     "updateFailed": "Nuk mund të përditësohej.",
@@ -247,7 +247,7 @@
     "startRecording": "Fillo regjistrimin",
     "or": "ose",
     "uploadAudio": "Ngarko audio",
-    "audioNote": "Audio qëndron në host. Transkriptimi ekzekutohet lokalisht në anglisht. Minutat kombinojnë çdo klip në këtë sesion, sipas radhës.",
+    "audioNote": "Audio qëndron në serverat e Worker dhe transkriptohet automatikisht në gjuhën e mbledhjes së sesionit. Dokumentet kombinojnë klipet e shënuara në këtë sesion, sipas radhës.",
     "documentsFrom": "Dokumentet nga ky sesion",
     "noDocuments": "Nuk ka dokumente ende. Transkriptoni një klip, pastaj gjeneroni minutat.",
     "recordingsTitle": "Regjistrimet & transkriptimet",
@@ -460,7 +460,7 @@
     "remove": "Hiq"
   },
   "assistant": {
-    "subtitle": "Jepni një udhëzim në gjuhë të thjeshtë — përmblidhni, gjeni, shkruani ose shpjegoni në të gjithë hapësirën tuaj të punës.",
+    "subtitle": "Jepni një udhëzim në gjuhë të thjeshtë — përmblidhni, gjeni, hartoni ose shpjegoni në të gjithë hapësirën tuaj të punës.",
     "failed": "Asistenti nuk mund ta përpunonte atë.",
     "instruction": "Udhëzim",
     "placeholder": "p.sh. Përmblidh vendimet e komitetit të sigurisë të kësaj jave, ose listo memorandume që presin miratim.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Përkthyer nga makina"
+  },
+  "siteFooter": {
+    "product": "Worker · Vendpunë administrative me AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker gjeneron dokumente administrative; përdoruesit e autorizuar mbeten përgjegjës për rishikimin dhe miratimin."
+  },
+  "ecoidReg": {
+    "continue": "Vazhdo me EcoID",
+    "redirecting": "Duke ridrejtuar te EcoID…",
+    "startFailed": "Nuk mund të fillohej hyrja me EcoID. Ju lutemi provoni përsëri.",
+    "finish": "Përfundoni krijimin e llogarisë tuaj Worker",
+    "signingUpAs": "Duke u regjistruar me EcoID si",
+    "workspaceName": "Emri i hapësirës së punës",
+    "workspaceExample": "p.sh. Acme Ltd",
+    "adminNote": "Ju do të jeni administratori i një hapësire të re pune dhe mund të ftoni kolegë më vonë.",
+    "expired": "Sesioni juaj EcoID skadoi. Ju lutemi hyni përsëri.",
+    "createFailed": "Nuk mund të krijohej llogaria juaj.",
+    "goToSignIn": "Shkoni te hyrja",
+    "haveAccount": "Keni tashmë një llogari Worker?",
+    "thenLink": "pastaj lidhni EcoID nga llogaria juaj."
   }
 }

@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administrativní pracovní prostor",
     "secureWorkspace": "Zabezpečený administrativní pracovní prostor",
-    "badge": "Angličtina · Zvuk"
+    "badge": "Vícejazyčné · Zvuk"
   },
   "nav": {
     "dashboard": "Přehled",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Proměňte to, co řeknete, v hotové a zařazené dokumenty.",
       "body": "Worker je AI administrativní pracoviště pro organizace, které vytvářejí velké množství formálních dokumentů ze schůzek, briefinků a korespondence. Nahrajte schůzku nebo diktujte a Worker ji přepíše, vytvoří zápisy, memoranda, dopisy, zprávy a politické briefy a provede je procesem kontroly a schválení — s kompletním auditním záznamem.",
-      "badgeRow": "Zvuk · Angličtina · Zabezpečené pracoviště"
+      "badgeRow": "Zvuk · 72 jazyků · Zabezpečené pracoviště"
     },
     "what": {
       "title": "Co Worker dělá",
       "lead": "Rutinní kancelářská práce kolem schůzek a korespondence — vyřízená v minutách, ne v hodinách.",
       "f1": {
         "title": "Nahrávat a přepisovat",
-        "body": "Zachycujte schůzky, pohovory, briefinky nebo diktování. Zvuk je přepsán lokálně v angličtině."
+        "body": "Zaznamenávejte schůzky, pohovory, briefinky nebo diktování. Zvuk je přepisován na serverech Worker v 67 jazycích."
       },
       "f2": {
         "title": "Návrh s AI",
@@ -231,7 +231,7 @@
     "micDenied": "Přístup k mikrofonu byl odepřen nebo není k dispozici.",
     "audioSaved": "Zvuk byl uložen do relace.",
     "uploadFailed": "Nahrání se nezdařilo.",
-    "transcribing": "Probíhá přepis v místním prostředí — u delších nahrávek to může chvíli trvat.",
+    "transcribing": "Přepisování na serverech Worker — u delšího zvuku to může chvíli trvat.",
     "transcribed": "Přepis dokončen.",
     "transcribeFailed": "Přepis se nezdařil. Zkontrolujte, zda je služba STT spuštěna.",
     "updateFailed": "Aktualizace se nezdařila.",
@@ -247,7 +247,7 @@
     "startRecording": "Spustit nahrávání",
     "or": "nebo",
     "uploadAudio": "Nahrát zvuk",
-    "audioNote": "Zvuk zůstává na hostiteli. Přepis probíhá v místním prostředí v angličtině. Zápis kombinuje všechny klipy v této relaci v pořadí.",
+    "audioNote": "Zvuk zůstává na serverech Worker a je automaticky přepisován v jazyce schůzky dané relace. Dokumenty spojují zaškrtnuté klipy v této relaci v pořadí.",
     "documentsFrom": "Dokumenty z této relace",
     "noDocuments": "Zatím žádné dokumenty. Přepište klip a poté vygenerujte zápis.",
     "recordingsTitle": "Nahrávky a přepisy",
@@ -460,7 +460,7 @@
     "remove": "Odebrat"
   },
   "assistant": {
-    "subtitle": "Zadejte pokyn v běžném jazyce — shrňte, najděte, navrhněte nebo vysvětlete v rámci svého pracovního prostoru.",
+    "subtitle": "Zadejte pokyn v přirozeném jazyce — shrňte, najděte, navrhněte nebo vysvětlete napříč svým pracovním prostorem.",
     "failed": "Asistent to nedokázal zpracovat.",
     "instruction": "Pokyn",
     "placeholder": "např. Shrňte rozhodnutí z letošního zasedání bezpečnostního výboru nebo uveďte memoranda, která stále čekají na schválení.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Strojový překlad"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administrativní pracoviště",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker generuje administrativní dokumenty; oprávnění uživatelé jsou i nadále odpovědní za kontrolu a schválení."
+  },
+  "ecoidReg": {
+    "continue": "Pokračovat s EcoID",
+    "redirecting": "Přesměrování na EcoID…",
+    "startFailed": "Nepodařilo se zahájit přihlášení přes EcoID. Zkuste to prosím znovu.",
+    "finish": "Dokončete vytvoření účtu Worker",
+    "signingUpAs": "Registrace s EcoID jako",
+    "workspaceName": "Název pracovního prostoru",
+    "workspaceExample": "např. Acme Ltd",
+    "adminNote": "Budete správcem nového pracovního prostoru a později můžete pozvat kolegy.",
+    "expired": "Platnost relace EcoID vypršela. Přihlaste se prosím znovu.",
+    "createFailed": "Nepodařilo se vytvořit váš účet.",
+    "goToSignIn": "Přejít k přihlášení",
+    "haveAccount": "Už máte účet Worker?",
+    "thenLink": "poté propojte EcoID ze svého účtu."
   }
 }

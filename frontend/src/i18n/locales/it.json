@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Spazio di lavoro amministrativo con IA",
     "secureWorkspace": "Spazio di lavoro amministrativo sicuro",
-    "badge": "Inglese · Audio"
+    "badge": "Multilingue · Audio"
   },
   "nav": {
     "dashboard": "Pannello di controllo",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Trasforma ciò che dici in documenti completi e archiviati.",
       "body": "Worker è uno spazio di lavoro amministrativo con IA per organizzazioni che producono grandi quantità di documenti formali da riunioni, briefing e corrispondenza. Registra una riunione o detta, e Worker la trascrive, redige verbali, promemoria, lettere, relazioni e note politiche, e le accompagna attraverso revisione e approvazione — con un registro di controllo completo.",
-      "badgeRow": "Audio · Inglese · Spazio di lavoro sicuro"
+      "badgeRow": "Audio · 72 lingue · Ambiente di lavoro sicuro"
     },
     "what": {
       "title": "Cosa fa Worker",
       "lead": "Il lavoro d'ufficio di routine che circonda riunioni e corrispondenza — gestito in minuti, non in ore.",
       "f1": {
         "title": "Registra e trascrivi",
-        "body": "Cattura riunioni, interviste, briefing o dettatura. L'audio viene trascritto localmente in inglese."
+        "body": "Registra riunioni, interviste, briefing o dettature. L'audio viene trascritto sui server di Worker in 67 lingue."
       },
       "f2": {
         "title": "Bozza con l'IA",
@@ -231,7 +231,7 @@
     "micDenied": "Accesso al microfono negato o non disponibile.",
     "audioSaved": "Audio salvato nella sessione.",
     "uploadFailed": "Caricamento non riuscito.",
-    "transcribing": "Trascrizione locale in corso — per audio più lunghi potrebbe richiedere qualche istante.",
+    "transcribing": "Trascrizione sui server di Worker — per audio più lunghi potrebbe richiedere qualche istante.",
     "transcribed": "Trascrizione completata.",
     "transcribeFailed": "Trascrizione non riuscita. Verificare che il servizio STT sia in esecuzione.",
     "updateFailed": "Impossibile aggiornare.",
@@ -247,7 +247,7 @@
     "startRecording": "Avvia registrazione",
     "or": "oppure",
     "uploadAudio": "Carica audio",
-    "audioNote": "L'audio rimane sull'host. La trascrizione viene eseguita localmente in inglese. Il verbale combina ogni clip di questa sessione, in ordine.",
+    "audioNote": "L'audio rimane sui server di Worker e viene trascritto automaticamente nella lingua della riunione della sessione. I documenti combinano le clip selezionate in questa sessione, in ordine.",
     "documentsFrom": "Documenti da questa sessione",
     "noDocuments": "Nessun documento ancora. Trascrivere una clip, quindi generare il verbale.",
     "recordingsTitle": "Registrazioni e trascrizioni",
@@ -460,7 +460,7 @@
     "remove": "Rimuovi"
   },
   "assistant": {
-    "subtitle": "Fornisci un'istruzione in linguaggio semplice — riassumi, trova, redigi o spiega in tutto il tuo spazio di lavoro.",
+    "subtitle": "Fornisci un'istruzione in linguaggio naturale — riassumi, trova, redigi o spiega in tutto il tuo spazio di lavoro.",
     "failed": "L'assistente non ha potuto elaborare la richiesta.",
     "instruction": "Istruzione",
     "placeholder": "es. Riassumi le decisioni del comitato per la sicurezza di questa settimana o elenca le note ancora in attesa di approvazione.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Tradotto automaticamente"
+  },
+  "siteFooter": {
+    "product": "Worker · Ambiente di lavoro amministrativo con IA",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker genera documenti amministrativi; gli utenti autorizzati rimangono responsabili della revisione e dell'approvazione."
+  },
+  "ecoidReg": {
+    "continue": "Continua con EcoID",
+    "redirecting": "Reindirizzamento a EcoID…",
+    "startFailed": "Impossibile avviare l'accesso con EcoID. Riprova.",
+    "finish": "Completa la creazione del tuo account Worker",
+    "signingUpAs": "Registrazione con EcoID come",
+    "workspaceName": "Nome dello spazio di lavoro",
+    "workspaceExample": "es. Acme Ltd",
+    "adminNote": "Sarai l'amministratore di un nuovo spazio di lavoro e potrai invitare colleghi in seguito.",
+    "expired": "La tua sessione EcoID è scaduta. Accedi di nuovo.",
+    "createFailed": "Impossibile creare il tuo account.",
+    "goToSignIn": "Vai all'accesso",
+    "haveAccount": "Hai già un account Worker?",
+    "thenLink": "poi collega EcoID dal tuo account."
   }
 }

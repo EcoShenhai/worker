@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administrative workspace",
     "secureWorkspace": "Secure administrative workspace",
-    "badge": "Ingles · Audio"
+    "badge": "Multilingual · Audio"
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Gawing tapos at nakatalang dokumento ang iyong sinasabi.",
       "body": "Ang Worker ay isang AI administrative workplace para sa mga organisasyong gumagawa ng maraming pormal na dokumento mula sa mga pulong, briefing at sulat. Mag-record ng pulong o mag-dictate, at ito ay i-transcribe ng Worker, gagawa ng mga minuto, memo, liham, ulat at policy brief, at dadalhin ang mga ito sa pagsusuri at pag-apruba — na may kumpletong audit trail.",
-      "badgeRow": "Audio · Ingles · Secure workplace"
+      "badgeRow": "Audio · 72 wika · Ligtas na lugar ng trabaho"
     },
     "what": {
       "title": "Ano ang ginagawa ng Worker",
       "lead": "Ang karaniwang gawain sa opisina na nakapalibot sa mga pulong at sulat — natatapos sa ilang minuto, hindi oras.",
       "f1": {
         "title": "Mag-record at mag-transcribe",
-        "body": "Kunin ang mga pulong, panayam, briefing o dictation. Ang audio ay tina-transcribe nang lokal sa Ingles."
+        "body": "I-record ang mga pulong, panayam, briefing o dikta. Ang audio ay tina-transcribe sa sariling mga server ng Worker sa 67 wika."
       },
       "f2": {
         "title": "Mag-draft gamit ang AI",
@@ -231,7 +231,7 @@
     "micDenied": "Tinanggihan o hindi available ang access sa mikropono.",
     "audioSaved": "Na-save ang audio sa sesyon.",
     "uploadFailed": "Nabigo ang pag-upload.",
-    "transcribing": "Nagsasalin nang lokal — maaaring tumagal ito sandali para sa mas mahabang audio.",
+    "transcribing": "Nagta-transcribe sa mga server ng Worker — maaaring tumagal ito sandali para sa mas mahabang audio.",
     "transcribed": "Kumpleto na ang transkripsyon.",
     "transcribeFailed": "Nabigo ang transkripsyon. Suriin kung tumatakbo ang serbisyo ng STT.",
     "updateFailed": "Hindi ma-update.",
@@ -247,7 +247,7 @@
     "startRecording": "Simulan ang pag-record",
     "or": "o",
     "uploadAudio": "Mag-upload ng audio",
-    "audioNote": "Nananatili ang audio sa host. Tumatakbo nang lokal ang transkripsyon sa Ingles. Pinagsasama-sama ng mga minuto ang bawat clip sa sesyong ito, nang sunod-sunod.",
+    "audioNote": "Ang audio ay nananatili sa mga server ng Worker at awtomatikong tina-transcribe sa wika ng pulong ng session. Pinagsasama-sama ng mga dokumento ang mga naka-tick na clip sa session na ito, ayon sa pagkakasunod-sunod.",
     "documentsFrom": "Mga dokumento mula sa sesyong ito",
     "noDocuments": "Wala pang dokumento. I-transcribe ang isang clip, pagkatapos ay bumuo ng mga minuto.",
     "recordingsTitle": "Mga recording at transkripsyon",
@@ -460,7 +460,7 @@
     "remove": "Alisin"
   },
   "assistant": {
-    "subtitle": "Magbigay ng tagubilin sa simpleng Filipino — magbuod, maghanap, mag-draft o magpaliwanag sa buong workspace mo.",
+    "subtitle": "Magbigay ng tagubilin sa simpleng wika — magbuod, maghanap, mag-draft o magpaliwanag sa buong workspace mo.",
     "failed": "Hindi naproseso ng assistant iyon.",
     "instruction": "Tagubilin",
     "placeholder": "hal. Ibuod ang mga desisyon mula sa komite ng seguridad ngayong linggo, o ilista ang mga memo na naghihintay pa ng pag-apruba.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Isinalin ng makina"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administrative workplace",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Gumagawa ang Worker ng mga administratibong dokumento; ang mga awtorisadong user ay nananatiling responsable sa pagsusuri at pag-apruba."
+  },
+  "ecoidReg": {
+    "continue": "Magpatuloy gamit ang EcoID",
+    "redirecting": "Nire-redirect sa EcoID…",
+    "startFailed": "Hindi masimulan ang pag-sign in sa EcoID. Pakisubukan muli.",
+    "finish": "Tapusin ang paggawa ng iyong Worker account",
+    "signingUpAs": "Nag-sign up gamit ang EcoID bilang",
+    "workspaceName": "Pangalan ng workspace",
+    "workspaceExample": "hal. Acme Ltd",
+    "adminNote": "Ikaw ang magiging admin ng bagong workspace at maaari kang mag-imbita ng mga kasamahan sa ibang pagkakataon.",
+    "expired": "Nag-expire ang iyong EcoID session. Pakisign in muli.",
+    "createFailed": "Hindi magawa ang iyong account.",
+    "goToSignIn": "Pumunta sa sign in",
+    "haveAccount": "May Worker account ka na ba?",
+    "thenLink": "pagkatapos ay i-link ang EcoID mula sa iyong account."
   }
 }

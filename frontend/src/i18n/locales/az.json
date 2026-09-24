@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI inzibati iş məkanı",
     "secureWorkspace": "Təhlükəsiz inzibati iş məkanı",
-    "badge": "İngilis dili · Audio"
+    "badge": "Çoxdilli · Audio"
   },
   "nav": {
     "dashboard": "İdarə paneli",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Dediklərinizi tamamlanmış, qeydə alınmış sənədlərə çevirin.",
       "body": "Worker — iclaslar, brifinqlər və yazışmalar əsasında çoxlu rəsmi sənəd hazırlayan təşkilatlar üçün AI inzibati iş məkanıdır. İclası yazın və ya diktə edin, Worker onu transkripsiya edir, protokol, memorandum, məktub, hesabat və siyasət qeydləri hazırlayır və tam audit jurnalı ilə birlikdə baxış və təsdiq mərhələlərindən keçirir.",
-      "badgeRow": "Audio · İngilis dili · Təhlükəsiz iş məkanı"
+      "badgeRow": "Audio · 72 dil · Təhlükəsiz iş yeri"
     },
     "what": {
       "title": "Worker nə edir",
       "lead": "İclaslar və yazışmalar ətrafında rutin ofis işləri — saatlarla deyil, dəqiqələrlə həll olunur.",
       "f1": {
         "title": "Yazın və transkripsiya edin",
-        "body": "İclasları, müsahibələri, brifinqləri və ya diktəni qeydə alın. Audio ingilis dilində yerli olaraq transkripsiya edilir."
+        "body": "İclasları, müsahibələri, brifinqləri və ya diktəni qeydə alın. Audio Worker-in öz serverlərində 67 dildə transkripsiya olunur."
       },
       "f2": {
         "title": "AI ilə qaralama",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofona giriş rədd edildi və ya mövcud deyil.",
     "audioSaved": "Audio sessiyaya yadda saxlanıldı.",
     "uploadFailed": "Yükləmə uğursuz oldu.",
-    "transcribing": "Yerli olaraq transkripsiya edilir — uzun audio üçün bu bir az vaxt ala bilər.",
+    "transcribing": "Worker-in serverlərində transkripsiya olunur — uzun audio üçün bu bir qədər vaxt apara bilər.",
     "transcribed": "Transkripsiya tamamlandı.",
     "transcribeFailed": "Transkripsiya uğursuz oldu. STT xidmətinin işlədiyini yoxlayın.",
     "updateFailed": "Yeniləmək mümkün olmadı.",
@@ -247,7 +247,7 @@
     "startRecording": "Yazmağa başla",
     "or": "və ya",
     "uploadAudio": "Audio yüklə",
-    "audioNote": "Audio hostda qalır. Transkripsiya yerli olaraq ingilis dilində aparılır. Protokol bu sessiyadakı hər klipi sıra ilə birləşdirir.",
+    "audioNote": "Audio Worker-in serverlərində qalır və sessiyanın iclas dilində avtomatik transkripsiya olunur. Sənədlər bu sessiyada işarələnmiş klipləri sıra ilə birləşdirir.",
     "documentsFrom": "Bu sessiyadan sənədlər",
     "noDocuments": "Hələ sənəd yoxdur. Klipi transkripsiya edin, sonra protokol yaradın.",
     "recordingsTitle": "Yazılar və transkriptlər",
@@ -460,7 +460,7 @@
     "remove": "Sil"
   },
   "assistant": {
-    "subtitle": "Sadə dildə təlimat verin — iş sahəniz üzrə xülasə et, tap, qaralama yaz və ya izah et.",
+    "subtitle": "Sadə dildə təlimat verin — iş məkanınız üzrə xülasə edin, tapın, layihə hazırlayın və ya izah edin.",
     "failed": "Köməkçi bunu emal edə bilmədi.",
     "instruction": "Təlimat",
     "placeholder": "Məsələn, bu həftəki təhlükəsizlik komitəsinin qərarlarını ümumiləşdirin və ya hələ təsdiq gözləyən memo-ları sadalayın.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Maşın tərcüməsi"
+  },
+  "siteFooter": {
+    "product": "Worker · AI inzibati iş yeri",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker inzibati sənədlər yaradır; yoxlama və təsdiq üçün səlahiyyətli istifadəçilər məsuliyyət daşıyır."
+  },
+  "ecoidReg": {
+    "continue": "EcoID ilə davam edin",
+    "redirecting": "EcoID-ə yönləndirilir…",
+    "startFailed": "EcoID girişi başladıla bilmədi. Yenidən cəhd edin.",
+    "finish": "Worker hesabınızın yaradılmasını tamamlayın",
+    "signingUpAs": "EcoID ilə qeydiyyatdan keçirsiniz",
+    "workspaceName": "İş məkanının adı",
+    "workspaceExample": "məs. Acme Ltd",
+    "adminNote": "Yeni iş məkanının admini olacaqsınız və sonradan həmkarlarınızı dəvət edə bilərsiniz.",
+    "expired": "EcoID sessiyanızın vaxtı bitdi. Yenidən daxil olun.",
+    "createFailed": "Hesabınız yaradıla bilmədi.",
+    "goToSignIn": "Girişə keçin",
+    "haveAccount": "Artıq Worker hesabınız var?",
+    "thenLink": "sonra hesabınızdan EcoID-i əlaqələndirin."
   }
 }

@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI haldustööruum",
     "secureWorkspace": "Turvaline haldustööruum",
-    "badge": "Inglise keel · Heli"
+    "badge": "Mitmekeelne · Heli"
   },
   "nav": {
     "dashboard": "Töölaud",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Muutke oma sõnad valmis, arhiveeritud dokumentideks.",
       "body": "Worker on AI haldustöökoht organisatsioonidele, mis koostavad suures koguses ametlikke dokumente koosolekutest, briifingutest ja kirjavahetusest. Salvestage koosolek või dikteerige ning Worker transkribeerib selle, koostab protokollid, memod, kirjad, aruanded ja poliitikabriifingud ning viib need läbi ülevaatamise ja kinnitamise — täieliku auditijäljega.",
-      "badgeRow": "Heli · Inglise keel · Turvaline tööruum"
+      "badgeRow": "Heli · 72 keelt · Turvaline töökeskkond"
     },
     "what": {
       "title": "Mida Worker teeb",
       "lead": "Rutiinne kontoritöö, mis ümbritseb koosolekuid ja kirjavahetust — tehtud minutitega, mitte tundidega.",
       "f1": {
         "title": "Salvesta ja transkribei",
-        "body": "Jäädvustage koosolekuid, intervjuusid, briifinguid või dikteerimist. Heli transkribeeritakse kohapeal inglise keeles."
+        "body": "Salvestage koosolekuid, intervjuusid, briifinguid või dikteerimist. Heli transkribeeritakse Worker'i enda serverites 67 keeles."
       },
       "f2": {
         "title": "Koosta AI-ga",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofoni juurdepääs on keelatud või pole saadaval.",
     "audioSaved": "Heli on seanssi salvestatud.",
     "uploadFailed": "Üleslaadimine ebaõnnestus.",
-    "transcribing": "Toimub kohalik transkribeerimine — pikema heli puhul võib see veidi aega võtta.",
+    "transcribing": "Transkribeerimine Worker'i serverites — pikema heli puhul võib see veidi aega võtta.",
     "transcribed": "Transkribeerimine on lõpetatud.",
     "transcribeFailed": "Transkribeerimine ebaõnnestus. Kontrollige, kas STT-teenus töötab.",
     "updateFailed": "Uuendamine ebaõnnestus.",
@@ -247,7 +247,7 @@
     "startRecording": "Alusta salvestamist",
     "or": "või",
     "uploadAudio": "Laadi heli üles",
-    "audioNote": "Heli jääb hosti. Transkribeerimine toimub kohapeal inglise keeles. Protokoll ühendab kõik selle seansi klipid järjestuses.",
+    "audioNote": "Heli jääb Worker'i serveritesse ja transkribeeritakse automaatselt sessiooni koosolekukeele järgi. Dokumendid ühendavad selles sessioonis märgitud lõigud järjekorras.",
     "documentsFrom": "Selle seansi dokumendid",
     "noDocuments": "Dokumente veel pole. Transkribeerige klipp, seejärel koostage protokoll.",
     "recordingsTitle": "Salvestised ja transkriptsioonid",
@@ -460,7 +460,7 @@
     "remove": "Eemalda"
   },
   "assistant": {
-    "subtitle": "Andke juhis lihtsas eesti keeles — tehke kokkuvõte, leidke, koostage või selgitage oma tööruumis.",
+    "subtitle": "Andke juhis lihtsas keeles — tehke kokkuvõte, leidke, koostage või selgitage oma tööruumis.",
     "failed": "Assistent ei suutnud seda töödelda.",
     "instruction": "Juhis",
     "placeholder": "nt. Tehke kokkuvõte selle nädala turvakomitee otsustest või loetlege memod, mis ootavad veel kinnitamist.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Masintõlgitud"
+  },
+  "siteFooter": {
+    "product": "Worker · AI haldustöökoht",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker genereerib haldusdokumente; volitatud kasutajad vastutavad ülevaatamise ja kinnitamise eest."
+  },
+  "ecoidReg": {
+    "continue": "Jätka EcoID-ga",
+    "redirecting": "Ümbersuunamine EcoID-le…",
+    "startFailed": "EcoID-sse sisselogimist ei saanud alustada. Palun proovige uuesti.",
+    "finish": "Lõpetage Worker'i konto loomine",
+    "signingUpAs": "Registreerumine EcoID-ga kui",
+    "workspaceName": "Tööruumi nimi",
+    "workspaceExample": "nt Acme Ltd",
+    "adminNote": "Teist saab uue tööruumi administraator ja saate hiljem kolleege kutsuda.",
+    "expired": "Teie EcoID sessioon on aegunud. Palun logige uuesti sisse.",
+    "createFailed": "Teie kontot ei saanud luua.",
+    "goToSignIn": "Mine sisselogimisele",
+    "haveAccount": "Kas teil on juba Worker'i konto?",
+    "thenLink": "seejärel linkige EcoID oma kontolt."
   }
 }

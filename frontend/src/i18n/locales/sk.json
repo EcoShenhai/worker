@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administratívny pracovný priestor",
     "secureWorkspace": "Zabezpečený administratívny pracovný priestor",
-    "badge": "Angličtina · Zvuk"
+    "badge": "Multilingválne · Audio"
   },
   "nav": {
     "dashboard": "Prehľad",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Premeňte to, čo poviete, na hotové a zaradené dokumenty.",
       "body": "Worker je AI administratívne pracovisko pre organizácie, ktoré vytvárajú veľké množstvo formálnych dokumentov zo stretnutí, brífingov a korešpondencie. Nahrajte stretnutie alebo diktujte a Worker ho prepíše, vypracuje zápisnice, memorandá, listy, správy a politické podklady a prevedie ich kontrolou a schválením — s kompletnou auditnou stopou.",
-      "badgeRow": "Zvuk · Angličtina · Zabezpečené pracovisko"
+      "badgeRow": "Audio · 72 jazykov · Bezpečné pracovisko"
     },
     "what": {
       "title": "Čo Worker robí",
       "lead": "Bežná kancelárska práca spojená so stretnutiami a korešpondenciou — vybavená v priebehu minút, nie hodín.",
       "f1": {
         "title": "Nahrávanie a prepis",
-        "body": "Zachytávajte stretnutia, rozhovory, brífingy alebo diktovanie. Zvuk sa prepisuje lokálne v angličtine."
+        "body": "Zachytávajte stretnutia, rozhovory, brífingy alebo diktovanie. Audio sa prepisuje na vlastných serveroch Worker v 67 jazykoch."
       },
       "f2": {
         "title": "Návrh s AI",
@@ -231,7 +231,7 @@
     "micDenied": "Prístup k mikrofónu bol zamietnutý alebo nie je k dispozícii.",
     "audioSaved": "Zvuk bol uložený do relácie.",
     "uploadFailed": "Nahrávanie zlyhalo.",
-    "transcribing": "Prepis prebieha lokálne – pri dlhšom zvuku to môže chvíľu trvať.",
+    "transcribing": "Prepisovanie na serveroch Worker — pri dlhšom audiu to môže chvíľu trvať.",
     "transcribed": "Prepis dokončený.",
     "transcribeFailed": "Prepis zlyhal. Skontrolujte, či je služba STT spustená.",
     "updateFailed": "Nepodarilo sa aktualizovať.",
@@ -247,7 +247,7 @@
     "startRecording": "Spustiť nahrávanie",
     "or": "alebo",
     "uploadAudio": "Nahrať zvuk",
-    "audioNote": "Zvuk zostáva na hostiteľovi. Prepis prebieha lokálne v angličtine. Zápisnica spája všetky klipy v tejto relácii v poradí.",
+    "audioNote": "Audio zostáva na serveroch Worker a je automaticky prepisované v jazyku stretnutia danej relácie. Dokumenty spájajú začiarknuté klipy v tejto relácii v poradí.",
     "documentsFrom": "Dokumenty z tejto relácie",
     "noDocuments": "Zatiaľ žiadne dokumenty. Prepíšte klip a potom vygenerujte zápisnicu.",
     "recordingsTitle": "Nahrávky a prepisy",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Strojový preklad"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administratívne pracovisko",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker generuje administratívne dokumenty; oprávnení používatelia sú naďalej zodpovední za kontrolu a schválenie."
+  },
+  "ecoidReg": {
+    "continue": "Pokračovať s EcoID",
+    "redirecting": "Presmerovanie na EcoID…",
+    "startFailed": "Nepodarilo sa spustiť prihlásenie cez EcoID. Skúste to znova.",
+    "finish": "Dokončite vytvorenie účtu Worker",
+    "signingUpAs": "Registrácia s EcoID ako",
+    "workspaceName": "Názov pracovného priestoru",
+    "workspaceExample": "napr. Acme Ltd",
+    "adminNote": "Budete správcom nového pracovného priestoru a neskôr môžete pozvať kolegov.",
+    "expired": "Platnosť relácie EcoID vypršala. Prihláste sa znova.",
+    "createFailed": "Nepodarilo sa vytvoriť váš účet.",
+    "goToSignIn": "Prejsť na prihlásenie",
+    "haveAccount": "Už máte účet Worker?",
+    "thenLink": "potom prepojte EcoID zo svojho účtu."
   }
 }

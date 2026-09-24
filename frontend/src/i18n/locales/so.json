@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Goob shaqo maamuleed oo AI ah",
     "secureWorkspace": "Goob shaqo maamuleed oo ammaan ah",
-    "badge": "Ingiriisi · Cod"
+    "badge": "Luqado badan · Cod"
   },
   "nav": {
     "dashboard": "Shaxda guud",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "U beddel waxa aad tidhaahdo dukumentiyo dhammeystiran oo la kaydiyay.",
       "body": "Worker waa goob shaqo maamuleed oo AI ah oo loogu talagalay ururada soo saara tiro badan oo dukumentiyo rasmi ah oo ka yimaada kulamo, warbixinno iyo waraaqo. Duub kulan ama cod dhig, Worker ayaa qora, diyaariyaa qoraallada kulanka, qoraallada, waraaqaha, warbixinnada iyo soo koobidda siyaasadda, oo u maraa dib u eegis iyo ansixin — iyadoo leh raadraac hantidhawr oo buuxa.",
-      "badgeRow": "Cod · Ingiriisi · Goob shaqo oo ammaan ah"
+      "badgeRow": "Cod · 72 luqadood · Goob shaqo oo ammaan ah"
     },
     "what": {
       "title": "Waxa Worker qabto",
       "lead": "Shaqada xafiiska ee caadiga ah ee ku xeeran kulamada iyo waraaqaha — lagu qabto daqiiqado, ma aha saacado.",
       "f1": {
         "title": "Duub & qor",
-        "body": "Qabso kulamo, wareysiyo, warbixinno ama cod-dhigid. Codka waxaa lagu qoraa gudaha Ingiriisi."
+        "body": "Qabashada shirarka, wareysiyada, warbixinnada ama qoraalka codka. Codka waxaa lagu qoraa server-yada Worker gudahood 67 luqadood."
       },
       "f2": {
         "title": "Qorista AI",
@@ -231,7 +231,7 @@
     "micDenied": "Helitaanka makarafoonka waa la diiday ama lama heli karo.",
     "audioSaved": "Codka waa lagu kaydiyay kulanka.",
     "uploadFailed": "Soo gelinta waa fashilantay.",
-    "transcribing": "Gudaha ayaa lagu qorayaa — tani waxay qaadan kartaa waqti cod dheer.",
+    "transcribing": "Waxaa lagu qorayaa server-yada Worker — tani waxay qaadan kartaa waqti cod dheer.",
     "transcribed": "Qoraalku wuu dhammaaday.",
     "transcribeFailed": "Qoraalku waa fashilmay. Hubi in adeegga STT uu shaqeynayo.",
     "updateFailed": "Lama cusboonaysiin karin.",
@@ -247,7 +247,7 @@
     "startRecording": "Bilow duubista",
     "or": "ama",
     "uploadAudio": "Soo geli codka",
-    "audioNote": "Codku wuxuu ku sii jiraa martigeliyaha. Qoraalku wuxuu ku socdaa gudaha Ingiriisi. Daqiiqaduhu waxay isku daraan dhammaan qaybaha kulankan, si kala horreysan.",
+    "audioNote": "Codku wuxuu ku sii jiraa server-yada Worker oo si otomaatig ah ayaa loogu qoraa luqadda shirka ee fadhiga. Dukumentiyadu waxay isku daraan fiidyowyada la calaamadeeyay fadhigan, si isku xigta.",
     "documentsFrom": "Dukumeentiyada kulankan",
     "noDocuments": "Weli dukumeenti ma jiro. Qor qayb, kadib soo saar daqiiqadaha.",
     "recordingsTitle": "Duubitaanno & qoraallo",
@@ -460,7 +460,7 @@
     "remove": "Saar"
   },
   "assistant": {
-    "subtitle": "Ku bixi tilmaan Ingiriisi fudud — soo koob, raadi, qor ama sharax gudaha goobtaada shaqada.",
+    "subtitle": "Bixi tilmaan luqad fudud — soo koob, raadi, qor ama sharax goobtaada shaqo oo dhan.",
     "failed": "Kaaliyaha ma awoodin inuu taas farsameeyo.",
     "instruction": "Tilmaan",
     "placeholder": "tus. Soo koob go'aannada guddiga amniga ee toddobaadkan, ama liis dukumentiyada weli sugaya ansixinta.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Mashiin-turjun"
+  },
+  "siteFooter": {
+    "product": "Worker · Goobta shaqada maamulka AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker wuxuu soo saaraa dukumentiyo maamuleed; isticmaalayaasha la fasaxay ayaa weli mas'uul ka ah dib u eegista iyo ansixinta."
+  },
+  "ecoidReg": {
+    "continue": "Ku sii wad EcoID",
+    "redirecting": "Waxaa loo wareejinayaa EcoID…",
+    "startFailed": "Ma bilaabi karin gelitaanka EcoID. Fadlan isku day mar kale.",
+    "finish": "Dhammee abuurista akoonkaaga Worker",
+    "signingUpAs": "Waxaa lagu diiwaangelinayaa EcoID sida",
+    "workspaceName": "Magaca goobta shaqada",
+    "workspaceExample": "tus. Acme Ltd",
+    "adminNote": "Waxaad noqon doontaa maamulaha goob shaqo cusub oo waad casuuni kartaa asxaabta mustaqbalka.",
+    "expired": "Fadhigaaga EcoID wuu dhacay. Fadlan mar kale gal.",
+    "createFailed": "Ma abuuri karin akoonkaaga.",
+    "goToSignIn": "Tag gelitaanka",
+    "haveAccount": "Ma hore ayaad u haysataa akoon Worker?",
+    "thenLink": "ka dib ku xir EcoID akoonkaaga."
   }
 }

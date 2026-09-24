@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI-werkomgeving voor administratie",
     "secureWorkspace": "Beveiligde administratieve werkomgeving",
-    "badge": "Engels · Audio"
+    "badge": "Meertalig · Audio"
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Zet wat u zegt om in afgeronde, gearchiveerde documenten.",
       "body": "Worker is een AI-werkomgeving voor administratie voor organisaties die grote hoeveelheden formele documenten produceren op basis van vergaderingen, briefings en correspondentie. Neem een vergadering op of dicteer, en Worker transcribeert het, stelt notulen, memo's, brieven, rapporten en beleidsnotities op en begeleidt deze door beoordeling en goedkeuring — met een volledige audittrail.",
-      "badgeRow": "Audio · Engels · Beveiligde werkomgeving"
+      "badgeRow": "Audio · 72 talen · Veilige werkplek"
     },
     "what": {
       "title": "Wat Worker doet",
       "lead": "Het routinematige kantoorwerk rond vergaderingen en correspondentie — afgehandeld in minuten, niet in uren.",
       "f1": {
         "title": "Opnemen en transcriberen",
-        "body": "Leg vergaderingen, interviews, briefings of dictaat vast. Audio wordt lokaal in het Engels getranscribeerd."
+        "body": "Leg vergaderingen, interviews, briefings of dictaat vast. Audio wordt op Worker's eigen servers getranscribeerd in 67 talen."
       },
       "f2": {
         "title": "Opstellen met AI",
@@ -231,7 +231,7 @@
     "micDenied": "Toegang tot microfoon geweigerd of niet beschikbaar.",
     "audioSaved": "Audio opgeslagen bij de sessie.",
     "uploadFailed": "Upload mislukt.",
-    "transcribing": "Lokaal transcriberen — dit kan even duren bij langere audio.",
+    "transcribing": "Transcriberen op Worker's servers — dit kan even duren bij langere audio.",
     "transcribed": "Transcriptie voltooid.",
     "transcribeFailed": "Transcriptie mislukt. Controleer of de STT-service actief is.",
     "updateFailed": "Bijwerken mislukt.",
@@ -247,7 +247,7 @@
     "startRecording": "Opname starten",
     "or": "of",
     "uploadAudio": "Audio uploaden",
-    "audioNote": "Audio blijft op de host. Transcriptie wordt lokaal in het Engels uitgevoerd. Notulen combineren elk fragment in deze sessie, in volgorde.",
+    "audioNote": "Audio blijft op Worker's servers en wordt automatisch getranscribeerd in de vergadertaal van de sessie. Documenten combineren de aangevinkte clips in deze sessie, in volgorde.",
     "documentsFrom": "Documenten uit deze sessie",
     "noDocuments": "Nog geen documenten. Transcribeer een fragment en genereer vervolgens notulen.",
     "recordingsTitle": "Opnamen & transcripten",
@@ -460,7 +460,7 @@
     "remove": "Verwijderen"
   },
   "assistant": {
-    "subtitle": "Geef een instructie in gewoon Nederlands — vat samen, zoek, stel op of leg uit binnen uw werkruimte.",
+    "subtitle": "Geef een instructie in gewone taal — vat samen, zoek, stel op of leg uit binnen uw werkruimte.",
     "failed": "De assistent kon dat niet verwerken.",
     "instruction": "Instructie",
     "placeholder": "bijv. Vat de besluiten van het veiligheidscomité van deze week samen, of som de memo's op die nog op goedkeuring wachten.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Automatisch vertaald"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administratieve werkplek",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker genereert administratieve documenten; geautoriseerde gebruikers blijven verantwoordelijk voor beoordeling en goedkeuring."
+  },
+  "ecoidReg": {
+    "continue": "Doorgaan met EcoID",
+    "redirecting": "Doorsturen naar EcoID…",
+    "startFailed": "EcoID-aanmelding kon niet worden gestart. Probeer het opnieuw.",
+    "finish": "Voltooi het aanmaken van uw Worker-account",
+    "signingUpAs": "Aanmelden met EcoID als",
+    "workspaceName": "Naam werkruimte",
+    "workspaceExample": "bijv. Acme Ltd",
+    "adminNote": "U wordt de beheerder van een nieuwe werkruimte en kunt later collega's uitnodigen.",
+    "expired": "Uw EcoID-sessie is verlopen. Meld u opnieuw aan.",
+    "createFailed": "Uw account kon niet worden aangemaakt.",
+    "goToSignIn": "Ga naar aanmelden",
+    "haveAccount": "Hebt u al een Worker-account?",
+    "thenLink": "koppel EcoID vervolgens vanuit uw account."
   }
 }

@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administratīvā darbvieta",
     "secureWorkspace": "Droša administratīvā darbvieta",
-    "badge": "Angļu · Audio"
+    "badge": "Daudzvalodu · Audio"
   },
   "nav": {
     "dashboard": "Informācijas panelis",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Pārvērsiet teikto pabeigtos, reģistrētos dokumentos.",
       "body": "Worker ir AI administratīvā darbvieta organizācijām, kas no sanāksmēm, instruktāžām un sarakstes rada lielu daudzumu formālu dokumentu. Ierakstiet sanāksmi vai diktējiet, un Worker to pārraksta tekstā, sagatavo protokolus, memorandus, vēstules, ziņojumus un politikas kopsavilkumus un virza tos caur pārskatīšanu un apstiprināšanu — ar pilnīgu audita žurnālu.",
-      "badgeRow": "Audio · Angļu · Droša darbvieta"
+      "badgeRow": "Audio · 72 valodas · Droša darbvieta"
     },
     "what": {
       "title": "Ko dara Worker",
       "lead": "Ikdienas biroja darbs, kas saistīts ar sanāksmēm un saraksti — paveikts minūtēs, nevis stundās.",
       "f1": {
         "title": "Ierakstīt un pārrakstīt",
-        "body": "Ierakstiet sanāksmes, intervijas, instruktāžas vai diktējumu. Audio tiek pārrakstīts lokāli angļu valodā."
+        "body": "Ierakstiet sapulces, intervijas, instruktāžas vai diktātu. Audio tiek pārrakstīts Worker pašu serveros 67 valodās."
       },
       "f2": {
         "title": "Melnraksts ar AI",
@@ -231,7 +231,7 @@
     "micDenied": "Piekļuve mikrofonam liegta vai nav pieejama.",
     "audioSaved": "Audio saglabāts sesijā.",
     "uploadFailed": "Augšupielāde neizdevās.",
-    "transcribing": "Notiek lokalizēta transkribēšana — garākam audio tas var aizņemt brīdi.",
+    "transcribing": "Notiek pārrakstīšana Worker serveros — garākam audio tas var aizņemt brīdi.",
     "transcribed": "Transkribēšana pabeigta.",
     "transcribeFailed": "Transkribēšana neizdevās. Pārbaudiet, vai STT pakalpojums darbojas.",
     "updateFailed": "Nevarēja atjaunināt.",
@@ -247,7 +247,7 @@
     "startRecording": "Sākt ierakstīšanu",
     "or": "vai",
     "uploadAudio": "Augšupielādēt audio",
-    "audioNote": "Audio paliek resursdatorā. Transkribēšana notiek lokāli angļu valodā. Protokols apvieno visus šīs sesijas klipus secībā.",
+    "audioNote": "Audio paliek Worker serveros un tiek automātiski pārrakstīts sesijas sapulces valodā. Dokumenti apvieno atzīmētos klipus šajā sesijā, secībā.",
     "documentsFrom": "Dokumenti no šīs sesijas",
     "noDocuments": "Vēl nav dokumentu. Transkribējiet klipu, pēc tam ģenerējiet protokolu.",
     "recordingsTitle": "Ieraksti un transkripti",
@@ -460,7 +460,7 @@
     "remove": "Noņemt"
   },
   "assistant": {
-    "subtitle": "Sniedziet norādījumu vienkāršā valodā — apkopojiet, atrodiet, sagatavojiet melnrakstu vai izskaidrojiet visā darbvietā.",
+    "subtitle": "Sniedziet norādījumu vienkāršā valodā — apkopojiet, atrodiet, sagatavojiet vai izskaidrojiet visā darbvietā.",
     "failed": "Asistents nevarēja to apstrādāt.",
     "instruction": "Instrukcija",
     "placeholder": "Piemēram, apkopojiet šīs nedēļas drošības komitejas lēmumus vai uzskaitiet piezīmes, kas vēl gaida apstiprinājumu.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Mašīntulkojums"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administratīvā darbvieta",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker ģenerē administratīvos dokumentus; pilnvarotie lietotāji joprojām ir atbildīgi par pārbaudi un apstiprināšanu."
+  },
+  "ecoidReg": {
+    "continue": "Turpināt ar EcoID",
+    "redirecting": "Novirza uz EcoID…",
+    "startFailed": "Nevarēja sākt EcoID pierakstīšanos. Lūdzu, mēģiniet vēlreiz.",
+    "finish": "Pabeidziet Worker konta izveidi",
+    "signingUpAs": "Reģistrēšanās ar EcoID kā",
+    "workspaceName": "Darbvietas nosaukums",
+    "workspaceExample": "piem., Acme Ltd",
+    "adminNote": "Jūs būsiet jaunas darbvietas administrators un vēlāk varēsiet uzaicināt kolēģus.",
+    "expired": "Jūsu EcoID sesija ir beigusies. Lūdzu, pierakstieties vēlreiz.",
+    "createFailed": "Nevarēja izveidot jūsu kontu.",
+    "goToSignIn": "Doties uz pierakstīšanos",
+    "haveAccount": "Vai jums jau ir Worker konts?",
+    "thenLink": "pēc tam saistiet EcoID no sava konta."
   }
 }

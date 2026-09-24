@@ -1,3 +1,4 @@
+import { useI18n } from '../i18n/index.jsx';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext.jsx';
@@ -13,6 +14,7 @@ const loadScript = (src, id) => new Promise((resolve, reject) => {
 
 // intent: "login" (sign in / sign up) or "link" (attach EcoID to the signed-in account)
 export default function EcoIdButtons({ intent = 'login' }) {
+  const { t } = useI18n();
   const navigate = useNavigate();
   const { setUser } = useAuth();
   const [enabled, setEnabled] = useState({ google: false, facebook: false, telegram: false });
@@ -68,7 +70,7 @@ export default function EcoIdButtons({ intent = 'login' }) {
 
   const startEcoId = async () => {
     setBusy('ecoid'); setError('');
-    try { await startEcoIdLogin(intent); } catch { setError('Could not start EcoID sign-in. Please try again.'); setBusy(''); }
+    try { await startEcoIdLogin(intent); } catch { setError(t('ecoidReg.startFailed')); setBusy(''); }
   };
 
   return (
@@ -80,7 +82,7 @@ export default function EcoIdButtons({ intent = 'login' }) {
       )}
       {error && <div className="notice err" style={{ fontSize: '0.85rem' }}>{error}</div>}
       <button type="button" className="btn block" onClick={startEcoId} disabled={!!busy}>
-        {busy === 'ecoid' ? 'Redirecting to EcoID…' : 'Continue with EcoID'}
+        {busy === 'ecoid' ? t('ecoidReg.redirecting') : t('ecoidReg.continue')}
       </button>
       {enabled.google && <div ref={googleRef} style={{ display: 'flex', justifyContent: 'center' }} />}
       {enabled.facebook && <button type="button" className="btn block" onClick={facebookLogin} disabled={!!busy}>{busy === 'facebook' ? 'Connecting…' : 'Continue with Facebook'}</button>}

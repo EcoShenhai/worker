@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Spazju ta' xogħol amministrattiv bl-AI",
     "secureWorkspace": "Spazju ta' xogħol amministrattiv sigur",
-    "badge": "Ingliż · Awdjo"
+    "badge": "Multilingwi · Awdjo"
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Biddel dak li tgħid f'karti mfassla u arkivjati.",
       "body": "Worker huwa spazju tax-xogħol amministrattiv bl-AI għal organizzazzjonijiet li jipproduċu kwantitajiet kbar ta' dokumenti formali minn laqgħat, briefings u korrispondenza. Irrekordja laqgħa jew iddetta, u Worker jittraskrivietha, jabbozza minuti, memoranda, ittri, rapporti u briefs ta' politika, u jgħaddihom minn reviżjoni u approvazzjoni — b'traċċa tal-awditjar kompleta.",
-      "badgeRow": "Awdjo · Ingliż · Spazju ta' xogħol sigur"
+      "badgeRow": "Awdjo · 72 lingwa · Post tax-xogħol sigur"
     },
     "what": {
       "title": "X'jagħmel Worker",
       "lead": "Ix-xogħol rutina tal-uffiċċju li jdawwar il-laqgħat u l-korrispondenza — immaniġġjat f'minuti, mhux sigħat.",
       "f1": {
         "title": "Irrekordja u ttraskrivi",
-        "body": "Aqbad laqgħat, intervisti, briefings jew dettatura. L-awdjo jiġi ttraskritt lokalment bl-Ingliż."
+        "body": "Aqbad laqgħat, intervisti, briefings jew dettatura. L-awdjo jiġi traskritt fuq is-servers ta' Worker stess fi 67 lingwa."
       },
       "f2": {
         "title": "Abbozz bl-IA",
@@ -231,7 +231,7 @@
     "micDenied": "Aċċess għall-mikrofonu miċħud jew mhux disponibbli.",
     "audioSaved": "Awdjo salvat mas-sessjoni.",
     "uploadFailed": "It-tlugħ falla.",
-    "transcribing": "Qed jiġi traskritt lokalment — dan jista' jieħu ftit għal awdjo itwal.",
+    "transcribing": "Qed jiġi traskritt fuq is-servers ta' Worker — dan jista' jieħu ftit ħin għal awdjo itwal.",
     "transcribed": "Traskrizzjoni kompluta.",
     "transcribeFailed": "It-traskrizzjoni falliet. Iċċekkja li s-servizz STT qed jaħdem.",
     "updateFailed": "Ma setgħetx tiġi aġġornata.",
@@ -247,7 +247,7 @@
     "startRecording": "Ibda r-reġistrazzjoni",
     "or": "jew",
     "uploadAudio": "Tella' l-awdjo",
-    "audioNote": "L-awdjo jibqa' fuq il-host. It-traskrizzjoni ssir lokalment bl-Ingliż. Il-minuti jgħaqqdu kull klip f'din is-sessjoni, bil-ordni.",
+    "audioNote": "L-awdjo jibqa' fuq is-servers ta' Worker u jiġi traskritt awtomatikament bil-lingwa tal-laqgħa tas-sessjoni. Id-dokumenti jgħaqqdu l-klipps immarkati f'din is-sessjoni, bil-ordni.",
     "documentsFrom": "Dokumenti minn din is-sessjoni",
     "noDocuments": "L-ebda dokument s'issa. Ittraskrivi klip, imbagħad iġġenera l-minuti.",
     "recordingsTitle": "Reġistrazzjonijiet u traskrizzjonijiet",
@@ -460,7 +460,7 @@
     "remove": "Neħħi"
   },
   "assistant": {
-    "subtitle": "Agħti struzzjoni bl-Ingliż sempliċi — iġbor fil-qosor, sib, abbozza jew spjega madwar il-workspace tiegħek.",
+    "subtitle": "Agħti struzzjoni b'lingwaġġ sempliċi — iġbor fil-qosor, sib, abbozza jew spjega madwar il-post tax-xogħol tiegħek.",
     "failed": "L-assistent ma setax jipproċessa dan.",
     "instruction": "Istruzzjoni",
     "placeholder": "eż. Aqsam id-deċiżjonijiet mill-kumitat tas-sigurtà ta' din il-ġimgħa, jew elenka l-memo li għadhom jistennew l-approvazzjoni.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Tradott mill-magna"
+  },
+  "siteFooter": {
+    "product": "Worker · Post tax-xogħol amministrattiv bl-AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker jiġġenera dokumenti amministrattivi; l-utenti awtorizzati jibqgħu responsabbli għar-reviżjoni u l-approvazzjoni."
+  },
+  "ecoidReg": {
+    "continue": "Kompli bl-EcoID",
+    "redirecting": "Qed jiġi ridirezzjonat lejn EcoID…",
+    "startFailed": "Ma setax jibda l-illoggjar bl-EcoID. Jekk jogħġbok erġa' pprova.",
+    "finish": "Lesti l-ħolqien tal-kont Worker tiegħek",
+    "signingUpAs": "Qed tirreġistra bl-EcoID bħala",
+    "workspaceName": "Isem il-post tax-xogħol",
+    "workspaceExample": "eż. Acme Ltd",
+    "adminNote": "Int se tkun l-amministratur ta' post tax-xogħol ġdid u tista' tistieden kollegi aktar tard.",
+    "expired": "Is-sessjoni EcoID tiegħek skadiet. Jekk jogħġbok erġa' illoggja.",
+    "createFailed": "Ma setax jinħoloq il-kont tiegħek.",
+    "goToSignIn": "Mur għall-illoggjar",
+    "haveAccount": "Diġà għandek kont Worker?",
+    "thenLink": "imbagħad agħmel link tal-EcoID mill-kont tiegħek."
   }
 }

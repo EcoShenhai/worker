@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI administrative workspace",
     "secureWorkspace": "Secure administrative workspace",
-    "badge": "English · Audio"
+    "badge": "Multilingual · Audio"
   },
   "nav": {
     "dashboard": "Dashboard",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Turn what you say into finished, filed paperwork.",
       "body": "Worker is an AI administrative workplace for organizations that produce large quantities of formal documents from meetings, briefings and correspondence. Record a meeting or dictate, and Worker transcribes it, drafts minutes, memos, letters, reports and policy briefs, and takes them through review and approval — with a complete audit trail.",
-      "badgeRow": "Audio · English · Secure workplace"
+      "badgeRow": "Audio · 72 languages · Secure workplace"
     },
     "what": {
       "title": "What Worker does",
       "lead": "The routine office work that surrounds meetings and correspondence — handled in minutes, not hours.",
       "f1": {
         "title": "Record & transcribe",
-        "body": "Capture meetings, interviews, briefings or dictation. Audio is transcribed locally in English."
+        "body": "Capture meetings, interviews, briefings or dictation. Audio is transcribed on Worker's own servers in 67 languages."
       },
       "f2": {
         "title": "Draft with AI",
@@ -231,7 +231,7 @@
     "micDenied": "Microphone access denied or unavailable.",
     "audioSaved": "Audio saved to the session.",
     "uploadFailed": "Upload failed.",
-    "transcribing": "Transcribing locally — this can take a moment for longer audio.",
+    "transcribing": "Transcribing on Worker's servers — this can take a moment for longer audio.",
     "transcribed": "Transcription complete.",
     "transcribeFailed": "Transcription failed. Check the STT service is running.",
     "updateFailed": "Could not update.",
@@ -247,7 +247,7 @@
     "startRecording": "Start recording",
     "or": "or",
     "uploadAudio": "Upload audio",
-    "audioNote": "Audio stays on the host. Transcription runs locally in English. Minutes combine every clip in this session, in order.",
+    "audioNote": "Audio stays on Worker's servers and is transcribed automatically in the session's meeting language. Documents combine the ticked clips in this session, in order.",
     "documentsFrom": "Documents from this session",
     "noDocuments": "No documents yet. Transcribe a clip, then generate minutes.",
     "recordingsTitle": "Recordings & transcripts",
@@ -460,7 +460,7 @@
     "remove": "Remove"
   },
   "assistant": {
-    "subtitle": "Give an instruction in plain English — summarise, find, draft or explain across your workspace.",
+    "subtitle": "Give an instruction in plain language — summarise, find, draft or explain across your workspace.",
     "failed": "The assistant could not process that.",
     "instruction": "Instruction",
     "placeholder": "e.g. Summarise the decisions from this week's security committee, or list memos still awaiting approval.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Machine-translated"
+  },
+  "siteFooter": {
+    "product": "Worker · AI administrative workplace",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker generates administrative documents; authorised users remain responsible for review and approval."
+  },
+  "ecoidReg": {
+    "continue": "Continue with EcoID",
+    "redirecting": "Redirecting to EcoID…",
+    "startFailed": "Could not start EcoID sign-in. Please try again.",
+    "finish": "Finish creating your Worker account",
+    "signingUpAs": "Signing up with EcoID as",
+    "workspaceName": "Workspace name",
+    "workspaceExample": "e.g. Acme Ltd",
+    "adminNote": "You'll be the admin of a new workspace and can invite colleagues later.",
+    "expired": "Your EcoID session expired. Please sign in again.",
+    "createFailed": "Could not create your account.",
+    "goToSignIn": "Go to sign in",
+    "haveAccount": "Already have a Worker account?",
+    "thenLink": "then link EcoID from your account."
   }
 }

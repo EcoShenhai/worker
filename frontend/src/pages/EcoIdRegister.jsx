@@ -41,30 +41,30 @@ export default function EcoIdRegister() {
       navigate('/', { replace: true });
     } catch (e2) {
       const code = e2?.response?.data?.code; const status = e2?.response?.status;
-      if (status === 401) { sessionStorage.removeItem(ECOID_PENDING_KEY); setErr({ text: 'Your EcoID session expired. Please sign in again.', login: true }); }
-      else setErr({ text: errMsg(e2, 'Could not create your account.'), login: code === 'EMAIL_EXISTS' || code === 'ALREADY_REGISTERED' });
+      if (status === 401) { sessionStorage.removeItem(ECOID_PENDING_KEY); setErr({ text: t('ecoidReg.expired'), login: true }); }
+      else setErr({ text: errMsg(e2, t('ecoidReg.createFailed')), login: code === 'EMAIL_EXISTS' || code === 'ALREADY_REGISTERED' });
     } finally { setBusy(false); }
   };
 
   return (
     <div className="auth-wrap"><div className="auth-card">
       <AuthBrand />
-      <div className="sub">Finish creating your Worker account</div>
-      {email && <p className="muted" style={{ fontSize: '0.85rem' }}>Signing up as <strong>{email}</strong> with EcoID.</p>}
-      {err && <div className="notice err">{err.text}{err.login && <> <Link to="/login">Go to sign in</Link></>}</div>}
+      <div className="sub">{t('ecoidReg.finish')}</div>
+      {email && <p className="muted" style={{ fontSize: '0.85rem' }}>{t('ecoidReg.signingUpAs')} <strong>{email}</strong></p>}
+      {err && <div className="notice err">{err.text}{err.login && <> <Link to="/login">{t('ecoidReg.goToSignIn')}</Link></>}</div>}
       <form onSubmit={submit}>
-        <div className="field"><label>Full name</label><input value={name} onChange={(e) => setName(e.target.value)} required /></div>
-        <div className="field"><label>Workspace name</label><input value={workspaceName} onChange={(e) => setWorkspaceName(e.target.value)} placeholder={name ? `${name} (Workspace)` : 'e.g. Acme Ltd'} /></div>
+        <div className="field"><label>{t('auth.fullName')}</label><input value={name} onChange={(e) => setName(e.target.value)} required /></div>
+        <div className="field"><label>{t('ecoidReg.workspaceName')}</label><input value={workspaceName} onChange={(e) => setWorkspaceName(e.target.value)} placeholder={name ? `${name} (Workspace)` : t('ecoidReg.workspaceExample')} /></div>
         {intl && (
           <>
             <div className="field"><label>{t('intl.territory')}</label><TerritorySelect territories={intl.territories} value={territory} onChange={setTerritory} required searchPlaceholder={t('intl.searchTerritory')} placeholder={t('intl.selectTerritory')} /></div>
             {territory && <div className="field"><label>{t('intl.workingLanguage')}</label><LanguageSelect languages={intl.languages} preferred={intl.territories.find((x) => x.code === territory)?.languages} value={language} onChange={setLanguage} /></div>}
           </>
         )}
-        <p className="muted" style={{ fontSize: '0.78rem' }}>You'll be the admin of a new workspace and can invite colleagues later.</p>
-        <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : 'Create account'}</button>
+        <p className="muted" style={{ fontSize: '0.78rem' }}>{t('ecoidReg.adminNote')}</p>
+        <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : t('common.createAccount')}</button>
       </form>
-      <div style={{ marginTop: '1rem', fontSize: '0.85rem' }}>Already have a Worker account? <Link to="/login">Sign in</Link>, then link EcoID from your account.</div>
+      <div style={{ marginTop: '1rem', fontSize: '0.85rem' }}>{t('ecoidReg.haveAccount')} <Link to="/login">{t('common.signIn')}</Link> — {t('ecoidReg.thenLink')}</div>
     </div></div>
   );
 }

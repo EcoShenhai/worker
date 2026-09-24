@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Espace de travail administratif IA",
     "secureWorkspace": "Espace de travail administratif sécurisé",
-    "badge": "Anglais · Audio"
+    "badge": "Multilingue · Audio"
   },
   "nav": {
     "dashboard": "Tableau de bord",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Transformez vos paroles en documents finalisés et classés.",
       "body": "Worker est un espace de travail administratif doté d'IA pour les organisations qui produisent de grandes quantités de documents officiels à partir de réunions, de points d'information et de correspondance. Enregistrez une réunion ou dictez : Worker la transcrit, rédige procès-verbaux, notes de service, lettres, rapports et notes d'orientation, puis les fait passer par la relecture et l'approbation — avec une piste d'audit complète.",
-      "badgeRow": "Audio · Anglais · Espace de travail sécurisé"
+      "badgeRow": "Audio · 72 langues · Espace de travail sécurisé"
     },
     "what": {
       "title": "Ce que fait Worker",
       "lead": "Le travail de bureau courant qui entoure les réunions et la correspondance — traité en quelques minutes, pas en quelques heures.",
       "f1": {
         "title": "Enregistrer et transcrire",
-        "body": "Capturez réunions, entretiens, points d'information ou dictées. L'audio est transcrit localement en anglais."
+        "body": "Capturez réunions, entretiens, points d'information ou dictées. L'audio est transcrit sur les serveurs de Worker, en 67 langues."
       },
       "f2": {
         "title": "Rédiger avec l'IA",
@@ -232,7 +232,7 @@
     "micDenied": "Accès au microphone refusé ou indisponible.",
     "audioSaved": "Audio enregistré dans la session.",
     "uploadFailed": "Échec du téléversement.",
-    "transcribing": "Transcription locale en cours — cela peut prendre un moment pour les enregistrements longs.",
+    "transcribing": "Transcription en cours sur les serveurs de Worker — cela peut prendre un moment pour les enregistrements longs.",
     "transcribed": "Transcription terminée.",
     "transcribeFailed": "Échec de la transcription. Vérifiez que le service STT est en cours d'exécution.",
     "updateFailed": "Impossible de mettre à jour.",
@@ -248,7 +248,7 @@
     "startRecording": "Démarrer l'enregistrement",
     "or": "ou",
     "uploadAudio": "Téléverser un audio",
-    "audioNote": "L'audio reste sur le serveur. La transcription s'effectue localement en anglais. Le procès-verbal combine tous les extraits de cette session, dans l'ordre.",
+    "audioNote": "L'audio reste sur les serveurs de Worker et est transcrit automatiquement dans la langue de réunion de la session. Les documents combinent les extraits cochés de cette session, dans l'ordre.",
     "documentsFrom": "Documents issus de cette session",
     "noDocuments": "Aucun document pour l'instant. Transcrivez un extrait, puis générez le procès-verbal.",
     "recordingsTitle": "Enregistrements et transcriptions",
@@ -665,5 +665,25 @@
   },
   "i18nNote": {
     "machine": "Traduction automatique"
+  },
+  "siteFooter": {
+    "product": "Worker · Espace de travail administratif IA",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker génère des documents administratifs ; les utilisateurs autorisés restent responsables de leur relecture et de leur approbation."
+  },
+  "ecoidReg": {
+    "continue": "Continuer avec EcoID",
+    "redirecting": "Redirection vers EcoID…",
+    "startFailed": "Impossible de démarrer la connexion EcoID. Veuillez réessayer.",
+    "finish": "Terminez la création de votre compte Worker",
+    "signingUpAs": "Inscription avec EcoID en tant que",
+    "workspaceName": "Nom de l'espace de travail",
+    "workspaceExample": "ex. Acme SARL",
+    "adminNote": "Vous serez l'administrateur d'un nouvel espace de travail et pourrez inviter des collègues ensuite.",
+    "expired": "Votre session EcoID a expiré. Veuillez vous reconnecter.",
+    "createFailed": "Impossible de créer votre compte.",
+    "goToSignIn": "Aller à la connexion",
+    "haveAccount": "Vous avez déjà un compte Worker ?",
+    "thenLink": "puis liez EcoID depuis votre compte."
   }
 }

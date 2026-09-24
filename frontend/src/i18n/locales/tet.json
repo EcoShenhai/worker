@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Espasu servisu administrativu AI",
     "secureWorkspace": "Espasu servisu administrativu seguru",
-    "badge": "Inglês · Áudio"
+    "badge": "Multilingua · Audio"
   },
   "nav": {
     "dashboard": "Painel",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Transforma buat ne'ebé ita ko'alia ba dokumentu kompletu no arkivadu.",
       "body": "Worker mak fatin servisu administrativu AI ba organizasaun sira ne'ebé prodús dokumentu formál barak husi reuniaun, brifing no korespondénsia. Rekorda reuniaun ida ka dikta, no Worker transkreve, halo minuta, memorandu, karta, relatóriu no brifing polítika, no lori sira liu revizaun no aprovasaun — ho trilha auditoria kompletu.",
-      "badgeRow": "Áudio · Inglés · Fatin servisu seguru"
+      "badgeRow": "Audio · 72 lian · Fatin servisu seguru"
     },
     "what": {
       "title": "Saida mak Worker halo",
       "lead": "Servisu eskritóriu rutina ne'ebé envolve reuniaun no korespondénsia — rezolve iha minutu, la'ós oras.",
       "f1": {
         "title": "Rekorda & transkreve",
-        "body": "Kaptura reuniaun, entrevista, brifing ka dikta. Áudio transkreve lokál iha Inglés."
+        "body": "Rekorde reuniaun, entrevista, brifin ou ditadu. Audio transkritu iha servidor Worker nian rasik iha 67 lian."
       },
       "f2": {
         "title": "Skreve ho IA",
@@ -231,7 +231,7 @@
     "micDenied": "Asesu mikrofone la permite ka la disponivel.",
     "audioSaved": "Áudio rai ona iha sesaun.",
     "uploadFailed": "Upload falha.",
-    "transcribing": "Transkrisaun lokal — ida ne'e bele demora ba áudio naruk.",
+    "transcribing": "Transkrisaun iha servidor Worker nian — ne'e bele demora uitoan ba audio naruk.",
     "transcribed": "Transkrisaun kompletu.",
     "transcribeFailed": "Transkrisaun falha. Verifika servisu STT hala'o.",
     "updateFailed": "La konsege atualiza.",
@@ -247,7 +247,7 @@
     "startRecording": "Hahu rekord",
     "or": "ka",
     "uploadAudio": "Upload áudio",
-    "audioNote": "Áudio hela iha host. Transkrisaun hala'o lokal iha Inglés. Minuta kombina klip hotu iha sesaun ne'e, tuir orden.",
+    "audioNote": "Audio hela iha servidor Worker nian no transkritu automatikamente iha lian reuniaun sesaun nian. Dokumentu sira kombina klip sira ne'ebé marka iha sesaun ida-ne'e, tuir orden.",
     "documentsFrom": "Dokumentu husi sesaun ne'e",
     "noDocuments": "Seidauk iha dokumentu. Transkrisaun klip ida, depois jera minuta.",
     "recordingsTitle": "Rekording & transkrisaun",
@@ -460,7 +460,7 @@
     "remove": "Hasai"
   },
   "assistant": {
-    "subtitle": "Fó instrusaun iha Inglés simples — sumariza, buka, hakerek ka esplika iha ita-nia espasu servisu.",
+    "subtitle": "Fó instrusaun iha lian simples — sumariza, buka, halo rascunhu ka esplika iha ita-nia fatin servisu tomak.",
     "failed": "Asistenti la bele prosesa ida ne'e.",
     "instruction": "Instruksaun",
     "placeholder": "Ezemplu: Sumariza desizaun sira husi komité seguransa semana ne'e, ka lista memorandu sira ne'ebé seidauk hetan aprovasaun.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Tradusaun mákina"
+  },
+  "siteFooter": {
+    "product": "Worker · Fatin servisu administrativu AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker jera dokumentu administrativu; uzuáriu autorizadu sira nafatin responsável ba revizaun no aprovasaun."
+  },
+  "ecoidReg": {
+    "continue": "Kontinua ho EcoID",
+    "redirecting": "Redireksiona ba EcoID…",
+    "startFailed": "La konsege hahú asina tama EcoID. Favor koko fali.",
+    "finish": "Remata kria ita-nia konta Worker",
+    "signingUpAs": "Rejistu ho EcoID hanesan",
+    "workspaceName": "Naran fatin servisu",
+    "workspaceExample": "ezemplu: Acme Ltd",
+    "adminNote": "Ita sei sai admin ba fatin servisu foun no bele konvida kolega sira depois.",
+    "expired": "Ita-nia sesaun EcoID expira ona. Favor asina tama fali.",
+    "createFailed": "La konsege kria ita-nia konta.",
+    "goToSignIn": "Bá asina tama",
+    "haveAccount": "Iha ona konta Worker?",
+    "thenLink": "depois liga EcoID husi ita-nia konta."
   }
 }

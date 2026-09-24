@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI ma’muriy ish maydoni",
     "secureWorkspace": "Xavfsiz ma’muriy ish maydoni",
-    "badge": "Ingliz tili · Audio"
+    "badge": "Ko'p tilli · Audio"
   },
   "nav": {
     "dashboard": "Boshqaruv paneli",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Aytganlaringizni tayyor, rasmiylashtirilgan hujjatlarga aylantiring.",
       "body": "Worker — yig‘ilishlar, brifinglar va yozishmalar asosida ko‘plab rasmiy hujjatlar tayyorlaydigan tashkilotlar uchun AI ma’muriy ish maydoni. Yig‘ilishni yozib oling yoki diktant qiling, Worker uni transkripsiya qiladi, bayonnomalar, memorandumlar, xatlar, hisobotlar va siyosat brifinglarini tayyorlaydi hamda ularni ko‘rib chiqish va tasdiqlashdan o‘tkazadi — to‘liq audit izi bilan.",
-      "badgeRow": "Audio · Ingliz tili · Xavfsiz ish maydoni"
+      "badgeRow": "Audio · 72 til · Xavfsiz ish joyi"
     },
     "what": {
       "title": "Worker nima qiladi",
       "lead": "Yig‘ilishlar va yozishmalar atrofidagi kundalik ofis ishlari — soatlab emas, daqiqalarda bajariladi.",
       "f1": {
         "title": "Yozib olish va transkripsiya qilish",
-        "body": "Yig‘ilishlar, suhbatlar, brifinglar yoki diktantni yozib oling. Audio ingliz tilida mahalliy ravishda transkripsiya qilinadi."
+        "body": "Uchrashuvlar, intervyular, brifinglar yoki diktantni yozib oling. Audio Worker'ning o'z serverlarida 67 tilda transkripsiya qilinadi."
       },
       "f2": {
         "title": "AI bilan qoralama tayyorlang",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofonga ruxsat berilmadi yoki mavjud emas.",
     "audioSaved": "Audio sessiyaga saqlandi.",
     "uploadFailed": "Yuklash amalga oshmadi.",
-    "transcribing": "Mahalliy ravishda transkripsiya qilinmoqda — uzoq audio uchun bu biroz vaqt olishi mumkin.",
+    "transcribing": "Worker serverlarida transkripsiya qilinmoqda — uzoq audio uchun bu biroz vaqt olishi mumkin.",
     "transcribed": "Transkripsiya tugallandi.",
     "transcribeFailed": "Transkripsiya amalga oshmadi. STT xizmati ishlayotganligini tekshiring.",
     "updateFailed": "Yangilab bo'lmadi.",
@@ -247,7 +247,7 @@
     "startRecording": "Yozishni boshlash",
     "or": "yoki",
     "uploadAudio": "Audio yuklash",
-    "audioNote": "Audio hostda qoladi. Transkripsiya mahalliy ravishda ingliz tilida amalga oshiriladi. Bayonnoma ushbu sessiyadagi har bir klipni tartibda birlashtiradi.",
+    "audioNote": "Audio Worker serverlarida saqlanadi va sessiyaning uchrashuv tilida avtomatik transkripsiya qilinadi. Hujjatlar ushbu sessiyadagi belgilangan kliplarni tartibda birlashtiradi.",
     "documentsFrom": "Ushbu sessiyadan olingan hujjatlar",
     "noDocuments": "Hozircha hujjatlar yo'q. Klipni transkripsiya qiling, so'ngra bayonnoma yarating.",
     "recordingsTitle": "Yozuvlar va transkriptlar",
@@ -460,7 +460,7 @@
     "remove": "O'chirish"
   },
   "assistant": {
-    "subtitle": "Oddiy tilda ko'rsatma bering — ish maydoningiz bo'ylab umumlashtiring, toping, qoralama tuzing yoki tushuntiring.",
+    "subtitle": "Oddiy tilda ko'rsatma bering — ish joyingiz bo'ylab umumlashtiring, toping, qoralama tuzing yoki tushuntiring.",
     "failed": "Yordamchi buni qayta ishlay olmadi.",
     "instruction": "Ko'rsatma",
     "placeholder": "Masalan, ushbu haftadagi xavfsizlik qo'mitasining qarorlarini umumlashtiring yoki hali tasdiqlanmagan xizmat xatlarini sanab bering.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Mashina tarjimasi"
+  },
+  "siteFooter": {
+    "product": "Worker · AI ma'muriy ish joyi",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker ma'muriy hujjatlarni yaratadi; vakolatli foydalanuvchilar ko'rib chiqish va tasdiqlash uchun javobgar bo'lib qoladilar."
+  },
+  "ecoidReg": {
+    "continue": "EcoID bilan davom etish",
+    "redirecting": "EcoID ga yo'naltirilmoqda…",
+    "startFailed": "EcoID kirishni boshlab bo'lmadi. Iltimos, qayta urinib ko'ring.",
+    "finish": "Worker hisobingizni yaratishni tugating",
+    "signingUpAs": "EcoID bilan ro'yxatdan o'tilmoqda",
+    "workspaceName": "Ish joyi nomi",
+    "workspaceExample": "masalan, Acme Ltd",
+    "adminNote": "Siz yangi ish joyining administratori bo'lasiz va keyinchalik hamkasblarni taklif qilishingiz mumkin.",
+    "expired": "EcoID sessiyangiz tugadi. Iltimos, qayta kiring.",
+    "createFailed": "Hisobingizni yaratib bo'lmadi.",
+    "goToSignIn": "Kirishga o'tish",
+    "haveAccount": "Allaqachon Worker hisobingiz bormi?",
+    "thenLink": "keyin hisobingizdan EcoID ni bog'lang."
   }
 }

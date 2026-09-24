@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Espai de treball administratiu amb IA",
     "secureWorkspace": "Espai de treball administratiu segur",
-    "badge": "Anglès · Àudio"
+    "badge": "Multilingüe · Àudio"
   },
   "nav": {
     "dashboard": "Tauler",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Convertiu el que dieu en documentació acabada i arxivada.",
       "body": "Worker és un espai de treball administratiu amb IA per a organitzacions que produeixen grans quantitats de documents formals a partir de reunions, informes i correspondència. Enregistreu una reunió o dicteu, i Worker la transcriu, redacta actes, memòries, cartes, informes i resums de polítiques, i els fa passar per revisió i aprovació — amb una pista d'auditoria completa.",
-      "badgeRow": "Àudio · Anglès · Espai de treball segur"
+      "badgeRow": "Àudio · 72 idiomes · Entorn de treball segur"
     },
     "what": {
       "title": "Què fa Worker",
       "lead": "La feina rutinària d'oficina que envolta les reunions i la correspondència — resolta en minuts, no en hores.",
       "f1": {
         "title": "Enregistra i transcriu",
-        "body": "Captureu reunions, entrevistes, informes o dictats. L'àudio es transcriu localment en anglès."
+        "body": "Captureu reunions, entrevistes, informes o dictats. L'àudio es transcriu als servidors propis de Worker en 67 idiomes."
       },
       "f2": {
         "title": "Redacta amb IA",
@@ -231,7 +231,7 @@
     "micDenied": "Accés al micròfon denegat o no disponible.",
     "audioSaved": "Àudio desat a la sessió.",
     "uploadFailed": "L'enviament ha fallat.",
-    "transcribing": "Transcripció local en curs — pot trigar una mica amb àudios llargs.",
+    "transcribing": "S'està transcrivint als servidors de Worker — això pot trigar una mica per a àudios llargs.",
     "transcribed": "Transcripció completada.",
     "transcribeFailed": "La transcripció ha fallat. Comproveu que el servei STT estigui en funcionament.",
     "updateFailed": "No s'ha pogut actualitzar.",
@@ -247,7 +247,7 @@
     "startRecording": "Iniciar gravació",
     "or": "o",
     "uploadAudio": "Enviar àudio",
-    "audioNote": "L'àudio roman a l'amfitrió. La transcripció s'executa localment en anglès. L'acta combina tots els clips d'aquesta sessió, en ordre.",
+    "audioNote": "L'àudio roman als servidors de Worker i es transcriu automàticament en l'idioma de la reunió de la sessió. Els documents combinen els clips marcats d'aquesta sessió, en ordre.",
     "documentsFrom": "Documents d'aquesta sessió",
     "noDocuments": "Encara no hi ha documents. Transcriviu un clip i després genereu l'acta.",
     "recordingsTitle": "Gravacions i transcripcions",
@@ -460,7 +460,7 @@
     "remove": "Elimina"
   },
   "assistant": {
-    "subtitle": "Doneu una instrucció en llenguatge planer: resumiu, cerqueu, redacteu o expliqueu a tot el vostre espai de treball.",
+    "subtitle": "Doneu una instrucció en llenguatge planer — resumiu, cerqueu, redacteu o expliqueu a tot el vostre espai de treball.",
     "failed": "L'assistent no ha pogut processar això.",
     "instruction": "Instrucció",
     "placeholder": "p. ex. Resumiu les decisions del comitè de seguretat d'aquesta setmana o llisteu les notes que encara esperen aprovació.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Traducció automàtica"
+  },
+  "siteFooter": {
+    "product": "Worker · Entorn de treball administratiu amb IA",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker genera documents administratius; els usuaris autoritzats segueixen sent responsables de la revisió i l'aprovació."
+  },
+  "ecoidReg": {
+    "continue": "Continueu amb EcoID",
+    "redirecting": "S'està redirigint a EcoID…",
+    "startFailed": "No s'ha pogut iniciar la sessió amb EcoID. Torneu-ho a provar.",
+    "finish": "Acabeu de crear el vostre compte de Worker",
+    "signingUpAs": "Us registreu amb EcoID com a",
+    "workspaceName": "Nom de l'espai de treball",
+    "workspaceExample": "p. ex. Acme Ltd",
+    "adminNote": "Sereu l'administrador d'un espai de treball nou i podreu convidar col·legues més endavant.",
+    "expired": "La vostra sessió d'EcoID ha caducat. Torneu a iniciar la sessió.",
+    "createFailed": "No s'ha pogut crear el vostre compte.",
+    "goToSignIn": "Aneu a iniciar la sessió",
+    "haveAccount": "Ja teniu un compte de Worker?",
+    "thenLink": "després enllaceu EcoID des del vostre compte."
   }
 }

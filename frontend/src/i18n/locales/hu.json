@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI adminisztratív munkaterület",
     "secureWorkspace": "Biztonságos adminisztratív munkaterület",
-    "badge": "Angol · Hanganyag"
+    "badge": "Többnyelvű · Hang"
   },
   "nav": {
     "dashboard": "Irányítópult",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Alakítsa a kimondott szavait kész, iktatott dokumentumokká.",
       "body": "A Worker egy AI-alapú adminisztratív munkaterület azon szervezetek számára, amelyek nagy mennyiségű hivatalos dokumentumot állítanak elő ülésekből, tájékoztatókból és levelezésből. Rögzítsen egy ülést vagy diktáljon, és a Worker átírja szöveggé, megfogalmazza a jegyzőkönyveket, feljegyzéseket, leveleket, jelentéseket és szakpolitikai összefoglalókat, majd végigvezeti azokat a felülvizsgálati és jóváhagyási folyamaton – teljes ellenőrzési naplóval.",
-      "badgeRow": "Hanganyag · Angol · Biztonságos munkaterület"
+      "badgeRow": "Hang · 72 nyelv · Biztonságos munkakörnyezet"
     },
     "what": {
       "title": "Mit tesz a Worker",
       "lead": "Az ülések és a levelezés körüli rutin irodai munka – percek alatt elvégezve, nem órák alatt.",
       "f1": {
         "title": "Rögzítés és átírás",
-        "body": "Rögzítsen üléseket, interjúkat, tájékoztatókat vagy diktálást. A hanganyag helyben, angol nyelven kerül átírásra."
+        "body": "Rögzítsen megbeszéléseket, interjúkat, tájékoztatókat vagy diktálást. A hangot a Worker saját szerverei írják át 67 nyelven."
       },
       "f2": {
         "title": "Tervezés AI-jal",
@@ -231,7 +231,7 @@
     "micDenied": "A mikrofonhozzáférés megtagadva vagy nem elérhető.",
     "audioSaved": "A hang a munkamenethez mentve.",
     "uploadFailed": "A feltöltés nem sikerült.",
-    "transcribing": "Helyi átírás folyamatban — hosszabb hanganyag esetén ez eltarthat egy ideig.",
+    "transcribing": "Átírás a Worker szerverein — hosszabb hanganyag esetén ez eltarthat egy ideig.",
     "transcribed": "Az átírás elkészült.",
     "transcribeFailed": "Az átírás nem sikerült. Ellenőrizze, hogy az STT szolgáltatás fut-e.",
     "updateFailed": "Nem sikerült frissíteni.",
@@ -247,7 +247,7 @@
     "startRecording": "Felvétel indítása",
     "or": "vagy",
     "uploadAudio": "Hang feltöltése",
-    "audioNote": "A hang a gazdagépen marad. Az átírás helyben, angol nyelven fut. A jegyzőkönyv a munkamenet minden klipjét sorrendben összevonja.",
+    "audioNote": "A hang a Worker szerverein marad, és automatikusan átírásra kerül a munkamenet megbeszélési nyelvén. A dokumentumok a munkamenet bejelölt klippjeit sorrendben egyesítik.",
     "documentsFrom": "Dokumentumok ebből a munkamenetből",
     "noDocuments": "Még nincsenek dokumentumok. Töltsön fel egy klipet, majd készítsen jegyzőkönyvet.",
     "recordingsTitle": "Felvételek és átiratok",
@@ -460,7 +460,7 @@
     "remove": "Eltávolítás"
   },
   "assistant": {
-    "subtitle": "Adjon utasítást egyszerű magyar nyelven — összegzés, keresés, piszkozat készítése vagy magyarázat a munkaterületén.",
+    "subtitle": "Adjon utasítást egyszerű nyelven — összegzés, keresés, fogalmazás vagy magyarázat a munkaterületén.",
     "failed": "Az asszisztens nem tudta feldolgozni ezt.",
     "instruction": "Utasítás",
     "placeholder": "Például: Foglalja össze a heti biztonsági bizottság döntéseit, vagy listázza a jóváhagyásra váró feljegyzéseket.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Gépi fordítás"
+  },
+  "siteFooter": {
+    "product": "Worker · AI adminisztratív munkakörnyezet",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "A Worker adminisztratív dokumentumokat állít elő; a felülvizsgálatért és jóváhagyásért a feljogosított felhasználók felelnek."
+  },
+  "ecoidReg": {
+    "continue": "Folytatás EcoID-val",
+    "redirecting": "Átirányítás az EcoID-ra…",
+    "startFailed": "Nem sikerült elindítani az EcoID bejelentkezést. Kérjük, próbálja újra.",
+    "finish": "Fejezze be Worker-fiókja létrehozását",
+    "signingUpAs": "Regisztráció EcoID-val mint",
+    "workspaceName": "Munkaterület neve",
+    "workspaceExample": "pl. Acme Ltd",
+    "adminNote": "Ön lesz egy új munkaterület adminisztrátora, és később meghívhatja kollégáit.",
+    "expired": "Az EcoID munkamenete lejárt. Kérjük, jelentkezzen be újra.",
+    "createFailed": "Nem sikerült létrehozni a fiókját.",
+    "goToSignIn": "Ugrás a bejelentkezéshez",
+    "haveAccount": "Már van Worker-fiókja?",
+    "thenLink": "majd kapcsolja össze az EcoID-t a fiókjából."
   }
 }

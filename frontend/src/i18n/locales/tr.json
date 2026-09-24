@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Yapay zekâ destekli idari çalışma alanı",
     "secureWorkspace": "Güvenli idari çalışma alanı",
-    "badge": "İngilizce · Ses"
+    "badge": "Çok dilli · Ses"
   },
   "nav": {
     "dashboard": "Kontrol paneli",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Söylediklerinizi tamamlanmış ve dosyalanmış evraklara dönüştürün.",
       "body": "Worker, toplantı, brifing ve yazışmalardan yoğun miktarda resmî belge üreten kuruluşlar için yapay zekâ destekli bir idari çalışma alanıdır. Bir toplantıyı kaydedin veya dikte edin; Worker bunu yazıya döker, tutanak, not, mektup, rapor ve politika özetleri hazırlar ve eksiksiz bir denetim kaydıyla inceleme ve onay sürecinden geçirir.",
-      "badgeRow": "Ses · İngilizce · Güvenli çalışma alanı"
+      "badgeRow": "Ses · 72 dil · Güvenli iş yeri"
     },
     "what": {
       "title": "Worker neler yapar",
       "lead": "Toplantı ve yazışmaları çevreleyen rutin ofis işleri — saatler değil, dakikalar içinde tamamlanır.",
       "f1": {
         "title": "Kaydedin ve yazıya dökün",
-        "body": "Toplantıları, görüşmeleri, brifingleri veya dikteyi kaydedin. Ses, İngilizce olarak yerel ortamda yazıya dökülür."
+        "body": "Toplantıları, görüşmeleri, brifingleri veya dikteyi kaydedin. Ses, Worker'ın kendi sunucularında 67 dilde yazıya dökülür."
       },
       "f2": {
         "title": "Yapay zeka ile taslak oluşturun",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofon erişimi reddedildi veya kullanılamıyor.",
     "audioSaved": "Ses oturuma kaydedildi.",
     "uploadFailed": "Yükleme başarısız oldu.",
-    "transcribing": "Yerel olarak deşifre ediliyor — uzun ses kayıtları için bu işlem biraz sürebilir.",
+    "transcribing": "Worker'ın sunucularında yazıya dökülüyor — uzun ses kayıtları için bu biraz zaman alabilir.",
     "transcribed": "Deşifre tamamlandı.",
     "transcribeFailed": "Deşifre başarısız oldu. STT hizmetinin çalıştığını kontrol edin.",
     "updateFailed": "Güncellenemedi.",
@@ -247,7 +247,7 @@
     "startRecording": "Kaydı başlat",
     "or": "veya",
     "uploadAudio": "Ses yükle",
-    "audioNote": "Ses ana makinede kalır. Deşifre yerel olarak İngilizce yapılır. Tutanaklar bu oturumdaki her klibi sırayla birleştirir.",
+    "audioNote": "Ses, Worker'ın sunucularında kalır ve oturumun toplantı dilinde otomatik olarak yazıya dökülür. Belgeler, bu oturumda işaretlenen klipleri sırayla birleştirir.",
     "documentsFrom": "Bu oturumdan belgeler",
     "noDocuments": "Henüz belge yok. Bir klip deşifre edin, ardından tutanak oluşturun.",
     "recordingsTitle": "Kayıtlar ve deşifreler",
@@ -460,7 +460,7 @@
     "remove": "Kaldır"
   },
   "assistant": {
-    "subtitle": "Sade bir dille bir talimat verin — çalışma alanınızda özetleyin, bulun, taslak oluşturun veya açıklayın.",
+    "subtitle": "Sade bir dille talimat verin — çalışma alanınızda özetleyin, bulun, taslak oluşturun veya açıklayın.",
     "failed": "Asistan bunu işleyemedi.",
     "instruction": "Talimat",
     "placeholder": "örn. Bu haftaki güvenlik komitesinin kararlarını özetle veya onay bekleyen notları listele.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Makine tarafından çevrildi"
+  },
+  "siteFooter": {
+    "product": "Worker · Yapay zekâ destekli idari iş yeri",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker idari belgeler üretir; inceleme ve onay sorumluluğu yetkili kullanıcılarda kalır."
+  },
+  "ecoidReg": {
+    "continue": "EcoID ile devam et",
+    "redirecting": "EcoID'ye yönlendiriliyor…",
+    "startFailed": "EcoID oturumu başlatılamadı. Lütfen tekrar deneyin.",
+    "finish": "Worker hesabınızı oluşturmayı tamamlayın",
+    "signingUpAs": "EcoID ile kaydolunuyor:",
+    "workspaceName": "Çalışma alanı adı",
+    "workspaceExample": "örn. Acme Ltd",
+    "adminNote": "Yeni bir çalışma alanının yöneticisi olacaksınız ve meslektaşlarınızı daha sonra davet edebilirsiniz.",
+    "expired": "EcoID oturumunuzun süresi doldu. Lütfen tekrar giriş yapın.",
+    "createFailed": "Hesabınız oluşturulamadı.",
+    "goToSignIn": "Girişe git",
+    "haveAccount": "Zaten bir Worker hesabınız var mı?",
+    "thenLink": "ardından EcoID'yi hesabınızdan bağlayın."
   }
 }

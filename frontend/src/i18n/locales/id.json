@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Ruang kerja administratif AI",
     "secureWorkspace": "Ruang kerja administratif yang aman",
-    "badge": "Bahasa Inggris · Audio"
+    "badge": "Multibahasa · Audio"
   },
   "nav": {
     "dashboard": "Dasbor",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Ubah ucapan Anda menjadi dokumen yang selesai dan terarsip.",
       "body": "Worker adalah ruang kerja administratif AI untuk organisasi yang menghasilkan banyak dokumen resmi dari rapat, pengarahan, dan korespondensi. Rekam rapat atau dikte, dan Worker akan mentranskripsinya, menyusun notulen, memo, surat, laporan, dan ringkasan kebijakan, serta membawanya melalui proses peninjauan dan persetujuan — dengan jejak audit yang lengkap.",
-      "badgeRow": "Audio · Bahasa Inggris · Ruang kerja yang aman"
+      "badgeRow": "Audio · 72 bahasa · Lingkungan kerja aman"
     },
     "what": {
       "title": "Apa yang dilakukan Worker",
       "lead": "Pekerjaan kantor rutin seputar rapat dan korespondensi — diselesaikan dalam hitungan menit, bukan jam.",
       "f1": {
         "title": "Rekam & transkripsikan",
-        "body": "Rekam rapat, wawancara, pengarahan, atau dikte. Audio ditranskripsikan secara lokal dalam bahasa Inggris."
+        "body": "Rekam rapat, wawancara, pengarahan, atau dikte. Audio ditranskripsikan di server Worker sendiri dalam 67 bahasa."
       },
       "f2": {
         "title": "Susun dengan AI",
@@ -231,7 +231,7 @@
     "micDenied": "Akses mikrofon ditolak atau tidak tersedia.",
     "audioSaved": "Audio disimpan ke sesi.",
     "uploadFailed": "Unggahan gagal.",
-    "transcribing": "Mentranskripsi secara lokal — ini dapat memerlukan waktu untuk audio yang lebih panjang.",
+    "transcribing": "Mentranskripsikan di server Worker — ini dapat memerlukan waktu untuk audio yang lebih panjang.",
     "transcribed": "Transkripsi selesai.",
     "transcribeFailed": "Transkripsi gagal. Periksa apakah layanan STT berjalan.",
     "updateFailed": "Tidak dapat memperbarui.",
@@ -247,7 +247,7 @@
     "startRecording": "Mulai merekam",
     "or": "atau",
     "uploadAudio": "Unggah audio",
-    "audioNote": "Audio tetap berada di host. Transkripsi berjalan secara lokal dalam bahasa Inggris. Risalah menggabungkan setiap klip dalam sesi ini, secara berurutan.",
+    "audioNote": "Audio tetap berada di server Worker dan ditranskripsikan secara otomatis dalam bahasa rapat sesi ini. Dokumen menggabungkan klip yang dicentang dalam sesi ini, secara berurutan.",
     "documentsFrom": "Dokumen dari sesi ini",
     "noDocuments": "Belum ada dokumen. Transkripsikan klip, lalu hasilkan risalah.",
     "recordingsTitle": "Rekaman & transkrip",
@@ -460,7 +460,7 @@
     "remove": "Hapus"
   },
   "assistant": {
-    "subtitle": "Berikan instruksi dalam bahasa sehari-hari — ringkas, cari, susun, atau jelaskan di seluruh ruang kerja Anda.",
+    "subtitle": "Berikan instruksi dalam bahasa sederhana — ringkas, temukan, susun, atau jelaskan di seluruh ruang kerja Anda.",
     "failed": "Asisten tidak dapat memproses permintaan tersebut.",
     "instruction": "Instruksi",
     "placeholder": "mis. Ringkas keputusan dari rapat komite keamanan minggu ini, atau daftar memo yang masih menunggu persetujuan.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Diterjemahkan secara mesin"
+  },
+  "siteFooter": {
+    "product": "Worker · Lingkungan kerja administratif AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker menghasilkan dokumen administratif; pengguna yang berwenang tetap bertanggung jawab atas peninjauan dan persetujuan."
+  },
+  "ecoidReg": {
+    "continue": "Lanjutkan dengan EcoID",
+    "redirecting": "Mengalihkan ke EcoID…",
+    "startFailed": "Tidak dapat memulai masuk EcoID. Silakan coba lagi.",
+    "finish": "Selesaikan pembuatan akun Worker Anda",
+    "signingUpAs": "Mendaftar dengan EcoID sebagai",
+    "workspaceName": "Nama ruang kerja",
+    "workspaceExample": "mis. Acme Ltd",
+    "adminNote": "Anda akan menjadi admin ruang kerja baru dan dapat mengundang rekan kerja nanti.",
+    "expired": "Sesi EcoID Anda telah berakhir. Silakan masuk kembali.",
+    "createFailed": "Tidak dapat membuat akun Anda.",
+    "goToSignIn": "Buka halaman masuk",
+    "haveAccount": "Sudah memiliki akun Worker?",
+    "thenLink": "lalu tautkan EcoID dari akun Anda."
   }
 }

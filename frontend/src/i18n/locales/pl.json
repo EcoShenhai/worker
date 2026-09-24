@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Asystent administracyjny AI",
     "secureWorkspace": "Bezpieczna przestrzeń administracyjna",
-    "badge": "Angielski · Dźwięk"
+    "badge": "Wielojęzyczny · Audio"
   },
   "nav": {
     "dashboard": "Pulpit",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Zamień to, co mówisz, w gotową, zarejestrowaną dokumentację.",
       "body": "Worker to asystent administracyjny AI dla organizacji, które tworzą duże ilości formalnych dokumentów ze spotkań, odpraw i korespondencji. Nagraj spotkanie lub podyktuj treść, a Worker ją transkrybuje, sporządza protokoły, notatki, pisma, raporty i analizy polityk, a następnie przeprowadza je przez proces przeglądu i zatwierdzania — z pełną ścieżką audytu.",
-      "badgeRow": "Dźwięk · Angielski · Bezpieczna przestrzeń robocza"
+      "badgeRow": "Audio · 72 języki · Bezpieczne miejsce pracy"
     },
     "what": {
       "title": "Co robi Worker",
       "lead": "Rutynowa praca biurowa związana ze spotkaniami i korespondencją — realizowana w kilka minut, nie godzin.",
       "f1": {
         "title": "Nagrywaj i transkrybuj",
-        "body": "Rejestruj spotkania, wywiady, odprawy lub dyktowanie. Dźwięk jest transkrybowany lokalnie w języku angielskim."
+        "body": "Rejestruj spotkania, wywiady, odprawy lub dyktowanie. Dźwięk jest transkrybowany na serwerach Worker w 67 językach."
       },
       "f2": {
         "title": "Twórz z AI",
@@ -231,7 +231,7 @@
     "micDenied": "Dostęp do mikrofonu został odmówiony lub jest niedostępny.",
     "audioSaved": "Dźwięk został zapisany w sesji.",
     "uploadFailed": "Przesyłanie nie powiodło się.",
-    "transcribing": "Transkrypcja lokalna — w przypadku dłuższego dźwięku może to chwilę potrwać.",
+    "transcribing": "Transkrypcja na serwerach Worker — w przypadku dłuższego dźwięku może to chwilę potrwać.",
     "transcribed": "Transkrypcja zakończona.",
     "transcribeFailed": "Transkrypcja nie powiodła się. Sprawdź, czy usługa STT działa.",
     "updateFailed": "Nie udało się zaktualizować.",
@@ -247,7 +247,7 @@
     "startRecording": "Rozpocznij nagrywanie",
     "or": "lub",
     "uploadAudio": "Prześlij dźwięk",
-    "audioNote": "Dźwięk pozostaje na hoście. Transkrypcja odbywa się lokalnie w języku angielskim. Protokół łączy wszystkie klipy w tej sesji, w kolejności.",
+    "audioNote": "Dźwięk pozostaje na serwerach Worker i jest automatycznie transkrybowany w języku spotkania sesji. Dokumenty łączą zaznaczone klipy w tej sesji, w kolejności.",
     "documentsFrom": "Dokumenty z tej sesji",
     "noDocuments": "Brak dokumentów. Transkrybuj klip, a następnie wygeneruj protokół.",
     "recordingsTitle": "Nagrania i transkrypcje",
@@ -460,7 +460,7 @@
     "remove": "Usuń"
   },
   "assistant": {
-    "subtitle": "Podaj polecenie w prostym języku — podsumuj, znajdź, sporządź lub wyjaśnij w całym obszarze roboczym.",
+    "subtitle": "Podaj polecenie prostym językiem — podsumuj, znajdź, sporządź lub wyjaśnij w całym obszarze roboczym.",
     "failed": "Asystent nie mógł tego przetworzyć.",
     "instruction": "Instrukcja",
     "placeholder": "np. Podsumuj decyzje z posiedzenia komitetu ds. bezpieczeństwa w tym tygodniu lub wylistuj notatki oczekujące na zatwierdzenie.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Przetłumaczono maszynowo"
+  },
+  "siteFooter": {
+    "product": "Worker · Administracyjne miejsce pracy AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker generuje dokumenty administracyjne; upoważnieni użytkownicy pozostają odpowiedzialni za przegląd i zatwierdzenie."
+  },
+  "ecoidReg": {
+    "continue": "Kontynuuj z EcoID",
+    "redirecting": "Przekierowywanie do EcoID…",
+    "startFailed": "Nie udało się rozpocząć logowania przez EcoID. Spróbuj ponownie.",
+    "finish": "Zakończ tworzenie konta Worker",
+    "signingUpAs": "Rejestracja przez EcoID jako",
+    "workspaceName": "Nazwa obszaru roboczego",
+    "workspaceExample": "np. Acme Ltd",
+    "adminNote": "Będziesz administratorem nowego obszaru roboczego i możesz później zaprosić współpracowników.",
+    "expired": "Sesja EcoID wygasła. Zaloguj się ponownie.",
+    "createFailed": "Nie udało się utworzyć konta.",
+    "goToSignIn": "Przejdź do logowania",
+    "haveAccount": "Masz już konto Worker?",
+    "thenLink": "następnie połącz EcoID ze swojego konta."
   }
 }

@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "AI-hallintotyötila",
     "secureWorkspace": "Turvallinen hallintotyötila",
-    "badge": "Englanti · Ääni"
+    "badge": "Monikielinen · Ääni"
   },
   "nav": {
     "dashboard": "Kojelauta",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Muuta puheesi valmiiksi, arkistoiduiksi asiakirjoiksi.",
       "body": "Worker on AI-pohjainen hallinnollinen työpaikka organisaatioille, jotka tuottavat suuria määriä virallisia asiakirjoja kokouksista, tiedotustilaisuuksista ja kirjeenvaihdosta. Tallenna kokous tai sanelu, niin Worker litteroi sen, laatii pöytäkirjat, muistiot, kirjeet, raportit ja politiikkakatsaukset sekä vie ne hyväksyntäprosessin läpi — täydellisen tarkastuspolun kera.",
-      "badgeRow": "Ääni · Englanti · Turvallinen työtila"
+      "badgeRow": "Ääni · 72 kieltä · Turvallinen työympäristö"
     },
     "what": {
       "title": "Mitä Worker tekee",
       "lead": "Kokouksiin ja kirjeenvaihtoon liittyvät rutiinityöt — hoidettu minuuteissa, ei tunneissa.",
       "f1": {
         "title": "Tallenna ja litteroi",
-        "body": "Tallenna kokoukset, haastattelut, tiedotustilaisuudet tai sanelu. Ääni litteroidaan paikallisesti englanniksi."
+        "body": "Tallenna kokoukset, haastattelut, tiedotustilaisuudet tai sanelu. Ääni litteroidaan Workerin omilla palvelimilla 67 kielellä."
       },
       "f2": {
         "title": "Luonnostele tekoälyllä",
@@ -231,7 +231,7 @@
     "micDenied": "Mikrofonin käyttö estetty tai ei saatavilla.",
     "audioSaved": "Ääni tallennettu istuntoon.",
     "uploadFailed": "Lähetys epäonnistui.",
-    "transcribing": "Litteroidaan paikallisesti — pidempi ääni voi kestää hetken.",
+    "transcribing": "Litterointi Workerin palvelimilla — pidempi ääni voi kestää hetken.",
     "transcribed": "Litterointi valmis.",
     "transcribeFailed": "Litterointi epäonnistui. Tarkista, että STT-palvelu on käynnissä.",
     "updateFailed": "Päivitys epäonnistui.",
@@ -247,7 +247,7 @@
     "startRecording": "Aloita tallennus",
     "or": "tai",
     "uploadAudio": "Lähetä ääni",
-    "audioNote": "Ääni pysyy isännällä. Litterointi tapahtuu paikallisesti englanniksi. Pöytäkirja yhdistää kaikki tämän istunnon leikkeet järjestyksessä.",
+    "audioNote": "Ääni säilyy Workerin palvelimilla ja litteroidaan automaattisesti istunnon kokouskielellä. Asiakirjat yhdistävät valitut leikkeet tässä istunnossa järjestyksessä.",
     "documentsFrom": "Tämän istunnon asiakirjat",
     "noDocuments": "Ei asiakirjoja vielä. Litteroi leike ja luo sitten pöytäkirja.",
     "recordingsTitle": "Tallenteet ja litteroinnit",
@@ -460,7 +460,7 @@
     "remove": "Poista"
   },
   "assistant": {
-    "subtitle": "Anna ohje selkokielellä — tiivistä, etsi, luonnostele tai selitä työtilassasi.",
+    "subtitle": "Anna ohje selkeällä kielellä — tiivistä, etsi, luonnostele tai selitä työtilassasi.",
     "failed": "Avustaja ei voinut käsitellä tätä.",
     "instruction": "Ohje",
     "placeholder": "esim. Tee yhteenveto tämän viikon turvallisuuskomitean päätöksistä tai luettele muistiot, jotka odottavat vielä hyväksyntää.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Koneellisesti käännetty"
+  },
+  "siteFooter": {
+    "product": "Worker · AI-avusteinen hallinnollinen työympäristö",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Worker tuottaa hallinnollisia asiakirjoja; valtuutetut käyttäjät vastaavat tarkistuksesta ja hyväksynnästä."
+  },
+  "ecoidReg": {
+    "continue": "Jatka EcoID-tunnuksella",
+    "redirecting": "Ohjataan EcoID-tunnukseen…",
+    "startFailed": "EcoID-kirjautumista ei voitu aloittaa. Yritä uudelleen.",
+    "finish": "Viimeistele Worker-tilisi luominen",
+    "signingUpAs": "Rekisteröidytään EcoID-tunnuksella käyttäjänä",
+    "workspaceName": "Työtilan nimi",
+    "workspaceExample": "esim. Acme Ltd",
+    "adminNote": "Sinusta tulee uuden työtilan ylläpitäjä, ja voit kutsua kollegoita myöhemmin.",
+    "expired": "EcoID-istuntosi vanheni. Kirjaudu uudelleen.",
+    "createFailed": "Tiliäsi ei voitu luoda.",
+    "goToSignIn": "Siirry kirjautumaan",
+    "haveAccount": "Onko sinulla jo Worker-tili?",
+    "thenLink": "linkitä sitten EcoID tililtäsi."
   }
 }

@@ -14,7 +14,7 @@
   "brand": {
     "tagline": "Spás oibre riaracháin AI",
     "secureWorkspace": "Spás oibre riaracháin slán",
-    "badge": "Béarla · Fuaim"
+    "badge": "Ilteangach · Fuaim"
   },
   "nav": {
     "dashboard": "Deais",
@@ -44,14 +44,14 @@
     "hero": {
       "title": "Cas an méid a deir tú ina pháipéarachas críochnaithe, comhdaithe.",
       "body": "Is spás oibre riaracháin AI é Worker d'eagraíochtaí a tháirgeann líon mór doiciméad foirmiúil ó chruinnithe, ó chruinnithe faisnéise agus ó chomhfhreagras. Taifead cruinniú nó deachtaigh, agus déanann Worker é a thrascríobh, a dhréachtú mar mhiontuairiscí, meamraim, litreacha, tuarascálacha agus gearrthuairiscí beartais, agus tugann sé tríd an athbhreithniú agus an ceadú iad — le rian iniúchta iomlán.",
-      "badgeRow": "Fuaim · Béarla · Spás oibre slán"
+      "badgeRow": "Fuaim · 72 teanga · Ionad oibre slán"
     },
     "what": {
       "title": "Cad a dhéanann Worker",
       "lead": "An ghnáthobair oifige a bhaineann le cruinnithe agus comhfhreagras — déanta i gceann nóiméad, ní uaireanta.",
       "f1": {
         "title": "Taifead & trascríobh",
-        "body": "Gabh cruinnithe, agallaimh, cruinnithe faisnéise nó deachtú. Déantar an fhuaim a thrascríobh go háitiúil i mBéarla."
+        "body": "Taifead cruinnithe, agallaimh, faisnéisithe nó deachtú. Déantar fuaim a thrascríobh ar fhreastalaithe Worker féin i 67 teanga."
       },
       "f2": {
         "title": "Dréacht le AI",
@@ -231,7 +231,7 @@
     "micDenied": "Rochtain ar an micreafón diúltaithe nó gan a bheith ar fáil.",
     "audioSaved": "Fuaim sábháilte leis an seisiún.",
     "uploadFailed": "Theip ar an uaslódáil.",
-    "transcribing": "Á thrascríobh go háitiúil — féadfaidh sé seo tamall a thógáil le haghaidh fuaime níos faide.",
+    "transcribing": "Á thrascríobh ar fhreastalaithe Worker — féadfaidh sé seo tamall a thógáil le haghaidh fuaime níos faide.",
     "transcribed": "Trascríobh críochnaithe.",
     "transcribeFailed": "Theip ar an trascríobh. Seiceáil go bhfuil an tseirbhís STT ag rith.",
     "updateFailed": "Níorbh fhéidir a nuashonrú.",
@@ -247,7 +247,7 @@
     "startRecording": "Tosaigh ag taifeadadh",
     "or": "nó",
     "uploadAudio": "Uaslódáil fuaim",
-    "audioNote": "Fanann an fhuaim ar an óstach. Ritheann an trascríobh go háitiúil i mBéarla. Comhcheanglaíonn miontuairiscí gach gearrthóg sa seisiún seo, in ord.",
+    "audioNote": "Fanann fuaim ar fhreastalaithe Worker agus déantar í a thrascríobh go huathoibríoch i dteanga chruinnithe an tseisiúin. Comhcheanglaíonn doiciméid na gearrthóga ticeáilte sa seisiún seo, in ord.",
     "documentsFrom": "Doiciméid ón seisiún seo",
     "noDocuments": "Níl aon doiciméid ann fós. Trascríobh gearrthóg, ansin gin miontuairiscí.",
     "recordingsTitle": "Taifeadtaí & trascríbhinní",
@@ -460,7 +460,7 @@
     "remove": "Bain"
   },
   "assistant": {
-    "subtitle": "Tabhair treoir i mBéarla simplí — achoimrigh, aimsigh, dréachtaigh nó mínigh ar fud do spáis oibre.",
+    "subtitle": "Tabhair treoir i dteanga shimplí — déan achoimre, aimsigh, dréachtaigh nó mínigh ar fud do spáis oibre.",
     "failed": "Níorbh fhéidir leis an gcúntóir é sin a phróiseáil.",
     "instruction": "Treoir",
     "placeholder": "m.sh. Achoimrigh cinntí choiste slándála na seachtaine seo, nó liostaigh meamranda atá fós ag fanacht le ceadú.",
@@ -664,5 +664,25 @@
   },
   "i18nNote": {
     "machine": "Aistrithe go meaisín"
+  },
+  "siteFooter": {
+    "product": "Worker · Ionad oibre riaracháin AI",
+    "copyright": "© {year} Shenhai Enterprises Limited",
+    "disclaimer": "Gineann Worker doiciméid riaracháin; tá úsáideoirí údaraithe fós freagrach as athbhreithniú agus ceadú."
+  },
+  "ecoidReg": {
+    "continue": "Lean ar aghaidh le EcoID",
+    "redirecting": "Ag athdhíriú chuig EcoID…",
+    "startFailed": "Níorbh fhéidir síniú isteach EcoID a thosú. Bain triail eile as.",
+    "finish": "Críochnaigh do chuntas Worker a chruthú",
+    "signingUpAs": "Ag clárú le EcoID mar",
+    "workspaceName": "Ainm an spáis oibre",
+    "workspaceExample": "m.sh. Acme Ltd",
+    "adminNote": "Beidh tú i do riarthóir ar spás oibre nua agus féadfaidh tú comhghleacaithe a thabhairt isteach níos déanaí.",
+    "expired": "Chuaigh do sheisiún EcoID in éag. Sínigh isteach arís le do thoil.",
+    "createFailed": "Níorbh fhéidir do chuntas a chruthú.",
+    "goToSignIn": "Téigh chuig síniú isteach",
+    "haveAccount": "An bhfuil cuntas Worker agat cheana féin?",
+    "thenLink": "ansin nasc EcoID ó do chuntas."
   }
 }
