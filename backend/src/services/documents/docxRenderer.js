@@ -47,8 +47,8 @@ function buildHeader(doc, branding = {}) {
   const children = [];
   const logo = logoRun(branding);
   if (logo) children.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [logo] }));
-  const l1 = branding.line1 || 'REPUBLIC OF KENYA';
-  const l2 = branding.line2 || 'OFFICE OF THE PRESIDENT — PROVINCIAL ADMINISTRATION';
+  const l1 = branding.line1 || '';
+  const l2 = branding.line2 || '';
   const l3 = branding.line3 !== undefined ? branding.line3 : (doc.department || '');
   children.push(
     new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: l1, bold: true, size: 24 })] }),

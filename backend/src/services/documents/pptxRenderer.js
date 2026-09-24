@@ -64,7 +64,7 @@ async function render(document, branding = {}) {
       t1.addImage({ data: `data:${mime};base64,${branding.logoBuffer.toString('base64')}`, x: 4.3, y: 0.5, w: 1.4, h: 1.4 });
     } catch (e) { /* ignore */ }
   }
-  t1.addText((branding && branding.line1) || 'REPUBLIC OF KENYA', { x: 0.5, y: 2.0, w: 9, h: 0.4, color: 'BFE9D5', fontSize: 14, align: 'center' });
+  t1.addText((branding && branding.line1) || '', { x: 0.5, y: 2.0, w: 9, h: 0.4, color: 'BFE9D5', fontSize: 14, align: 'center' });
   t1.addText(c.title || document.title || 'Document', { x: 0.5, y: 2.45, w: 9, h: 1.2, color: 'FFFFFF', fontSize: 30, bold: true, align: 'center' });
   if (dept) t1.addText(dept, { x: 0.5, y: 3.7, w: 9, h: 0.4, color: 'BFE9D5', fontSize: 14, align: 'center' });
   if (document.referenceNumber) t1.addText(document.referenceNumber, { x: 0.5, y: 4.6, w: 9, h: 0.3, color: '8FB3A4', fontSize: 11, align: 'center' });

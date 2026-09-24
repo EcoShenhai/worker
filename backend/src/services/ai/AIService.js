@@ -11,15 +11,10 @@ const deepseek = require('./deepseekProvider');
 const providers = { deepseek };
 const provider = providers[config.ai.provider] || deepseek;
 
-const GOV_SYSTEM = [
-  'You are Worker, an AI administrative assistant for the Office of the President,',
-  'Provincial Administration Department, Kenya. You produce formal, accurate,',
-  'well-structured Kenyan government correspondence and records in English.',
-  'Be precise with names, figures, dates, places, titles and decisions.',
-  'Never invent facts that are not supported by the provided material.',
-  'When information is missing, leave a clearly marked placeholder such as',
-  '"[TO BE CONFIRMED]" instead of guessing.',
-].join(' ');
+const { buildSystemPrompt, systemPromptForCurrentRequest } = require('./orgContext');
+
+// Neutral default. Per-request prompts are built from the caller's tenant (name, territory, working language).
+const GOV_SYSTEM = buildSystemPrompt(null);
 
 function parseJson(content) {
   // Providers occasionally wrap JSON in code fences despite json mode.
@@ -29,7 +24,7 @@ function parseJson(content) {
 
 async function generate(prompt, { system, temperature, maxTokens, model } = {}) {
   const { content, usage } = await provider.chat({
-    system: system || GOV_SYSTEM,
+    system: system || (await systemPromptForCurrentRequest()),
     user: prompt,
     temperature,
     maxTokens,
@@ -40,7 +35,7 @@ async function generate(prompt, { system, temperature, maxTokens, model } = {}) 
 
 async function generateJson(prompt, { system, temperature = 0.1, model } = {}) {
   const { content, usage } = await provider.chat({
-    system: system || GOV_SYSTEM,
+    system: system || (await systemPromptForCurrentRequest()),
     user: prompt,
     json: true,
     temperature,

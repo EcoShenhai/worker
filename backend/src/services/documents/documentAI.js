@@ -46,7 +46,7 @@ Known attendees (may be incomplete): ${(sessionMeta.attendees || []).join('; ') 
 
 async function generateMinutesContent(record, sessionMeta = {}) {
   // Build formal minutes as structured content (headings + paragraphs/lists).
-  const prompt = `Using the structured record below, write formal Kenyan government meeting minutes in English.
+  const prompt = `Using the structured record below, write formal official meeting minutes.
 Return JSON:
 {
   "heading": string,           // e.g. "MINUTES OF THE ... MEETING HELD ON ..."

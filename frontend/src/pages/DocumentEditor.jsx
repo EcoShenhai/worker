@@ -203,9 +203,22 @@ export default function DocumentEditor() {
   );
 }
 
+/** The tenant's own letterhead (same lines the Word export uses). */
+function useLetterhead() {
+  const [lh, setLh] = useState({});
+  useEffect(() => {
+    api.get('/tenant').then(({ data }) => {
+      const t = data.tenant || {};
+      setLh({ line1: t.letterheadLine1 || '', line2: t.letterheadLine2 || '', line3: t.letterheadLine3 || '' });
+    }).catch(() => {});
+  }, []);
+  return lh;
+}
+
 /** Human-readable rendering of the structured content JSON. */
 function DocPreview({ doc }) {
   const c = doc.content || {};
+  const lh = useLetterhead();
   const wrap = { whiteSpace: 'pre-wrap' };
   const has = (k) => c[k] !== undefined && c[k] !== null && c[k] !== '';
   const known = ['title','heading','to','from','through','date','recipient_block','salutation','subject',
@@ -214,9 +227,9 @@ function DocPreview({ doc }) {
   return (
     <div className="doc-preview">
       <div className="letterhead">
-        <div className="l1">REPUBLIC OF KENYA</div>
-        <div className="l2">OFFICE OF THE PRESIDENT — PROVINCIAL ADMINISTRATION</div>
-        {doc.department && <div className="l2">{doc.department}</div>}
+        {lh.line1 && <div className="l1">{lh.line1}</div>}
+        {lh.line2 && <div className="l2">{lh.line2}</div>}
+        {(lh.line3 || doc.department) && <div className="l2">{lh.line3 || doc.department}</div>}
       </div>
 
       {has('title') && <h2 style={{ textAlign: 'center' }}>{c.title}</h2>}

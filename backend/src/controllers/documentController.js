@@ -135,7 +135,7 @@ const draft = asyncHandler(async (req, res) => {
 
   const shape = shapeForType(type);
   const { data: content } = await AIService.generateJson(
-    `Draft a formal Kenyan government ${type.replace('_', ' ')} from this brief.\n` +
+    `Draft a formal official ${type.replace('_', ' ')} from this brief.\n` +
       `Return JSON with this shape: ${shape}\n\nBrief:\n${brief}`
   );
 
@@ -255,7 +255,7 @@ const generateFromSpreadsheet = asyncHandler(async (req, res) => {
   let narrative = {};
   try {
     const { data } = await AIService.generateJson(
-      `Draft a formal Kenyan government report from the following dataset summary. ` +
+      `Draft a formal official report from the following dataset summary. ` +
       `Interpret the figures, note notable totals/averages and any outliers, and be factual. ` +
       `Do not invent data beyond the summary. Return JSON with this shape: ${shape}\n\nDataset summary:\n${brief}`
     );
