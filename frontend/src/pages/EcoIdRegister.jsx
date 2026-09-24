@@ -1,9 +1,12 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
 import api, { setToken, setSession } from '../api/client.js';
 import { useAuth } from '../context/AuthContext.jsx';
 import AuthBrand from '../components/AuthBrand.jsx';
 import { ECOID_PENDING_KEY, errMsg } from '../ecoid/completeSignIn.js';
+import { useI18n } from '../i18n/index.jsx';
+import { useInternational, guessTerritory } from '../hooks/useInternational.js';
+import { TerritorySelect, LanguageSelect } from '../components/InternationalSelects.jsx';
 
 // First Worker sign-in for a verified EcoID identity: creates a new workspace with you as its admin
 // (same as self-registration). Email comes from EcoID on the server.
@@ -14,12 +17,25 @@ export default function EcoIdRegister() {
   const [name, setName] = useState(location.state?.name || '');
   const [workspaceName, setWorkspaceName] = useState('');
   const [err, setErr] = useState(null); const [busy, setBusy] = useState(false);
+  const { t } = useI18n();
+  const { data: intl } = useInternational();
+  const [territory, setTerritoryState] = useState('');
+  const [language, setLanguage] = useState('');
+  const defaultLangFor = (code) => intl?.territories.find((x) => x.code === code)?.languages[0] || 'en';
+  useEffect(() => {
+    if (!intl || territory) return;
+    const g = guessTerritory(new Set(intl.territories.map((x) => x.code)));
+    if (g) { setTerritoryState(g); setLanguage(defaultLangFor(g)); }
+  }, [intl]); // eslint-disable-line react-hooks/exhaustive-deps
+  const setTerritory = (code) => { setTerritoryState(code); setLanguage(defaultLangFor(code)); };
   if (!token) return <Navigate to="/login" replace />;
 
   const submit = async (e) => {
-    e.preventDefault(); setErr(null); setBusy(true);
+    e.preventDefault(); setErr(null);
+    if (intl && !territory) return setErr({ text: t('intl.territoryRequired') });
+    setBusy(true);
     try {
-      const { data } = await api.post('/auth/ecoid/register', { ecoidToken: token, name: name.trim(), workspaceName: workspaceName.trim() });
+      const { data } = await api.post('/auth/ecoid/register', { ecoidToken: token, name: name.trim(), workspaceName: workspaceName.trim(), territory: territory || undefined, language: language || undefined });
       sessionStorage.removeItem(ECOID_PENDING_KEY);
       setSession(data); setUser(data.user);
       navigate('/', { replace: true });
@@ -39,6 +55,12 @@ export default function EcoIdRegister() {
       <form onSubmit={submit}>
         <div className="field"><label>Full name</label><input value={name} onChange={(e) => setName(e.target.value)} required /></div>
         <div className="field"><label>Workspace name</label><input value={workspaceName} onChange={(e) => setWorkspaceName(e.target.value)} placeholder={name ? `${name} (Workspace)` : 'e.g. Acme Ltd'} /></div>
+        {intl && (
+          <>
+            <div className="field"><label>{t('intl.territory')}</label><TerritorySelect territories={intl.territories} value={territory} onChange={setTerritory} required searchPlaceholder={t('intl.searchTerritory')} placeholder={t('intl.selectTerritory')} /></div>
+            {territory && <div className="field"><label>{t('intl.workingLanguage')}</label><LanguageSelect languages={intl.languages} preferred={intl.territories.find((x) => x.code === territory)?.languages} value={language} onChange={setLanguage} /></div>}
+          </>
+        )}
         <p className="muted" style={{ fontSize: '0.78rem' }}>You'll be the admin of a new workspace and can invite colleagues later.</p>
         <button className="btn block" disabled={busy}>{busy ? <span className="spinner" /> : 'Create account'}</button>
       </form>

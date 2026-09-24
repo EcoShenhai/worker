@@ -658,5 +658,9 @@
     "grace": "Votre essai ou abonnement a pris fin le {date}. Il vous reste {n} jours d’accès complet.",
     "trialEnding": "Votre essai gratuit se termine dans {n} jours.",
     "choosePlan": "Choisir une offre"
+  },
+  "sessionLang": {
+    "saved": "Langue de la réunion enregistrée. Elle s’applique aux enregistrements transcrits à partir de maintenant.",
+    "failed": "Impossible d’enregistrer la langue de la réunion."
   }
 }

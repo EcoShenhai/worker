@@ -59,7 +59,7 @@ const register = asyncHandler(async (req, res) => {
     return res.status(409).json({ message: 'A Worker account with this email already exists. Sign in with your email and password, then link EcoID from your account.', code: 'EMAIL_EXISTS' });
   }
   const workspace = String(b.workspaceName || '').trim() || `${name} (Workspace)`;
-  const territory = normTerritory(b.territory);
+  const territory = normTerritory(b.territory, { required: true });
   const defaultLanguage = normLanguage(b.language) || (territory ? defaultLanguageFor(territory) : null);
 
   const user = User.build({ name, email: profile.email, role: 'admin', status: 'active', globalEcoId: claims.sub });

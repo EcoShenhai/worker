@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { useInternational } from '../hooks/useInternational.js';
+import { LanguageSelect } from '../components/InternationalSelects.jsx';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import api from '../api/client.js';
 import { PageHead, StatusBadge, Empty, Notice, useLabel } from '../components/ui.jsx';
@@ -135,6 +137,16 @@ export default function SessionDetail() {
     const txt = s && s !== key ? s : x.replace(/_/g, ' ');
     return txt.charAt(0).toUpperCase() + txt.slice(1);
   };
+  const { data: intl } = useInternational();
+  const changeLanguage = async (language) => {
+    try {
+      await api.put(`/sessions/${id}`, { language: language || null });
+      setMsg({ type: 'ok', text: t('sessionLang.saved') });
+      load();
+    } catch (e) {
+      setMsg({ type: 'err', text: e.response?.data?.message || t('sessionLang.failed') });
+    }
+  };
   const generateDocument = async () => {
     setBusy('generate');
     setMsg({ type: 'warn', text: t('generate.working') });
@@ -192,6 +204,12 @@ export default function SessionDetail() {
         <div className="card">
           <div className="card-head"><h3>{t('session.captureAudio')}</h3><StatusBadge value={session.status} /></div>
           <div className="card-body">
+            {intl && (
+              <div className="field">
+                <label>{t('intl.meetingLanguage')}</label>
+                <LanguageSelect languages={intl.languages} value={session.language || ''} onChange={changeLanguage} showStt labels={{ beta: t('intl.beta'), unavailable: t('intl.unavailable') }} defaultOption={t('intl.useDefault')} />
+              </div>
+            )}
             <div className="recorder">
               {recording ? (
                 <>

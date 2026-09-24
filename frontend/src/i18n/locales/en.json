@@ -657,5 +657,9 @@
     "grace": "Your trial or subscription ended on {date}. You have {n} days of full access left.",
     "trialEnding": "Your free trial ends in {n} days.",
     "choosePlan": "Choose a plan"
+  },
+  "sessionLang": {
+    "saved": "Meeting language saved. It applies to recordings transcribed from now on.",
+    "failed": "Could not save the meeting language."
   }
 }
