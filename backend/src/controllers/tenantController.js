@@ -3,6 +3,7 @@ const { normTerritory, normLanguage } = require('../utils/international');
 const path = require('path');
 const fs = require('fs/promises');
 const { Tenant } = require('../models');
+const { accessFor } = require('../services/payments/access');
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
 const audit = require('../services/audit/auditService');
@@ -29,6 +30,7 @@ const get = asyncHandler(async (req, res) => {
       subscriptionStartedAt: t.subscriptionStartedAt,
       subscriptionEndsAt: t.subscriptionEndsAt,
       paymentProvider: t.paymentProvider,
+      access: accessFor(t),
     },
   });
 });

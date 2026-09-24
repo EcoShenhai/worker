@@ -143,7 +143,7 @@ const config = {
       .filter(Boolean),
   },
 
-  trial: { days: Number.parseInt(process.env.TRIAL_DAYS || '14', 10) },
+  trial: { days: Number.parseInt(process.env.TRIAL_DAYS || '14', 10), graceDays: Number.parseInt(process.env.GRACE_DAYS || '14', 10) },
   retention: {
     audioDays: parseInt(pick('RETENTION_AUDIO_DAYS') || '0', 10),
     auditDays: parseInt(pick('RETENTION_AUDIT_DAYS') || '0', 10),

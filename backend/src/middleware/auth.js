@@ -4,6 +4,7 @@ const config = require('../config');
 const { User } = require('../models');
 const ApiError = require('../utils/apiError');
 const asyncHandler = require('../utils/asyncHandler');
+const { enforceWriteAccess } = require('../services/payments/access');
 
 // Verifies the access token and attaches req.user (safe fields only).
 const authenticate = asyncHandler(async (req, res, next) => {
@@ -22,6 +23,7 @@ const authenticate = asyncHandler(async (req, res, next) => {
   if (!user || user.status !== 'active') throw ApiError.unauthorized('Account not available');
 
   req.user = user;
+  await enforceWriteAccess(req); // read-only after trial/subscription + grace
   req.tokenPayload = payload;
   next();
 });
