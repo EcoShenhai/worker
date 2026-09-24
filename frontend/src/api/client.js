@@ -78,4 +78,14 @@ api.interceptors.response.use(
   }
 );
 
+// normalise backend error shape: {error:{message}} -> data.message, so every page shows the real reason
+api.interceptors.response.use(
+  (res) => res,
+  (error) => {
+    const d = error?.response?.data;
+    if (d && typeof d === 'object' && d.error && d.error.message && d.message === undefined) d.message = d.error.message;
+    return Promise.reject(error);
+  }
+);
+
 export default api;
