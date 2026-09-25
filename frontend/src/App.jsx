@@ -1,3 +1,4 @@
+import EcoIdConnect from './pages/EcoIdConnect.jsx';
 import { Routes, Route } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
 import { useAuth } from './context/AuthContext.jsx';
@@ -52,6 +53,7 @@ export default function App() {
       <Route path="/reset-password" element={<ResetPassword />} />
       <Route path="/auth/ecoid/callback" element={<EcoIdCallback />} />
       <Route path="/auth/ecoid/register" element={<EcoIdRegister />} />
+      <Route path="/auth/ecoid/connect" element={<EcoIdConnect />} />
 
       <Route path="/" element={<Home />} />
       <Route path="/sessions" element={P(<Sessions />)} />

@@ -42,7 +42,7 @@ export default function EcoIdRegister() {
     } catch (e2) {
       const code = e2?.response?.data?.code; const status = e2?.response?.status;
       if (status === 401) { sessionStorage.removeItem(ECOID_PENDING_KEY); setErr({ text: t('ecoidReg.expired'), login: true }); }
-      else setErr({ text: errMsg(e2, t('ecoidReg.createFailed')), login: code === 'EMAIL_EXISTS' || code === 'ALREADY_REGISTERED' });
+      else if (code === 'EMAIL_EXISTS') { window.location.replace('/auth/ecoid/connect'); } else setErr({ text: errMsg(e2, t('ecoidReg.createFailed')), login: code === 'EMAIL_EXISTS' || code === 'ALREADY_REGISTERED' });
     } finally { setBusy(false); }
   };
 
