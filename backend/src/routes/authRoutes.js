@@ -23,6 +23,7 @@ router.post('/change-password', authenticate, c.changePassword);
 const ecoid = require("../controllers/ecoidController");
 router.post("/ecoid/exchange", authLimiter, ecoid.exchange);
 router.post("/ecoid/register", authLimiter, ecoid.register);
+router.post("/ecoid/connect", authLimiter, ecoid.connect);
 router.get("/ecoid/status", authenticate, ecoid.status);
 router.post("/ecoid/link", authLimiter, authenticate, ecoid.link);
 router.post("/ecoid/unlink", authenticate, ecoid.unlink);

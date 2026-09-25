@@ -96,4 +96,34 @@ const unlink = asyncHandler(async (req, res) => {
   return res.json({ linked: false });
 });
 
-module.exports = { exchange, register, status, link, unlink };
+
+// ---- Connect an existing account on first EcoID sign-in (Master Reference §7; P7 clarification) ----
+// Links ONLY when the person proves both: control of the inbox (EcoID-verified email) AND this account's own password.
+const __cAttempts = new Map();
+const __cLimited = (k) => { const now = Date.now(); const a = (__cAttempts.get(k) || []).filter((t) => now - t < 15 * 60 * 1000); __cAttempts.set(k, a); return a.length >= 5; };
+const __cNote = (k) => { const a = __cAttempts.get(k) || []; a.push(Date.now()); __cAttempts.set(k, a); };
+const connect = asyncHandler(async (req, res) => {
+  const b = req.body || {}; const pw = String(b.password || '');
+  if (typeof b.ecoidToken !== 'string' || b.ecoidToken.length < 20) return res.status(400).json({ message: 'ecoidToken is required.' });
+  if (!pw) return res.status(400).json({ message: 'Enter the password of your existing account.', code: 'PASSWORD_REQUIRED' });
+  const claims = await claimsOrNull(b.ecoidToken); if (!claims) return res.status(401).json({ message: UNVERIFIED });
+  const p = await profileOrNull(b.ecoidToken);
+  if (!p || !p.email || !p.emailVerified) return res.status(400).json({ message: 'Verify your EcoID email first, then connect your account.', code: 'EMAIL_NOT_VERIFIED' });
+  const key = p.email + '|' + (req.ip || '');
+  if (__cLimited(key)) return res.status(429).json({ message: 'Too many attempts. Wait 15 minutes, then try again.', code: 'RATE_LIMITED' });
+  const user = await User.findOne({ where: User.sequelize.where(User.sequelize.fn('lower', User.sequelize.col('email')), p.email) });
+  if (!user) return res.status(404).json({ message: 'No existing account uses this email. Create a new account instead.', code: 'NO_ACCOUNT' });
+  if (user.role === 'superadmin') return res.status(403).json({ message: 'Superadmin accounts sign in with email and password.', code: 'PRIVILEGED_ACCOUNT' });
+  if (user.status !== 'active') return res.status(403).json({ message: 'Account not available', code: 'ACCOUNT_DISABLED' });
+  if (user.globalEcoId && user.globalEcoId !== claims.sub) return res.status(409).json({ message: 'This account is already linked to a different EcoID.', code: 'LINKED_ELSEWHERE' });
+  const other = await User.findOne({ where: { globalEcoId: claims.sub } });
+  if (other && other.id !== user.id) return res.status(409).json({ message: 'This EcoID is already linked to another Worker account.', code: 'ECOID_IN_USE' });
+  if (!(await user.validatePassword(pw))) { __cNote(key); return res.status(401).json({ message: 'That password is not correct.', code: 'BAD_PASSWORD' }); }
+  __cAttempts.delete(key);
+  if (!user.globalEcoId) { user.globalEcoId = claims.sub; await user.save({ fields: ['globalEcoId'] }); }
+  await record(req, 'auth.ecoid.connected', user.id);
+  const out = await issueTokens(req, user);
+  return res.json({ ...out, authSource: 'ecoid', connected: true });
+});
+
+module.exports = { exchange, register, status, link, unlink, connect };
