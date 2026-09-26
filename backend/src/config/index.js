@@ -1,4 +1,5 @@
 'use strict';
+const { requireSecret } = require('../security/secretGuard');
 require('dotenv').config({ path: require('path').resolve(__dirname, '..', '..', '.env') });
 
 const toBool = (v, def = false) => {
@@ -37,7 +38,7 @@ const config = {
   },
 
   jwt: {
-    secret: pick('JWT_ACCESS_SECRET', 'JWT_SECRET') || 'change-me-in-production',
+    secret: requireSecret(pick('JWT_ACCESS_SECRET', 'JWT_SECRET'), 'JWT_ACCESS_SECRET/JWT_SECRET'),
     accessExpiresIn: pick('JWT_ACCESS_EXPIRES_IN', 'JWT_EXPIRES_IN') || '2h',
     refreshSecret:
       pick('JWT_REFRESH_SECRET') ||
