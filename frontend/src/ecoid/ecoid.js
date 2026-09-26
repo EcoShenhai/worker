@@ -1,6 +1,11 @@
 // "Continue with EcoID" — OIDC Authorization Code + PKCE (public client) + EcoID social resolution.
 // Same implementation as MediQlaim src/lib/ecoid.js and CPAMind src/ecoid/ecoid.js.
 import { ECOID } from './config.js';
+// The user's current language for EcoID (OIDC ui_locales): the app's saved choice, then the page language, then the browser.
+function __uiLocale() {
+  try {  } catch (e) { /* storage unavailable */ }
+  return (document.documentElement.lang || navigator.language || 'en');
+}
 
 export const REDIRECT_PATH = '/auth/ecoid/callback';
 const SCOPE = 'openid profile email did territory';
@@ -15,7 +20,7 @@ export async function startEcoIdLogin(intent = 'login') {
   sessionStorage.setItem('ecoid_state', state);
   sessionStorage.setItem('ecoid_intent', intent);
   const qs = new URLSearchParams({ client_id: ECOID.clientId, redirect_uri: redirectUri(), response_type: 'code', scope: SCOPE,
-    state, code_challenge: await challengeFrom(verifier), code_challenge_method: 'S256', nonce: rand(8) });
+    state, code_challenge: await challengeFrom(verifier), code_challenge_method: 'S256', ui_locales: __uiLocale(), nonce: rand(8) });
   window.location.assign(`${ECOID.origin}/authorize?${qs.toString()}`);
 }
 
