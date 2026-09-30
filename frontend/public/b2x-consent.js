@@ -72,7 +72,40 @@
     b.style.cssText = 'position:fixed;left:12px;bottom:12px;z-index:2147482000;padding:5px 10px;border-radius:999px;border:1px solid rgba(127,127,127,.4);background:rgba(17,24,39,.72);color:#f9fafb;font:12px system-ui,-apple-system,Segoe UI,sans-serif;cursor:pointer;opacity:.8';
     orig.appendChild.call(document.body, b);
   }
+  // Terms notice under any form with a password field (sign-up / sign-in). Skips forms that already carry agreement text.
+  var N = {
+    en: ['By continuing, you agree to the', 'Terms', 'and acknowledge the', 'Privacy policy'],
+    sw: ['Kwa kuendelea, unakubali', 'Masharti', 'na unatambua', 'Sera ya faragha'],
+    fr: ['En continuant, vous acceptez les', 'Conditions', 'et reconnaissez la', 'Politique de confidentialité'],
+    ar: ['بالمتابعة، فإنك توافق على', 'الشروط', 'وتقرّ بـ', 'سياسة الخصوصية'],
+    es: ['Al continuar, aceptas los', 'Términos', 'y reconoces la', 'Política de privacidad'],
+    pt: ['Ao continuar, você aceita os', 'Termos', 'e reconhece a', 'Política de privacidade'],
+    de: ['Mit dem Fortfahren stimmen Sie den', 'Bedingungen', 'zu und bestätigen die', 'Datenschutzerklärung']
+  };
+  var NOTICE = !(tag && tag.hasAttribute('data-no-terms-notice'));
+  function addNotices() {
+    if (!NOTICE || !document.body) return;
+    var inputs = document.querySelectorAll('input[type="password"]');
+    for (var i = 0; i < inputs.length; i++) {
+      var el = inputs[i], host = el.closest('form');
+      for (var up = 0; !host && up < 6 && el.parentElement; up++) { el = el.parentElement; if (el.querySelector('button, [type="submit"]')) host = el; }
+      if (!host || host.querySelector('[data-b2x-terms]')) continue;
+      if (host.querySelector('a[href*="terms"]') || /agree to|I agree|accept the/i.test(host.textContent || '')) continue;
+      var lang = (document.documentElement.lang || navigator.language || 'en').slice(0, 2).toLowerCase(), t = N[lang] || N.en;
+      var p = document.createElement('p'); p.setAttribute('data-b2x-terms', '');
+      p.style.cssText = 'margin:10px 0 0;font-size:12px;line-height:1.4;opacity:.75;text-align:center';
+      p.appendChild(document.createTextNode(t[0] + ' '));
+      var a1 = document.createElement('a'); a1.href = '/legal/terms'; a1.target = '_blank'; a1.rel = 'noopener'; a1.textContent = t[1]; p.appendChild(a1);
+      p.appendChild(document.createTextNode(' ' + t[2] + ' '));
+      var a2 = document.createElement('a'); a2.href = '/legal/privacy'; a2.target = '_blank'; a2.rel = 'noopener'; a2.textContent = t[3]; p.appendChild(a2);
+      p.appendChild(document.createTextNode('.'));
+      orig.appendChild.call(host, p);
+    }
+  }
+  var pending = false;
+  function schedule() { if (pending) return; pending = true; (window.requestAnimationFrame || setTimeout)(function () { pending = false; addNotices(); }); }
+  function watch() { addNotices(); try { new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true }); } catch (e) { /* old browser */ } }
   window.b2xConsent = { get: function () { return state; }, open: open, allowAll: allowAll, version: VERSION };
-  function start() { if (!state) open(); else pill(); }
+  function start() { if (!state) open(); else pill(); watch(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
 })();
