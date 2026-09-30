@@ -70,6 +70,22 @@ export default function Subscription() {
     load();
   }, []);
 
+  // Translated text when available, English otherwise (never shows a raw key).
+  const tx = (k, f) => { const v = t(k); return v && v !== k ? v : f; };
+  // Confirm a subscription M-Pesa payment via EcoPay: poll every 5s for up to ~3 minutes.
+  const pollPayment = (id, tries = 0) => {
+    if (tries > 36) { setMsg({ type: 'ok', text: tx('subscription.mpesaPending', 'Still waiting for M-Pesa confirmation. Your plan will update once it arrives.') }); return; }
+    setTimeout(async () => {
+      try {
+        const { data } = await api.get(`/payments/${id}/status`);
+        const st = data?.payment?.status;
+        if (st === 'completed') { setMsg({ type: 'ok', text: tx('subscription.paymentConfirmed', 'Payment received. Your plan is now active.') }); await load(); return; }
+        if (st === 'failed') { setMsg({ type: 'err', text: tx('subscription.mpesaFailed', 'The M-Pesa payment was not completed.') }); return; }
+      } catch { /* keep polling */ }
+      pollPayment(id, tries + 1);
+    }, 5000);
+  };
+
   const payWithMpesa = async (e) => {
     e.preventDefault();
     if (selected === null) {
@@ -79,10 +95,11 @@ export default function Subscription() {
     setBusy('mpesa');
     setMsg(null);
     try {
-      await api.post('/payments/subscription/mpesa/initiate', { phone });
+      const { data } = await api.post('/payments/subscription/mpesa/initiate', { phone });
       setMsg({ type: 'ok', text: t('subscription.mpesaSent') });
       setPhone('');
       await load();
+      if (data?.payment?.id) pollPayment(data.payment.id);
     } catch (e) {
       setMsg({ type: 'err', text: e.response?.data?.message || t('subscription.mpesaFailed') });
     } finally {
