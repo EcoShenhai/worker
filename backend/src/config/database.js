@@ -9,7 +9,7 @@ if (config.db.url) {
     dialect: 'postgres',
     logging: config.db.logging ? console.log : false,
     dialectOptions: config.db.ssl ? { ssl: { rejectUnauthorized: false } } : {},
-    pool: { max: 10, min: 0, acquire: 30000, idle: 10000 },
+    pool: { max: Number(process.env.DB_POOL_MAX || 3), min: 0, acquire: Number(process.env.DB_POOL_ACQUIRE_MS || 60000), idle: 10000, evict: 10000 },
   });
 } else {
   sequelize = new Sequelize(config.db.name, config.db.user, config.db.password, {
