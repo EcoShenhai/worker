@@ -105,6 +105,66 @@
   var pending = false;
   function schedule() { if (pending) return; pending = true; (window.requestAnimationFrame || setTimeout)(function () { pending = false; addNotices(); }); }
   function watch() { addNotices(); try { new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true }); } catch (e) { /* old browser */ } }
+  // ── Privacy & data (GDPR self-service): download my data / delete my account, using the app's own sign-in token.
+  var API = ((tag && tag.getAttribute('data-api')) || '/api/v1').replace(/\/+$/, '');
+  var PRIV = !(tag && tag.hasAttribute('data-no-privacy'));
+  var P = {
+    en: ['Privacy & data', 'Download my data', 'Delete my account', 'This permanently deletes your account and personal data in this app. Payment and legal records are kept without your personal details. Type DELETE to confirm.', 'Your data has been downloaded.', 'Your account has been deleted.', 'Something went wrong. Please try again.', 'Close'],
+    sw: ['Faragha na data', 'Pakua data yangu', 'Futa akaunti yangu', 'Hii inafuta kabisa akaunti yako na data yako binafsi katika programu hii. Rekodi za malipo na za kisheria huhifadhiwa bila maelezo yako binafsi. Andika DELETE kuthibitisha.', 'Data yako imepakuliwa.', 'Akaunti yako imefutwa.', 'Hitilafu imetokea. Tafadhali jaribu tena.', 'Funga'],
+    fr: ['Confidentialité et données', 'Télécharger mes données', 'Supprimer mon compte', 'Cette action supprime définitivement votre compte et vos données personnelles dans cette application. Les paiements et documents légaux sont conservés sans vos informations personnelles. Tapez DELETE pour confirmer.', 'Vos données ont été téléchargées.', 'Votre compte a été supprimé.', 'Une erreur est survenue. Veuillez réessayer.', 'Fermer'],
+    ar: ['الخصوصية والبيانات', 'تنزيل بياناتي', 'حذف حسابي', 'يؤدي هذا إلى حذف حسابك وبياناتك الشخصية في هذا التطبيق نهائياً. تُحفظ سجلات الدفع والسجلات القانونية دون بياناتك الشخصية. اكتب DELETE للتأكيد.', 'تم تنزيل بياناتك.', 'تم حذف حسابك.', 'حدث خطأ. يرجى المحاولة مرة أخرى.', 'إغلاق'],
+    es: ['Privacidad y datos', 'Descargar mis datos', 'Eliminar mi cuenta', 'Esto elimina de forma permanente tu cuenta y tus datos personales en esta aplicación. Los registros de pago y legales se conservan sin tus datos personales. Escribe DELETE para confirmar.', 'Tus datos se han descargado.', 'Tu cuenta ha sido eliminada.', 'Algo salió mal. Inténtalo de nuevo.', 'Cerrar'],
+    pt: ['Privacidade e dados', 'Transferir os meus dados', 'Eliminar a minha conta', 'Isto elimina permanentemente a sua conta e os seus dados pessoais nesta aplicação. Os registos de pagamento e legais são mantidos sem os seus dados pessoais. Escreva DELETE para confirmar.', 'Os seus dados foram transferidos.', 'A sua conta foi eliminada.', 'Ocorreu um erro. Tente novamente.', 'Fechar'],
+    de: ['Datenschutz & Daten', 'Meine Daten herunterladen', 'Mein Konto löschen', 'Dadurch werden Ihr Konto und Ihre personenbezogenen Daten in dieser App endgültig gelöscht. Zahlungs- und Rechtsunterlagen werden ohne Ihre persönlichen Angaben aufbewahrt. Geben Sie DELETE zur Bestätigung ein.', 'Ihre Daten wurden heruntergeladen.', 'Ihr Konto wurde gelöscht.', 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.', 'Schließen']
+  };
+  var bearer = null, nativeFetch = window.fetch ? window.fetch.bind(window) : null;
+  function sameOrigin(u) { try { return new URL(u || '/', location.href).origin === location.origin; } catch (e) { return false; } }
+  function seen(v, url) { if (!PRIV || !v || !/^Bearer\s+\S+/i.test(String(v)) || !sameOrigin(url)) return; bearer = String(v); privPill(); }
+  if (nativeFetch) window.fetch = function (input, init) {
+    try { var url = typeof input === 'string' ? input : (input && input.url); var h = (init && init.headers) || (input && input.headers);
+      var v = h && (typeof h.get === 'function' ? h.get('Authorization') : (h.Authorization || h.authorization)); seen(v, url); } catch (e) { /* ignore */ }
+    return nativeFetch.apply(window, arguments);
+  };
+  var xo = XMLHttpRequest.prototype.open, xs = XMLHttpRequest.prototype.setRequestHeader;
+  XMLHttpRequest.prototype.open = function (m, url) { this.__b2xUrl = url; return xo.apply(this, arguments); };
+  XMLHttpRequest.prototype.setRequestHeader = function (k, v) { try { if (/^authorization$/i.test(k)) seen(v, this.__b2xUrl); } catch (e) { /* ignore */ } return xs.apply(this, arguments); };
+  function pl() { var l = (document.documentElement.lang || navigator.language || 'en').slice(0, 2).toLowerCase(); return P[l] || P.en; }
+  function privPill() {
+    if (!document.body || document.getElementById('b2x-privacy-pill')) return;
+    var b = document.createElement('button'); b.id = 'b2x-privacy-pill'; b.type = 'button'; b.textContent = pl()[0];
+    b.style.cssText = 'position:fixed;left:12px;bottom:' + (FLOAT ? '44px' : '12px') + ';z-index:2147482000;padding:5px 10px;border-radius:999px;border:1px solid rgba(127,127,127,.4);background:rgba(17,24,39,.72);color:#f9fafb;font:12px system-ui,-apple-system,Segoe UI,sans-serif;cursor:pointer;opacity:.8';
+    b.onclick = privOpen; orig.appendChild.call(document.body, b);
+  }
+  var pbox = null;
+  function privOpen() {
+    if (pbox || !document.body || !bearer || !nativeFetch) return;
+    var t = pl(), rtl = (document.documentElement.lang || '').slice(0, 2) === 'ar';
+    pbox = document.createElement('div'); pbox.setAttribute('role', 'dialog'); pbox.setAttribute('aria-label', t[0]); pbox.dir = rtl ? 'rtl' : 'ltr';
+    pbox.style.cssText = 'position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483001;max-width:520px;margin:0 auto;padding:16px;border-radius:12px;background:#111827;color:#f9fafb;font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.35)';
+    var btn = 'padding:9px 14px;border-radius:8px;border:1px solid #f9fafb;font:inherit;font-weight:600;cursor:pointer;margin:6px 6px 0 0;';
+    var h = document.createElement('strong'); h.textContent = t[0]; h.style.cssText = 'display:block;font-size:16px;margin-bottom:8px'; pbox.appendChild(h);
+    var st = document.createElement('p'); st.style.cssText = 'margin:0 0 8px;min-height:1em'; pbox.appendChild(st);
+    function status(msg, bad) { st.textContent = msg || ''; st.style.color = bad ? '#fca5a5' : '#86efac'; }
+    var d = document.createElement('button'); d.type = 'button'; d.textContent = t[1]; d.style.cssText = btn + 'background:#f9fafb;color:#111827'; pbox.appendChild(d);
+    d.onclick = function () { status(''); nativeFetch(API + '/me/export', { headers: { Authorization: bearer } }).then(function (r) { if (!r.ok) throw new Error(); return r.blob(); })
+      .then(function (b) { var u = URL.createObjectURL(b), a = document.createElement('a'); a.href = u; a.download = location.hostname + '-my-data-' + new Date().toISOString().slice(0, 10) + '.json'; orig.appendChild.call(document.body, a); a.click(); a.remove(); URL.revokeObjectURL(u); status(t[4]); })
+      .catch(function () { status(t[6], true); }); };
+    var ex = document.createElement('p'); ex.textContent = t[3]; ex.style.cssText = 'margin:14px 0 6px;opacity:.85'; pbox.appendChild(ex);
+    var inp = document.createElement('input'); inp.placeholder = 'DELETE'; inp.style.cssText = 'padding:8px 10px;border-radius:8px;border:1px solid #6b7280;background:#1f2937;color:#f9fafb;font:inherit;width:140px;margin-right:6px'; pbox.appendChild(inp);
+    var x = document.createElement('button'); x.type = 'button'; x.textContent = t[2]; x.disabled = true; x.style.cssText = btn + 'background:#dc2626;border-color:#dc2626;color:#fff;opacity:.5'; pbox.appendChild(x);
+    inp.oninput = function () { x.disabled = inp.value !== 'DELETE'; x.style.opacity = x.disabled ? '.5' : '1'; };
+    x.onclick = function () { if (inp.value !== 'DELETE') return; status('');
+      nativeFetch(API + '/me', { method: 'DELETE', headers: { Authorization: bearer, 'Content-Type': 'application/json' }, body: JSON.stringify({ confirm: 'DELETE' }) })
+        .then(function (r) { if (!r.ok) throw new Error(); status(t[5]);
+          try { var keep = localStorage.getItem(KEY); localStorage.clear(); if (keep) localStorage.setItem(KEY, keep); sessionStorage.clear(); } catch (e) { /* ignore */ }
+          try { if (indexedDB && indexedDB.databases) indexedDB.databases().then(function (l) { l.forEach(function (db) { if (db.name) indexedDB.deleteDatabase(db.name); }); }); } catch (e) { /* ignore */ }
+          setTimeout(function () { location.href = '/'; }, 1500); })
+        .catch(function () { status(t[6], true); }); };
+    var c = document.createElement('button'); c.type = 'button'; c.textContent = t[7]; c.style.cssText = btn + 'background:transparent;color:#f9fafb;display:block;margin-top:12px';
+    c.onclick = function () { pbox.remove(); pbox = null; }; pbox.appendChild(c);
+    orig.appendChild.call(document.body, pbox);
+  }
+  document.addEventListener('click', function (e) { var el = e.target && e.target.closest && e.target.closest('[data-privacy-settings]'); if (el) { e.preventDefault(); privOpen(); } });
   window.b2xConsent = { get: function () { return state; }, open: open, allowAll: allowAll, version: VERSION };
   function start() { if (!state) open(); else pill(); watch(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
