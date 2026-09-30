@@ -34,6 +34,7 @@ app.use(morgan(config.env === 'production' ? 'combined' : 'dev', { skip: () => f
 app.get('/health', (req, res) => res.json({ status: 'ok', app: config.appName, time: new Date().toISOString() }));
 
 app.use(require('./utils/requestContext').middleware); // per-request context (tenant-aware AI prompts)
+app.use('/api/me', require('./routes/privacy.routes')); // GDPR self-service: export + delete my data
 app.use('/api', apiLimiter, routes);
 
 app.use(notFound);
