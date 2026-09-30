@@ -1,0 +1,314 @@
+{
+  "territory": {
+    "iso_alpha2": "LA",
+    "iso_alpha3": "LAO",
+    "iso_numeric": "418",
+    "name_en": "Laos",
+    "name_local": "ລາວ",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Vientiane",
+    "population_estimate": 7400000,
+    "internet_tld": ".la",
+    "calling_code": "+856"
+  },
+  "language": {
+    "primary": "lo",
+    "secondary": [
+      "en",
+      "fr"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "lo-LA",
+      "en-LA",
+      "lo",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_suffix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{13}$",
+    "national_id_name": "National ID Card",
+    "phone_format": "^\\+856[2][0-9]{9}$",
+    "address_fields_order": [
+      "village",
+      "district",
+      "province"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Unitel": [
+      "020",
+      "030"
+    ],
+    "Lao Telecom (LTC)": [
+      "021",
+      "030"
+    ],
+    "Best": [
+      "029"
+    ]
+  },
+  "currency": {
+    "code": "LAK",
+    "symbol": "₭",
+    "symbol_native": "₭",
+    "minor_unit": 2,
+    "name": "Lao Kip"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 21800.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.1,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT",
+    "withholding_tax_rate": 0.05,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{16}$",
+    "routing_name": "Account number (BOL)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "BCEL One",
+        "type": "mobile_banking",
+        "currency": "LAK"
+      },
+      {
+        "name": "U-Money (Unitel)",
+        "type": "mobile_money",
+        "currency": "LAK"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 3.0
+  },
+  "timezone": {
+    "default": "Asia/Vientiane",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "No comprehensive data protection law",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Lao is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Law on Electronic Transactions 2012"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.48,
+    "mobile_penetration_pct": 0.68,
+    "low_bandwidth_mode": true,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Labour Law 2006",
+    "mandatory_benefits": [
+      "NSSF pension",
+      "paid_leave_15_days"
+    ],
+    "payroll_tax_rate": 0.065,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.68
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 6,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Ministry of Industry and Commerce",
+    "dispute_resolution": [
+      "commerce_ministry",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Bank of the Lao PDR (BOL)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BOL",
+        "framework": "Law on Payment Systems 2017"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "EDL"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.6,
+    "corruption_perception_index": 30,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.09,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.035,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.48
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.025,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.005
+    },
+    "labor_cost_index_vs_usd": 0.14,
+    "cloud_compute_cost_index": 1.6,
+    "inflation_rate_annual": 0.048,
+    "recommended_fx_hedge_pct": 0.25
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "Department of Civil Aviation (DCA)",
+    "address_validation_standard": "Lao Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "ASEAN",
+      "GMS",
+      "Mekong Sub-region"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Vientiane",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-12:00 and 13:30-16:30",
+    "national_holiday_source": "Government Gazette",
+    "time_critical_regulations": []
+  }
+}

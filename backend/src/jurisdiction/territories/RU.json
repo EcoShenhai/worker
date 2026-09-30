@@ -1,0 +1,360 @@
+{
+  "territory": {
+    "iso_alpha2": "RU",
+    "name_en": "Russia",
+    "name_local": "Россия",
+    "region": "Europe",
+    "capital": "Moscow",
+    "population_estimate": 144000000,
+    "internet_tld": ".ru",
+    "calling_code": "+7"
+  },
+  "language": {
+    "primary": "ru",
+    "secondary": [
+      "tt",
+      "ba",
+      "cv",
+      "che"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "ru-RU",
+      "ru",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_suffix",
+    "date_format": "DD.MM.YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": " ",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{4} [0-9]{6}$",
+    "national_id_name": "Паспорт гражданина РФ",
+    "phone_format": "^\\+7[9][0-9]{9}$",
+    "address_fields_order": [
+      "index",
+      "region",
+      "city",
+      "street",
+      "house",
+      "apartment"
+    ],
+    "name_order": [
+      "given",
+      "patronymic",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "MTS": [
+      "910",
+      "911",
+      "912",
+      "913",
+      "914",
+      "915",
+      "916",
+      "917",
+      "918",
+      "919"
+    ],
+    "MegaFon": [
+      "920",
+      "921",
+      "922",
+      "923",
+      "924",
+      "925",
+      "926",
+      "927",
+      "928",
+      "929"
+    ],
+    "Beeline": [
+      "900",
+      "901",
+      "902",
+      "903",
+      "904",
+      "905",
+      "906",
+      "907",
+      "908",
+      "909"
+    ],
+    "Tele2 RU": [
+      "900",
+      "901",
+      "902",
+      "903",
+      "904",
+      "905",
+      "906",
+      "907",
+      "908",
+      "909"
+    ]
+  },
+  "currency": {
+    "code": "RUB",
+    "symbol": "₽",
+    "symbol_native": "₽",
+    "minor_unit": 2,
+    "name": "Russian Ruble"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 88.5,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.2,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "НДС (VAT)",
+    "withholding_tax_rate": 0.13,
+    "filing_deadline_day": 25
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{20}$",
+    "routing_name": "Расчётный счёт (BIK routing)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": true,
+    "providers": [
+      {
+        "name": "Mir (NSPK)",
+        "type": "domestic_card",
+        "currency": "RUB"
+      },
+      {
+        "name": "SBP (Fast Payment System)",
+        "type": "instant_payment",
+        "currency": "RUB"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Europe/Moscow",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": false,
+    "privacy_framework": "No Framework",
+    "aml_kyc_tier": "ENHANCED",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Russian is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Federal Law No. 63-FZ on Electronic Signature 2011"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.88,
+    "mobile_penetration_pct": 1.62,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator"
+    ],
+    "email_provider_priority": [
+      "local_smtp"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality per Labour Code 2001",
+    "mandatory_benefits": [
+      "PFR pension",
+      "FOMS health",
+      "FSS social",
+      "paid_leave_28_days",
+      "maternity_leave_140_days"
+    ],
+    "payroll_tax_rate": 0.3,
+    "notice_period_days": 14,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.9
+  },
+  "consumer_protection": {
+    "refund_period_days": 7,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": 7,
+    "unfair_terms_authority": "Rospotrebnadzor",
+    "dispute_resolution": [
+      "Rospotrebnadzor",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Bank of Russia (CBR)",
+    "payment_institution_types": [
+      "NBCO",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "Bank of Russia",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "CBR",
+        "framework": "Law on National Payment System 161-FZ"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "FAS + REM"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Federal Law 149-FZ on Information",
+    "platform_economy_rules": "Platform worker law (Law 258-FZ 2020)",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": 500000,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": false,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "restricted",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": 0.13,
+    "travel_rule_applies": false,
+    "cbdc_status": "pilot",
+    "cbdc_name": "Digital Ruble"
+  },
+  "risk": {
+    "political_stability_index": 0.25,
+    "corruption_perception_index": 26,
+    "cyber_risk_rating": "high",
+    "payment_failure_risk_pct": 0.4,
+    "sanctions_exposure": "high",
+    "fx_volatility_30d_pct": 0.085,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.8
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.22,
+    "cloud_compute_cost_index": 1.2,
+    "inflation_rate_annual": 0.075,
+    "recommended_fx_hedge_pct": 0.7
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Federal Law 152-FZ"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "government_controlled",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Federal Air Transport Agency (Rosaviation)",
+    "address_validation_standard": "Russian Post (Почта России) addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Transport",
+    "delivery_gig_worker_protections": "Law 258-FZ 2020 — partial platform worker protections",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "EAEU",
+      "CIS",
+      "SCO"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Europe/Moscow",
+    "dst_observed": true,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Official Government Gazette",
+    "time_critical_regulations": [
+      {
+        "rule": "VAT_return",
+        "deadline": "monthly_or_quarterly"
+      },
+      {
+        "rule": "DAC7_reporting",
+        "deadline": "annually_31_Jan"
+      }
+    ]
+  }
+}

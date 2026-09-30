@@ -1,0 +1,308 @@
+{
+  "territory": {
+    "iso_alpha2": "SV",
+    "name_en": "El Salvador",
+    "name_local": "El Salvador",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "San Salvador",
+    "population_estimate": 6600000,
+    "internet_tld": ".sv",
+    "calling_code": "+503"
+  },
+  "language": {
+    "primary": "es",
+    "secondary": [
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "es-SV",
+      "es",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{8,13}$",
+    "national_id_name": "Documento de Identidad",
+    "phone_format": "^\\+503[0-9]{[0-9]{7}}",
+    "address_fields_order": [
+      "street",
+      "number",
+      "city",
+      "state_or_department"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Tigo SV": [
+      "7xxx",
+      "6xxx"
+    ],
+    "Claro SV": [
+      "7xxx"
+    ],
+    "Movistar SV": [
+      "7xxx"
+    ]
+  },
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "symbol_native": "$",
+    "minor_unit": 2,
+    "name": "US Dollar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.13,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "IVA/VAT",
+    "withholding_tax_rate": 0.1,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{10,16}$",
+    "routing_name": "Account number"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "PayPhone",
+        "type": "e_wallet",
+        "currency": "USD"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/El_Salvador",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "No comprehensive data protection law",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "ES is official language",
+    "invoice_required": true,
+    "digital_signature_law": "E-signature law"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.65,
+    "mobile_penetration_pct": 1.05,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Subordination test per Labour Code",
+    "mandatory_benefits": [
+      "social_security",
+      "paid_leave_15_days"
+    ],
+    "payroll_tax_rate": 0.12,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 2.0
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Consumer Protection Agency",
+    "dispute_resolution": [
+      "consumer_protection",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banco Central de Reserva de El Salvador (BCR)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Banco Central de Reserva de El Salvador (BCR)",
+        "framework": "BCR Payment Regulations"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Energy Regulator"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": true,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": "live",
+    "cbdc_name": "Chivo Wallet / Bitcoin"
+  },
+  "risk": {
+    "political_stability_index": 0.38,
+    "corruption_perception_index": 31,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.14,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.005,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.52
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.025,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.004
+    },
+    "labor_cost_index_vs_usd": 0.2,
+    "cloud_compute_cost_index": 1.65,
+    "inflation_rate_annual": 0.055,
+    "recommended_fx_hedge_pct": 0.05
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "National Civil Aviation Authority",
+    "address_validation_standard": "National postal system",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "Regional blocs"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/El_Salvador",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Official Gazette",
+    "time_critical_regulations": []
+  }
+}

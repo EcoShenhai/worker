@@ -1,0 +1,377 @@
+{
+  "territory": {
+    "iso_alpha2": "NG",
+    "iso_alpha3": "NGA",
+    "iso_numeric": "566",
+    "name_en": "Nigeria",
+    "name_local": "Nigeria",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Abuja",
+    "population_estimate": 220000000,
+    "internet_tld": ".ng",
+    "calling_code": "+234"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "yo",
+      "ig",
+      "ha"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-NG",
+      "yo-NG",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{11}$",
+    "national_id_name": "National Identification Number (NIN)",
+    "phone_format": "^\\+234[7-9][0-9]{9}$",
+    "address_fields_order": [
+      "house_number",
+      "street",
+      "area",
+      "LGA",
+      "state"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "MTN Nigeria": [
+      "0703",
+      "0706",
+      "0803",
+      "0806",
+      "0810",
+      "0813",
+      "0814",
+      "0816",
+      "0903",
+      "0906",
+      "0913",
+      "0916"
+    ],
+    "Airtel Nigeria": [
+      "0701",
+      "0708",
+      "0802",
+      "0808",
+      "0812",
+      "0901",
+      "0902",
+      "0904",
+      "0907",
+      "0912"
+    ],
+    "Glo Mobile": [
+      "0705",
+      "0805",
+      "0807",
+      "0811",
+      "0815",
+      "0905",
+      "0915"
+    ],
+    "9mobile": [
+      "0809",
+      "0817",
+      "0818",
+      "0909",
+      "0908"
+    ]
+  },
+  "currency": {
+    "code": "NGN",
+    "symbol": "₦",
+    "symbol_native": "₦",
+    "minor_unit": 2,
+    "name": "Nigerian Naira"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1585.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.075,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "VAT",
+    "withholding_tax_rate": 0.1,
+    "filing_deadline_day": 21
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{10}$",
+    "routing_name": "NUBAN (Nigeria Uniform Bank Account Number)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "M-Pesa Nigeria",
+        "type": "mobile_money",
+        "currency": "NGN"
+      },
+      {
+        "name": "OPay",
+        "type": "fintech_wallet",
+        "currency": "NGN"
+      },
+      {
+        "name": "Paystack",
+        "type": "payment_gateway",
+        "currency": "NGN"
+      },
+      {
+        "name": "Flutterwave",
+        "type": "payment_gateway",
+        "currency": "NGN"
+      },
+      {
+        "name": "Interswitch",
+        "type": "payment_switch",
+        "currency": "NGN"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 5.0
+  },
+  "timezone": {
+    "default": "Africa/Lagos",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "NDPR Act 2023",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "English is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Cybercrimes Act 2015 + Electronic Commerce Act"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.56,
+    "mobile_penetration_pct": 0.96,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio",
+      "termii"
+    ],
+    "email_provider_priority": [
+      "sendgrid",
+      "mailgun"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality test per Labour Act 2004",
+    "mandatory_benefits": [
+      "NSITF",
+      "Employee Compensation",
+      "Pension (PenCom)",
+      "paid_leave_12_days",
+      "maternity_leave_12_weeks"
+    ],
+    "payroll_tax_rate": 0.08,
+    "notice_period_days": 28,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.56
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "FCCPC (Federal Competition and Consumer Protection Commission)",
+    "dispute_resolution": [
+      "FCCPC",
+      "CBN consumer desk",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Central Bank of Nigeria (CBN)",
+    "fintech_licence_type": "PSB / Mobile Money",
+    "payment_institution_types": [
+      "PSB",
+      "MMO",
+      "PI",
+      "PSSP"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "SEC Nigeria",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "CBN",
+        "framework": "PSB Framework 2021 + PSSP Licence"
+      },
+      "healthcare": {
+        "authority": "NAFDAC + SON + MDCN"
+      },
+      "energy": {
+        "authority": "NERC (Nigerian Electricity Regulatory Commission)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per Consumer Protection Act",
+    "platform_economy_rules": "Draft Digital Economy Policy 2022",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": {
+      "name": "e-Invoice",
+      "authority": "FIRS",
+      "connector": "firs_ng_v1",
+      "mandatory": false
+    }
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "restricted",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "live",
+    "cbdc_name": "eNaira"
+  },
+  "risk": {
+    "political_stability_index": 0.3,
+    "corruption_perception_index": 25,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.08,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.085,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.55
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.015,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.005
+    },
+    "labor_cost_index_vs_usd": 0.11,
+    "cloud_compute_cost_index": 1.2,
+    "inflation_rate_annual": 0.298,
+    "recommended_fx_hedge_pct": 0.4
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "NITDA + FME guidelines",
+      "student_data_protection": "NDPR Act 2023"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Nigeria Civil Aviation Authority (NCAA)",
+    "address_validation_standard": "NIPOST addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "State Transport Ministries (Lagos LAMATA, etc.)",
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "ECOWAS",
+      "Lake Chad Basin"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Africa/Lagos",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Federal Government Gazette",
+    "time_critical_regulations": []
+  }
+}

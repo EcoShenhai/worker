@@ -1,0 +1,334 @@
+{
+  "territory": {
+    "iso_alpha2": "KW",
+    "iso_alpha3": "KWT",
+    "iso_numeric": "414",
+    "name_en": "Kuwait",
+    "name_local": "الكويت",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Kuwait City",
+    "population_estimate": 4310000,
+    "internet_tld": ".kw",
+    "calling_code": "+965"
+  },
+  "language": {
+    "primary": "ar",
+    "secondary": [
+      "en"
+    ],
+    "rtl_default": true,
+    "locale_fallback_chain": [
+      "ar-KW",
+      "en-KW",
+      "ar",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{12}$",
+    "national_id_name": "Civil ID",
+    "phone_format": "^\\+965[5-9][0-9]{7}$",
+    "address_fields_order": [
+      "block",
+      "street",
+      "house",
+      "area"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Zain Kuwait": [
+      "9505",
+      "9506",
+      "9507",
+      "9508",
+      "9509",
+      "9670",
+      "9680",
+      "9690"
+    ],
+    "Ooredoo Kuwait": [
+      "9710",
+      "9720",
+      "9730",
+      "9740",
+      "9750",
+      "9760",
+      "9770"
+    ],
+    "stc Kuwait": [
+      "9050",
+      "9060",
+      "9070",
+      "9080",
+      "9090"
+    ]
+  },
+  "currency": {
+    "code": "KWD",
+    "symbol": "KD",
+    "symbol_native": "د.ك",
+    "minor_unit": 3,
+    "name": "Kuwaiti Dinar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 0.307,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.0,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "No VAT (oil-funded state)",
+    "withholding_tax_rate": null,
+    "filing_deadline_day": null
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^KW[0-9]{2}[A-Z]{4}[0-9]{22}$",
+    "routing_name": "IBAN (KW format)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "KNET",
+        "type": "interbank_network",
+        "currency": "KWD"
+      },
+      {
+        "name": "K-Net Pay",
+        "type": "mobile_payment",
+        "currency": "KWD"
+      },
+      {
+        "name": "Apple Pay",
+        "type": "digital_wallet",
+        "currency": "KWD"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Kuwait",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "saturday",
+    "work_week": [
+      "sunday",
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "PDPL (Personal Data Protection Law 2021)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Arabic is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Commerce and Transactions Law No. 20/2014"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.99,
+    "mobile_penetration_pct": 1.88,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Labour Law No. 6 of 2010",
+    "mandatory_benefits": [
+      "PIFSS social security",
+      "paid_leave_30_days",
+      "end_of_service_indemnity"
+    ],
+    "payroll_tax_rate": 0.1075,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 2.93
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Ministry of Commerce and Industry",
+    "dispute_resolution": [
+      "commerce_ministry",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Central Bank of Kuwait (CBK)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "CBK",
+        "framework": "CBK Law No. 32/1968 + fintech circular 2022"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Ministry of Electricity and Water"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per e-commerce law",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "illegal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.58,
+    "corruption_perception_index": 46,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.02,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.001,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.22
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.48,
+    "cloud_compute_cost_index": 1.05,
+    "inflation_rate_annual": 0.032,
+    "recommended_fx_hedge_pct": 0.05
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "PDPL 2021"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Directorate General of Civil Aviation (DGCA)",
+    "address_validation_standard": "Kuwait Post addressing + PACI address system",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Interior",
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "GCC"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Kuwait",
+    "dst_observed": false,
+    "fiscal_year_end": "03-31",
+    "business_day_definition": "Sunday-Thursday 07:30-14:30",
+    "national_holiday_source": "Official Gazette of Kuwait",
+    "time_critical_regulations": []
+  }
+}

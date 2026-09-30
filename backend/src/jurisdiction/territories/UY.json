@@ -1,0 +1,326 @@
+{
+  "territory": {
+    "iso_alpha2": "UY",
+    "iso_alpha3": "URY",
+    "iso_numeric": "858",
+    "name_en": "Uruguay",
+    "name_local": "Uruguay",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Montevideo",
+    "population_estimate": 3570000,
+    "internet_tld": ".uy",
+    "calling_code": "+598"
+  },
+  "language": {
+    "primary": "es",
+    "secondary": [
+      "pt"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "es-UY",
+      "es",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{8}-[0-9]$",
+    "national_id_name": "Cédula de Identidad",
+    "phone_format": "^\\+598[9][0-9]{7}$",
+    "address_fields_order": [
+      "calle",
+      "número",
+      "apartamento",
+      "ciudad",
+      "departamento"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Antel": [
+      "09x"
+    ],
+    "Movistar UY": [
+      "09x"
+    ],
+    "Claro UY": [
+      "09x"
+    ]
+  },
+  "currency": {
+    "code": "UYU",
+    "symbol": "$U",
+    "symbol_native": "$U",
+    "minor_unit": 2,
+    "name": "Uruguayan Peso"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 39.5,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.22,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "IVA (VAT)",
+    "withholding_tax_rate": 0.25,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{11}$",
+    "routing_name": "Account number (BCU)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "BROU Pay",
+        "type": "mobile_banking",
+        "currency": "UYU"
+      },
+      {
+        "name": "Prex (Itaú)",
+        "type": "digital_wallet",
+        "currency": "UYU"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      },
+      {
+        "name": "Mercado Pago UY",
+        "type": "fintech_wallet",
+        "currency": "UYU"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "STANDARD",
+    "multiplier": 1.0,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/Montevideo",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Law 18.331 on Personal Data Protection (2008) — GDPR-adequate",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Spanish is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Law 18.600 on Electronic Documents and Digital Signature (2009)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.86,
+    "mobile_penetration_pct": 1.62,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Subordination + economic reality per Labour Relations Law",
+    "mandatory_benefits": [
+      "BPS social insurance",
+      "paid_leave_20_days",
+      "aguinaldo",
+      "salario_vacacional",
+      "maternity_leave_14_weeks"
+    ],
+    "payroll_tax_rate": 0.125,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 3.98
+  },
+  "consumer_protection": {
+    "refund_period_days": 7,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 7,
+    "unfair_terms_authority": "URSEA + AGESIC",
+    "dispute_resolution": [
+      "URSEA",
+      "consumer_ombudsman",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banco Central del Uruguay (BCU)",
+    "payment_institution_types": [
+      "IMPO",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BCU",
+        "framework": "Law 19.210 (Financial Inclusion Law 2014)"
+      },
+      "healthcare": {
+        "authority": "MSP + ASSE"
+      },
+      "energy": {
+        "authority": "URSEA"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Consumer Protection Law 17.250 applies",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.82,
+    "corruption_perception_index": 73,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.02,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.028,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.18
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.002
+    },
+    "labor_cost_index_vs_usd": 0.45,
+    "cloud_compute_cost_index": 1.2,
+    "inflation_rate_annual": 0.088,
+    "recommended_fx_hedge_pct": 0.18
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "ANEP guidelines",
+      "student_data_protection": "Law 18.331"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Dinacia (Dirección Nacional de Aviación Civil e Infraestructura Aeronáutica)",
+    "address_validation_standard": "Correo Uruguayo addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "MTOP (Ministerio de Transporte y Obras Públicas)",
+    "delivery_gig_worker_protections": "No specific gig worker protection law; BPS affiliation required",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "Mercosur",
+      "Pacific Alliance observer"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/Montevideo",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Diario Oficial",
+    "time_critical_regulations": []
+  }
+}

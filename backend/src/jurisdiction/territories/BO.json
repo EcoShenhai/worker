@@ -1,0 +1,320 @@
+{
+  "territory": {
+    "iso_alpha2": "BO",
+    "iso_alpha3": "BOL",
+    "iso_numeric": "068",
+    "name_en": "Bolivia",
+    "name_local": "Bolivia",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Sucre / La Paz",
+    "population_estimate": 12000000,
+    "internet_tld": ".bo",
+    "calling_code": "+591"
+  },
+  "language": {
+    "primary": "es",
+    "secondary": [
+      "ay",
+      "qu",
+      "gn"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "es-BO",
+      "es",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{7,8}[A-Z]?$",
+    "national_id_name": "Cédula de Identidad",
+    "phone_format": "^\\+591[67][0-9]{7}$",
+    "address_fields_order": [
+      "street",
+      "number",
+      "zone",
+      "city",
+      "department"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Tigo Bolivia": [
+      "70xx",
+      "71xx",
+      "72xx"
+    ],
+    "Entel Bolivia": [
+      "76xx",
+      "77xx"
+    ],
+    "Viva (NuevaTel)": [
+      "74xx",
+      "75xx"
+    ]
+  },
+  "currency": {
+    "code": "BOB",
+    "symbol": "Bs.",
+    "symbol_native": "Bs.",
+    "minor_unit": 2,
+    "name": "Bolivian Boliviano"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 6.91,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.13,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "IVA (VAT)",
+    "withholding_tax_rate": 0.13,
+    "filing_deadline_day": 29
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{11}$",
+    "routing_name": "Account number (BCB)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Tigo Money",
+        "type": "mobile_money",
+        "currency": "BOB"
+      },
+      {
+        "name": "Simple Bolivia",
+        "type": "e_wallet",
+        "currency": "BOB"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/La_Paz",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "No comprehensive data protection law",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Spanish and 36 indigenous languages are co-official",
+    "invoice_required": true,
+    "digital_signature_law": "Law 164 on Telecommunications and ICT 2011"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.52,
+    "mobile_penetration_pct": 0.92,
+    "low_bandwidth_mode": true,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per General Labour Law 1939",
+    "mandatory_benefits": [
+      "AFP pension",
+      "social_insurance",
+      "paid_leave_15_days",
+      "aguinaldo_bonus",
+      "maternity_leave_90_days"
+    ],
+    "payroll_tax_rate": 0.1271,
+    "notice_period_days": 90,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.3
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "SENASAG / SEPREC",
+    "dispute_resolution": [
+      "consumer_protection",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banco Central de Bolivia (BCB)",
+    "payment_institution_types": [
+      "EFT",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Banco Central de Bolivia (BCB)",
+        "framework": "BCB Payment Regulation"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "AE (Autoridad de Electricidad)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.35,
+    "corruption_perception_index": 31,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.1,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.005,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.52
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.025,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.14,
+    "cloud_compute_cost_index": 1.6,
+    "inflation_rate_annual": 0.062,
+    "recommended_fx_hedge_pct": 0.1
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "Dirección General de Aeronáutica Civil (DGAC)",
+    "address_validation_standard": "ECOBOL addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "CAN",
+      "Mercosur associate"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/La_Paz",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:30-12:30 and 14:30-18:30",
+    "national_holiday_source": "Gaceta Oficial del Estado Plurinacional",
+    "time_critical_regulations": []
+  }
+}

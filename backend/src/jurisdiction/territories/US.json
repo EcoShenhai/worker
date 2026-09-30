@@ -1,0 +1,356 @@
+{
+  "territory": {
+    "iso_alpha2": "US",
+    "iso_alpha3": "USA",
+    "iso_numeric": "840",
+    "name_en": "United States",
+    "name_local": "United States of America",
+    "region": "Americas",
+    "subregion": "North America",
+    "capital": "Washington D.C.",
+    "population_estimate": 335000000,
+    "internet_tld": ".us",
+    "calling_code": "+1"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "es",
+      "zh",
+      "fr",
+      "tl",
+      "vi",
+      "ko",
+      "de",
+      "ar"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-US",
+      "es-US",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "MM/DD/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "imperial"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{3}-[0-9]{2}-[0-9]{4}$",
+    "national_id_name": "Social Security Number (SSN) / State Driver's License",
+    "phone_format": "^\\+1[2-9][0-9]{9}$",
+    "address_fields_order": [
+      "house_number",
+      "street",
+      "apt",
+      "city",
+      "state",
+      "zip"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Verizon": [
+      "varies_by_area_code"
+    ],
+    "AT&T": [
+      "varies_by_area_code"
+    ],
+    "T-Mobile": [
+      "varies_by_area_code"
+    ],
+    "Dish Wireless (Boost)": [
+      "varies_by_area_code"
+    ]
+  },
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "symbol_native": "$",
+    "minor_unit": 2,
+    "name": "US Dollar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.0,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "No federal sales tax; state/local sales tax 0-10.25%",
+    "withholding_tax_rate": 0.3,
+    "filing_deadline_day": null
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{9}$",
+    "routing_name": "ABA Routing Number (9 digits)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "ACH (Nacha)",
+        "type": "bank_transfer",
+        "currency": "USD"
+      },
+      {
+        "name": "Zelle",
+        "type": "instant_payment",
+        "currency": "USD"
+      },
+      {
+        "name": "Venmo",
+        "type": "p2p_payment",
+        "currency": "USD"
+      },
+      {
+        "name": "Apple Pay / Google Pay",
+        "type": "digital_wallet",
+        "currency": "USD"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      },
+      {
+        "name": "Square",
+        "type": "payment_gateway",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/New_York",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "sunday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Sectoral (CCPA, HIPAA, COPPA, GLB, FERPA — no federal omnibus)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "No official language at federal level; English de facto; 28 states have English official language laws",
+    "invoice_required": false,
+    "digital_signature_law": "E-SIGN Act 2000 + UETA (state level)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.94,
+    "mobile_penetration_pct": 1.08,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "twilio",
+      "local_aggregator"
+    ],
+    "email_provider_priority": [
+      "sendgrid",
+      "mailgun",
+      "ses"
+    ],
+    "push_provider_priority": [
+      "apns",
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "ABC test (California AB5) / economic reality test per FLSA; varies by state",
+    "mandatory_benefits": [
+      "FICA_7.65pct",
+      "state_UI",
+      "paid_leave_varies_by_state",
+      "FMLA_12_weeks_unpaid_federal"
+    ],
+    "payroll_tax_rate": 0.0765,
+    "notice_period_days": 0,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 7.25
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": 3,
+    "unfair_terms_authority": "FTC + State AGs",
+    "dispute_resolution": [
+      "FTC",
+      "State AG",
+      "CFPB (fintech)",
+      "BBB",
+      "civil_courts",
+      "class_action"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "OCC + Federal Reserve + FDIC + FinCEN + state regulators",
+    "payment_institution_types": [
+      "MSB",
+      "state_licensed_MTL",
+      "bank"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FinCEN + SEC + CFTC + state regulators",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "OCC + state regulators",
+        "framework": "BSA + state money transmitter licenses (50 states)"
+      },
+      "healthcare": {
+        "authority": "FDA + HHS + CMS"
+      },
+      "energy": {
+        "authority": "FERC + state PUCs"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Section 230 CDA (platform immunity) + state laws + DMCA + COPPA",
+    "platform_economy_rules": "Varies by state; California CPRA + AB5; federal framework under discussion",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "US_AI_Executive_Order_Oct2023",
+    "high_risk_ai_categories": [
+      "medical_AI",
+      "critical_infrastructure",
+      "national_security"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital Dollar"
+  },
+  "risk": {
+    "political_stability_index": 0.78,
+    "corruption_perception_index": 69,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.0,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.1
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.015,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 1.0,
+    "cloud_compute_cost_index": 0.85,
+    "inflation_rate_annual": 0.025,
+    "recommended_fx_hedge_pct": 0.0
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "FERPA + COPPA + state laws",
+      "student_data_protection": "FERPA + state laws"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Federal Aviation Administration (FAA)",
+    "address_validation_standard": "USPS addressing",
+    "coordinate_system": "NAD83",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "State PUCs + city authorities",
+    "delivery_gig_worker_protections": "Prop 22 CA (gig worker exemption upheld); varies by state; no federal framework",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "CUSMA/USMCA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/New_York",
+    "dst_observed": true,
+    "fiscal_year_end": "09-30",
+    "business_day_definition": "Monday-Friday 09:00-17:00 (Eastern)",
+    "national_holiday_source": "OPM Federal Holidays",
+    "time_critical_regulations": []
+  }
+}

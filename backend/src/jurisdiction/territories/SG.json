@@ -1,0 +1,346 @@
+{
+  "territory": {
+    "iso_alpha2": "SG",
+    "iso_alpha3": "SGP",
+    "iso_numeric": "702",
+    "name_en": "Singapore",
+    "name_local": "Singapore / 新加坡",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Singapore",
+    "population_estimate": 5920000,
+    "internet_tld": ".sg",
+    "calling_code": "+65"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "zh",
+      "ms",
+      "ta"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-SG",
+      "zh-SG",
+      "ms-SG",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[STFG][0-9]{7}[A-Z]$",
+    "national_id_name": "NRIC / FIN (National Registration Identity Card)",
+    "phone_format": "^\\+65[689][0-9]{7}$",
+    "address_fields_order": [
+      "block",
+      "street",
+      "unit",
+      "building",
+      "postal_code"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Singtel": [
+      "8",
+      "9"
+    ],
+    "StarHub": [
+      "8",
+      "9"
+    ],
+    "M1": [
+      "8",
+      "9"
+    ],
+    "TPG": [
+      "8",
+      "9"
+    ],
+    "MVNOs (Circles.Life etc)": [
+      "8",
+      "9"
+    ]
+  },
+  "currency": {
+    "code": "SGD",
+    "symbol": "S$",
+    "symbol_native": "S$",
+    "minor_unit": 2,
+    "name": "Singapore Dollar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1.34,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.09,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "GST (IRAS)",
+    "withholding_tax_rate": 0.15,
+    "filing_deadline_day": null
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{6,10}$",
+    "routing_name": "Bank code + branch code (MAS)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "PayNow (MAS)",
+        "type": "instant_payment",
+        "currency": "SGD"
+      },
+      {
+        "name": "GrabPay",
+        "type": "e_wallet",
+        "currency": "SGD"
+      },
+      {
+        "name": "DBS PayLah!",
+        "type": "e_wallet",
+        "currency": "SGD"
+      },
+      {
+        "name": "NETS",
+        "type": "interbank_debit",
+        "currency": "SGD"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "SGD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Singapore",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": false,
+    "privacy_framework": "PDPA (Personal Data Protection Act 2012, amended 2020)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "English, Malay, Mandarin and Tamil are official languages; English used in law",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions Act 2010 (Cap. 88)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.99,
+    "mobile_penetration_pct": 1.62,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality per Employment Act + MOM guidelines",
+    "mandatory_benefits": [
+      "CPF_17pct",
+      "paid_leave_7_to_14_days",
+      "maternity_leave_16_weeks"
+    ],
+    "payroll_tax_rate": 0.17,
+    "notice_period_days": 28,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 9.68
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Consumer Protection (Fair Trading) Act (CPFTA) / CASE",
+    "dispute_resolution": [
+      "CASE",
+      "Small Claims Tribunal",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Monetary Authority of Singapore (MAS)",
+    "fintech_licence_type": "Major/Standard PI",
+    "payment_institution_types": [
+      "Major PI",
+      "Standard PI",
+      "MAS-licensed"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "MAS (PSA licence)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "MAS",
+        "framework": "Payment Services Act 2019 (PSA) + MAS Notice PSN01"
+      },
+      "healthcare": {
+        "authority": "MOH + HSA"
+      },
+      "energy": {
+        "authority": "Energy Market Authority (EMA)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "E-Commerce Booster Package + CPFTA",
+    "platform_economy_rules": "MOM Advisory on Platform Workers 2021 (voluntary)",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "Singapore_AI_Governance_Framework",
+    "high_risk_ai_categories": [
+      "healthcare_AI",
+      "financial_AI",
+      "employment_AI"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Project Orchid"
+  },
+  "risk": {
+    "political_stability_index": 0.95,
+    "corruption_perception_index": 83,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.008,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.1
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": 0.003,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 1.05,
+    "cloud_compute_cost_index": 1.05,
+    "inflation_rate_annual": 0.032,
+    "recommended_fx_hedge_pct": 0.05
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "MOE guidelines",
+      "student_data_protection": "PDPA 2012"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aviation Authority of Singapore (CAAS)",
+    "address_validation_standard": "SingPost postal code system",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Land Transport Authority (LTA)",
+    "delivery_gig_worker_protections": "Platform Workers Act 2024 — mandatory CPF contributions and accident insurance for platform workers",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "ASEAN",
+      "RCEP",
+      "CPTPP"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Singapore",
+    "dst_observed": false,
+    "fiscal_year_end": "03-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "MOM (Ministry of Manpower)",
+    "time_critical_regulations": []
+  }
+}

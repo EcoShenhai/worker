@@ -26,6 +26,7 @@ app.use(
 // M-Pesa callback needs raw-ish JSON too; standard json parser is fine.
 app.use(express.json({ limit: '2mb' }));
 app.use(require('./middleware/termsConsent')); // records Terms/Privacy acceptance on signup (GDPR)
+app.use(require('./middleware/territoryInject')); // Localization JSONB: req.territory for every request
 app.use(express.urlencoded({ extended: true }));
 
 // Morgan without bodies (avoid logging sensitive payloads).

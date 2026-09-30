@@ -1,0 +1,379 @@
+{
+  "territory": {
+    "iso_alpha2": "IT",
+    "iso_alpha3": "ITA",
+    "iso_numeric": "380",
+    "name_en": "Italy",
+    "name_local": "Italia",
+    "region": "Europe",
+    "subregion": "Southern Europe",
+    "capital": "Rome",
+    "population_estimate": 58800000,
+    "internet_tld": ".it",
+    "calling_code": "+39"
+  },
+  "language": {
+    "primary": "it",
+    "secondary": [
+      "de",
+      "fr",
+      "sl",
+      "lld"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "it-IT",
+      "en-IT",
+      "it",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]$",
+    "national_id_name": "Codice Fiscale / Carta d'Identità",
+    "phone_format": "^\\+39[3][0-9]{9}$",
+    "address_fields_order": [
+      "street",
+      "house_number",
+      "postcode",
+      "city",
+      "province"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "TIM (Telecom Italia)": [
+      "338",
+      "339",
+      "346",
+      "347",
+      "348",
+      "349"
+    ],
+    "Vodafone IT": [
+      "340",
+      "341",
+      "342",
+      "343",
+      "344",
+      "345"
+    ],
+    "WindTre": [
+      "320",
+      "328",
+      "329",
+      "389",
+      "390",
+      "391",
+      "392",
+      "393",
+      "394",
+      "395",
+      "396",
+      "397",
+      "398",
+      "399"
+    ],
+    "Iliad": [
+      "351",
+      "352",
+      "353",
+      "354",
+      "355"
+    ]
+  },
+  "currency": {
+    "code": "EUR",
+    "symbol": "€",
+    "symbol_native": "€",
+    "minor_unit": 2,
+    "name": "Euro"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 0.92,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.22,
+    "real_time_tax_reporting": true,
+    "price_includes_tax": true,
+    "system": "IVA (VAT)",
+    "withholding_tax_rate": 0.2,
+    "filing_deadline_day": 16
+  },
+  "banking": {
+    "iban_required": true,
+    "local_routing_format": "^IT[0-9]{2}[A-Z][0-9]{5}[0-9]{5}[A-Z0-9]{12}$",
+    "routing_name": "IBAN (IT format)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Satispay",
+        "type": "mobile_payment",
+        "currency": "EUR"
+      },
+      {
+        "name": "Nexi",
+        "type": "payment_gateway",
+        "currency": "EUR"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "EUR"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "EUR"
+      },
+      {
+        "name": "Klarna",
+        "type": "bnpl",
+        "currency": "EUR"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Europe/Rome",
+    "dst": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": true,
+    "privacy_framework": "GDPR",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Italian is official language; German, French, Slovene co-official in some regions",
+    "invoice_required": true,
+    "digital_signature_law": "eIDAS (EU Regulation 910/2014)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.88,
+    "mobile_penetration_pct": 1.28,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Economic dependency + coordination test per Jobs Act 2015",
+    "mandatory_benefits": [
+      "INPS social insurance",
+      "paid_leave_20_days",
+      "13th_14th_salary",
+      "maternity_leave_5_months"
+    ],
+    "payroll_tax_rate": 0.239,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 9.8
+  },
+  "consumer_protection": {
+    "refund_period_days": 14,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 14,
+    "unfair_terms_authority": "National consumer authority + EU harmonised",
+    "dispute_resolution": [
+      "ADR",
+      "consumer_ombudsman",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banca d'Italia",
+    "payment_institution_types": [
+      "PI",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "OAM + Banca d'Italia under MiCA",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Banca d'Italia",
+        "framework": "PSD2 + MiCA"
+      },
+      "healthcare": {
+        "authority": "AIFA + ISS"
+      },
+      "energy": {
+        "authority": "ARERA"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "EU Digital Services Act (DSA) applies",
+    "platform_economy_rules": "EU Platform Work Directive (transposing)",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": {
+      "name": "FatturaPA",
+      "authority": "SDI",
+      "connector": "fatturapa_it_v1",
+      "mandatory": true
+    }
+  },
+  "ai_regulation": {
+    "framework": "EU_AI_Act",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "critical_infrastructure",
+      "law_enforcement",
+      "employment",
+      "education",
+      "credit_scoring"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": true,
+    "ai_decision_explainability_required": true,
+    "prohibited_ai_practices": [
+      "real_time_public_biometric_surveillance",
+      "social_scoring",
+      "subliminal_manipulation",
+      "exploitation_of_vulnerabilities"
+    ]
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital Euro"
+  },
+  "risk": {
+    "political_stability_index": 0.72,
+    "corruption_perception_index": 56,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.02,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.005,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.2
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.002
+    },
+    "labor_cost_index_vs_usd": 0.85,
+    "cloud_compute_cost_index": 1.05,
+    "inflation_rate_annual": 0.018,
+    "recommended_fx_hedge_pct": 0.05
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "GDPR"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "ENAC (Ente Nazionale per l'Aviazione Civile)",
+    "address_validation_standard": "Poste Italiane addressing",
+    "coordinate_system": "ETRS89",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministero delle Infrastrutture e dei Trasporti",
+    "delivery_gig_worker_protections": "Riders' Charter + EU Platform Work Directive (transposing)",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "EU Single Transport Area",
+      "Schengen"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Europe/Rome",
+    "dst_observed": true,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Official Government Gazette",
+    "time_critical_regulations": [
+      {
+        "rule": "IVA_return",
+        "deadline": "quarterly_by_16th"
+      },
+      {
+        "rule": "FatturaPA",
+        "deadline": "real_time_B2B_mandatory"
+      },
+      {
+        "rule": "DAC7_reporting",
+        "deadline": "annually_31_Jan"
+      }
+    ]
+  }
+}

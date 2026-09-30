@@ -1,0 +1,414 @@
+{
+  "territory": {
+    "iso_alpha2": "IN",
+    "iso_alpha3": "IND",
+    "iso_numeric": "356",
+    "name_en": "India",
+    "name_local": "भारत",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "New Delhi",
+    "population_estimate": 1429000000,
+    "internet_tld": ".in",
+    "calling_code": "+91"
+  },
+  "language": {
+    "primary": "hi",
+    "secondary": [
+      "en",
+      "bn",
+      "te",
+      "mr",
+      "ta",
+      "ur",
+      "gu",
+      "kn",
+      "ml",
+      "pa",
+      "or",
+      "as"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "hi-IN",
+      "en-IN",
+      "hi",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[2-9]{1}[0-9]{11}$",
+    "national_id_name": "Aadhaar / PAN Card",
+    "phone_format": "^\\+91[6-9][0-9]{9}$",
+    "address_fields_order": [
+      "house",
+      "street",
+      "locality",
+      "city",
+      "state",
+      "pin"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Reliance Jio": [
+      "070",
+      "071",
+      "072",
+      "073",
+      "074",
+      "075",
+      "076",
+      "077",
+      "078",
+      "079",
+      "080",
+      "081",
+      "082",
+      "083",
+      "084",
+      "085",
+      "086",
+      "087",
+      "088",
+      "089"
+    ],
+    "Airtel": [
+      "070",
+      "071",
+      "072",
+      "073",
+      "074",
+      "075",
+      "076",
+      "077",
+      "078",
+      "079",
+      "098",
+      "099"
+    ],
+    "Vodafone Idea (Vi)": [
+      "070",
+      "071",
+      "072",
+      "073",
+      "074",
+      "075",
+      "076",
+      "077",
+      "078",
+      "079",
+      "095",
+      "096",
+      "097"
+    ],
+    "BSNL": [
+      "094"
+    ]
+  },
+  "currency": {
+    "code": "INR",
+    "symbol": "₹",
+    "symbol_native": "₹",
+    "minor_unit": 2,
+    "name": "Indian Rupee"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 83.5,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.18,
+    "real_time_tax_reporting": true,
+    "price_includes_tax": true,
+    "system": "GST (e-Invoice / GSTN)",
+    "withholding_tax_rate": 0.1,
+    "filing_deadline_day": 11
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[A-Z]{4}0[A-Z0-9]{6}$",
+    "routing_name": "IFSC (Indian Financial System Code)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "UPI (NPCI)",
+        "type": "unified_payment_interface",
+        "currency": "INR"
+      },
+      {
+        "name": "Paytm",
+        "type": "e_wallet",
+        "currency": "INR"
+      },
+      {
+        "name": "PhonePe",
+        "type": "upi_app",
+        "currency": "INR"
+      },
+      {
+        "name": "Google Pay",
+        "type": "upi_app",
+        "currency": "INR"
+      },
+      {
+        "name": "Razorpay",
+        "type": "payment_gateway",
+        "currency": "INR"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 3.0
+  },
+  "timezone": {
+    "default": "Asia/Kolkata",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "sunday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": false,
+    "privacy_framework": "DPDP Act 2023 (Digital Personal Data Protection)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Hindi and English are official languages; 22 scheduled languages",
+    "invoice_required": true,
+    "digital_signature_law": "IT Act 2000 (amended 2008)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.52,
+    "mobile_penetration_pct": 0.88,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio",
+      "msg91"
+    ],
+    "email_provider_priority": [
+      "sendgrid",
+      "mailgun"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality per Labour Codes 2020",
+    "mandatory_benefits": [
+      "EPF_12pct",
+      "ESI_3.25pct",
+      "gratuity",
+      "paid_leave_21_days",
+      "maternity_leave_26_weeks"
+    ],
+    "payroll_tax_rate": 0.1225,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.55
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Central Consumer Protection Authority (CCPA)",
+    "dispute_resolution": [
+      "Consumer Forum",
+      "NCDRC",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Reserve Bank of India (RBI)",
+    "fintech_licence_type": "PPI / PA",
+    "payment_institution_types": [
+      "PA",
+      "PPI",
+      "NBFC-P2P"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FIU-IND",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "RBI",
+        "framework": "Payment and Settlement Systems Act 2007 + PA Guidelines 2020"
+      },
+      "healthcare": {
+        "authority": "CDSCO / MCI"
+      },
+      "energy": {
+        "authority": "CERC / SERCs"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": 0.02,
+    "marketplace_liability": "IT (Intermediary Guidelines) Rules 2021 — significant social media platforms & digital media",
+    "platform_economy_rules": "Code on Social Security 2020 (gig workers) + IT Rules 2021",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": 5000000,
+    "invoice_system": {
+      "name": "e-Invoice",
+      "authority": "GSTN",
+      "connector": "gstn_in_v1",
+      "mandatory": true
+    }
+  },
+  "ai_regulation": {
+    "framework": "DPDP_2023_plus_MEITY_AI",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "critical_infrastructure",
+      "law_enforcement",
+      "credit_scoring"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "restricted",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": 0.3,
+    "travel_rule_applies": true,
+    "cbdc_status": "pilot",
+    "cbdc_name": "e-Rupee"
+  },
+  "risk": {
+    "political_stability_index": 0.51,
+    "corruption_perception_index": 40,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.04,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.015,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.4
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": 0.0,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.18,
+    "cloud_compute_cost_index": 0.78,
+    "inflation_rate_annual": 0.052,
+    "recommended_fx_hedge_pct": 0.18
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education NEP 2020 guidelines",
+      "student_data_protection": "DPDP Act 2023"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Directorate General of Civil Aviation (DGCA)",
+    "address_validation_standard": "India Post / PIN code system",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Road Transport + State RTOs",
+    "delivery_gig_worker_protections": "Code on Social Security 2020 — platform workers eligible for social security (implementation pending)",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "BBIN",
+      "SAARC",
+      "BIMSTEC"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Kolkata",
+    "dst_observed": false,
+    "fiscal_year_end": "03-31",
+    "business_day_definition": "Monday-Friday 10:00-18:00 (varies by state)",
+    "national_holiday_source": "Gazette of India",
+    "time_critical_regulations": [
+      {
+        "rule": "GST_eInvoice",
+        "deadline": "real_time_large_taxpayers"
+      },
+      {
+        "rule": "GSTR1_filing",
+        "deadline": "monthly_by_11th"
+      }
+    ]
+  }
+}

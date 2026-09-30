@@ -1,0 +1,426 @@
+{
+  "territory": {
+    "iso_alpha2": "KE",
+    "iso_alpha3": "KEN",
+    "iso_numeric": "404",
+    "name_en": "Kenya",
+    "name_local": "Kenya",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Nairobi",
+    "population_estimate": 55100000,
+    "internet_tld": ".ke",
+    "calling_code": "+254"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "sw"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-KE",
+      "sw-KE",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{8,9}$",
+    "national_id_name": "National Identity Card / Huduma Namba",
+    "phone_format": "^\\+2547[0-9]{8}$",
+    "address_fields_order": [
+      "plot_number",
+      "street",
+      "estate",
+      "city",
+      "county"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Safaricom": [
+      "0701",
+      "0702",
+      "0703",
+      "0704",
+      "0705",
+      "0706",
+      "0707",
+      "0708",
+      "0709",
+      "0710",
+      "0711",
+      "0712",
+      "0713",
+      "0714",
+      "0715",
+      "0716",
+      "0722",
+      "0723",
+      "0724",
+      "0726",
+      "0727",
+      "0728",
+      "0729",
+      "0790",
+      "0791",
+      "0792",
+      "0793",
+      "0794",
+      "0795",
+      "0796",
+      "0797",
+      "0798",
+      "0799"
+    ],
+    "Airtel Kenya": [
+      "0730",
+      "0731",
+      "0732",
+      "0733",
+      "0734",
+      "0735",
+      "0736",
+      "0737",
+      "0738",
+      "0739",
+      "0750",
+      "0752",
+      "0753",
+      "0755",
+      "0756"
+    ],
+    "Telkom Kenya": [
+      "0770",
+      "0771",
+      "0772",
+      "0773",
+      "0774",
+      "0775",
+      "0776",
+      "0777",
+      "0778",
+      "0779"
+    ]
+  },
+  "currency": {
+    "code": "KES",
+    "symbol": "KSh",
+    "symbol_native": "KSh",
+    "minor_unit": 2,
+    "name": "Kenyan Shilling"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 128.5,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.16,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "eTIMS (VAT)",
+    "withholding_tax_rate": 0.05,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{11}$",
+    "routing_name": "Bank + Branch code (CBK)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "M-Pesa",
+        "type": "mobile_money",
+        "currency": "KES"
+      },
+      {
+        "name": "Airtel Money",
+        "type": "mobile_money",
+        "currency": "KES"
+      },
+      {
+        "name": "Equitel",
+        "type": "mobile_banking",
+        "currency": "KES"
+      },
+      {
+        "name": "PesaLink",
+        "type": "instant_bank_transfer",
+        "currency": "KES"
+      },
+      {
+        "name": "Paystack",
+        "type": "payment_gateway",
+        "currency": "KES"
+      },
+      {
+        "name": "Flutterwave",
+        "type": "payment_gateway",
+        "currency": "KES"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 5.0
+  },
+  "timezone": {
+    "default": "Africa/Nairobi",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Data Protection Act 2019",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "English and Swahili are official languages (Constitution 2010)",
+    "invoice_required": true,
+    "digital_signature_law": "Kenya Information and Communications Act 2009"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.42,
+    "mobile_penetration_pct": 1.26,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "ecosms",
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid",
+      "mailgun"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + integration test per Employment Act 2007",
+    "mandatory_benefits": [
+      "NSSF pension",
+      "NHIF health insurance",
+      "paid_leave_21_days",
+      "maternity_leave_3_months",
+      "paternity_leave_2_weeks"
+    ],
+    "payroll_tax_rate": 0.3,
+    "notice_period_days": 28,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.85
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 6,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": 3,
+    "unfair_terms_authority": "Competition Authority of Kenya (CAK)",
+    "dispute_resolution": [
+      "CAK",
+      "ODPC",
+      "Small Claims Court",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Central Bank of Kenya (CBK)",
+    "fintech_licence_type": "PSP Licence",
+    "payment_institution_types": [
+      "PSP",
+      "EMI",
+      "PI"
+    ],
+    "crypto_exchange_license_required": false,
+    "crypto_exchange_authority": "CMA monitoring only — no specific licensing yet",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "CBK",
+        "framework": "National Payment System Act 2011"
+      },
+      "healthcare": {
+        "authority": "KMPDC + MOH",
+        "framework": "Health Act 2017"
+      },
+      "energy": {
+        "authority": "EPRA",
+        "framework": "Energy Act 2019"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": 0.015,
+    "marketplace_liability": "Intermediary liability limited under ICT Act 2009",
+    "platform_economy_rules": "Draft Digital Economy policy under review 2024",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": 100000,
+    "invoice_system": {
+      "name": "eTIMS",
+      "authority": "KRA",
+      "connector": "etims_ke_v2",
+      "mandatory": true
+    }
+  },
+  "ai_regulation": {
+    "framework": "Data Protection Act 2019 (applies to AI using personal data)",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "credit_scoring",
+      "predictive_policing"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": true,
+    "ai_decision_explainability_required": true,
+    "prohibited_ai_practices": [
+      "mass_surveillance_without_warrant",
+      "social_scoring"
+    ]
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": 0.3,
+    "travel_rule_applies": false,
+    "cbdc_status": "research",
+    "cbdc_name": "None announced"
+  },
+  "risk": {
+    "political_stability_index": 0.44,
+    "corruption_perception_index": 31,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.04,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.038,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.42
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.028,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.008
+    },
+    "labor_cost_index_vs_usd": 0.15,
+    "cloud_compute_cost_index": 0.75,
+    "inflation_rate_annual": 0.075,
+    "recommended_fx_hedge_pct": 0.25
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Draft guidelines 2023 (MoE)",
+      "student_data_protection": "Data Protection Act 2019"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Kenya Civil Aviation Authority (KCAA)",
+    "address_validation_standard": "Postal Corporation of Kenya (PCK) + county addressing",
+    "coordinate_system": "Arc_1960",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "National Transport and Safety Authority (NTSA)",
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "EAC",
+      "COMESA",
+      "IGAD",
+      "Northern Corridor Transit"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Africa/Nairobi",
+    "dst_observed": false,
+    "fiscal_year_end": "06-30",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Kenya Gazette",
+    "time_critical_regulations": [
+      {
+        "rule": "eTIMS_issuance",
+        "deadline": "real_time_on_sale"
+      },
+      {
+        "rule": "VAT_return",
+        "deadline": "monthly_by_20th"
+      },
+      {
+        "rule": "Withholding_tax_remittance",
+        "deadline": "monthly_by_9th"
+      }
+    ]
+  }
+}

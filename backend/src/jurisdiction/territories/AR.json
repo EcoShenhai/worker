@@ -1,0 +1,335 @@
+{
+  "territory": {
+    "iso_alpha2": "AR",
+    "iso_alpha3": "ARG",
+    "iso_numeric": "032",
+    "name_en": "Argentina",
+    "name_local": "Argentina",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Buenos Aires",
+    "population_estimate": 46200000,
+    "internet_tld": ".ar",
+    "calling_code": "+54"
+  },
+  "language": {
+    "primary": "es",
+    "secondary": [
+      "it",
+      "de",
+      "gu"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "es-AR",
+      "es",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{7,8}$",
+    "national_id_name": "DNI (Documento Nacional de Identidad)",
+    "phone_format": "^\\+54[9][0-9]{10}$",
+    "address_fields_order": [
+      "street",
+      "house_number",
+      "floor",
+      "apartment",
+      "city",
+      "province",
+      "postal_code"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Claro Argentina": [
+      "011-15",
+      "0351-15",
+      "0381-15"
+    ],
+    "Movistar Argentina": [
+      "011-15",
+      "0351-15"
+    ],
+    "Personal (Telecom)": [
+      "011-15",
+      "0351-15"
+    ]
+  },
+  "currency": {
+    "code": "ARS",
+    "symbol": "$",
+    "symbol_native": "$",
+    "minor_unit": 2,
+    "name": "Argentine Peso"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1050.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.21,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "IVA (VAT)",
+    "withholding_tax_rate": 0.35,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{22}$",
+    "routing_name": "CBU (Clave Bancaria Uniforme)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Mercado Pago",
+        "type": "super_app_wallet",
+        "currency": "ARS"
+      },
+      {
+        "name": "Modo",
+        "type": "interbank_wallet",
+        "currency": "ARS"
+      },
+      {
+        "name": "Naranja X",
+        "type": "fintech_wallet",
+        "currency": "ARS"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "STANDARD",
+    "multiplier": 1.0,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 10.0
+  },
+  "timezone": {
+    "default": "America/Argentina/Buenos_Aires",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Personal Data Protection Law 25.326 (2000)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Spanish is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Law 25.506 on Digital Signature (2001)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.82,
+    "mobile_penetration_pct": 1.45,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Economic dependency + control per Labour Contract Law 20.744",
+    "mandatory_benefits": [
+      "social_security_23pct",
+      "obra_social_health",
+      "paid_leave_14_to_35_days",
+      "SAC_13th_salary",
+      "maternity_leave_90_days"
+    ],
+    "payroll_tax_rate": 0.23,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.9
+  },
+  "consumer_protection": {
+    "refund_period_days": 10,
+    "mandatory_warranty_months": 6,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 10,
+    "unfair_terms_authority": "CONADECUS / Secretaría de Comercio",
+    "dispute_resolution": [
+      "consumer_defence",
+      "MECON",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banco Central de la República Argentina (BCRA)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI",
+      "PSPA"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Banco Central de la República Argentina (BCRA)",
+        "framework": "BCRA Communication A 6859 (PSP)"
+      },
+      "healthcare": {
+        "authority": "ANMAT"
+      },
+      "energy": {
+        "authority": "ENRE / ENARGAS"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "E-commerce Law 24.240 + Resolution 139/2020",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "No specific AI regulation",
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "None announced"
+  },
+  "risk": {
+    "political_stability_index": 0.52,
+    "corruption_perception_index": 38,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.08,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.18,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.5
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.025,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.002
+    },
+    "labor_cost_index_vs_usd": 0.2,
+    "cloud_compute_cost_index": 1.3,
+    "inflation_rate_annual": 1.5,
+    "recommended_fx_hedge_pct": 0.6
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Law 25.326"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Administración Nacional de Aviación Civil (ANAC)",
+    "address_validation_standard": "Correo Argentino addressing",
+    "coordinate_system": "POSGAR 2007",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Transport + provincial authorities",
+    "delivery_gig_worker_protections": "No specific gig worker protection law; Labour Ministry studying regulation",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "Mercosur",
+      "UNASUR"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/Argentina/Buenos_Aires",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Boletín Oficial de la República Argentina",
+    "time_critical_regulations": []
+  }
+}

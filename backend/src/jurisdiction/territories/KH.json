@@ -1,0 +1,350 @@
+{
+  "territory": {
+    "iso_alpha2": "KH",
+    "iso_alpha3": "KHM",
+    "iso_numeric": "116",
+    "name_en": "Cambodia",
+    "name_local": "កម្ពុជា",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Phnom Penh",
+    "population_estimate": 17200000,
+    "internet_tld": ".kh",
+    "calling_code": "+855"
+  },
+  "language": {
+    "primary": "km",
+    "secondary": [
+      "en",
+      "zh"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "km-KH",
+      "en-KH",
+      "km",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_suffix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z][0-9]{9}$",
+    "national_id_name": "National ID Card",
+    "phone_format": "^\\+855[1-9][0-9]{7,8}$",
+    "address_fields_order": [
+      "house",
+      "street",
+      "sangkat",
+      "khan",
+      "city"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Cellcard": [
+      "011",
+      "012",
+      "017",
+      "061",
+      "076",
+      "077",
+      "078",
+      "079",
+      "085",
+      "089"
+    ],
+    "Smart Axiata": [
+      "010",
+      "015",
+      "016",
+      "069",
+      "070",
+      "081",
+      "086",
+      "093",
+      "096",
+      "098"
+    ],
+    "metfone": [
+      "031",
+      "038",
+      "097",
+      "098"
+    ],
+    "Seatel": [
+      "018"
+    ]
+  },
+  "currency": {
+    "code": "KHR",
+    "symbol": "៛",
+    "symbol_native": "៛",
+    "minor_unit": 2,
+    "name": "Cambodian Riel"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 4095.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.1,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT (GDT)",
+    "withholding_tax_rate": 0.14,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{16}$",
+    "routing_name": "Account number (NBC)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "KHQR (NBC)",
+        "type": "qr_payment",
+        "currency": "KHR"
+      },
+      {
+        "name": "ABA Pay",
+        "type": "mobile_banking",
+        "currency": "KHR"
+      },
+      {
+        "name": "Wing Money",
+        "type": "mobile_financial_service",
+        "currency": "KHR"
+      },
+      {
+        "name": "Pi Pay",
+        "type": "e_wallet",
+        "currency": "KHR"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 3.0
+  },
+  "timezone": {
+    "default": "Asia/Phnom_Penh",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "No comprehensive data protection law",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Khmer is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Law on E-Commerce 2019"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.56,
+    "mobile_penetration_pct": 1.28,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Labour Law 1997",
+    "mandatory_benefits": [
+      "NSSF pension",
+      "paid_leave_18_days",
+      "maternity_leave_90_days"
+    ],
+    "payroll_tax_rate": 0.0,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.05
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Ministry of Commerce",
+    "dispute_resolution": [
+      "commerce_ministry",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "National Bank of Cambodia (NBC)",
+    "payment_institution_types": [
+      "PSP",
+      "MSB",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "NBC",
+        "framework": "Law on Financial Leasing + NBC Payment Prakas"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "EAC"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per e-commerce law",
+    "platform_economy_rules": "Law on E-Commerce 2019",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": "pilot",
+    "cbdc_name": "Bakong"
+  },
+  "risk": {
+    "political_stability_index": 0.45,
+    "corruption_perception_index": 24,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.06,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.005,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.45
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.022,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.15,
+    "cloud_compute_cost_index": 1.4,
+    "inflation_rate_annual": 0.035,
+    "recommended_fx_hedge_pct": 0.12
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "State Secretariat of Civil Aviation (SSCA)",
+    "address_validation_standard": "Cambodia Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "ASEAN",
+      "ACMECS",
+      "Mekong Sub-region"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Phnom_Penh",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Royal Kram",
+    "time_critical_regulations": []
+  }
+}

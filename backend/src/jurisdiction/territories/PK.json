@@ -1,0 +1,351 @@
+{
+  "territory": {
+    "iso_alpha2": "PK",
+    "iso_alpha3": "PAK",
+    "iso_numeric": "586",
+    "name_en": "Pakistan",
+    "name_local": "پاکستان",
+    "region": "Asia",
+    "subregion": "Southern Asia",
+    "capital": "Islamabad",
+    "population_estimate": 231000000,
+    "internet_tld": ".pk",
+    "calling_code": "+92"
+  },
+  "language": {
+    "primary": "ur",
+    "secondary": [
+      "en",
+      "pa",
+      "sd",
+      "ps"
+    ],
+    "rtl_default": true,
+    "locale_fallback_chain": [
+      "ur-PK",
+      "en-PK",
+      "ur",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{5}-[0-9]{7}-[0-9]{1}$",
+    "national_id_name": "CNIC (Computerised National Identity Card)",
+    "phone_format": "^\\+92[3][0-9]{9}$",
+    "address_fields_order": [
+      "house",
+      "street",
+      "sector",
+      "city",
+      "province"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Jazz (Mobilink)": [
+      "0300",
+      "0301",
+      "0302",
+      "0303",
+      "0311",
+      "0321"
+    ],
+    "Telenor Pakistan": [
+      "0340",
+      "0341",
+      "0342",
+      "0343",
+      "0344",
+      "0345"
+    ],
+    "Ufone": [
+      "0330",
+      "0331",
+      "0332",
+      "0333",
+      "0334"
+    ],
+    "Zong": [
+      "0310",
+      "0312",
+      "0313",
+      "0314",
+      "0315"
+    ]
+  },
+  "currency": {
+    "code": "PKR",
+    "symbol": "Rs",
+    "symbol_native": "Rs",
+    "minor_unit": 2,
+    "name": "Pakistani Rupee"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 278.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.13,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "FBR VAT / Sales Tax",
+    "withholding_tax_rate": 0.1,
+    "filing_deadline_day": 28
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[A-Z]{4}[0-9]{7}$",
+    "routing_name": "IBAN (PK format — 24 chars)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "JazzCash",
+        "type": "mobile_wallet",
+        "currency": "PKR"
+      },
+      {
+        "name": "Easypaisa (Telenor)",
+        "type": "mobile_wallet",
+        "currency": "PKR"
+      },
+      {
+        "name": "SadaPay",
+        "type": "digital_bank",
+        "currency": "PKR"
+      },
+      {
+        "name": "Nayapay",
+        "type": "digital_bank",
+        "currency": "PKR"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 3.0
+  },
+  "timezone": {
+    "default": "Asia/Karachi",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "saturday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "PDPB (Personal Data Protection Bill — draft 2023)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Urdu is national language; English is official language for government",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions Ordinance 2002"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.36,
+    "mobile_penetration_pct": 0.82,
+    "low_bandwidth_mode": true,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Industrial Relations Act 2012",
+    "mandatory_benefits": [
+      "EOBI pension",
+      "SESSI/PESSI health",
+      "paid_leave_14_days",
+      "maternity_leave_12_weeks"
+    ],
+    "payroll_tax_rate": 0.05,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.46
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "CCPA (Competition Commission of Pakistan)",
+    "dispute_resolution": [
+      "CCPA",
+      "consumer_courts",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "State Bank of Pakistan (SBP)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI",
+      "PSSP"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "SBP",
+        "framework": "Payment Systems Operator / Payment Service Provider Regulations 2021"
+      },
+      "healthcare": {
+        "authority": "Ministry of National Health Services"
+      },
+      "energy": {
+        "authority": "NEPRA / OGRA"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per PECA 2016",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "restricted",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.22,
+    "corruption_perception_index": 27,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.1,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.055,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.6
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.02,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.005
+    },
+    "labor_cost_index_vs_usd": 0.1,
+    "cloud_compute_cost_index": 1.4,
+    "inflation_rate_annual": 0.238,
+    "recommended_fx_hedge_pct": 0.45
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "HEC + Ministry guidelines",
+      "student_data_protection": "PDPB draft"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "Pakistan Civil Aviation Authority (PCAA)",
+    "address_validation_standard": "Pakistan Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Provincial transport authorities",
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "CPEC",
+      "ECO",
+      "SAARC"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Karachi",
+    "dst_observed": false,
+    "fiscal_year_end": "06-30",
+    "business_day_definition": "Monday-Friday 09:00-17:00",
+    "national_holiday_source": "Federal Government of Pakistan Gazette",
+    "time_critical_regulations": []
+  }
+}

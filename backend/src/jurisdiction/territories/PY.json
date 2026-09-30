@@ -1,0 +1,343 @@
+{
+  "territory": {
+    "iso_alpha2": "PY",
+    "iso_alpha3": "PRY",
+    "iso_numeric": "600",
+    "name_en": "Paraguay",
+    "name_local": "Paraguay",
+    "region": "Americas",
+    "subregion": "South America",
+    "capital": "Asunción",
+    "population_estimate": 7400000,
+    "internet_tld": ".py",
+    "calling_code": "+595"
+  },
+  "language": {
+    "primary": "es",
+    "secondary": [
+      "gn"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "es-PY",
+      "gn-PY",
+      "es",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_suffix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{6,8}$",
+    "national_id_name": "Cédula de Identidad Civil",
+    "phone_format": "^\\+595[9][0-9]{8}$",
+    "address_fields_order": [
+      "calle",
+      "número",
+      "barrio",
+      "ciudad",
+      "departamento"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Tigo PY": [
+      "0981",
+      "0982",
+      "0983",
+      "0984",
+      "0985",
+      "0986",
+      "0987",
+      "0988",
+      "0989"
+    ],
+    "Personal PY": [
+      "0971",
+      "0972",
+      "0973",
+      "0974",
+      "0975",
+      "0976",
+      "0977",
+      "0978",
+      "0979"
+    ],
+    "Claro PY": [
+      "0961",
+      "0962",
+      "0963",
+      "0964",
+      "0965",
+      "0966",
+      "0967",
+      "0968",
+      "0969"
+    ]
+  },
+  "currency": {
+    "code": "PYG",
+    "symbol": "₲",
+    "symbol_native": "₲",
+    "minor_unit": 0,
+    "name": "Paraguayan Guaraní"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 7520.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.1,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "IVA (VAT)",
+    "withholding_tax_rate": 0.15,
+    "filing_deadline_day": 10
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{12}$",
+    "routing_name": "Account number (BCP)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Tigo Money PY",
+        "type": "mobile_money",
+        "currency": "PYG"
+      },
+      {
+        "name": "Billetera Personal",
+        "type": "mobile_wallet",
+        "currency": "PYG"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/Asuncion",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "No comprehensive data protection law",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Spanish and Guaraní are official languages",
+    "invoice_required": true,
+    "digital_signature_law": "Law 4017/2010 on Electronic Signature"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.68,
+    "mobile_penetration_pct": 1.1,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Subordination test per Labour Code (Law 213/1993)",
+    "mandatory_benefits": [
+      "IPS social insurance",
+      "paid_leave_12_days",
+      "aguinaldo",
+      "maternity_leave_9_weeks"
+    ],
+    "payroll_tax_rate": 0.162,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.05
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "SEDECO",
+    "dispute_resolution": [
+      "SEDECO",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banco Central del Paraguay (BCP)",
+    "payment_institution_types": [
+      "EME",
+      "PSP"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BCP",
+        "framework": "BCP Resolution 6/2019 on Electronic Money"
+      },
+      "healthcare": {
+        "authority": "Ministry of Public Health"
+      },
+      "energy": {
+        "authority": "ANDE / VME"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.42,
+    "corruption_perception_index": 27,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.08,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.022,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.48
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.022,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.14,
+    "cloud_compute_cost_index": 1.55,
+    "inflation_rate_annual": 0.042,
+    "recommended_fx_hedge_pct": 0.15
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "Dirección Nacional de Aeronáutica Civil (DINAC)",
+    "address_validation_standard": "Correo Paraguayo addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "Mercosur",
+      "CAN associate"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/Asuncion",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 07:00-17:00",
+    "national_holiday_source": "Gaceta Oficial",
+    "time_critical_regulations": []
+  }
+}

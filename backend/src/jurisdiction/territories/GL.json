@@ -1,0 +1,316 @@
+{
+  "territory": {
+    "iso_alpha2": "GL",
+    "iso_alpha3": "GRL",
+    "iso_numeric": "304",
+    "name_en": "Greenland",
+    "name_local": "Kalaallit Nunaat",
+    "region": "Americas",
+    "subregion": "North America",
+    "capital": "Nuuk",
+    "population_estimate": 56500,
+    "internet_tld": ".gl",
+    "calling_code": "+299"
+  },
+  "language": {
+    "primary": "kl",
+    "secondary": [
+      "da",
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "kl-GL",
+      "da-GL",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD.MM.YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{10}$",
+    "national_id_name": "CPR (Danish system)",
+    "phone_format": "^\\+299[2-9][0-9]{5}$",
+    "address_fields_order": [
+      "street",
+      "house_number",
+      "postcode",
+      "city"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Tele Greenland (TUSASS)": [
+      "2xxx",
+      "3xxx",
+      "4xxx",
+      "5xxx"
+    ]
+  },
+  "currency": {
+    "code": "DKK",
+    "symbol": "kr",
+    "symbol_native": "kr",
+    "minor_unit": 2,
+    "name": "Danish Krone"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 6.88,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.25,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "Greenlandic Tax (Sullissarsivik)",
+    "withholding_tax_rate": 0.36,
+    "filing_deadline_day": 1
+  },
+  "banking": {
+    "iban_required": true,
+    "local_routing_format": "^GL[0-9]{2}[0-9]{14}$",
+    "routing_name": "IBAN (GL format)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "MobilePay (via Tele Greenland)",
+        "type": "mobile_payment",
+        "currency": "DKK"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "DKK"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "EUR"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/Godthab",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": true,
+    "privacy_framework": "GDPR (via DK)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Greenlandic (Kalaallisut) is official language; Danish co-official",
+    "invoice_required": true,
+    "digital_signature_law": "eIDAS (via Danish transposition)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.7,
+    "mobile_penetration_pct": 1.0,
+    "low_bandwidth_mode": true,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality per Greenlandic Labour Act",
+    "mandatory_benefits": [
+      "social_security",
+      "paid_leave_25_days"
+    ],
+    "payroll_tax_rate": 0.44,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 20.0
+  },
+  "consumer_protection": {
+    "refund_period_days": 14,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 14,
+    "unfair_terms_authority": "Naalakkersuisut (Greenland Government)",
+    "dispute_resolution": [
+      "consumer_complaints",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Finanstilsynet (Denmark) — applies to GL",
+    "payment_institution_types": [
+      "PI",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "Finanstilsynet under MiCA",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Finanstilsynet",
+        "framework": "PSD2 (via DK) + MiCA"
+      },
+      "healthcare": {
+        "authority": "Departementet for Sundhed"
+      },
+      "energy": {
+        "authority": "Nukissiorfiit"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "EU DSA applies (via DK)",
+    "platform_economy_rules": "EU Platform Work Directive (via DK)",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "EU_AI_Act",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "critical_infrastructure"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": true,
+    "ai_decision_explainability_required": true,
+    "prohibited_ai_practices": [
+      "real_time_public_biometric_surveillance",
+      "social_scoring"
+    ]
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital Euro"
+  },
+  "risk": {
+    "political_stability_index": 0.9,
+    "corruption_perception_index": null,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.02,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.005,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.15
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.015,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 1.5,
+    "cloud_compute_cost_index": 1.4,
+    "inflation_rate_annual": 0.028,
+    "recommended_fx_hedge_pct": 0.05
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Naalakkersuisut education guidelines",
+      "student_data_protection": "GDPR"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Trafikstyrelsen (Danish Transport Authority)",
+    "address_validation_standard": "Tele Greenland addressing",
+    "coordinate_system": "ETRS89",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "EU Platform Work Directive (via DK)",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "Arctic Council",
+      "EU Association (via DK)"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/Godthab",
+    "dst_observed": true,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-16:00",
+    "national_holiday_source": "Naalakkersuisut",
+    "time_critical_regulations": []
+  }
+}

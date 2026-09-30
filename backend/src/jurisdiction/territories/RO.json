@@ -1,0 +1,341 @@
+{
+  "territory": {
+    "iso_alpha2": "RO",
+    "name_en": "Romania",
+    "name_local": "România",
+    "region": "Europe",
+    "capital": "Bucharest",
+    "population_estimate": 19060000,
+    "internet_tld": ".ro",
+    "calling_code": "+40"
+  },
+  "language": {
+    "primary": "ro",
+    "secondary": [
+      "hu",
+      "de",
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "ro-RO",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_suffix",
+    "date_format": "DD.MM.YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{13}$",
+    "national_id_name": "CNP (Cod Numeric Personal)",
+    "phone_format": "^\\+40[7][0-9]{8}$",
+    "address_fields_order": [
+      "street",
+      "house_number",
+      "postcode",
+      "city"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Orange RO": [
+      "074",
+      "075",
+      "076",
+      "077"
+    ],
+    "Vodafone RO": [
+      "072",
+      "073",
+      "074",
+      "075"
+    ],
+    "Telekom RO": [
+      "072",
+      "073",
+      "074",
+      "075"
+    ]
+  },
+  "currency": {
+    "code": "RON",
+    "symbol": "lei",
+    "symbol_native": "lei",
+    "minor_unit": 2,
+    "name": "Romanian Leu"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 4.62,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.19,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "VAT",
+    "withholding_tax_rate": 0.05,
+    "filing_deadline_day": 25
+  },
+  "banking": {
+    "iban_required": true,
+    "local_routing_format": "^RO[0-9]{2}[A-Z0-9]{16}$",
+    "routing_name": "IBAN (RO format)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "RON"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "EUR"
+      },
+      {
+        "name": "Mobilpay",
+        "type": "payment_gateway",
+        "currency": "RON"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Europe/Bucharest",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": true,
+    "privacy_framework": "GDPR",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "RO is official language",
+    "invoice_required": true,
+    "digital_signature_law": "eIDAS (EU Regulation 910/2014)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.54,
+    "mobile_penetration_pct": 1.2,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality per Labour Code 2003",
+    "mandatory_benefits": [
+      "CAS pension",
+      "CASS health",
+      "paid_leave_20_days",
+      "maternity_leave_2_years"
+    ],
+    "payroll_tax_rate": 0.2875,
+    "notice_period_days": 20,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 3.8
+  },
+  "consumer_protection": {
+    "refund_period_days": 14,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 14,
+    "unfair_terms_authority": "National consumer authority",
+    "dispute_resolution": [
+      "ADR",
+      "consumer_ombudsman",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banca Națională a României (BNR) / ASF",
+    "payment_institution_types": [
+      "PI",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "Banca Națională a României (BNR) / ASF under MiCA",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Banca Națională a României (BNR) / ASF",
+        "framework": "PSD2 + MiCA"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "ANRE"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "EU Digital Services Act applies",
+    "platform_economy_rules": "EU Platform Work Directive (transposing)",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "EU_AI_Act",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "critical_infrastructure",
+      "law_enforcement",
+      "employment",
+      "credit_scoring"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": true,
+    "ai_decision_explainability_required": true,
+    "prohibited_ai_practices": [
+      "real_time_public_biometric_surveillance",
+      "social_scoring",
+      "subliminal_manipulation"
+    ]
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital Euro"
+  },
+  "risk": {
+    "political_stability_index": 0.54,
+    "corruption_perception_index": 46,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.048,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.025,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.38
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.016,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.38,
+    "cloud_compute_cost_index": 1.02,
+    "inflation_rate_annual": 0.025,
+    "recommended_fx_hedge_pct": 0.1
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "GDPR"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Autoritatea Aeronautică Civilă Română (AACR)",
+    "address_validation_standard": "Poșta Română",
+    "coordinate_system": "ETRS89",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Transport",
+    "delivery_gig_worker_protections": "EU Platform Work Directive (transposing)",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "EU Single Transport Area",
+      "Schengen"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Europe/Bucharest",
+    "dst_observed": true,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Official Government Gazette",
+    "time_critical_regulations": [
+      {
+        "rule": "VAT_return",
+        "deadline": "monthly_or_quarterly"
+      },
+      {
+        "rule": "DAC7_reporting",
+        "deadline": "annually_31_Jan"
+      }
+    ]
+  }
+}

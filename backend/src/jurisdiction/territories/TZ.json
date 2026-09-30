@@ -1,0 +1,349 @@
+{
+  "territory": {
+    "iso_alpha2": "TZ",
+    "iso_alpha3": "TZA",
+    "iso_numeric": "834",
+    "name_en": "Tanzania",
+    "name_local": "Tanzania",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Dodoma",
+    "population_estimate": 63900000,
+    "internet_tld": ".tz",
+    "calling_code": "+255"
+  },
+  "language": {
+    "primary": "sw",
+    "secondary": [
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "sw-TZ",
+      "en-TZ",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z0-9]{20}$",
+    "national_id_name": "NIDA National ID",
+    "phone_format": "^\\+255[6-7][0-9]{8}$",
+    "address_fields_order": [
+      "plot_number",
+      "street",
+      "ward",
+      "district",
+      "region"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Vodacom Tanzania": [
+      "074",
+      "075",
+      "076"
+    ],
+    "Airtel Tanzania": [
+      "068",
+      "069",
+      "078",
+      "079"
+    ],
+    "Tigo (Millicom)": [
+      "065",
+      "067",
+      "071",
+      "073"
+    ],
+    "Halotel": [
+      "062",
+      "063",
+      "064"
+    ],
+    "TTCL Mobile": [
+      "041",
+      "042",
+      "043"
+    ]
+  },
+  "currency": {
+    "code": "TZS",
+    "symbol": "TSh",
+    "symbol_native": "TSh",
+    "minor_unit": 2,
+    "name": "Tanzanian Shilling"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 2575.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.18,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "VAT (TRA)",
+    "withholding_tax_rate": 0.1,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{13}$",
+    "routing_name": "Account number (BoT)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "M-Pesa Tanzania (Vodacom)",
+        "type": "mobile_money",
+        "currency": "TZS"
+      },
+      {
+        "name": "Airtel Money",
+        "type": "mobile_money",
+        "currency": "TZS"
+      },
+      {
+        "name": "Tigo Pesa",
+        "type": "mobile_money",
+        "currency": "TZS"
+      },
+      {
+        "name": "HaloPesa",
+        "type": "mobile_money",
+        "currency": "TZS"
+      },
+      {
+        "name": "Flutterwave",
+        "type": "payment_gateway",
+        "currency": "TZS"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 5.0
+  },
+  "timezone": {
+    "default": "Africa/Dar_es_Salaam",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Personal Data Protection Act 2022",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Swahili and English are official languages",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic and Postal Communications Act 2010"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.38,
+    "mobile_penetration_pct": 0.88,
+    "low_bandwidth_mode": true,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + integration test per Employment and Labour Relations Act 2004",
+    "mandatory_benefits": [
+      "NSSF pension",
+      "paid_leave_28_days",
+      "maternity_leave_12_weeks"
+    ],
+    "payroll_tax_rate": 0.1,
+    "notice_period_days": 28,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.95
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Consumer Protection Department (MIT)",
+    "dispute_resolution": [
+      "consumer_protection_dept",
+      "Fair Competition Tribunal",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Bank of Tanzania (BoT)",
+    "fintech_licence_type": "PSP Licence",
+    "payment_institution_types": [
+      "PSP",
+      "EMI",
+      "PI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BoT",
+        "framework": "Payment Systems Act 2015"
+      },
+      "healthcare": {
+        "authority": "TFDA + MoH"
+      },
+      "energy": {
+        "authority": "EWURA"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability under Electronic and Postal Communications Act",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.52,
+    "corruption_perception_index": 38,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.06,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.02,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.42
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.025,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.005
+    },
+    "labor_cost_index_vs_usd": 0.1,
+    "cloud_compute_cost_index": 1.55,
+    "inflation_rate_annual": 0.038,
+    "recommended_fx_hedge_pct": 0.2
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "MoEST guidelines",
+      "student_data_protection": "Personal Data Protection Act 2022"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Tanzania Civil Aviation Authority (TCAA)",
+    "address_validation_standard": "Tanzania Posts Corporation addressing",
+    "coordinate_system": "Arc_1960",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "EAC",
+      "SADC",
+      "COMESA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Africa/Dar_es_Salaam",
+    "dst_observed": false,
+    "fiscal_year_end": "06-30",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Government Gazette",
+    "time_critical_regulations": []
+  }
+}

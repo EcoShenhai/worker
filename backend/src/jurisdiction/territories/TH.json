@@ -1,0 +1,346 @@
+{
+  "territory": {
+    "iso_alpha2": "TH",
+    "iso_alpha3": "THA",
+    "iso_numeric": "764",
+    "name_en": "Thailand",
+    "name_local": "ประเทศไทย",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Bangkok",
+    "population_estimate": 70000000,
+    "internet_tld": ".th",
+    "calling_code": "+66"
+  },
+  "language": {
+    "primary": "th",
+    "secondary": [
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "th-TH",
+      "en-TH",
+      "th",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{13}$",
+    "national_id_name": "บัตรประชาชน (National ID Card)",
+    "phone_format": "^\\+66[6-9][0-9]{8}$",
+    "address_fields_order": [
+      "house",
+      "moo",
+      "tambon",
+      "amphoe",
+      "changwat",
+      "postal_code"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "AIS": [
+      "061",
+      "062",
+      "063",
+      "064",
+      "065",
+      "066",
+      "099"
+    ],
+    "DTAC (True Move)": [
+      "061",
+      "062",
+      "063",
+      "086",
+      "087",
+      "088",
+      "089"
+    ],
+    "True Move H": [
+      "061",
+      "062",
+      "063",
+      "096",
+      "097",
+      "098"
+    ]
+  },
+  "currency": {
+    "code": "THB",
+    "symbol": "฿",
+    "symbol_native": "฿",
+    "minor_unit": 2,
+    "name": "Thai Baht"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 35.2,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.07,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "VAT (RD Thailand)",
+    "withholding_tax_rate": 0.03,
+    "filing_deadline_day": 15
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{10}$",
+    "routing_name": "Account number (BOT)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "PromptPay (BOT)",
+        "type": "instant_payment",
+        "currency": "THB"
+      },
+      {
+        "name": "TrueMoney Wallet",
+        "type": "e_wallet",
+        "currency": "THB"
+      },
+      {
+        "name": "Rabbit LINE Pay",
+        "type": "e_wallet",
+        "currency": "THB"
+      },
+      {
+        "name": "K PLUS (Kasikorn)",
+        "type": "mobile_banking",
+        "currency": "THB"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "THB"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "STANDARD",
+    "multiplier": 1.0,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Bangkok",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": false,
+    "privacy_framework": "PDPA (Personal Data Protection Act 2019)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Thai is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions Act 2001 (amended 2008)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.88,
+    "mobile_penetration_pct": 1.82,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + integration test per Labour Protection Act 1998",
+    "mandatory_benefits": [
+      "SSO social security_5pct",
+      "paid_leave_6_days",
+      "maternity_leave_98_days"
+    ],
+    "payroll_tax_rate": 0.05,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 2.85
+  },
+  "consumer_protection": {
+    "refund_period_days": 7,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": 7,
+    "unfair_terms_authority": "Office of Consumer Protection Board (OCPB)",
+    "dispute_resolution": [
+      "OCPB",
+      "arbitration",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Bank of Thailand (BOT)",
+    "payment_institution_types": [
+      "PSP",
+      "e-Money Operator",
+      "Digital Asset Business"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "SEC Thailand",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BOT",
+        "framework": "Payment Systems Act B.E. 2560 (2017)"
+      },
+      "healthcare": {
+        "authority": "Ministry of Public Health + FDA Thailand"
+      },
+      "energy": {
+        "authority": "ERC (Energy Regulatory Commission)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Electronic Commerce Act B.E. 2566 (2023)",
+    "platform_economy_rules": "Draft platform economy guidelines under development",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": 0.15,
+    "travel_rule_applies": true,
+    "cbdc_status": "pilot",
+    "cbdc_name": "Project Inthanon / Bakong"
+  },
+  "risk": {
+    "political_stability_index": 0.4,
+    "corruption_perception_index": 35,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.03,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.015,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.35
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": 0.003,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.32,
+    "cloud_compute_cost_index": 0.92,
+    "inflation_rate_annual": 0.018,
+    "recommended_fx_hedge_pct": 0.12
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "PDPA 2019"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aviation Authority of Thailand (CAAT)",
+    "address_validation_standard": "Thailand Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Department of Land Transport (DLT)",
+    "delivery_gig_worker_protections": "Draft platform worker protection legislation under discussion",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "ASEAN",
+      "GMS",
+      "RCEP"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Bangkok",
+    "dst_observed": false,
+    "fiscal_year_end": "09-30",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Royal Gazette",
+    "time_critical_regulations": []
+  }
+}

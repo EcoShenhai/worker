@@ -1,0 +1,346 @@
+{
+  "territory": {
+    "iso_alpha2": "KR",
+    "iso_alpha3": "KOR",
+    "iso_numeric": "410",
+    "name_en": "South Korea",
+    "name_local": "대한민국",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Seoul",
+    "population_estimate": 51740000,
+    "internet_tld": ".kr",
+    "calling_code": "+82"
+  },
+  "language": {
+    "primary": "ko",
+    "secondary": [
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "ko-KR",
+      "en-KR",
+      "ko",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "YYYY.MM.DD",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{6}-[0-9]{7}$",
+    "national_id_name": "주민등록번호 (Resident Registration Number)",
+    "phone_format": "^\\+82[1][0-9]{9}$",
+    "address_fields_order": [
+      "postal_code",
+      "address_1",
+      "address_2",
+      "dong",
+      "gu_gun",
+      "si_do"
+    ],
+    "name_order": [
+      "family",
+      "given"
+    ]
+  },
+  "mno_prefix_map": {
+    "SKT (SK Telecom)": [
+      "010",
+      "011",
+      "017"
+    ],
+    "KT": [
+      "010",
+      "016",
+      "018",
+      "019"
+    ],
+    "LG U+": [
+      "010",
+      "019"
+    ]
+  },
+  "currency": {
+    "code": "KRW",
+    "symbol": "₩",
+    "symbol_native": "₩",
+    "minor_unit": 0,
+    "name": "South Korean Won"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1320.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.1,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT (부가가치세)",
+    "withholding_tax_rate": 0.22,
+    "filing_deadline_day": 25
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{11,16}$",
+    "routing_name": "Account number (BOK)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "KakaoPay",
+        "type": "super_app_payment",
+        "currency": "KRW"
+      },
+      {
+        "name": "Samsung Pay",
+        "type": "mobile_payment",
+        "currency": "KRW"
+      },
+      {
+        "name": "NaverPay",
+        "type": "e_commerce_payment",
+        "currency": "KRW"
+      },
+      {
+        "name": "Toss Pay",
+        "type": "fintech_payment",
+        "currency": "KRW"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "KRW"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Seoul",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "sunday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": false,
+    "privacy_framework": "PIPA (Personal Information Protection Act 2020)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Korean is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Digital Signature Act 1999 (revised)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.98,
+    "mobile_penetration_pct": 1.72,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Four-factor test per Labour Standards Act + Supreme Court rulings",
+    "mandatory_benefits": [
+      "NPS pension_9pct",
+      "NHIS health_3.43pct",
+      "EI unemployment_0.9pct",
+      "paid_leave_15_to_25_days",
+      "maternity_leave_90_days"
+    ],
+    "payroll_tax_rate": 0.045,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 7.35
+  },
+  "consumer_protection": {
+    "refund_period_days": 7,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 7,
+    "unfair_terms_authority": "Korea Fair Trade Commission (KFTC)",
+    "dispute_resolution": [
+      "KFTC",
+      "Korea Consumer Agency",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Financial Services Commission (FSC)",
+    "fintech_licence_type": "Electronic Financial Business",
+    "payment_institution_types": [
+      "EFB",
+      "PSP",
+      "Virtual Asset Exchange"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FSC (VASP) + FIU",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "FSC + FSS",
+        "framework": "Electronic Financial Transactions Act (EFTA)"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health and Welfare (MoHW)"
+      },
+      "energy": {
+        "authority": "Korea Energy Agency (KEA)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Act on Consumer Protection in Electronic Commerce (ECPA)",
+    "platform_economy_rules": "Platform Labour Protection Act (under deliberation 2024)",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": 1000000,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "Korea_AI_Act_2024",
+    "high_risk_ai_categories": [
+      "healthcare",
+      "financial",
+      "autonomous_vehicles",
+      "employment"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": true,
+    "ai_decision_explainability_required": true,
+    "prohibited_ai_practices": [
+      "social_scoring",
+      "subliminal_manipulation"
+    ]
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": 0.2,
+    "travel_rule_applies": true,
+    "cbdc_status": "pilot",
+    "cbdc_name": "Digital Won"
+  },
+  "risk": {
+    "political_stability_index": 0.74,
+    "corruption_perception_index": 63,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.018,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.18
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.015,
+      "mobile_money_pct": 0.005,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.82,
+    "cloud_compute_cost_index": 1.0,
+    "inflation_rate_annual": 0.025,
+    "recommended_fx_hedge_pct": 0.12
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "PIPA 2020"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Ministry of Land, Infrastructure and Transport (MOLIT)",
+    "address_validation_standard": "Korea Post 5-digit postal code",
+    "coordinate_system": "KGD2002",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Land, Infrastructure and Transport (MOLIT)",
+    "delivery_gig_worker_protections": "Act on Guarantee of Base Delivery Workers' Rights 2020",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "RCEP",
+      "CPTPP",
+      "K-FTA network"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Seoul",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Ministry of Government Legislation",
+    "time_critical_regulations": []
+  }
+}

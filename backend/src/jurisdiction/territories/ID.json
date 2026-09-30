@@ -1,0 +1,374 @@
+{
+  "territory": {
+    "iso_alpha2": "ID",
+    "iso_alpha3": "IDN",
+    "iso_numeric": "360",
+    "name_en": "Indonesia",
+    "name_local": "Indonesia",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Jakarta",
+    "population_estimate": 277500000,
+    "internet_tld": ".id",
+    "calling_code": "+62"
+  },
+  "language": {
+    "primary": "id",
+    "secondary": [
+      "jv",
+      "su",
+      "ms",
+      "bug"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "id-ID",
+      "en-ID",
+      "id",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{16}$",
+    "national_id_name": "KTP (Kartu Tanda Penduduk)",
+    "phone_format": "^\\+62[8][0-9]{8,11}$",
+    "address_fields_order": [
+      "jalan",
+      "kelurahan",
+      "kecamatan",
+      "kota",
+      "provinsi",
+      "kode_pos"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Telkomsel": [
+      "0811",
+      "0812",
+      "0813",
+      "0821",
+      "0822",
+      "0823",
+      "0851",
+      "0852",
+      "0853"
+    ],
+    "Indosat Ooredoo Hutchison": [
+      "0814",
+      "0815",
+      "0816",
+      "0855",
+      "0856",
+      "0857",
+      "0858"
+    ],
+    "XL Axiata": [
+      "0817",
+      "0818",
+      "0819",
+      "0859",
+      "0877",
+      "0878"
+    ],
+    "AXIS": [
+      "0831",
+      "0832",
+      "0833",
+      "0838"
+    ],
+    "Smartfren": [
+      "0881",
+      "0882",
+      "0883",
+      "0884",
+      "0885",
+      "0886",
+      "0887",
+      "0888",
+      "0889"
+    ]
+  },
+  "currency": {
+    "code": "IDR",
+    "symbol": "Rp",
+    "symbol_native": "Rp",
+    "minor_unit": 2,
+    "name": "Indonesian Rupiah"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 15850.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.11,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "PPN (VAT)",
+    "withholding_tax_rate": 0.02,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{10,16}$",
+    "routing_name": "Account number (BI)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "GoPay",
+        "type": "e_wallet",
+        "currency": "IDR"
+      },
+      {
+        "name": "OVO",
+        "type": "e_wallet",
+        "currency": "IDR"
+      },
+      {
+        "name": "Dana",
+        "type": "e_wallet",
+        "currency": "IDR"
+      },
+      {
+        "name": "QRIS (BI)",
+        "type": "qr_payment",
+        "currency": "IDR"
+      },
+      {
+        "name": "Midtrans",
+        "type": "payment_gateway",
+        "currency": "IDR"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "STANDARD",
+    "multiplier": 1.0,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 3.0
+  },
+  "timezone": {
+    "default": "Asia/Jakarta",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": false,
+    "privacy_framework": "PDP Law (Undang-Undang Pelindungan Data Pribadi 2022)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Indonesian (Bahasa Indonesia) is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Law No. 11/2008 on Electronic Information and Transactions (ITE Law, amended 2016)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.78,
+    "mobile_penetration_pct": 1.35,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality per Manpower Law No. 13/2003 + Job Creation Law 2020",
+    "mandatory_benefits": [
+      "BPJS_Ketenagakerjaan",
+      "BPJS_Kesehatan",
+      "paid_leave_12_days",
+      "maternity_leave_3_months"
+    ],
+    "payroll_tax_rate": 0.024,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.08
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Badan Perlindungan Konsumen Nasional (BPKN)",
+    "dispute_resolution": [
+      "BPKN",
+      "BPSK",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Bank Indonesia (BI) + OJK",
+    "payment_institution_types": [
+      "PJSP",
+      "PJSEK",
+      "Dompet Elektronik"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "Bappebti (CoFTRA)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BI + OJK",
+        "framework": "BI Regulation 23/2021 (Payment Systems)"
+      },
+      "healthcare": {
+        "authority": "Kemenkes"
+      },
+      "energy": {
+        "authority": "BPH Migas / ESDM"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "GR 80/2019 on e-commerce — platform liability for hosted content",
+    "platform_economy_rules": "GR 80/2019 + Ministerial Regulation 36/2023 on platform workers",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": 0.001,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital Rupiah"
+  },
+  "risk": {
+    "political_stability_index": 0.53,
+    "corruption_perception_index": 34,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.04,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.022,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.38
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.02,
+      "mobile_money_pct": 0.007,
+      "bank_transfer_pct": 0.002
+    },
+    "labor_cost_index_vs_usd": 0.2,
+    "cloud_compute_cost_index": 0.92,
+    "inflation_rate_annual": 0.028,
+    "recommended_fx_hedge_pct": 0.18
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Kemendikbud guidelines",
+      "student_data_protection": "PDP Law 2022"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Directorate General of Civil Aviation (DGCA)",
+    "address_validation_standard": "Pos Indonesia addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Transportation",
+    "delivery_gig_worker_protections": "MR 36/2023 — platform companies must guarantee minimum income and social security for gig workers",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "ASEAN",
+      "RCEP",
+      "BIMP-EAGA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Jakarta",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Presidential Decree",
+    "time_critical_regulations": []
+  }
+}

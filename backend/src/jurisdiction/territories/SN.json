@@ -1,0 +1,338 @@
+{
+  "territory": {
+    "iso_alpha2": "SN",
+    "iso_alpha3": "SEN",
+    "iso_numeric": "686",
+    "name_en": "Senegal",
+    "name_local": "Sénégal",
+    "region": "Africa",
+    "subregion": "Western Africa",
+    "capital": "Dakar",
+    "population_estimate": 17900000,
+    "internet_tld": ".sn",
+    "calling_code": "+221"
+  },
+  "language": {
+    "primary": "fr",
+    "secondary": [
+      "wo",
+      "ff",
+      "sr",
+      "mn"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "fr-SN",
+      "wo-SN",
+      "fr",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": " ",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{13}$",
+    "national_id_name": "Carte Nationale d'Identité (CNI)",
+    "phone_format": "^\\+221[7][0-9]{8}$",
+    "address_fields_order": [
+      "numéro",
+      "rue",
+      "quartier",
+      "ville",
+      "région"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Orange Sénégal": [
+      "77"
+    ],
+    "Free Sénégal (Expresso)": [
+      "76"
+    ],
+    "Expresso Telecom": [
+      "70"
+    ]
+  },
+  "currency": {
+    "code": "XOF",
+    "symbol": "CFA",
+    "symbol_native": "F CFA",
+    "minor_unit": 0,
+    "name": "West African CFA Franc"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 607.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.18,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT (TVA)",
+    "withholding_tax_rate": 0.2,
+    "filing_deadline_day": 15
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^SN[A-Z0-9]{26}$",
+    "routing_name": "BCEAO RIB"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Orange Money",
+        "type": "mobile_money",
+        "currency": "XOF"
+      },
+      {
+        "name": "Wave",
+        "type": "mobile_wallet",
+        "currency": "XOF"
+      },
+      {
+        "name": "Free Money",
+        "type": "mobile_money",
+        "currency": "XOF"
+      },
+      {
+        "name": "Wari",
+        "type": "cash_transfer",
+        "currency": "XOF"
+      },
+      {
+        "name": "Paystack",
+        "type": "payment_gateway",
+        "currency": "XOF"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "Flutterwave",
+        "type": "payment_gateway",
+        "currency": "XOF"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 5.0
+  },
+  "timezone": {
+    "default": "Africa/Dakar",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Loi 2008-12 sur la protection des données personnelles",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "French is official language; Wolof dominant in commerce",
+    "invoice_required": true,
+    "digital_signature_law": "Loi 2008-11 sur la cybercriminalité + UEMOA e-commerce"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.54,
+    "mobile_penetration_pct": 1.1,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Labour Code (Law 97-17)",
+    "mandatory_benefits": [
+      "IPRES pension",
+      "CSS health",
+      "paid_leave_24_days",
+      "maternity_leave_14_weeks"
+    ],
+    "payroll_tax_rate": 0.14,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.8
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Direction du Commerce Intérieur",
+    "dispute_resolution": [
+      "commerce_ministry",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "BCEAO",
+    "payment_institution_types": [
+      "EMI",
+      "PSP"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BCEAO",
+        "framework": "UEMOA electronic payment regulations"
+      },
+      "healthcare": {
+        "authority": "Ministère de la Santé et de l'Action Sociale"
+      },
+      "energy": {
+        "authority": "CRSE"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.55,
+    "corruption_perception_index": 44,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.07,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.005,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.4
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.028,
+      "mobile_money_pct": 0.018,
+      "bank_transfer_pct": 0.004
+    },
+    "labor_cost_index_vs_usd": 0.13,
+    "cloud_compute_cost_index": 1.65,
+    "inflation_rate_annual": 0.028,
+    "recommended_fx_hedge_pct": 0.1
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Loi 2008-12"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Agence Nationale de l'Aviation Civile et de la Météorologie (ANACIM)",
+    "address_validation_standard": "La Poste du Sénégal addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "ECOWAS",
+      "UEMOA",
+      "Trans-Gambian Corridor"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Africa/Dakar",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Journal Officiel de la République du Sénégal",
+    "time_critical_regulations": []
+  }
+}

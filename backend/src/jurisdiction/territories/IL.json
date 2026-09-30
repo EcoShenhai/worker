@@ -1,0 +1,346 @@
+{
+  "territory": {
+    "iso_alpha2": "IL",
+    "iso_alpha3": "ISR",
+    "iso_numeric": "376",
+    "name_en": "Israel",
+    "name_local": "ישראל",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Jerusalem",
+    "population_estimate": 9700000,
+    "internet_tld": ".il",
+    "calling_code": "+972"
+  },
+  "language": {
+    "primary": "he",
+    "secondary": [
+      "ar",
+      "en",
+      "ru"
+    ],
+    "rtl_default": true,
+    "locale_fallback_chain": [
+      "he-IL",
+      "ar-IL",
+      "en-IL",
+      "he",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{9}$",
+    "national_id_name": "Teudat Zehut (ID Card)",
+    "phone_format": "^\\+972[5][0-9]{8}$",
+    "address_fields_order": [
+      "street",
+      "house",
+      "city",
+      "zip"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Cellcom": [
+      "052",
+      "054"
+    ],
+    "Partner (Orange)": [
+      "054",
+      "058"
+    ],
+    "Hot Mobile": [
+      "050",
+      "053"
+    ],
+    "Golan Telecom": [
+      "058",
+      "052"
+    ],
+    "Rami Levy": [
+      "055",
+      "056",
+      "057",
+      "058",
+      "059"
+    ]
+  },
+  "currency": {
+    "code": "ILS",
+    "symbol": "₪",
+    "symbol_native": "₪",
+    "minor_unit": 2,
+    "name": "Israeli New Shekel"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 3.72,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.17,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT (מע\"מ)",
+    "withholding_tax_rate": 0.25,
+    "filing_deadline_day": 15
+  },
+  "banking": {
+    "iban_required": true,
+    "local_routing_format": "^IL[0-9]{2}[0-9]{3}[0-9]{3}[0-9]{13}$",
+    "routing_name": "IBAN (IL format)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Bit (Bank Hapoalim)",
+        "type": "instant_payment",
+        "currency": "ILS"
+      },
+      {
+        "name": "PayBox",
+        "type": "p2p_payment",
+        "currency": "ILS"
+      },
+      {
+        "name": "Pepper Pay",
+        "type": "e_wallet",
+        "currency": "ILS"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "ILS"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Jerusalem",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "sunday",
+    "work_week": [
+      "sunday",
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Privacy Protection Law 1981 (Amendment 2023)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Hebrew and Arabic are official languages",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Signature Law 5761-2001"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.9,
+    "mobile_penetration_pct": 1.42,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + 9-factor test per Israeli Supreme Court precedent",
+    "mandatory_benefits": [
+      "Bituach_Leumi_social_security",
+      "pension_18.5pct",
+      "paid_leave_16_days",
+      "maternity_leave_15_weeks"
+    ],
+    "payroll_tax_rate": 0.055,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 8.33
+  },
+  "consumer_protection": {
+    "refund_period_days": 14,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 14,
+    "unfair_terms_authority": "Israeli Consumer Protection Authority",
+    "dispute_resolution": [
+      "consumer_tribunals",
+      "small_claims",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Bank of Israel + ISA",
+    "payment_institution_types": [
+      "PSP",
+      "EMI",
+      "Regulated Entity"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Bank of Israel",
+        "framework": "Payment Services Law 2023"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Electricity Authority"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per Consumer Protection Law",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "No specific law (GDPR-principles applied via Privacy Protection Law)",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "automated_decisions"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": 0.25,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital Shekel"
+  },
+  "risk": {
+    "political_stability_index": 0.45,
+    "corruption_perception_index": 62,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.03,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.03,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.35
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.88,
+    "cloud_compute_cost_index": 1.05,
+    "inflation_rate_annual": 0.038,
+    "recommended_fx_hedge_pct": 0.15
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Privacy Protection Law 1981"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aviation Authority of Israel (CAA)",
+    "address_validation_standard": "Israel Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Transportation",
+    "delivery_gig_worker_protections": "National Labour Court rulings extend protections; gig worker bill pending",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "Abraham Accords transport links",
+      "EU-Israel Association"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Jerusalem",
+    "dst_observed": true,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Sunday-Thursday 09:00-18:00",
+    "national_holiday_source": "Official Gazette of Israel",
+    "time_critical_regulations": []
+  }
+}

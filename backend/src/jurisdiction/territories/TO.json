@@ -1,0 +1,297 @@
+{
+  "territory": {
+    "iso_alpha2": "TO",
+    "name_en": "Tonga",
+    "name_local": "Tonga",
+    "region": "Oceania",
+    "subregion": "Polynesia",
+    "capital": "Nukualofa",
+    "population_estimate": 105000,
+    "internet_tld": ".to",
+    "calling_code": "+676"
+  },
+  "language": {
+    "primary": "to",
+    "secondary": [
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "to-TO",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z0-9]{6,10}$",
+    "national_id_name": "National ID / Passport",
+    "phone_format": "^\\+676[0-9]{5,7}$",
+    "address_fields_order": [
+      "village",
+      "district",
+      "province"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Digicel TO": [
+      "7xxx",
+      "8xxx"
+    ],
+    "Tonga Communications (TCL)": [
+      "8xxx"
+    ]
+  },
+  "currency": {
+    "code": "TOP",
+    "symbol": "T$",
+    "symbol_native": "T$",
+    "minor_unit": 2,
+    "name": "Tongan Paʻanga"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 2.38,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.15,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT/Consumption Tax",
+    "withholding_tax_rate": 0.1,
+    "filing_deadline_day": 28
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{8,12}$",
+    "routing_name": "Account number"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "TOP"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Pacific/Tongatapu",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "No comprehensive data protection law",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Tongan and English are official languages",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions Act (where enacted)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.45,
+    "mobile_penetration_pct": 0.75,
+    "low_bandwidth_mode": true,
+    "offline_mode_recommended": true
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Labour Act",
+    "mandatory_benefits": [
+      "social_security",
+      "paid_leave_10_days"
+    ],
+    "payroll_tax_rate": 0.06,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 2.8
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Ministry of Commerce",
+    "dispute_resolution": [
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Central Bank",
+    "payment_institution_types": [
+      "PSP"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Central Bank",
+        "framework": "National payment legislation"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Utilities regulator"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.65,
+    "corruption_perception_index": null,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.12,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.025,
+    "infrastructure_risk": "high",
+    "overall_territory_risk_score": 0.49
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.03,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.008
+    },
+    "labor_cost_index_vs_usd": 0.27999999999999997,
+    "cloud_compute_cost_index": 2.5,
+    "inflation_rate_annual": 0.055,
+    "recommended_fx_hedge_pct": 0.2
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "Civil Aviation Authority",
+    "address_validation_standard": "National postal system",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "Pacific Islands Forum",
+      "PACER Plus"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Pacific/Tongatapu",
+    "dst_observed": false,
+    "fiscal_year_end": "06-30",
+    "business_day_definition": "Monday-Friday 08:30-16:30",
+    "national_holiday_source": "Official Gazette",
+    "time_critical_regulations": []
+  }
+}

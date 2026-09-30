@@ -1,0 +1,362 @@
+{
+  "territory": {
+    "iso_alpha2": "TW",
+    "iso_alpha3": "TWN",
+    "iso_numeric": "158",
+    "name_en": "Taiwan",
+    "name_local": "臺灣",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Taipei",
+    "population_estimate": 23600000,
+    "internet_tld": ".tw",
+    "calling_code": "+886"
+  },
+  "language": {
+    "primary": "zh",
+    "secondary": [
+      "nan",
+      "hak",
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "zh-TW",
+      "en-TW",
+      "zh",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "YYYY/MM/DD",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z][12][0-9]{8}$",
+    "national_id_name": "身分證 (National ID Card)",
+    "phone_format": "^\\+886[9][0-9]{8}$",
+    "address_fields_order": [
+      "city",
+      "district",
+      "street",
+      "number"
+    ],
+    "name_order": [
+      "family",
+      "given"
+    ]
+  },
+  "mno_prefix_map": {
+    "Chunghwa Telecom": [
+      "0912",
+      "0921",
+      "0931",
+      "0932",
+      "0933",
+      "0936",
+      "0937",
+      "0938",
+      "0939"
+    ],
+    "Taiwan Mobile": [
+      "0916",
+      "0919",
+      "0929",
+      "0951",
+      "0956",
+      "0961",
+      "0966",
+      "0971",
+      "0976"
+    ],
+    "Far EasTone": [
+      "0916",
+      "0919",
+      "0929",
+      "0951",
+      "0956",
+      "0961",
+      "0966",
+      "0971",
+      "0976"
+    ],
+    "Taiwan Star (T Star)": [
+      "0915",
+      "0925",
+      "0935",
+      "0955",
+      "0965",
+      "0975"
+    ]
+  },
+  "currency": {
+    "code": "TWD",
+    "symbol": "NT$",
+    "symbol_native": "NT$",
+    "minor_unit": 2,
+    "name": "New Taiwan Dollar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 32.5,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.05,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "Business Tax (VAT)",
+    "withholding_tax_rate": 0.2,
+    "filing_deadline_day": 15
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{12,16}$",
+    "routing_name": "Account number (CBC)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "LINE Pay",
+        "type": "super_app_wallet",
+        "currency": "TWD"
+      },
+      {
+        "name": "Apple Pay / Google Pay",
+        "type": "digital_wallet",
+        "currency": "TWD"
+      },
+      {
+        "name": "JKOS Pay",
+        "type": "e_wallet",
+        "currency": "TWD"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "TWD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Taipei",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "PDPA (Personal Data Protection Act 2012, amended 2023)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Mandarin Chinese is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Signatures Act 2001"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.92,
+    "mobile_penetration_pct": 1.58,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Subordination + economic reality per Labour Standards Act",
+    "mandatory_benefits": [
+      "labor_insurance_6pct",
+      "NHI_5.17pct",
+      "pension_6pct",
+      "paid_leave_7_to_15_days"
+    ],
+    "payroll_tax_rate": 0.062,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 6.0
+  },
+  "consumer_protection": {
+    "refund_period_days": 7,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 7,
+    "unfair_terms_authority": "Fair Trade Commission (FTC TW)",
+    "dispute_resolution": [
+      "FTC",
+      "consumer_courts",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Financial Supervisory Commission (FSC)",
+    "payment_institution_types": [
+      "PI",
+      "EMI",
+      "stored_value_facility"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FSC (VASP framework 2023)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "FSC",
+        "framework": "Electronic Payment Institution Management Act 2015 (amended 2021)"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health and Welfare (MOHW)"
+      },
+      "energy": {
+        "authority": "Bureau of Energy"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Consumer Protection Act applies",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital New Taiwan Dollar"
+  },
+  "risk": {
+    "political_stability_index": 0.75,
+    "corruption_perception_index": 68,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.012,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.2
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": 0.005,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.72,
+    "cloud_compute_cost_index": 0.88,
+    "inflation_rate_annual": 0.022,
+    "recommended_fx_hedge_pct": 0.08
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "PDPA"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aeronautics Administration (CAA)",
+    "address_validation_standard": "Chunghwa Post addressing",
+    "coordinate_system": "TWD97",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Transportation and Communications (MOTC)",
+    "delivery_gig_worker_protections": "Labour Standards Act applies; platform worker protections under review",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "WTO observer",
+      "CPTPP applicant",
+      "IPEF partner"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Taipei",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Executive Yuan",
+    "time_critical_regulations": []
+  }
+}

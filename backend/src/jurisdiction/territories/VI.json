@@ -1,0 +1,297 @@
+{
+  "territory": {
+    "iso_alpha2": "VI",
+    "name_en": "US Virgin Islands",
+    "name_local": "US Virgin Islands",
+    "region": "Americas",
+    "subregion": "Caribbean",
+    "capital": "Charlotte Amalie",
+    "population_estimate": 106000,
+    "internet_tld": ".vi",
+    "calling_code": "+1-340"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-VI",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "MM/DD/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z0-9]{8,11}$",
+    "national_id_name": "National ID / Passport",
+    "phone_format": "^\\+1340[0-9]{7}$",
+    "address_fields_order": [
+      "street",
+      "city",
+      "territory"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "AT&T VI": [
+      "340-xxx"
+    ],
+    "Viya": [
+      "340-xxx"
+    ]
+  },
+  "currency": {
+    "code": "USD",
+    "symbol": "$",
+    "symbol_native": "$",
+    "minor_unit": 2,
+    "name": "US Dollar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.04,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT/Sales Tax",
+    "withholding_tax_rate": 0.2,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{9}$",
+    "routing_name": "Account number"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/St_Thomas",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "US Federal law (HIPAA, COPPA etc.) + limited local provisions",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "EN is official language",
+    "invoice_required": true,
+    "digital_signature_law": "E-signature laws of US apply"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.82,
+    "mobile_penetration_pct": 1.35,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per US labour law",
+    "mandatory_benefits": [
+      "social_insurance",
+      "paid_leave_14_days"
+    ],
+    "payroll_tax_rate": 0.08,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 10.5
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Consumer Protection (US)",
+    "dispute_resolution": [
+      "consumer_protection",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "USVI Office of the Lieutenant Governor (financial regulation)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "crypto_exchange_authority": null,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "USVI Office of the Lieutenant Governor (financial regulation)",
+        "framework": "US federal financial law applies"
+      },
+      "healthcare": {
+        "authority": "Health authority"
+      },
+      "energy": {
+        "authority": "Utilities regulator"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.8,
+    "corruption_perception_index": null,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.03,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.0,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.18
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.025,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.004
+    },
+    "labor_cost_index_vs_usd": 0.875,
+    "cloud_compute_cost_index": 1.6,
+    "inflation_rate_annual": 0.035,
+    "recommended_fx_hedge_pct": 0.0
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "US Federal law (HIPAA, COPPA etc.) + limited local provisions"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aviation Authority",
+    "address_validation_standard": "National postal system",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "CUSMA/USMCA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/St_Thomas",
+    "dst_observed": true,
+    "fiscal_year_end": "09-30",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Official Gazette",
+    "time_critical_regulations": []
+  }
+}

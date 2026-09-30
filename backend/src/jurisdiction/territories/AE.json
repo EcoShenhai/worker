@@ -1,0 +1,344 @@
+{
+  "territory": {
+    "iso_alpha2": "AE",
+    "iso_alpha3": "ARE",
+    "iso_numeric": "784",
+    "name_en": "United Arab Emirates",
+    "name_local": "الإمارات العربية المتحدة",
+    "region": "Asia",
+    "subregion": "Western Asia",
+    "capital": "Abu Dhabi",
+    "population_estimate": 9900000,
+    "internet_tld": ".ae",
+    "calling_code": "+971"
+  },
+  "language": {
+    "primary": "ar",
+    "secondary": [
+      "en",
+      "hi",
+      "ur"
+    ],
+    "rtl_default": true,
+    "locale_fallback_chain": [
+      "ar-AE",
+      "en-AE",
+      "ar",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^784-[0-9]{4}-[0-9]{7}-[0-9]$",
+    "national_id_name": "Emirates ID",
+    "phone_format": "^\\+971[5][0-9]{8}$",
+    "address_fields_order": [
+      "building",
+      "street",
+      "district",
+      "emirate"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Etisalat (e&)": [
+      "050",
+      "054",
+      "056",
+      "058"
+    ],
+    "du (Emirates Integrated Telecom)": [
+      "055",
+      "052",
+      "059"
+    ]
+  },
+  "currency": {
+    "code": "AED",
+    "symbol": "د.إ",
+    "symbol_native": "د.إ",
+    "minor_unit": 2,
+    "name": "UAE Dirham"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 3.67,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.05,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT (FTA)",
+    "withholding_tax_rate": null,
+    "filing_deadline_day": 28
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^AE[0-9]{2}[0-9]{3}[0-9]{16}$",
+    "routing_name": "IBAN (AE format)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "UAE SWIFT / CBUAE",
+        "type": "interbank",
+        "currency": "AED"
+      },
+      {
+        "name": "Apple Pay",
+        "type": "digital_wallet",
+        "currency": "AED"
+      },
+      {
+        "name": "Samsung Pay",
+        "type": "nfc_payment",
+        "currency": "AED"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "AED"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      },
+      {
+        "name": "Network International",
+        "type": "payment_gateway",
+        "currency": "AED"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Dubai",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "saturday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "DIFC PDPL / ADGM Data Protection Regulations 2021",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Arabic is official language; English widely used in commerce and free zones",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions and Trust Services Law 2021 (Federal Law 46/2021)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.99,
+    "mobile_penetration_pct": 2.08,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per UAE Labour Law (Federal Decree Law 33/2021)",
+    "mandatory_benefits": [
+      "GPSSA_pension_gratuity",
+      "paid_leave_30_days",
+      "maternity_leave_60_days",
+      "end_of_service_gratuity"
+    ],
+    "payroll_tax_rate": 0.0,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": null
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Ministry of Economy — Consumer Protection",
+    "dispute_resolution": [
+      "consumer_protection_dept",
+      "DIFC_Courts",
+      "ADGM_Courts",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "CBUAE + DFSA (DIFC) + FSRA (ADGM)",
+    "fintech_licence_type": "PSP / PI / Stored Value Facility",
+    "payment_institution_types": [
+      "PSP",
+      "PI",
+      "SVF",
+      "VASP"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "VARA (Virtual Assets Regulatory Authority, Dubai) + FSRA (ADGM)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "CBUAE / DFSA / FSRA",
+        "framework": "Retail Payment Services and Card Schemes Regulation 2021 + VARA regulations"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health + DHA + HAAD"
+      },
+      "energy": {
+        "authority": "Supreme Council of Energy"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Federal E-Commerce Law (Federal Decree Law 14/2023)",
+    "platform_economy_rules": "Ministerial Resolution 739/2016 + MHRSD Platform Guidelines",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "UAE_AI_Strategy",
+    "high_risk_ai_categories": [
+      "autonomous_weapons",
+      "biometric_surveillance",
+      "social_scoring"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "pilot",
+    "cbdc_name": "Digital Dirham"
+  },
+  "risk": {
+    "political_stability_index": 0.72,
+    "corruption_perception_index": 68,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.001,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.18
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.55,
+    "cloud_compute_cost_index": 0.95,
+    "inflation_rate_annual": 0.025,
+    "recommended_fx_hedge_pct": 0.02
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education + KHDA (Dubai) guidelines",
+      "student_data_protection": "DIFC PDPL / ADGM DP Regulations"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "General Civil Aviation Authority (GCAA)",
+    "address_validation_standard": "Makani addressing system (Dubai) + Abu Dhabi Spatial Data Centre",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Roads and Transport Authority (RTA, Dubai) + DoT (Abu Dhabi)",
+    "delivery_gig_worker_protections": "No specific gig worker protection law; Ministerial Resolution 739 applies to platform workers",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "GCC",
+      "UAE-Israel Abraham Accords transport",
+      "Etihad Rail"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Dubai",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00 (Friday: 09:00-12:00 then 14:00-18:00 in some sectors)",
+    "national_holiday_source": "UAE Government",
+    "time_critical_regulations": []
+  }
+}

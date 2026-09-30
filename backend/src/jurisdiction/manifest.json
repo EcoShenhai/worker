@@ -1,0 +1,1889 @@
+{
+ "name": "shenhai-b2x-localization-jsonb",
+ "version": "8.0.0",
+ "generated": "2026-09-30",
+ "territory_count": 205,
+ "domain_keys": [
+  "ai_regulation",
+  "banking",
+  "calendar",
+  "compliance",
+  "consumer_protection",
+  "crypto_regulation",
+  "currency",
+  "digital_services",
+  "employment",
+  "exchange",
+  "geospatial",
+  "identity",
+  "infrastructure",
+  "language",
+  "legal",
+  "licensing",
+  "locale",
+  "mno_prefix_map",
+  "notifications",
+  "operational_economics",
+  "payments",
+  "pricing",
+  "privacy_framework",
+  "risk",
+  "sector_rules",
+  "tax",
+  "temporal",
+  "territory",
+  "timezone",
+  "transportation"
+ ],
+ "languages_referenced": [
+  "aa",
+  "ach",
+  "af",
+  "als",
+  "am",
+  "ar",
+  "as",
+  "ay",
+  "az",
+  "ba",
+  "bar",
+  "bci",
+  "be",
+  "bem",
+  "ber",
+  "bg",
+  "bho",
+  "bi",
+  "bn",
+  "br",
+  "bs",
+  "bss",
+  "bug",
+  "ca",
+  "che",
+  "co",
+  "cri",
+  "crs",
+  "cs",
+  "cv",
+  "cy",
+  "da",
+  "dag",
+  "de",
+  "dje",
+  "dv",
+  "dyu",
+  "dz",
+  "ee",
+  "el",
+  "en",
+  "es",
+  "et",
+  "eu",
+  "ewe",
+  "fa",
+  "ff",
+  "fi",
+  "fil",
+  "fo",
+  "fon",
+  "fr",
+  "fy",
+  "ga",
+  "gd",
+  "gl",
+  "gn",
+  "gu",
+  "ha",
+  "hak",
+  "he",
+  "hi",
+  "hr",
+  "ht",
+  "hu",
+  "hy",
+  "hz",
+  "id",
+  "ig",
+  "is",
+  "it",
+  "ja",
+  "jam",
+  "jv",
+  "ka",
+  "kab",
+  "kae",
+  "kea",
+  "kg",
+  "kj",
+  "kk",
+  "kl",
+  "km",
+  "kn",
+  "ko",
+  "kpe",
+  "kri",
+  "ku",
+  "kw",
+  "ky",
+  "la",
+  "lam",
+  "lb",
+  "lg",
+  "lld",
+  "ln",
+  "lo",
+  "loz",
+  "lt",
+  "lu",
+  "lue",
+  "lun",
+  "lv",
+  "mai",
+  "man",
+  "map",
+  "men",
+  "mfe",
+  "mg",
+  "mi",
+  "mix",
+  "mk",
+  "ml",
+  "mn",
+  "mo",
+  "moba",
+  "mos",
+  "mr",
+  "ms",
+  "mt",
+  "my",
+  "myn",
+  "na",
+  "nah",
+  "nan",
+  "nd",
+  "ne",
+  "nl",
+  "nn",
+  "no",
+  "nr",
+  "nso",
+  "ny",
+  "nzsl",
+  "oc",
+  "or",
+  "pa",
+  "pap",
+  "pau",
+  "pis",
+  "pl",
+  "pov",
+  "pre",
+  "ps",
+  "pt",
+  "qu",
+  "rm",
+  "rn",
+  "ro",
+  "ru",
+  "rw",
+  "sd",
+  "se",
+  "sg",
+  "si",
+  "sk",
+  "sl",
+  "sm",
+  "sme",
+  "smn",
+  "sms",
+  "sn",
+  "so",
+  "sq",
+  "sr",
+  "srn",
+  "ss",
+  "st",
+  "su",
+  "sus",
+  "sv",
+  "sw",
+  "ta",
+  "te",
+  "tem",
+  "tet",
+  "tg",
+  "th",
+  "thl",
+  "ti",
+  "tk",
+  "tl",
+  "tmh",
+  "tn",
+  "to",
+  "toi",
+  "tpi",
+  "tr",
+  "ts",
+  "tt",
+  "tvl",
+  "tw",
+  "uk",
+  "ur",
+  "uz",
+  "vai",
+  "ve",
+  "vi",
+  "wo",
+  "xh",
+  "yi",
+  "yo",
+  "zap",
+  "zdj",
+  "zh",
+  "zu",
+  "zza"
+ ],
+ "territories": [
+  {
+   "code": "AD",
+   "name": "Andorra",
+   "currency": "EUR",
+   "primary_language": "ca",
+   "domains": 28,
+   "sha256": "61f420db651da271"
+  },
+  {
+   "code": "AE",
+   "name": "United Arab Emirates",
+   "currency": "AED",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "f8af92ff30b00eea"
+  },
+  {
+   "code": "AF",
+   "name": "Afghanistan",
+   "currency": "AFN",
+   "primary_language": "ps",
+   "domains": 29,
+   "sha256": "f54d5a8d9d115c3c"
+  },
+  {
+   "code": "AG",
+   "name": "Antigua and Barbuda",
+   "currency": "XCD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "9ac15ce7ead65920"
+  },
+  {
+   "code": "AL",
+   "name": "Albania",
+   "currency": "ALL",
+   "primary_language": "sq",
+   "domains": 28,
+   "sha256": "8a251df0fe5ab4da"
+  },
+  {
+   "code": "AM",
+   "name": "Armenia",
+   "currency": "AMD",
+   "primary_language": "hy",
+   "domains": 29,
+   "sha256": "b4d7c31ce1395c97"
+  },
+  {
+   "code": "AO",
+   "name": "Angola",
+   "currency": "AOA",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "c06fcac2e4edf923"
+  },
+  {
+   "code": "AR",
+   "name": "Argentina",
+   "currency": "ARS",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "ddae338f44722ed9"
+  },
+  {
+   "code": "AT",
+   "name": "Austria",
+   "currency": "EUR",
+   "primary_language": "de",
+   "domains": 28,
+   "sha256": "6e1967dc77b4c5f6"
+  },
+  {
+   "code": "AU",
+   "name": "Australia",
+   "currency": "AUD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "1099c7995168366e"
+  },
+  {
+   "code": "AW",
+   "name": "Aruba",
+   "currency": "AWG",
+   "primary_language": "pap",
+   "domains": 29,
+   "sha256": "1954022d73b3509b"
+  },
+  {
+   "code": "AZ",
+   "name": "Azerbaijan",
+   "currency": "AZN",
+   "primary_language": "az",
+   "domains": 29,
+   "sha256": "2c3a481d178016b0"
+  },
+  {
+   "code": "BA",
+   "name": "Bosnia and Herzegovina",
+   "currency": "BAM",
+   "primary_language": "bs",
+   "domains": 28,
+   "sha256": "305a61177f18d3d8"
+  },
+  {
+   "code": "BB",
+   "name": "Barbados",
+   "currency": "BBD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "2f6b9d43e94ce819"
+  },
+  {
+   "code": "BD",
+   "name": "Bangladesh",
+   "currency": "BDT",
+   "primary_language": "bn",
+   "domains": 29,
+   "sha256": "545f06c365407388"
+  },
+  {
+   "code": "BE",
+   "name": "Belgium",
+   "currency": "EUR",
+   "primary_language": "nl",
+   "domains": 28,
+   "sha256": "d756574de1e09949"
+  },
+  {
+   "code": "BF",
+   "name": "Burkina Faso",
+   "currency": "XOF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "b6da03b0872cb20a"
+  },
+  {
+   "code": "BG",
+   "name": "Bulgaria",
+   "currency": "EUR",
+   "primary_language": "bg",
+   "domains": 28,
+   "sha256": "814e15d015906821"
+  },
+  {
+   "code": "BH",
+   "name": "Bahrain",
+   "currency": "BHD",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "71e30f4e639c5c0a"
+  },
+  {
+   "code": "BI",
+   "name": "Burundi",
+   "currency": "BIF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "86c35a846320dcf0"
+  },
+  {
+   "code": "BJ",
+   "name": "Benin",
+   "currency": "XOF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "8a76a056248bffa7"
+  },
+  {
+   "code": "BM",
+   "name": "Bermuda",
+   "currency": "BMD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "2f7147492eab83bb"
+  },
+  {
+   "code": "BN",
+   "name": "Brunei Darussalam",
+   "currency": "BND",
+   "primary_language": "ms",
+   "domains": 29,
+   "sha256": "c17698fa9855c215"
+  },
+  {
+   "code": "BO",
+   "name": "Bolivia",
+   "currency": "BOB",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "33b5b9cfae03f779"
+  },
+  {
+   "code": "BR",
+   "name": "Brazil",
+   "currency": "BRL",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "c5b1242c37cf770d"
+  },
+  {
+   "code": "BS",
+   "name": "Bahamas",
+   "currency": "BSD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "ce3ca12884d2501e"
+  },
+  {
+   "code": "BT",
+   "name": "Bhutan",
+   "currency": "BTN",
+   "primary_language": "dz",
+   "domains": 29,
+   "sha256": "181bc89c382edcbd"
+  },
+  {
+   "code": "BW",
+   "name": "Botswana",
+   "currency": "BWP",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "c509d0a9eb450f57"
+  },
+  {
+   "code": "BY",
+   "name": "Belarus",
+   "currency": "BYN",
+   "primary_language": "be",
+   "domains": 30,
+   "sha256": "cd1464dd57d2bbfd"
+  },
+  {
+   "code": "BZ",
+   "name": "Belize",
+   "currency": "BZD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "94e152c6920315a3"
+  },
+  {
+   "code": "CA",
+   "name": "Canada",
+   "currency": "CAD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "48c000a5daed0b51"
+  },
+  {
+   "code": "CD",
+   "name": "Democratic Republic of the Congo",
+   "currency": "CDF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "6900abb9121296b7"
+  },
+  {
+   "code": "CF",
+   "name": "Central African Republic",
+   "currency": "XAF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "4bcfe128cedcf976"
+  },
+  {
+   "code": "CG",
+   "name": "Republic of the Congo",
+   "currency": "XAF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "7974aeae823fe668"
+  },
+  {
+   "code": "CH",
+   "name": "Switzerland",
+   "currency": "CHF",
+   "primary_language": "de",
+   "domains": 29,
+   "sha256": "27f79eef08d568d1"
+  },
+  {
+   "code": "CI",
+   "name": "Côte d'Ivoire",
+   "currency": "XOF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "a72b57928ddee9a9"
+  },
+  {
+   "code": "CL",
+   "name": "Chile",
+   "currency": "CLP",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "b3412a489c46696e"
+  },
+  {
+   "code": "CM",
+   "name": "Cameroon",
+   "currency": "XAF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "a8aea780984a1523"
+  },
+  {
+   "code": "CN",
+   "name": "China",
+   "currency": "CNY",
+   "primary_language": "zh",
+   "domains": 29,
+   "sha256": "bacf26a4fe3bc4c5"
+  },
+  {
+   "code": "CO",
+   "name": "Colombia",
+   "currency": "COP",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "4a2265d8962a4d6a"
+  },
+  {
+   "code": "CR",
+   "name": "Costa Rica",
+   "currency": "CRC",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "70e2eacfa1e4e3e6"
+  },
+  {
+   "code": "CU",
+   "name": "Cuba",
+   "currency": "CUP",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "77cd885ffd709986"
+  },
+  {
+   "code": "CV",
+   "name": "Cabo Verde",
+   "currency": "CVE",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "bc1ab5766d378620"
+  },
+  {
+   "code": "CW",
+   "name": "Curaçao",
+   "currency": "ANG",
+   "primary_language": "pap",
+   "domains": 29,
+   "sha256": "c740ce5fda7ff905"
+  },
+  {
+   "code": "CY",
+   "name": "Cyprus",
+   "currency": "EUR",
+   "primary_language": "el",
+   "domains": 29,
+   "sha256": "c4d15738a189c60b"
+  },
+  {
+   "code": "CZ",
+   "name": "Czech Republic",
+   "currency": "CZK",
+   "primary_language": "cs",
+   "domains": 28,
+   "sha256": "5ae8e83539796fde"
+  },
+  {
+   "code": "DE",
+   "name": "Germany",
+   "currency": "EUR",
+   "primary_language": "de",
+   "domains": 28,
+   "sha256": "5f64f2363dc6edb5"
+  },
+  {
+   "code": "DJ",
+   "name": "Djibouti",
+   "currency": "DJF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "545e935ce3357ca5"
+  },
+  {
+   "code": "DK",
+   "name": "Denmark",
+   "currency": "DKK",
+   "primary_language": "da",
+   "domains": 28,
+   "sha256": "511c835a5eada23b"
+  },
+  {
+   "code": "DM",
+   "name": "Dominica",
+   "currency": "XCD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "5bc1229ba5fd3d2c"
+  },
+  {
+   "code": "DO",
+   "name": "Dominican Republic",
+   "currency": "DOP",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "0a7d765d82f91192"
+  },
+  {
+   "code": "DZ",
+   "name": "Algeria",
+   "currency": "DZD",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "c1cf64da642969e6"
+  },
+  {
+   "code": "EC",
+   "name": "Ecuador",
+   "currency": "USD",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "99429fc1c260434a"
+  },
+  {
+   "code": "EE",
+   "name": "Estonia",
+   "currency": "EUR",
+   "primary_language": "et",
+   "domains": 28,
+   "sha256": "82bd04e932bc6f40"
+  },
+  {
+   "code": "EG",
+   "name": "Egypt",
+   "currency": "EGP",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "df6b1197f248d8d2"
+  },
+  {
+   "code": "ER",
+   "name": "Eritrea",
+   "currency": "ERN",
+   "primary_language": "ti",
+   "domains": 29,
+   "sha256": "e3aa8073031938b0"
+  },
+  {
+   "code": "ES",
+   "name": "Spain",
+   "currency": "EUR",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "8757c802fec253e1"
+  },
+  {
+   "code": "ET",
+   "name": "Ethiopia",
+   "currency": "ETB",
+   "primary_language": "am",
+   "domains": 29,
+   "sha256": "189e12fd70e494de"
+  },
+  {
+   "code": "FI",
+   "name": "Finland",
+   "currency": "EUR",
+   "primary_language": "fi",
+   "domains": 28,
+   "sha256": "f3eefe5068188eee"
+  },
+  {
+   "code": "FJ",
+   "name": "Fiji",
+   "currency": "FJD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "359a3b3163bc12e6"
+  },
+  {
+   "code": "FM",
+   "name": "Micronesia",
+   "currency": "USD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "e259902792d4acc6"
+  },
+  {
+   "code": "FR",
+   "name": "France",
+   "currency": "EUR",
+   "primary_language": "fr",
+   "domains": 28,
+   "sha256": "6763e79c5b02c073"
+  },
+  {
+   "code": "GA",
+   "name": "Gabon",
+   "currency": "XAF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "df80e1c0afd66c9d"
+  },
+  {
+   "code": "GB",
+   "name": "United Kingdom",
+   "currency": "GBP",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "2326356e734c70a6"
+  },
+  {
+   "code": "GD",
+   "name": "Grenada",
+   "currency": "XCD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "8a1a696d2bb44b10"
+  },
+  {
+   "code": "GE",
+   "name": "Georgia",
+   "currency": "GEL",
+   "primary_language": "ka",
+   "domains": 29,
+   "sha256": "d3ea86b32b436cc5"
+  },
+  {
+   "code": "GH",
+   "name": "Ghana",
+   "currency": "GHS",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "98f2fcb09460b579"
+  },
+  {
+   "code": "GL",
+   "name": "Greenland",
+   "currency": "DKK",
+   "primary_language": "kl",
+   "domains": 29,
+   "sha256": "a1d1dd2ae1974ba6"
+  },
+  {
+   "code": "GM",
+   "name": "Gambia",
+   "currency": "GMD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "40fb0138ff84d584"
+  },
+  {
+   "code": "GN",
+   "name": "Guinea",
+   "currency": "GNF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "48d73ae6b31a5a5a"
+  },
+  {
+   "code": "GQ",
+   "name": "Equatorial Guinea",
+   "currency": "XAF",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "95242c86290a43f7"
+  },
+  {
+   "code": "GR",
+   "name": "Greece",
+   "currency": "EUR",
+   "primary_language": "el",
+   "domains": 28,
+   "sha256": "64aa50c2d2d0350a"
+  },
+  {
+   "code": "GT",
+   "name": "Guatemala",
+   "currency": "GTQ",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "d525821f23e905df"
+  },
+  {
+   "code": "GW",
+   "name": "Guinea-Bissau",
+   "currency": "XOF",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "b6c2093acb8d8c0d"
+  },
+  {
+   "code": "GY",
+   "name": "Guyana",
+   "currency": "GYD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "29be65231428f026"
+  },
+  {
+   "code": "HK",
+   "name": "Hong Kong SAR",
+   "currency": "HKD",
+   "primary_language": "zh",
+   "domains": 29,
+   "sha256": "6698e4ef349e85fb"
+  },
+  {
+   "code": "HN",
+   "name": "Honduras",
+   "currency": "HNL",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "a4f01cf476dbf1fe"
+  },
+  {
+   "code": "HR",
+   "name": "Croatia",
+   "currency": "EUR",
+   "primary_language": "hr",
+   "domains": 28,
+   "sha256": "7cf86d737fa888bb"
+  },
+  {
+   "code": "HT",
+   "name": "Haiti",
+   "currency": "HTG",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "61311169a135944c"
+  },
+  {
+   "code": "HU",
+   "name": "Hungary",
+   "currency": "HUF",
+   "primary_language": "hu",
+   "domains": 28,
+   "sha256": "982f952e8e6bf302"
+  },
+  {
+   "code": "ID",
+   "name": "Indonesia",
+   "currency": "IDR",
+   "primary_language": "id",
+   "domains": 29,
+   "sha256": "a6555f19e933b9e2"
+  },
+  {
+   "code": "IE",
+   "name": "Ireland",
+   "currency": "EUR",
+   "primary_language": "en",
+   "domains": 28,
+   "sha256": "a1d60886d77b4c53"
+  },
+  {
+   "code": "IL",
+   "name": "Israel",
+   "currency": "ILS",
+   "primary_language": "he",
+   "domains": 29,
+   "sha256": "4a14a038299cad6c"
+  },
+  {
+   "code": "IN",
+   "name": "India",
+   "currency": "INR",
+   "primary_language": "hi",
+   "domains": 29,
+   "sha256": "075c362b2cd0fe7f"
+  },
+  {
+   "code": "IQ",
+   "name": "Iraq",
+   "currency": "IQD",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "d0e48f079990df1e"
+  },
+  {
+   "code": "IR",
+   "name": "Iran",
+   "currency": "IRR",
+   "primary_language": "fa",
+   "domains": 29,
+   "sha256": "5c0df3f1d1174ba7"
+  },
+  {
+   "code": "IS",
+   "name": "Iceland",
+   "currency": "ISK",
+   "primary_language": "is",
+   "domains": 28,
+   "sha256": "778ba32b4abb429f"
+  },
+  {
+   "code": "IT",
+   "name": "Italy",
+   "currency": "EUR",
+   "primary_language": "it",
+   "domains": 28,
+   "sha256": "afdf8abd97651b55"
+  },
+  {
+   "code": "JM",
+   "name": "Jamaica",
+   "currency": "JMD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "0cdc0de066903965"
+  },
+  {
+   "code": "JO",
+   "name": "Jordan",
+   "currency": "JOD",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "c8ee29e459862a30"
+  },
+  {
+   "code": "JP",
+   "name": "Japan",
+   "currency": "JPY",
+   "primary_language": "ja",
+   "domains": 29,
+   "sha256": "22017c219b6b7657"
+  },
+  {
+   "code": "KE",
+   "name": "Kenya",
+   "currency": "KES",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "643e12c339b42046"
+  },
+  {
+   "code": "KG",
+   "name": "Kyrgyzstan",
+   "currency": "KGS",
+   "primary_language": "ky",
+   "domains": 29,
+   "sha256": "d50ab1676027f634"
+  },
+  {
+   "code": "KH",
+   "name": "Cambodia",
+   "currency": "KHR",
+   "primary_language": "km",
+   "domains": 29,
+   "sha256": "e33f9fc6a2635f76"
+  },
+  {
+   "code": "KI",
+   "name": "Kiribati",
+   "currency": "AUD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "3823ba8f737df0bb"
+  },
+  {
+   "code": "KM",
+   "name": "Comoros",
+   "currency": "KMF",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "152ca9627a2d61b5"
+  },
+  {
+   "code": "KN",
+   "name": "Saint Kitts and Nevis",
+   "currency": "XCD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "d6c8a5a1900da8b1"
+  },
+  {
+   "code": "KP",
+   "name": "North Korea",
+   "currency": "KPW",
+   "primary_language": "ko",
+   "domains": 29,
+   "sha256": "5e5fb3a885d08d00"
+  },
+  {
+   "code": "KR",
+   "name": "South Korea",
+   "currency": "KRW",
+   "primary_language": "ko",
+   "domains": 29,
+   "sha256": "fe3b4b71d852a930"
+  },
+  {
+   "code": "KW",
+   "name": "Kuwait",
+   "currency": "KWD",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "6b352374d00408b3"
+  },
+  {
+   "code": "KZ",
+   "name": "Kazakhstan",
+   "currency": "KZT",
+   "primary_language": "kk",
+   "domains": 29,
+   "sha256": "9fded3d7e4ec0f67"
+  },
+  {
+   "code": "LA",
+   "name": "Laos",
+   "currency": "LAK",
+   "primary_language": "lo",
+   "domains": 29,
+   "sha256": "defd971bb44cf19c"
+  },
+  {
+   "code": "LB",
+   "name": "Lebanon",
+   "currency": "LBP",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "40563d3bc2fd6d2b"
+  },
+  {
+   "code": "LC",
+   "name": "Saint Lucia",
+   "currency": "XCD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "4672e783b95fb44f"
+  },
+  {
+   "code": "LI",
+   "name": "Liechtenstein",
+   "currency": "CHF",
+   "primary_language": "de",
+   "domains": 29,
+   "sha256": "131c11b34de64b79"
+  },
+  {
+   "code": "LK",
+   "name": "Sri Lanka",
+   "currency": "LKR",
+   "primary_language": "si",
+   "domains": 29,
+   "sha256": "b9f9fe136f82b226"
+  },
+  {
+   "code": "LR",
+   "name": "Liberia",
+   "currency": "LRD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "2c596e709b2b35c1"
+  },
+  {
+   "code": "LS",
+   "name": "Lesotho",
+   "currency": "LSL",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "27a658890e3f2899"
+  },
+  {
+   "code": "LT",
+   "name": "Lithuania",
+   "currency": "EUR",
+   "primary_language": "lt",
+   "domains": 29,
+   "sha256": "6ba2328be6342867"
+  },
+  {
+   "code": "LU",
+   "name": "Luxembourg",
+   "currency": "EUR",
+   "primary_language": "lb",
+   "domains": 29,
+   "sha256": "423483625e64473e"
+  },
+  {
+   "code": "LV",
+   "name": "Latvia",
+   "currency": "EUR",
+   "primary_language": "lv",
+   "domains": 28,
+   "sha256": "13d6f1440120cc35"
+  },
+  {
+   "code": "LY",
+   "name": "Libya",
+   "currency": "LYD",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "b954e8598ea70418"
+  },
+  {
+   "code": "MA",
+   "name": "Morocco",
+   "currency": "MAD",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "1847893ddbe4ac87"
+  },
+  {
+   "code": "MC",
+   "name": "Monaco",
+   "currency": "EUR",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "9449ebe1c8100105"
+  },
+  {
+   "code": "MD",
+   "name": "Moldova",
+   "currency": "MDL",
+   "primary_language": "ro",
+   "domains": 29,
+   "sha256": "f2b2ec85661cbdd5"
+  },
+  {
+   "code": "ME",
+   "name": "Montenegro",
+   "currency": "EUR",
+   "primary_language": "sr",
+   "domains": 29,
+   "sha256": "7df46498266a34ec"
+  },
+  {
+   "code": "MG",
+   "name": "Madagascar",
+   "currency": "MGA",
+   "primary_language": "mg",
+   "domains": 29,
+   "sha256": "01d552f87bb26d8c"
+  },
+  {
+   "code": "MH",
+   "name": "Marshall Islands",
+   "currency": "USD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "e5a6e7c9b9c51832"
+  },
+  {
+   "code": "MK",
+   "name": "North Macedonia",
+   "currency": "MKD",
+   "primary_language": "mk",
+   "domains": 29,
+   "sha256": "b9d8c1543da251c8"
+  },
+  {
+   "code": "ML",
+   "name": "Mali",
+   "currency": "XOF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "fc36dd195b711f3f"
+  },
+  {
+   "code": "MM",
+   "name": "Myanmar",
+   "currency": "MMK",
+   "primary_language": "my",
+   "domains": 29,
+   "sha256": "6a5accaf5007f227"
+  },
+  {
+   "code": "MN",
+   "name": "Mongolia",
+   "currency": "MNT",
+   "primary_language": "mn",
+   "domains": 29,
+   "sha256": "74603e88208c2849"
+  },
+  {
+   "code": "MO",
+   "name": "Macao SAR",
+   "currency": "MOP",
+   "primary_language": "zh",
+   "domains": 29,
+   "sha256": "b3a81f2f855d0945"
+  },
+  {
+   "code": "MR",
+   "name": "Mauritania",
+   "currency": "MRU",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "9835f95b8f06fa35"
+  },
+  {
+   "code": "MT",
+   "name": "Malta",
+   "currency": "EUR",
+   "primary_language": "mt",
+   "domains": 29,
+   "sha256": "f3f244fd68095946"
+  },
+  {
+   "code": "MU",
+   "name": "Mauritius",
+   "currency": "MUR",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "a7d7dfd916365f1a"
+  },
+  {
+   "code": "MV",
+   "name": "Maldives",
+   "currency": "MVR",
+   "primary_language": "dv",
+   "domains": 29,
+   "sha256": "d575b41d026268c8"
+  },
+  {
+   "code": "MW",
+   "name": "Malawi",
+   "currency": "MWK",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "a57746869b279b23"
+  },
+  {
+   "code": "MX",
+   "name": "Mexico",
+   "currency": "MXN",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "111b0d07b27206b1"
+  },
+  {
+   "code": "MY",
+   "name": "Malaysia",
+   "currency": "MYR",
+   "primary_language": "ms",
+   "domains": 29,
+   "sha256": "0b33eeacd396efa5"
+  },
+  {
+   "code": "MZ",
+   "name": "Mozambique",
+   "currency": "MZN",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "f9fbc2e427213754"
+  },
+  {
+   "code": "NA",
+   "name": "Namibia",
+   "currency": "NAD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "3befae9fc35570fa"
+  },
+  {
+   "code": "NE",
+   "name": "Niger",
+   "currency": "XOF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "34ece09d6b461a93"
+  },
+  {
+   "code": "NG",
+   "name": "Nigeria",
+   "currency": "NGN",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "41a43482491113ad"
+  },
+  {
+   "code": "NI",
+   "name": "Nicaragua",
+   "currency": "NIO",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "6c2feaadf94c61dc"
+  },
+  {
+   "code": "NL",
+   "name": "Netherlands",
+   "currency": "EUR",
+   "primary_language": "nl",
+   "domains": 29,
+   "sha256": "5240d527c17d4302"
+  },
+  {
+   "code": "NO",
+   "name": "Norway",
+   "currency": "NOK",
+   "primary_language": "no",
+   "domains": 29,
+   "sha256": "a532b2c7a362e5db"
+  },
+  {
+   "code": "NP",
+   "name": "Nepal",
+   "currency": "NPR",
+   "primary_language": "ne",
+   "domains": 29,
+   "sha256": "d338e10aa16bdd52"
+  },
+  {
+   "code": "NR",
+   "name": "Nauru",
+   "currency": "AUD",
+   "primary_language": "na",
+   "domains": 29,
+   "sha256": "1813ceea2deab3de"
+  },
+  {
+   "code": "NZ",
+   "name": "New Zealand",
+   "currency": "NZD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "a505e99e85cdb25d"
+  },
+  {
+   "code": "OM",
+   "name": "Oman",
+   "currency": "OMR",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "3717caf47f988dc8"
+  },
+  {
+   "code": "PA",
+   "name": "Panama",
+   "currency": "USD",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "39bffd332544c3e1"
+  },
+  {
+   "code": "PE",
+   "name": "Peru",
+   "currency": "PEN",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "6222da3030dedd67"
+  },
+  {
+   "code": "PG",
+   "name": "Papua New Guinea",
+   "currency": "PGK",
+   "primary_language": "tpi",
+   "domains": 29,
+   "sha256": "e559da2e3a03dc68"
+  },
+  {
+   "code": "PH",
+   "name": "Philippines",
+   "currency": "PHP",
+   "primary_language": "fil",
+   "domains": 29,
+   "sha256": "7feb6b9df67dc284"
+  },
+  {
+   "code": "PK",
+   "name": "Pakistan",
+   "currency": "PKR",
+   "primary_language": "ur",
+   "domains": 29,
+   "sha256": "ac0af44098a6ca77"
+  },
+  {
+   "code": "PL",
+   "name": "Poland",
+   "currency": "PLN",
+   "primary_language": "pl",
+   "domains": 29,
+   "sha256": "0177a5df4ad596de"
+  },
+  {
+   "code": "PR",
+   "name": "Puerto Rico",
+   "currency": "USD",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "838aa78a1b91e950"
+  },
+  {
+   "code": "PS",
+   "name": "Palestine (State of)",
+   "currency": "ILS",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "a877a907143f9c46"
+  },
+  {
+   "code": "PT",
+   "name": "Portugal",
+   "currency": "EUR",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "9c5ae7179cbcd0a4"
+  },
+  {
+   "code": "PW",
+   "name": "Palau",
+   "currency": "USD",
+   "primary_language": "pau",
+   "domains": 29,
+   "sha256": "a5fd0d6c82203651"
+  },
+  {
+   "code": "PY",
+   "name": "Paraguay",
+   "currency": "PYG",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "3e260089f99bd0ad"
+  },
+  {
+   "code": "QA",
+   "name": "Qatar",
+   "currency": "QAR",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "9c46547da9847b2a"
+  },
+  {
+   "code": "RO",
+   "name": "Romania",
+   "currency": "RON",
+   "primary_language": "ro",
+   "domains": 29,
+   "sha256": "cfa37e8c7410f13c"
+  },
+  {
+   "code": "RS",
+   "name": "Serbia",
+   "currency": "RSD",
+   "primary_language": "sr",
+   "domains": 29,
+   "sha256": "5f9ff7f9b6382e4c"
+  },
+  {
+   "code": "RU",
+   "name": "Russia",
+   "currency": "RUB",
+   "primary_language": "ru",
+   "domains": 29,
+   "sha256": "e9374fe9a9841485"
+  },
+  {
+   "code": "RW",
+   "name": "Rwanda",
+   "currency": "RWF",
+   "primary_language": "rw",
+   "domains": 29,
+   "sha256": "6b007b175d05d6c4"
+  },
+  {
+   "code": "SA",
+   "name": "Saudi Arabia",
+   "currency": "SAR",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "e5074f194767c3a3"
+  },
+  {
+   "code": "SB",
+   "name": "Solomon Islands",
+   "currency": "SBD",
+   "primary_language": "pis",
+   "domains": 29,
+   "sha256": "a869d15cc8fea770"
+  },
+  {
+   "code": "SC",
+   "name": "Seychelles",
+   "currency": "SCR",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "3a38d26ae49dbde8"
+  },
+  {
+   "code": "SD",
+   "name": "Sudan",
+   "currency": "SDG",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "f6a61e790731880b"
+  },
+  {
+   "code": "SE",
+   "name": "Sweden",
+   "currency": "SEK",
+   "primary_language": "sv",
+   "domains": 29,
+   "sha256": "d3e7083bee32dd98"
+  },
+  {
+   "code": "SG",
+   "name": "Singapore",
+   "currency": "SGD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "acca318f24969550"
+  },
+  {
+   "code": "SI",
+   "name": "Slovenia",
+   "currency": "EUR",
+   "primary_language": "sl",
+   "domains": 29,
+   "sha256": "527781acc23065a2"
+  },
+  {
+   "code": "SK",
+   "name": "Slovakia",
+   "currency": "EUR",
+   "primary_language": "sk",
+   "domains": 29,
+   "sha256": "392e32ea5e421454"
+  },
+  {
+   "code": "SL",
+   "name": "Sierra Leone",
+   "currency": "SLL",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "cdd74d258b904c26"
+  },
+  {
+   "code": "SM",
+   "name": "San Marino",
+   "currency": "EUR",
+   "primary_language": "it",
+   "domains": 29,
+   "sha256": "c7a849b6266308d7"
+  },
+  {
+   "code": "SN",
+   "name": "Senegal",
+   "currency": "XOF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "107c301cfcca4bc9"
+  },
+  {
+   "code": "SO",
+   "name": "Somalia",
+   "currency": "SOS",
+   "primary_language": "so",
+   "domains": 29,
+   "sha256": "186522ac5f1ebb6e"
+  },
+  {
+   "code": "SR",
+   "name": "Suriname",
+   "currency": "SRD",
+   "primary_language": "nl",
+   "domains": 29,
+   "sha256": "39603db78cfaf9ee"
+  },
+  {
+   "code": "SS",
+   "name": "South Sudan",
+   "currency": "SSP",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "d098cbe1a03b39b9"
+  },
+  {
+   "code": "ST",
+   "name": "São Tomé and Príncipe",
+   "currency": "STN",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "3e1904a9189f3163"
+  },
+  {
+   "code": "SV",
+   "name": "El Salvador",
+   "currency": "USD",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "0f5de899c7613395"
+  },
+  {
+   "code": "SY",
+   "name": "Syria",
+   "currency": "SYP",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "3b58a491a728e9e7"
+  },
+  {
+   "code": "SZ",
+   "name": "Eswatini",
+   "currency": "SZL",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "f97b84fb2a0301f1"
+  },
+  {
+   "code": "TD",
+   "name": "Chad",
+   "currency": "XAF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "3c51441c255d1f29"
+  },
+  {
+   "code": "TG",
+   "name": "Togo",
+   "currency": "XOF",
+   "primary_language": "fr",
+   "domains": 29,
+   "sha256": "98f4a7e239da8c21"
+  },
+  {
+   "code": "TH",
+   "name": "Thailand",
+   "currency": "THB",
+   "primary_language": "th",
+   "domains": 29,
+   "sha256": "fe7afdad4ecc1dbc"
+  },
+  {
+   "code": "TJ",
+   "name": "Tajikistan",
+   "currency": "TJS",
+   "primary_language": "tg",
+   "domains": 29,
+   "sha256": "6c253671031c8b25"
+  },
+  {
+   "code": "TL",
+   "name": "Timor-Leste",
+   "currency": "USD",
+   "primary_language": "pt",
+   "domains": 29,
+   "sha256": "50328f1b769257e9"
+  },
+  {
+   "code": "TN",
+   "name": "Tunisia",
+   "currency": "TND",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "5c86fc2b6eef7171"
+  },
+  {
+   "code": "TO",
+   "name": "Tonga",
+   "currency": "TOP",
+   "primary_language": "to",
+   "domains": 29,
+   "sha256": "2caebad8c7ac8963"
+  },
+  {
+   "code": "TR",
+   "name": "Turkey",
+   "currency": "TRY",
+   "primary_language": "tr",
+   "domains": 29,
+   "sha256": "976f3f90e0d90081"
+  },
+  {
+   "code": "TT",
+   "name": "Trinidad and Tobago",
+   "currency": "TTD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "384e217d59eed663"
+  },
+  {
+   "code": "TV",
+   "name": "Tuvalu",
+   "currency": "AUD",
+   "primary_language": "tvl",
+   "domains": 29,
+   "sha256": "6bcb55b5d14612a0"
+  },
+  {
+   "code": "TW",
+   "name": "Taiwan",
+   "currency": "TWD",
+   "primary_language": "zh",
+   "domains": 29,
+   "sha256": "719ed354aa171ca5"
+  },
+  {
+   "code": "TZ",
+   "name": "Tanzania",
+   "currency": "TZS",
+   "primary_language": "sw",
+   "domains": 29,
+   "sha256": "f57147269105344a"
+  },
+  {
+   "code": "UA",
+   "name": "Ukraine",
+   "currency": "UAH",
+   "primary_language": "uk",
+   "domains": 29,
+   "sha256": "b958e64e2668e552"
+  },
+  {
+   "code": "UG",
+   "name": "Uganda",
+   "currency": "UGX",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "2d43141b5399a6ee"
+  },
+  {
+   "code": "US",
+   "name": "United States",
+   "currency": "USD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "cbfd3869bd57f314"
+  },
+  {
+   "code": "UY",
+   "name": "Uruguay",
+   "currency": "UYU",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "9b7878ece7b631f3"
+  },
+  {
+   "code": "UZ",
+   "name": "Uzbekistan",
+   "currency": "UZS",
+   "primary_language": "uz",
+   "domains": 29,
+   "sha256": "edb69a4d5ece76ba"
+  },
+  {
+   "code": "VA",
+   "name": "Vatican City",
+   "currency": "EUR",
+   "primary_language": "it",
+   "domains": 29,
+   "sha256": "584a4218a70827e6"
+  },
+  {
+   "code": "VC",
+   "name": "Saint Vincent and the Grenadines",
+   "currency": "XCD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "369c05a8ff764175"
+  },
+  {
+   "code": "VE",
+   "name": "Venezuela",
+   "currency": "VES",
+   "primary_language": "es",
+   "domains": 29,
+   "sha256": "0d3f79ca1252389e"
+  },
+  {
+   "code": "VG",
+   "name": "British Virgin Islands",
+   "currency": "USD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "7a923d8afebfe07c"
+  },
+  {
+   "code": "VI",
+   "name": "US Virgin Islands",
+   "currency": "USD",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "dd9ebdb169996118"
+  },
+  {
+   "code": "VN",
+   "name": "Vietnam",
+   "currency": "VND",
+   "primary_language": "vi",
+   "domains": 29,
+   "sha256": "9daeb477924f4e05"
+  },
+  {
+   "code": "VU",
+   "name": "Vanuatu",
+   "currency": "VUV",
+   "primary_language": "bi",
+   "domains": 29,
+   "sha256": "1d5e7654b9ec94fa"
+  },
+  {
+   "code": "WS",
+   "name": "Samoa",
+   "currency": "WST",
+   "primary_language": "sm",
+   "domains": 29,
+   "sha256": "573ed434e54e0b60"
+  },
+  {
+   "code": "XK",
+   "name": "Kosovo",
+   "currency": "EUR",
+   "primary_language": "sq",
+   "domains": 28,
+   "sha256": "c1fb18d63c98e7eb"
+  },
+  {
+   "code": "YE",
+   "name": "Yemen",
+   "currency": "YER",
+   "primary_language": "ar",
+   "domains": 29,
+   "sha256": "b702d1a3b6733c0d"
+  },
+  {
+   "code": "ZA",
+   "name": "South Africa",
+   "currency": "ZAR",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "f52cf1367d2020d5"
+  },
+  {
+   "code": "ZM",
+   "name": "Zambia",
+   "currency": "ZMW",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "492024fdca8c18ab"
+  },
+  {
+   "code": "ZW",
+   "name": "Zimbabwe",
+   "currency": "ZWG",
+   "primary_language": "en",
+   "domains": 29,
+   "sha256": "423e07df369d3d00"
+  }
+ ]
+}

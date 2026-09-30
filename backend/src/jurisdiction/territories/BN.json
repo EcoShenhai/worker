@@ -1,0 +1,328 @@
+{
+  "territory": {
+    "iso_alpha2": "BN",
+    "iso_alpha3": "BRN",
+    "iso_numeric": "096",
+    "name_en": "Brunei Darussalam",
+    "name_local": "Negara Brunei Darussalam",
+    "region": "Asia",
+    "subregion": "South-Eastern Asia",
+    "capital": "Bandar Seri Begawan",
+    "population_estimate": 450000,
+    "internet_tld": ".bn",
+    "calling_code": "+673"
+  },
+  "language": {
+    "primary": "ms",
+    "secondary": [
+      "en",
+      "zh"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "ms-BN",
+      "en-BN",
+      "ms",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{8}$",
+    "national_id_name": "Identity Card (IC / Yellow IC)",
+    "phone_format": "^\\+673[7-8][0-9]{6}$",
+    "address_fields_order": [
+      "house",
+      "kampong",
+      "mukim",
+      "district"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "DST": [
+      "722",
+      "723",
+      "724",
+      "725",
+      "726",
+      "727",
+      "728",
+      "729"
+    ],
+    "progresif": [
+      "874",
+      "875",
+      "876",
+      "877",
+      "878",
+      "879"
+    ]
+  },
+  "currency": {
+    "code": "BND",
+    "symbol": "B$",
+    "symbol_native": "B$",
+    "minor_unit": 2,
+    "name": "Brunei Dollar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1.33,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.0,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "No VAT (GST abolished 2015)",
+    "withholding_tax_rate": 0.0,
+    "filing_deadline_day": null
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{16}$",
+    "routing_name": "Account number (AMBD)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "BIBD Mobile",
+        "type": "mobile_banking",
+        "currency": "BND"
+      },
+      {
+        "name": "Baiduri Pay",
+        "type": "mobile_payment",
+        "currency": "BND"
+      },
+      {
+        "name": "e-Tunai Rakyat",
+        "type": "government_wallet",
+        "currency": "BND"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Brunei",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "saturday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Personal Data Protection Order 2021",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Malay is official language; English widely used in business",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions Act 2008"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.96,
+    "mobile_penetration_pct": 1.38,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Employment Order 2009",
+    "mandatory_benefits": [
+      "TAP pension",
+      "PTECH training",
+      "paid_leave_10_days"
+    ],
+    "payroll_tax_rate": 0.05,
+    "notice_period_days": 14,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.88
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Ministry of Finance and Economy",
+    "dispute_resolution": [
+      "MFE",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Autoriti Monetari Brunei Darussalam (AMBD)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "AMBD",
+        "framework": "AMBD Payment Systems Order 2013"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Department of Electrical Services"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per Electronic Transactions Act",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "restricted",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.88,
+    "corruption_perception_index": 62,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.02,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.005,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.18
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.018,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.002
+    },
+    "labor_cost_index_vs_usd": 0.55,
+    "cloud_compute_cost_index": 1.2,
+    "inflation_rate_annual": 0.015,
+    "recommended_fx_hedge_pct": 0.05
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Personal Data Protection Order 2021"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "government_controlled",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Department of Civil Aviation (DCA)",
+    "address_validation_standard": "Brunei Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "ASEAN",
+      "BIMP-EAGA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Brunei",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Saturday (Friday: 08:00-12:00, 14:00-16:30)",
+    "national_holiday_source": "Government of Brunei Gazette",
+    "time_critical_regulations": []
+  }
+}

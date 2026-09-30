@@ -1,0 +1,333 @@
+{
+  "territory": {
+    "iso_alpha2": "CH",
+    "name_en": "Switzerland",
+    "name_local": "Schweiz / Suisse / Svizzera",
+    "region": "Europe",
+    "capital": "Bern",
+    "population_estimate": 8700000,
+    "internet_tld": ".ch",
+    "calling_code": "+41"
+  },
+  "language": {
+    "primary": "de",
+    "secondary": [
+      "fr",
+      "it",
+      "rm"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "de-CH",
+      "fr-CH",
+      "it-CH",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD.MM.YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": "'",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^756\\.[0-9]{4}\\.[0-9]{4}\\.[0-9]{2}$",
+    "national_id_name": "AHV-Nummer (Social Security Number)",
+    "phone_format": "^\\+41[7][5-9][0-9]{7}$",
+    "address_fields_order": [
+      "street",
+      "house_number",
+      "postcode",
+      "city",
+      "canton"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Swisscom": [
+      "078",
+      "079"
+    ],
+    "Sunrise": [
+      "078",
+      "079"
+    ],
+    "Salt": [
+      "078",
+      "079"
+    ]
+  },
+  "currency": {
+    "code": "CHF",
+    "symbol": "Fr.",
+    "symbol_native": "Fr.",
+    "minor_unit": 2,
+    "name": "Swiss Franc"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 0.89,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.081,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "MWST/TVA/IVA (VAT)",
+    "withholding_tax_rate": 0.35,
+    "filing_deadline_day": 60
+  },
+  "banking": {
+    "iban_required": true,
+    "local_routing_format": "^CH[0-9]{2}[0-9]{5}[A-Z0-9]{12}$",
+    "routing_name": "IBAN (CH format)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "TWINT",
+        "type": "mobile_payment",
+        "currency": "CHF"
+      },
+      {
+        "name": "PostFinance",
+        "type": "bank_payment",
+        "currency": "CHF"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "CHF"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "EUR"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Europe/Zurich",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "nFADP (revised Federal Act on Data Protection 2023)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "German, French, Italian, and Romansh are official languages",
+    "invoice_required": true,
+    "digital_signature_law": "Federal Act on Electronic Signatures (ZertES) 2003"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.96,
+    "mobile_penetration_pct": 1.35,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Economic dependency + integration test per Code of Obligations",
+    "mandatory_benefits": [
+      "AHV/AVS pension",
+      "ALV/AC unemployment",
+      "KTG sick pay",
+      "paid_leave_20_days",
+      "maternity_leave_14_weeks"
+    ],
+    "payroll_tax_rate": 0.126,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 21.0
+  },
+  "consumer_protection": {
+    "refund_period_days": 14,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 14,
+    "unfair_terms_authority": "Preisüberwachung / Surveillance des prix",
+    "dispute_resolution": [
+      "consumer_forum",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "FINMA (Swiss Financial Market Supervisory Authority)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI",
+      "Banking Licence Lite"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FINMA",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "FINMA",
+        "framework": "FINMA Fintech Licence + Banking Act"
+      },
+      "healthcare": {
+        "authority": "Swissmedic"
+      },
+      "energy": {
+        "authority": "ElCom"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per OR (Code of Obligations)",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": true,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Project Helvetia"
+  },
+  "risk": {
+    "political_stability_index": 0.96,
+    "corruption_perception_index": 82,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.015,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.05
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.016,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 1.8,
+    "cloud_compute_cost_index": 1.1,
+    "inflation_rate_annual": 0.015,
+    "recommended_fx_hedge_pct": 0.05
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "nFADP (revised Federal Act on Data Protection 2023)"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Bundesamt für Zivilluftfahrt (BAZL)",
+    "address_validation_standard": "Swiss Post / Poste Suisse",
+    "coordinate_system": "ETRS89",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Bundesamt für Verkehr (BAV)",
+    "delivery_gig_worker_protections": "No specific gig worker protection law; Code of Obligations applies",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "Regional transport agreements"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Europe/Zurich",
+    "dst_observed": true,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Official Government Gazette",
+    "time_critical_regulations": [
+      {
+        "rule": "VAT_return",
+        "deadline": "monthly_or_quarterly"
+      },
+      {
+        "rule": "DAC7_reporting",
+        "deadline": "annually_31_Jan"
+      }
+    ]
+  }
+}

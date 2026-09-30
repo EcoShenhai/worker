@@ -1,0 +1,336 @@
+{
+  "territory": {
+    "iso_alpha2": "MU",
+    "iso_alpha3": "MUS",
+    "iso_numeric": "480",
+    "name_en": "Mauritius",
+    "name_local": "Île Maurice",
+    "region": "Africa",
+    "subregion": "Eastern Africa",
+    "capital": "Port Louis",
+    "population_estimate": 1270000,
+    "internet_tld": ".mu",
+    "calling_code": "+230"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "fr",
+      "mfe"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-MU",
+      "fr-MU",
+      "en",
+      "fr"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{14}$",
+    "national_id_name": "National Identity Card",
+    "phone_format": "^\\+230[5][0-9]{7}$",
+    "address_fields_order": [
+      "street",
+      "town",
+      "district"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Emtel": [
+      "5251",
+      "5252",
+      "5253",
+      "5254",
+      "5255",
+      "5256",
+      "5257",
+      "5258"
+    ],
+    "Cellplus (Orange)": [
+      "5700",
+      "5701",
+      "5702",
+      "5703",
+      "5704",
+      "5705"
+    ],
+    "MTML": [
+      "5401",
+      "5402",
+      "5403"
+    ]
+  },
+  "currency": {
+    "code": "MUR",
+    "symbol": "Rs",
+    "symbol_native": "Rs",
+    "minor_unit": 2,
+    "name": "Mauritian Rupee"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 46.2,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.15,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT",
+    "withholding_tax_rate": 0.15,
+    "filing_deadline_day": 20
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[A-Z]{4}[0-9]{14}$",
+    "routing_name": "BIC + account number (BOM)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "MyCash (Emtel)",
+        "type": "mobile_money",
+        "currency": "MUR"
+      },
+      {
+        "name": "Juice (MCB)",
+        "type": "mobile_banking",
+        "currency": "MUR"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Indian/Mauritius",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Data Protection Act 2017",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "English is official language; French widely used",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions Act 2000"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.73,
+    "mobile_penetration_pct": 1.5,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + economic reality test per Employment Rights Act 2008",
+    "mandatory_benefits": [
+      "NPF pension",
+      "NSF training levy",
+      "paid_leave_22_days",
+      "maternity_leave_14_weeks"
+    ],
+    "payroll_tax_rate": 0.06,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 2.2
+  },
+  "consumer_protection": {
+    "refund_period_days": 14,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 14,
+    "unfair_terms_authority": "Competition Commission of Mauritius",
+    "dispute_resolution": [
+      "Competition Commission",
+      "Consumer Tribunal",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Bank of Mauritius (BOM) + FSC",
+    "payment_institution_types": [
+      "PI",
+      "EMI",
+      "CIS"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "Financial Services Commission (FSC)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BOM + FSC",
+        "framework": "BOM Payment Systems Act 2018"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Utility Regulatory Authority (URA)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per ICT Act 2001",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.82,
+    "corruption_perception_index": 53,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.03,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.018,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.25
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.022,
+      "mobile_money_pct": 0.012,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.32,
+    "cloud_compute_cost_index": 1.3,
+    "inflation_rate_annual": 0.068,
+    "recommended_fx_hedge_pct": 0.15
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Data Protection Act 2017"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aviation Department (CAD)",
+    "address_validation_standard": "Mauritius Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "National Transport Authority (NTA)",
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "COMESA",
+      "IOC",
+      "SADC"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Indian/Mauritius",
+    "dst_observed": false,
+    "fiscal_year_end": "06-30",
+    "business_day_definition": "Monday-Friday 09:00-17:00",
+    "national_holiday_source": "Government Gazette",
+    "time_critical_regulations": []
+  }
+}

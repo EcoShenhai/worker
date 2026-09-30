@@ -1,0 +1,367 @@
+{
+  "territory": {
+    "iso_alpha2": "ZA",
+    "iso_alpha3": "ZAF",
+    "iso_numeric": "710",
+    "name_en": "South Africa",
+    "name_local": "South Africa",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "capital": "Pretoria",
+    "population_estimate": 60100000,
+    "internet_tld": ".za",
+    "calling_code": "+27"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "zu",
+      "xh",
+      "af",
+      "nso",
+      "tn",
+      "ts",
+      "ss",
+      "ve",
+      "nr",
+      "st"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-ZA",
+      "af-ZA",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "YYYY/MM/DD",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": " ",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{13}$",
+    "national_id_name": "South African ID (Smart ID Card)",
+    "phone_format": "^\\+27[6-8][0-9]{8}$",
+    "address_fields_order": [
+      "unit_number",
+      "complex",
+      "street_number",
+      "street",
+      "suburb",
+      "city",
+      "postal_code",
+      "province"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Vodacom": [
+      "082",
+      "083",
+      "084"
+    ],
+    "MTN": [
+      "083",
+      "073",
+      "074",
+      "076",
+      "078"
+    ],
+    "Cell C": [
+      "084",
+      "074"
+    ],
+    "Telkom": [
+      "081"
+    ]
+  },
+  "currency": {
+    "code": "ZAR",
+    "symbol": "R",
+    "symbol_native": "R",
+    "minor_unit": 2,
+    "name": "South African Rand"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 18.65,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.15,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "VAT",
+    "withholding_tax_rate": 0.2,
+    "filing_deadline_day": 25
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{6}$",
+    "routing_name": "Branch code (SARB / BankservAfrica)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "SnapScan",
+        "type": "qr_payment",
+        "currency": "ZAR"
+      },
+      {
+        "name": "Zapper",
+        "type": "qr_payment",
+        "currency": "ZAR"
+      },
+      {
+        "name": "PayFast",
+        "type": "payment_gateway",
+        "currency": "ZAR"
+      },
+      {
+        "name": "Peach Payments",
+        "type": "payment_gateway",
+        "currency": "ZAR"
+      },
+      {
+        "name": "Ozow",
+        "type": "instant_eft",
+        "currency": "ZAR"
+      },
+      {
+        "name": "Flutterwave",
+        "type": "payment_gateway",
+        "currency": "ZAR"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "STANDARD",
+    "multiplier": 1.0,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 10.0
+  },
+  "timezone": {
+    "default": "Africa/Johannesburg",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "POPIA (Protection of Personal Information Act 2013)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "11 official languages (Constitution); English used in commerce and courts",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Communications and Transactions Act 25 of 2002 (ECTA)"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.72,
+    "mobile_penetration_pct": 1.65,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio",
+      "clickatell"
+    ],
+    "email_provider_priority": [
+      "sendgrid",
+      "mailgun"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Dominant impression test per Labour Relations Act 66 of 1995",
+    "mandatory_benefits": [
+      "UIF unemployment",
+      "SDL skills levy",
+      "paid_leave_21_days",
+      "maternity_leave_4_months"
+    ],
+    "payroll_tax_rate": 0.01,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.92
+  },
+  "consumer_protection": {
+    "refund_period_days": 5,
+    "mandatory_warranty_months": 6,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 5,
+    "unfair_terms_authority": "National Consumer Commission (NCC)",
+    "dispute_resolution": [
+      "NCC",
+      "Consumer Tribunal",
+      "Ombudsman",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "South African Reserve Bank (SARB) + FSCA",
+    "fintech_licence_type": "PSP Registration",
+    "payment_institution_types": [
+      "PSP",
+      "FSP",
+      "PI"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FSCA",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "SARB + FSCA",
+        "framework": "National Payment System Act 78 of 1998 + FSCA Licensing"
+      },
+      "healthcare": {
+        "authority": "SAHPRA / DoH"
+      },
+      "energy": {
+        "authority": "NERSA"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Consumer Protection Act 68 of 2008 applies to platforms",
+    "platform_economy_rules": "No specific platform economy law; CPA applies",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "Emerging: POPIA + draft AI regulatory framework 2024",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "credit_scoring"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Project Khokha"
+  },
+  "risk": {
+    "political_stability_index": 0.52,
+    "corruption_perception_index": 41,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.04,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.04,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.4
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.02,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.3,
+    "cloud_compute_cost_index": 1.2,
+    "inflation_rate_annual": 0.053,
+    "recommended_fx_hedge_pct": 0.25
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "DBE + DHET guidelines",
+      "student_data_protection": "POPIA"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "South African Civil Aviation Authority (SACAA)",
+    "address_validation_standard": "South African Post Office (SAPO) addressing",
+    "coordinate_system": "Hartebeesthoek94",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Department of Transport + Provincial MEC",
+    "delivery_gig_worker_protections": "No specific gig worker protection law; Labour Court rulings evolving",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "SADC",
+      "SACU",
+      "Tripartite FTA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Africa/Johannesburg",
+    "dst_observed": false,
+    "fiscal_year_end": "02-28",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Government Gazette",
+    "time_critical_regulations": []
+  }
+}

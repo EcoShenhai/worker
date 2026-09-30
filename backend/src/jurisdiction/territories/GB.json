@@ -1,0 +1,354 @@
+{
+  "territory": {
+    "iso_alpha2": "GB",
+    "name_en": "United Kingdom",
+    "name_local": "United Kingdom",
+    "region": "Europe",
+    "capital": "London",
+    "population_estimate": 67800000,
+    "internet_tld": ".uk",
+    "calling_code": "+44"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "cy",
+      "gd",
+      "ga",
+      "kw"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-GB",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "uk_hybrid"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z]{2}[0-9]{6}[A-D]$",
+    "national_id_name": "National Insurance Number / Driving Licence",
+    "phone_format": "^\\+44[7][0-9]{9}$",
+    "address_fields_order": [
+      "house_name_or_number",
+      "street",
+      "locality",
+      "town",
+      "county",
+      "postcode"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "EE (BT)": [
+      "07xxx"
+    ],
+    "O2 (Telefónica)": [
+      "07xxx"
+    ],
+    "Vodafone UK": [
+      "07xxx"
+    ],
+    "Three UK": [
+      "07xxx"
+    ],
+    "Virgin Mobile": [
+      "07xxx"
+    ]
+  },
+  "currency": {
+    "code": "GBP",
+    "symbol": "£",
+    "symbol_native": "£",
+    "minor_unit": 2,
+    "name": "British Pound Sterling"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 0.79,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.2,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "VAT (HMRC)",
+    "withholding_tax_rate": 0.2,
+    "filing_deadline_day": 7
+  },
+  "banking": {
+    "iban_required": true,
+    "local_routing_format": "^GB[0-9]{2}[A-Z]{4}[0-9]{6}[0-9]{8}$",
+    "routing_name": "Sort Code (6 digits) + Account Number"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Faster Payments (Pay.UK)",
+        "type": "instant_payment",
+        "currency": "GBP"
+      },
+      {
+        "name": "Open Banking (PSD2-equivalent)",
+        "type": "account_to_account",
+        "currency": "GBP"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "GBP"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "GBP"
+      },
+      {
+        "name": "Klarna",
+        "type": "bnpl",
+        "currency": "GBP"
+      },
+      {
+        "name": "Apple Pay / Google Pay",
+        "type": "digital_wallet",
+        "currency": "GBP"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Europe/London",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": true,
+    "cookie_consent_required": true,
+    "privacy_framework": "UK GDPR",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "English is de facto official language; Welsh co-official in Wales",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Signatures Regulations 2002 (UK) + Electronic Communications Act 2000"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.96,
+    "mobile_penetration_pct": 1.3,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid",
+      "mailgun"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Three-tier: Employee / Worker / Independent contractor per Employment Rights Act 1996 + Uber SC ruling 2021",
+    "mandatory_benefits": [
+      "NI contributions",
+      "auto_enrolment_pension_3pct",
+      "paid_leave_28_days",
+      "statutory_maternity_pay_39_weeks"
+    ],
+    "payroll_tax_rate": 0.138,
+    "notice_period_days": 28,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 13.6
+  },
+  "consumer_protection": {
+    "refund_period_days": 14,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": 14,
+    "unfair_terms_authority": "Competition and Markets Authority (CMA)",
+    "dispute_resolution": [
+      "CMA",
+      "ADR",
+      "small_claims_court",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Financial Conduct Authority (FCA)",
+    "fintech_licence_type": "EMI/PI",
+    "payment_institution_types": [
+      "EMI",
+      "PI",
+      "AISP",
+      "PISP"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FCA (Cryptoasset Registration)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "FCA",
+        "framework": "UK PSRs 2017 + FCA Crypto Registration"
+      },
+      "healthcare": {
+        "authority": "MHRA + NHS"
+      },
+      "energy": {
+        "authority": "Ofgem"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": 0.02,
+    "marketplace_liability": "Online Safety Act 2023 + Digital Markets Competition Consumers Act 2024",
+    "platform_economy_rules": "Employment Rights Bill 2024-25 — expanding gig worker protections",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "UK_AI_Principles",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "critical_infrastructure",
+      "financial_decisions"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": true,
+    "ai_decision_explainability_required": true,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "Digital Pound"
+  },
+  "risk": {
+    "political_stability_index": 0.75,
+    "corruption_perception_index": 71,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.018,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.12
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.015,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 1.08,
+    "cloud_compute_cost_index": 0.98,
+    "inflation_rate_annual": 0.025,
+    "recommended_fx_hedge_pct": 0.1
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "DfE guidelines",
+      "student_data_protection": "UK GDPR"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aviation Authority (CAA)",
+    "address_validation_standard": "Royal Mail / Ordnance Survey addressing",
+    "coordinate_system": "OSGB36",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Transport for London (TfL) / Local Licensing Authorities",
+    "delivery_gig_worker_protections": "Supreme Court 2021 (Uber) — workers entitled to minimum wage + holiday pay; Employment Rights Bill 2024",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "UK-EU Trade and Cooperation Agreement transport provisions"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Europe/London",
+    "dst_observed": true,
+    "fiscal_year_end": "03-31",
+    "business_day_definition": "Monday-Friday 09:00-17:30",
+    "national_holiday_source": "GOV.UK public holidays",
+    "time_critical_regulations": [
+      {
+        "rule": "VAT_return",
+        "deadline": "monthly_or_quarterly"
+      },
+      {
+        "rule": "Making_Tax_Digital",
+        "deadline": "real_time_digital_records_required"
+      }
+    ]
+  }
+}

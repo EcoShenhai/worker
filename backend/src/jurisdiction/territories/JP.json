@@ -1,0 +1,352 @@
+{
+  "territory": {
+    "iso_alpha2": "JP",
+    "iso_alpha3": "JPN",
+    "iso_numeric": "392",
+    "name_en": "Japan",
+    "name_local": "日本",
+    "region": "Asia",
+    "subregion": "Eastern Asia",
+    "capital": "Tokyo",
+    "population_estimate": 124200000,
+    "internet_tld": ".jp",
+    "calling_code": "+81"
+  },
+  "language": {
+    "primary": "ja",
+    "secondary": [
+      "en"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "ja-JP",
+      "en-JP",
+      "ja",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "YYYY/MM/DD",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{12}$",
+    "national_id_name": "マイナンバー (My Number / Individual Number)",
+    "phone_format": "^\\+81[7-9][0-9]{8,9}$",
+    "address_fields_order": [
+      "postal_code",
+      "prefecture",
+      "city",
+      "town",
+      "house_number",
+      "building"
+    ],
+    "name_order": [
+      "family",
+      "given"
+    ]
+  },
+  "mno_prefix_map": {
+    "NTT Docomo": [
+      "070",
+      "080",
+      "090"
+    ],
+    "SoftBank": [
+      "070",
+      "080",
+      "090"
+    ],
+    "KDDI au": [
+      "070",
+      "080",
+      "090"
+    ],
+    "Rakuten Mobile": [
+      "070",
+      "080"
+    ]
+  },
+  "currency": {
+    "code": "JPY",
+    "symbol": "¥",
+    "symbol_native": "¥",
+    "minor_unit": 0,
+    "name": "Japanese Yen"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 154.0,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.1,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": true,
+    "system": "消費税 (Consumption Tax)",
+    "withholding_tax_rate": 0.1021,
+    "filing_deadline_day": null
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{7}$",
+    "routing_name": "店番号+口座番号 (Bank code + branch + account)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "PayPay",
+        "type": "qr_payment",
+        "currency": "JPY"
+      },
+      {
+        "name": "Line Pay",
+        "type": "e_wallet",
+        "currency": "JPY"
+      },
+      {
+        "name": "Suica / IC card",
+        "type": "prepaid_transit_card",
+        "currency": "JPY"
+      },
+      {
+        "name": "Rakuten Pay",
+        "type": "e_wallet",
+        "currency": "JPY"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "JPY"
+      },
+      {
+        "name": "Konbini Payment",
+        "type": "cash_at_convenience",
+        "currency": "JPY"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Asia/Tokyo",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "sunday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "APPI (Act on the Protection of Personal Information, amended 2022)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Japanese is de facto official language",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Signatures and Certification Business Act 2000"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.94,
+    "mobile_penetration_pct": 1.82,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid",
+      "mailgun"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control + integration test per Labour Standards Act + Supreme Court rulings",
+    "mandatory_benefits": [
+      "kosei_nenkin_pension",
+      "kenko_hoken_health",
+      "koyo_hoken_unemployment",
+      "paid_leave_10_to_20_days",
+      "maternity_leave_14_weeks"
+    ],
+    "payroll_tax_rate": 0.15,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 7.8
+  },
+  "consumer_protection": {
+    "refund_period_days": 8,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": 8,
+    "unfair_terms_authority": "Consumer Affairs Agency (CAA)",
+    "dispute_resolution": [
+      "CAA",
+      "National Consumer Affairs Centre",
+      "ADR",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Financial Services Agency (FSA)",
+    "fintech_licence_type": "Funds Transfer",
+    "payment_institution_types": [
+      "Funds Transfer Business",
+      "EMI",
+      "PI"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FSA (Virtual Asset Exchange)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "FSA",
+        "framework": "Payment Services Act (PSA) + FIEA"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health, Labour and Welfare (MHLW)"
+      },
+      "energy": {
+        "authority": "Ministry of Economy, Trade and Industry (METI)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Act on Specified Transactions by Digital Platform Operators 2021",
+    "platform_economy_rules": "Act on Improving Transparency of Specified Digital Platforms 2020",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": "Japan_AI_Guidelines",
+    "high_risk_ai_categories": [
+      "biometric_identification",
+      "medical_devices"
+    ],
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": true,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": true,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "pilot",
+    "cbdc_name": "Digital Yen"
+  },
+  "risk": {
+    "political_stability_index": 0.89,
+    "corruption_perception_index": 73,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.022,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.15
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.03,
+      "mobile_money_pct": 0.005,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.85,
+    "cloud_compute_cost_index": 1.05,
+    "inflation_rate_annual": 0.028,
+    "recommended_fx_hedge_pct": 0.15
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": true
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education (MEXT) guidelines",
+      "student_data_protection": "APPI 2022"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Ministry of Land, Infrastructure, Transport and Tourism (MLIT)",
+    "address_validation_standard": "Japan Post 7-digit postal code system",
+    "coordinate_system": "JGD2011",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministry of Land, Infrastructure, Transport and Tourism (MLIT)",
+    "delivery_gig_worker_protections": "Worker classification debate ongoing — Labour Policy Council studying gig worker protections",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "RCEP",
+      "CPTPP",
+      "Japan-EU EPA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Tokyo",
+    "dst_observed": false,
+    "fiscal_year_end": "03-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Cabinet Office of Japan",
+    "time_critical_regulations": []
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "territory": {
+    "iso_alpha2": "NZ",
+    "iso_alpha3": "NZL",
+    "iso_numeric": "554",
+    "name_en": "New Zealand",
+    "name_local": "New Zealand / Aotearoa",
+    "region": "Oceania",
+    "subregion": "Australia and New Zealand",
+    "capital": "Wellington",
+    "population_estimate": 5100000,
+    "internet_tld": ".nz",
+    "calling_code": "+64"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "mi",
+      "nzsl"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-NZ",
+      "mi-NZ",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z]{2}[0-9]{6}$",
+    "national_id_name": "IRD Number / Driver Licence",
+    "phone_format": "^\\+64[2][0-9]{7,9}$",
+    "address_fields_order": [
+      "unit",
+      "street_number",
+      "street",
+      "suburb",
+      "city",
+      "postcode"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Spark NZ": [
+      "021",
+      "022",
+      "023",
+      "024",
+      "025",
+      "026",
+      "027",
+      "028",
+      "029"
+    ],
+    "One NZ (Vodafone)": [
+      "021",
+      "022",
+      "023",
+      "024",
+      "025",
+      "026",
+      "027",
+      "028",
+      "029"
+    ],
+    "2degrees": [
+      "021",
+      "022",
+      "023",
+      "024",
+      "025",
+      "026",
+      "027",
+      "028",
+      "029"
+    ]
+  },
+  "currency": {
+    "code": "NZD",
+    "symbol": "NZ$",
+    "symbol_native": "$",
+    "minor_unit": 2,
+    "name": "New Zealand Dollar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 1.65,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.15,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "GST (Goods and Services Tax)",
+    "withholding_tax_rate": 0.3,
+    "filing_deadline_day": 28
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{2}-[0-9]{4}-[0-9]{7}-[0-9]{2,3}$",
+    "routing_name": "Account number (bank-branch-account-suffix)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "Paymark / Ingenico",
+        "type": "eftpos_gateway",
+        "currency": "NZD"
+      },
+      {
+        "name": "POLi Payments",
+        "type": "online_banking",
+        "currency": "NZD"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "NZD"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "NZD"
+      },
+      {
+        "name": "Apple Pay / Google Pay",
+        "type": "digital_wallet",
+        "currency": "NZD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "PREMIUM",
+    "multiplier": 1.2,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Pacific/Auckland",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Privacy Act 2020",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "English, Māori, and NZ Sign Language are official languages",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Transactions Act 2002"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.92,
+    "mobile_penetration_pct": 1.2,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "twilio",
+      "local_aggregator"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "apns",
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Six-factor test per Employment Relations Act 2000 (s6)",
+    "mandatory_benefits": [
+      "KiwiSaver_3pct",
+      "ACC_levies",
+      "paid_leave_20_days",
+      "parental_leave_26_weeks",
+      "bereavement_leave"
+    ],
+    "payroll_tax_rate": 0.0395,
+    "notice_period_days": 28,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 14.2
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": true,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Commerce Commission (ComCom)",
+    "dispute_resolution": [
+      "ComCom",
+      "Disputes Tribunal",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Reserve Bank of NZ (RBNZ) + FMA",
+    "payment_institution_types": [
+      "PSP",
+      "NBDT",
+      "registered_bank"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "FMA (FMCA obligation)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "RBNZ + FMA",
+        "framework": "Payment Systems Act 2022 + CoFI regime"
+      },
+      "healthcare": {
+        "authority": "Medsafe + MCNZ"
+      },
+      "energy": {
+        "authority": "Commerce Commission + Electricity Authority"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Consumer Guarantees Act 1993 + Fair Trading Act 1986",
+    "platform_economy_rules": "Employment Relations Act 2000 applies; contractor reclassification risk high",
+    "content_moderation_required": true,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "None announced"
+  },
+  "risk": {
+    "political_stability_index": 0.92,
+    "corruption_perception_index": 85,
+    "cyber_risk_rating": "low",
+    "payment_failure_risk_pct": 0.01,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.022,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.08
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.016,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.92,
+    "cloud_compute_cost_index": 1.05,
+    "inflation_rate_annual": 0.028,
+    "recommended_fx_hedge_pct": 0.1
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Privacy Act 2020"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Civil Aviation Authority (CAA NZ)",
+    "address_validation_standard": "NZ Post addressing",
+    "coordinate_system": "NZGD2000",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "NZTA (Waka Kotahi)",
+    "delivery_gig_worker_protections": "Employment Relations Act 2000 — contractor vs employee test actively enforced by Employment Court",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": true,
+    "cross_border_transport_agreements": [
+      "CPTPP",
+      "RCEP",
+      "NZ-UK FTA",
+      "ANZCERTA"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Pacific/Auckland",
+    "dst_observed": true,
+    "fiscal_year_end": "03-31",
+    "business_day_definition": "Monday-Friday 09:00-17:00",
+    "national_holiday_source": "New Zealand Government",
+    "time_critical_regulations": []
+  }
+}

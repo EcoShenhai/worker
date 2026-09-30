@@ -1,0 +1,314 @@
+{
+  "territory": {
+    "iso_alpha2": "LS",
+    "iso_alpha3": "LSO",
+    "iso_numeric": "426",
+    "name_en": "Lesotho",
+    "name_local": "Lesotho",
+    "region": "Africa",
+    "subregion": "Southern Africa",
+    "capital": "Maseru",
+    "population_estimate": 2220000,
+    "internet_tld": ".ls",
+    "calling_code": "+266"
+  },
+  "language": {
+    "primary": "en",
+    "secondary": [
+      "st"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "en-LS",
+      "st-LS",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{9}$",
+    "national_id_name": "National Identity Card",
+    "phone_format": "^\\+266[5-8][0-9]{7}$",
+    "address_fields_order": [
+      "street",
+      "village",
+      "district"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Vodacom Lesotho": [
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59"
+    ],
+    "Econet Lesotho": [
+      "50",
+      "51"
+    ]
+  },
+  "currency": {
+    "code": "LSL",
+    "symbol": "L",
+    "symbol_native": "L",
+    "minor_unit": 2,
+    "name": "Lesotho Loti"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 18.65,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.15,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "VAT",
+    "withholding_tax_rate": 0.25,
+    "filing_deadline_day": 25
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{11}$",
+    "routing_name": "Account number (CBL)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "M-Pesa Lesotho (Vodacom)",
+        "type": "mobile_money",
+        "currency": "LSL"
+      },
+      {
+        "name": "EcoCash",
+        "type": "mobile_wallet",
+        "currency": "LSL"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "Africa/Maseru",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "No comprehensive data protection law",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "English and Sesotho are official languages",
+    "invoice_required": true,
+    "digital_signature_law": "Electronic Commerce Act 2012"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.45,
+    "mobile_penetration_pct": 0.98,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Labour Code 1992",
+    "mandatory_benefits": [
+      "NSSA pension",
+      "paid_leave_12_days"
+    ],
+    "payroll_tax_rate": 0.1,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 0.95
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 12,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Lesotho Competition Authority",
+    "dispute_resolution": [
+      "LCA",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Central Bank of Lesotho (CBL)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "CBL",
+        "framework": "Payment System Act 2022"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Lesotho Electricity Company (LEC)"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard civil liability",
+    "platform_economy_rules": "No specific platform law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.58,
+    "corruption_perception_index": 35,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.06,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.022,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.4
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.025,
+      "mobile_money_pct": 0.018,
+      "bank_transfer_pct": 0.005
+    },
+    "labor_cost_index_vs_usd": 0.16,
+    "cloud_compute_cost_index": 1.45,
+    "inflation_rate_annual": 0.072,
+    "recommended_fx_hedge_pct": 0.2
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "Lesotho Civil Aviation Authority (LCAA)",
+    "address_validation_standard": "Lesotho Post addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "SADC",
+      "SACU"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Africa/Maseru",
+    "dst_observed": false,
+    "fiscal_year_end": "03-31",
+    "business_day_definition": "Monday-Friday 08:00-16:30",
+    "national_holiday_source": "Government Gazette",
+    "time_critical_regulations": []
+  }
+}

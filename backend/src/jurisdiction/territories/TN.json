@@ -1,0 +1,362 @@
+{
+  "territory": {
+    "iso_alpha2": "TN",
+    "iso_alpha3": "TUN",
+    "iso_numeric": "788",
+    "name_en": "Tunisia",
+    "name_local": "تونس",
+    "region": "Africa",
+    "subregion": "Northern Africa",
+    "capital": "Tunis",
+    "population_estimate": 12100000,
+    "internet_tld": ".tn",
+    "calling_code": "+216"
+  },
+  "language": {
+    "primary": "ar",
+    "secondary": [
+      "fr"
+    ],
+    "rtl_default": true,
+    "locale_fallback_chain": [
+      "ar-TN",
+      "fr-TN",
+      "ar",
+      "fr"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": " ",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[0-9]{8}$",
+    "national_id_name": "Carte d'Identité Nationale (CIN)",
+    "phone_format": "^\\+216[2-9][0-9]{7}$",
+    "address_fields_order": [
+      "numéro",
+      "rue",
+      "ville",
+      "code_postal",
+      "gouvernorat"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Tunisie Telecom": [
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "50",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "57",
+      "58",
+      "59"
+    ],
+    "Ooredoo Tunisia": [
+      "20",
+      "21",
+      "40",
+      "41",
+      "42",
+      "43",
+      "44",
+      "45",
+      "46",
+      "47",
+      "48",
+      "49"
+    ],
+    "Orange Tunisia": [
+      "90",
+      "91",
+      "92",
+      "93",
+      "94",
+      "95",
+      "96",
+      "97",
+      "98",
+      "99"
+    ]
+  },
+  "currency": {
+    "code": "TND",
+    "symbol": "DT",
+    "symbol_native": "د.ت",
+    "minor_unit": 3,
+    "name": "Tunisian Dinar"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 3.08,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.19,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "TVA (VAT)",
+    "withholding_tax_rate": 0.25,
+    "filing_deadline_day": 28
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^TN59[0-9]{20}$",
+    "routing_name": "RIB (Relevé d'Identité Bancaire)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "D17 (Poste Tunisienne)",
+        "type": "mobile_wallet",
+        "currency": "TND"
+      },
+      {
+        "name": "Flouci",
+        "type": "mobile_payment",
+        "currency": "TND"
+      },
+      {
+        "name": "Orange Money Tunisia",
+        "type": "mobile_money",
+        "currency": "TND"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "USD"
+      },
+      {
+        "name": "Flutterwave",
+        "type": "payment_gateway",
+        "currency": "TND"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "STANDARD",
+    "multiplier": 1.0,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 10.0
+  },
+  "timezone": {
+    "default": "Africa/Tunis",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Organic Law 2004-63 on Personal Data Protection",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Arabic is official language; French widely used in commerce",
+    "invoice_required": true,
+    "digital_signature_law": "Law 2000-83 on Electronic Exchanges and Electronic Commerce"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.72,
+    "mobile_penetration_pct": 1.3,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Control test per Labour Code (1966)",
+    "mandatory_benefits": [
+      "CNSS social security",
+      "CNRPS pension",
+      "paid_leave_18_days",
+      "maternity_leave_2_months"
+    ],
+    "payroll_tax_rate": 0.2575,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 1.48
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": 24,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "Direction Générale de la Concurrence",
+    "dispute_resolution": [
+      "consumer_protection_directorate",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banque Centrale de Tunisie (BCT)",
+    "payment_institution_types": [
+      "PSP",
+      "EMI"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "BCT",
+        "framework": "BCT Payment System Regulations"
+      },
+      "healthcare": {
+        "authority": "Ministère de la Santé"
+      },
+      "energy": {
+        "authority": "STEG / ANME"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Standard liability per e-commerce law",
+    "platform_economy_rules": "No specific platform economy law",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.48,
+    "corruption_perception_index": 40,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.05,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.018,
+    "infrastructure_risk": "low",
+    "overall_territory_risk_score": 0.38
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.022,
+      "mobile_money_pct": 0.015,
+      "bank_transfer_pct": 0.003
+    },
+    "labor_cost_index_vs_usd": 0.3,
+    "cloud_compute_cost_index": 1.25,
+    "inflation_rate_annual": 0.092,
+    "recommended_fx_hedge_pct": 0.2
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "Ministry of Education guidelines",
+      "student_data_protection": "Organic Law 2004-63"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "restricted",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "Office de l'Aviation Civile et des Aéroports (OACA)",
+    "address_validation_standard": "La Poste Tunisienne addressing",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Ministère du Transport",
+    "delivery_gig_worker_protections": "No specific gig worker protection law",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "Arab Maghreb Union",
+      "EU-Tunisia Association Agreement"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "Africa/Tunis",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Journal Officiel de la République Tunisienne",
+    "time_critical_regulations": []
+  }
+}

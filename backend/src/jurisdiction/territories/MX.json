@@ -1,0 +1,370 @@
+{
+  "territory": {
+    "iso_alpha2": "MX",
+    "iso_alpha3": "MEX",
+    "iso_numeric": "484",
+    "name_en": "Mexico",
+    "name_local": "México",
+    "region": "Americas",
+    "subregion": "North America",
+    "capital": "Mexico City",
+    "population_estimate": 129000000,
+    "internet_tld": ".mx",
+    "calling_code": "+52"
+  },
+  "language": {
+    "primary": "es",
+    "secondary": [
+      "nah",
+      "myn",
+      "zap",
+      "mix"
+    ],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "es-MX",
+      "es",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ".",
+    "number_thousands_separator": ",",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": "^[A-Z]{4}[0-9]{6}[HM][A-Z]{5}[A-Z0-9][0-9]$",
+    "national_id_name": "CURP / INE Electoral Card",
+    "phone_format": "^\\+52[1-9][0-9]{9}$",
+    "address_fields_order": [
+      "calle",
+      "número",
+      "colonia",
+      "delegación_municipio",
+      "estado",
+      "cp"
+    ],
+    "name_order": [
+      "given",
+      "paternal_surname",
+      "maternal_surname"
+    ]
+  },
+  "mno_prefix_map": {
+    "Telcel (América Móvil)": [
+      "55",
+      "33",
+      "81",
+      "66",
+      "664",
+      "667"
+    ],
+    "Movistar MX": [
+      "55",
+      "33",
+      "81",
+      "66"
+    ],
+    "AT&T MX": [
+      "55",
+      "33",
+      "81"
+    ],
+    "Altán Redes": [
+      "55",
+      "33"
+    ]
+  },
+  "currency": {
+    "code": "MXN",
+    "symbol": "$",
+    "symbol_native": "$",
+    "minor_unit": 2,
+    "name": "Mexican Peso"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 17.2,
+    "mode": "static_estimate"
+  },
+  "tax": {
+    "default_digital_rate": 0.16,
+    "real_time_tax_reporting": true,
+    "price_includes_tax": false,
+    "system": "IVA (VAT) + CFDI e-invoice",
+    "withholding_tax_rate": 0.1,
+    "filing_deadline_day": 17
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{18}$",
+    "routing_name": "CLABE (Clave Bancaria Estandarizada)"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": false,
+    "providers": [
+      {
+        "name": "SPEI (Banxico)",
+        "type": "instant_payment",
+        "currency": "MXN"
+      },
+      {
+        "name": "CoDi / DiMo",
+        "type": "qr_instant_payment",
+        "currency": "MXN"
+      },
+      {
+        "name": "Mercado Pago MX",
+        "type": "fintech_wallet",
+        "currency": "MXN"
+      },
+      {
+        "name": "Kueski Pay",
+        "type": "bnpl",
+        "currency": "MXN"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "MXN"
+      },
+      {
+        "name": "PayPal",
+        "type": "digital_wallet",
+        "currency": "USD"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "STANDARD",
+    "multiplier": 1.0,
+    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_effective_pct": 0.015,
+    "low_value_exception_usd": 10.0
+  },
+  "timezone": {
+    "default": "America/Mexico_City",
+    "dst": true
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "LFPDPPP (Ley Federal de Protección de Datos Personales 2010)",
+    "aml_kyc_tier": "STANDARD",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Spanish is national language (Ley General de Derechos Lingüísticos); 68 indigenous languages recognized",
+    "invoice_required": true,
+    "digital_signature_law": "FIEL / e.firma + Código de Comercio Art. 89-94"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": 0.78,
+    "mobile_penetration_pct": 1.08,
+    "low_bandwidth_mode": false,
+    "offline_mode_recommended": false
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm",
+      "apns"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "Subordination test per Ley Federal del Trabajo (LFT) Art. 20",
+    "mandatory_benefits": [
+      "IMSS_social_security",
+      "INFONAVIT_housing",
+      "SAR_pension",
+      "paid_leave_6_to_20_days",
+      "aguinaldo_15_days",
+      "prima_vacacional",
+      "maternity_leave_12_weeks"
+    ],
+    "payroll_tax_rate": 0.335,
+    "notice_period_days": 30,
+    "contractor_allowed_for_digital_services": true,
+    "minimum_wage_usd_per_hour": 2.58
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": 5,
+    "unfair_terms_authority": "PROFECO (Procuraduría Federal del Consumidor)",
+    "dispute_resolution": [
+      "PROFECO",
+      "CONDUSEF (fintech)",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "CNBV + Banxico + CONDUSEF",
+    "payment_institution_types": [
+      "ITF",
+      "IFPE",
+      "SOFIPO",
+      "SOFOM"
+    ],
+    "crypto_exchange_license_required": true,
+    "crypto_exchange_authority": "CNBV (Ley Fintech 2018)",
+    "data_processing_registration": true,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "CNBV",
+        "framework": "Ley Fintech 2018 (Law to Regulate Financial Technology Institutions)"
+      },
+      "healthcare": {
+        "authority": "COFEPRIS"
+      },
+      "energy": {
+        "authority": "CRE"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "Consumer Protection Law (LFPC) + Ley Fintech",
+    "platform_economy_rules": "No specific platform economy law; Labour Reform under discussion",
+    "content_moderation_required": false,
+    "must_have_local_representative": false,
+    "local_representative_threshold_users": null,
+    "invoice_system": {
+      "name": "CFDI",
+      "authority": "SAT",
+      "connector": "sat_mx_v1",
+      "mandatory": true
+    }
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": true,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "legal",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": true,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": true,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": true,
+    "cbdc_status": "research",
+    "cbdc_name": "None announced"
+  },
+  "risk": {
+    "political_stability_index": 0.38,
+    "corruption_perception_index": 31,
+    "cyber_risk_rating": "medium",
+    "payment_failure_risk_pct": 0.05,
+    "sanctions_exposure": "low",
+    "fx_volatility_30d_pct": 0.028,
+    "infrastructure_risk": "medium",
+    "overall_territory_risk_score": 0.45
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": 0.02,
+      "mobile_money_pct": 0.005,
+      "bank_transfer_pct": 0.001
+    },
+    "labor_cost_index_vs_usd": 0.28,
+    "cloud_compute_cost_index": 1.0,
+    "inflation_rate_annual": 0.048,
+    "recommended_fx_hedge_pct": 0.18
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": true,
+      "prescription_digital_allowed": true
+    },
+    "fintech": {
+      "open_banking_mandatory": true,
+      "sandbox_available": true
+    },
+    "energy": {
+      "net_metering_allowed": true,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "SEP guidelines",
+      "student_data_protection": "LFPDPPP 2010"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "open",
+    "location_data_requires_consent": true,
+    "drone_regulation_authority": "AFAC (Agencia Federal de Aviación Civil)",
+    "address_validation_standard": "Correos de México (Sepomex) addressing",
+    "coordinate_system": "ITRF2008",
+    "foreign_mapping_api_restricted": false
+  },
+  "transportation": {
+    "ride_sharing_regulated": true,
+    "ride_sharing_authority": "Secretaría de Movilidad (SEMOVI) + state authorities",
+    "delivery_gig_worker_protections": "LFT reform pending; partial protections via IMSS affiliation rules",
+    "ev_incentives_available": true,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": [
+      "CUSMA/USMCA",
+      "Pacific Alliance",
+      "Mesoamerica Project"
+    ]
+  },
+  "temporal": {
+    "iana_timezone": "America/Mexico_City",
+    "dst_observed": true,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": "Diario Oficial de la Federación",
+    "time_critical_regulations": [
+      {
+        "rule": "CFDI_issuance",
+        "deadline": "real_time_B2B_and_B2C"
+      },
+      {
+        "rule": "IVA_return",
+        "deadline": "monthly_by_17th"
+      }
+    ]
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "territory": {
+    "iso_alpha2": "NI",
+    "name_en": "Nicaragua",
+    "name_local": "Nicaragua",
+    "region": "Americas",
+    "subregion": "Central America",
+    "capital": "Managua",
+    "population_estimate": 6900000,
+    "internet_tld": ".ni",
+    "calling_code": "+505"
+  },
+  "language": {
+    "primary": "es",
+    "secondary": [],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "es-NI",
+      "en"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_prefix",
+    "date_format": "DD/MM/YYYY",
+    "time_format": "12h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": ".",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": null,
+    "national_id_name": "National ID",
+    "phone_format": null,
+    "address_fields_order": [
+      "street",
+      "city",
+      "region"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {
+    "Claro NI": [
+      "8xxx"
+    ],
+    "Tigo NI": [
+      "7xxx",
+      "8xxx"
+    ]
+  },
+  "currency": {
+    "code": "NIO",
+    "symbol": "C$",
+    "symbol_native": "C$",
+    "minor_unit": 2,
+    "name": "Nicaraguan Córdoba"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": 36.8,
+    "mode": "static_estimate",
+    "note": "Official rate — may differ significantly from informal/parallel rates"
+  },
+  "tax": {
+    "default_digital_rate": 0.15,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": "State-controlled; limited commercial taxation",
+    "withholding_tax_rate": 0.2,
+    "filing_deadline_day": null
+  },
+  "banking": {
+    "iban_required": false,
+    "local_routing_format": "^[0-9]{10,20}$",
+    "routing_name": "State bank system"
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": true,
+    "providers": [
+      {
+        "name": "Tigo Money NI",
+        "type": "mobile_money",
+        "currency": "NIO"
+      },
+      {
+        "name": "Stripe",
+        "type": "card",
+        "currency": "NIO",
+        "note": "Availability severely restricted due to sanctions"
+      },
+      {
+        "name": "SWIFT transfer (restricted)",
+        "type": "bank_transfer",
+        "currency": "NIO",
+        "note": "Limited — most correspondent banks withdrawn"
+      }
+    ],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0.0
+  },
+  "timezone": {
+    "default": "America/Managua",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": false,
+    "cookie_consent_required": false,
+    "privacy_framework": "Law 787 on Personal Data Protection (2012)",
+    "aml_kyc_tier": "ENHANCED",
+    "sanctions_detail": "OFAC targeted (NICA) + EU targeted measures (human rights)",
+    "data_residency_enforced_by_terraform": true
+  },
+  "legal": {
+    "language_law": "Spanish is official language",
+    "invoice_required": true,
+    "digital_signature_law": "Limited or no specific e-signature law"
+  },
+  "infrastructure": {
+    "internet_penetration_pct": null,
+    "mobile_penetration_pct": null,
+    "low_bandwidth_mode": true,
+    "offline_mode_recommended": true
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator"
+    ],
+    "email_provider_priority": [
+      "local_smtp"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": "State-controlled or severely restricted",
+    "mandatory_benefits": [
+      "state_social_insurance"
+    ],
+    "payroll_tax_rate": null,
+    "notice_period_days": null,
+    "contractor_allowed_for_digital_services": false,
+    "minimum_wage_usd_per_hour": 0.88
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": false,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": "State commercial authority",
+    "dispute_resolution": [
+      "state_arbitration",
+      "civil_courts"
+    ]
+  },
+  "licensing": {
+    "fintech_license_required": true,
+    "fintech_authority": "Banco Central de Nicaragua (BCN)",
+    "payment_institution_types": [
+      "State-controlled"
+    ],
+    "crypto_exchange_license_required": false,
+    "data_processing_registration": false,
+    "sector_licensing": {
+      "fintech": {
+        "authority": "Banco Central de Nicaragua (BCN)",
+        "framework": "State banking law"
+      },
+      "healthcare": {
+        "authority": "Ministry of Health"
+      },
+      "energy": {
+        "authority": "Ministry of Energy"
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": "State-controlled",
+    "platform_economy_rules": "No private platform economy",
+    "content_moderation_required": true,
+    "must_have_local_representative": true,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": true,
+    "facial_recognition_allowed_with_consent": false,
+    "synthetic_media_disclosure_required": false,
+    "ai_decision_explainability_required": false,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": "restricted",
+    "crypto_as_payment_legal": false,
+    "crypto_exchange_regulated": false,
+    "stablecoin_regulated": false,
+    "crypto_gains_taxable": false,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": false,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": 0.28,
+    "corruption_perception_index": 21,
+    "cyber_risk_rating": "high",
+    "payment_failure_risk_pct": 0.25,
+    "sanctions_exposure": "high",
+    "fx_volatility_30d_pct": null,
+    "infrastructure_risk": "high",
+    "overall_territory_risk_score": 0.72
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": null,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": null
+    },
+    "labor_cost_index_vs_usd": null,
+    "cloud_compute_cost_index": null,
+    "inflation_rate_annual": null,
+    "recommended_fx_hedge_pct": 0.95
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": true,
+      "telemedicine_allowed": false,
+      "prescription_digital_allowed": false
+    },
+    "fintech": {
+      "open_banking_mandatory": false,
+      "sandbox_available": false
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": false
+    },
+    "education": {
+      "edtech_regulation": "State-controlled",
+      "student_data_protection": "None"
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": "government_controlled",
+    "location_data_requires_consent": false,
+    "drone_regulation_authority": "State aviation authority",
+    "address_validation_standard": "State postal system",
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": true
+  },
+  "transportation": {
+    "ride_sharing_regulated": false,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": "No private gig economy",
+    "ev_incentives_available": false,
+    "autonomous_vehicle_pilots_allowed": false,
+    "cross_border_transport_agreements": []
+  },
+  "temporal": {
+    "iana_timezone": "America/Managua",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 08:00-17:00",
+    "national_holiday_source": "Official State Gazette",
+    "time_critical_regulations": []
+  }
+}
