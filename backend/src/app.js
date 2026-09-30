@@ -1,4 +1,5 @@
 'use strict';
+require('./services/mailI18n').install({ app: 'Worker' }); // transactional emails in the recipient's language (72 languages)
 const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
