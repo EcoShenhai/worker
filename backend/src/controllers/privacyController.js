@@ -1,7 +1,7 @@
 'use strict';
 // GDPR self-service for worker: download my data (Art. 15/20) and delete my account (Art. 17).
 const createGdpr = require('../services/gdprUserData');
-const CFG = {"financial": ["Payment", "Invoice", "Receipt"], "keep": ["Email"]};
+const CFG = {"financial": ["Payment", "Invoice", "Receipt"], "keep": ["Email", "WorkspaceSession"]};
 let inst = null;
 function load() {
   if (inst) return inst;
