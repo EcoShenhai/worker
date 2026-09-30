@@ -12,12 +12,25 @@ const DID_COLS = /(^|_)(actor|contributor|seller|owner|subject|bound)_?did$|Did$
 
 module.exports = function createGdpr(opts) {
   const { sequelize, User, financial = ['Payment', 'Invoice', 'Receipt', 'Transaction'], keep = ['AuditLog', 'VfpLedger'],
-    didDelete = ['MarketplaceListing'], emailDelete = ['AuthCode'], app = 'app' } = opts;
+    didDelete = ['MarketplaceListing'], emailDelete = ['AuthCode'], app = 'app', linkCols = [], anonymise = {} } = opts;
+  const LINK = new Set(linkCols); const isLink = (c) => DID_COLS.test(c) || LINK.has(c);
+  // Compare identifiers only with columns of a compatible type (UUID columns get UUIDs, integer columns numbers).
+  const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+  const NONE = { [sequelize.Sequelize.Op.and]: [sequelize.literal('1=0')] };
+  const orWhere = (M, cols, ds) => {
+    const conds = [];
+    for (const c of cols) {
+      const ty = M.rawAttributes[c] && M.rawAttributes[c].type; const t = String((ty && (ty.key || (ty.constructor && ty.constructor.key))) || ty || '');
+      const v = /UUID/i.test(t) ? ds.filter((x) => UUID_RE.test(x)) : /INT/i.test(t) ? ds.filter((x) => /^\d+$/.test(x)) : ds;
+      if (v.length) conds.push({ [c]: v });
+    }
+    return conds.length ? { [sequelize.Sequelize.Op.or]: conds } : null;
+  };
   const FIN = new Set(financial), KEEP = new Set(keep), DDEL = new Set(didDelete), EDEL = new Set(emailDelete);
   const clean = (row) => { const o = {}; for (const [k, v] of Object.entries(row)) if (!SECRET.test(k)) o[k] = v; return o; };
   const owned = () => Object.values(User.associations || {}).filter((a) => ['HasMany', 'HasOne'].includes(a.associationType));
-  const dids = (u) => [u.did, u.globalEcoId, u.globalEcoIdSubject, u.global_eco_id, u.ecoid].filter(Boolean).map(String);
-  const didModels = () => Object.values(sequelize.models).filter((M) => M !== User && Object.keys(M.rawAttributes).some((c) => DID_COLS.test(c)));
+  const dids = (u) => [...new Set([u.did, u.globalEcoId, u.globalEcoIdSubject, u.global_eco_id, u.ecoid, u.ecoid_did, u[User.primaryKeyAttribute]].filter(Boolean).map(String))];
+  const didModels = () => Object.values(sequelize.models).filter((M) => M !== User && Object.keys(M.rawAttributes).some((c) => isLink(c)));
   const emailModels = () => Object.values(sequelize.models).filter((M) => EDEL.has(M.name) && M.rawAttributes.email);
 
   async function exportFor(userId) {
@@ -35,8 +48,8 @@ module.exports = function createGdpr(opts) {
     const ds = dids(user);
     if (ds.length) for (const M of didModels()) {
       if (data[M.name]) continue;
-      const cols = Object.keys(M.rawAttributes).filter((c) => DID_COLS.test(c));
-      const rows = await M.findAll({ where: { [sequelize.Sequelize.Op.or]: cols.map((c) => ({ [c]: ds })) }, raw: true, limit: 5000 });
+      const cols = Object.keys(M.rawAttributes).filter((c) => isLink(c));
+      const w = orWhere(M, cols, ds); if (!w) continue; const rows = await M.findAll({ where: w, raw: true, limit: 5000 });
       if (rows.length) data[M.name] = rows.map(clean);
     }
     return { app, exported_at: new Date().toISOString(), format: 'shenhai-b2x-gdpr-export/1', user: clean(user), data };
@@ -66,17 +79,23 @@ module.exports = function createGdpr(opts) {
         out.deleted[M.name] = await M.destroy({ where, transaction });
       }
       if (ds.length) for (const M of didModels().filter((x) => DDEL.has(x.name))) {
-        const cols = Object.keys(M.rawAttributes).filter((c) => DID_COLS.test(c));
-        out.deleted[M.name] = await M.destroy({ where: { [sequelize.Sequelize.Op.or]: cols.map((c) => ({ [c]: ds })) }, transaction });
+        const cols = Object.keys(M.rawAttributes).filter((c) => isLink(c));
+        out.deleted[M.name] = await M.destroy({ where: (orWhere(M, cols, ds) || NONE), transaction });
       }
       // DID-linked financial records (e.g. payments keyed by subject_did): keep amounts, clear personal fields.
       if (ds.length) for (const M of didModels().filter((x) => FIN.has(x.name))) {
-        const cols = Object.keys(M.rawAttributes).filter((c) => DID_COLS.test(c)), set = {};
+        const cols = Object.keys(M.rawAttributes).filter((c) => isLink(c)), set = {};
         for (const [c, def] of Object.entries(M.rawAttributes)) {
-          if (DID_COLS.test(c) || !PII.test(c) || /number|amount|currency|date|status/i.test(c)) continue;
+          if (isLink(c) || !PII.test(c) || /number|amount|currency|date|status/i.test(c)) continue;
           set[c] = def.allowNull === false ? '[deleted]' : null;
         }
-        if (Object.keys(set).length) { const [n] = await M.update(set, { where: { [sequelize.Sequelize.Op.or]: cols.map((c) => ({ [c]: ds })) }, transaction }); out.anonymised[M.name] = (out.anonymised[M.name] || 0) + n; }
+        if (Object.keys(set).length) { const [n] = await M.update(set, { where: (orWhere(M, cols, ds) || NONE), transaction }); out.anonymised[M.name] = (out.anonymised[M.name] || 0) + n; }
+      }
+      // Per-model personal fields to clear on linked rows (e.g. a comment's author name).
+      if (ds.length) for (const [name, fields] of Object.entries(anonymise)) {
+        const M = sequelize.models[name]; if (!M) continue; const cols = Object.keys(M.rawAttributes).filter((c) => isLink(c)); if (!cols.length) continue;
+        const set = {}; for (const f of fields) if (M.rawAttributes[f]) set[f] = M.rawAttributes[f].allowNull === false ? '[deleted]' : null;
+        if (Object.keys(set).length) { const [n] = await M.update(set, { where: (orWhere(M, cols, ds) || NONE), transaction }); out.anonymised[name] = (out.anonymised[name] || 0) + n; }
       }
       if (email) for (const M of emailModels()) out.deleted[M.name] = await M.destroy({ where: { email }, transaction });
       const set = {};
