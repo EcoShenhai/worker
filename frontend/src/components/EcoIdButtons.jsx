@@ -45,7 +45,7 @@ export default function EcoIdButtons({ intent = 'login' }) {
     if (!enabled.google) return undefined; let cancelled = false;
     loadScript('https://accounts.google.com/gsi/client', 'gsi-client').then(() => {
       if (cancelled || !window.google || !googleRef.current) return;
-      window.google.accounts.id.initialize({ client_id: ECOID.googleClientId, callback: (r) => fromSocial('google', { id_token: r.credential }) });
+      window.google.accounts.id.initialize({ client_id: ECOID.googleClientId, callback: (r) => fromSocial('google', { id_token: r.credential, client_id: ECOID.clientId }) });
       window.google.accounts.id.renderButton(googleRef.current, { theme: 'outline', size: 'large', text: 'continue_with', width: 300 });
     }).catch(() => {});
     return () => { cancelled = true; };
@@ -56,11 +56,11 @@ export default function EcoIdButtons({ intent = 'login' }) {
   }, [enabled.facebook]);
   const facebookLogin = () => {
     if (!window.FB) return; setBusy('facebook');
-    window.FB.login((r) => { const at = r?.authResponse?.accessToken; if (at) fromSocial('facebook', { access_token: at }); else setBusy(''); }, { scope: 'email,public_profile' });
+    window.FB.login((r) => { const at = r?.authResponse?.accessToken; if (at) fromSocial('facebook', { access_token: at, client_id: ECOID.clientId }); else setBusy(''); }, { scope: 'email,public_profile' });
   };
   useEffect(() => {
     if (!enabled.telegram || !telegramRef.current) return;
-    window.onWorkerTelegramAuth = (user) => fromSocial('telegram', user);
+    window.onWorkerTelegramAuth = (user) => fromSocial('telegram', { ...user, client_id: ECOID.clientId });
     telegramRef.current.innerHTML = '';
     const s = document.createElement('script'); s.src = 'https://telegram.org/js/telegram-widget.js?22'; s.async = true;
     s.setAttribute('data-telegram-login', ECOID.telegramBot); s.setAttribute('data-size', 'large');
