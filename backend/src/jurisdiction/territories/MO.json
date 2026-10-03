@@ -72,7 +72,7 @@
     "mode": "static_estimate"
   },
   "tax": {
-    "default_digital_rate": 0.0,
+    "default_digital_rate": 0,
     "real_time_tax_reporting": false,
     "price_includes_tax": false,
     "system": "No VAT; Complementary Tax 12% (profits); Tourism Tax",
@@ -131,7 +131,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Asia/Macau",
@@ -189,7 +189,7 @@
     "payroll_tax_rate": 0.065,
     "notice_period_days": 30,
     "contractor_allowed_for_digital_services": true,
-    "minimum_wage_usd_per_hour": 5.0
+    "minimum_wage_usd_per_hour": 5
   },
   "consumer_protection": {
     "refund_period_days": null,

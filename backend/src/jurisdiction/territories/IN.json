@@ -194,7 +194,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 3.0
+    "low_value_exception_usd": 3
   },
   "timezone": {
     "default": "Asia/Kolkata",
@@ -347,7 +347,7 @@
   "operational_economics": {
     "transaction_cost_structure": {
       "card_acquiring_pct": 0.018,
-      "mobile_money_pct": 0.0,
+      "mobile_money_pct": 0,
       "bank_transfer_pct": 0.001
     },
     "labor_cost_index_vs_usd": 0.18,

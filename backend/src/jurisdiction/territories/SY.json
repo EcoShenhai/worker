@@ -71,7 +71,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 12800.0,
+    "rate": 12800,
     "mode": "static_estimate"
   },
   "tax": {
@@ -108,7 +108,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Asia/Damascus",
@@ -244,7 +244,7 @@
     "labor_cost_index_vs_usd": 0.02,
     "cloud_compute_cost_index": null,
     "inflation_rate_annual": 0.85,
-    "recommended_fx_hedge_pct": 1.0
+    "recommended_fx_hedge_pct": 1
   },
   "sector_rules": {
     "healthcare": {

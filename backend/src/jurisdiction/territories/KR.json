@@ -76,7 +76,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 1320.0,
+    "rate": 1320,
     "mode": "static_estimate"
   },
   "tax": {
@@ -137,9 +137,9 @@
   "pricing": {
     "market_tier": "PREMIUM",
     "multiplier": 1.2,
-    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Asia/Seoul",
@@ -292,7 +292,7 @@
       "bank_transfer_pct": 0.001
     },
     "labor_cost_index_vs_usd": 0.82,
-    "cloud_compute_cost_index": 1.0,
+    "cloud_compute_cost_index": 1,
     "inflation_rate_annual": 0.025,
     "recommended_fx_hedge_pct": 0.12
   },

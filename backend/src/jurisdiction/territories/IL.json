@@ -146,9 +146,9 @@
   "pricing": {
     "market_tier": "PREMIUM",
     "multiplier": 1.2,
-    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Asia/Jerusalem",

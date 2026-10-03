@@ -72,7 +72,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 1335.0,
+    "rate": 1335,
     "mode": "static_estimate"
   },
   "tax": {
@@ -135,7 +135,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 5.0
+    "low_value_exception_usd": 5
   },
   "timezone": {
     "default": "Africa/Kigali",

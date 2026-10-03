@@ -66,7 +66,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 1.0,
+    "rate": 1,
     "mode": "static_estimate"
   },
   "tax": {
@@ -124,7 +124,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "America/Nassau",
@@ -253,7 +253,7 @@
     "cyber_risk_rating": "medium",
     "payment_failure_risk_pct": 0.03,
     "sanctions_exposure": "low",
-    "fx_volatility_30d_pct": 0.0,
+    "fx_volatility_30d_pct": 0,
     "infrastructure_risk": "medium",
     "overall_territory_risk_score": 0.25
   },

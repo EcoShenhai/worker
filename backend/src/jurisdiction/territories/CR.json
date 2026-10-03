@@ -71,7 +71,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 520.0,
+    "rate": 520,
     "mode": "static_estimate"
   },
   "tax": {
@@ -124,7 +124,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "America/Costa_Rica",

@@ -76,7 +76,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 1050.0,
+    "rate": 1050,
     "mode": "static_estimate"
   },
   "tax": {
@@ -136,10 +136,10 @@
   },
   "pricing": {
     "market_tier": "STANDARD",
-    "multiplier": 1.0,
-    "ocp_toll_multiplier": 1.0,
+    "multiplier": 1,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 10.0
+    "low_value_exception_usd": 10
   },
   "timezone": {
     "default": "America/Argentina/Buenos_Aires",

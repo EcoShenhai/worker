@@ -62,11 +62,11 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 1.0,
+    "rate": 1,
     "mode": "static_estimate"
   },
   "tax": {
-    "default_digital_rate": 0.0,
+    "default_digital_rate": 0,
     "real_time_tax_reporting": false,
     "price_includes_tax": false,
     "system": "VAT/Sales Tax",
@@ -108,9 +108,9 @@
   "pricing": {
     "market_tier": "PREMIUM",
     "multiplier": 1.2,
-    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "America/Tortola",
@@ -238,7 +238,7 @@
     "cyber_risk_rating": "medium",
     "payment_failure_risk_pct": 0.03,
     "sanctions_exposure": "low",
-    "fx_volatility_30d_pct": 0.0,
+    "fx_volatility_30d_pct": 0,
     "infrastructure_risk": "low",
     "overall_territory_risk_score": 0.17
   },
@@ -251,7 +251,7 @@
     "labor_cost_index_vs_usd": 0.625,
     "cloud_compute_cost_index": 1.6,
     "inflation_rate_annual": 0.035,
-    "recommended_fx_hedge_pct": 0.0
+    "recommended_fx_hedge_pct": 0
   },
   "sector_rules": {
     "healthcare": {

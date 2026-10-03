@@ -1,0 +1,270 @@
+{
+  "territory": {
+    "iso_alpha2": "TM",
+    "iso_alpha3": "TKM",
+    "iso_numeric": "795",
+    "name_en": "Turkmenistan",
+    "name_local": "Türkmenistan",
+    "region": "Asia",
+    "subregion": "Central Asia",
+    "capital": "Ashgabat",
+    "population_estimate": 7000000,
+    "internet_tld": ".tm",
+    "calling_code": "+993"
+  },
+  "language": {
+    "primary": "tk",
+    "secondary": [],
+    "rtl_default": false,
+    "locale_fallback_chain": [
+      "tk-TM",
+      "tk"
+    ]
+  },
+  "locale": {
+    "currency_display": "symbol_suffix",
+    "date_format": "DD.MM.YYYY",
+    "time_format": "24h",
+    "number_decimal_separator": ",",
+    "number_thousands_separator": " ",
+    "units": "metric"
+  },
+  "identity": {
+    "national_id_format": null,
+    "national_id_name": null,
+    "phone_format": "^\\+993[0-9]{8}$",
+    "address_fields_order": [
+      "street",
+      "building",
+      "city",
+      "region"
+    ],
+    "name_order": [
+      "given",
+      "family"
+    ]
+  },
+  "mno_prefix_map": {},
+  "currency": {
+    "code": "TMT",
+    "symbol": "m",
+    "symbol_native": "m",
+    "minor_unit": 2,
+    "name": "Turkmenistan Manat"
+  },
+  "exchange": {
+    "base": "USD",
+    "rate": null,
+    "mode": "unverified"
+  },
+  "tax": {
+    "default_digital_rate": null,
+    "real_time_tax_reporting": false,
+    "price_includes_tax": false,
+    "system": null,
+    "withholding_tax_rate": null,
+    "filing_deadline_day": null
+  },
+  "banking": {
+    "iban_required": null,
+    "local_routing_format": null,
+    "routing_name": null
+  },
+  "payments": {
+    "cash_enabled": true,
+    "sanctions_active": null,
+    "providers": [],
+    "cash_layer": {
+      "merchant_transaction_layer": {
+        "cash_enabled": true,
+        "note": "Invariant — never architecturally disabled. Merchant operational resilience."
+      },
+      "protocol_layer": {
+        "cash_enabled": false,
+        "note": "Invariant — OCP toll, subscriptions, EcoPay settlement: never in cash."
+      },
+      "reference": "CASH_LAYER_RULES v6.0"
+    }
+  },
+  "pricing": {
+    "market_tier": "ECONOMY",
+    "multiplier": 0.65,
+    "ocp_toll_multiplier": 0.6,
+    "ocp_toll_effective_pct": 0.009,
+    "low_value_exception_usd": 0
+  },
+  "timezone": {
+    "default": "Asia/Ashgabat",
+    "dst": false
+  },
+  "calendar": {
+    "week_start": "monday",
+    "work_week": [
+      "monday",
+      "tuesday",
+      "wednesday",
+      "thursday",
+      "friday"
+    ],
+    "gregorian_default": true
+  },
+  "compliance": {
+    "data_residency_required": null,
+    "cookie_consent_required": null,
+    "privacy_framework": null,
+    "aml_kyc_tier": null,
+    "data_residency_enforced_by_terraform": null
+  },
+  "legal": {
+    "language_law": "Turkmen is the official state language",
+    "invoice_required": null,
+    "digital_signature_law": null
+  },
+  "infrastructure": {
+    "internet_penetration_pct": null,
+    "mobile_penetration_pct": null,
+    "low_bandwidth_mode": null,
+    "offline_mode_recommended": null
+  },
+  "notifications": {
+    "sms_provider_priority": [
+      "local_aggregator",
+      "twilio"
+    ],
+    "email_provider_priority": [
+      "sendgrid"
+    ],
+    "push_provider_priority": [
+      "fcm"
+    ]
+  },
+  "employment": {
+    "contractor_vs_employee_test": null,
+    "mandatory_benefits": [],
+    "payroll_tax_rate": null,
+    "notice_period_days": null,
+    "contractor_allowed_for_digital_services": null,
+    "minimum_wage_usd_per_hour": null
+  },
+  "consumer_protection": {
+    "refund_period_days": null,
+    "mandatory_warranty_months": null,
+    "digital_goods_refund_allowed": null,
+    "cooling_off_period_days": null,
+    "unfair_terms_authority": null,
+    "dispute_resolution": []
+  },
+  "licensing": {
+    "fintech_license_required": null,
+    "fintech_authority": null,
+    "payment_institution_types": [],
+    "crypto_exchange_license_required": null,
+    "crypto_exchange_authority": null,
+    "data_processing_registration": null,
+    "sector_licensing": {
+      "fintech": {
+        "authority": null,
+        "framework": null
+      },
+      "healthcare": {
+        "authority": null
+      },
+      "energy": {
+        "authority": null
+      }
+    }
+  },
+  "digital_services": {
+    "digital_services_tax": null,
+    "marketplace_liability": null,
+    "platform_economy_rules": null,
+    "content_moderation_required": null,
+    "must_have_local_representative": null,
+    "local_representative_threshold_users": null,
+    "invoice_system": null
+  },
+  "ai_regulation": {
+    "framework": null,
+    "high_risk_ai_categories": null,
+    "facial_recognition_allowed": null,
+    "facial_recognition_allowed_with_consent": null,
+    "synthetic_media_disclosure_required": null,
+    "ai_decision_explainability_required": null,
+    "prohibited_ai_practices": null
+  },
+  "crypto_regulation": {
+    "crypto_legal": null,
+    "crypto_as_payment_legal": null,
+    "crypto_exchange_regulated": null,
+    "stablecoin_regulated": null,
+    "crypto_gains_taxable": null,
+    "crypto_tax_rate": null,
+    "travel_rule_applies": null,
+    "cbdc_status": null,
+    "cbdc_name": null
+  },
+  "risk": {
+    "political_stability_index": null,
+    "corruption_perception_index": null,
+    "cyber_risk_rating": null,
+    "payment_failure_risk_pct": null,
+    "sanctions_exposure": null,
+    "fx_volatility_30d_pct": null,
+    "infrastructure_risk": null,
+    "overall_territory_risk_score": null
+  },
+  "operational_economics": {
+    "transaction_cost_structure": {
+      "card_acquiring_pct": null,
+      "mobile_money_pct": null,
+      "bank_transfer_pct": null
+    },
+    "labor_cost_index_vs_usd": null,
+    "cloud_compute_cost_index": null,
+    "inflation_rate_annual": null,
+    "recommended_fx_hedge_pct": null
+  },
+  "sector_rules": {
+    "healthcare": {
+      "patient_data_residency_required": null,
+      "telemedicine_allowed": null,
+      "prescription_digital_allowed": null
+    },
+    "fintech": {
+      "open_banking_mandatory": null,
+      "sandbox_available": null
+    },
+    "energy": {
+      "net_metering_allowed": null,
+      "ev_charging_regulated": null
+    },
+    "education": {
+      "edtech_regulation": null,
+      "student_data_protection": null
+    }
+  },
+  "geospatial": {
+    "mapping_data_sovereignty": null,
+    "location_data_requires_consent": null,
+    "drone_regulation_authority": null,
+    "address_validation_standard": null,
+    "coordinate_system": "WGS84",
+    "foreign_mapping_api_restricted": null
+  },
+  "transportation": {
+    "ride_sharing_regulated": null,
+    "ride_sharing_authority": null,
+    "delivery_gig_worker_protections": null,
+    "ev_incentives_available": null,
+    "autonomous_vehicle_pilots_allowed": null,
+    "cross_border_transport_agreements": []
+  },
+  "temporal": {
+    "iana_timezone": "Asia/Ashgabat",
+    "dst_observed": false,
+    "fiscal_year_end": "12-31",
+    "business_day_definition": "Monday-Friday 09:00-18:00",
+    "national_holiday_source": null,
+    "time_critical_regulations": []
+  }
+}

@@ -80,7 +80,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 1725.0,
+    "rate": 1725,
     "mode": "static_estimate"
   },
   "tax": {
@@ -138,7 +138,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Africa/Blantyre",
@@ -275,7 +275,7 @@
       "bank_transfer_pct": 0.005
     },
     "labor_cost_index_vs_usd": 0.07,
-    "cloud_compute_cost_index": 2.0,
+    "cloud_compute_cost_index": 2,
     "inflation_rate_annual": 0.272,
     "recommended_fx_hedge_pct": 0.45
   },

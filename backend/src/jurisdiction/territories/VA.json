@@ -67,7 +67,7 @@
     "mode": "static_estimate"
   },
   "tax": {
-    "default_digital_rate": 0.0,
+    "default_digital_rate": 0,
     "real_time_tax_reporting": false,
     "price_includes_tax": false,
     "system": "No commercial VAT (sovereign state)",
@@ -109,9 +109,9 @@
   "pricing": {
     "market_tier": "PREMIUM",
     "multiplier": 1.2,
-    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Europe/Vatican",
@@ -141,8 +141,8 @@
     "digital_signature_law": "eIDAS (via EU Convention)"
   },
   "infrastructure": {
-    "internet_penetration_pct": 1.0,
-    "mobile_penetration_pct": 1.0,
+    "internet_penetration_pct": 1,
+    "mobile_penetration_pct": 1,
     "low_bandwidth_mode": false,
     "offline_mode_recommended": false
   },
@@ -165,10 +165,10 @@
       "Vatican employee benefits",
       "paid_leave_30_days"
     ],
-    "payroll_tax_rate": 0.0,
+    "payroll_tax_rate": 0,
     "notice_period_days": 30,
     "contractor_allowed_for_digital_services": true,
-    "minimum_wage_usd_per_hour": 22.0
+    "minimum_wage_usd_per_hour": 22
   },
   "consumer_protection": {
     "refund_period_days": null,

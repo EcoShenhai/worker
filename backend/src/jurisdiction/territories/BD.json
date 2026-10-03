@@ -136,7 +136,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 3.0
+    "low_value_exception_usd": 3
   },
   "timezone": {
     "default": "Asia/Dhaka",
@@ -167,7 +167,7 @@
   },
   "infrastructure": {
     "internet_penetration_pct": 0.39,
-    "mobile_penetration_pct": 1.0,
+    "mobile_penetration_pct": 1,
     "low_bandwidth_mode": true,
     "offline_mode_recommended": false
   },

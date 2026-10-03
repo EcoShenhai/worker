@@ -68,7 +68,7 @@
     "real_time_tax_reporting": false,
     "price_includes_tax": false,
     "system": "VAT",
-    "withholding_tax_rate": 0.0,
+    "withholding_tax_rate": 0,
     "filing_deadline_day": null
   },
   "banking": {
@@ -106,9 +106,9 @@
   "pricing": {
     "market_tier": "PREMIUM",
     "multiplier": 1.2,
-    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Europe/Monaco",
@@ -165,7 +165,7 @@
     "payroll_tax_rate": 0.13,
     "notice_period_days": 30,
     "contractor_allowed_for_digital_services": true,
-    "minimum_wage_usd_per_hour": 25.0
+    "minimum_wage_usd_per_hour": 25
   },
   "consumer_protection": {
     "refund_period_days": 14,

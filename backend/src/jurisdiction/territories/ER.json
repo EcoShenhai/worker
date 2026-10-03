@@ -55,7 +55,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 15.0,
+    "rate": 15,
     "mode": "static_estimate",
     "note": "Official rate — may differ significantly from informal/parallel rates"
   },
@@ -64,7 +64,7 @@
     "real_time_tax_reporting": false,
     "price_includes_tax": false,
     "system": "State-controlled; limited commercial taxation",
-    "withholding_tax_rate": 0.0,
+    "withholding_tax_rate": 0,
     "filing_deadline_day": null
   },
   "banking": {
@@ -106,7 +106,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Africa/Asmara",

@@ -94,7 +94,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 4095.0,
+    "rate": 4095,
     "mode": "static_estimate"
   },
   "tax": {
@@ -157,7 +157,7 @@
     "multiplier": 0.65,
     "ocp_toll_multiplier": 0.6,
     "ocp_toll_effective_pct": 0.009,
-    "low_value_exception_usd": 3.0
+    "low_value_exception_usd": 3
   },
   "timezone": {
     "default": "Asia/Phnom_Penh",
@@ -211,7 +211,7 @@
       "paid_leave_18_days",
       "maternity_leave_90_days"
     ],
-    "payroll_tax_rate": 0.0,
+    "payroll_tax_rate": 0,
     "notice_period_days": 30,
     "contractor_allowed_for_digital_services": true,
     "minimum_wage_usd_per_hour": 1.05

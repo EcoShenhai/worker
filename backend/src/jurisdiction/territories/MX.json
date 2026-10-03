@@ -152,10 +152,10 @@
   },
   "pricing": {
     "market_tier": "STANDARD",
-    "multiplier": 1.0,
-    "ocp_toll_multiplier": 1.0,
+    "multiplier": 1,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 10.0
+    "low_value_exception_usd": 10
   },
   "timezone": {
     "default": "America/Mexico_City",
@@ -307,7 +307,7 @@
       "bank_transfer_pct": 0.001
     },
     "labor_cost_index_vs_usd": 0.28,
-    "cloud_compute_cost_index": 1.0,
+    "cloud_compute_cost_index": 1,
     "inflation_rate_annual": 0.048,
     "recommended_fx_hedge_pct": 0.18
   },

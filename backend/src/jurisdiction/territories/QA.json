@@ -78,7 +78,7 @@
     "mode": "static_estimate"
   },
   "tax": {
-    "default_digital_rate": 0.0,
+    "default_digital_rate": 0,
     "real_time_tax_reporting": false,
     "price_includes_tax": false,
     "system": "No VAT (GCC VAT pending ratification)",
@@ -130,9 +130,9 @@
   "pricing": {
     "market_tier": "PREMIUM",
     "multiplier": 1.2,
-    "ocp_toll_multiplier": 1.0,
+    "ocp_toll_multiplier": 1,
     "ocp_toll_effective_pct": 0.015,
-    "low_value_exception_usd": 0.0
+    "low_value_exception_usd": 0
   },
   "timezone": {
     "default": "Asia/Qatar",
@@ -188,7 +188,7 @@
       "end_of_service_gratuity",
       "annual_ticket_home"
     ],
-    "payroll_tax_rate": 0.0,
+    "payroll_tax_rate": 0,
     "notice_period_days": 30,
     "contractor_allowed_for_digital_services": true,
     "minimum_wage_usd_per_hour": 6.04
