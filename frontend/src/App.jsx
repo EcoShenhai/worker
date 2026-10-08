@@ -5,6 +5,7 @@ import { useAuth } from './context/AuthContext.jsx';
 
 import Landing from './pages/Landing.jsx';
 import Login from './pages/Login.jsx';
+import Guide from './guide/UserGuide.jsx';
 import ChangePassword from './pages/ChangePassword.jsx';
 import Register from './pages/Register.jsx';
 import VerifyEmail from './pages/VerifyEmail.jsx';
@@ -56,6 +57,7 @@ export default function App() {
       <Route path="/auth/ecoid/connect" element={<EcoIdConnect />} />
 
       <Route path="/" element={<Home />} />
+      <Route path="/guide" element={<Guide />} />
       <Route path="/sessions" element={P(<Sessions />)} />
       <Route path="/sessions/:id" element={P(<SessionDetail />)} />
       <Route path="/documents" element={P(<Documents />)} />
