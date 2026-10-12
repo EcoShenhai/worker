@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import api from '../../api/client.js';
 import { PageHead, StatusBadge, Notice } from '../../components/ui.jsx';
 import { useI18n } from '../../i18n/index.jsx';
+import LocalPrice, { LocalCurrencyPicker } from '../../localPrice/LocalPrice.jsx';
 
 // Plan id -> landing.pricing.* translation key (ids are backend values; never change them).
 const PLAN_KEY = { starter: 'starter', professional: 'professional', business: 'premium' };
@@ -219,6 +220,7 @@ export default function Subscription() {
         title={t('subscription.chooseTitle')}
         subtitle={t('subscription.chooseSubtitle')}
       />
+      <div style={{ margin: '-0.4rem 0 1rem' }}><LocalCurrencyPicker /></div>
 
       <div className="grid cols-3">
         {PLANS.map((plan) => (
@@ -245,6 +247,7 @@ export default function Subscription() {
                 <span style={{ fontSize: '2rem', fontWeight: 700 }}>${plan.price}</span>
                 <span className="muted"> {t('subscription.perMonth')}</span>
               </div>
+              <LocalPrice usd={plan.price} />
 
               <p className="muted" style={{ minHeight: '3.5rem' }}>
                 {PLAN_KEY[plan.id] ? t(`landing.pricing.${PLAN_KEY[plan.id]}.desc`) : plan.description}
