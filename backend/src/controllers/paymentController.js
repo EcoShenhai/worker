@@ -5,6 +5,9 @@ const ApiError = require('../utils/apiError');
 const mpesa = require('../services/payments/mpesaService');
 const paypal = require('../services/payments/paypalService');
 const ecopayPay = require('../services/payments/ecopayPay.service');
+// Automatic renewals (2026-10-12): plans paid through EcoPay mandates; methods per territory from EcoPay.
+const ecopayRecurring = require('../services/payments/ecopayRecurring');
+const renewals = require('../services/payments/subscriptionRenewals');
 // Subscription rails via EcoPay. Extend (e.g. "mpesa,paypal,stripe") as production credentials land.
 const ALLOWED_RAILS = String(process.env.ECOPAY_ALLOWED_RAILS || 'mpesa,paypal').split(',').map((r) => r.trim().toLowerCase()).filter(Boolean);
 const railAllowed = (r) => ALLOWED_RAILS.includes(r);
@@ -81,6 +84,11 @@ const subscriptionMpesaInitiate = asyncHandler(async (req, res) => {
   if (!railAllowed('mpesa')) throw ApiError.badRequest('M-Pesa is not enabled');
   const kePhone = normalizeKePhone(phone);
   if (!kePhone) throw ApiError.badRequest('phone must be a Kenyan M-Pesa number (2547XXXXXXXX)');
+  if (ecopayRecurring.configured()) {
+    const r = await renewals.start({ tenant, rail: 'mpesa', phone: kePhone, req, stamp, userId: req.user.id });
+    await audit.record(req, 'payment.subscription.mpesa.initiate', { resourceType: 'payment', resourceId: r.payment.id, metadata: { plan, amount: r.payment.amount, auto_renew: true } });
+    return res.status(201).json({ payment: r.payment, providerResponse: { CheckoutRequestID: r.payment.providerRef, CustomerMessage: r.message || 'Check your phone to authorize the payment.', via: 'ecopay', auto_renew: true } });
+  }
   const amount = PLANS[plan].kes;
   const eco = await ecopayPay.payMpesa({ amount: String(amount), phone: kePhone, reference: 'Worker', description: `Worker ${plan}`.slice(0, 13) });
   const resp = { CheckoutRequestID: eco.transaction_id, CustomerMessage: eco.customerMessage || 'Check your phone to authorize the payment.', via: 'ecopay' };
@@ -189,6 +197,11 @@ const subscriptionPaypalCreate = asyncHandler(async (req, res) => {
   if (!PLANS[plan]) throw ApiError.badRequest('Select a subscription plan first');
 
   if (!railAllowed('paypal')) throw ApiError.badRequest('PayPal is not enabled');
+  if (ecopayRecurring.configured()) {
+    const r = await renewals.start({ tenant, rail: 'paypal', base: config.frontendUrl.replace(/\/$/, ''), req, stamp, userId: req.user.id });
+    await audit.record(req, 'payment.subscription.paypal.create', { resourceType: 'payment', resourceId: r.payment.id, metadata: { plan, amount: r.payment.amount, auto_renew: true } });
+    return res.status(201).json({ payment: r.payment, approveUrl: r.approveUrl });
+  }
   const amount = PLANS[plan].usd;
   const base = config.frontendUrl.replace(/\/$/, '');
   const eco = await ecopayPay.payPaypal({ amount: String(amount), currency: 'USD', reference: 'Worker',
@@ -223,6 +236,16 @@ const subscriptionPaypalCreate = asyncHandler(async (req, res) => {
 const paypalCapture = asyncHandler(async (req, res) => {
   const { orderId } = req.body;
   if (!orderId) throw ApiError.badRequest('orderId is required');
+  // EcoPay mandate approval return: the token is our payment id (organisation-scoped).
+  if (renewals.isMid(orderId)) {
+    const mp = await Payment.findOne({ where: { ...scopeWhere(req), id: orderId } });
+    if (renewals.isMandatePayment(mp)) {
+      const done = await renewals.syncPayment(mp);
+      await audit.record(req, 'payment.paypal.capture', { resourceType: 'payment', resourceId: done.id });
+      if (done.status !== 'completed') throw ApiError.badRequest(done.status === 'failed' ? 'PayPal approval was not completed, so no plan was charged.' : 'Waiting for PayPal to confirm the first payment. Refresh in a moment.');
+      return res.json({ ok: true, payment: done });
+    }
+  }
   // EcoPay-settled orders (captured by EcoPay on return): confirm within the caller's organisation only.
   const ecoPayment = await Payment.findOne({ where: { ...scopeWhere(req), providerRef: orderId } });
   if (ecoPayment && ecoPayment.metadata && ecoPayment.metadata.via === 'ecopay') {
@@ -277,7 +300,9 @@ const paypalCapture = asyncHandler(async (req, res) => {
 const paymentStatus = asyncHandler(async (req, res) => {
   const payment = await Payment.findOne({ where: { ...scopeWhere(req), id: req.params.id } });
   if (!payment) return res.status(404).json({ error: 'payment not found' });
-  if (payment.metadata && payment.metadata.via === 'ecopay') {
+  if (renewals.isMandatePayment(payment)) {
+    try { await renewals.syncPayment(payment); } catch (e) { logger.error('EcoPay mandate status check failed', { paymentId: payment.id, message: e.message }); }
+  } else if (payment.metadata && payment.metadata.via === 'ecopay') {
     try { await confirmEcoPayPayment(payment); } catch (e) { logger.error('EcoPay status check failed', { paymentId: payment.id, message: e.message }); }
   }
   res.json({ payment: { id: payment.id, status: payment.status, purpose: payment.purpose, amount: payment.amount, currency: payment.currency } });
