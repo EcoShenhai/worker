@@ -64,7 +64,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 3.25,
+    "rate": 3.041318,
     "mode": "static_estimate",
     "note": "Official rate — may differ significantly from informal/parallel rates"
   },

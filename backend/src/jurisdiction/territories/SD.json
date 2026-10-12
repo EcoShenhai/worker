@@ -62,7 +62,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 600,
+    "rate": 458.67677,
     "mode": "static_estimate",
     "note": "Official rate — may differ significantly from informal/parallel rates"
   },

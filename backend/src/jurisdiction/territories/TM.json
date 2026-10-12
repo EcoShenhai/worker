@@ -54,7 +54,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": null,
+    "rate": 3.498569,
     "mode": "unverified"
   },
   "tax": {

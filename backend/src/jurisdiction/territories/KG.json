@@ -95,7 +95,7 @@
   },
   "exchange": {
     "base": "USD",
-    "rate": 87.2,
+    "rate": 87.451076,
     "mode": "static_estimate"
   },
   "tax": {
