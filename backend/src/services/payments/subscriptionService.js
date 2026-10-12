@@ -2,11 +2,28 @@
 
 const { Tenant } = require('../../models');
 
+const fxRate = require('../../fxRate');
+
+// Prices are set in USD (one price worldwide). The M-Pesa amount is USD x today's shared rate, worked out
+// when it is needed, never fixed in code.
+const plan = (usd) => ({ usd, get kes() { return Math.ceil(usd * fxRate.kesPerUsd()); } });
 const PLANS = {
-  starter: { usd: 10, kes: 1300 },
-  professional: { usd: 20, kes: 2600 },
-  business: { usd: 50, kes: 6500 },
+  starter: plan(10),
+  professional: plan(20),
+  business: plan(50),
 };
+
+/** The KES amount for a plan. For an M-Pesa payment already made, its own amount when it matches the plan
+ *  (today's rate within 25%, or the old fixed 130 KES/USD that earlier mandates were created with). */
+function kesFor(planId, payment) {
+  const p = PLANS[planId]; if (!p) return null;
+  const now = p.kes;
+  const amt = payment ? Number(payment.amount) : NaN;
+  if (payment && payment.provider === 'mpesa' && String(payment.currency || '').toUpperCase() === 'KES' && amt > 0) {
+    if (amt === p.usd * 130 || Math.abs(amt - now) / now <= 0.25) return amt;
+  }
+  return now;
+}
 
 async function activateFromPayment(payment) {
   if (!payment || payment.status !== 'completed') return null;
@@ -17,7 +34,7 @@ async function activateFromPayment(payment) {
   if (!PLANS[plan]) return null;
 
   const expectedCurrency = payment.provider === 'mpesa' ? 'KES' : 'USD';
-  const expectedAmount = PLANS[plan][payment.provider === 'mpesa' ? 'kes' : 'usd'];
+  const expectedAmount = payment.provider === 'mpesa' ? kesFor(plan, payment) : PLANS[plan].usd;
 
   if (String(payment.currency).toUpperCase() !== expectedCurrency) return null;
   if (Number(payment.amount) !== expectedAmount) return null;
@@ -57,4 +74,4 @@ async function activateFromPayment(payment) {
   return tenant;
 }
 
-module.exports = { PLANS, activateFromPayment };
+module.exports = { PLANS, activateFromPayment, kesFor };

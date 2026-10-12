@@ -38,7 +38,7 @@ async function createForSubscriptionPayment(payment) {
 
   const expectedCurrency = payment.provider === 'mpesa' ? 'KES' : 'USD';
   const expectedAmount = payment.provider === 'mpesa'
-    ? PLANS[plan].kes
+    ? require('./subscriptionService').kesFor(plan, payment)
     : PLANS[plan].usd;
 
   if (String(payment.currency).toUpperCase() !== expectedCurrency) return null;
