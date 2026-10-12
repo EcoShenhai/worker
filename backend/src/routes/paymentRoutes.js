@@ -14,6 +14,8 @@ router.post('/subscription/mpesa/initiate', requireRole('admin'), c.subscription
 router.post('/paypal/create', c.paypalCreate);
 router.post('/subscription/paypal/create', requireRole('admin'), c.subscriptionPaypalCreate);
 router.post('/paypal/capture', c.paypalCapture);
+router.get('/subscription', requireRole('admin'), c.subscriptionInfo);
+router.post('/subscription/cancel', requireRole('admin'), c.subscriptionCancel);
 router.get('/:id/status', c.paymentStatus);
 
 module.exports = router;

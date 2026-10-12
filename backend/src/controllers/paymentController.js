@@ -313,4 +313,39 @@ const list = asyncHandler(async (req, res) => {
   res.json({ payments });
 });
 
-module.exports = { mpesaInitiate, subscriptionMpesaInitiate, mpesaCallback, paypalCreate, subscriptionPaypalCreate, paypalCapture, paymentStatus, list };
+// ---- Plan + automatic renewal (2026-10-12) ----
+const LIVE_MANDATE = ['active', 'pending_approval', 'past_due'];
+async function renewalOf(tenant) {
+  const cur = tenant.subscriptionPaymentId ? await Payment.findByPk(tenant.subscriptionPaymentId) : null;
+  if (!renewals.isMandatePayment(cur)) return { cur, renews: false, mandateStatus: null };
+  const m = await ecopayRecurring.getMandate(cur.metadata.mandateId).catch(() => null);
+  const st = m && m.mandate ? m.mandate.status : null;
+  return { cur, renews: LIVE_MANDATE.includes(st), mandateStatus: st };
+}
+
+/** GET /payments/subscription — the paid plan, paid-until and whether it renews. */
+const subscriptionInfo = asyncHandler(async (req, res) => {
+  const tenant = req.user?.tenantId ? await Tenant.findByPk(req.user.tenantId) : null;
+  if (!tenant) throw ApiError.badRequest('No organisation associated with this account');
+  const r = await renewalOf(tenant);
+  res.json({
+    status: tenant.subscriptionStatus, selectedPlan: tenant.subscriptionPlan,
+    paidPlan: r.cur && r.cur.metadata ? r.cur.metadata.plan : null,
+    paidUntil: tenant.subscriptionEndsAt, trialEndsAt: tenant.trialEndsAt,
+    renews: r.renews, rail: r.cur ? r.cur.provider : null,
+  });
+});
+
+/** POST /payments/subscription/cancel — stop automatic renewal. Access runs to the end of the paid period. */
+const subscriptionCancel = asyncHandler(async (req, res) => {
+  const tenant = req.user?.tenantId ? await Tenant.findByPk(req.user.tenantId) : null;
+  if (!tenant) throw ApiError.badRequest('No organisation associated with this account');
+  const r = await renewalOf(tenant);
+  if (!r.renews) throw ApiError.badRequest('This plan is not renewing automatically.');
+  await renewals.cancelRenewal(tenant.id);
+  try { require('../services/payments/access').invalidate(tenant.id); } catch (_) { /* cache optional */ }
+  await audit.record(req, 'payment.subscription.cancel', { resourceType: 'tenant', resourceId: tenant.id, metadata: { plan: r.cur.metadata.plan, paidUntil: tenant.subscriptionEndsAt } });
+  res.json({ ok: true, renews: false, paidUntil: tenant.subscriptionEndsAt });
+});
+
+module.exports = { mpesaInitiate, subscriptionMpesaInitiate, mpesaCallback, paypalCreate, subscriptionPaypalCreate, paypalCapture, paymentStatus, list, subscriptionInfo, subscriptionCancel };

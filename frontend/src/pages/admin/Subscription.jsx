@@ -52,6 +52,15 @@ export default function Subscription() {
   const [selected, setSelected] = useState(null);
   const [phone, setPhone] = useState('');
   const [busy, setBusy] = useState('');
+  const [renewal, setRenewal] = useState(null); // { renews, paidPlan, paidUntil }
+  const loadRenewal = () => api.get('/payments/subscription').then(({ data }) => setRenewal(data)).catch(() => setRenewal(null));
+  const stopRenewal = async () => {
+    if (!window.confirm(tx('subscription.stopConfirm', 'Stop automatic renewal? Your plan stays active until the end of the paid period, then access ends.'))) return;
+    setBusy('cancel'); setMsg(null);
+    try { await api.post('/payments/subscription/cancel'); setMsg({ type: 'ok', text: tx('subscription.stopped', 'Automatic renewal stopped. Your plan stays active until the end of the paid period.') }); await loadRenewal(); }
+    catch (e) { setMsg({ type: 'err', text: e.response?.data?.message || tx('subscription.stopFailed', 'Could not stop renewal right now.') }); }
+    finally { setBusy(''); }
+  };
 
   const load = async () => {
     setLoading(true);
@@ -68,6 +77,7 @@ export default function Subscription() {
 
   useEffect(() => {
     load();
+    loadRenewal();
   }, []);
 
   // Translated text when available, English otherwise (never shows a raw key).
@@ -79,7 +89,7 @@ export default function Subscription() {
       try {
         const { data } = await api.get(`/payments/${id}/status`);
         const st = data?.payment?.status;
-        if (st === 'completed') { setMsg({ type: 'ok', text: tx('subscription.paymentConfirmed', 'Payment received. Your plan is now active.') }); await load(); return; }
+        if (st === 'completed') { setMsg({ type: 'ok', text: tx('subscription.paymentConfirmed', 'Payment received. Your plan is now active.') }); await load(); loadRenewal(); return; }
         if (st === 'failed') { setMsg({ type: 'err', text: tx('subscription.mpesaFailed', 'The M-Pesa payment was not completed.') }); return; }
       } catch { /* keep polling */ }
       pollPayment(id, tries + 1);
@@ -99,6 +109,7 @@ export default function Subscription() {
       setMsg({ type: 'ok', text: t('subscription.mpesaSent') });
       setPhone('');
       await load();
+      loadRenewal();
       if (data?.payment?.id) pollPayment(data.payment.id);
     } catch (e) {
       setMsg({ type: 'err', text: e.response?.data?.message || t('subscription.mpesaFailed') });
@@ -185,6 +196,19 @@ export default function Subscription() {
               <div>
                 <div className="muted" style={{ fontSize: '0.78rem' }}>{t('subscription.renewsEnds')}</div>
                 <strong>{formatDate(tenant.subscriptionEndsAt)}</strong>
+                {renewal && (
+                  <div className="muted" style={{ fontSize: '0.78rem' }}>
+                    {renewal.renews ? tx('subscription.autoRenewOn', 'Renews automatically') : tx('subscription.autoRenewOff', 'Does not renew; access ends on this date')}
+                  </div>
+                )}
+              </div>
+            )}
+
+            {renewal && renewal.renews && (
+              <div style={{ marginLeft: 'auto' }}>
+                <button className="btn secondary" onClick={stopRenewal} disabled={busy === 'cancel'}>
+                  {busy === 'cancel' ? <span className="spinner" /> : tx('subscription.stopRenewal', 'Stop automatic renewal')}
+                </button>
               </div>
             )}
           </div>
