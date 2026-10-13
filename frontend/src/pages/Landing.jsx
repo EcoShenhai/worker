@@ -125,6 +125,7 @@ export default function Landing() {
           <div><strong>{t('siteFooter.product')}</strong></div>
           <div>{t('siteFooter.copyright', { year: new Date().getFullYear() })} · theshenhai.com · worker@theshenhai.com</div>
           <div>{t('siteFooter.disclaimer')}</div>
+          <div style={{ marginTop: 6 }}><a href="/legal/privacy/" style={{ color: 'inherit', display: 'inline-block', padding: '6px 4px' }}>Privacy</a> · <a href="/legal/terms/" style={{ color: 'inherit', display: 'inline-block', padding: '6px 4px' }}>Terms</a> · <a href="/legal/cookie/" style={{ color: 'inherit', display: 'inline-block', padding: '6px 4px' }}>Cookies</a> · <a href="/refund-policy" style={{ color: 'inherit', display: 'inline-block', padding: '6px 4px' }}>Refunds</a></div>
         </div>
       </footer>
     </div>

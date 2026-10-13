@@ -1,3 +1,4 @@
+import RefundNote from '../../policy/RefundNote.jsx';
 import { useEffect, useState } from 'react';
 import api from '../../api/client.js';
 import { PageHead, StatusBadge, Notice } from '../../components/ui.jsx';
@@ -336,6 +337,7 @@ export default function Subscription() {
             {t('subscription.activationNote')}
             {t('subscription.historyNote')}
           </p>
+          <RefundNote />
         </div>
       </div>
     </>

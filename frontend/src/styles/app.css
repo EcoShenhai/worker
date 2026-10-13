@@ -277,3 +277,22 @@ tbody tr:hover { background: var(--surface-2); }
 /* Language switcher (i18n) */
 .lang-select { font: inherit; font-size: .82rem; padding: .3rem .5rem; border: 1px solid var(--line); border-radius: 8px; background: #fff; color: var(--ink); max-width: 11rem; cursor: pointer; }
 .lang-select:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+
+/* Phones (2026-10-13): the sidebar was hidden below 860 px, which left no menu and no Sign out. It now shows as a
+   wrapped bar above the page; two-column grids stack; nothing scrolls sideways at 360 px. */
+.grid > *, .card { min-width: 0; }
+@media (max-width: 860px) {
+  .shell { flex-direction: column; }
+  .sidebar { display: flex !important; width: auto; height: auto; position: static; }
+  .brand { padding: .7rem 1rem .5rem; border-bottom: 0; }
+  .brand .sub { display: none; }
+  .nav { display: flex; flex-wrap: wrap; gap: 2px 4px; padding: .2rem .6rem .5rem; overflow: visible; }
+  .nav a { margin-bottom: 0; padding: .5rem .65rem; }
+  .nav .group-label { width: 100%; padding: .5rem .4rem .1rem; }
+  .sidebar .foot { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .9rem; padding: .5rem 1rem .7rem; }
+  .sidebar .foot button { margin-top: 0; width: auto; }
+  .topbar { height: auto; flex-wrap: wrap; gap: .5rem; padding: .5rem 1rem; }
+  .grid.cols-2 { grid-template-columns: minmax(0, 1fr); }
+  table { display: block; max-width: 100%; overflow-x: auto; }
+}
+@media (max-width: 480px) { .grid.cols-3, .grid.cols-4 { grid-template-columns: minmax(0, 1fr); } }

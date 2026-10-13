@@ -49,7 +49,7 @@
     box = document.createElement('div');
     box.setAttribute('role', 'dialog'); box.setAttribute('aria-label', 'Cookie consent'); box.dir = rtl ? 'rtl' : 'ltr';
     box.style.cssText = 'position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483000;max-width:760px;margin:0 auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:14px 16px;border-radius:12px;background:#111827;color:#f9fafb;font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.35)';
-    var p = document.createElement('p'); p.style.cssText = 'margin:0;flex:1 1 320px';
+    var p = document.createElement('p'); p.style.cssText = 'margin:0;flex:1 1 220px;min-width:0;color:inherit;font:inherit';
     p.appendChild(document.createTextNode(t[0] + ' '));
     var a = document.createElement('a'); a.href = POLICY; a.textContent = t[3]; a.style.cssText = 'color:#93c5fd;text-decoration:underline';
     p.appendChild(a); box.appendChild(p);
@@ -95,9 +95,9 @@
       var p = document.createElement('p'); p.setAttribute('data-b2x-terms', '');
       p.style.cssText = 'margin:10px 0 0;font-size:12px;line-height:1.4;opacity:.75;text-align:center';
       p.appendChild(document.createTextNode(t[0] + ' '));
-      var a1 = document.createElement('a'); a1.href = '/legal/terms'; a1.target = '_blank'; a1.rel = 'noopener'; a1.textContent = t[1]; p.appendChild(a1);
+      var a1 = document.createElement('a'); a1.href = '/legal/terms'; a1.target = '_blank'; a1.rel = 'noopener'; a1.textContent = t[1]; a1.style.cssText = 'color:inherit;text-decoration:underline'; p.appendChild(a1);
       p.appendChild(document.createTextNode(' ' + t[2] + ' '));
-      var a2 = document.createElement('a'); a2.href = '/legal/privacy'; a2.target = '_blank'; a2.rel = 'noopener'; a2.textContent = t[3]; p.appendChild(a2);
+      var a2 = document.createElement('a'); a2.href = '/legal/privacy'; a2.target = '_blank'; a2.rel = 'noopener'; a2.textContent = t[3]; a2.style.cssText = 'color:inherit;text-decoration:underline'; p.appendChild(a2);
       p.appendChild(document.createTextNode('.'));
       orig.appendChild.call(host, p);
     }

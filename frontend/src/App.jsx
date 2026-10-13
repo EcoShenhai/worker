@@ -1,3 +1,4 @@
+import PolicyPage from './policy/PolicyPage.jsx';
 import EcoIdConnect from './pages/EcoIdConnect.jsx';
 import { Routes, Route } from 'react-router-dom';
 import ProtectedRoute from './components/ProtectedRoute.jsx';
@@ -76,6 +77,8 @@ export default function App() {
       <Route path="/account/ecoid" element={P(<AccountEcoId />)} />
       <Route path="/support" element={P(<Support />)} />
       <Route path="/payments/paypal/return" element={P(<PaypalReturn />)} />
+
+      <Route path="/refund-policy" element={<PolicyPage home="/" app="Worker" />} />
 
       <Route path="*" element={P(<NotFound />)} />
     </Routes>
